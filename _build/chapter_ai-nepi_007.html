@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.11">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Oliver Eberle">
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>7&nbsp; Explainable AI and Scientific Insights in Humanities – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_008.html" rel="next">
+<link href="./chapter_ai-nepi_006.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-fe5eeb5af71a333b155c360431d06b9a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e463572c889c87c7eefd27e1777fa793.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="7&nbsp; Explainable AI and Scientific Insights in Humanities – AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta property="og:description" content="The presentation details the application of Explainable AI (XAI) methods to understand Large Language Models (LLMs) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex “black box” AI systems, particularly the shift from classification models to multi-task generative foundation models. Part A focuses on XAI techniques. It introduces XAI 1.0, prim…">
+<meta property="og:image" content="images/ai-nepi_007_slide_01.jpg">
+<meta property="og:site_name" content="AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta name="twitter:title" content="7&nbsp; Explainable AI and Scientific Insights in Humanities – AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta name="twitter:description" content="The presentation details the application of Explainable AI (XAI) methods to understand Large Language Models (LLMs) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex “black box” AI systems, particularly the shift from classification models to multi-task generative foundation models. Part A focuses on XAI techniques. It introduces XAI 1.0, prim…">
+<meta name="twitter:image" content="images/ai-nepi_007_slide_01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_007.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A Primer on Large Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenAlex Mapper: Transdisciplinary Investigations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law and Humanities Scholarship</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chatting with Papers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems in Philosophy and HPSS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Plural pursuit across scales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Text Granularity and Topic Model Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">LLMs for Chemical Knowledge Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interpretable Models for Linguistic Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">LLM for HPS Studies: Analyzing the NHGRI Archive</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">7.1</span> Overview</a></li>
+  <li><a href="#presentation-structure" id="toc-presentation-structure" class="nav-link" data-scroll-target="#presentation-structure"><span class="header-section-number">7.2</span> Presentation Structure</a></li>
+  <li><a href="#xai-1.0-feature-attributions" id="toc-xai-1.0-feature-attributions" class="nav-link" data-scroll-target="#xai-1.0-feature-attributions"><span class="header-section-number">7.3</span> XAI 1.0: Feature Attributions</a></li>
+  <li><a href="#shift-to-generative-ai-and-foundation-models" id="toc-shift-to-generative-ai-and-foundation-models" class="nav-link" data-scroll-target="#shift-to-generative-ai-and-foundation-models"><span class="header-section-number">7.4</span> Shift to Generative AI and Foundation Models</a></li>
+  <li><a href="#model-mistakes-and-limitations" id="toc-model-mistakes-and-limitations" class="nav-link" data-scroll-target="#model-mistakes-and-limitations"><span class="header-section-number">7.5</span> Model Mistakes and Limitations</a></li>
+  <li><a href="#xai-2.0-structured-interpretability" id="toc-xai-2.0-structured-interpretability" class="nav-link" data-scroll-target="#xai-2.0-structured-interpretability"><span class="header-section-number">7.6</span> XAI 2.0: Structured Interpretability</a></li>
+  <li><a href="#first-order-attributions-in-llms" id="toc-first-order-attributions-in-llms" class="nav-link" data-scroll-target="#first-order-attributions-in-llms"><span class="header-section-number">7.7</span> First-Order Attributions in LLMs</a></li>
+  <li><a href="#second-higher-order-interactions-in-text" id="toc-second-higher-order-interactions-in-text" class="nav-link" data-scroll-target="#second-higher-order-interactions-in-text"><span class="header-section-number">7.8</span> Second &amp; Higher-Order Interactions in Text</a></li>
+  <li><a href="#graph-neural-networks-and-walk-based-explanations" id="toc-graph-neural-networks-and-walk-based-explanations" class="nav-link" data-scroll-target="#graph-neural-networks-and-walk-based-explanations"><span class="header-section-number">7.9</span> Graph Neural Networks and Walk-Based Explanations</a></li>
+  <li><a href="#higher-order-interactions-for-complex-language-structure" id="toc-higher-order-interactions-for-complex-language-structure" class="nav-link" data-scroll-target="#higher-order-interactions-for-complex-language-structure"><span class="header-section-number">7.10</span> Higher-Order Interactions for Complex Language Structure</a></li>
+  <li><a href="#ai-insights-in-humanities-visual-definitions" id="toc-ai-insights-in-humanities-visual-definitions" class="nav-link" data-scroll-target="#ai-insights-in-humanities-visual-definitions"><span class="header-section-number">7.11</span> AI Insights in Humanities: Visual Definitions</a></li>
+  <li><a href="#corpus-level-analysis-of-early-modern-astronomical-tables" id="toc-corpus-level-analysis-of-early-modern-astronomical-tables" class="nav-link" data-scroll-target="#corpus-level-analysis-of-early-modern-astronomical-tables"><span class="header-section-number">7.12</span> Corpus-Level Analysis of Early Modern Astronomical Tables</a></li>
+  <li><a href="#xai-historian-workflow-for-historical-insights-at-scale" id="toc-xai-historian-workflow-for-historical-insights-at-scale" class="nav-link" data-scroll-target="#xai-historian-workflow-for-historical-insights-at-scale"><span class="header-section-number">7.13</span> XAI-Historian Workflow for Historical Insights at Scale</a></li>
+  <li><a href="#cluster-entropy-analysis-for-investigating-innovation-spread" id="toc-cluster-entropy-analysis-for-investigating-innovation-spread" class="nav-link" data-scroll-target="#cluster-entropy-analysis-for-investigating-innovation-spread"><span class="header-section-number">7.14</span> Cluster Entropy Analysis for Investigating Innovation Spread</a></li>
+  <li><a href="#conclusion-and-challenges" id="toc-conclusion-and-challenges" class="nav-link" data-scroll-target="#conclusion-and-challenges"><span class="header-section-number">7.15</span> Conclusion and Challenges</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Show code</button></div></div>
+</div>
+
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Oliver Eberle <a href="mailto:oliver.eberle@tu-berlin.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            BIFOLD / TU Berlin
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    The presentation details the application of Explainable AI (XAI) methods to understand Large Language Models (LLMs) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex “black box” AI systems, particularly the shift from classification models to multi-task generative foundation models. Part A focuses on XAI techniques. It introduces XAI 1.0, prim…
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="overview" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">7.1</span> Overview</h2>
+<p>The presentation details the application of Explainable AI (<em>XAI</em>) methods to understand Large Language Models (<em>LLMs</em>) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex “black box” AI systems, particularly the shift from classification models to multi-task generative foundation models.</p>
+<p>Part A focuses on <em>XAI</em> techniques. It introduces <em>XAI</em> 1.0, primarily based on feature attributions like heatmaps for classification models (e.g., image and table classification). It highlights the limitations of these methods for generative AI and proposes <em>XAI</em> 2.0, focusing on structured interpretability, feature interactions, and mechanistic views. This includes exploring second-order (pairwise relationships) and higher-order (graph structures, walks) attributions.</p>
+<p>Examples include analyzing biases in sentiment prediction based on names using first-order attributions and investigating long-range dependencies in text summarization, finding a bias towards later parts of the input context. Second and higher-order methods are applied to understand similarity predictions in text embeddings, revealing reliance on simple strategies like noun matching, and to analyze complex language structures using Graph Neural Networks (<em>GNNs</em>) and walk-based explanations, demonstrating the ability to capture hierarchical relationships like negation.</p>
+<p>Part B applies AI methods to humanities research. An initial application involved extracting visual definitions from a corpus of mathematical instruments using class-specific heatmap explanations to identify relevant visual features (e.g., fine-grained scales). A major project focuses on corpus-level analysis of early modern astronomical tables from the <em>Sacrobosco Corpus</em> (1472-1650), comprising 76,000 pages of university textbooks.</p>
+<p>This project addresses challenges posed by heterogeneous data, limited annotations, and the failure of standard <em>OCR</em> and foundation models on this out-of-domain historical data. A workflow named <em>XAI-Historian</em> is developed to aid historians in gaining insights at scale and generating data-driven hypotheses. The method involves data collection, atomization-recomposition (representing tables using bag of bigrams and histograms), and corpus-level analysis through embedding and clustering.</p>
+<p>A small, custom-trained model is used to detect bigrams, verified using <em>XAI</em> to ensure it correctly identifies matching features. The resulting table representations are used for distance-based clustering. Cluster entropy analysis is applied to investigate innovation spread across European publication locations, revealing differences in print program diversity. Specific case studies in Frankfurt/Main (center for reprinting) and Wittenberg (political control limiting diversity) are identified and validated against historical knowledge.</p>
+<p>Key challenges identified include the difficulty of automated analysis of heterogeneous historical corpora with few labels, the limitations of current foundation models for complex research questions despite their utility for intermediate tasks (labeling, curation, error correction), the roadblock of low-resource data for scaling <em>ML</em> methods, and the need for thorough evaluation of out-of-domain transfer, especially for historical and small-scale data, as <em>LLMs</em> are primarily trained on modern natural language and code. The work emphasizes the necessity of close cooperation between <em>ML</em> experts and domain experts (historians) for validation and meaningful interpretation of AI results in humanities research.</p>
+</section>
+<section id="presentation-structure" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="presentation-structure"><span class="header-section-number">7.2</span> Presentation Structure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_01.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>The presentation is structured into two primary sections. The first part, designated A, focuses on Explainable AI (<em>XAI</em>) and methods for understanding Large Language Models (<em>LLMs</em>). This involves developing techniques and approaches to gain insight into the internal workings of these highly complex models.</p>
+<p>The second part, designated B, explores the application of AI to generate scientific insights, specifically highlighting applications within the humanities.</p>
+</section>
+<section id="xai-1.0-feature-attributions" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="xai-1.0-feature-attributions"><span class="header-section-number">7.3</span> XAI 1.0: Feature Attributions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_01.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>Explainable AI (<em>XAI</em>) 1.0 represents the initial phase of research in this field, primarily centered on feature attributions. This area of machine learning historically focused on visual data, such as images, with significant advancements in language processing emerging more recently. The core problem addressed was understanding the decision-making process within “black box” machine learning models, particularly classification systems.</p>
+<p>In a standard scenario, an input image is fed into a black box AI system, which produces a prediction, such as identifying a “Rooster”. However, the user typically has no understanding of which input features led to this specific prediction.</p>
+<p>Post-Hoc Explainability was developed as a solution approach, applying explanation methods after the model has generated its prediction. A common output of these methods is a heatmap representation. The heatmap indicates which specific input features, such as pixels in an image, were most responsible for the model’s prediction. For instance, a heatmap might highlight the head and neck of a rooster image, demonstrating that these pixels were key to the model’s classification decision.</p>
+<p>The broader purposes of explainability include:</p>
+<ul>
+<li><p>Verifying that model predictions are reasonable.</p></li>
+<li><p>Identifying flaws and biases to understand how models make mistakes.</p></li>
+<li><p>Learning about the underlying problem domain by observing surprising solutions discovered by models.</p></li>
+<li><p>Ensuring compliance with regulations such as the European AI Act.</p></li>
+</ul>
+<p>This approach characterized the standard <em>XAI</em> scenario until approximately five years ago, as documented by <em>Samek et al.&nbsp;(2017)</em>.</p>
+</section>
+<section id="shift-to-generative-ai-and-foundation-models" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="shift-to-generative-ai-and-foundation-models"><span class="header-section-number">7.4</span> Shift to Generative AI and Foundation Models</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_03.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>The current landscape is dominated by Generative AI (<em>Gen AI</em>), marking a significant shift from models primarily focused on classification. Today’s models possess multi-task capabilities, extending beyond simple classification to include functions such as finding similar images, generating new images, and answering diverse questions across numerous topics. This expanded functionality presents a challenge: it becomes significantly more difficult to trace and ground a specific prediction or generated answer back to particular input features, unlike the more straightforward case of classification.</p>
+<p>To address this, there is a need to develop explanation methods that go beyond simple heatmap representations. Proposed directions include considering feature interactions and adopting more mechanistic perspectives to understand model behavior.</p>
+<p>Contemporary foundation models are characterized by their multi-task nature and their capacity to function as “world models,” encoding broad knowledge. This characteristic makes them relevant for fields like the humanities, as they can potentially offer insights into societal aspects, the evolution of text over time, and specific features within textual data. The diagram presented, adapted from <em>Samek et al.&nbsp;(2017)</em>, illustrates this shift by showing multiple potential outputs from a black box AI system.</p>
+</section>
+<section id="model-mistakes-and-limitations" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="model-mistakes-and-limitations"><span class="header-section-number">7.5</span> Model Mistakes and Limitations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_04.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>AI models, including contemporary <em>LLMs</em>, are capable of making surprising mistakes. Two well-known examples illustrate this. The first involves a standard object classifier tasked with identifying a sailboat. The model incorrectly bases its prediction on the surrounding water rather than the boat itself. This error occurs because water is a feature correlated with boats and its texture is easier for the model to detect. This example is documented by <em>Lapuschkin et al.&nbsp;(Nature Communications, 2019)</em>.</p>
+<p>The second example demonstrates a multi-step planning mistake observed in standard <em>LLMs</em>, such as a <em>Llama 3.something</em> model. When asked to predict the next step in the Tower of Hanoi puzzle, the model attempts an invalid move: directly moving the largest disk, which is inaccessible due to smaller disks on top, to the final right peg. This indicates that the model failed to understand the physical constraints governing the puzzle. This type of error in reasoning is highlighted by <em>Mondal &amp; Webb (arXiv, 2024)</em>.</p>
+<p>While more recent reasoning models might perform better, these examples underscore the importance of understanding model limitations.</p>
+</section>
+<section id="xai-2.0-structured-interpretability" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="xai-2.0-structured-interpretability"><span class="header-section-number">7.6</span> XAI 2.0: Structured Interpretability</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_05.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p><em>XAI</em> 2.0 introduces the concept of Structured Interpretability, aiming to advance beyond the limitations of heatmap-based explanations. This approach focuses on identifying relevant features and understanding their interactions to provide deeper insights into model behavior.</p>
+<p>First-order explanations concentrate on the importance of individual features, such as highlighting a single feature (x1) within a set (x1-x4). These are particularly useful for explaining classifier predictions. An example involves a classifier trained on historical table data. Using heatmaps, it was verified that the model correctly focused on the numerical content of the tables, which serves as a good proxy for detecting numerical tables.</p>
+<p>Second-order explanations delve into pairwise relationships between features, examining interactions between pairs like x1 and x2 or x1 and x3. This is crucial for explaining similarity predictions, such as those derived from the dot product of embeddings. The method involves computing interaction scores between tokens. In an application explaining the similarity between two historical tables, interaction scores highlighted matching digits, like ‘38’ in both tables, confirming that the model was functioning as intended by identifying identical numerical content.</p>
+<p>Higher-order explanations explore more complex structures, including graph structures, feature subgraphs, or feature walks, which represent sets of features that are relevant together. This is depicted as connections between multiple features, potentially forming complex patterns like triangles. These methods are employed to gain more intricate insights into models and move towards a circuit-level understanding of their operations. An example shows a complex network diagram with highlighted elements representing these relevant feature sets.</p>
+</section>
+<section id="first-order-attributions-in-llms" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="first-order-attributions-in-llms"><span class="header-section-number">7.7</span> First-Order Attributions in LLMs</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_08.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>First-order attributions have been applied to language data, including examples relevant to the humanities. Example 1a investigates biased sentiment predictions in <em>Transformer LLMs</em>. The setup involves using Explainable AI to understand feature importance in these models, specifically analyzing how names influence the prediction of a positive or negative review. The task uses a standard sentiment prediction scenario on movie reviews.</p>
+<p>A method proposed for <em>transformers</em> is used to compute heatmaps and rank sentences based on name relevance. The results indicate that positive sentiment predictions are more likely when associated with male Western names such as Lee, Barry, Raphael, or the Coen Brothers. Conversely, negative sentiment scores are more likely with names perceived as foreign-sounding, like Saddam, Castro, or Chan. This demonstrates the utility of <em>XAI</em> in detecting fine-grained biases within models, a phenomenon now widely recognized in the community. This work is referenced as <em>Ali et al., XAI for Transformers (ICML, 2022)</em>.</p>
+<p>Example 1b explores first-order attributions for long-range dependencies in <em>LLMs</em>. The setup involves generating text summaries for long inputs, specifically up to an 8k context window using Wikipedia articles, and analyzing the extent of token dependencies. The task is to provide a long text input and ask the model to generate a summary. The method involves analyzing the origin of the information used in the generated summary within the input context to determine if the model utilizes long-range information.</p>
+<p>The results show that the model predominantly focuses on the later parts of the context, prioritizing information presented closer to the prompt. While the model is capable of incorporating long-range information from the beginning of the context, it is significantly less likely to do so, as illustrated by a log scale graph showing counts versus position difference. The implication is that <em>LLM</em>-generated summaries may not provide a balanced representation of the entire input text, tending to emphasize recently presented data. This research is referenced as <em>Jafari et al., SambaLRP (NeurIPS, 2024)</em>.</p>
+</section>
+<section id="second-higher-order-interactions-in-text" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="second-higher-order-interactions-in-text"><span class="header-section-number">7.8</span> Second &amp; Higher-Order Interactions in Text</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>The research extends to investigating second and higher-order interactions within text data, particularly in the context of text embeddings and similarity. A standard scenario involves taking two sentences, such as “A cat I really like” and “it is a great cat,” obtaining their embeddings from a model like <em>BERT</em> or a <em>sentence BERT</em> model, and computing a similarity score, typically using a dot product. The challenge lies in understanding the reasons behind a specific similarity score value.</p>
+<p>Second-order explanations provide a solution by yielding interaction scores between tokens. These scores help to understand why the model considers the sentences to have high similarity. In a toy example, it was found that noun matching strategies, involving synonyms or identical nouns, are frequently matched and significantly contribute to high similarity predictions.</p>
+<p>Analysis at the corpus level, using review data, revealed that models employ quite simplistic strategies to produce high similarity scores. Common patterns include matches between noun tokens (even identical ones), some noun-verb matches, and interactions involving separator tokens. The conclusion drawn is that models, when forced to compress large amounts of information, tend to rely on relatively simplistic strategies, which might not be immediately obvious or intuitive. This implies that when using <em>LLMs</em> for embedding data and subsequently computing rankings based on similarity, the underlying features driving high scores could be very simple.</p>
+</section>
+<section id="graph-neural-networks-and-walk-based-explanations" class="level2" data-number="7.9">
+<h2 data-number="7.9" class="anchored" data-anchor-id="graph-neural-networks-and-walk-based-explanations"><span class="header-section-number">7.9</span> Graph Neural Networks and Walk-Based Explanations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_13.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>Graph Neural Networks (<em>GNNs</em>) are utilized for structured predictions, leveraging their ability to encode structural information. A connection is drawn between <em>GNNs</em> and <em>LLMs</em>: the attention mechanism in <em>LLMs</em> can be conceptualized similarly to <em>GNNs</em>, indicating which tokens are permitted to exchange information through message passing.</p>
+<p>A method called walk-based relevance is employed to explain predictions made by <em>GNNs</em> and, by extension, <em>LLMs</em> when framed in this manner. This method provides attributions in terms of “walks,” which represent interactions between features along paths within the graph structure. The process involves feeding an input graph into the model, which processes information through multiple layers (H0 through HL) involving interactions between nodes. The final prediction is then explained by identifying specific walks within the graph structure that are particularly relevant to that prediction. This approach is detailed in <em>Schnake et al., Higher-Order Explanations of Graph Neural Networks via Relevant Walks (TPAMI, 2022)</em>.</p>
+</section>
+<section id="higher-order-interactions-for-complex-language-structure" class="level2" data-number="7.10">
+<h2 data-number="7.10" class="anchored" data-anchor-id="higher-order-interactions-for-complex-language-structure"><span class="header-section-number">7.10</span> Higher-Order Interactions for Complex Language Structure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_13.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>Walk-based explanations are applied to analyze complex language structure, leveraging the fact that the hierarchical nature of natural language is well-suited to representation as graph structures. The setup involves training a <em>GNN</em> (or an <em>LLM</em> framed as a <em>GNN</em>) on a movie review sentiment task and then extracting relevant walks to explain predictions.</p>
+<p>A comparison is made between high-order interactions and standard explanation methods, such as <em>Bag of Words (BoW)</em>. Using the example sentence “First I didn’t like the boring pictures, but it is certainly one of the best movies I have ever seen,” a standard explanation method like <em>BoW</em> fails to capture the complexity. It might assign a high score based on the presence of words like “like” or “in it,” completely missing the crucial negation “didn’t like.”</p>
+<p>In contrast, high-order interactions, represented through a tree-like graph structure where nodes are words and edges represent relationships, successfully capture this complexity. The method correctly identifies the first part of the sentence, “First I didn’t like the boring pictures,” as having a negative sentiment score despite containing potentially positive words, because it understands the negation. It also correctly assigns a positive score to the second part, reflecting the overall sentiment and the hierarchical structure of the sentence. This demonstrates the ability of higher-order methods to understand more intricate linguistic phenomena. This work is also referenced in <em>Schnake et al., Higher-Order Explanations of Graph Neural Networks via Relevant Walks (TPAMI, 2022)</em>.</p>
+</section>
+<section id="ai-insights-in-humanities-visual-definitions" class="level2" data-number="7.11">
+<h2 data-number="7.11" class="anchored" data-anchor-id="ai-insights-in-humanities-visual-definitions"><span class="header-section-number">7.11</span> AI Insights in Humanities: Visual Definitions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_14.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>Part B of the presentation shifts focus to AI-based scientific insights within the humanities. Example 4 demonstrates extracting visual definitions from corpora. The data corpus used consists of images of mathematical instruments from the <em>Sphaera Corpus</em>, as compiled by Valleriani and colleagues in 2019.</p>
+<p>An initial approach utilized heatmap-based methods. The task involved building a classifier capable of categorizing these images into specific classes, such as distinguishing between a “machine” and a “mathematical instrument.” Class-specific heatmap explanations were employed as the method. The purpose was to assist historians in establishing potentially more objective criteria for defining visual categories within the corpus.</p>
+<p>Validation was crucial and involved close cooperation with domain experts, specifically historians like Matteo Valleriani and Jochen Büttner, to verify the meaningfulness of the definitions derived from the AI analysis. The findings indicated that fine-grained scales present on the mathematical instruments were highly relevant features for the models when making classification decisions. This work is documented in <em>El-Haij &amp; Eberle+, Explainability and transparency in the realm of DH (International Journal of Digital Humanities, 2023)</em>.</p>
+</section>
+<section id="corpus-level-analysis-of-early-modern-astronomical-tables" class="level2" data-number="7.12">
+<h2 data-number="7.12" class="anchored" data-anchor-id="corpus-level-analysis-of-early-modern-astronomical-tables"><span class="header-section-number">7.12</span> Corpus-Level Analysis of Early Modern Astronomical Tables</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_15.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 15</figcaption>
+</figure>
+</div>
+<p>Example 5 presents a major project involving corpus-level analysis of early modern astronomical tables. The data corpus is the <em>Sphaera Corpus</em>, covering the period from 1472 to 1650. This corpus consists of early modern texts, specifically university textbooks, and comprises approximately 76,000 pages.</p>
+<p>The problem addressed was the historians’ interest in automatically matching and identifying tables with similar semantics. Manual analysis of this corpus at scale was not feasible. The project faced significant challenges due to the nature of the data: the corpus is highly heterogeneous, and very limited annotations are available. Furthermore, standard <em>Optical Character Recognition (OCR)</em> and contemporary <em>Foundation Models</em> proved ineffective on this historical, out-of-domain data. The corpus is referenced as <em>Sphaera Corpus (1472-1650) (Valleriani+ ’19)</em> and <em>Sacrobosco Table Corpus (1472-1650) (Eberle+ ’24)</em>.</p>
+</section>
+<section id="xai-historian-workflow-for-historical-insights-at-scale" class="level2" data-number="7.13">
+<h2 data-number="7.13" class="anchored" data-anchor-id="xai-historian-workflow-for-historical-insights-at-scale"><span class="header-section-number">7.13</span> XAI-Historian Workflow for Historical Insights at Scale</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_16.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>To address the challenges of analyzing the historical table corpus at scale, a workflow was developed in collaboration with historians. This workflow is conceptualized as the <em>XAI-Historian</em> approach, enabling historians to utilize AI and explainable AI for data-driven hypothesis generation and the discovery of case studies.</p>
+<p>The workflow comprises three main steps:</p>
+<ul>
+<li><p>Data Collections: Starting with the <em>Sacrobosco</em> corpus of historical books.</p></li>
+<li><p>Atomization-Recomposition: Processes the input tables. Instead of attempting to process the entire table directly with standard foundation models, which are ineffective on this out-of-domain data, the tables are represented using a “bag of bigrams” approach. This involves identifying sequences of two characters, such as ‘01’ or ‘21’. A custom, small model is trained specifically for the task of detecting these bigrams. Explainable AI methods, such as heatmaps or interaction maps, are then used to verify that this custom model functions correctly, for instance, by checking if it consistently detects matching bigrams like ‘38’ on different input tables. This verification process is crucial for building trust in the model’s decisions. The outputs of this step include bigram maps and histograms.</p></li>
+<li><p>Corpus-Level Analysis: Takes the historical table embeddings, which are derived from the bigram representations, and applies distance-based clustering. The output is a representation of data similarity, often visualized as a scatter plot showing distinct clusters of tables.</p></li>
+</ul>
+<p>This comprehensive workflow is detailed in <em>Eberle et al., Historical insights at scale (Science Advances, 2024)</em>.</p>
+</section>
+<section id="cluster-entropy-analysis-for-investigating-innovation-spread" class="level2" data-number="7.14">
+<h2 data-number="7.14" class="anchored" data-anchor-id="cluster-entropy-analysis-for-investigating-innovation-spread"><span class="header-section-number">7.14</span> Cluster Entropy Analysis for Investigating Innovation Spread</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_17.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 17</figcaption>
+</figure>
+</div>
+<p>Building upon the <em>XAI-Historian</em> workflow, cluster entropy analysis was applied to investigate the spread of innovation across Europe during the period of <em>Sphaera</em> publication (1472-1650). The method utilizes the output of the clustering approach, which groups historical tables based on their representations derived from the custom bigram model.</p>
+<p>The process involves using the table representations obtained from the model, performing distance-based clustering on these representations, and then, for each publication city, determining the diversity of table types produced by counting how many different clusters are represented in that city’s output. Entropy is calculated for each city’s print program as a measure of this diversity. Low entropy indicates that a city primarily reproduces the same content, signifying a less diverse print program. Conversely, higher entropy suggests a more diverse range of publications. The specific metric used is the difference between the observed cluster entropy H(p) and the maximum attainable entropy H(p_max) at that print location, where lower values indicate lower diversity relative to what is theoretically possible.</p>
+<p>This analysis identified two interesting cases with the lowest entropy scores. Frankfurt am Main was found to have low diversity, which aligns with its historical reputation as a center known for reprinting editions repeatedly. A more historically significant finding concerned Wittenberg, which also exhibited an unusually low diversity score. This finding supports the historical understanding that political control exerted by the Protestant reformers, particularly Melanchthon, actively limited the print program by dictating the curriculum. The analysis revealed this historically anomalous low diversity, matching existing historical intuition and supported knowledge. This application of the method is detailed in <em>Eberle et al.&nbsp;(Science Advances, 2024)</em>.</p>
+</section>
+<section id="conclusion-and-challenges" class="level2" data-number="7.15">
+<h2 data-number="7.15" class="anchored" data-anchor-id="conclusion-and-challenges"><span class="header-section-number">7.15</span> Conclusion and Challenges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_19.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 19</figcaption>
+</figure>
+</div>
+<p>In conclusion, researchers in the Humanities and Digital Humanities have primarily focused on the digitization of source material. However, automated analysis of these digitized corpora presents significant challenges due to their inherent heterogeneity and the scarcity of available labels. Multimodality is identified as a relevant aspect for future research in this domain.</p>
+<p>The integration of <em>Machine Learning (ML)</em> with <em>Explainable AI (XAI)</em> holds potential to scale humanities research efforts and facilitate the development of novel research directions. While <em>Foundation Models</em> and <em>Large Language Models (LLMs)</em>, along with prompting techniques, can provide automated results for intermediate tasks such as labeling, data curation, and error correction, they remain limited when addressing more complex research questions.</p>
+<p>Significant challenges persist, including the roadblock posed by low-resource data for applying <em>ML</em> methods effectively, particularly in the context of scaling laws. Furthermore, out-of-domain transfer requires thorough evaluation, especially when dealing with historical and small-scale datasets. This challenge arises because current <em>LLMs</em> are primarily trained and aligned for tasks involving modern natural language and code generation, making their direct application to historical or highly specialized data problematic without careful adaptation and validation.</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create burger menu button
+  const toggleButton = document.createElement('button');
+  toggleButton.className = 'sidebar-toggle';
+  toggleButton.setAttribute('aria-label', 'Toggle sidebar');
+  toggleButton.innerHTML = `
+    <div class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  `;
+  
+  // Create backdrop for mobile
+  const backdrop = document.createElement('div');
+  backdrop.className = 'sidebar-backdrop';
+  
+  // Add elements to page
+  document.body.appendChild(toggleButton);
+  document.body.appendChild(backdrop);
+  
+  // Get sidebar and main content elements
+  const sidebar = document.querySelector('.sidebar') || 
+                 document.querySelector('.quarto-sidebar') || 
+                 document.querySelector('.sidebar-navigation');
+  const mainContent = document.querySelector('main') || 
+                     document.querySelector('.main-content') || 
+                     document.querySelector('.quarto-container') || 
+                     document.body;
+  
+  // State management
+  let sidebarOpen = window.innerWidth > 768; // Start open on desktop, closed on mobile
+  
+  // Initialize sidebar state
+  function initializeSidebar() {
+    if (window.innerWidth <= 768) {
+      sidebarOpen = false;
+    }
+    updateSidebarState();
+  }
+  
+  // Update sidebar state and classes
+  function updateSidebarState() {
+    if (sidebar) {
+      if (sidebarOpen) {
+        sidebar.classList.remove('collapsed');
+        toggleButton.classList.add('sidebar-open');
+        mainContent.classList.add('sidebar-open');
+        mainContent.classList.remove('sidebar-closed');
+        if (window.innerWidth <= 768) {
+          backdrop.classList.add('active');
+        }
+      } else {
+        sidebar.classList.add('collapsed');
+        toggleButton.classList.remove('sidebar-open');
+        mainContent.classList.remove('sidebar-open');
+        mainContent.classList.add('sidebar-closed');
+        backdrop.classList.remove('active');
+      }
+    }
+    
+    // Store state in localStorage
+    localStorage.setItem('sidebarOpen', sidebarOpen);
+  }
+  
+  // Toggle sidebar
+  function toggleSidebar() {
+    sidebarOpen = !sidebarOpen;
+    updateSidebarState();
+  }
+  
+  // Close sidebar (for chapter links)
+  function closeSidebar() {
+    if (window.innerWidth <= 768) { // Only auto-close on mobile
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  }
+  
+  // Event listeners
+  toggleButton.addEventListener('click', toggleSidebar);
+  backdrop.addEventListener('click', toggleSidebar);
+  
+  // Auto-close sidebar when clicking chapter links
+  if (sidebar) {
+    const chapterLinks = sidebar.querySelectorAll('a[href]');
+    chapterLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Small delay to allow navigation to start
+        setTimeout(closeSidebar, 100);
+      });
+    });
+  }
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && !sidebarOpen) {
+      sidebarOpen = true;
+      updateSidebarState();
+    } else if (window.innerWidth <= 768 && sidebarOpen) {
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  });
+  
+  // Handle escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && sidebarOpen && window.innerWidth <= 768) {
+      closeSidebar();
+    }
+  });
+  
+  // Restore saved state from localStorage
+  const savedState = localStorage.getItem('sidebarOpen');
+  if (savedState !== null) {
+    sidebarOpen = savedState === 'true';
+  }
+  
+  // Initialize
+  initializeSidebar();
+  
+  // Add keyboard navigation support
+  toggleButton.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleSidebar();
+    }
+  });
+  
+  // Improve accessibility
+  toggleButton.setAttribute('role', 'button');
+  toggleButton.setAttribute('tabindex', '0');
+  
+  // Update aria-expanded attribute
+  function updateAriaExpanded() {
+    toggleButton.setAttribute('aria-expanded', sidebarOpen);
+  }
+  
+  // Call updateAriaExpanded whenever sidebar state changes
+  const originalUpdateSidebarState = updateSidebarState;
+  updateSidebarState = function() {
+    originalUpdateSidebarState();
+    updateAriaExpanded();
+  };
+  
+  updateAriaExpanded();
+  
+  // Ensure TOC sticky positioning works properly
+  function ensureTOCSticky() {
+    // Find all possible TOC elements
+    const tocSelectors = [
+      '#TOC',
+      '.table-of-contents',
+      '.quarto-sidebar-toc',
+      '.toc',
+      '.quarto-toc',
+      'nav[role="doc-toc"]',
+      '.margin-sidebar',
+      '.sidebar-right',
+      '.quarto-margin-sidebar',
+      '.column-margin'
+    ];
+    
+    let toc = null;
+    for (const selector of tocSelectors) {
+      toc = document.querySelector(selector);
+      if (toc) break;
+    }
+    
+    if (toc) {
+      console.log('Found TOC element:', toc.className || toc.id);
+      
+      // Force sticky positioning with important styles
+      toc.style.setProperty('position', 'sticky', 'important');
+      toc.style.setProperty('top', '1rem', 'important');
+      toc.style.setProperty('max-height', 'calc(100vh - 2rem)', 'important');
+      toc.style.setProperty('overflow-y', 'auto', 'important');
+      toc.style.setProperty('z-index', '100', 'important');
+      
+      // Ensure parent containers support sticky
+      let parent = toc.parentElement;
+      while (parent && parent !== document.body) {
+        parent.style.setProperty('position', 'relative', 'important');
+        parent.style.setProperty('height', 'auto', 'important');
+        parent = parent.parentElement;
+      }
+      
+      // Add scroll event listener to maintain visibility
+      let lastScrollTop = 0;
+      const scrollHandler = function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Ensure TOC remains visible and properly positioned
+        if (toc && window.innerWidth > 768) {
+          toc.style.setProperty('position', 'sticky', 'important');
+          toc.style.setProperty('top', '1rem', 'important');
+        }
+        
+        lastScrollTop = scrollTop;
+      };
+      
+      // Remove existing scroll listeners to avoid duplicates
+      window.removeEventListener('scroll', scrollHandler);
+      window.addEventListener('scroll', scrollHandler, { passive: true });
+      
+      // Also apply to any nested TOC elements
+      const nestedTocs = toc.querySelectorAll('#TOC, .toc, .table-of-contents');
+      nestedTocs.forEach(nestedToc => {
+        nestedToc.style.setProperty('position', 'sticky', 'important');
+        nestedToc.style.setProperty('top', '0', 'important');
+      });
+    } else {
+      console.log('No TOC element found');
+    }
+  }
+  
+  // Initialize TOC sticky behavior
+  ensureTOCSticky();
+  
+  // Re-initialize periodically to ensure it stays sticky
+  setInterval(ensureTOCSticky, 2000);
+  
+  // Re-initialize on window resize
+  window.addEventListener('resize', function() {
+    setTimeout(ensureTOCSticky, 100);
+  });
+  
+  // Re-initialize if content changes
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'childList') {
+        setTimeout(ensureTOCSticky, 100);
+      }
+    });
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+  
+  // Force re-initialization after page load
+  window.addEventListener('load', function() {
+    setTimeout(ensureTOCSticky, 500);
+  });
+});
+</script>
+
+<style>
+/* Additional styles for better integration */
+body {
+  overflow-x: hidden;
+}
+
+.sidebar-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure smooth transitions on all relevant elements */
+.sidebar,
+.sidebar-toggle,
+.main-content,
+.sidebar-backdrop {
+  will-change: transform, opacity, margin;
+}
+
+/* Focus styles for accessibility */
+.sidebar-toggle:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on burger icon */
+.burger-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</style> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_006.html" class="pagination-link" aria-label="Computational HPSS: Tracing Ancient Wisdom's Influence with VERITRACE">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_008.html" class="pagination-link" aria-label="Modeling Science: LLM for the History, Philosophy and Sociology of Science">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">abstract:</span><span class="co"> "The presentation details the application of Explainable AI (XAI) methods to understand Large Language Models (LLMs) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex \"black box\" AI systems, particularly the shift from classification models to multi-task generative foundation models.</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co">Part A focuses on XAI techniques. It introduces XAI 1.0, prim..."</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="an">author:</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">- affiliation: BIFOLD / TU Berlin</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">  email: oliver.eberle@tu-berlin.de</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="co">  name: Oliver Eberle</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="an">bibliography:</span><span class="co"> bibliography.bib</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="an">date:</span><span class="co"> '2025'</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co">---</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="fu"># Explainable AI and Scientific Insights in Humanities</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="fu">## Overview</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>The presentation details the application of Explainable AI (*XAI*) methods to understand Large Language Models (*LLMs*) and their application in generating scientific insights within the humanities, specifically focusing on historical texts and images. The work addresses the challenges of interpreting complex "black box" AI systems, particularly the shift from classification models to multi-task generative foundation models.</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a>Part A focuses on *XAI* techniques. It introduces *XAI* 1.0, primarily based on feature attributions like heatmaps for classification models (e.g., image and table classification). It highlights the limitations of these methods for generative AI and proposes *XAI* 2.0, focusing on structured interpretability, feature interactions, and mechanistic views. This includes exploring second-order (pairwise relationships) and higher-order (graph structures, walks) attributions.</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a>Examples include analyzing biases in sentiment prediction based on names using first-order attributions and investigating long-range dependencies in text summarization, finding a bias towards later parts of the input context. Second and higher-order methods are applied to understand similarity predictions in text embeddings, revealing reliance on simple strategies like noun matching, and to analyze complex language structures using Graph Neural Networks (*GNNs*) and walk-based explanations, demonstrating the ability to capture hierarchical relationships like negation.</span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a>Part B applies AI methods to humanities research. An initial application involved extracting visual definitions from a corpus of mathematical instruments using class-specific heatmap explanations to identify relevant visual features (e.g., fine-grained scales). A major project focuses on corpus-level analysis of early modern astronomical tables from the *Sacrobosco Corpus* (1472-1650), comprising 76,000 pages of university textbooks.</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a>This project addresses challenges posed by heterogeneous data, limited annotations, and the failure of standard *OCR* and foundation models on this out-of-domain historical data. A workflow named *XAI-Historian* is developed to aid historians in gaining insights at scale and generating data-driven hypotheses. The method involves data collection, atomization-recomposition (representing tables using bag of bigrams and histograms), and corpus-level analysis through embedding and clustering.</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>A small, custom-trained model is used to detect bigrams, verified using *XAI* to ensure it correctly identifies matching features. The resulting table representations are used for distance-based clustering. Cluster entropy analysis is applied to investigate innovation spread across European publication locations, revealing differences in print program diversity. Specific case studies in Frankfurt/Main (center for reprinting) and Wittenberg (political control limiting diversity) are identified and validated against historical knowledge.</span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a>Key challenges identified include the difficulty of automated analysis of heterogeneous historical corpora with few labels, the limitations of current foundation models for complex research questions despite their utility for intermediate tasks (labeling, curation, error correction), the roadblock of low-resource data for scaling *ML* methods, and the need for thorough evaluation of out-of-domain transfer, especially for historical and small-scale data, as *LLMs* are primarily trained on modern natural language and code. The work emphasizes the necessity of close cooperation between *ML* experts and domain experts (historians) for validation and meaningful interpretation of AI results in humanities research.</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="fu">## Presentation Structure</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="al">![Slide 01](images/ai-nepi_007_slide_01.jpg)</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a>The presentation is structured into two primary sections. The first part, designated A, focuses on Explainable AI (*XAI*) and methods for understanding Large Language Models (*LLMs*). This involves developing techniques and approaches to gain insight into the internal workings of these highly complex models.</span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a>The second part, designated B, explores the application of AI to generate scientific insights, specifically highlighting applications within the humanities.</span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="fu">## XAI 1.0: Feature Attributions</span></span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="al">![Slide 01](images/ai-nepi_007_slide_01.jpg)</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a>Explainable AI (*XAI*) 1.0 represents the initial phase of research in this field, primarily centered on feature attributions. This area of machine learning historically focused on visual data, such as images, with significant advancements in language processing emerging more recently. The core problem addressed was understanding the decision-making process within "black box" machine learning models, particularly classification systems.</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a>In a standard scenario, an input image is fed into a black box AI system, which produces a prediction, such as identifying a "Rooster". However, the user typically has no understanding of which input features led to this specific prediction.</span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a>Post-Hoc Explainability was developed as a solution approach, applying explanation methods after the model has generated its prediction. A common output of these methods is a heatmap representation. The heatmap indicates which specific input features, such as pixels in an image, were most responsible for the model's prediction. For instance, a heatmap might highlight the head and neck of a rooster image, demonstrating that these pixels were key to the model's classification decision.</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a>The broader purposes of explainability include:</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="ss">-   </span>Verifying that model predictions are reasonable.</span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">-   </span>Identifying flaws and biases to understand how models make mistakes.</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">-   </span>Learning about the underlying problem domain by observing surprising solutions discovered by models.</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">-   </span>Ensuring compliance with regulations such as the European AI Act.</span>
+<span id="cb1-59"><a href="#cb1-59"></a></span>
+<span id="cb1-60"><a href="#cb1-60"></a>This approach characterized the standard *XAI* scenario until approximately five years ago, as documented by *Samek et al. (2017)*.</span>
+<span id="cb1-61"><a href="#cb1-61"></a></span>
+<span id="cb1-62"><a href="#cb1-62"></a><span class="fu">## Shift to Generative AI and Foundation Models</span></span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="al">![Slide 03](images/ai-nepi_007_slide_03.jpg)</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a>The current landscape is dominated by Generative AI (*Gen AI*), marking a significant shift from models primarily focused on classification. Today's models possess multi-task capabilities, extending beyond simple classification to include functions such as finding similar images, generating new images, and answering diverse questions across numerous topics. This expanded functionality presents a challenge: it becomes significantly more difficult to trace and ground a specific prediction or generated answer back to particular input features, unlike the more straightforward case of classification.</span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a>To address this, there is a need to develop explanation methods that go beyond simple heatmap representations. Proposed directions include considering feature interactions and adopting more mechanistic perspectives to understand model behavior.</span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a>Contemporary foundation models are characterized by their multi-task nature and their capacity to function as "world models," encoding broad knowledge. This characteristic makes them relevant for fields like the humanities, as they can potentially offer insights into societal aspects, the evolution of text over time, and specific features within textual data. The diagram presented, adapted from *Samek et al. (2017)*, illustrates this shift by showing multiple potential outputs from a black box AI system.</span>
+<span id="cb1-71"><a href="#cb1-71"></a></span>
+<span id="cb1-72"><a href="#cb1-72"></a><span class="fu">## Model Mistakes and Limitations</span></span>
+<span id="cb1-73"><a href="#cb1-73"></a></span>
+<span id="cb1-74"><a href="#cb1-74"></a><span class="al">![Slide 04](images/ai-nepi_007_slide_04.jpg)</span></span>
+<span id="cb1-75"><a href="#cb1-75"></a></span>
+<span id="cb1-76"><a href="#cb1-76"></a>AI models, including contemporary *LLMs*, are capable of making surprising mistakes. Two well-known examples illustrate this. The first involves a standard object classifier tasked with identifying a sailboat. The model incorrectly bases its prediction on the surrounding water rather than the boat itself. This error occurs because water is a feature correlated with boats and its texture is easier for the model to detect. This example is documented by *Lapuschkin et al. (Nature Communications, 2019)*.</span>
+<span id="cb1-77"><a href="#cb1-77"></a></span>
+<span id="cb1-78"><a href="#cb1-78"></a>The second example demonstrates a multi-step planning mistake observed in standard *LLMs*, such as a *Llama 3.something* model. When asked to predict the next step in the Tower of Hanoi puzzle, the model attempts an invalid move: directly moving the largest disk, which is inaccessible due to smaller disks on top, to the final right peg. This indicates that the model failed to understand the physical constraints governing the puzzle. This type of error in reasoning is highlighted by *Mondal &amp; Webb (arXiv, 2024)*.</span>
+<span id="cb1-79"><a href="#cb1-79"></a></span>
+<span id="cb1-80"><a href="#cb1-80"></a>While more recent reasoning models might perform better, these examples underscore the importance of understanding model limitations.</span>
+<span id="cb1-81"><a href="#cb1-81"></a></span>
+<span id="cb1-82"><a href="#cb1-82"></a><span class="fu">## XAI 2.0: Structured Interpretability</span></span>
+<span id="cb1-83"><a href="#cb1-83"></a></span>
+<span id="cb1-84"><a href="#cb1-84"></a><span class="al">![Slide 05](images/ai-nepi_007_slide_05.jpg)</span></span>
+<span id="cb1-85"><a href="#cb1-85"></a></span>
+<span id="cb1-86"><a href="#cb1-86"></a>*XAI* 2.0 introduces the concept of Structured Interpretability, aiming to advance beyond the limitations of heatmap-based explanations. This approach focuses on identifying relevant features and understanding their interactions to provide deeper insights into model behavior.</span>
+<span id="cb1-87"><a href="#cb1-87"></a></span>
+<span id="cb1-88"><a href="#cb1-88"></a>First-order explanations concentrate on the importance of individual features, such as highlighting a single feature (x1) within a set (x1-x4). These are particularly useful for explaining classifier predictions. An example involves a classifier trained on historical table data. Using heatmaps, it was verified that the model correctly focused on the numerical content of the tables, which serves as a good proxy for detecting numerical tables.</span>
+<span id="cb1-89"><a href="#cb1-89"></a></span>
+<span id="cb1-90"><a href="#cb1-90"></a>Second-order explanations delve into pairwise relationships between features, examining interactions between pairs like x1 and x2 or x1 and x3. This is crucial for explaining similarity predictions, such as those derived from the dot product of embeddings. The method involves computing interaction scores between tokens. In an application explaining the similarity between two historical tables, interaction scores highlighted matching digits, like '38' in both tables, confirming that the model was functioning as intended by identifying identical numerical content.</span>
+<span id="cb1-91"><a href="#cb1-91"></a></span>
+<span id="cb1-92"><a href="#cb1-92"></a>Higher-order explanations explore more complex structures, including graph structures, feature subgraphs, or feature walks, which represent sets of features that are relevant together. This is depicted as connections between multiple features, potentially forming complex patterns like triangles. These methods are employed to gain more intricate insights into models and move towards a circuit-level understanding of their operations. An example shows a complex network diagram with highlighted elements representing these relevant feature sets.</span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a><span class="fu">## First-Order Attributions in LLMs</span></span>
+<span id="cb1-95"><a href="#cb1-95"></a></span>
+<span id="cb1-96"><a href="#cb1-96"></a><span class="al">![Slide 08](images/ai-nepi_007_slide_08.jpg)</span></span>
+<span id="cb1-97"><a href="#cb1-97"></a></span>
+<span id="cb1-98"><a href="#cb1-98"></a>First-order attributions have been applied to language data, including examples relevant to the humanities. Example 1a investigates biased sentiment predictions in *Transformer LLMs*. The setup involves using Explainable AI to understand feature importance in these models, specifically analyzing how names influence the prediction of a positive or negative review. The task uses a standard sentiment prediction scenario on movie reviews.</span>
+<span id="cb1-99"><a href="#cb1-99"></a></span>
+<span id="cb1-100"><a href="#cb1-100"></a>A method proposed for *transformers* is used to compute heatmaps and rank sentences based on name relevance. The results indicate that positive sentiment predictions are more likely when associated with male Western names such as Lee, Barry, Raphael, or the Coen Brothers. Conversely, negative sentiment scores are more likely with names perceived as foreign-sounding, like Saddam, Castro, or Chan. This demonstrates the utility of *XAI* in detecting fine-grained biases within models, a phenomenon now widely recognized in the community. This work is referenced as *Ali et al., XAI for Transformers (ICML, 2022)*.</span>
+<span id="cb1-101"><a href="#cb1-101"></a></span>
+<span id="cb1-102"><a href="#cb1-102"></a>Example 1b explores first-order attributions for long-range dependencies in *LLMs*. The setup involves generating text summaries for long inputs, specifically up to an 8k context window using Wikipedia articles, and analyzing the extent of token dependencies. The task is to provide a long text input and ask the model to generate a summary. The method involves analyzing the origin of the information used in the generated summary within the input context to determine if the model utilizes long-range information.</span>
+<span id="cb1-103"><a href="#cb1-103"></a></span>
+<span id="cb1-104"><a href="#cb1-104"></a>The results show that the model predominantly focuses on the later parts of the context, prioritizing information presented closer to the prompt. While the model is capable of incorporating long-range information from the beginning of the context, it is significantly less likely to do so, as illustrated by a log scale graph showing counts versus position difference. The implication is that *LLM*-generated summaries may not provide a balanced representation of the entire input text, tending to emphasize recently presented data. This research is referenced as *Jafari et al., SambaLRP (NeurIPS, 2024)*.</span>
+<span id="cb1-105"><a href="#cb1-105"></a></span>
+<span id="cb1-106"><a href="#cb1-106"></a><span class="fu">## Second &amp; Higher-Order Interactions in Text</span></span>
+<span id="cb1-107"><a href="#cb1-107"></a></span>
+<span id="cb1-108"><a href="#cb1-108"></a><span class="al">![Slide 11](images/ai-nepi_007_slide_11.jpg)</span></span>
+<span id="cb1-109"><a href="#cb1-109"></a></span>
+<span id="cb1-110"><a href="#cb1-110"></a>The research extends to investigating second and higher-order interactions within text data, particularly in the context of text embeddings and similarity. A standard scenario involves taking two sentences, such as "A cat I really like" and "it is a great cat," obtaining their embeddings from a model like *BERT* or a *sentence BERT* model, and computing a similarity score, typically using a dot product. The challenge lies in understanding the reasons behind a specific similarity score value.</span>
+<span id="cb1-111"><a href="#cb1-111"></a></span>
+<span id="cb1-112"><a href="#cb1-112"></a>Second-order explanations provide a solution by yielding interaction scores between tokens. These scores help to understand why the model considers the sentences to have high similarity. In a toy example, it was found that noun matching strategies, involving synonyms or identical nouns, are frequently matched and significantly contribute to high similarity predictions.</span>
+<span id="cb1-113"><a href="#cb1-113"></a></span>
+<span id="cb1-114"><a href="#cb1-114"></a>Analysis at the corpus level, using review data, revealed that models employ quite simplistic strategies to produce high similarity scores. Common patterns include matches between noun tokens (even identical ones), some noun-verb matches, and interactions involving separator tokens. The conclusion drawn is that models, when forced to compress large amounts of information, tend to rely on relatively simplistic strategies, which might not be immediately obvious or intuitive. This implies that when using *LLMs* for embedding data and subsequently computing rankings based on similarity, the underlying features driving high scores could be very simple.</span>
+<span id="cb1-115"><a href="#cb1-115"></a></span>
+<span id="cb1-116"><a href="#cb1-116"></a><span class="fu">## Graph Neural Networks and Walk-Based Explanations</span></span>
+<span id="cb1-117"><a href="#cb1-117"></a></span>
+<span id="cb1-118"><a href="#cb1-118"></a><span class="al">![Slide 13](images/ai-nepi_007_slide_13.jpg)</span></span>
+<span id="cb1-119"><a href="#cb1-119"></a></span>
+<span id="cb1-120"><a href="#cb1-120"></a>Graph Neural Networks (*GNNs*) are utilized for structured predictions, leveraging their ability to encode structural information. A connection is drawn between *GNNs* and *LLMs*: the attention mechanism in *LLMs* can be conceptualized similarly to *GNNs*, indicating which tokens are permitted to exchange information through message passing.</span>
+<span id="cb1-121"><a href="#cb1-121"></a></span>
+<span id="cb1-122"><a href="#cb1-122"></a>A method called walk-based relevance is employed to explain predictions made by *GNNs* and, by extension, *LLMs* when framed in this manner. This method provides attributions in terms of "walks," which represent interactions between features along paths within the graph structure. The process involves feeding an input graph into the model, which processes information through multiple layers (H0 through HL) involving interactions between nodes. The final prediction is then explained by identifying specific walks within the graph structure that are particularly relevant to that prediction. This approach is detailed in *Schnake et al., Higher-Order Explanations of Graph Neural Networks via Relevant Walks (TPAMI, 2022)*.</span>
+<span id="cb1-123"><a href="#cb1-123"></a></span>
+<span id="cb1-124"><a href="#cb1-124"></a><span class="fu">## Higher-Order Interactions for Complex Language Structure</span></span>
+<span id="cb1-125"><a href="#cb1-125"></a></span>
+<span id="cb1-126"><a href="#cb1-126"></a><span class="al">![Slide 13](images/ai-nepi_007_slide_13.jpg)</span></span>
+<span id="cb1-127"><a href="#cb1-127"></a></span>
+<span id="cb1-128"><a href="#cb1-128"></a>Walk-based explanations are applied to analyze complex language structure, leveraging the fact that the hierarchical nature of natural language is well-suited to representation as graph structures. The setup involves training a *GNN* (or an *LLM* framed as a *GNN*) on a movie review sentiment task and then extracting relevant walks to explain predictions.</span>
+<span id="cb1-129"><a href="#cb1-129"></a></span>
+<span id="cb1-130"><a href="#cb1-130"></a>A comparison is made between high-order interactions and standard explanation methods, such as *Bag of Words (BoW)*. Using the example sentence "First I didn't like the boring pictures, but it is certainly one of the best movies I have ever seen," a standard explanation method like *BoW* fails to capture the complexity. It might assign a high score based on the presence of words like "like" or "in it," completely missing the crucial negation "didn't like."</span>
+<span id="cb1-131"><a href="#cb1-131"></a></span>
+<span id="cb1-132"><a href="#cb1-132"></a>In contrast, high-order interactions, represented through a tree-like graph structure where nodes are words and edges represent relationships, successfully capture this complexity. The method correctly identifies the first part of the sentence, "First I didn't like the boring pictures," as having a negative sentiment score despite containing potentially positive words, because it understands the negation. It also correctly assigns a positive score to the second part, reflecting the overall sentiment and the hierarchical structure of the sentence. This demonstrates the ability of higher-order methods to understand more intricate linguistic phenomena. This work is also referenced in *Schnake et al., Higher-Order Explanations of Graph Neural Networks via Relevant Walks (TPAMI, 2022)*.</span>
+<span id="cb1-133"><a href="#cb1-133"></a></span>
+<span id="cb1-134"><a href="#cb1-134"></a><span class="fu">## AI Insights in Humanities: Visual Definitions</span></span>
+<span id="cb1-135"><a href="#cb1-135"></a></span>
+<span id="cb1-136"><a href="#cb1-136"></a><span class="al">![Slide 14](images/ai-nepi_007_slide_14.jpg)</span></span>
+<span id="cb1-137"><a href="#cb1-137"></a></span>
+<span id="cb1-138"><a href="#cb1-138"></a>Part B of the presentation shifts focus to AI-based scientific insights within the humanities. Example 4 demonstrates extracting visual definitions from corpora. The data corpus used consists of images of mathematical instruments from the *Sphaera Corpus*, as compiled by Valleriani and colleagues in 2019.</span>
+<span id="cb1-139"><a href="#cb1-139"></a></span>
+<span id="cb1-140"><a href="#cb1-140"></a>An initial approach utilized heatmap-based methods. The task involved building a classifier capable of categorizing these images into specific classes, such as distinguishing between a "machine" and a "mathematical instrument." Class-specific heatmap explanations were employed as the method. The purpose was to assist historians in establishing potentially more objective criteria for defining visual categories within the corpus.</span>
+<span id="cb1-141"><a href="#cb1-141"></a></span>
+<span id="cb1-142"><a href="#cb1-142"></a>Validation was crucial and involved close cooperation with domain experts, specifically historians like Matteo Valleriani and Jochen Büttner, to verify the meaningfulness of the definitions derived from the AI analysis. The findings indicated that fine-grained scales present on the mathematical instruments were highly relevant features for the models when making classification decisions. This work is documented in *El-Haij &amp; Eberle+, Explainability and transparency in the realm of DH (International Journal of Digital Humanities, 2023)*.</span>
+<span id="cb1-143"><a href="#cb1-143"></a></span>
+<span id="cb1-144"><a href="#cb1-144"></a><span class="fu">## Corpus-Level Analysis of Early Modern Astronomical Tables</span></span>
+<span id="cb1-145"><a href="#cb1-145"></a></span>
+<span id="cb1-146"><a href="#cb1-146"></a><span class="al">![Slide 15](images/ai-nepi_007_slide_15.jpg)</span></span>
+<span id="cb1-147"><a href="#cb1-147"></a></span>
+<span id="cb1-148"><a href="#cb1-148"></a>Example 5 presents a major project involving corpus-level analysis of early modern astronomical tables. The data corpus is the *Sphaera Corpus*, covering the period from 1472 to 1650. This corpus consists of early modern texts, specifically university textbooks, and comprises approximately 76,000 pages.</span>
+<span id="cb1-149"><a href="#cb1-149"></a></span>
+<span id="cb1-150"><a href="#cb1-150"></a>The problem addressed was the historians' interest in automatically matching and identifying tables with similar semantics. Manual analysis of this corpus at scale was not feasible. The project faced significant challenges due to the nature of the data: the corpus is highly heterogeneous, and very limited annotations are available. Furthermore, standard *Optical Character Recognition (OCR)* and contemporary *Foundation Models* proved ineffective on this historical, out-of-domain data. The corpus is referenced as *Sphaera Corpus (1472-1650) (Valleriani+ '19)* and *Sacrobosco Table Corpus (1472-1650) (Eberle+ '24)*.</span>
+<span id="cb1-151"><a href="#cb1-151"></a></span>
+<span id="cb1-152"><a href="#cb1-152"></a><span class="fu">## XAI-Historian Workflow for Historical Insights at Scale</span></span>
+<span id="cb1-153"><a href="#cb1-153"></a></span>
+<span id="cb1-154"><a href="#cb1-154"></a><span class="al">![Slide 16](images/ai-nepi_007_slide_16.jpg)</span></span>
+<span id="cb1-155"><a href="#cb1-155"></a></span>
+<span id="cb1-156"><a href="#cb1-156"></a>To address the challenges of analyzing the historical table corpus at scale, a workflow was developed in collaboration with historians. This workflow is conceptualized as the *XAI-Historian* approach, enabling historians to utilize AI and explainable AI for data-driven hypothesis generation and the discovery of case studies.</span>
+<span id="cb1-157"><a href="#cb1-157"></a></span>
+<span id="cb1-158"><a href="#cb1-158"></a>The workflow comprises three main steps:</span>
+<span id="cb1-159"><a href="#cb1-159"></a></span>
+<span id="cb1-160"><a href="#cb1-160"></a><span class="ss">-   </span>Data Collections: Starting with the *Sacrobosco* corpus of historical books.</span>
+<span id="cb1-161"><a href="#cb1-161"></a></span>
+<span id="cb1-162"><a href="#cb1-162"></a><span class="ss">-   </span>Atomization-Recomposition: Processes the input tables. Instead of attempting to process the entire table directly with standard foundation models, which are ineffective on this out-of-domain data, the tables are represented using a "bag of bigrams" approach. This involves identifying sequences of two characters, such as '01' or '21'. A custom, small model is trained specifically for the task of detecting these bigrams. Explainable AI methods, such as heatmaps or interaction maps, are then used to verify that this custom model functions correctly, for instance, by checking if it consistently detects matching bigrams like '38' on different input tables. This verification process is crucial for building trust in the model's decisions. The outputs of this step include bigram maps and histograms.</span>
+<span id="cb1-163"><a href="#cb1-163"></a></span>
+<span id="cb1-164"><a href="#cb1-164"></a><span class="ss">-   </span>Corpus-Level Analysis: Takes the historical table embeddings, which are derived from the bigram representations, and applies distance-based clustering. The output is a representation of data similarity, often visualized as a scatter plot showing distinct clusters of tables.</span>
+<span id="cb1-165"><a href="#cb1-165"></a></span>
+<span id="cb1-166"><a href="#cb1-166"></a>This comprehensive workflow is detailed in *Eberle et al., Historical insights at scale (Science Advances, 2024)*.</span>
+<span id="cb1-167"><a href="#cb1-167"></a></span>
+<span id="cb1-168"><a href="#cb1-168"></a><span class="fu">## Cluster Entropy Analysis for Investigating Innovation Spread</span></span>
+<span id="cb1-169"><a href="#cb1-169"></a></span>
+<span id="cb1-170"><a href="#cb1-170"></a><span class="al">![Slide 17](images/ai-nepi_007_slide_17.jpg)</span></span>
+<span id="cb1-171"><a href="#cb1-171"></a></span>
+<span id="cb1-172"><a href="#cb1-172"></a>Building upon the *XAI-Historian* workflow, cluster entropy analysis was applied to investigate the spread of innovation across Europe during the period of *Sphaera* publication (1472-1650). The method utilizes the output of the clustering approach, which groups historical tables based on their representations derived from the custom bigram model.</span>
+<span id="cb1-173"><a href="#cb1-173"></a></span>
+<span id="cb1-174"><a href="#cb1-174"></a>The process involves using the table representations obtained from the model, performing distance-based clustering on these representations, and then, for each publication city, determining the diversity of table types produced by counting how many different clusters are represented in that city's output. Entropy is calculated for each city's print program as a measure of this diversity. Low entropy indicates that a city primarily reproduces the same content, signifying a less diverse print program. Conversely, higher entropy suggests a more diverse range of publications. The specific metric used is the difference between the observed cluster entropy H(p) and the maximum attainable entropy H(p_max) at that print location, where lower values indicate lower diversity relative to what is theoretically possible.</span>
+<span id="cb1-175"><a href="#cb1-175"></a></span>
+<span id="cb1-176"><a href="#cb1-176"></a>This analysis identified two interesting cases with the lowest entropy scores. Frankfurt am Main was found to have low diversity, which aligns with its historical reputation as a center known for reprinting editions repeatedly. A more historically significant finding concerned Wittenberg, which also exhibited an unusually low diversity score. This finding supports the historical understanding that political control exerted by the Protestant reformers, particularly Melanchthon, actively limited the print program by dictating the curriculum. The analysis revealed this historically anomalous low diversity, matching existing historical intuition and supported knowledge. This application of the method is detailed in *Eberle et al. (Science Advances, 2024)*.</span>
+<span id="cb1-177"><a href="#cb1-177"></a></span>
+<span id="cb1-178"><a href="#cb1-178"></a><span class="fu">## Conclusion and Challenges</span></span>
+<span id="cb1-179"><a href="#cb1-179"></a></span>
+<span id="cb1-180"><a href="#cb1-180"></a><span class="al">![Slide 19](images/ai-nepi_007_slide_19.jpg)</span></span>
+<span id="cb1-181"><a href="#cb1-181"></a></span>
+<span id="cb1-182"><a href="#cb1-182"></a>In conclusion, researchers in the Humanities and Digital Humanities have primarily focused on the digitization of source material. However, automated analysis of these digitized corpora presents significant challenges due to their inherent heterogeneity and the scarcity of available labels. Multimodality is identified as a relevant aspect for future research in this domain.</span>
+<span id="cb1-183"><a href="#cb1-183"></a></span>
+<span id="cb1-184"><a href="#cb1-184"></a>The integration of *Machine Learning (ML)* with *Explainable AI (XAI)* holds potential to scale humanities research efforts and facilitate the development of novel research directions. While *Foundation Models* and *Large Language Models (LLMs)*, along with prompting techniques, can provide automated results for intermediate tasks such as labeling, data curation, and error correction, they remain limited when addressing more complex research questions.</span>
+<span id="cb1-185"><a href="#cb1-185"></a></span>
+<span id="cb1-186"><a href="#cb1-186"></a>Significant challenges persist, including the roadblock posed by low-resource data for applying *ML* methods effectively, particularly in the context of scaling laws. Furthermore, out-of-domain transfer requires thorough evaluation, especially when dealing with historical and small-scale datasets. This challenge arises because current *LLMs* are primarily trained and aligned for tasks involving modern natural language and code generation, making their direct application to historical or highly specialized data problematic without careful adaptation and validation.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

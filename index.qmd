@@ -1,0 +1,19 @@
+---
+title: "AI-NEPI Conference Proceedings - Enhanced Edition"
+---
+
+# Preface
+
+This enhanced edition of the AI-NEPI Conference Proceedings contains presentations on Large Language Models for History, Philosophy and Sociology of Science, held in 2025.
+
+The chapters in this book have been generated from comprehensive XML content reports, providing structured access to the rich discussions and insights shared during the conference.
+
+Each chapter includes:
+
+- Structured presentation content with key sections
+- Slide images synchronized with the presentation flow  
+- Complete speaker abstracts and overviews
+- Detailed transcriptions of the presentations
+
+This enhanced format allows readers to follow both the visual presentation materials and the detailed content in an integrated manner.
+

@@ -1,0 +1,281 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create burger menu button
+  const toggleButton = document.createElement('button');
+  toggleButton.className = 'sidebar-toggle';
+  toggleButton.setAttribute('aria-label', 'Toggle sidebar');
+  toggleButton.innerHTML = `
+    <div class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  `;
+  
+  // Create backdrop for mobile
+  const backdrop = document.createElement('div');
+  backdrop.className = 'sidebar-backdrop';
+  
+  // Add elements to page
+  document.body.appendChild(toggleButton);
+  document.body.appendChild(backdrop);
+  
+  // Get sidebar and main content elements
+  const sidebar = document.querySelector('.sidebar') || 
+                 document.querySelector('.quarto-sidebar') || 
+                 document.querySelector('.sidebar-navigation');
+  const mainContent = document.querySelector('main') || 
+                     document.querySelector('.main-content') || 
+                     document.querySelector('.quarto-container') || 
+                     document.body;
+  
+  // State management
+  let sidebarOpen = window.innerWidth > 768; // Start open on desktop, closed on mobile
+  
+  // Initialize sidebar state
+  function initializeSidebar() {
+    if (window.innerWidth <= 768) {
+      sidebarOpen = false;
+    }
+    updateSidebarState();
+  }
+  
+  // Update sidebar state and classes
+  function updateSidebarState() {
+    if (sidebar) {
+      if (sidebarOpen) {
+        sidebar.classList.remove('collapsed');
+        toggleButton.classList.add('sidebar-open');
+        mainContent.classList.add('sidebar-open');
+        mainContent.classList.remove('sidebar-closed');
+        if (window.innerWidth <= 768) {
+          backdrop.classList.add('active');
+        }
+      } else {
+        sidebar.classList.add('collapsed');
+        toggleButton.classList.remove('sidebar-open');
+        mainContent.classList.remove('sidebar-open');
+        mainContent.classList.add('sidebar-closed');
+        backdrop.classList.remove('active');
+      }
+    }
+    
+    // Store state in localStorage
+    localStorage.setItem('sidebarOpen', sidebarOpen);
+  }
+  
+  // Toggle sidebar
+  function toggleSidebar() {
+    sidebarOpen = !sidebarOpen;
+    updateSidebarState();
+  }
+  
+  // Close sidebar (for chapter links)
+  function closeSidebar() {
+    if (window.innerWidth <= 768) { // Only auto-close on mobile
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  }
+  
+  // Event listeners
+  toggleButton.addEventListener('click', toggleSidebar);
+  backdrop.addEventListener('click', toggleSidebar);
+  
+  // Auto-close sidebar when clicking chapter links
+  if (sidebar) {
+    const chapterLinks = sidebar.querySelectorAll('a[href]');
+    chapterLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Small delay to allow navigation to start
+        setTimeout(closeSidebar, 100);
+      });
+    });
+  }
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && !sidebarOpen) {
+      sidebarOpen = true;
+      updateSidebarState();
+    } else if (window.innerWidth <= 768 && sidebarOpen) {
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  });
+  
+  // Handle escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && sidebarOpen && window.innerWidth <= 768) {
+      closeSidebar();
+    }
+  });
+  
+  // Restore saved state from localStorage
+  const savedState = localStorage.getItem('sidebarOpen');
+  if (savedState !== null) {
+    sidebarOpen = savedState === 'true';
+  }
+  
+  // Initialize
+  initializeSidebar();
+  
+  // Add keyboard navigation support
+  toggleButton.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleSidebar();
+    }
+  });
+  
+  // Improve accessibility
+  toggleButton.setAttribute('role', 'button');
+  toggleButton.setAttribute('tabindex', '0');
+  
+  // Update aria-expanded attribute
+  function updateAriaExpanded() {
+    toggleButton.setAttribute('aria-expanded', sidebarOpen);
+  }
+  
+  // Call updateAriaExpanded whenever sidebar state changes
+  const originalUpdateSidebarState = updateSidebarState;
+  updateSidebarState = function() {
+    originalUpdateSidebarState();
+    updateAriaExpanded();
+  };
+  
+  updateAriaExpanded();
+  
+  // Ensure TOC sticky positioning works properly
+  function ensureTOCSticky() {
+    // Find all possible TOC elements
+    const tocSelectors = [
+      '#TOC',
+      '.table-of-contents',
+      '.quarto-sidebar-toc',
+      '.toc',
+      '.quarto-toc',
+      'nav[role="doc-toc"]',
+      '.margin-sidebar',
+      '.sidebar-right',
+      '.quarto-margin-sidebar',
+      '.column-margin'
+    ];
+    
+    let toc = null;
+    for (const selector of tocSelectors) {
+      toc = document.querySelector(selector);
+      if (toc) break;
+    }
+    
+    if (toc) {
+      console.log('Found TOC element:', toc.className || toc.id);
+      
+      // Force sticky positioning with important styles
+      toc.style.setProperty('position', 'sticky', 'important');
+      toc.style.setProperty('top', '1rem', 'important');
+      toc.style.setProperty('max-height', 'calc(100vh - 2rem)', 'important');
+      toc.style.setProperty('overflow-y', 'auto', 'important');
+      toc.style.setProperty('z-index', '100', 'important');
+      
+      // Ensure parent containers support sticky
+      let parent = toc.parentElement;
+      while (parent && parent !== document.body) {
+        parent.style.setProperty('position', 'relative', 'important');
+        parent.style.setProperty('height', 'auto', 'important');
+        parent = parent.parentElement;
+      }
+      
+      // Add scroll event listener to maintain visibility
+      let lastScrollTop = 0;
+      const scrollHandler = function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Ensure TOC remains visible and properly positioned
+        if (toc && window.innerWidth > 768) {
+          toc.style.setProperty('position', 'sticky', 'important');
+          toc.style.setProperty('top', '1rem', 'important');
+        }
+        
+        lastScrollTop = scrollTop;
+      };
+      
+      // Remove existing scroll listeners to avoid duplicates
+      window.removeEventListener('scroll', scrollHandler);
+      window.addEventListener('scroll', scrollHandler, { passive: true });
+      
+      // Also apply to any nested TOC elements
+      const nestedTocs = toc.querySelectorAll('#TOC, .toc, .table-of-contents');
+      nestedTocs.forEach(nestedToc => {
+        nestedToc.style.setProperty('position', 'sticky', 'important');
+        nestedToc.style.setProperty('top', '0', 'important');
+      });
+    } else {
+      console.log('No TOC element found');
+    }
+  }
+  
+  // Initialize TOC sticky behavior
+  ensureTOCSticky();
+  
+  // Re-initialize periodically to ensure it stays sticky
+  setInterval(ensureTOCSticky, 2000);
+  
+  // Re-initialize on window resize
+  window.addEventListener('resize', function() {
+    setTimeout(ensureTOCSticky, 100);
+  });
+  
+  // Re-initialize if content changes
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'childList') {
+        setTimeout(ensureTOCSticky, 100);
+      }
+    });
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+  
+  // Force re-initialization after page load
+  window.addEventListener('load', function() {
+    setTimeout(ensureTOCSticky, 500);
+  });
+});
+</script>
+
+<style>
+/* Additional styles for better integration */
+body {
+  overflow-x: hidden;
+}
+
+.sidebar-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure smooth transitions on all relevant elements */
+.sidebar,
+.sidebar-toggle,
+.main-content,
+.sidebar-backdrop {
+  will-change: transform, opacity, margin;
+}
+
+/* Focus styles for accessibility */
+.sidebar-toggle:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on burger icon */
+.burger-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</style> 

@@ -1,0 +1,85 @@
+---
+abstract: "The workshop titled \"Large Language Models for the History, Philosophy\
+  \ and Sociology of Science,\" conducted from April 2-4, 2025, at TU Berlin (Room\
+  \ H2005) and online, was organized by Gerd Graßhoff, Arno Simons, Adrian Wüthrich,\
+  \ and Michael Zichert. The event garnered substantial interest, evidenced by over\
+  \ 50 submissions to the call for papers, from which 16 presentations were selected.\
+  \ Approximately 220 participants registered, with on-site attendance fully booked\
+  \ and a significant onl..."
+author:
+
+- affiliation: AI-NEPI Conference Participant
+  name: Adrian Wüthrich
+bibliography: bibliography.bib
+date: '2025'
+---
+
+# Large Language Models for the History, Philosophy and Sociology of Science (Workshop)
+
+## Overview
+
+The workshop, titled "Large Language Models for the History, Philosophy and Sociology of Science," was held from April 2-4, 2025, at TU Berlin (Room H2005) and online. It was organized by Gerd Graßhoff, Arno Simons, Adrian Wüthrich, and Michael Zichert. The event attracted substantial interest, receiving over 50 submissions to the call for papers, from which 16 presentations were selected.
+
+Approximately 220 participants registered, with on-site attendance fully booked and a significant online audience. The workshop's conceptual framework emerged from two key initiatives. The first was the "Network Epistemology in Practice" (NEPI) project, where researchers Arno Simons and Michael Zichert utilized Large Language Models (LLMs) for analyzing physics texts and conceptual issues in physics, respectively.
+
+The second initiative stemmed from Gerd Graßhoff's long-standing advocacy for employing AI in History and Philosophy of Science (HPS), particularly for investigating scientific discovery processes. Funding for the workshop was provided by the NEPI project's European Research Council (ERC) Consolidator Grant (Nr. 101044932). The NEPI project itself investigates internal communication within the Atlas collaboration at CERN to understand collective knowledge generation processes.
+
+Methodologies employed by NEPI include network analysis for examining communication structures and semantic tools, incorporating LLMs, for tracing the flow of ideas. Workshop sessions were recorded, including presenter video and full audio, with plans to make these recordings available on NEPI's YouTube channel, subject to presenter consent. Question and answer sessions were structured to gather multiple questions before presenters provided collective responses.
+
+Interactive engagement was supported through *Etherpad*/*Cryptpad* for asynchronous discussions and *Zoom* chat for real-time interactions. Logistical provisions included on-site coffee breaks and refreshments, with lunch and a reception held in Room H2051.
+
+Keynote presentations featured Nina Tahmasebi (University of Gothenburg) and Pierluigi Cassotti, discussing "Large-scale text analysis for the study of cultural and societal change," with a focus on semantic change detection and data science applications in the humanities. Iryna Gurevych (Ubiquitous Knowledge Processing Lab, Technical University Darmstadt) delivered a keynote titled "How to InterText? Elevating NLP to the cross-document level," addressing information extraction, semantic text processing, machine learning, and NLP applications in the social sciences and humanities. The official workshop website is https://www.tu.berlin/hps-mod-sci/workshop-llms-for-hpss. Supporting entities included nepi (Network Epistemology in Practice), the European Research Council (ERC), and the European Union.
+
+## Workshop Scope and Participation
+
+The workshop, titled "Large Language Models for the History, Philosophy and Sociology of Science," was held from April 2-4, 2025. The venue was TU Berlin, Room H2005, with provisions for online participation. The organizing committee comprised Gerd Graßhoff, Arno Simons, Adrian Wüthrich, and Michael Zichert.
+
+Information and registration for the workshop were accessible via the URL https://www.tu.berlin/hps-mod-sci/workshop-llms-for-hpss and a QR code labeled "Register here." The workshop received support from several organizations, including nepi (Network Epistemology in Practice), the European Research Council (ERC), and the European Union.
+
+The call for papers generated significant interest, receiving over 50 submissions. From these, 16 papers were selected for presentation, a process that involved difficult choices due to the high volume. The workshop attracted a substantial number of participants, with on-site places quickly becoming fully booked.
+
+A large online audience also registered, bringing the total number of registered participants to approximately 220 at the commencement of the workshop, with registrations ongoing. The stated objective of the two-and-a-half-day workshop was to foster an inclusive conversation on the application of Large Language Models in the History, Philosophy, and Sociology of Science.
+
+## Workshop Genesis and NEPI Funding
+
+The conceptualization of the workshop originated from two distinct but complementary initiatives. The first arose from the "Network Epistemology in Practice" (NEPI) project. Within this project, Arno Simons, a project member, trained one of the initial large language models using physics texts, reflecting a core interest of NEPI. Simons proposed discussing such research in a wider academic forum.
+
+Michael Zichert, also a member of the NEPI project team, had been working with large language models to analyze conceptual problems in physics. He concurred that a workshop on this subject would be a valuable endeavor.
+
+The second initiative came from Gerd Graßhoff, a cooperation partner of the NEPI project. Graßhoff has long advocated for employing Artificial Intelligence (AI) in the fields of history and philosophy of science, particularly focusing on AI's role in analyzing processes of scientific discovery. He independently conceived the idea of organizing a workshop centered on new AI-assisted methodologies for these disciplines. Consequently, these parallel interests led to a collaborative effort, resulting in the current workshop.
+
+The workshop is funded by the European Research Council (ERC) through Consolidator Grant number 101044932. This grant specifically supports the "Network Epistemology in Practice" (NEPI) project.
+
+## NEPI Project: Objectives and Methodologies
+
+The "Network Epistemology in Practice" (NEPI) project focuses its research on the internal communication dynamics of the Atlas collaboration. This major particle physics experiment is located at CERN, the European Organization for Nuclear Research. The Atlas collaboration is recognized as one of the largest and most significant international research collaborations.
+
+The overarching goal of the NEPI project is to gain deeper insights into the mechanisms by which such extensive research entities collectively produce new scientific knowledge. To achieve its objectives, the NEPI project employs a dual methodological approach.
+
+Firstly, network analysis techniques are applied to map and understand the communication structure prevalent within the Atlas collaboration. Secondly, semantic analysis tools are utilized to track and analyze the propagation and evolution of ideas through these established network structures.
+
+Large Language Models (LLMs) play a crucial role within this semantic toolkit, specifically in the analysis of idea flow. This particular application of LLMs is highlighted as a significant current interest. The workshop aims to provide a platform for discussing a wide array of other applications for LLMs in related fields.
+
+## Workshop Operations: Recording, Q&A, and Communication
+
+The workshop operates under specific logistical and procedural guidelines. Recording of the proceedings is in progress; participants were notified of this and provided consent during registration. The technical setup for recording includes a single camera focused on the presenter. Audio is captured using four microphones, with an iPhone serving as a backup recording device.
+
+Subject to the consent of individual presenters, videos of the talks—including discussion segments (audio from the discussion and video footage of the presenter only)—are planned for upload to the NEPI project's YouTube Channel following the workshop. The recording setup ensures audience privacy, as the camera is not directed at attendees during discussion periods. Participants requiring more information or wishing to withhold consent for recording are encouraged to approach the organizers.
+
+To facilitate efficient discussions within the large group, a structured question and answer format is implemented. After each presentation, approximately four questions or comments will be collected from the audience. The presenter will then address these points collectively. This approach is designed to optimize time and streamline the interaction process.
+
+Multiple tools are provided to support participant interaction. For asynchronous communication outside of active sessions, an *Etherpad* or *Cryptpad* platform is available (accessible via a QR code). This allows attendees to post comments and questions, and presenters can review and respond to them later. For real-time interaction during sessions, the *Zoom* chat feature is available for both online and in-person attendees to submit questions or comments at any point.
+
+Opportunities for informal networking are integrated into the workshop schedule. Coffee breaks and refreshments are provided at the main workshop venue. Lunch and the workshop reception will take place in room H2051, located down the hall, at the far end of the building, and one floor down. Attendees may walk together to this location. Participation in the workshop dinner is subject to limited seating and prior confirmation.
+
+## Keynote Speakers and Contributions
+
+The workshop features two keynote presentations from distinguished researchers in relevant fields.
+
+The first keynote, titled "Large-scale text analysis for the study of cultural and societal change," was delivered by Nina Tahmasebi and Pierluigi Cassotti. Nina Tahmasebi is the Principal Investigator of the "Change is Key!" research program based in Gothenburg and is affiliated with the University of Gothenburg. Pierluigi Cassotti is a researcher participating in the "Change is Key!" project.
+
+Their collective expertise encompasses semantic change detection, the development of benchmarks for assessing such detection methods, and the broader application of data science methodologies to research questions within the humanities. This focus makes their contribution highly pertinent to the workshop's objectives.
+
+The second keynote speaker was Iryna Gurevych, who presented her talk, "How to InterText? Elevating NLP to the cross-document level," on the following day in the late afternoon. Iryna Gurevych leads the Ubiquitous Knowledge Processing (UKP) Lab at the Technical University Darmstadt.
+
+Her research specializations include information extraction, semantic text processing, and machine learning, with a strong emphasis on applying Natural Language Processing (NLP) techniques to research in the social sciences and humanities. Her work was identified as aligning perfectly with the themes of the workshop.
