@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.11">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jeffrey Wolf">
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>6&nbsp; Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_007.html" rel="next">
+<link href="./chapter_ai-nepi_005.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-fe5eeb5af71a333b155c360431d06b9a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e463572c889c87c7eefd27e1777fa793.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="6&nbsp; Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE – AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta property="og:description" content="The VERITRACE project (2023-2028), an ERC Starting Grant initiative (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU, aims to trace the influence of the early modern ‘ancient wisdom’ or Prisca Sapientia tradition on the development of natural philosophy and science. This tradition is found in texts such as the Chaldean Oracles, Sibylline Oracles, Orphic Hymns, and the Corpus Hermeticum. The project involves large-scale multilingual exploration of app…">
+<meta property="og:image" content="images/ai-nepi_006_slide_01.jpg">
+<meta property="og:site_name" content="AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta name="twitter:title" content="6&nbsp; Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE – AI-NEPI Conference Proceedings - Enhanced Edition">
+<meta name="twitter:description" content="The VERITRACE project (2023-2028), an ERC Starting Grant initiative (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU, aims to trace the influence of the early modern ‘ancient wisdom’ or Prisca Sapientia tradition on the development of natural philosophy and science. This tradition is found in texts such as the Chaldean Oracles, Sibylline Oracles, Orphic Hymns, and the Corpus Hermeticum. The project involves large-scale multilingual exploration of app…">
+<meta name="twitter:image" content="images/ai-nepi_006_slide_01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_006.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A Primer on Large Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenAlex Mapper: Transdisciplinary Investigations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law and Humanities Scholarship</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Chatting with Papers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems in Philosophy and HPSS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Plural pursuit across scales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Text Granularity and Topic Model Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">LLMs for Chemical Knowledge Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interpretable Models for Linguistic Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">LLM for HPS Studies: Analyzing the NHGRI Archive</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">6.1</span> Overview</a></li>
+  <li><a href="#project-foundation-and-objectives" id="toc-project-foundation-and-objectives" class="nav-link" data-scroll-target="#project-foundation-and-objectives"><span class="header-section-number">6.2</span> Project Foundation and Objectives</a></li>
+  <li><a href="#computational-hpss-framework" id="toc-computational-hpss-framework" class="nav-link" data-scroll-target="#computational-hpss-framework"><span class="header-section-number">6.3</span> Computational HPSS Framework</a></li>
+  <li><a href="#data-set-composition-and-sources" id="toc-data-set-composition-and-sources" class="nav-link" data-scroll-target="#data-set-composition-and-sources"><span class="header-section-number">6.4</span> Data Set: Composition and Sources</a></li>
+  <li><a href="#challenges-and-llm-strategy" id="toc-challenges-and-llm-strategy" class="nav-link" data-scroll-target="#challenges-and-llm-strategy"><span class="header-section-number">6.5</span> Challenges and LLM Strategy</a></li>
+  <li><a href="#metadata-enrichment-with-llms-as-judges" id="toc-metadata-enrichment-with-llms-as-judges" class="nav-link" data-scroll-target="#metadata-enrichment-with-llms-as-judges"><span class="header-section-number">6.6</span> Metadata Enrichment with LLMs-as-Judges</a></li>
+  <li><a href="#web-application-and-data-infrastructure" id="toc-web-application-and-data-infrastructure" class="nav-link" data-scroll-target="#web-application-and-data-infrastructure"><span class="header-section-number">6.7</span> Web Application and Data Infrastructure</a></li>
+  <li><a href="#explore-module-corpus-overview" id="toc-explore-module-corpus-overview" class="nav-link" data-scroll-target="#explore-module-corpus-overview"><span class="header-section-number">6.8</span> Explore Module: Corpus Overview</a></li>
+  <li><a href="#search-module-functionality" id="toc-search-module-functionality" class="nav-link" data-scroll-target="#search-module-functionality"><span class="header-section-number">6.9</span> Search Module Functionality</a></li>
+  <li><a href="#analyse-planned-and-read-modules" id="toc-analyse-planned-and-read-modules" class="nav-link" data-scroll-target="#analyse-planned-and-read-modules"><span class="header-section-number">6.10</span> Analyse (Planned) and Read Modules</a></li>
+  <li><a href="#match-module-textual-similarity" id="toc-match-module-textual-similarity" class="nav-link" data-scroll-target="#match-module-textual-similarity"><span class="header-section-number">6.11</span> Match Module: Textual Similarity</a></li>
+  <li><a href="#case-study-newtons-opticks-matching" id="toc-case-study-newtons-opticks-matching" class="nav-link" data-scroll-target="#case-study-newtons-opticks-matching"><span class="header-section-number">6.12</span> Case Study: Newton’s Opticks Matching</a></li>
+  <li><a href="#future-challenges" id="toc-future-challenges" class="nav-link" data-scroll-target="#future-challenges"><span class="header-section-number">6.13</span> Future Challenges</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Show code</button></div></div>
+</div>
+
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jeffrey Wolf <a href="mailto:jeffrey.charles.wolf@vub.be" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Vrije Universiteit Brussel (VUB)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    The VERITRACE project (2023-2028), an ERC Starting Grant initiative (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU, aims to trace the influence of the early modern ‘ancient wisdom’ or Prisca Sapientia tradition on the development of natural philosophy and science. This tradition is found in texts such as the Chaldean Oracles, Sibylline Oracles, Orphic Hymns, and the Corpus Hermeticum. The project involves large-scale multilingual exploration of app…
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="overview" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">6.1</span> Overview</h2>
+<p>The <em>VERITRACE</em> project (2023-2028), an ERC Starting Grant initiative (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU, aims to trace the influence of the early modern ‘ancient wisdom’ or <em>Prisca Sapientia</em> tradition on the development of natural philosophy and science. This tradition is found in texts such as the <em>Chaldean Oracles</em>, <em>Sibylline Oracles</em>, <em>Orphic Hymns</em>, and the <em>Corpus Hermeticum</em>.</p>
+<p>The project involves large-scale multilingual exploration of approximately 430,000 printed texts published between 1540 and 1728. These texts are sourced from <em>Early English Books Online</em> (<em>EEBO</em>), <em>Gallica</em> (French National Library), and the <em>Bavarian State Library</em>, covering at least six languages.</p>
+<p><em>VERITRACE</em> employs computational History, Philosophy, and Sociology of Science (<em>HPSS</em>) methods, including keyword search and textual reuse detection (both lexical and semantic). This approach functions similarly to an “early modern plagiarism detector” and seeks to uncover previously ignored networks of texts, passages, themes, topics, authors, and new patterns in intellectual history.</p>
+<p>Core challenges for the project include variable Optical Character Recognition (OCR) quality from raw library-provided texts (in XML, HOCR, HTML formats) without ground truth page images. Further complexities arise from early modern typography and semantics across multiple languages, alongside the sheer volume of data.</p>
+<p>Large Language Models (<em>LLMs</em>) are utilized in two main capacities:</p>
+<ul>
+<li><p><em>GPT</em>-based <em>LLMs</em> function as ‘LLMs-as-Judges’ for enriching and cleaning metadata. This involves matching <em>VERITRACE</em> records with high-quality metadata from the <em>Universal Short Title Catalogue</em> (<em>USTC</em>). This approach, utilizing a panel of <em>LLMs</em> (Primary, Secondary, Tiebreaker, Expert), currently faces challenges with hallucinations when using open-source models like <em>Llama</em>.</p></li>
+<li><p><em>BERT</em>-based <em>LLMs</em>, specifically <em>Language-agnostic BERT Sentence Embeddings</em> (<em>LaBSE</em>), are used for generating vector embeddings. These embeddings encode semantic meaning for text matching and are implemented within the <em>VERITRACE</em> web application.</p></li>
+</ul>
+<p>A 15-stage data processing pipeline prepares the textual data, which is then indexed in an <em>Elasticsearch</em> backend. The alpha-stage <em>VERITRACE</em> web application, currently hosted locally and not publicly available, includes several modules:</p>
+<ul>
+<li><p>The Explore module provides corpus statistics (e.g., language distribution, documents by decade, sourced from <em>MongoDB</em>) and allows detailed metadata viewing. This includes features for multilingual content identification within texts and experimental page-by-page OCR quality assessment.</p></li>
+<li><p>The Search module, powered by <em>Elasticsearch</em>, enables keyword-based searches with support for complex queries (AND, OR, nested) and proximity queries.</p></li>
+<li><p>The Analyse module is planned to include tools for topic modeling, Latent Semantic Analysis (LSA), and diachronic analysis.</p></li>
+<li><p>The Read module integrates a <em>Mirador</em> viewer for accessing digital facsimiles (PDFs) of the historical texts alongside their metadata.</p></li>
+<li><p>The Match module is designed to find textual similarities. It supports lexical (keyword-based), semantic (vector embedding-based), and hybrid matching techniques. Users can customize parameters and select matching modes (Standard, Comprehensive).</p></li>
+</ul>
+<p>A case study involving matching Newton’s Latin <em>Optice</em> (1719) and English <em>Opticks</em> (1718) demonstrated the Match module’s capabilities. Lexical matching, in standard mode, correctly found no significant cross-language matches. Semantic matching using <em>LaBSE</em> produced conceptually reasonable matches (e.g., similarity scores of 90-92%) but revealed issues with coverage scores and the overall adequacy of the <em>LaBSE</em> model. This inadequacy is potentially due to out-of-domain model collapse when processing historical, multilingual, and OCR-affected text.</p>
+<p>Future work will address challenges such as selecting or fine-tuning more suitable multilingual embedding models (alternatives include <em>XLM-Roberta</em>, <em>intfloat/multilingual-e5-large</em>, historical <em>mBERT</em>). Other challenges include managing semantic change over time in historical texts, mitigating the impact of poor OCR quality (through selective re-OCR or sourcing higher-quality text versions), and ensuring the scalability and performance of the system for the full corpus of 430,000 texts.</p>
+</section>
+<section id="project-foundation-and-objectives" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="project-foundation-and-objectives"><span class="header-section-number">6.2</span> Project Foundation and Objectives</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_01.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> project, subtitled “Traces de la Verité,” is a five-year initiative funded by an <em>European Research Council</em> (<em>ERC</em>) Starting Grant (No.&nbsp;101076836), running from 2023 to 2028. The project is based at the Vrije Universiteit Brussel (<em>VUB</em>) under the leadership of Principal Investigator (PI) Prof.&nbsp;Dr.&nbsp;Cornelis J. Schilt.</p>
+<p>The research team comprises five members: the PI, Dr.&nbsp;Eszter Kovács (a classicist), Dr.&nbsp;Jeffrey Wolf (a historian of science and medicine, serving as the digital humanities lead for this project), Niccolò Cantoni (a historian), and Demetrios Paraschos (a historian). While the team is primarily based in Brussels, Dr.&nbsp;Wolf operates from Berlin. The project’s official website is HTTPS://VERITRACE.EU.</p>
+<p>The central research objective of <em>VERITRACE</em> is to trace the influence of what is termed an early modern ‘ancient wisdom’ or <em>Prisca Sapientia</em> tradition on the development of natural philosophy and science during the early modern period. This tradition is found in a range of texts, including the <em>Chaldean Oracles</em>, the <em>Sibylline Oracles</em>, the <em>Orphic Hymns</em>, and the <em>Corpus Hermeticum</em>, the last of which is particularly noted for its relevance to the history of chemistry. A core collection of 140 works has been identified as representing this ‘ancient wisdom’ tradition, forming a close reading corpus for the project.</p>
+<p>While some connections between prominent scientific figures and these texts are known—for instance, Isaac Newton’s engagement with the <em>Sibylline Oracles</em> and Johannes Kepler’s familiarity with the <em>Corpus Hermeticum</em>—<em>VERITRACE</em> aims to delve deeper. The project seeks to uncover a much broader network of texts and authors who engaged with this tradition, many of whom may be lesser-known and constitute what one scholar has termed the ‘great Unread.’ Dr.&nbsp;Wolf, whose primary historical research focuses on the 18th century (a period that begins as the <em>VERITRACE</em> project’s timeline concludes), is responsible for the digital humanities components of this endeavor.</p>
+</section>
+<section id="computational-hpss-framework" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="computational-hpss-framework"><span class="header-section-number">6.3</span> Computational HPSS Framework</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_02.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> project adopts a <em>Computational History, Philosophy, and Sociology of Science</em> (<em>HPSS</em>) framework to address its research questions. The core methodology involves large-scale multilingual exploration of its textual corpus. This exploration is facilitated by several computational tools and techniques.</p>
+<p>Keyword search capabilities allow for targeted queries within the dataset. A significant focus is placed on identifying textual reuse across the corpus. This includes detecting both direct (lexical) reuse, such as explicit quotations (whether cited or not), and indirect (semantic) reuse, which encompasses paraphrases or subtle allusions that contemporary readers would have recognized (for example, an indirect reference to the <em>Corpus Hermeticum</em>).</p>
+<p>Given the very large and multilingual nature of the corpus, these tools are designed to operate effectively across diverse linguistic and textual materials. The project aims, in effect, to build an “Early Modern Plagiarism Detector.” The primary objective of this computational approach is to uncover networks of texts, passages, themes, topics, and authors that may have been overlooked by traditional historical methods. A secondary objective is the potential discovery of new patterns and insights within the intellectual history and philosophy of science.</p>
+</section>
+<section id="data-set-composition-and-sources" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="data-set-composition-and-sources"><span class="header-section-number">6.4</span> Data Set: Composition and Sources</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_04.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> project utilizes a large, diverse, and multilingual data set composed exclusively of digital texts derived from printed works; handwritten materials are intentionally excluded from its scope. The chronological span of the corpus covers approximately 200 years, beginning in 1540 (a starting point chosen for various, though unspecified, reasons) and concluding in 1728, a date selected because it is shortly after the death of Isaac Newton. The texts within the corpus are in at least six different languages.</p>
+<p>The data is aggregated from three primary multilingual sources:</p>
+<ul>
+<li><p><em>Early English Books Online</em> (<em>EEBO</em>), which is noted as being freely downloadable.</p></li>
+<li><p><em>Gallica</em>, the digital library of the French National Library, from which sources have been downloaded.</p></li>
+<li><p>The <em>Bavarian State Library</em>, which constitutes the largest single data source for the project.</p></li>
+</ul>
+<p>In total, these sources contribute to a corpus of approximately 430,000 texts. The project plans to employ a range of state-of-the-art digital techniques for analysis, including Keyword Search, Text Matching, Topic Modelling, and Sentiment Analysis, among others.</p>
+</section>
+<section id="challenges-and-llm-strategy" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="challenges-and-llm-strategy"><span class="header-section-number">6.5</span> Challenges and LLM Strategy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_05.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> project confronts several core challenges inherent in working with large historical textual datasets. A primary issue is the variable quality of Optical Character Recognition (OCR) in the texts, which are supplied by libraries in raw digital formats such as XML, HOCR, or even HTML files. Critically, these raw texts are provided without corresponding ground truth page images, making OCR error correction difficult and impacting all subsequent data processing stages.</p>
+<p>A second significant challenge lies in handling early modern typography and semantics across at least six different languages, each with its own historical linguistic complexities. Thirdly, the sheer scale of the data—hundreds of thousands of texts printed across Europe over a span of roughly 200 years—presents substantial data management and processing hurdles.</p>
+<p>To address some of these challenges, particularly in text analysis, the project employs Large Language Models (<em>LLMs</em>) in two distinct roles. On the “decoder-side,” <em>GPT</em>-based <em>LLMs</em> are utilized to help enrich and clean the metadata associated with the texts. This involves a methodology referred to as “LLMs-as-Judges.” While this application is part of the project, it is not the primary focus of this particular presentation. The presentation concentrates on the “encoder-side” application of <em>LLMs</em>, where <em>BERT</em>-based models are used to generate embeddings. These embeddings aim to encode the semantic meaning of sentences and passages (defined as short groups of sentences) within the textual corpus, primarily to facilitate text matching tasks.</p>
+</section>
+<section id="metadata-enrichment-with-llms-as-judges" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="metadata-enrichment-with-llms-as-judges"><span class="header-section-number">6.6</span> Metadata Enrichment with LLMs-as-Judges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_06.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>A specific application of <em>LLMs</em> within the <em>VERITRACE</em> project, though not detailed extensively in this presentation, involves their use as “LLMs-as-Judges” for metadata enrichment. The primary motivation for this sub-project is to improve the quality of <em>VERITRACE</em>’s metadata by mapping its records to corresponding entries in the <em>Universal Short Title Catalogue</em> (<em>USTC</em>), a recognized high-quality metadata source available at https://www.ustc.ac.uk.</p>
+<p>Successfully matched records result in “enriched” <em>VERITRACE</em> metadata that is less likely to require extensive manual cleaning. The challenge stems from the fact that while some record mapping can be automated using external identifiers, a majority of records cannot be matched this way, especially since the initial <em>VERITRACE</em> metadata is uncleaned. The alternative, manual comparison of bibliographic details for tens of thousands of record pairs (with each team member initially assigned 10,000 such pairs), is an extremely tedious task.</p>
+<p>To automate this, the project is developing an “LLM Bench,” a panel of multiple <em>LLMs</em>, to evaluate whether a given pair of bibliographic records—one from a low-quality source (<em>VERITRACE</em>) and one from a high-quality source (<em>USTC</em>)—represent the same underlying printed text. This bench is configured with a Primary <em>LLM</em>, a Secondary <em>LLM</em>, a Tiebreaker <em>LLM</em>, and an Expert <em>LLM</em> for handling difficult edge cases.</p>
+<p>The process requires these <em>LLMs</em> not only to judge whether a match exists but also to provide detailed reasoning for their decisions and a confidence level for each judgment. These <em>LLM</em>-generated assessments are then compared against ground truth data, with the <em>VERITRACE</em> team conducting a final review. This system relies on extensive prompt guidelines to direct the <em>LLMs</em> regarding matching criteria and the desired output format, which includes fields like the ground truth status, the <em>LLM</em>’s final decision, a confidence score (e.g., “HIGH (87.7%)”), the decisions of individual models in the bench, key factors considered (such as title similarity, author match, date match, and place match), and a narrative reasoning.</p>
+<p>Currently, this <em>LLM</em>-as-Judges system is a work in progress and is not yet fully functional. A major challenge encountered is the occurrence of hallucinations in the <em>LLM</em> output, where the models (primarily open-source models like <em>Llama</em>, not frontier models) generate information about records that were not part of the input. Attempts to mitigate these hallucinations by requesting more structured output have had mixed results; while structured output can reduce hallucinations, it often leads to the <em>LLMs</em> providing more generic and less helpful responses, especially in their reasoning. The process of finding the optimal balance in prompting and model configuration is described as being “more art than science.” Despite these ongoing challenges, the potential for this system to save significant time is considered substantial, and the project remains open to advice on improving this aspect.</p>
+</section>
+<section id="web-application-and-data-infrastructure" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="web-application-and-data-infrastructure"><span class="header-section-number">6.7</span> Web Application and Data Infrastructure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_08.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> project is developing a web application to provide access to its data and analytical tools. This application is currently in an alpha version and is described as extremely new, to the extent that it had not yet been shared with the full project team prior to this presentation. It is not publicly available and runs on the presenter’s local computer. The demonstration of this application is intended more as a “promise of what we want to do” rather than a showcase of a finished product.</p>
+<p>For semantic analysis within this application, the project is currently testing a <em>BERT</em>-based Large Language Model, specifically <em>LaBSE</em> (<em>Language-agnostic BERT Sentence Embeddings</em>). This model is used to generate vector embeddings intended to represent every passage within the corpus texts. However, a preliminary assessment suggests that <em>LaBSE</em> is “probably not good enough” for the project’s ultimate requirements, even though it demonstrates functionality in some instances.</p>
+<p>Underpinning the web application is a substantial data processing pipeline. This pipeline takes raw text files provided by libraries in formats such as XML, HOCR, and HTML, and processes them for storage and indexing in an <em>Elasticsearch</em> database, which serves as the backend for the website. The pipeline is complex, consisting of 15 distinct stages. Examples of these stages include extracting text into plain text files, generating mappings of all character positions, segmenting the text into meaningful units, and assessing OCR quality. Each of these stages requires careful optimization. The generation of vector embeddings using models like <em>LaBSE</em> occurs towards the end of this multi-stage pipeline, after the initial text processing and cleaning steps.</p>
+</section>
+<section id="explore-module-corpus-overview" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="explore-module-corpus-overview"><span class="header-section-number">6.8</span> Explore Module: Corpus Overview</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_10.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> web application is structured into approximately five main sections: Explore, Search, Match, Analyse, and Read. The “Explore” section is designed to offer users an overview of the corpus through various statistics and to enable detailed inspection of the metadata associated with the texts.</p>
+<p>For corpus-level statistics, this section draws data from a <em>MongoDB</em> database. At the time of presentation, the system contained 427,395 metadata records. These statistics are visualized through several charts, including:</p>
+<ul>
+<li><p>A pie chart for Language Distribution.</p></li>
+<li><p>A pie chart showing Documents by Data Source.</p></li>
+<li><p>A bar chart illustrating Documents by Decade.</p></li>
+<li><p>A bar chart depicting Publication Places.</p></li>
+</ul>
+<p>Within the Explore section, an “<em>Elasticsearch</em> Metadata Explorer” provides functionality for users to browse sample records and examine the rich metadata compiled or generated for each text. Two features are particularly highlighted. First, detailed “Language Information” is provided for each document. This is derived from a language identification process run on every text, capable of analyzing segments as small as approximately 50 characters. This granular approach is crucial for accurately capturing the linguistic makeup of multilingual texts, which might be inadequately described by basic bibliographic metadata (e.g., a book simply labeled “Latin” might contain significant portions in Greek). An example given is a text identified as being 15% Greek and 85% Latin, which can then be classified as “substantively multilingual.”</p>
+<p>Second, the system attempts an “OCR Quality Assessment.” This is a challenging task as it is performed on the raw text without access to ground truth page images. The assessment aims for page-by-page granularity, rather than assigning a single quality score to an entire book. This feature is acknowledged as difficult and experimental. Other metadata fields available for inspection include Document ID, Filename, File Path, Bibliographic Title, Author, Printer, Publication Place, Date, Format, Subject, comprehensive Language Information (including details on multilingual content, secondary languages and confidence scores, and detailed language distribution percentages), OCR Information (including a quality distribution chart), and Document Statistics (such as number of pages, segments, and character length).</p>
+</section>
+<section id="search-module-functionality" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="search-module-functionality"><span class="header-section-number">6.9</span> Search Module Functionality</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_12.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>The “Search” section of the <em>VERITRACE</em> web application is anticipated to be a primary entry point for scholarly users, offering standard keyword search functionalities. This module is powered by an <em>Elasticsearch</em> backend. The version demonstrated during the presentation operates on a prototype corpus comprising 132 files, which represent a small fraction of the total 430,000+ texts. Even for this subset, the index contains 16,991,177 segments and occupies 15.37 GB of storage. It is projected that the index for the full corpus will scale into the terabyte range.</p>
+<p>The search module supports a variety of query types. Users can perform basic keyword searches; for example, a search for “hermes” within the prototype corpus returned 22 documents with a total of 332 matches. More advanced fielded queries allow users to target specific metadata fields, such as searching for “author:kepler ‘hermes’,” which in the prototype identified one document with two matches.</p>
+<p>The system also handles complex queries incorporating Boolean operators (AND, OR) and nested query structures. Furthermore, proximity queries are supported, enabling users to find texts where specified terms appear within a certain word distance of each other, for instance, locating instances where “Hermes” and “Plato” are mentioned within 10 words of one another. The search results are displayed in a table format, providing details such as Filename, Title, Author, Date, Language, a relevance score, the number of segments with hits in the document, and the total number of matches for the query terms. The basic search functionalities are reported to be already operational.</p>
+</section>
+<section id="analyse-planned-and-read-modules" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="analyse-planned-and-read-modules"><span class="header-section-number">6.10</span> Analyse (Planned) and Read Modules</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_14.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>The <em>VERITRACE</em> web application includes an “Analyse” section, which is currently planned and not yet implemented. This section is intended to house various advanced analytical tools. The planned features include:</p>
+<ul>
+<li><p>Topic Modeling capabilities.</p></li>
+<li><p>Latent Semantic Analysis (LSA).</p></li>
+<li><p>Tools for Diachronic Analysis, with the acknowledgment that methods for this are being actively learned and considered, partly based on input from workshop attendees.</p></li>
+</ul>
+<p>In contrast, the “Read” section of the application is already implemented. Its purpose is to provide scholars with the ability to view digital facsimiles of the historical texts within the corpus. This is achieved by offering access to PDF versions of every text. An integrated <em>Mirador</em> viewer is used to display these documents, aiming for a user experience comparable to reading texts on a standard library website. Alongside the document image, users can also access relevant metadata for the text being viewed. The interface for this section shows an image of a historical document page, accompanied by document information fields such as Source Document, Citation, Preferred title of work, Creator, and Title.</p>
+</section>
+<section id="match-module-textual-similarity" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="match-module-textual-similarity"><span class="header-section-number">6.11</span> Match Module: Textual Similarity</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_14.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>The “Match” section of the <em>VERITRACE</em> web application is dedicated to identifying textual reuse and similarities between documents, primarily leveraging vector embeddings. Users can input a “Query Text” and a “Comparison Text” through designated text areas. The module supports various matching scopes: users can compare a single document against another single document, perform multi-document comparisons (for instance, comparing Newton’s Latin <em>Opticks</em> against all of Kepler’s works available in the database), or attempt a corpus-wide match, where one text is compared against the entire <em>VERITRACE</em> corpus. This last option is acknowledged as computationally intensive, with potential challenges in delivering results within an acceptable timeframe for users.</p>
+<p>A “Matching Options Panel” allows users to customize the matching process by adjusting various parameters. The design philosophy is to expose these parameters, such as the minimum similarity score threshold, so that advanced users can fine-tune the search, although default settings will also be available. The module offers three primary match types:</p>
+<ul>
+<li><p>Lexical Matching: This method relies on keyword matching and is effective when texts share similar vocabulary.</p></li>
+<li><p>Semantic Matching: This approach uses vector embeddings to identify conceptually similar passages. It is designed to function across different languages and can detect similarities that are not based on shared vocabulary (e.g., paraphrases).</p></li>
+<li><p>Hybrid Matching: This combines both lexical and semantic techniques, potentially allowing users to assign different weights to each approach.</p></li>
+</ul>
+<p>Additionally, different “Matching Modes” are available. A “Standard Mode” uses default settings. A “Comprehensive Mode” employs more computing power and may take longer to execute, but aims to find a more exhaustive set of matches. The existence of a comprehensive mode implies a faster, possibly more selective, mode for quicker analyses.</p>
+</section>
+<section id="case-study-newtons-opticks-matching" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="case-study-newtons-opticks-matching"><span class="header-section-number">6.12</span> Case Study: Newton’s Opticks Matching</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_16.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>To test and illustrate the “Match” module’s capabilities, a case study involving two editions of Isaac Newton’s <em>Opticks</em> was conducted, serving as sanity checks. The query document was the Latin 1719 edition (<em>Optice: sive de reflexionibus, refractionibus, inflexionibus et coloribus lucis…</em>), and the comparison document was the English 1718 edition (<em>Opticks: Or, A Treatise Of The Reflections, Refractions, Inflections and Colours Of Light</em>).</p>
+<p>The first sanity check involved a lexical match (keyword-based) between the Latin and English editions using the standard matching mode. As expected, due to the language difference, no significant matches were found. However, when using the “Comprehensive Mode,” three matches were identified; these were in English, suggesting that the Latin edition likely contains some English text, possibly in prefatory material.</p>
+<p>To illustrate the output of a lexical match, an example of matching the English <em>Opticks</em> against itself was shown, yielding a normalized match score of 100%, a coverage score of 99.7%, and a quality score of 100.0%. The match details view for such a scenario provides side-by-side displays of source and comparison passages with highlighted terms and similarity scores (100% for identical passages). The summary also includes information like the number of comparisons performed (almost 1.3 million in one instance).</p>
+<p>The second sanity check performed a semantic match between the Latin and English <em>Opticks</em> editions, using the <em>LaBSE</em> model for vector embeddings and the standard matching mode. The expectation was to find significant conceptual similarities, as one text is largely a translation of the other. The results indicated that the matches found “seem reasonable,” even with underlying OCR issues. For example, passages discussing colors in the Latin text were successfully aligned with corresponding passages about colors in the English text, with similarity scores in the example range of 90.35% to 91.77%.</p>
+<p>The summary statistics for this semantic match showed a normalized match score of 58%, a coverage score of 36.9%, and a quality score of 91.2%. The quality score was deemed reasonable and high. The low coverage score was noted as requiring further investigation, though it was posited that this might partially reflect genuine textual differences, as the Latin edition is reportedly longer and potentially quite different from the English one. Despite some reasonable matches, other queries run with the <em>LaBSE</em> model have led to the assessment that it is generally “inadequate for the task.” The hypothesized reason for this inadequacy is an “out-of-domain model collapse,” where the model struggles with the historical language, typography, poor OCR quality, and mixed multilingual content of the <em>VERITRACE</em> corpus, which significantly deviates from its modern training data.</p>
+</section>
+<section id="future-challenges" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="future-challenges"><span class="header-section-number">6.13</span> Future Challenges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_006_slide_21.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 21</figcaption>
+</figure>
+</div>
+<p>Several significant challenges and open questions lie on the horizon for the <em>VERITRACE</em> project. A primary concern is the choice of an appropriate embedding model. While <em>LaBSE</em> was used as a starting point, it is likely insufficient for the project’s needs. Alternative pre-trained multilingual models such as <em>XLM-Roberta</em>, <em>intfloat/multilingual-e5-large</em>, or various historical <em>mBERT</em> models are being considered. However, all these models come with trade-offs concerning accuracy, storage footprint, and inference speed. An alternative strategy under consideration is whether it would be more effective to fine-tune a base embedding model specifically on the <em>VERITRACE</em> historical corpus, given its unique linguistic and material characteristics. This is posed as an open question about the viability of using off-the-shelf models versus the necessity of custom fine-tuning.</p>
+<p>Another complex issue is handling semantic change over time. The project must grapple with how an embedding model can account for the evolution of word meanings and concepts across several centuries (e.g., comparing a text from 1540 with one from 1700) and across different languages, all while attempting to represent them within a unified vector space.</p>
+<p>The persistent problem of poor OCR quality continues to be a major hurdle, as it adversely affects all downstream processing tasks, including fundamental steps like accurately segmenting text into sentences and passages. Re-OCRing the entire corpus of 430,000 texts is not a feasible solution due to resource constraints. Potential mitigation strategies include selectively re-OCRing only the texts identified as having very poor quality, or investing effort in locating and integrating existing, higher-quality digitized versions of these texts from other sources.</p>
+<p>Finally, scaling and performance will become increasingly critical issues. Current queries on a small subset of 132 texts take approximately 15 seconds to complete. Extrapolating this to the full corpus of 430,000 texts raises significant challenges for maintaining acceptable query performance and overall system responsiveness. The project actively welcomes advice and input on addressing these multifaceted challenges.</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create burger menu button
+  const toggleButton = document.createElement('button');
+  toggleButton.className = 'sidebar-toggle';
+  toggleButton.setAttribute('aria-label', 'Toggle sidebar');
+  toggleButton.innerHTML = `
+    <div class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  `;
+  
+  // Create backdrop for mobile
+  const backdrop = document.createElement('div');
+  backdrop.className = 'sidebar-backdrop';
+  
+  // Add elements to page
+  document.body.appendChild(toggleButton);
+  document.body.appendChild(backdrop);
+  
+  // Get sidebar and main content elements
+  const sidebar = document.querySelector('.sidebar') || 
+                 document.querySelector('.quarto-sidebar') || 
+                 document.querySelector('.sidebar-navigation');
+  const mainContent = document.querySelector('main') || 
+                     document.querySelector('.main-content') || 
+                     document.querySelector('.quarto-container') || 
+                     document.body;
+  
+  // State management
+  let sidebarOpen = window.innerWidth > 768; // Start open on desktop, closed on mobile
+  
+  // Initialize sidebar state
+  function initializeSidebar() {
+    if (window.innerWidth <= 768) {
+      sidebarOpen = false;
+    }
+    updateSidebarState();
+  }
+  
+  // Update sidebar state and classes
+  function updateSidebarState() {
+    if (sidebar) {
+      if (sidebarOpen) {
+        sidebar.classList.remove('collapsed');
+        toggleButton.classList.add('sidebar-open');
+        mainContent.classList.add('sidebar-open');
+        mainContent.classList.remove('sidebar-closed');
+        if (window.innerWidth <= 768) {
+          backdrop.classList.add('active');
+        }
+      } else {
+        sidebar.classList.add('collapsed');
+        toggleButton.classList.remove('sidebar-open');
+        mainContent.classList.remove('sidebar-open');
+        mainContent.classList.add('sidebar-closed');
+        backdrop.classList.remove('active');
+      }
+    }
+    
+    // Store state in localStorage
+    localStorage.setItem('sidebarOpen', sidebarOpen);
+  }
+  
+  // Toggle sidebar
+  function toggleSidebar() {
+    sidebarOpen = !sidebarOpen;
+    updateSidebarState();
+  }
+  
+  // Close sidebar (for chapter links)
+  function closeSidebar() {
+    if (window.innerWidth <= 768) { // Only auto-close on mobile
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  }
+  
+  // Event listeners
+  toggleButton.addEventListener('click', toggleSidebar);
+  backdrop.addEventListener('click', toggleSidebar);
+  
+  // Auto-close sidebar when clicking chapter links
+  if (sidebar) {
+    const chapterLinks = sidebar.querySelectorAll('a[href]');
+    chapterLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Small delay to allow navigation to start
+        setTimeout(closeSidebar, 100);
+      });
+    });
+  }
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && !sidebarOpen) {
+      sidebarOpen = true;
+      updateSidebarState();
+    } else if (window.innerWidth <= 768 && sidebarOpen) {
+      sidebarOpen = false;
+      updateSidebarState();
+    }
+  });
+  
+  // Handle escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && sidebarOpen && window.innerWidth <= 768) {
+      closeSidebar();
+    }
+  });
+  
+  // Restore saved state from localStorage
+  const savedState = localStorage.getItem('sidebarOpen');
+  if (savedState !== null) {
+    sidebarOpen = savedState === 'true';
+  }
+  
+  // Initialize
+  initializeSidebar();
+  
+  // Add keyboard navigation support
+  toggleButton.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleSidebar();
+    }
+  });
+  
+  // Improve accessibility
+  toggleButton.setAttribute('role', 'button');
+  toggleButton.setAttribute('tabindex', '0');
+  
+  // Update aria-expanded attribute
+  function updateAriaExpanded() {
+    toggleButton.setAttribute('aria-expanded', sidebarOpen);
+  }
+  
+  // Call updateAriaExpanded whenever sidebar state changes
+  const originalUpdateSidebarState = updateSidebarState;
+  updateSidebarState = function() {
+    originalUpdateSidebarState();
+    updateAriaExpanded();
+  };
+  
+  updateAriaExpanded();
+  
+  // Ensure TOC sticky positioning works properly
+  function ensureTOCSticky() {
+    // Find all possible TOC elements
+    const tocSelectors = [
+      '#TOC',
+      '.table-of-contents',
+      '.quarto-sidebar-toc',
+      '.toc',
+      '.quarto-toc',
+      'nav[role="doc-toc"]',
+      '.margin-sidebar',
+      '.sidebar-right',
+      '.quarto-margin-sidebar',
+      '.column-margin'
+    ];
+    
+    let toc = null;
+    for (const selector of tocSelectors) {
+      toc = document.querySelector(selector);
+      if (toc) break;
+    }
+    
+    if (toc) {
+      console.log('Found TOC element:', toc.className || toc.id);
+      
+      // Force sticky positioning with important styles
+      toc.style.setProperty('position', 'sticky', 'important');
+      toc.style.setProperty('top', '1rem', 'important');
+      toc.style.setProperty('max-height', 'calc(100vh - 2rem)', 'important');
+      toc.style.setProperty('overflow-y', 'auto', 'important');
+      toc.style.setProperty('z-index', '100', 'important');
+      
+      // Ensure parent containers support sticky
+      let parent = toc.parentElement;
+      while (parent && parent !== document.body) {
+        parent.style.setProperty('position', 'relative', 'important');
+        parent.style.setProperty('height', 'auto', 'important');
+        parent = parent.parentElement;
+      }
+      
+      // Add scroll event listener to maintain visibility
+      let lastScrollTop = 0;
+      const scrollHandler = function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Ensure TOC remains visible and properly positioned
+        if (toc && window.innerWidth > 768) {
+          toc.style.setProperty('position', 'sticky', 'important');
+          toc.style.setProperty('top', '1rem', 'important');
+        }
+        
+        lastScrollTop = scrollTop;
+      };
+      
+      // Remove existing scroll listeners to avoid duplicates
+      window.removeEventListener('scroll', scrollHandler);
+      window.addEventListener('scroll', scrollHandler, { passive: true });
+      
+      // Also apply to any nested TOC elements
+      const nestedTocs = toc.querySelectorAll('#TOC, .toc, .table-of-contents');
+      nestedTocs.forEach(nestedToc => {
+        nestedToc.style.setProperty('position', 'sticky', 'important');
+        nestedToc.style.setProperty('top', '0', 'important');
+      });
+    } else {
+      console.log('No TOC element found');
+    }
+  }
+  
+  // Initialize TOC sticky behavior
+  ensureTOCSticky();
+  
+  // Re-initialize periodically to ensure it stays sticky
+  setInterval(ensureTOCSticky, 2000);
+  
+  // Re-initialize on window resize
+  window.addEventListener('resize', function() {
+    setTimeout(ensureTOCSticky, 100);
+  });
+  
+  // Re-initialize if content changes
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.type === 'childList') {
+        setTimeout(ensureTOCSticky, 100);
+      }
+    });
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+  
+  // Force re-initialization after page load
+  window.addEventListener('load', function() {
+    setTimeout(ensureTOCSticky, 500);
+  });
+});
+</script>
+
+<style>
+/* Additional styles for better integration */
+body {
+  overflow-x: hidden;
+}
+
+.sidebar-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure smooth transitions on all relevant elements */
+.sidebar,
+.sidebar-toggle,
+.main-content,
+.sidebar-backdrop {
+  will-change: transform, opacity, margin;
+}
+
+/* Focus styles for accessibility */
+.sidebar-toggle:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on burger icon */
+.burger-icon {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+</style> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_005.html" class="pagination-link" aria-label="Genre Classification for Historical Medical Periodicals">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_007.html" class="pagination-link" aria-label="Explainable AI and Scientific Insights in Humanities">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">abstract:</span><span class="co"> "\n      The VERITRACE project (2023-2028), an ERC Starting Grant initiative\</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co">  \ (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU,\</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co">  \ aims to trace the influence of the early modern 'ancient wisdom' or Prisca Sapientia\</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">  \ tradition on the development of natural philosophy and science. This tradition\</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co">  \ is found in texts such as the Chaldean Oracles, Sibylline Oracles, Orphic Hymns,\</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="co">  \ and the Corpus Hermeticum. The project involves large-scale multilingual exploration\</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co">  \ of app..."</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="an">author:</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co">- affiliation: Vrije Universiteit Brussel (VUB)</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co">  email: jeffrey.charles.wolf@vub.be</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="co">  name: Jeffrey Wolf</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="an">bibliography:</span><span class="co"> bibliography.bib</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="an">date:</span><span class="co"> '2025'</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="co">---</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="fu"># Computational HPSS: Tracing Ancient Wisdom's Influence with VERITRACE</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="fu">## Overview</span></span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a>The *VERITRACE* project (2023-2028), an ERC Starting Grant initiative (101076836) at Vrije Universiteit Brussel (VUB) and accessible via HTTPS://VERITRACE.EU, aims to trace the influence of the early modern 'ancient wisdom' or *Prisca Sapientia* tradition on the development of natural philosophy and science. This tradition is found in texts such as the *Chaldean Oracles*, *Sibylline Oracles*, *Orphic Hymns*, and the *Corpus Hermeticum*.</span>
+<span id="cb1-23"><a href="#cb1-23"></a></span>
+<span id="cb1-24"><a href="#cb1-24"></a>The project involves large-scale multilingual exploration of approximately 430,000 printed texts published between 1540 and 1728. These texts are sourced from *Early English Books Online* (*EEBO*), *Gallica* (French National Library), and the *Bavarian State Library*, covering at least six languages.</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a>*VERITRACE* employs computational History, Philosophy, and Sociology of Science (*HPSS*) methods, including keyword search and textual reuse detection (both lexical and semantic). This approach functions similarly to an "early modern plagiarism detector" and seeks to uncover previously ignored networks of texts, passages, themes, topics, authors, and new patterns in intellectual history.</span>
+<span id="cb1-27"><a href="#cb1-27"></a></span>
+<span id="cb1-28"><a href="#cb1-28"></a>Core challenges for the project include variable Optical Character Recognition (OCR) quality from raw library-provided texts (in XML, HOCR, HTML formats) without ground truth page images. Further complexities arise from early modern typography and semantics across multiple languages, alongside the sheer volume of data.</span>
+<span id="cb1-29"><a href="#cb1-29"></a></span>
+<span id="cb1-30"><a href="#cb1-30"></a>Large Language Models (*LLMs*) are utilized in two main capacities:</span>
+<span id="cb1-31"><a href="#cb1-31"></a></span>
+<span id="cb1-32"><a href="#cb1-32"></a><span class="ss">- </span>*GPT*-based *LLMs* function as 'LLMs-as-Judges' for enriching and cleaning metadata. This involves matching *VERITRACE* records with high-quality metadata from the *Universal Short Title Catalogue* (*USTC*). This approach, utilizing a panel of *LLMs* (Primary, Secondary, Tiebreaker, Expert), currently faces challenges with hallucinations when using open-source models like *Llama*.</span>
+<span id="cb1-33"><a href="#cb1-33"></a></span>
+<span id="cb1-34"><a href="#cb1-34"></a><span class="ss">- </span>*BERT*-based *LLMs*, specifically *Language-agnostic BERT Sentence Embeddings* (*LaBSE*), are used for generating vector embeddings. These embeddings encode semantic meaning for text matching and are implemented within the *VERITRACE* web application.</span>
+<span id="cb1-35"><a href="#cb1-35"></a></span>
+<span id="cb1-36"><a href="#cb1-36"></a>A 15-stage data processing pipeline prepares the textual data, which is then indexed in an *Elasticsearch* backend. The alpha-stage *VERITRACE* web application, currently hosted locally and not publicly available, includes several modules:</span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="ss">- </span>The Explore module provides corpus statistics (e.g., language distribution, documents by decade, sourced from *MongoDB*) and allows detailed metadata viewing. This includes features for multilingual content identification within texts and experimental page-by-page OCR quality assessment.</span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a><span class="ss">- </span>The Search module, powered by *Elasticsearch*, enables keyword-based searches with support for complex queries (AND, OR, nested) and proximity queries.</span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="ss">- </span>The Analyse module is planned to include tools for topic modeling, Latent Semantic Analysis (LSA), and diachronic analysis.</span>
+<span id="cb1-43"><a href="#cb1-43"></a></span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="ss">- </span>The Read module integrates a *Mirador* viewer for accessing digital facsimiles (PDFs) of the historical texts alongside their metadata.</span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a><span class="ss">- </span>The Match module is designed to find textual similarities. It supports lexical (keyword-based), semantic (vector embedding-based), and hybrid matching techniques. Users can customize parameters and select matching modes (Standard, Comprehensive).</span>
+<span id="cb1-47"><a href="#cb1-47"></a></span>
+<span id="cb1-48"><a href="#cb1-48"></a>A case study involving matching Newton's Latin *Optice* (1719) and English *Opticks* (1718) demonstrated the Match module's capabilities. Lexical matching, in standard mode, correctly found no significant cross-language matches. Semantic matching using *LaBSE* produced conceptually reasonable matches (e.g., similarity scores of 90-92%) but revealed issues with coverage scores and the overall adequacy of the *LaBSE* model. This inadequacy is potentially due to out-of-domain model collapse when processing historical, multilingual, and OCR-affected text.</span>
+<span id="cb1-49"><a href="#cb1-49"></a></span>
+<span id="cb1-50"><a href="#cb1-50"></a>Future work will address challenges such as selecting or fine-tuning more suitable multilingual embedding models (alternatives include *XLM-Roberta*, *intfloat/multilingual-e5-large*, historical *mBERT*). Other challenges include managing semantic change over time in historical texts, mitigating the impact of poor OCR quality (through selective re-OCR or sourcing higher-quality text versions), and ensuring the scalability and performance of the system for the full corpus of 430,000 texts.</span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="fu">## Project Foundation and Objectives</span></span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="al">![Slide 01](images/ai-nepi_006_slide_01.jpg)</span></span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a>The *VERITRACE* project, subtitled "Traces de la Verité," is a five-year initiative funded by an *European Research Council* (*ERC*) Starting Grant (No. 101076836), running from 2023 to 2028. The project is based at the Vrije Universiteit Brussel (*VUB*) under the leadership of Principal Investigator (PI) Prof. Dr. Cornelis J. Schilt.</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a>The research team comprises five members: the PI, Dr. Eszter Kovács (a classicist), Dr. Jeffrey Wolf (a historian of science and medicine, serving as the digital humanities lead for this project), Niccolò Cantoni (a historian), and Demetrios Paraschos (a historian). While the team is primarily based in Brussels, Dr. Wolf operates from Berlin. The project's official website is HTTPS://VERITRACE.EU.</span>
+<span id="cb1-59"><a href="#cb1-59"></a></span>
+<span id="cb1-60"><a href="#cb1-60"></a>The central research objective of *VERITRACE* is to trace the influence of what is termed an early modern 'ancient wisdom' or *Prisca Sapientia* tradition on the development of natural philosophy and science during the early modern period. This tradition is found in a range of texts, including the *Chaldean Oracles*, the *Sibylline Oracles*, the *Orphic Hymns*, and the *Corpus Hermeticum*, the last of which is particularly noted for its relevance to the history of chemistry. A core collection of 140 works has been identified as representing this 'ancient wisdom' tradition, forming a close reading corpus for the project.</span>
+<span id="cb1-61"><a href="#cb1-61"></a></span>
+<span id="cb1-62"><a href="#cb1-62"></a>While some connections between prominent scientific figures and these texts are known—for instance, Isaac Newton's engagement with the *Sibylline Oracles* and Johannes Kepler's familiarity with the *Corpus Hermeticum*—*VERITRACE* aims to delve deeper. The project seeks to uncover a much broader network of texts and authors who engaged with this tradition, many of whom may be lesser-known and constitute what one scholar has termed the 'great Unread.' Dr. Wolf, whose primary historical research focuses on the 18th century (a period that begins as the *VERITRACE* project's timeline concludes), is responsible for the digital humanities components of this endeavor.</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="fu">## Computational HPSS Framework</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="al">![Slide 02](images/ai-nepi_006_slide_02.jpg)</span></span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a>The *VERITRACE* project adopts a *Computational History, Philosophy, and Sociology of Science* (*HPSS*) framework to address its research questions. The core methodology involves large-scale multilingual exploration of its textual corpus. This exploration is facilitated by several computational tools and techniques.</span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a>Keyword search capabilities allow for targeted queries within the dataset. A significant focus is placed on identifying textual reuse across the corpus. This includes detecting both direct (lexical) reuse, such as explicit quotations (whether cited or not), and indirect (semantic) reuse, which encompasses paraphrases or subtle allusions that contemporary readers would have recognized (for example, an indirect reference to the *Corpus Hermeticum*).</span>
+<span id="cb1-71"><a href="#cb1-71"></a></span>
+<span id="cb1-72"><a href="#cb1-72"></a>Given the very large and multilingual nature of the corpus, these tools are designed to operate effectively across diverse linguistic and textual materials. The project aims, in effect, to build an "Early Modern Plagiarism Detector." The primary objective of this computational approach is to uncover networks of texts, passages, themes, topics, and authors that may have been overlooked by traditional historical methods. A secondary objective is the potential discovery of new patterns and insights within the intellectual history and philosophy of science.</span>
+<span id="cb1-73"><a href="#cb1-73"></a></span>
+<span id="cb1-74"><a href="#cb1-74"></a><span class="fu">## Data Set: Composition and Sources</span></span>
+<span id="cb1-75"><a href="#cb1-75"></a></span>
+<span id="cb1-76"><a href="#cb1-76"></a><span class="al">![Slide 04](images/ai-nepi_006_slide_04.jpg)</span></span>
+<span id="cb1-77"><a href="#cb1-77"></a></span>
+<span id="cb1-78"><a href="#cb1-78"></a>The *VERITRACE* project utilizes a large, diverse, and multilingual data set composed exclusively of digital texts derived from printed works; handwritten materials are intentionally excluded from its scope. The chronological span of the corpus covers approximately 200 years, beginning in 1540 (a starting point chosen for various, though unspecified, reasons) and concluding in 1728, a date selected because it is shortly after the death of Isaac Newton. The texts within the corpus are in at least six different languages.</span>
+<span id="cb1-79"><a href="#cb1-79"></a></span>
+<span id="cb1-80"><a href="#cb1-80"></a>The data is aggregated from three primary multilingual sources:</span>
+<span id="cb1-81"><a href="#cb1-81"></a></span>
+<span id="cb1-82"><a href="#cb1-82"></a><span class="ss">- </span>*Early English Books Online* (*EEBO*), which is noted as being freely downloadable.</span>
+<span id="cb1-83"><a href="#cb1-83"></a></span>
+<span id="cb1-84"><a href="#cb1-84"></a><span class="ss">- </span>*Gallica*, the digital library of the French National Library, from which sources have been downloaded.</span>
+<span id="cb1-85"><a href="#cb1-85"></a></span>
+<span id="cb1-86"><a href="#cb1-86"></a><span class="ss">- </span>The *Bavarian State Library*, which constitutes the largest single data source for the project.</span>
+<span id="cb1-87"><a href="#cb1-87"></a></span>
+<span id="cb1-88"><a href="#cb1-88"></a>In total, these sources contribute to a corpus of approximately 430,000 texts. The project plans to employ a range of state-of-the-art digital techniques for analysis, including Keyword Search, Text Matching, Topic Modelling, and Sentiment Analysis, among others.</span>
+<span id="cb1-89"><a href="#cb1-89"></a></span>
+<span id="cb1-90"><a href="#cb1-90"></a><span class="fu">## Challenges and LLM Strategy</span></span>
+<span id="cb1-91"><a href="#cb1-91"></a></span>
+<span id="cb1-92"><a href="#cb1-92"></a><span class="al">![Slide 05](images/ai-nepi_006_slide_05.jpg)</span></span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a>The *VERITRACE* project confronts several core challenges inherent in working with large historical textual datasets. A primary issue is the variable quality of Optical Character Recognition (OCR) in the texts, which are supplied by libraries in raw digital formats such as XML, HOCR, or even HTML files. Critically, these raw texts are provided without corresponding ground truth page images, making OCR error correction difficult and impacting all subsequent data processing stages.</span>
+<span id="cb1-95"><a href="#cb1-95"></a></span>
+<span id="cb1-96"><a href="#cb1-96"></a>A second significant challenge lies in handling early modern typography and semantics across at least six different languages, each with its own historical linguistic complexities. Thirdly, the sheer scale of the data—hundreds of thousands of texts printed across Europe over a span of roughly 200 years—presents substantial data management and processing hurdles.</span>
+<span id="cb1-97"><a href="#cb1-97"></a></span>
+<span id="cb1-98"><a href="#cb1-98"></a>To address some of these challenges, particularly in text analysis, the project employs Large Language Models (*LLMs*) in two distinct roles. On the "decoder-side," *GPT*-based *LLMs* are utilized to help enrich and clean the metadata associated with the texts. This involves a methodology referred to as "LLMs-as-Judges." While this application is part of the project, it is not the primary focus of this particular presentation. The presentation concentrates on the "encoder-side" application of *LLMs*, where *BERT*-based models are used to generate embeddings. These embeddings aim to encode the semantic meaning of sentences and passages (defined as short groups of sentences) within the textual corpus, primarily to facilitate text matching tasks.</span>
+<span id="cb1-99"><a href="#cb1-99"></a></span>
+<span id="cb1-100"><a href="#cb1-100"></a><span class="fu">## Metadata Enrichment with LLMs-as-Judges</span></span>
+<span id="cb1-101"><a href="#cb1-101"></a></span>
+<span id="cb1-102"><a href="#cb1-102"></a><span class="al">![Slide 06](images/ai-nepi_006_slide_06.jpg)</span></span>
+<span id="cb1-103"><a href="#cb1-103"></a></span>
+<span id="cb1-104"><a href="#cb1-104"></a>A specific application of *LLMs* within the *VERITRACE* project, though not detailed extensively in this presentation, involves their use as "LLMs-as-Judges" for metadata enrichment. The primary motivation for this sub-project is to improve the quality of *VERITRACE*'s metadata by mapping its records to corresponding entries in the *Universal Short Title Catalogue* (*USTC*), a recognized high-quality metadata source available at https://www.ustc.ac.uk.</span>
+<span id="cb1-105"><a href="#cb1-105"></a></span>
+<span id="cb1-106"><a href="#cb1-106"></a>Successfully matched records result in "enriched" *VERITRACE* metadata that is less likely to require extensive manual cleaning. The challenge stems from the fact that while some record mapping can be automated using external identifiers, a majority of records cannot be matched this way, especially since the initial *VERITRACE* metadata is uncleaned. The alternative, manual comparison of bibliographic details for tens of thousands of record pairs (with each team member initially assigned 10,000 such pairs), is an extremely tedious task.</span>
+<span id="cb1-107"><a href="#cb1-107"></a></span>
+<span id="cb1-108"><a href="#cb1-108"></a>To automate this, the project is developing an "LLM Bench," a panel of multiple *LLMs*, to evaluate whether a given pair of bibliographic records—one from a low-quality source (*VERITRACE*) and one from a high-quality source (*USTC*)—represent the same underlying printed text. This bench is configured with a Primary *LLM*, a Secondary *LLM*, a Tiebreaker *LLM*, and an Expert *LLM* for handling difficult edge cases.</span>
+<span id="cb1-109"><a href="#cb1-109"></a></span>
+<span id="cb1-110"><a href="#cb1-110"></a>The process requires these *LLMs* not only to judge whether a match exists but also to provide detailed reasoning for their decisions and a confidence level for each judgment. These *LLM*-generated assessments are then compared against ground truth data, with the *VERITRACE* team conducting a final review. This system relies on extensive prompt guidelines to direct the *LLMs* regarding matching criteria and the desired output format, which includes fields like the ground truth status, the *LLM*'s final decision, a confidence score (e.g., "HIGH (87.7%)"), the decisions of individual models in the bench, key factors considered (such as title similarity, author match, date match, and place match), and a narrative reasoning.</span>
+<span id="cb1-111"><a href="#cb1-111"></a></span>
+<span id="cb1-112"><a href="#cb1-112"></a>Currently, this *LLM*-as-Judges system is a work in progress and is not yet fully functional. A major challenge encountered is the occurrence of hallucinations in the *LLM* output, where the models (primarily open-source models like *Llama*, not frontier models) generate information about records that were not part of the input. Attempts to mitigate these hallucinations by requesting more structured output have had mixed results; while structured output can reduce hallucinations, it often leads to the *LLMs* providing more generic and less helpful responses, especially in their reasoning. The process of finding the optimal balance in prompting and model configuration is described as being "more art than science." Despite these ongoing challenges, the potential for this system to save significant time is considered substantial, and the project remains open to advice on improving this aspect.</span>
+<span id="cb1-113"><a href="#cb1-113"></a></span>
+<span id="cb1-114"><a href="#cb1-114"></a><span class="fu">## Web Application and Data Infrastructure</span></span>
+<span id="cb1-115"><a href="#cb1-115"></a></span>
+<span id="cb1-116"><a href="#cb1-116"></a><span class="al">![Slide 08](images/ai-nepi_006_slide_08.jpg)</span></span>
+<span id="cb1-117"><a href="#cb1-117"></a></span>
+<span id="cb1-118"><a href="#cb1-118"></a>The *VERITRACE* project is developing a web application to provide access to its data and analytical tools. This application is currently in an alpha version and is described as extremely new, to the extent that it had not yet been shared with the full project team prior to this presentation. It is not publicly available and runs on the presenter's local computer. The demonstration of this application is intended more as a "promise of what we want to do" rather than a showcase of a finished product.</span>
+<span id="cb1-119"><a href="#cb1-119"></a></span>
+<span id="cb1-120"><a href="#cb1-120"></a>For semantic analysis within this application, the project is currently testing a *BERT*-based Large Language Model, specifically *LaBSE* (*Language-agnostic BERT Sentence Embeddings*). This model is used to generate vector embeddings intended to represent every passage within the corpus texts. However, a preliminary assessment suggests that *LaBSE* is "probably not good enough" for the project's ultimate requirements, even though it demonstrates functionality in some instances.</span>
+<span id="cb1-121"><a href="#cb1-121"></a></span>
+<span id="cb1-122"><a href="#cb1-122"></a>Underpinning the web application is a substantial data processing pipeline. This pipeline takes raw text files provided by libraries in formats such as XML, HOCR, and HTML, and processes them for storage and indexing in an *Elasticsearch* database, which serves as the backend for the website. The pipeline is complex, consisting of 15 distinct stages. Examples of these stages include extracting text into plain text files, generating mappings of all character positions, segmenting the text into meaningful units, and assessing OCR quality. Each of these stages requires careful optimization. The generation of vector embeddings using models like *LaBSE* occurs towards the end of this multi-stage pipeline, after the initial text processing and cleaning steps.</span>
+<span id="cb1-123"><a href="#cb1-123"></a></span>
+<span id="cb1-124"><a href="#cb1-124"></a><span class="fu">## Explore Module: Corpus Overview</span></span>
+<span id="cb1-125"><a href="#cb1-125"></a></span>
+<span id="cb1-126"><a href="#cb1-126"></a><span class="al">![Slide 10](images/ai-nepi_006_slide_10.jpg)</span></span>
+<span id="cb1-127"><a href="#cb1-127"></a></span>
+<span id="cb1-128"><a href="#cb1-128"></a>The *VERITRACE* web application is structured into approximately five main sections: Explore, Search, Match, Analyse, and Read. The "Explore" section is designed to offer users an overview of the corpus through various statistics and to enable detailed inspection of the metadata associated with the texts.</span>
+<span id="cb1-129"><a href="#cb1-129"></a></span>
+<span id="cb1-130"><a href="#cb1-130"></a>For corpus-level statistics, this section draws data from a *MongoDB* database. At the time of presentation, the system contained 427,395 metadata records. These statistics are visualized through several charts, including:</span>
+<span id="cb1-131"><a href="#cb1-131"></a></span>
+<span id="cb1-132"><a href="#cb1-132"></a><span class="ss">- </span>A pie chart for Language Distribution.</span>
+<span id="cb1-133"><a href="#cb1-133"></a></span>
+<span id="cb1-134"><a href="#cb1-134"></a><span class="ss">- </span>A pie chart showing Documents by Data Source.</span>
+<span id="cb1-135"><a href="#cb1-135"></a></span>
+<span id="cb1-136"><a href="#cb1-136"></a><span class="ss">- </span>A bar chart illustrating Documents by Decade.</span>
+<span id="cb1-137"><a href="#cb1-137"></a></span>
+<span id="cb1-138"><a href="#cb1-138"></a><span class="ss">- </span>A bar chart depicting Publication Places.</span>
+<span id="cb1-139"><a href="#cb1-139"></a></span>
+<span id="cb1-140"><a href="#cb1-140"></a>Within the Explore section, an "*Elasticsearch* Metadata Explorer" provides functionality for users to browse sample records and examine the rich metadata compiled or generated for each text. Two features are particularly highlighted. First, detailed "Language Information" is provided for each document. This is derived from a language identification process run on every text, capable of analyzing segments as small as approximately 50 characters. This granular approach is crucial for accurately capturing the linguistic makeup of multilingual texts, which might be inadequately described by basic bibliographic metadata (e.g., a book simply labeled "Latin" might contain significant portions in Greek). An example given is a text identified as being 15% Greek and 85% Latin, which can then be classified as "substantively multilingual."</span>
+<span id="cb1-141"><a href="#cb1-141"></a></span>
+<span id="cb1-142"><a href="#cb1-142"></a>Second, the system attempts an "OCR Quality Assessment." This is a challenging task as it is performed on the raw text without access to ground truth page images. The assessment aims for page-by-page granularity, rather than assigning a single quality score to an entire book. This feature is acknowledged as difficult and experimental. Other metadata fields available for inspection include Document ID, Filename, File Path, Bibliographic Title, Author, Printer, Publication Place, Date, Format, Subject, comprehensive Language Information (including details on multilingual content, secondary languages and confidence scores, and detailed language distribution percentages), OCR Information (including a quality distribution chart), and Document Statistics (such as number of pages, segments, and character length).</span>
+<span id="cb1-143"><a href="#cb1-143"></a></span>
+<span id="cb1-144"><a href="#cb1-144"></a><span class="fu">## Search Module Functionality</span></span>
+<span id="cb1-145"><a href="#cb1-145"></a></span>
+<span id="cb1-146"><a href="#cb1-146"></a><span class="al">![Slide 12](images/ai-nepi_006_slide_12.jpg)</span></span>
+<span id="cb1-147"><a href="#cb1-147"></a></span>
+<span id="cb1-148"><a href="#cb1-148"></a>The "Search" section of the *VERITRACE* web application is anticipated to be a primary entry point for scholarly users, offering standard keyword search functionalities. This module is powered by an *Elasticsearch* backend. The version demonstrated during the presentation operates on a prototype corpus comprising 132 files, which represent a small fraction of the total 430,000+ texts. Even for this subset, the index contains 16,991,177 segments and occupies 15.37 GB of storage. It is projected that the index for the full corpus will scale into the terabyte range.</span>
+<span id="cb1-149"><a href="#cb1-149"></a></span>
+<span id="cb1-150"><a href="#cb1-150"></a>The search module supports a variety of query types. Users can perform basic keyword searches; for example, a search for "hermes" within the prototype corpus returned 22 documents with a total of 332 matches. More advanced fielded queries allow users to target specific metadata fields, such as searching for "author:kepler 'hermes'," which in the prototype identified one document with two matches.</span>
+<span id="cb1-151"><a href="#cb1-151"></a></span>
+<span id="cb1-152"><a href="#cb1-152"></a>The system also handles complex queries incorporating Boolean operators (AND, OR) and nested query structures. Furthermore, proximity queries are supported, enabling users to find texts where specified terms appear within a certain word distance of each other, for instance, locating instances where "Hermes" and "Plato" are mentioned within 10 words of one another. The search results are displayed in a table format, providing details such as Filename, Title, Author, Date, Language, a relevance score, the number of segments with hits in the document, and the total number of matches for the query terms. The basic search functionalities are reported to be already operational.</span>
+<span id="cb1-153"><a href="#cb1-153"></a></span>
+<span id="cb1-154"><a href="#cb1-154"></a><span class="fu">## Analyse (Planned) and Read Modules</span></span>
+<span id="cb1-155"><a href="#cb1-155"></a></span>
+<span id="cb1-156"><a href="#cb1-156"></a><span class="al">![Slide 14](images/ai-nepi_006_slide_14.jpg)</span></span>
+<span id="cb1-157"><a href="#cb1-157"></a></span>
+<span id="cb1-158"><a href="#cb1-158"></a>The *VERITRACE* web application includes an "Analyse" section, which is currently planned and not yet implemented. This section is intended to house various advanced analytical tools. The planned features include:</span>
+<span id="cb1-159"><a href="#cb1-159"></a></span>
+<span id="cb1-160"><a href="#cb1-160"></a><span class="ss">- </span>Topic Modeling capabilities.</span>
+<span id="cb1-161"><a href="#cb1-161"></a></span>
+<span id="cb1-162"><a href="#cb1-162"></a><span class="ss">- </span>Latent Semantic Analysis (LSA).</span>
+<span id="cb1-163"><a href="#cb1-163"></a></span>
+<span id="cb1-164"><a href="#cb1-164"></a><span class="ss">- </span>Tools for Diachronic Analysis, with the acknowledgment that methods for this are being actively learned and considered, partly based on input from workshop attendees.</span>
+<span id="cb1-165"><a href="#cb1-165"></a></span>
+<span id="cb1-166"><a href="#cb1-166"></a>In contrast, the "Read" section of the application is already implemented. Its purpose is to provide scholars with the ability to view digital facsimiles of the historical texts within the corpus. This is achieved by offering access to PDF versions of every text. An integrated *Mirador* viewer is used to display these documents, aiming for a user experience comparable to reading texts on a standard library website. Alongside the document image, users can also access relevant metadata for the text being viewed. The interface for this section shows an image of a historical document page, accompanied by document information fields such as Source Document, Citation, Preferred title of work, Creator, and Title.</span>
+<span id="cb1-167"><a href="#cb1-167"></a></span>
+<span id="cb1-168"><a href="#cb1-168"></a><span class="fu">## Match Module: Textual Similarity</span></span>
+<span id="cb1-169"><a href="#cb1-169"></a></span>
+<span id="cb1-170"><a href="#cb1-170"></a><span class="al">![Slide 14](images/ai-nepi_006_slide_14.jpg)</span></span>
+<span id="cb1-171"><a href="#cb1-171"></a></span>
+<span id="cb1-172"><a href="#cb1-172"></a>The "Match" section of the *VERITRACE* web application is dedicated to identifying textual reuse and similarities between documents, primarily leveraging vector embeddings. Users can input a "Query Text" and a "Comparison Text" through designated text areas. The module supports various matching scopes: users can compare a single document against another single document, perform multi-document comparisons (for instance, comparing Newton's Latin *Opticks* against all of Kepler's works available in the database), or attempt a corpus-wide match, where one text is compared against the entire *VERITRACE* corpus. This last option is acknowledged as computationally intensive, with potential challenges in delivering results within an acceptable timeframe for users.</span>
+<span id="cb1-173"><a href="#cb1-173"></a></span>
+<span id="cb1-174"><a href="#cb1-174"></a>A "Matching Options Panel" allows users to customize the matching process by adjusting various parameters. The design philosophy is to expose these parameters, such as the minimum similarity score threshold, so that advanced users can fine-tune the search, although default settings will also be available. The module offers three primary match types:</span>
+<span id="cb1-175"><a href="#cb1-175"></a></span>
+<span id="cb1-176"><a href="#cb1-176"></a><span class="ss">- </span>Lexical Matching: This method relies on keyword matching and is effective when texts share similar vocabulary.</span>
+<span id="cb1-177"><a href="#cb1-177"></a></span>
+<span id="cb1-178"><a href="#cb1-178"></a><span class="ss">- </span>Semantic Matching: This approach uses vector embeddings to identify conceptually similar passages. It is designed to function across different languages and can detect similarities that are not based on shared vocabulary (e.g., paraphrases).</span>
+<span id="cb1-179"><a href="#cb1-179"></a></span>
+<span id="cb1-180"><a href="#cb1-180"></a><span class="ss">- </span>Hybrid Matching: This combines both lexical and semantic techniques, potentially allowing users to assign different weights to each approach.</span>
+<span id="cb1-181"><a href="#cb1-181"></a></span>
+<span id="cb1-182"><a href="#cb1-182"></a>Additionally, different "Matching Modes" are available. A "Standard Mode" uses default settings. A "Comprehensive Mode" employs more computing power and may take longer to execute, but aims to find a more exhaustive set of matches. The existence of a comprehensive mode implies a faster, possibly more selective, mode for quicker analyses.</span>
+<span id="cb1-183"><a href="#cb1-183"></a></span>
+<span id="cb1-184"><a href="#cb1-184"></a><span class="fu">## Case Study: Newton's Opticks Matching</span></span>
+<span id="cb1-185"><a href="#cb1-185"></a></span>
+<span id="cb1-186"><a href="#cb1-186"></a><span class="al">![Slide 16](images/ai-nepi_006_slide_16.jpg)</span></span>
+<span id="cb1-187"><a href="#cb1-187"></a></span>
+<span id="cb1-188"><a href="#cb1-188"></a>To test and illustrate the "Match" module's capabilities, a case study involving two editions of Isaac Newton's *Opticks* was conducted, serving as sanity checks. The query document was the Latin 1719 edition (*Optice: sive de reflexionibus, refractionibus, inflexionibus et coloribus lucis...*), and the comparison document was the English 1718 edition (*Opticks: Or, A Treatise Of The Reflections, Refractions, Inflections and Colours Of Light*).</span>
+<span id="cb1-189"><a href="#cb1-189"></a></span>
+<span id="cb1-190"><a href="#cb1-190"></a>The first sanity check involved a lexical match (keyword-based) between the Latin and English editions using the standard matching mode. As expected, due to the language difference, no significant matches were found. However, when using the "Comprehensive Mode," three matches were identified; these were in English, suggesting that the Latin edition likely contains some English text, possibly in prefatory material.</span>
+<span id="cb1-191"><a href="#cb1-191"></a></span>
+<span id="cb1-192"><a href="#cb1-192"></a>To illustrate the output of a lexical match, an example of matching the English *Opticks* against itself was shown, yielding a normalized match score of 100%, a coverage score of 99.7%, and a quality score of 100.0%. The match details view for such a scenario provides side-by-side displays of source and comparison passages with highlighted terms and similarity scores (100% for identical passages). The summary also includes information like the number of comparisons performed (almost 1.3 million in one instance).</span>
+<span id="cb1-193"><a href="#cb1-193"></a></span>
+<span id="cb1-194"><a href="#cb1-194"></a>The second sanity check performed a semantic match between the Latin and English *Opticks* editions, using the *LaBSE* model for vector embeddings and the standard matching mode. The expectation was to find significant conceptual similarities, as one text is largely a translation of the other. The results indicated that the matches found "seem reasonable," even with underlying OCR issues. For example, passages discussing colors in the Latin text were successfully aligned with corresponding passages about colors in the English text, with similarity scores in the example range of 90.35% to 91.77%.</span>
+<span id="cb1-195"><a href="#cb1-195"></a></span>
+<span id="cb1-196"><a href="#cb1-196"></a>The summary statistics for this semantic match showed a normalized match score of 58%, a coverage score of 36.9%, and a quality score of 91.2%. The quality score was deemed reasonable and high. The low coverage score was noted as requiring further investigation, though it was posited that this might partially reflect genuine textual differences, as the Latin edition is reportedly longer and potentially quite different from the English one. Despite some reasonable matches, other queries run with the *LaBSE* model have led to the assessment that it is generally "inadequate for the task." The hypothesized reason for this inadequacy is an "out-of-domain model collapse," where the model struggles with the historical language, typography, poor OCR quality, and mixed multilingual content of the *VERITRACE* corpus, which significantly deviates from its modern training data.</span>
+<span id="cb1-197"><a href="#cb1-197"></a></span>
+<span id="cb1-198"><a href="#cb1-198"></a><span class="fu">## Future Challenges</span></span>
+<span id="cb1-199"><a href="#cb1-199"></a></span>
+<span id="cb1-200"><a href="#cb1-200"></a><span class="al">![Slide 21](images/ai-nepi_006_slide_21.jpg)</span></span>
+<span id="cb1-201"><a href="#cb1-201"></a></span>
+<span id="cb1-202"><a href="#cb1-202"></a>Several significant challenges and open questions lie on the horizon for the *VERITRACE* project. A primary concern is the choice of an appropriate embedding model. While *LaBSE* was used as a starting point, it is likely insufficient for the project's needs. Alternative pre-trained multilingual models such as *XLM-Roberta*, *intfloat/multilingual-e5-large*, or various historical *mBERT* models are being considered. However, all these models come with trade-offs concerning accuracy, storage footprint, and inference speed. An alternative strategy under consideration is whether it would be more effective to fine-tune a base embedding model specifically on the *VERITRACE* historical corpus, given its unique linguistic and material characteristics. This is posed as an open question about the viability of using off-the-shelf models versus the necessity of custom fine-tuning.</span>
+<span id="cb1-203"><a href="#cb1-203"></a></span>
+<span id="cb1-204"><a href="#cb1-204"></a>Another complex issue is handling semantic change over time. The project must grapple with how an embedding model can account for the evolution of word meanings and concepts across several centuries (e.g., comparing a text from 1540 with one from 1700) and across different languages, all while attempting to represent them within a unified vector space.</span>
+<span id="cb1-205"><a href="#cb1-205"></a></span>
+<span id="cb1-206"><a href="#cb1-206"></a>The persistent problem of poor OCR quality continues to be a major hurdle, as it adversely affects all downstream processing tasks, including fundamental steps like accurately segmenting text into sentences and passages. Re-OCRing the entire corpus of 430,000 texts is not a feasible solution due to resource constraints. Potential mitigation strategies include selectively re-OCRing only the texts identified as having very poor quality, or investing effort in locating and integrating existing, higher-quality digitized versions of these texts from other sources.</span>
+<span id="cb1-207"><a href="#cb1-207"></a></span>
+<span id="cb1-208"><a href="#cb1-208"></a>Finally, scaling and performance will become increasingly critical issues. Current queries on a small subset of 132 texts take approximately 15 seconds to complete. Extrapolating this to the full corpus of 430,000 texts raises significant challenges for maintaining acceptable query performance and overall system responsiveness. The project actively welcomes advice and input on addressing these multifaceted challenges.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

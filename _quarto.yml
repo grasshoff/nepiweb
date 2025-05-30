@@ -124,16 +124,7 @@ format:
     # Social sharing
     open-graph: true
     twitter-card: true
-  pdf:
-    documentclass: book
-    fontfamily: libertinus
-    geometry: 
-      - top=30mm
-      - left=20mm
-      - heightrounded
-    colorlinks: true
-    fig-pos: 'H'
 
 project:
   type: book
-  output-dir: _build
+  output-dir: docs
