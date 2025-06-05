@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,10 +41,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-fe5eeb5af71a333b155c360431d06b9a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-09b140d2d032adf2aedb8b099be3ee13.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e463572c889c87c7eefd27e1777fa793.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -107,24 +72,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -153,15 +103,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="15&nbsp; Time-Aware Language Models – AI-NEPI Conference Proceedings - Enhanced Edition">
-<meta property="og:description" content="The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (TALMs), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current Large Language Models (LLMs), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a Transformer architecture.">
-<meta property="og:image" content="images/ai-nepi_017_slide_01.jpg">
-<meta property="og:site_name" content="AI-NEPI Conference Proceedings - Enhanced Edition">
-<meta name="twitter:title" content="15&nbsp; Time-Aware Language Models – AI-NEPI Conference Proceedings - Enhanced Edition">
-<meta name="twitter:description" content="The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (TALMs), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current Large Language Models (LLMs), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a Transformer architecture.">
-<meta name="twitter:image" content="images/ai-nepi_017_slide_01.jpg">
-<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -183,7 +124,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -206,44 +147,44 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+  <a href="./ai-nepi_001_chapter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A Primer on Large Language Models</span></span></a>
+  <a href="./ai-nepi_003_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">—</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">OpenAlex Mapper: Transdisciplinary Investigations</span></span></a>
+  <a href="./ai-nepi_004_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">—</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+  <a href="./ai-nepi_005_chapter.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Computational HPSS: Tracing Ancient Wisdom’s Influence with VERITRACE</span></span></a>
+  <a href="./ai-nepi_006_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">—</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Scientific Insights in Humanities</span></span></a>
+  <a href="./ai-nepi_007_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">—</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  <a href="./ai-nepi_008_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">—</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -324,35 +265,38 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
-    <h2 id="toc-title">Table of Contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">15.1</span> Overview</a></li>
-  <li><a href="#motivation-for-time-aware-language-models" id="toc-motivation-for-time-aware-language-models" class="nav-link" data-scroll-target="#motivation-for-time-aware-language-models"><span class="header-section-number">15.2</span> Motivation for Time-Aware Language Models</a></li>
-  <li><a href="#text-processing-architectures" id="toc-text-processing-architectures" class="nav-link" data-scroll-target="#text-processing-architectures"><span class="header-section-number">15.3</span> Text Processing Architectures</a></li>
-  <li><a href="#explicit-time-awareness" id="toc-explicit-time-awareness" class="nav-link" data-scroll-target="#explicit-time-awareness"><span class="header-section-number">15.4</span> Explicit Time Awareness</a></li>
-  <li><a href="#temporal-dependence-of-token-probabilities" id="toc-temporal-dependence-of-token-probabilities" class="nav-link" data-scroll-target="#temporal-dependence-of-token-probabilities"><span class="header-section-number">15.5</span> Temporal Dependence of Token Probabilities</a></li>
-  <li><a href="#modeling-time-dependent-probabilities" id="toc-modeling-time-dependent-probabilities" class="nav-link" data-scroll-target="#modeling-time-dependent-probabilities"><span class="header-section-number">15.6</span> Modeling Time-Dependent Probabilities</a></li>
-  <li><a href="#data-source-and-preparation" id="toc-data-source-and-preparation" class="nav-link" data-scroll-target="#data-source-and-preparation"><span class="header-section-number">15.7</span> Data Source and Preparation</a></li>
-  <li><a href="#transformer-model-architecture-and-training" id="toc-transformer-model-architecture-and-training" class="nav-link" data-scroll-target="#transformer-model-architecture-and-training"><span class="header-section-number">15.8</span> <em>Transformer</em> Model Architecture and Training</a></li>
-  <li><a href="#time-transformer-architecture" id="toc-time-transformer-architecture" class="nav-link" data-scroll-target="#time-transformer-architecture"><span class="header-section-number">15.9</span> <em>Time Transformer</em> Architecture</a></li>
-  <li><a href="#experiment-1-learning-synonymic-succession" id="toc-experiment-1-learning-synonymic-succession" class="nav-link" data-scroll-target="#experiment-1-learning-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1: Learning Synonymic Succession</a></li>
-  <li><a href="#experiment-2-learning-changing-co-occurrence" id="toc-experiment-2-learning-changing-co-occurrence" class="nav-link" data-scroll-target="#experiment-2-learning-changing-co-occurrence"><span class="header-section-number">15.11</span> Experiment 2: Learning Changing Co-occurrence</a></li>
-  <li><a href="#proof-of-concept-applications-and-challenges" id="toc-proof-of-concept-applications-and-challenges" class="nav-link" data-scroll-target="#proof-of-concept-applications-and-challenges"><span class="header-section-number">15.12</span> Proof of Concept, Applications, and Challenges</a></li>
+  <li><a href="#time-aware-language-models" id="toc-time-aware-language-models" class="nav-link active" data-scroll-target="#time-aware-language-models"><span class="header-section-number">16</span> Time-Aware Language Models</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview"><span class="header-section-number">16.1</span> Overview</a></li>
+  <li><a href="#motivation-for-time-aware-language-models" id="toc-motivation-for-time-aware-language-models" class="nav-link" data-scroll-target="#motivation-for-time-aware-language-models"><span class="header-section-number">16.2</span> Motivation for Time-Aware Language Models</a></li>
+  <li><a href="#text-processing-architectures" id="toc-text-processing-architectures" class="nav-link" data-scroll-target="#text-processing-architectures"><span class="header-section-number">16.3</span> Text Processing Architectures</a></li>
+  <li><a href="#explicit-time-awareness" id="toc-explicit-time-awareness" class="nav-link" data-scroll-target="#explicit-time-awareness"><span class="header-section-number">16.4</span> Explicit Time Awareness</a></li>
+  <li><a href="#temporal-dependence-of-token-probabilities" id="toc-temporal-dependence-of-token-probabilities" class="nav-link" data-scroll-target="#temporal-dependence-of-token-probabilities"><span class="header-section-number">16.5</span> Temporal Dependence of Token Probabilities</a></li>
+  <li><a href="#modeling-time-dependent-probabilities" id="toc-modeling-time-dependent-probabilities" class="nav-link" data-scroll-target="#modeling-time-dependent-probabilities"><span class="header-section-number">16.6</span> Modeling Time-Dependent Probabilities</a></li>
+  <li><a href="#data-source-and-preparation" id="toc-data-source-and-preparation" class="nav-link" data-scroll-target="#data-source-and-preparation"><span class="header-section-number">16.7</span> Data Source and Preparation</a></li>
+  <li><a href="#transformer-model-architecture-and-training" id="toc-transformer-model-architecture-and-training" class="nav-link" data-scroll-target="#transformer-model-architecture-and-training"><span class="header-section-number">16.8</span> <em>Transformer</em> Model Architecture and Training</a></li>
+  <li><a href="#time-transformer-architecture" id="toc-time-transformer-architecture" class="nav-link" data-scroll-target="#time-transformer-architecture"><span class="header-section-number">16.9</span> <em>Time Transformer</em> Architecture</a></li>
+  <li><a href="#experiment-1-learning-synonymic-succession" id="toc-experiment-1-learning-synonymic-succession" class="nav-link" data-scroll-target="#experiment-1-learning-synonymic-succession"><span class="header-section-number">16.10</span> Experiment 1: Learning Synonymic Succession</a></li>
+  <li><a href="#experiment-2-learning-changing-co-occurrence" id="toc-experiment-2-learning-changing-co-occurrence" class="nav-link" data-scroll-target="#experiment-2-learning-changing-co-occurrence"><span class="header-section-number">16.11</span> Experiment 2: Learning Changing Co-occurrence</a></li>
+  <li><a href="#proof-of-concept-applications-and-challenges" id="toc-proof-of-concept-applications-and-challenges" class="nav-link" data-scroll-target="#proof-of-concept-applications-and-challenges"><span class="header-section-number">16.12</span> Proof of Concept, Applications, and Challenges</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Show code</button></div></div>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-body">
+<div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -366,7 +310,7 @@ window.Quarto = {
       </div>
   </div>
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
       
     <div>
@@ -382,7 +326,7 @@ window.Quarto = {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (TALMs), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current Large Language Models (LLMs), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a <em>Transformer</em> architecture.
+    <p>The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (TALMs), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current Large Language Models (LLMs), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a <em>Transformer</em> architecture.</p>
   </div>
 </div>
 
@@ -390,8 +334,10 @@ window.Quarto = {
 </header>
 
 
-<section id="overview" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">15.1</span> Overview</h2>
+<section id="time-aware-language-models" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Time-Aware Language Models</h1>
+<section id="overview" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">16.1</span> Overview</h2>
 <p>The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (<em>TALMs</em>), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current <em>Large Language Models</em> (<em>LLMs</em>), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a <em>Transformer</em> architecture.</p>
 <p>The technical approach modifies a standard <em>Transformer</em> decoder model by injecting time data, represented as a non-trainable, min-max normalized day of the year, into the token embeddings. This allows the model to learn how the probability distribution of tokens depends on time.</p>
 <p>A proof-of-concept implementation utilizes a small generative <em>LLM</em> trained on a specific dataset: daily weather reports from the UK Met Office digital archive for the years 2018-2024. This dataset consists of approximately 2,500 reports, each 150-200 words long, characterized by a limited vocabulary and repetitive language. The text processing involves text vectorization with standardization (lower and strip punctuation) and no sub-word tokenization, resulting in a vocabulary of 3,395 words.</p>
@@ -404,8 +350,8 @@ window.Quarto = {
 <p>The proof of concept indicates that <em>Transformer</em>-based <em>LLMs</em> can be made time-aware efficiently by adding a temporal dimension to the token embedding. Potential applications include providing a foundation for downstream tasks on historical data, enabling instruction-tuned models to “talk to a specific time,” and modeling dependence on other metadata dimensions (country, genre). Challenges include uncertainty regarding the efficiency of fine-tuning due to architectural changes, the need for data curation (including timestamping token sequences), and the loss of metadata-free self-supervised learning benefits. An alternative approach involving a targeted encoder model or changing the training task (e.g., predicting document date) is also considered.</p>
 <p>Discussion points include the potential for modeling semantic shift over time using this approach, the importance of persistent identifiers for source tracking, existing literature on time-aware <em>LLMs</em> and semantic change detection (specifically mentioning encoder-based models and “temporal heads” in foundational models), and a theoretical discussion on whether explicit time injection is necessary given that temporal information is implicitly present in other factors.</p>
 </section>
-<section id="motivation-for-time-aware-language-models" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="motivation-for-time-aware-language-models"><span class="header-section-number">15.2</span> Motivation for Time-Aware Language Models</h2>
+<section id="motivation-for-time-aware-language-models" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="motivation-for-time-aware-language-models"><span class="header-section-number">16.2</span> Motivation for Time-Aware Language Models</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_01.jpg" class="img-fluid figure-img"></p>
@@ -414,8 +360,8 @@ window.Quarto = {
 </div>
 <p>Current <em>Large Language Models</em> (<em>LLMs</em>) exhibit only an implicit understanding of time. This temporal understanding is derived statistically from the patterns observed within their training data. Introducing explicit time awareness into these models is identified as a beneficial enhancement, particularly for their application in historical analysis and potentially other fields where temporal context is crucial.</p>
 </section>
-<section id="text-processing-architectures" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="text-processing-architectures"><span class="header-section-number">15.3</span> Text Processing Architectures</h2>
+<section id="text-processing-architectures" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="text-processing-architectures"><span class="header-section-number">16.3</span> Text Processing Architectures</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_01.jpg" class="img-fluid figure-img"></p>
@@ -424,8 +370,8 @@ window.Quarto = {
 </div>
 <p>The primary neural network architectures employed for processing text have evolved. Historically, around 2017, <em>Long Short-Term Memory</em> (<em>LSTM</em>) networks were the dominant architecture for tasks such as next-token prediction. As of approximately 2025, the landscape has shifted, with <em>Transformer</em> networks becoming the primary architecture utilized for next-token prediction and other text processing tasks.</p>
 </section>
-<section id="explicit-time-awareness" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="explicit-time-awareness"><span class="header-section-number">15.4</span> Explicit Time Awareness</h2>
+<section id="explicit-time-awareness" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="explicit-time-awareness"><span class="header-section-number">16.4</span> Explicit Time Awareness</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_04.jpg" class="img-fluid figure-img"></p>
@@ -434,31 +380,31 @@ window.Quarto = {
 </div>
 <p>The concept is that <em>Large Language Models</em> can be endowed with explicit time awareness. This involves enabling the models to learn and subsequently reproduce patterns within their training data that change as a function of time. A proof of concept for this approach is based on the implementation using a small generative <em>LLM</em>.</p>
 </section>
-<section id="temporal-dependence-of-token-probabilities" class="level2" data-number="15.5">
-<h2 data-number="15.5" class="anchored" data-anchor-id="temporal-dependence-of-token-probabilities"><span class="header-section-number">15.5</span> Temporal Dependence of Token Probabilities</h2>
+<section id="temporal-dependence-of-token-probabilities" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="temporal-dependence-of-token-probabilities"><span class="header-section-number">16.5</span> Temporal Dependence of Token Probabilities</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_05.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p>Standard <em>Large Language Models</em> estimate the probability distribution over their vocabulary for the next token, <span class="math inline">x_n</span>, conditioned on a sequence of preceding tokens, <span class="math inline">x_1, ..., x_{n-1}</span>. This is formally expressed as <span class="math inline">p(x_n | x_1, ..., x_{n-1})</span>.</p>
-<p>However, in real-world scenarios, the probability of a token given its context is not static; it is dependent on time, <span class="math inline">t</span>. This temporal dependence is represented as <span class="math inline">p(x_n | x_1, ..., x_{n-1}, t)</span>. Consequently, the probability of an entire sequence of tokens, <span class="math inline">x_1, x_2, ..., x_n</span>, generated at a specific time <span class="math inline">t</span>, is the product of these time-dependent conditional probabilities for each token in the sequence: <span class="math inline">p(x_1, x_2, ..., x_n | t) = \prod_{k=1}^{n} p(x_k | x_1, x_2, ..., x_{k-1}, t)</span>. During inference, current <em>LLMs</em> can only reflect the temporal drift observed in the underlying distribution of token sequences through in-context learning, which is an implicit mechanism.</p>
+<p>Standard <em>Large Language Models</em> estimate the probability distribution over their vocabulary for the next token, <span class="math inline">\(x_n\)</span>, conditioned on a sequence of preceding tokens, <span class="math inline">\(x_1, ..., x_{n-1}\)</span>. This is formally expressed as <span class="math inline">\(p(x_n | x_1, ..., x_{n-1})\)</span>.</p>
+<p>However, in real-world scenarios, the probability of a token given its context is not static; it is dependent on time, <span class="math inline">\(t\)</span>. This temporal dependence is represented as <span class="math inline">\(p(x_n | x_1, ..., x_{n-1}, t)\)</span>. Consequently, the probability of an entire sequence of tokens, <span class="math inline">\(x_1, x_2, ..., x_n\)</span>, generated at a specific time <span class="math inline">\(t\)</span>, is the product of these time-dependent conditional probabilities for each token in the sequence: <span class="math inline">\(p(x_1, x_2, ..., x_n | t) = \prod_{k=1}^{n} p(x_k | x_1, x_2, ..., x_{k-1}, t)\)</span>. During inference, current <em>LLMs</em> can only reflect the temporal drift observed in the underlying distribution of token sequences through in-context learning, which is an implicit mechanism.</p>
 </section>
-<section id="modeling-time-dependent-probabilities" class="level2" data-number="15.6">
-<h2 data-number="15.6" class="anchored" data-anchor-id="modeling-time-dependent-probabilities"><span class="header-section-number">15.6</span> Modeling Time-Dependent Probabilities</h2>
+<section id="modeling-time-dependent-probabilities" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="modeling-time-dependent-probabilities"><span class="header-section-number">16.6</span> Modeling Time-Dependent Probabilities</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_07.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 07</figcaption>
 </figure>
 </div>
-<p>A key challenge is explicitly modeling the time-dependent probability of the next token, <span class="math inline">p(x_n | x_1, ..., x_{n-1}, t)</span>. An approach involving time slicing, where separate models are trained for distinct time periods, is considered extremely data inefficient.</p>
-<p>The proposed solution is a <em>Time Transformer</em> architecture. This method involves adding a temporal dimension to the latent semantic features of each token. The combined embedding for a token <span class="math inline">x</span> at time <span class="math inline">t</span> is represented as a vector <span class="math inline">E(x, t) = \{e_1(x), e_2(x), ..., e_{d-1}(x), \phi(t)\}</span>, where <span class="math inline">e_i(x)</span> are the standard semantic features and <span class="math inline">\phi(t)</span> is a feature representing time. This sequence of time-aware embeddings, <span class="math inline">[E(x_1, t), E(x_2, t), ..., E(x_{n-1}, t)]</span>, is then fed into a <em>Transformer</em> model to predict the time-dependent probability of the next token, <span class="math inline">p_\theta(x_n | x_1, ..., x_{n-1}, t)</span>.</p>
-<p>The training objective for this model is to minimize the negative log-likelihood across the entire dataset, given by <span class="math inline">\min_\theta - \sum_{i=1}^N \sum_{k=1}^{n^{(i)}} \log p_\theta(x_k^{(i)} | x_1^{(i)}, ..., x_{k-1}^{(i)}, t^{(i)})</span>, where the summation is over all sequences <span class="math inline">i</span> in the dataset, each with length <span class="math inline">n^{(i)}</span> and associated time <span class="math inline">t^{(i)}</span>. This approach injects time directly into the representation of every token, enabling the model to learn precisely how strongly or weakly the temporal dimension influences each token’s probability.</p>
+<p>A key challenge is explicitly modeling the time-dependent probability of the next token, <span class="math inline">\(p(x_n | x_1, ..., x_{n-1}, t)\)</span>. An approach involving time slicing, where separate models are trained for distinct time periods, is considered extremely data inefficient.</p>
+<p>The proposed solution is a <em>Time Transformer</em> architecture. This method involves adding a temporal dimension to the latent semantic features of each token. The combined embedding for a token <span class="math inline">\(x\)</span> at time <span class="math inline">\(t\)</span> is represented as a vector <span class="math inline">\(E(x, t) = \{e_1(x), e_2(x), ..., e_{d-1}(x), \phi(t)\}\)</span>, where <span class="math inline">\(e_i(x)\)</span> are the standard semantic features and <span class="math inline">\(\phi(t)\)</span> is a feature representing time. This sequence of time-aware embeddings, <span class="math inline">\([E(x_1, t), E(x_2, t), ..., E(x_{n-1}, t)]\)</span>, is then fed into a <em>Transformer</em> model to predict the time-dependent probability of the next token, <span class="math inline">\(p_\theta(x_n | x_1, ..., x_{n-1}, t)\)</span>.</p>
+<p>The training objective for this model is to minimize the negative log-likelihood across the entire dataset, given by <span class="math inline">\(\min_\theta - \sum_{i=1}^N \sum_{k=1}^{n^{(i)}} \log p_\theta(x_k^{(i)} | x_1^{(i)}, ..., x_{k-1}^{(i)}, t^{(i)})\)</span>, where the summation is over all sequences <span class="math inline">\(i\)</span> in the dataset, each with length <span class="math inline">\(n^{(i)}\)</span> and associated time <span class="math inline">\(t^{(i)}\)</span>. This approach injects time directly into the representation of every token, enabling the model to learn precisely how strongly or weakly the temporal dimension influences each token’s probability.</p>
 </section>
-<section id="data-source-and-preparation" class="level2" data-number="15.7">
-<h2 data-number="15.7" class="anchored" data-anchor-id="data-source-and-preparation"><span class="header-section-number">15.7</span> Data Source and Preparation</h2>
+<section id="data-source-and-preparation" class="level2" data-number="16.7">
+<h2 data-number="16.7" class="anchored" data-anchor-id="data-source-and-preparation"><span class="header-section-number">16.7</span> Data Source and Preparation</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_10.jpg" class="img-fluid figure-img"></p>
@@ -468,8 +414,8 @@ window.Quarto = {
 <p>The data source utilized for the proof-of-concept implementation consists of Met Office Weather reports. This dataset is characterized by a limited vocabulary and the use of simple, repetitive language, making it suitable for initial experimentation with a small model. The reports are provided by the Met Office, the UK’s national meteorological service, and past reports are accessible through their digital archive at https://digital.nmla.metoffice.gov.uk/.</p>
 <p>The specific dataset used comprises daily reports covering the years 2018 through 2024, totaling approximately 2,500 reports. Each report is between 150 and 200 words in length. Text processing is performed using <code>tf.keras.layers.TextVectorization</code> with the standardization setting <code>standardize="lower_and_strip_punctuation"</code>. This process involves neglecting case and interpunctuation, and notably, no sub-word tokenization is applied. This results in a vocabulary size of 3,395 unique words. The choice of a small model and dataset relates conceptually to research exploring the capabilities of small language models, such as the work described in the paper “<em>TinyStories: How Small Can Language Models Be and Still Speak Coherent English?</em>”.</p>
 </section>
-<section id="transformer-model-architecture-and-training" class="level2" data-number="15.8">
-<h2 data-number="15.8" class="anchored" data-anchor-id="transformer-model-architecture-and-training"><span class="header-section-number">15.8</span> <em>Transformer</em> Model Architecture and Training</h2>
+<section id="transformer-model-architecture-and-training" class="level2" data-number="16.8">
+<h2 data-number="16.8" class="anchored" data-anchor-id="transformer-model-architecture-and-training"><span class="header-section-number">16.8</span> <em>Transformer</em> Model Architecture and Training</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_12.jpg" class="img-fluid figure-img"></p>
@@ -480,8 +426,8 @@ window.Quarto = {
 <p>The model has a total of 39 million parameters, occupying approximately 150 MB, which is considerably smaller than large models like <em>GPT-4</em>, which has 1.8 trillion parameters distributed across 120 layers. Training is conducted using 2 x A100 GPUs, achieving a speed of 11 seconds per epoch. The code implementation for this model is available on GitHub at https://github.com/j-buettner/time_transformer.</p>
 <p>The training process demonstrates that the model learns to reproduce the language style and patterns of the weather report dataset effectively. For instance, given the seed sequence “During the night, a band …”, the model generates text such as “… of rain moved into scotland northern ireland and northern england outbreaks of rain continued to move across northern england and wales it stayed largely dry with clear spells and a few scattered showers in the north and west elsewhere there were plenty of clear spells and a few fog patches and overall it was a mild night across the south of the uk ….”. Model performance is tracked using accuracy, visualized in a line graph showing training and validation accuracy over 50 epochs. The training accuracy exhibits a steady increase, while the validation accuracy increases initially before plateauing.</p>
 </section>
-<section id="time-transformer-architecture" class="level2" data-number="15.9">
-<h2 data-number="15.9" class="anchored" data-anchor-id="time-transformer-architecture"><span class="header-section-number">15.9</span> <em>Time Transformer</em> Architecture</h2>
+<section id="time-transformer-architecture" class="level2" data-number="16.9">
+<h2 data-number="16.9" class="anchored" data-anchor-id="time-transformer-architecture"><span class="header-section-number">16.9</span> <em>Time Transformer</em> Architecture</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_15.jpg" class="img-fluid figure-img"></p>
@@ -491,8 +437,8 @@ window.Quarto = {
 <p>The <em>Time Transformer</em> architecture is created with a minimal adjustment to the vanilla <em>Transformer</em> model. The input now includes both Text Input and Time Data. The Text Input is processed by an Embedding Layer, while the Time Data is processed by a dedicated Time Embedding layer.</p>
 <p>The outputs from the standard Embedding Layer and the Time Embedding layer are combined. This combined embedding is then fed into the Casual Masking and Positional Encoding layers. The subsequent layers, including the Decoder Layers and the Final Dense Layer, retain the same structure as the vanilla model. The time dimension is represented as a non-trainable, min-max normalized value corresponding to the day of the year. The time embedding is calculated using the formula <code>time embedding = (day of year - 1) / (365 - 1)</code>, normalizing the day of the year (1 to 365) to a range between 0 and 1.</p>
 </section>
-<section id="experiment-1-learning-synonymic-succession" class="level2" data-number="15.10">
-<h2 data-number="15.10" class="anchored" data-anchor-id="experiment-1-learning-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1: Learning Synonymic Succession</h2>
+<section id="experiment-1-learning-synonymic-succession" class="level2" data-number="16.10">
+<h2 data-number="16.10" class="anchored" data-anchor-id="experiment-1-learning-synonymic-succession"><span class="header-section-number">16.10</span> Experiment 1: Learning Synonymic Succession</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_16.jpg" class="img-fluid figure-img"></p>
@@ -502,8 +448,8 @@ window.Quarto = {
 <p>The first experiment aims to evaluate the model’s ability to efficiently learn temporal drift within the underlying data distribution, specifically focusing on synonymic succession. This involves injecting synthetic drift into the training data by implementing a time-dependent replacement rule: the word “rain” is replaced by the phrase “liquid sunshine”. The probability of this replacement occurring follows a sigmoid curve across the days of the year, ranging from Day 0 to Day 365. The probability starts near 0.00 at the beginning of the year and increases to near 1.00 by the end of the year, with the most significant increase occurring around Day 180.</p>
 <p>The evaluation method involves checking whether this injected time dependence is accurately reproduced in the token sequences predicted by the model, generating a separate sequence for each day of the year. The presentation also notes observed seasonal patterns in the real weather data, illustrated by bar charts. One chart shows the monthly occurrences of “Rain and Snow” versus “Rain Only”, indicating that “Rain and Snow” is more frequent in the later months (September to December), while “Rain Only” is more frequent in the earlier months (January to April). Another chart depicts the monthly occurrences of terms related to heat (“Hot”, “Warm”) versus terms related to cold and snow (“Snow”, “Sleet”, “Wintry”), clearly showing that “Snow”, “Sleet”, and “Wintry” terms are more prevalent in the winter months (January, February, March, November, December), while “Hot” and “Warm” terms are more frequent in the summer months (June, July, August).</p>
 </section>
-<section id="experiment-2-learning-changing-co-occurrence" class="level2" data-number="15.11">
-<h2 data-number="15.11" class="anchored" data-anchor-id="experiment-2-learning-changing-co-occurrence"><span class="header-section-number">15.11</span> Experiment 2: Learning Changing Co-occurrence</h2>
+<section id="experiment-2-learning-changing-co-occurrence" class="level2" data-number="16.11">
+<h2 data-number="16.11" class="anchored" data-anchor-id="experiment-2-learning-changing-co-occurrence"><span class="header-section-number">16.11</span> Experiment 2: Learning Changing Co-occurrence</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_18.jpg" class="img-fluid figure-img"></p>
@@ -513,8 +459,8 @@ window.Quarto = {
 <p>The second experiment also aims to evaluate the efficient learning of temporal drift, focusing on a changing co-occurrence pattern, specifically termed ‘fixation of a collocation’ from a variable to an obligatory relationship. This involves injecting a synthetic time-dependent change into the training data: any instance of the word “Rain” followed by any word other than “and” is synthetically altered to become “rain and snow”. This process is described as analogous to the linguistic concept of the fixation of a collocation, citing “<em>bread and butter</em>” as a common example.</p>
 <p>The evaluation is presented through a bar chart titled “Monthly Comparison of”Rain and Snow” vs.&nbsp;“Rain Only” Occurrences” based on the predicted sequences generated for each day of the year. The y-axis quantifies the occurrences of “rain” only versus “rain and snow” in these predictions. The chart visually demonstrates that the blue bars representing “Rain and Snow” occurrences are higher in the later months (September to December), while the green bars representing “Rain Only” occurrences are higher in the earlier months (January to April), effectively reproducing the injected synthetic drift pattern. Example predicted sequences for Day 1 and Day 363 illustrate this learned pattern, both showing “heavy rain and snow”. Further analysis is presented via an attention chart titled “Attention from ‘snow’ to previous 10 tokens (Head 5)”. This bar chart displays the attention weights from the token ‘snow’ to the preceding 10 tokens. The bar corresponding to “rain” exhibits the highest attention weight, approximately 0.45, indicating that the model has learned a strong associative link between “rain” and “snow” within this specific context.</p>
 </section>
-<section id="proof-of-concept-applications-and-challenges" class="level2" data-number="15.12">
-<h2 data-number="15.12" class="anchored" data-anchor-id="proof-of-concept-applications-and-challenges"><span class="header-section-number">15.12</span> Proof of Concept, Applications, and Challenges</h2>
+<section id="proof-of-concept-applications-and-challenges" class="level2" data-number="16.12">
+<h2 data-number="16.12" class="anchored" data-anchor-id="proof-of-concept-applications-and-challenges"><span class="header-section-number">16.12</span> Proof of Concept, Applications, and Challenges</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_21.jpg" class="img-fluid figure-img"></p>
@@ -527,292 +473,10 @@ window.Quarto = {
 <p>However, several challenges must be addressed for practical application. It is currently unclear whether fine-tuning the modified architecture is possible and efficient. The approach also necessitates significant data curation, particularly the accurate determination of the generation time for each token sequence, which represents a loss of the metadata-free benefit typically associated with self-supervised learning. Accurately timestamping historical data is identified as a key challenge. An alternative direction considered is the development of a modest, targeted encoder model for time-aware tasks.</p>
 
 
-<!-- -->
-
+</section>
 </section>
 
 </main> <!-- /main -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Create burger menu button
-  const toggleButton = document.createElement('button');
-  toggleButton.className = 'sidebar-toggle';
-  toggleButton.setAttribute('aria-label', 'Toggle sidebar');
-  toggleButton.innerHTML = `
-    <div class="burger-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  `;
-  
-  // Create backdrop for mobile
-  const backdrop = document.createElement('div');
-  backdrop.className = 'sidebar-backdrop';
-  
-  // Add elements to page
-  document.body.appendChild(toggleButton);
-  document.body.appendChild(backdrop);
-  
-  // Get sidebar and main content elements
-  const sidebar = document.querySelector('.sidebar') || 
-                 document.querySelector('.quarto-sidebar') || 
-                 document.querySelector('.sidebar-navigation');
-  const mainContent = document.querySelector('main') || 
-                     document.querySelector('.main-content') || 
-                     document.querySelector('.quarto-container') || 
-                     document.body;
-  
-  // State management
-  let sidebarOpen = window.innerWidth > 768; // Start open on desktop, closed on mobile
-  
-  // Initialize sidebar state
-  function initializeSidebar() {
-    if (window.innerWidth <= 768) {
-      sidebarOpen = false;
-    }
-    updateSidebarState();
-  }
-  
-  // Update sidebar state and classes
-  function updateSidebarState() {
-    if (sidebar) {
-      if (sidebarOpen) {
-        sidebar.classList.remove('collapsed');
-        toggleButton.classList.add('sidebar-open');
-        mainContent.classList.add('sidebar-open');
-        mainContent.classList.remove('sidebar-closed');
-        if (window.innerWidth <= 768) {
-          backdrop.classList.add('active');
-        }
-      } else {
-        sidebar.classList.add('collapsed');
-        toggleButton.classList.remove('sidebar-open');
-        mainContent.classList.remove('sidebar-open');
-        mainContent.classList.add('sidebar-closed');
-        backdrop.classList.remove('active');
-      }
-    }
-    
-    // Store state in localStorage
-    localStorage.setItem('sidebarOpen', sidebarOpen);
-  }
-  
-  // Toggle sidebar
-  function toggleSidebar() {
-    sidebarOpen = !sidebarOpen;
-    updateSidebarState();
-  }
-  
-  // Close sidebar (for chapter links)
-  function closeSidebar() {
-    if (window.innerWidth <= 768) { // Only auto-close on mobile
-      sidebarOpen = false;
-      updateSidebarState();
-    }
-  }
-  
-  // Event listeners
-  toggleButton.addEventListener('click', toggleSidebar);
-  backdrop.addEventListener('click', toggleSidebar);
-  
-  // Auto-close sidebar when clicking chapter links
-  if (sidebar) {
-    const chapterLinks = sidebar.querySelectorAll('a[href]');
-    chapterLinks.forEach(link => {
-      link.addEventListener('click', function(e) {
-        // Small delay to allow navigation to start
-        setTimeout(closeSidebar, 100);
-      });
-    });
-  }
-  
-  // Handle window resize
-  window.addEventListener('resize', function() {
-    if (window.innerWidth > 768 && !sidebarOpen) {
-      sidebarOpen = true;
-      updateSidebarState();
-    } else if (window.innerWidth <= 768 && sidebarOpen) {
-      sidebarOpen = false;
-      updateSidebarState();
-    }
-  });
-  
-  // Handle escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && sidebarOpen && window.innerWidth <= 768) {
-      closeSidebar();
-    }
-  });
-  
-  // Restore saved state from localStorage
-  const savedState = localStorage.getItem('sidebarOpen');
-  if (savedState !== null) {
-    sidebarOpen = savedState === 'true';
-  }
-  
-  // Initialize
-  initializeSidebar();
-  
-  // Add keyboard navigation support
-  toggleButton.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      toggleSidebar();
-    }
-  });
-  
-  // Improve accessibility
-  toggleButton.setAttribute('role', 'button');
-  toggleButton.setAttribute('tabindex', '0');
-  
-  // Update aria-expanded attribute
-  function updateAriaExpanded() {
-    toggleButton.setAttribute('aria-expanded', sidebarOpen);
-  }
-  
-  // Call updateAriaExpanded whenever sidebar state changes
-  const originalUpdateSidebarState = updateSidebarState;
-  updateSidebarState = function() {
-    originalUpdateSidebarState();
-    updateAriaExpanded();
-  };
-  
-  updateAriaExpanded();
-  
-  // Ensure TOC sticky positioning works properly
-  function ensureTOCSticky() {
-    // Find all possible TOC elements
-    const tocSelectors = [
-      '#TOC',
-      '.table-of-contents',
-      '.quarto-sidebar-toc',
-      '.toc',
-      '.quarto-toc',
-      'nav[role="doc-toc"]',
-      '.margin-sidebar',
-      '.sidebar-right',
-      '.quarto-margin-sidebar',
-      '.column-margin'
-    ];
-    
-    let toc = null;
-    for (const selector of tocSelectors) {
-      toc = document.querySelector(selector);
-      if (toc) break;
-    }
-    
-    if (toc) {
-      console.log('Found TOC element:', toc.className || toc.id);
-      
-      // Force sticky positioning with important styles
-      toc.style.setProperty('position', 'sticky', 'important');
-      toc.style.setProperty('top', '1rem', 'important');
-      toc.style.setProperty('max-height', 'calc(100vh - 2rem)', 'important');
-      toc.style.setProperty('overflow-y', 'auto', 'important');
-      toc.style.setProperty('z-index', '100', 'important');
-      
-      // Ensure parent containers support sticky
-      let parent = toc.parentElement;
-      while (parent && parent !== document.body) {
-        parent.style.setProperty('position', 'relative', 'important');
-        parent.style.setProperty('height', 'auto', 'important');
-        parent = parent.parentElement;
-      }
-      
-      // Add scroll event listener to maintain visibility
-      let lastScrollTop = 0;
-      const scrollHandler = function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Ensure TOC remains visible and properly positioned
-        if (toc && window.innerWidth > 768) {
-          toc.style.setProperty('position', 'sticky', 'important');
-          toc.style.setProperty('top', '1rem', 'important');
-        }
-        
-        lastScrollTop = scrollTop;
-      };
-      
-      // Remove existing scroll listeners to avoid duplicates
-      window.removeEventListener('scroll', scrollHandler);
-      window.addEventListener('scroll', scrollHandler, { passive: true });
-      
-      // Also apply to any nested TOC elements
-      const nestedTocs = toc.querySelectorAll('#TOC, .toc, .table-of-contents');
-      nestedTocs.forEach(nestedToc => {
-        nestedToc.style.setProperty('position', 'sticky', 'important');
-        nestedToc.style.setProperty('top', '0', 'important');
-      });
-    } else {
-      console.log('No TOC element found');
-    }
-  }
-  
-  // Initialize TOC sticky behavior
-  ensureTOCSticky();
-  
-  // Re-initialize periodically to ensure it stays sticky
-  setInterval(ensureTOCSticky, 2000);
-  
-  // Re-initialize on window resize
-  window.addEventListener('resize', function() {
-    setTimeout(ensureTOCSticky, 100);
-  });
-  
-  // Re-initialize if content changes
-  const observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (mutation.type === 'childList') {
-        setTimeout(ensureTOCSticky, 100);
-      }
-    });
-  });
-  
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-  
-  // Force re-initialization after page load
-  window.addEventListener('load', function() {
-    setTimeout(ensureTOCSticky, 500);
-  });
-});
-</script>
-
-<style>
-/* Additional styles for better integration */
-body {
-  overflow-x: hidden;
-}
-
-.sidebar-toggle {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Ensure smooth transitions on all relevant elements */
-.sidebar,
-.sidebar-toggle,
-.main-content,
-.sidebar-backdrop {
-  will-change: transform, opacity, margin;
-}
-
-/* Focus styles for accessibility */
-.sidebar-toggle:focus {
-  outline: 2px solid white;
-  outline-offset: 2px;
-}
-
-/* Prevent text selection on burger icon */
-.burger-icon {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-</style> 
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -883,57 +547,6 @@ body {
       });
       clipboardModal.on('success', onCopySuccess);
     }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
-    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -950,13 +563,6 @@ body {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
-            // default icon
-            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1270,7 +876,7 @@ body {
     }
   });
   </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./chapter_ai-nepi_016.html" class="pagination-link" aria-label="Text Granularity and Topic Model Performance">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Text Granularity and Topic Model Performance</span></span>
@@ -1281,134 +887,10 @@ body {
         <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">LLMs for Chemical Knowledge Analysis</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">abstract:</span><span class="co"> "The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (TALMs), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current Large Language Models (LLMs), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a *Transformer* architecture."</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="an">author:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co">- affiliation: Max Planck Institute of Geoanthropology</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co">  email: buettner@gea.mpg.de</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="co">  name: Jochen Büttner</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="an">bibliography:</span><span class="co"> bibliography.bib</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a><span class="an">date:</span><span class="co"> '2025'</span></span>
-<span id="cb1-10"><a href="#cb1-10"></a><span class="co">---</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="fu"># Time-Aware Language Models</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="fu">## Overview</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a>The presentation describes the development and evaluation of a novel architecture for creating time-aware language models (*TALMs*), specifically targeting applications in historical analysis. The core problem addressed is the implicit nature of temporal understanding in current *Large Language Models* (*LLMs*), which is derived statistically from training data. The proposed solution involves explicitly adding a temporal dimension to the latent semantic token features within a *Transformer* architecture.</span>
-<span id="cb1-17"><a href="#cb1-17"></a></span>
-<span id="cb1-18"><a href="#cb1-18"></a>The technical approach modifies a standard *Transformer* decoder model by injecting time data, represented as a non-trainable, min-max normalized day of the year, into the token embeddings. This allows the model to learn how the probability distribution of tokens depends on time.</span>
-<span id="cb1-19"><a href="#cb1-19"></a></span>
-<span id="cb1-20"><a href="#cb1-20"></a>A proof-of-concept implementation utilizes a small generative *LLM* trained on a specific dataset: daily weather reports from the UK Met Office digital archive for the years 2018-2024. This dataset consists of approximately 2,500 reports, each 150-200 words long, characterized by a limited vocabulary and repetitive language. The text processing involves text vectorization with standardization (lower and strip punctuation) and no sub-word tokenization, resulting in a vocabulary of 3,395 words.</span>
-<span id="cb1-21"><a href="#cb1-21"></a></span>
-<span id="cb1-22"><a href="#cb1-22"></a>The model architecture is a modest-sized *Transformer* decoder with 4 multihead attention blocks, totaling 39 million parameters (150 MB). This is significantly smaller than models like *GPT-4* (1.8 trillion parameters across 120 layers). Training is performed on 2 x A100 GPUs, taking 11 seconds per epoch. The code for the vanilla and time-aware *Transformer* models is available on GitHub at https://github.com/j-buettner/time_transformer.</span>
-<span id="cb1-23"><a href="#cb1-23"></a></span>
-<span id="cb1-24"><a href="#cb1-24"></a>Two experiments demonstrate the model's ability to learn temporal drift:</span>
-<span id="cb1-25"><a href="#cb1-25"></a></span>
-<span id="cb1-26"><a href="#cb1-26"></a><span class="ss">- </span>*Synonymic Succession:* Synthetic drift is injected by time-dependent replacement of "rain" with "liquid sunshine" following a sigmoid probability curve over the year. The model successfully reproduces this time dependence in predicted token sequences.</span>
-<span id="cb1-27"><a href="#cb1-27"></a></span>
-<span id="cb1-28"><a href="#cb1-28"></a><span class="ss">- </span>*Changing Co-occurrence/Collocation Fixation:* Synthetic time-dependent change is injected where "rain" followed by any word except "and" is replaced by "rain and snow" with increasing probability over the year. The model learns this changing co-occurrence pattern, demonstrating the fixation of the "rain and snow" collocation over time. Attention analysis shows increased attention from "snow" to "rain" in the predicted sequences.</span>
-<span id="cb1-29"><a href="#cb1-29"></a></span>
-<span id="cb1-30"><a href="#cb1-30"></a>The proof of concept indicates that *Transformer*-based *LLMs* can be made time-aware efficiently by adding a temporal dimension to the token embedding. Potential applications include providing a foundation for downstream tasks on historical data, enabling instruction-tuned models to "talk to a specific time," and modeling dependence on other metadata dimensions (country, genre). Challenges include uncertainty regarding the efficiency of fine-tuning due to architectural changes, the need for data curation (including timestamping token sequences), and the loss of metadata-free self-supervised learning benefits. An alternative approach involving a targeted encoder model or changing the training task (e.g., predicting document date) is also considered.</span>
-<span id="cb1-31"><a href="#cb1-31"></a></span>
-<span id="cb1-32"><a href="#cb1-32"></a>Discussion points include the potential for modeling semantic shift over time using this approach, the importance of persistent identifiers for source tracking, existing literature on time-aware *LLMs* and semantic change detection (specifically mentioning encoder-based models and "temporal heads" in foundational models), and a theoretical discussion on whether explicit time injection is necessary given that temporal information is implicitly present in other factors.</span>
-<span id="cb1-33"><a href="#cb1-33"></a></span>
-<span id="cb1-34"><a href="#cb1-34"></a><span class="fu">## Motivation for Time-Aware Language Models</span></span>
-<span id="cb1-35"><a href="#cb1-35"></a></span>
-<span id="cb1-36"><a href="#cb1-36"></a><span class="al">![Slide 01](images/ai-nepi_017_slide_01.jpg)</span></span>
-<span id="cb1-37"><a href="#cb1-37"></a></span>
-<span id="cb1-38"><a href="#cb1-38"></a>Current *Large Language Models* (*LLMs*) exhibit only an implicit understanding of time. This temporal understanding is derived statistically from the patterns observed within their training data. Introducing explicit time awareness into these models is identified as a beneficial enhancement, particularly for their application in historical analysis and potentially other fields where temporal context is crucial.</span>
-<span id="cb1-39"><a href="#cb1-39"></a></span>
-<span id="cb1-40"><a href="#cb1-40"></a><span class="fu">## Text Processing Architectures</span></span>
-<span id="cb1-41"><a href="#cb1-41"></a></span>
-<span id="cb1-42"><a href="#cb1-42"></a><span class="al">![Slide 01](images/ai-nepi_017_slide_01.jpg)</span></span>
-<span id="cb1-43"><a href="#cb1-43"></a></span>
-<span id="cb1-44"><a href="#cb1-44"></a>The primary neural network architectures employed for processing text have evolved. Historically, around 2017, *Long Short-Term Memory* (*LSTM*) networks were the dominant architecture for tasks such as next-token prediction. As of approximately 2025, the landscape has shifted, with *Transformer* networks becoming the primary architecture utilized for next-token prediction and other text processing tasks.</span>
-<span id="cb1-45"><a href="#cb1-45"></a></span>
-<span id="cb1-46"><a href="#cb1-46"></a><span class="fu">## Explicit Time Awareness</span></span>
-<span id="cb1-47"><a href="#cb1-47"></a></span>
-<span id="cb1-48"><a href="#cb1-48"></a><span class="al">![Slide 04](images/ai-nepi_017_slide_04.jpg)</span></span>
-<span id="cb1-49"><a href="#cb1-49"></a></span>
-<span id="cb1-50"><a href="#cb1-50"></a>The concept is that *Large Language Models* can be endowed with explicit time awareness. This involves enabling the models to learn and subsequently reproduce patterns within their training data that change as a function of time. A proof of concept for this approach is based on the implementation using a small generative *LLM*.</span>
-<span id="cb1-51"><a href="#cb1-51"></a></span>
-<span id="cb1-52"><a href="#cb1-52"></a><span class="fu">## Temporal Dependence of Token Probabilities</span></span>
-<span id="cb1-53"><a href="#cb1-53"></a></span>
-<span id="cb1-54"><a href="#cb1-54"></a><span class="al">![Slide 05](images/ai-nepi_017_slide_05.jpg)</span></span>
-<span id="cb1-55"><a href="#cb1-55"></a></span>
-<span id="cb1-56"><a href="#cb1-56"></a>Standard *Large Language Models* estimate the probability distribution over their vocabulary for the next token, $x_n$, conditioned on a sequence of preceding tokens, $x_1, ..., x_{n-1}$. This is formally expressed as $p(x_n | x_1, ..., x_{n-1})$.</span>
-<span id="cb1-57"><a href="#cb1-57"></a></span>
-<span id="cb1-58"><a href="#cb1-58"></a>However, in real-world scenarios, the probability of a token given its context is not static; it is dependent on time, $t$. This temporal dependence is represented as $p(x_n | x_1, ..., x_{n-1}, t)$. Consequently, the probability of an entire sequence of tokens, $x_1, x_2, ..., x_n$, generated at a specific time $t$, is the product of these time-dependent conditional probabilities for each token in the sequence: $p(x_1, x_2, ..., x_n | t) = \prod_{k=1}^{n} p(x_k | x_1, x_2, ..., x_{k-1}, t)$. During inference, current *LLMs* can only reflect the temporal drift observed in the underlying distribution of token sequences through in-context learning, which is an implicit mechanism.</span>
-<span id="cb1-59"><a href="#cb1-59"></a></span>
-<span id="cb1-60"><a href="#cb1-60"></a><span class="fu">## Modeling Time-Dependent Probabilities</span></span>
-<span id="cb1-61"><a href="#cb1-61"></a></span>
-<span id="cb1-62"><a href="#cb1-62"></a><span class="al">![Slide 07](images/ai-nepi_017_slide_07.jpg)</span></span>
-<span id="cb1-63"><a href="#cb1-63"></a></span>
-<span id="cb1-64"><a href="#cb1-64"></a>A key challenge is explicitly modeling the time-dependent probability of the next token, $p(x_n | x_1, ..., x_{n-1}, t)$. An approach involving time slicing, where separate models are trained for distinct time periods, is considered extremely data inefficient.</span>
-<span id="cb1-65"><a href="#cb1-65"></a></span>
-<span id="cb1-66"><a href="#cb1-66"></a>The proposed solution is a *Time Transformer* architecture. This method involves adding a temporal dimension to the latent semantic features of each token. The combined embedding for a token $x$ at time $t$ is represented as a vector $E(x, t) = \{e_1(x), e_2(x), ..., e_{d-1}(x), \phi(t)\}$, where $e_i(x)$ are the standard semantic features and $\phi(t)$ is a feature representing time. This sequence of time-aware embeddings, $[E(x_1, t), E(x_2, t), ..., E(x_{n-1}, t)]$, is then fed into a *Transformer* model to predict the time-dependent probability of the next token, $p_\theta(x_n | x_1, ..., x_{n-1}, t)$.</span>
-<span id="cb1-67"><a href="#cb1-67"></a></span>
-<span id="cb1-68"><a href="#cb1-68"></a>The training objective for this model is to minimize the negative log-likelihood across the entire dataset, given by $\min_\theta - \sum_{i=1}^N \sum_{k=1}^{n^{(i)}} \log p_\theta(x_k^{(i)} | x_1^{(i)}, ..., x_{k-1}^{(i)}, t^{(i)})$, where the summation is over all sequences $i$ in the dataset, each with length $n^{(i)}$ and associated time $t^{(i)}$. This approach injects time directly into the representation of every token, enabling the model to learn precisely how strongly or weakly the temporal dimension influences each token's probability.</span>
-<span id="cb1-69"><a href="#cb1-69"></a></span>
-<span id="cb1-70"><a href="#cb1-70"></a><span class="fu">## Data Source and Preparation</span></span>
-<span id="cb1-71"><a href="#cb1-71"></a></span>
-<span id="cb1-72"><a href="#cb1-72"></a><span class="al">![Slide 10](images/ai-nepi_017_slide_10.jpg)</span></span>
-<span id="cb1-73"><a href="#cb1-73"></a></span>
-<span id="cb1-74"><a href="#cb1-74"></a>The data source utilized for the proof-of-concept implementation consists of Met Office Weather reports. This dataset is characterized by a limited vocabulary and the use of simple, repetitive language, making it suitable for initial experimentation with a small model. The reports are provided by the Met Office, the UK's national meteorological service, and past reports are accessible through their digital archive at https://digital.nmla.metoffice.gov.uk/.</span>
-<span id="cb1-75"><a href="#cb1-75"></a></span>
-<span id="cb1-76"><a href="#cb1-76"></a>The specific dataset used comprises daily reports covering the years 2018 through 2024, totaling approximately 2,500 reports. Each report is between 150 and 200 words in length. Text processing is performed using <span class="in">`tf.keras.layers.TextVectorization`</span> with the standardization setting <span class="in">`standardize="lower_and_strip_punctuation"`</span>. This process involves neglecting case and interpunctuation, and notably, no sub-word tokenization is applied. This results in a vocabulary size of 3,395 unique words. The choice of a small model and dataset relates conceptually to research exploring the capabilities of small language models, such as the work described in the paper "*TinyStories: How Small Can Language Models Be and Still Speak Coherent English?*".</span>
-<span id="cb1-77"><a href="#cb1-77"></a></span>
-<span id="cb1-78"><a href="#cb1-78"></a><span class="fu">## *Transformer* Model Architecture and Training</span></span>
-<span id="cb1-79"><a href="#cb1-79"></a></span>
-<span id="cb1-80"><a href="#cb1-80"></a><span class="al">![Slide 12](images/ai-nepi_017_slide_12.jpg)</span></span>
-<span id="cb1-81"><a href="#cb1-81"></a></span>
-<span id="cb1-82"><a href="#cb1-82"></a>The baseline model architecture is a modest-sized *Transformer* decoder. It consists of an Embedding Layer, Positional Encoding, Dropout, four Decoder Layers, and a Final Dense Layer. Each Decoder Layer incorporates Multi-Head Attention, followed by Add &amp; Norm, a Feed-Forward Network (FFN), and another Add &amp; Norm step.</span>
-<span id="cb1-83"><a href="#cb1-83"></a></span>
-<span id="cb1-84"><a href="#cb1-84"></a>The model has a total of 39 million parameters, occupying approximately 150 MB, which is considerably smaller than large models like *GPT-4*, which has 1.8 trillion parameters distributed across 120 layers. Training is conducted using 2 x A100 GPUs, achieving a speed of 11 seconds per epoch. The code implementation for this model is available on GitHub at https://github.com/j-buettner/time_transformer.</span>
-<span id="cb1-85"><a href="#cb1-85"></a></span>
-<span id="cb1-86"><a href="#cb1-86"></a>The training process demonstrates that the model learns to reproduce the language style and patterns of the weather report dataset effectively. For instance, given the seed sequence "During the night, a band ...", the model generates text such as "... of rain moved into scotland northern ireland and northern england outbreaks of rain continued to move across northern england and wales it stayed largely dry with clear spells and a few scattered showers in the north and west elsewhere there were plenty of clear spells and a few fog patches and overall it was a mild night across the south of the uk ....". Model performance is tracked using accuracy, visualized in a line graph showing training and validation accuracy over 50 epochs. The training accuracy exhibits a steady increase, while the validation accuracy increases initially before plateauing.</span>
-<span id="cb1-87"><a href="#cb1-87"></a></span>
-<span id="cb1-88"><a href="#cb1-88"></a><span class="fu">## *Time Transformer* Architecture</span></span>
-<span id="cb1-89"><a href="#cb1-89"></a></span>
-<span id="cb1-90"><a href="#cb1-90"></a><span class="al">![Slide 15](images/ai-nepi_017_slide_15.jpg)</span></span>
-<span id="cb1-91"><a href="#cb1-91"></a></span>
-<span id="cb1-92"><a href="#cb1-92"></a>The *Time Transformer* architecture is created with a minimal adjustment to the vanilla *Transformer* model. The input now includes both Text Input and Time Data. The Text Input is processed by an Embedding Layer, while the Time Data is processed by a dedicated Time Embedding layer.</span>
-<span id="cb1-93"><a href="#cb1-93"></a></span>
-<span id="cb1-94"><a href="#cb1-94"></a>The outputs from the standard Embedding Layer and the Time Embedding layer are combined. This combined embedding is then fed into the Casual Masking and Positional Encoding layers. The subsequent layers, including the Decoder Layers and the Final Dense Layer, retain the same structure as the vanilla model. The time dimension is represented as a non-trainable, min-max normalized value corresponding to the day of the year. The time embedding is calculated using the formula <span class="in">`time embedding = (day of year - 1) / (365 - 1)`</span>, normalizing the day of the year (1 to 365) to a range between 0 and 1.</span>
-<span id="cb1-95"><a href="#cb1-95"></a></span>
-<span id="cb1-96"><a href="#cb1-96"></a><span class="fu">## Experiment 1: Learning Synonymic Succession</span></span>
-<span id="cb1-97"><a href="#cb1-97"></a></span>
-<span id="cb1-98"><a href="#cb1-98"></a><span class="al">![Slide 16](images/ai-nepi_017_slide_16.jpg)</span></span>
-<span id="cb1-99"><a href="#cb1-99"></a></span>
-<span id="cb1-100"><a href="#cb1-100"></a>The first experiment aims to evaluate the model's ability to efficiently learn temporal drift within the underlying data distribution, specifically focusing on synonymic succession. This involves injecting synthetic drift into the training data by implementing a time-dependent replacement rule: the word "rain" is replaced by the phrase "liquid sunshine". The probability of this replacement occurring follows a sigmoid curve across the days of the year, ranging from Day 0 to Day 365. The probability starts near 0.00 at the beginning of the year and increases to near 1.00 by the end of the year, with the most significant increase occurring around Day 180.</span>
-<span id="cb1-101"><a href="#cb1-101"></a></span>
-<span id="cb1-102"><a href="#cb1-102"></a>The evaluation method involves checking whether this injected time dependence is accurately reproduced in the token sequences predicted by the model, generating a separate sequence for each day of the year. The presentation also notes observed seasonal patterns in the real weather data, illustrated by bar charts. One chart shows the monthly occurrences of "Rain and Snow" versus "Rain Only", indicating that "Rain and Snow" is more frequent in the later months (September to December), while "Rain Only" is more frequent in the earlier months (January to April). Another chart depicts the monthly occurrences of terms related to heat ("Hot", "Warm") versus terms related to cold and snow ("Snow", "Sleet", "Wintry"), clearly showing that "Snow", "Sleet", and "Wintry" terms are more prevalent in the winter months (January, February, March, November, December), while "Hot" and "Warm" terms are more frequent in the summer months (June, July, August).</span>
-<span id="cb1-103"><a href="#cb1-103"></a></span>
-<span id="cb1-104"><a href="#cb1-104"></a><span class="fu">## Experiment 2: Learning Changing Co-occurrence</span></span>
-<span id="cb1-105"><a href="#cb1-105"></a></span>
-<span id="cb1-106"><a href="#cb1-106"></a><span class="al">![Slide 18](images/ai-nepi_017_slide_18.jpg)</span></span>
-<span id="cb1-107"><a href="#cb1-107"></a></span>
-<span id="cb1-108"><a href="#cb1-108"></a>The second experiment also aims to evaluate the efficient learning of temporal drift, focusing on a changing co-occurrence pattern, specifically termed 'fixation of a collocation' from a variable to an obligatory relationship. This involves injecting a synthetic time-dependent change into the training data: any instance of the word "Rain" followed by any word other than "and" is synthetically altered to become "rain and snow". This process is described as analogous to the linguistic concept of the fixation of a collocation, citing "*bread and butter*" as a common example.</span>
-<span id="cb1-109"><a href="#cb1-109"></a></span>
-<span id="cb1-110"><a href="#cb1-110"></a>The evaluation is presented through a bar chart titled "Monthly Comparison of "Rain and Snow" vs. "Rain Only" Occurrences" based on the predicted sequences generated for each day of the year. The y-axis quantifies the occurrences of "rain" only versus "rain and snow" in these predictions. The chart visually demonstrates that the blue bars representing "Rain and Snow" occurrences are higher in the later months (September to December), while the green bars representing "Rain Only" occurrences are higher in the earlier months (January to April), effectively reproducing the injected synthetic drift pattern. Example predicted sequences for Day 1 and Day 363 illustrate this learned pattern, both showing "heavy rain and snow". Further analysis is presented via an attention chart titled "Attention from 'snow' to previous 10 tokens (Head 5)". This bar chart displays the attention weights from the token 'snow' to the preceding 10 tokens. The bar corresponding to "rain" exhibits the highest attention weight, approximately 0.45, indicating that the model has learned a strong associative link between "rain" and "snow" within this specific context.</span>
-<span id="cb1-111"><a href="#cb1-111"></a></span>
-<span id="cb1-112"><a href="#cb1-112"></a><span class="fu">## Proof of Concept, Applications, and Challenges</span></span>
-<span id="cb1-113"><a href="#cb1-113"></a></span>
-<span id="cb1-114"><a href="#cb1-114"></a><span class="al">![Slide 21](images/ai-nepi_017_slide_21.jpg)</span></span>
-<span id="cb1-115"><a href="#cb1-115"></a></span>
-<span id="cb1-116"><a href="#cb1-116"></a>The proof of concept demonstrates that *Transformer*-based *Large Language Models* can be efficiently made time-aware by augmenting the token embedding with a temporal dimension. This approach offers several potential applications. A foundational *Time Transformer* could serve as an excellent base model for various downstream tasks involving historical data.</span>
-<span id="cb1-117"><a href="#cb1-117"></a></span>
-<span id="cb1-118"><a href="#cb1-118"></a>Furthermore, an instruction-tuned *Time Transformer* could enable users to interact with the model by specifying a particular time period, effectively allowing them to "talk to a specific time." This capability might also lead to improved results in standard usage scenarios where the model is expected to reflect the present state of knowledge or language ("talk to the present"). The methodology is also potentially generalizable, suggesting that the dependence of underlying token sequence distributions on other contextual or metadata dimensions, such as country or genre, could be modeled using a similar approach.</span>
-<span id="cb1-119"><a href="#cb1-119"></a></span>
-<span id="cb1-120"><a href="#cb1-120"></a>Potential next steps for this research include benchmarking the *Time Transformer* against alternative methods, such as an explicit time-token approach, and testing whether the proposed architecture leads to an increase in training efficiency. Further exploration of other aspects is also warranted.</span>
-<span id="cb1-121"><a href="#cb1-121"></a></span>
-<span id="cb1-122"><a href="#cb1-122"></a>However, several challenges must be addressed for practical application. It is currently unclear whether fine-tuning the modified architecture is possible and efficient. The approach also necessitates significant data curation, particularly the accurate determination of the generation time for each token sequence, which represents a loss of the metadata-free benefit typically associated with self-supervised learning. Accurately timestamping historical data is identified as a key challenge. An alternative direction considered is the development of a modest, targeted encoder model for time-aware tasks.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
