@@ -1,198 +1,147 @@
 ---
-abstract: "\n      This study investigates the impact of text granularity (titles,\
-  \ abstracts, full-texts) on the performance of two distinct topic modeling approaches,\
-  \ Latent Dirichlet Allocation (LDA) and BERTopic. The research addresses the practical\
-  \ challenge of significant resource requirements for obtaining, preprocessing, and\
-  \ analyzing full-text corpora by comparing topic models derived from different text\
-  \ levels. A corpus of scientific articles in Astrobiology serves as the material.\
-  \ Six topic models..."
+title: "Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance"
 author:
-
-- affiliation: Université du Québec à Montréal; Université de Sherbrooke; CIRST
-  email: francislareau@hotmail.com
-  name: Francis Lareau & Christophe Malaterre
-bibliography: bibliography.bib
+- name: "Francis Lareau & Christophe Malaterre"
+  affiliation: "Université du Québec à Montréal; Université de Sherbrooke; CIRST"
+  email: "francislareau@hotmail.com"
 date: '2025'
+bibliography: bibliography.bib
 ---
 
-# Text Granularity and Topic Model Performance
+## Overview {.unnumbered}
 
-## Overview
+This chapter presents a comprehensive comparative study systematically evaluating the performance of *Latent Dirichlet Allocation* (*LDA*) and *BERTopic* across distinct textual granularities: titles, abstracts, and full texts. This investigation addresses a pressing question within topic modelling, a crucial analytical tool for navigating vast volumes of scientific literature, particularly within the history, philosophy, and sociology of science. Topic modelling, indeed, extracts thematic content from corpora, thereby enabling the identification of research trends, paradigm shifts, substructures, thematic interrelations, and the evolution of scientific vocabulary.
 
-This study investigates the impact of text granularity (titles, abstracts, full-texts) on the performance of two distinct topic modeling approaches: *Latent Dirichlet Allocation* (*LDA*) and *BERTopic*. The research addresses the practical challenge of significant resource requirements for obtaining, preprocessing, and analyzing full-text corpora by comparing topic models derived from different text levels.
+The study's core objective was to ascertain whether analysing titles or abstracts suffices for effective topic modelling, or if full-text analysis remains indispensable. This inquiry is particularly pertinent given the substantial resources required for obtaining, preprocessing, and analysing comprehensive corpora. To achieve this, the researchers meticulously constituted a corpus of scientific articles, precisely identifying and segmenting title, abstract, and full-text sections.
 
-A corpus of scientific articles in Astrobiology serves as the material for this study. Six topic models are generated: *LDA* on titles, abstracts, and full-texts, and *BERTopic* on titles, abstracts, and full-texts. These models are then analyzed and compared qualitatively and quantitatively using metrics such as Adjusted Rand Index, Topic Diversity, Joint Recall, and Coherence CV.
+Subsequently, they applied both *LDA* and *BERTopic* approaches to each textual level. A dual analytical framework, encompassing both qualitative and quantitative methods, then facilitated the comparison of the resulting topic models. This rigorous methodology involved assessing model similarities, topic diversity, joint recall, and coherence, whilst leveraging a well-known astrobiology corpus for qualitative validation.
 
-The qualitative analysis involves comparing topic coherence and the stability of topics across models, referencing a previously established *LDA* full-text model with 25 topics and 4 thematic clusters. Quantitative results indicate that title-based models generally perform poorly, while abstract models show better coherence and diversity. Full-text models demonstrate superior joint recall.
-
-Specifically, *BERTopic* Abstract emerges as a strong performer in coherence, and *BERTopic* Title in diversity, while *LDA* Fulltext and *BERTopic* Fulltext excel in joint recall. The study concludes that the optimal choice of text level and topic model depends on specific research objectives. Abstract-based models offer a good balance and consistency with full-text models, while title-based models, despite limitations, can identify robust core topics. The potential for leveraging structural information (titles, abstracts, full-texts) in future models is also discussed.
-
-## Introduction
+## Research Question and Study Design
 
 ![Slide 01](images/ai-nepi_016_slide_01.jpg)
 
-This presentation is delivered by Francis Lareau, a Postdoctoral Fellow affiliated with the University of Sherbrooke and the University of Quebec in Montreal (UQAM). This work is a comparative study conducted with Christophe Malaterre from the University of Quebec in Montreal.
+This research addresses a pivotal question within the domain of topic modelling: does analysing titles or abstracts provide sufficient data, or does full-text analysis remain a prerequisite? Topic modelling, a technique for extracting thematic content from textual corpora, has emerged as an indispensable tool for scrutinising extensive scientific literature, particularly within the history, philosophy, and sociology of science. Scholars employ it for diverse tasks, including identifying research trends, discerning paradigm shifts, uncovering substructures, mapping thematic interrelations, and tracing the evolution of scientific vocabulary.
 
-The study focuses on topic modeling, a technique for extracting themes from a corpus. Topic modeling is recognized as an important tool for analyzing large volumes of scientific literature, especially within the history, philosophy, and sociology of science (HPSS).
+Crucially, existing studies apply topic modelling across various textual structures, encompassing titles, abstracts, and complete articles. This practice, however, raises a significant concern: obtaining, preprocessing, and analysing full-text corpora demand considerable resources. Consequently, the efficiency of utilising shorter textual forms becomes a pressing inquiry.
 
-A problem arises because existing studies utilize different textual structures for topic modeling, namely titles, abstracts, and full text. Obtaining, preprocessing, and analyzing full-text corpora demand significant resources. This prompts the central research question: Is applying topic modeling to titles or abstracts sufficient, or is full-text analysis necessary?
+To investigate this, the researchers meticulously constituted a corpus of scientific articles. They then precisely identified and isolated the title, abstract, and full-text sections within each document. Subsequently, they applied two distinct topic modelling approaches—*Latent Dirichlet Allocation* (*LDA*) and *BERTopic*—to each of these textual levels. A comprehensive analytical framework, integrating both qualitative and quantitative methods, facilitated the systematic comparison of the resultant topic models. This rigorous design ensured a thorough evaluation of performance across different model types and textual granularities.
 
-## Study Design
+## Topic Modelling Methodologies
 
-![Slide 02](images/ai-nepi_016_slide_02.jpg)
+![Slide 05](images/ai-nepi_016_slide_05.jpg)
 
-This study addresses the pressing question of whether analyzing titles or abstracts is sufficient for topic modeling, given the substantial resources needed for full-text corpora acquisition, preprocessing, and analysis. The methodology involves a structured workflow.
+The study employed two principal topic modelling methodologies: *Latent Dirichlet Allocation* (*LDA*) and *BERTopic*. Both approaches fundamentally postulate that documents can be represented as numerical vectors. Within this framework, topics become identifiable through the detection of linguistic regularities, specifically repetitions, whilst machine learning algorithms facilitate the automatic discovery of these patterns.
 
-First, a corpus of scientific articles is constituted. Second, the distinct title, abstract, and full text sections are identified within this corpus. Third, two different topic modeling approaches, *Latent Dirichlet Allocation* (*LDA*) and *BERTopic*, are applied separately to each of the three identified text levels: titles, abstracts, and full texts.
+*LDA*, a classical statistical technique, constructs simple vector representations by counting words within documents. In this established approach, topics manifest as latent variables, adhering to Dirichlet's law. Crucially, *LDA* readily accommodates extensive textual content, allowing for its application to titles, abstracts, or full texts.
 
-This process generates a total of six distinct topic models. Finally, these six resulting topic models undergo both qualitative and quantitative analysis and comparison to evaluate their performance across the different text levels.
+Conversely, *BERTopic* represents a more recent, modular methodology. It leverages *Large Language Model* (*LLM*)-based vector representations, originally drawing upon *BERT*, which lends the approach its name. Here, topics emerge as clusters of documents. Historically, *BERTopic* struggled with processing lengthy texts; however, for this investigation, the researchers integrated a novel embedding technique. This advancement significantly enhanced *BERTopic*'s capacity, enabling it to process approximately 131,000 tokens, thereby facilitating its application to full-text analysis.
 
-## Topic Modeling Approaches
-
-![Slide 03](images/ai-nepi_016_slide_03.jpg)
-
-The study compares two distinct topic modeling approaches: *Latent Dirichlet Allocation* (*LDA*) and *BERTopic*. Both approaches share fundamental postulates: documents can be represented by numerical vectors, topics are identifiable through linguistic regularities manifested as repetitions, and machine learning facilitates the automatic detection of these regularities.
-
-*Latent Dirichlet Allocation* (*LDA*) is characterized as a classical statistical method. It employs a classical vector representation technique based on counting words within documents. In the *LDA* framework, topics are conceptualized as latent variables that adhere to Dirichlet's law. A key advantage of *LDA* is its ability to handle long texts, making it suitable for analysis across titles, abstracts, and full texts.
-
-In contrast, *BERTopic* is described as a modern, modular approach, developed by Martin Grootendorst. It utilizes an LLM-based vector representation method, originally based on *BERT*, which gives the approach its name. Topics in *BERTopic* correspond to topological densities of documents, typically identified using clustering algorithms like *HDBSCAN*.
-
-Historically, *BERTopic* did not handle long texts efficiently, but recent advancements have addressed this limitation. For this study, a specific embedding model, *Stella EN 1.5B V5*, was selected for the *BERTopic* implementation. This model was chosen based on its high ranking on the Massive Text Embedding Benchmark on Hugging Face and its capacity to handle approximately 131,000 tokens, addressing the long text limitation.
-
-## Material and Qualitative Analysis
-
-![Slide 06](images/ai-nepi_016_slide_06.jpg)
-
-The material utilized in this study is an Astrobiology corpus, which was previously subjected to an in-depth topic analysis. This prior analysis, documented in *Malaterre & Lareau (2023)*, resulted in the selection of a full-text *LDA* model comprising 25 topics. This model serves as a reference for the current comparative study.
-
-The 25 topics of the reference model were analyzed meticulously. This analysis involved examining the most representative words and documents associated with each topic. Based on this examination, each topic was assigned a descriptive label derived from its key terms.
-
-The relationships between topics were then assessed by calculating their mutual correlation, determined by the co-occurrence of topics within documents. Subsequently, a community detection algorithm was applied to the correlation data, identifying four distinct thematic clusters. These clusters were designated with letters (A, B, C, D) and assigned corresponding colors (red, green, yellow, blue) for visualization.
-
-The results of this reference analysis are represented visually as a graph illustrating the correlations between the 25 topics. The graph displays the topic labels and the color variations indicating their thematic clusters. The thickness of the lines connecting topics represents the strength of their correlation, while the size of the circles representing topics indicates their overall presence across all documents in the corpus. This established and analyzed reference model provides a basis for qualitatively comparing the six topic models generated and investigated in the current comparative study.
-
-## Quantitative Metrics
+## Corpus and Qualitative Comparison
 
 ![Slide 07](images/ai-nepi_016_slide_07.jpg)
 
-The quantitative analysis compares the six topic models using four specific metrics:
+The study’s qualitative comparisons drew upon a meticulously analysed astrobiology corpus, previously detailed by Malaterre and Lareau in 2023. Following a comprehensive evaluation, the researchers selected a full-text *LDA* model comprising 25 distinct topics to serve as a foundational reference.
 
--   *Adjusted Rand Index*: This metric assesses the similarity between two different document clusterings. It is corrected for chance, meaning a value of zero corresponds to a random clustering.
+Scholars meticulously analysed these 25 topics, examining their most representative words and documents. This process facilitated the generation of a concise label for each topic, derived directly from its key terms. Subsequently, they compared the topics by calculating their mutual correlation, a metric based on the topics' presence within individual documents. A community detection algorithm then identified four distinct thematic clusters, designated A, B, C, and D, and visually distinguished by red, green, yellow, and blue hues respectively.
 
--   *Topic Diversity*: This measures the proportion of distinct top words utilized to describe the topics within a single topic model. A higher diversity indicates that topics are characterized by different sets of words.
+A graphical representation visually conveyed these findings, illustrating the correlations amongst the 25 topics, complete with their assigned labels and cluster affiliations. In this visualisation, the thickness of the connecting lines denoted the strength of the correlation between topics, whilst the size of each circular node indicated the topic’s overall prevalence across the entire document collection. This established analytical framework provided a robust basis for the qualitative assessment of the six topic models under investigation.
 
--   *Joint Recall*: This evaluates the extent to which the top words collectively represent the documents assigned to each topic. It provides an average measure of document-topic recall, indicating how well the topic's representative words can retrieve the documents belonging to that topic.
-
--   *Coherence CV*: This evaluates the semantic meaningfulness of the topic's top words. It is computed as the average of the cosine relative distance between the top words within each topic, where a higher value suggests greater semantic relatedness among the words and thus more coherent topics.
-
-## Adjusted Rand Index Results
+## Quantitative Analysis Metrics
 
 ![Slide 08](images/ai-nepi_016_slide_08.jpg)
 
-The *Adjusted Rand Index* is employed to quantitatively assess the similarities among the six generated topic models by comparing their document clusterings. A value of zero for this metric signifies a random clustering.
+For quantitative analysis, the researchers employed four distinct metrics to rigorously compare the topic models. Firstly, the *Adjusted Rand Index* (*ARI*) served to evaluate the similarity between any two document clusterings, whilst correcting for chance agreement. This metric precisely assessed the degree to which documents tended to cluster together across different models.
 
-The results indicate that the *LDA* model trained on titles is the most distinct among all models, as evidenced by low *Adjusted Rand Index* values, specifically under 0.2, shown in the heatmap comparison.
+Secondly, *Topic Diversity* quantified the proportion of distinct top words within a given topic model, thereby evaluating whether individual topics were indeed characterised by unique vocabularies. Thirdly, *Joint Recall* measured the average document-topic recall in relation to any topic's top words. This metric critically assessed how effectively the top words collectively represented the documents assigned to each topic. Finally, *Coherence CV*, calculated as the average cosine relative distance between top words within topics, determined whether the constituent words of a topic exhibited a meaningful semantic relationship.
 
-Conversely, all other models exhibit a better overall match with each other, demonstrating values exceeding 0.2. A notable observation is that the *BERTopic* models tend to correspond more strongly with each other, with *Adjusted Rand Index* values generally above 0.35. Furthermore, the *BERTopic* Abstract model appears to be more central in its similarity profile, showing good correspondence to every other model, with values over 0.30, except for the *LDA* Title model.
-
-## LDA Model Comparison
+## Results: Adjusted Rand Index
 
 ![Slide 09](images/ai-nepi_016_slide_09.jpg)
 
-A more detailed qualitative analysis focuses on comparing the *LDA* Full-text model with the *LDA* Abstract and *LDA* Title models, using heatmaps that visualize the number of shared documents between topics. A reddish diagonal pattern in these heatmaps signifies a good correspondence between topics across models.
+The *Adjusted Rand Index* (*ARI*) provided initial insights into the similarities amongst the six topic models. A score of zero on this metric signifies a random clustering, establishing a baseline for comparison. Analysis revealed that the *LDA* model applied to titles exhibited the most pronounced dissimilarity from all other models, consistently registering *ARI* values below 0.2 within the heatmap.
 
-Comparing the *LDA* Full-text model with the *LDA* Abstract model (Table A) reveals a good overall fit. This is evident from the prominent reddish diagonal, indicating that topics in one model largely correspond to single topics in the other with a high proportion of shared documents.
+Conversely, the remaining models generally achieved a superior overall match, with *ARI* scores exceeding 0.2. Notably, *BERTopic* models demonstrated a stronger mutual fit, consistently yielding values above 0.35. Amongst these, the *BERTopic* abstract model emerged as particularly central, correlating effectively with every other model, save for the outlier *LDA* title model.
 
-However, the analysis also identifies specific topic transformations: three full-text topics disappear entirely in the abstract model (represented by long horizontal dark gray lines), three full-text topics split into multiple topics in the abstract model (short horizontal dark gray lines), and three abstract topics are formed by the merger of multiple full-text topics (short horizontal dark gray lines). Additionally, the *LDA* Abstract model exhibits one small class containing fewer than 50 documents.
+## Results: LDA Model Inter-Comparisons
 
-In contrast, the comparison between the *LDA* Full-text model and the *LDA* Title model (Table B) indicates a poor overall fit, characterized by substantial reorganization of topics. This is visually represented by numerous vertical and horizontal dark lines in the heatmap, signifying that many full-text topics disappear and many new topics emerge in the title model, with little direct correspondence.
+![Slide 09](images/ai-nepi_016_slide_09.jpg)
 
-## BERTopic Model Comparison
+A more granular analysis of the *LDA* models provided detailed insights into their inter-relationships. Comparing *LDA* Full-text with *LDA* Abstract (Table A) revealed a generally strong fit. A distinct reddish diagonal in the table indicated that each topic from one model largely corresponded to a topic in the other, sharing a high proportion of common documents.
+
+Despite this overall alignment, some dynamic shifts occurred: three full-text *LDA* topics entirely disappeared, whilst another three split into multiple topics within the abstract model. Concurrently, three novel abstract topics emerged, and three abstract topics resulted from the merger of others. Furthermore, one small class within the abstract topics contained fewer than 50 documents.
+
+In stark contrast, the comparison between *LDA* Full-text and *LDA* Title (Table B) demonstrated a poor fit, necessitating substantial reorganisation. This disparity manifested as numerous full-text topics vanishing and a proliferation of new topics appearing within the title model, underscoring the limited correspondence between these two textual granularities for *LDA*.
+
+## Results: BERTopic Model Inter-Comparisons
 
 ![Slide 11](images/ai-nepi_016_slide_11.jpg)
 
-The qualitative comparison extends to the *BERTopic* models, assessing their correspondence with the *LDA* Full-text reference model using heatmaps showing shared documents.
+Analysis of the *BERTopic* models, particularly in comparison with *LDA* Full-text, revealed varied levels of correspondence. Comparing *LDA* Full-text with *BERTopic* Full-text (Table C) indicated an average overall fit. Within this comparison, eight topics from the *LDA* model disappeared, whilst six topics split into the *BERTopic* model. Conversely, five new topics emerged within the *BERTopic* model, and one topic resulted from mergers. Furthermore, the document distribution showed four small classes alongside one notably large class.
 
-Comparing the *LDA* Full-text model with the *BERTopic* Full-text model (Table C) shows an average overall fit. The analysis reveals that 8 topics from the *LDA* Full-text model disappear, and 6 topics split into multiple topics in the *BERTopic* Full-text model (indicated on the horizontal axis). On the vertical axis, 5 new topics appear in the *BERTopic* model, and 1 topic results from the merger of *LDA* topics. The *BERTopic* Full-text model also exhibits issues with class size, including 4 small classes and 1 very large class.
+The comparison between *LDA* Full-text and *BERTopic* Abstract (Table D) demonstrated a relatively good fit. Here, four topics disappeared, six topics split, two new topics appeared, and four topics resulted from mergers.
 
-The comparison between the *LDA* Full-text model and the *BERTopic* Abstract model (Table D) indicates a relatively good overall fit. Four *LDA* topics disappear, and 6 topics split in the *BERTopic* Abstract model (horizontal axis). Two new topics appear, and 4 topics result from mergers in the *BERTopic* Abstract model (vertical axis).
+Finally, examining *LDA* Full-text against *BERTopic* Title (Table E) again indicated an average overall fit. In this instance, seven topics disappeared, whilst one topic split. Simultaneously, seven new topics emerged, and one topic resulted from a merger. The document distribution for this comparison revealed three small classes and one large class.
 
-Finally, comparing the *LDA* Full-text model with the *BERTopic* Title model (Table E) shows an average overall fit. Seven *LDA* topics disappear, and 1 topic splits in the *BERTopic* Title model (horizontal axis). Seven new topics appear, and 1 topic results from a merger in the *BERTopic* Title model (vertical axis). The *BERTopic* Title model also presents class size issues, with 3 small classes and 1 large class.
-
-## Comparing Top Words
+## Results: LDA Top-Word Correspondence
 
 ![Slide 13](images/ai-nepi_016_slide_13.jpg)
 
-A qualitative assessment involves comparing the top words associated with selected topics across the different models to understand the nature of the topics generated.
+An examination of the top words within the *LDA* models revealed that topics generally maintained a relatively well-formed structure across all iterations. The researchers identified several robust topics exhibiting strong correspondence across every *LDA* model; "A-Radiation spore" serves as a prime example of such consistency.
 
-Within the *LDA* models (Full-text, Abstract, and Title), topics are observed to be relatively well-formed. A robust topic, exemplified by "A radiation spore," demonstrates good correspondence in its top words across all three *LDA* models.
+Conversely, certain topics from the full-text model fragmented across the abstract and title models. For instance, "A-Life civilization" split into multiple sub-topics, a division that logically aligned with the broader theme of research in astrobiology. However, the fragmentation of "B-Chemistry" proved more challenging to interpret without deeper investigation.
 
-Splitting of topics is also observed: the "A life civilization" topic from the full-text model splits across the abstract and title models, which is considered sensible as it relates to a general theme of research in astrobiology. The "B chemistry" topic from the full-text model also splits across the abstract and title models, though this particular split is noted as being more challenging to interpret without deeper analysis. Merging of topics occurs as well, such as the "B amino acid" and "B protein gene RNA" topics from the full-text model merging into a single topic in other models, which is deemed sensible as it forms a more general thematic area.
+Furthermore, the analysis uncovered instances where topics from the full-text model merged into new, consolidated topics within the abstract and title models. The fusion of "B-Amino-acid" and "B-Protein-gene-RNA" exemplified this phenomenon, forming a more generalised and coherent thematic unit.
 
-Comparing the *BERTopic* models (Full-text, Abstract, and Title) with the *LDA* Full-text model also reveals relatively well-formed topics across all *BERTopic* models. The robustness of the "A radiation spore" topic is again observed, appearing consistently across all *BERTopic* models and the *LDA* Full-text reference. The "A life civilization" topic is relatively stable across the *BERTopic* models, although some splitting occurs, leading to narrower topics specifically focused on extraterrestrial life. The "B chemistry" topic also splits across the *BERTopic* models, resulting in more narrow thematic topics.
+## Results: BERTopic Top-Word Correspondence
 
-## Coherence, Diversity, and Joint Recall Results
+![Slide 14](images/ai-nepi_016_slide_14.jpg)
+
+Continuing the assessment of top words, the three *BERTopic* models consistently yielded relatively well-formed topics. Notably, "A-Radiation spore" again demonstrated remarkable robustness, maintaining its coherence across all *BERTopic* iterations. Similarly, "A-Life civilization" remained comparatively stable across the models, albeit with some observed splitting.
+
+This fragmentation of "A-Life civilization" specifically led to the emergence of narrower topics, focusing precisely on extraterrestrial life. Furthermore, the splitting of "B-Chemistry" across the *BERTopic* models also resulted in more specialised, narrower thematic categories.
+
+## Results: Coherence Performance
 
 ![Slide 15](images/ai-nepi_016_slide_15.jpg)
 
-Quantitative performance metrics are evaluated for all six topic models across a range of topic numbers, specifically from 5 to 50.
+An evaluation of the models' coherence, a metric assessing the meaningfulness of topic top words, revealed distinct performance patterns across a range of 5 to 50 topics. Titles consistently yielded the poorest coherence scores, indicating a less meaningful grouping of their constituent words. Conversely, abstract models generally demonstrated superior coherence compared to their full-text counterparts.
 
-The *Coherence CV* metric, which assesses the meaningfulness of the topic top words, yields several findings:
+Across the board, *BERTopic* models exhibited better coherence than *LDA*, particularly for abstract and title analyses. However, this performance gap narrowed as the number of topics increased. Ultimately, the *BERTopic* Abstract model emerged as the unequivocal leader in terms of coherence.
 
--   Models trained on titles exhibit the worst coherence.
+## Results: Diversity Performance
 
--   Abstract models demonstrate better coherence compared to full-text models.
+![Slide 16](images/ai-nepi_016_slide_16.jpg)
 
--   Overall, *BERTopic* models show better coherence than *LDA* models when applied to abstracts and titles, although this difference becomes less pronounced as the number of topics increases.
+Assessing the diversity of top words representing the topics, a clear trend emerged: diversity generally diminished as the number of topics increased. Titles, surprisingly, offered the highest diversity amongst all models, suggesting a broader range of unique words characterising their topics.
 
--   Based on this metric, *BERTopic* Abstract is identified as the clear winner.
+Furthermore, *BERTopic* consistently outperformed *LDA* in terms of diversity. Ultimately, the *BERTopic* Title model secured the top position for diversity, with *BERTopic* Full-text closely trailing.
 
-Regarding *Topic Diversity*, which measures the proportion of distinct top words, the results show that diversity generally decreases as the number of topics increases:
-
--   Models trained on titles offer the best diversity.
-
--   *BERTopic* models exhibit better diversity than *LDA* models.
-
--   The winner for diversity is *BERTopic* Title, closely followed by *BERTopic* Full-text.
-
-The *Joint Recall* metric evaluates how effectively the top words collectively represent the documents classified within each topic:
-
--   Titles yield the worst joint recall.
-
--   Full-text models perform better than their abstract and title counterparts.
-
--   *LDA* models generally show better joint recall than *BERTopic* models.
-
--   The winners for *Joint Recall* are *LDA* Fulltext and *BERTopic* Fulltext, with *BERTopic* Abstract performing very closely behind.
-
-## Model Performance Summary
+## Results: Joint Recall Performance
 
 ![Slide 17](images/ai-nepi_016_slide_17.jpg)
 
-A summary table consolidates the performance results, offering an overall view of each model's strengths and weaknesses across various assessment criteria. The models evaluated are:
+The joint recall metric, which evaluates the efficacy of top words in collectively representing documents classified within each topic, revealed distinct performance hierarchies. Titles consistently yielded the poorest recall scores, indicating a limited ability of their top words to capture the full scope of associated documents. Conversely, full-text models demonstrated superior recall compared to both their abstract and title counterparts.
 
--   *LDA* Full-text (rated 4*)
+Between the two primary approaches, *LDA* generally exhibited better joint recall than *BERTopic*. Ultimately, *LDA* Full-text and *BERTopic* Full-text emerged as joint leaders in this category, with *BERTopic* Abstract following very closely behind.
 
--   *LDA* Abstract (4.5*)
+## Overall Model Performance Summary
 
--   *LDA* Title (2.5*)
+![Slide 17](images/ai-nepi_016_slide_17.jpg)
 
--   *BERTopic* Full-text (4.5*)
+The researchers compiled the comprehensive results into a summary table, visually representing each model's performance across various assessments using a graded circle system: black denoted the highest score, whilst white indicated the lowest. Crucially, this synthesis underscored the absence of an absolute "best" model, as varying research objectives inherently dictate differing needs and, consequently, distinct model choices.
 
--   *BERTopic* Abstract (4.5*)
+Consider, for instance, an objective focused solely on discovering main topics, where precise document classification is not paramount. In such a scenario, issues like poor recall or significant class imbalance might prove negligible. Here, full-text *BERTopic* performed commendably, despite exhibiting some class imbalance. Similarly, whilst far from optimal, title *BERTopic* nonetheless generated several robust topics that consistently appeared across other models. Conversely, the researchers strongly advise against employing *LDA* Title, given its consistently poor performance across nearly all assessment criteria.
 
--   *BERTopic* Title (3*)
-
-The assessment criteria include Overall fit, Top-words quality, Coherence, Diversity, and Joint recall. Performance scores are visually represented using circle icons, where a full black circle signifies the highest score and an empty circle indicates a low score. Red crosses highlight specific problems, such as class imbalance.
-
-The analysis indicates that there is no single absolute best model; the optimal choice is contingent upon the specific research objectives. Different objectives necessitate different model characteristics. For instance, if the primary goal is the discovery of main topics without requiring precise classification of every document, issues like poor recall or large classes might be acceptable. In such a scenario, the *BERTopic* Full-text model performs well, although it exhibits some class imbalance. The *BERTopic* Title model, while generally less optimal, is capable of producing some robust topics that are also identified by the other models.
+Ultimately, the study recommends conducting topic modelling on either abstract or full-text data, utilising both *LDA* and *BERTopic*, provided such an approach does not result in the misclassification of documents pertinent to the identified topics.
 
 ## Discussion and Future Directions
 
-The discussion highlights several key observations and potential future directions. The poor performance observed in title-based models is primarily attributed to the inherent lack of information in titles compared to abstracts or full texts. This limitation can lead to inaccurate classification of documents, although title models are still capable of identifying meaningful core topics.
+![Slide 17](images/ai-nepi_016_slide_17.jpg)
 
-Full-text models exhibit distinct characteristics depending on the approach. *LDA* models applied to full text tend to produce topics that are more loosely defined and broader in coverage, potentially capturing transverse themes such as research methods. *BERTopic* full-text models, on the other hand, may result in some topics being too narrow, leading to poor document coverage, and can suffer from class-size imbalance problems.
+This research yielded several crucial findings, informing future approaches to topic modelling. Firstly, title models consistently demonstrated poor performance. This deficiency likely stems from the inherent lack of information within titles, which can lead to the false classification of documents. Nevertheless, the *BERTopic* title model surprisingly revealed several meaningful topics, suggesting a potential balance between well-defined topics and comprehensive document coverage remains achievable.
 
-Abstract models demonstrate notable consistency, both between the *LDA* and *BERTopic* implementations and in their correspondence with the *LDA* full-text model. A significant finding is the overall robustness of topics, with very similar thematic areas being identified across the board, regardless of the specific model or text level used.
+Secondly, full-text models, whilst offering comprehensive data, sometimes struggle to process vast quantities of information effectively. With *LDA*, topics can become more loosely defined and broader in scope, occasionally encompassing secondary themes such as methodology. Conversely, *BERTopic*, when applied to full text, can generate overly narrow topics, resulting in inadequate document coverage and issues with class size.
 
-Future research possibilities include exploiting meta-analysis techniques to systematically identify the most robust topics that consistently appear across multiple models and text levels. Another direction involves using relative distance metrics to determine which model is the most central or representative among the set. Furthermore, the study suggests the potential for developing new topic modeling approaches that explicitly leverage the structural information present in documents (i.e., the distinction between full text, abstract, and titles) to extract more meaningful sets of topics or top words.
+Thirdly, abstract models consistently performed well with summary information. Notably, the results obtained from *LDA* full text exhibited strong consistency with both abstract models, underscoring their utility. Fourthly, the study revealed a remarkable robustness of topics across all models. Researchers identified very similar topics across the board, a consistency that facilitates the application of meta-analytic methods to pinpoint the most robust thematic elements. Moreover, leveraging the relative distance across models could enable the identification of an optimal solution, as exemplified by the *BERTopic* abstract model in this study, which performed exceptionally well across numerous metrics.
+
+Finally, the findings prompt consideration of new model paradigms. It appears feasible to exploit the inherent structural information—encompassing full text, abstracts, and titles—to extract more semantically meaningful sets of topics or top words, thereby advancing the precision and utility of topic modelling.

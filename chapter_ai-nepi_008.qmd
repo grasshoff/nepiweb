@@ -1,111 +1,74 @@
 ---
-abstract: "\n      The presentation addresses the limitations of current Large Language\
-  \ Models (LLMs) for scholarly inquiry, particularly in the history, philosophy,\
-  \ and sociology of science (HPSS). It identifies key missing capabilities in LLMs,\
-  \ including the ability to counter hallucination, understand meaning beyond embedding\
-  \ vectors, formulate justified true statements, avoid repeating unreliable media\
-  \ content, seek best justification, and plan scientific inquiry. The core proposed\
-  \ solution is the conce..."
+title: "Modelling Science: LLM for the History, Philosophy and Sociology of Science"
+shorttitle: "Modelling Science"
 author:
-
-- affiliation: AI-NEPI Conference Participant
-  name: Gerd Graßhoff
-bibliography: bibliography.bib
+- name: "Gerd Graßhoff"
+  affiliation: "Humboldt Universität zu Berlin"
+  email: "gerd.grasshoff@hu-berlin.de"
 date: '2025'
+bibliography: bibliography.bib
 ---
 
-# Modeling Science: LLM for the History, Philosophy and Sociology of Science
+## Overview {.unnumbered}
 
-## Overview
+This chapter introduces a pioneering framework for historical and scientific inquiry. It meticulously harnesses advanced Large Language Models (LLMs) whilst systematically mitigating their inherent limitations, particularly concerning factual hallucination and validation. The authors propose a novel "computational epistemology" paradigm, which fundamentally prioritises robust validation mechanisms over the mere expansion of contextual understanding or the simulated "thinking" capabilities of contemporary LLMs.
 
-The presentation addresses the limitations of current Large Language Models (LLMs) for scholarly inquiry, particularly in the history, philosophy, and sociology of science (HPSS). It identifies key missing capabilities in LLMs, including the ability to counter hallucination, understand meaning beyond embedding vectors, formulate justified true statements, avoid repeating unreliable media content, seek best justification, and plan scientific inquiry.
+A bespoke research infrastructure, aptly named *Scholarium*, forms the bedrock of this methodology. This sophisticated system seamlessly integrates meticulously curated scholarly sources, exemplified by the exhaustive *Opera Omnia Euler*, with a structured registry database. This registry systematically records historical activities and communications, thereby offering a validated alternative to conventional embedding-based approaches. The team implemented this intricate system within the *Cursor* environment, leveraging a suite of multimodal LLMs, including *Gemini 2.5*, *Claude*, and *Llama*, alongside a dedicated AI agent christened *Bernoulli*.
 
-The core proposed solution is the concept of "Validation is all you need," which involves providing reasons, arguments, and evidence for propositions and actions. This capability is framed within a new proposed discipline called Computational Epistemology, requiring epistemic agency to identify propositions, analyze argumentation, and understand historical actors' intentions, plans, and actions based on documented traces.
+Furthermore, the project strategically employs *Zenodo*, a long-term FAIR (Findable, Accessible, Interoperable, Reusable) repository, for enduring data preservation and dissemination. *Open Science Technology* provides crucial technical support, operating a Model Context Protocol Application Programming Interface (MCP API) server. This server ensures global access to the curated data via standardised APIs for artificial intelligence models, fostering principles of open access, open data, and open collaboration. Ultimately, the system aims to deliver complete, rigorously validated answers to complex historical queries—a critical capability currently absent in existing LLM applications.
 
-A comprehensive research infrastructure is presented to achieve these goals, comprising five key components:
-
--   *Scholarium* (Evidence): Curated scholarly sources validated by editorial boards, including extensive historical collections like the *Opera Omnia Euler*, *Kepler Gesammelte Werke*, and *Brahe Opera Omnia*.
-
--   *Scholarium* (Registry): A structured database serving as an alternative to embedding-based approaches, containing detailed, historically validated content items such as personal chronologies, communication acts, statements, arguments, and records of the use of language, tools, methods, data, and sources. Access is provided via an AI API and the *Model Context Protocol* (*MCP*) API.
-
--   User Interface (*AI Cockpit*): A working environment, specifically the *LettreAI* platform on *Cursor*, integrating multimodal LLMs (*Claude*, *Gemini*, *Llama*, including *Gemini 2.5* for multimodal capability) and featuring a specialized AI agent named "*Bernoulli*" for historical queries.
-
--   *FAIR Infrastructure*: Utilizing *Zenodo*, hosted by CERN, for long-term storage and publication of data, ensuring Findability, Accessibility, Interoperability, and Reusability.
-
--   Technical Support: Provided by the startup *OpenScienceTechnology*, focusing on running the infrastructure, including an *MCP API Server*, and adhering to principles of Open Source, Open Access, Open Data, and Open Collaboration to standardize AI access to knowledge.
-
-The system aims to provide validated, complete answers to complex historical queries by leveraging curated data and instructing LLMs with explicit reasoning rules formulated in natural language. This approach contrasts with reliance solely on unstructured text and embedding vectors, which are deemed insufficient for achieving the required level of justification and completeness for scholarly historical research. The infrastructure is designed to maintain scholarly expertise and ensure the long-term preservation and accessibility of valuable historical data.
-
-## LLM Evolution and Current State
+## Evolution and Limitations of Large Language Models
 
 ![Slide 01](images/ai-nepi_008_slide_01.jpg)
 
-Large Language Models (LLMs) have undergone rapid evolution. The initial focus was captured by the phrase "Attention is all you need." This capability was subsequently supplemented by the requirement for "Context is all you need," necessitating larger context windows and methods such as Retrieval Augmented Generation (RAG).
+Large Language Models have undergone a remarkably swift evolution, progressing through distinct conceptual phases. Initially, the paradigm centred on "Attention is all you need," emphasising the core mechanism of *Transformer* architectures. Subsequently, the focus shifted towards "Context is all you need," prompting developments such as *Retrieval-Augmented Generation* (RAG) to expand contextual understanding. The latest conceptualisation now postulates "Thinking is all you need," suggesting a further layer of cognitive capability.
 
-The latest models now propose that "Thinking is all you need" is also required, focusing on reasoning capabilities, potentially with or without an explicit plan. This represents the current state of LLMs, integrating attention, context handling, and nascent reasoning abilities.
+Despite this rapid advancement, current LLM iterations exhibit significant deficiencies, particularly concerning the rigorous demands of scholarly inquiry. Crucially, these models lack an inherent opponent mechanism to effectively counter hallucination, a pervasive challenge in generative AI. Furthermore, embedding vectors, whilst powerful for semantic similarity, fundamentally fail to capture the true meaning of expressions. These models frequently formulate statements that, whilst sounding plausible, prove factually incorrect.
 
-## Missing Capabilities in Current LLMs
+Moreover, LLMs struggle to differentiate genuine knowledge from mere internet media or hearsay, often repeating unverified information. Consequently, LLMs currently cannot reliably seek the best-justified information or formulate coherent plans for complex scientific inquiry. While these are significant limitations, the framework presented in this chapter offers a promising approach to mitigate some of these fundamental challenges through robust validation.
 
-![Slide 01](images/ai-nepi_008_slide_01.jpg)
+## The Imperative of Validation and Computational Epistemology
 
-Current LLMs exhibit several critical missing capabilities essential for reliable scholarly work. A significant problem is the lack of an inherent mechanism or "opponent" to effectively counter hallucination, which is the generation of false or nonsensical information.
+![Slide 03](images/ai-nepi_008_slide_03.jpg)
 
-Furthermore, embedding vectors, a common representation method, are fundamentally not equivalent to the meanings of expressions. LLMs tend to formulate responses that may sound plausible or good but are factually false. They also frequently repeat content sourced from internet media without sufficient validation, treating it as knowledge.
+A critical need emerges for robust validation mechanisms within advanced computational systems. Such validation must furnish comprehensive reasons, compelling arguments, and verifiable evidence both for and against the truth of any given proposition. Moreover, it must extend to providing justifications for or against the pursuit of specific actions.
 
-Current models lack the ability to actively seek out and prioritize what is best justified based on evidence or reasoning. Finally, they are unable to formulate effective plans for conducting scientific inquiry. These identified capabilities are absent in existing LLM models, and it is asserted that current technologies offer no realistic prospect of achieving these missing goals.
+To address this profound gap, scholars propose a nascent discipline: computational epistemology. This new subject systematically develops the methods and methodologies essential for bridging the validation deficit inherent in current AI approaches. Computational epistemology aims to equip AI systems with the capacity for genuine epistemic agency, enabling them to reason about knowledge and justification.
 
-## Validation and Computational Epistemology
+Achieving genuine epistemic agency necessitates several key capabilities. Researchers must identify propositions that extend beyond simple sentences, discerning their underlying meaning and scope. Furthermore, the system must accurately identify arguments embedded within diverse texts, historical sources, and complex inquiries. Crucially, it must also discern the intentions, plans, and actions of historical figures, meticulously documented within their surviving records.
 
-![Slide 02](images/ai-nepi_008_slide_02.jpg)
-
-A critical requirement identified for advancing LLM capabilities in scholarly domains is validation, summarized as "Validation is all you need." Validation is defined as the process of providing explicit reasons, arguments, and evidence that support or oppose the truth of a given proposition. It also involves providing reasons for or against the pursuit of specific actions.
-
-To address this fundamental gap in current AI, a new discipline is proposed: Computational Epistemology. This field focuses on developing the methods and methodologies necessary to implement computational validation processes.
-
-Achieving validation requires epistemic agency, which encompasses several key abilities. These include the capacity to identify propositions, which goes beyond merely processing sentences; the ability to analyze and understand argumentation structures within texts and sources; and the capability to identify the intentions, plans, and actions of historical persons as documented and traced in historical documents.
-
-## Working Environment and Inquiry Example
+## The Research Inquiry Environment
 
 ![Slide 04](images/ai-nepi_008_slide_04.jpg)
 
-A working environment designed for validated historical inquiry is demonstrated through a screenshot of a web browser interface. The interface features a PDF viewer on the left, displaying a historical source document (*Manger1789.pdf*), specifically page 7 of 281, containing old German text related to construction under King Friedrich Wilhelm II.
+A specialised working environment facilitates rigorous historical inquiry. The interface presents an open historical source, such as a book title page, on its left pane. This context involves the construction of *Sanssouci Castle* under Frederick the Great and the contentious role of *Leonhard Euler*, one of the 18th century's most eminent mathematicians, in what proved a significant construction failure. Historians continue to debate Euler's precise responsibility for this setback.
 
-On the right side, a dark-themed panel titled "Personen und Aufgaben in der Bibliothek" houses the search query input and results display areas. The example historical problem addressed is the long-standing dispute among historians of science regarding the involvement and potential responsibility of the mathematician Leonard Euler in the significant failure of the Sanssouci castle water fountain construction in the 18th century. The goal of the inquiry within this environment is to obtain a validated, reliable, and factually correct answer grounded in proven evidence, moving beyond mere hearsay.
+The right pane features a text editor where users formulate specific inquiries. For instance, a user might pose the question: "*Rekonstruiere welche Personen an der Wasserfontaine welche Arbeiten ausführten*" (Reconstruct which persons performed which work on the water fountain). The system aims to provide a validated, qualifying answer, rigorously supported by proven evidence rather than mere hearsay. Consequently, the output lists individuals, such as *Nahl*, *Benkert* and *Heymüller*, and *Giese*, detailing their specific contributions, periods of work, earnings, and documented achievements or failures, with explicit references to associated files like "Manger1789_p81-91.xml".
 
-An example query formulated in German is "*Rekonstruiere welche Personen an der Wasserfontaine welche Arbeiten ausführten*," which translates to "Reconstruct which persons performed which work on the water fountain." The system provides validated results in a numbered list format. For this specific query, the results identify the key individuals involved: Nahl, a sculptor, who created the drawings and small models and received 200 Thaler; Benkert and Heymüller, who took on the task of producing the models in the required size under a contract dated June 6, 1746, and were paid 1,970 Thaler; and Giese, who was responsible for casting the figures from lead over the core pieces, processing approximately 600 Zentner of lead, and received 6,000 Thaler.
+The *Cursor* environment, situated at the bottom right of the interface, enables the deployment of AI agents. Here, a dedicated agent, named *Bernoulli*, assists in navigating and querying these complex sources. A significant challenge, however, extends beyond merely reading individual PDF sources; it necessitates searching all available, relevant sources—a task for which conventional token-based indexing proves inadequate.
 
-The output references a specific XML file, *Manger1789_p81-91.xml*. The underlying platform for this working environment is the *Cursor* environment, which allows the use of AI agents. The specific agent employed for these historical inquiries is named "*Bernoulli*." A key challenge highlighted is that obtaining such validated answers requires more than simply reading a single PDF source; it necessitates the ability to search across *all* available sources, a task for which standard indexing and token-based approaches are deemed insufficient.
+## Scholarium: Curated Scholarly Sources
 
-## Scholarium: Curated Scholarly Evidence
+![Slide 07](images/ai-nepi_008_slide_07.jpg)
 
-![Slide 08](images/ai-nepi_008_slide_08.jpg)
+The system fundamentally relies upon a scholarly curated editorial board, which meticulously validates all integrated sources. A prime example of this rigorous approach is the *Opera Omnia* of Euler, a monumental collection spanning 86 volumes. Scholars dedicated over 120 years to its comprehensive editing, a process completed just two years prior. This exhaustive work encompasses all 866 of Euler's publications and his complete correspondence.
 
-The first key component of the infrastructure is the *Scholarium* for Evidence. This component relies on the oversight of a Curated Scholarly Editorial Board, ensuring the scholarly reliability of the sources.
+Other significant scholarly works, including the *Kepler Gesammelte Werke* and *Brahe Opera Omnia*, further complement this foundational collection. Users access these resources via a dedicated *Euler Opera Omnia Viewer*, which provides intuitive navigation through collection, series, volume, and index dropdowns. This curated approach ensures the highest level of data integrity for historical research.
 
-Examples of these foundational curated sources include the *Opera Omnia Euler*, a monumental collection comprising 86 volumes of Euler's work, which underwent scholarly editing for approximately 120 years by various scholars and was completed two years prior. This comprehensive edition includes all of Euler's letters and his 866 publications. Complementary scholarly reliable sources integrated into this component include the *Kepler Gesammelte Werke* and the *Brahe Opera Omnia*.
+## Scholarium: Registry as an Embedding Alternative
 
-## Scholarium: Registry instead of Embeddings
+![Slide 06](images/ai-nepi_008_slide_06.jpg)
 
-![Slide 09](images/ai-nepi_008_slide_09.jpg)
+A pivotal innovation within this framework is the *Scholarium*, which serves as a sophisticated alternative to conventional embedding-based approaches. Functioning as a meticulously curated database of content items, the *Scholarium* maintains a highly detailed inventory of historically proven activities, with each entry rigorously validated against original sources.
 
-The second key component is the *Scholarium* as a Registry, which serves as a novel substitution for conventional embedding-based approaches. This component is a curated database containing a very detailed inventory of content items representing historically proven activities, all rigorously validated by sources.
+This comprehensive registry systematically captures a diverse array of information. It meticulously documents personal actions, various communication acts—including letters, publications, and reports—and specific statements. Furthermore, it records implications, arguments, and inquiries, alongside the nuanced use of language, terminology, and concepts. The system also tracks the application of specific concepts and their relations, the deployment of models and methods, and the utilisation of tools and devices. Crucially, it catalogues the precise use of data, information, evidence, and sources. An integrated AI API, specifically leveraging the Model Context Protocol (MCP API), facilitates seamless interaction with this rich, structured data.
 
-The types of content recorded include personal actions, various communication acts such as letters, publications, and reports, as well as statements, implications, arguments, and inquiries. The registry also meticulously documents the use of language, terminology, and concepts by historical figures, along with their use of concepts, relations, models, methods, tools, devices, data, information, evidence, and sources. Access to this detailed and validated historical record is provided through both a dedicated AI API and the *Model Context Protocol* (*MCP*) API.
+## Technical Infrastructure and FAIR Principles
 
-## User Interface: AI Cockpit
+![Slide 07](images/ai-nepi_008_slide_07.jpg)
 
-The user interface component, referred to as the *AI Cockpit*, operates on the *LettreAI* platform within the *Cursor* environment. This interface integrates multiple accessible multimodal LLM models, including *Claude*, *Gemini*, and *Llama*.
+The system queries its meticulously compiled records using a suite of accessible multimodal models. Researchers have determined that the latest multimodal models, such as *Gemini 2.5*, prove optimal for the task requirements, adeptly combining information derived from both text and images. The *Cursor* environment integrates a range of LLM models, including *Claude*, *Gemini*, *Llama*, and *LettreAI*.
 
-The system leverages the capabilities of multimodal models, specifically mentioning *Gemini 2.5*, which can combine information from both text and images, a feature deemed beneficial for solving the requirements of the historical inquiry tasks.
+For enduring data preservation and publication, a long-term FAIR (Findable, Accessible, Interoperable, Reusable) repository is indispensable. *Zenodo*, hosted by CERN in Geneva, fulfils this critical role, ensuring the longevity and accessibility of the project's data for many years.
 
-## FAIR Infrastructure
-
-A crucial component is the *FAIR Infrastructure*, designed for the long-term storage and publication of the project's data while adhering to the FAIR principles (Findability, Accessibility, Interoperability, and Reusability).
-
-The specific tool utilized for this purpose is *Zenodo*, which is hosted by CERN in Geneva. *Zenodo* provides the necessary capabilities to host the project's data reliably for many years.
-
-## Technical Support: OpenScienceTechnology
-
-Technical support for the infrastructure is provided by the startup *OpenScienceTechnology*. This entity is responsible for running the system's infrastructure and specifically provides an *MCP API Server*.
-
-The technical support operates under principles of Open Source, Open Access, Open Data, and Open Collaboration. The *MCP API Server* plays a key role in attempting to standardize AI access APIs to knowledge on a worldwide scale through a standardized interface, facilitating open collaboration.
+Technical support for the underlying infrastructure is provided by *Open Science Technology*, a dedicated startup. This entity manages the operational aspects of the system, including the crucial Model Context Protocol (MCP API) server. This server facilitates worldwide access to the curated data via standardised APIs, enabling seamless interaction with artificial intelligence models. This comprehensive technical framework actively promotes principles of open collaboration, open source development, open access to resources, and open data sharing, thereby contributing to a more transparent and verifiable scholarly ecosystem.

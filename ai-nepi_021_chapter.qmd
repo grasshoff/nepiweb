@@ -1,0 +1,122 @@
+---
+title: "From Source to Structure: Extracting Knowledge Graphs with Large Language Models"
+author: "Raphael Schlattmann, Aleksandra Kaye, Malte Vogl"
+date: "2 April 2025"
+bibliography: bibliography.bib
+format:
+  html:
+    toc: true
+    number-sections: true
+    theme: sandstone
+    code-fold: false
+    link-citations: true
+---
+
+## Overview {.unnumbered}
+Transforming unstructured textual data into structured knowledge graphs presents a significant challenge, particularly within historical and biographical research. This chapter details a novel, two-stage pipeline designed to address this, leveraging the capabilities of Large Language Models (LLMs) whilst incorporating human oversight for quality assurance. The first stage centres on ontology-agnostic Open Information Extraction (OIE). Here, the system processes input data, interacts with LLMs for initial triple extraction, and involves human validation to ensure data sufficiency and accuracy before standardising the OIE output. If the extracted data proves insufficient, a manual correction loop for a sample of triples refines the process.
+
+Subsequently, the second stage undertakes ontology-driven Knowledge Graph (KG) construction. This phase commences with the formulation of competency questions, guiding the LLM-assisted creation of an ontology and corresponding SHACL (Shapes Constraint Language) shapes. Human experts again intervene to refine these outputs. The pipeline then proceeds to ontology mapping, entity disambiguation (often involving Information Retrieval from resources like Wikidata), and finally, the construction and validation of an RDF Star graph against SHACL shapes. Similar to the first stage, decision points assess data sufficiency, triggering manual correction loops if necessary, ensuring the final KG is robust and fit for purpose. Both stages operate across distinct layers, encompassing system-level processes, LLM interactions, and crucial human-in-the-loop interventions.
+
+![Pipeline Overview diagram showing Stage 1 (Ontology agnostic Open Information Extraction) and Stage 2 (Ontology driven Knowledge Graph building) with their respective steps and human-in-the-loop components.](images/ai-nepi_021_slide_08.jpg)
+
+## Introduction: The Challenge of Unstructured Data
+
+Vast quantities of historical and biographical information reside within unstructured texts, holding immense potential for scholarly inquiry. However, unlocking this potential requires sophisticated methods to convert narrative prose into structured, analysable data. Traditional Natural Language Processing (NLP) techniques, whilst valuable, often fall short in capturing the rich contextual nuances and complex relationships embedded within such texts. For instance, consider a biographical entry for an individual like Henrik Bartsch, an evangelical priest born in 1832. A simple textual account of his life—his birth details, travels, and publications—contains a multitude of interconnected facts: his profession, date and place of birth, the administrative region of his birthplace, and the destinations of his travels.
+
+![Title slide: From Source to Structure, Extracting Knowledge Graphs with LLMs, by Raphael Schlattmann, Aleksandra Kaye, Malte Vogl, 2 April 2025. A network diagram is in the background.](images/ai-nepi_021_slide_01.jpg)
+
+Extracting these facts not merely as isolated entities but as structured statements (e.g., "Henrik Bartsch - born on - 12. XII. 1832"; "Władysławów - located in - powiat koniński") is paramount for deeper analysis. Classical NLP approaches might struggle to achieve this level of granular, relational extraction comprehensively.
+
+![Example of Polish biographical text about Henrik Bartsch, highlighting his birth, travels, and publications.](images/ai-nepi_021_slide_05.jpg)
+
+To address this, researchers have developed a two-stage pipeline that employs Large Language Models (LLMs). The initial stage focuses on extracting any discernible statement from the text without reliance on preset categories. Following this, the second stage constructs a knowledge graph from these statements, adhering to defined rules to ensure consistency and clear categorisation of information. This structured approach aims to transform raw textual source material into a rich, queryable knowledge base.
+
+![Diagram illustrating the extraction of structured statements (triples) from the Polish text about Henrik Bartsch, identifying entities like PERSON, ROLE, DATE, LOCATION and relationships like 'is a', 'born on', 'born in', 'traveled to'.](images/ai-nepi_021_slide_06.jpg)
+
+## Guiding Principles for Pipeline Development
+
+The construction of this text-to-graph pipeline adheres to several core principles, distinguishing it from other available systems such as the Neo4j graph builder or Microsoft's GraphRAG, each of which presents its own set of challenges. These principles ensure a robust, adaptable, and verifiable process.
+
+First, task decomposition underpins the entire architecture. Researchers break down the complex transformation from text to graph into a series of small, controllable, and verifiable steps. This modularity allows for easier debugging, refinement, and quality control at each juncture.
+
+Second, the pipeline follows a research-driven and data-oriented methodology. This means that the development of the ontology and the ultimate structure of the knowledge graph are guided by specific research competency questions—what the researchers aim to discover—and by the nature of the questions that the source data can realistically answer.
+
+Third, verifiability at key points is integral, manifesting as the human-in-the-loop aspect. Expert human intervention ensures the accuracy and relevance of LLM-generated outputs, from validating extracted information to refining ontologies and competency questions. This collaborative approach between human expertise and AI capabilities is crucial for producing high-quality, reliable knowledge graphs.
+
+![Slide titled 'Principles' listing: Research-Driven & Data-Oriented, Human-in-the-loop, Task Decomposition, Verifiability, and Modularity.](images/ai-nepi_021_slide_09.jpg)
+
+## The Two-Stage Text-to-Graph Pipeline
+
+The methodological core of this endeavour is a carefully designed two-stage pipeline, engineered to systematically convert unstructured textual narratives into structured, queryable knowledge graphs. Each stage comprises distinct steps, LLM interactions, and human oversight, ensuring both efficiency and accuracy.
+
+### Stage 1: Ontology-Agnostic Open Information Extraction
+
+The journey from raw text to structured data commences with Stage 1, which focuses on Open Information Extraction (OIE) without initial ontological constraints. Input data frequently originates from varied and often 'messy' unstructured sources. These sources may necessitate considerable pre-processing, such as Optical Character Recognition (OCR) for scanned documents or web scraping for online content, before entering the pipeline in a semi-structured format, typically as chunks of text.
+
+![Table showing example input for Stage 1: Pre-processed data files containing biographical information, resulting in semi-structured data with rows representing chunks (Name, Role, Biografie (Chunk), chunk_id).](images/ai-nepi_021_slide_10.jpg)
+
+A central step in this stage involves an LLM performing OIE. The LLM receives instructions to extract all subject-predicate-object triples it can identify within the text chunks, irrespective of any pre-defined conditions or categories. OIE itself is a highly active field of research, one that has increasingly shifted towards utilising LLMs for their capacity to understand and parse complex linguistic structures.
+
+Following the initial extraction, a process of LLM ensembling enhances the quality of the results. A second LLM validates and refines the statements generated by the first. This second model operates adversarially, critically evaluating the initial output, correcting errors, identifying new potential triples, and assigning a confidence score to each extraction. This collaborative-adversarial approach aims to improve the precision and recall of the extracted information.
+
+![Table showing example output from OIE Validation: Validated SPO triples with columns for subject, predicate, object, timeframe, and confidence score.](images/ai-nepi_021_slide_11.jpg)
+
+The first crucial human-in-the-loop intervention occurs at this point. Domain experts evaluate a sample of the validated output, comparing it against a 'gold standard' sample that they have manually created or verified. This comparison yields standard performance metrics such as F1-score, precision, and recall, allowing for a quantitative judgment of the extraction quality. The definition of "sufficient" quality is entirely dependent on the specific use case, the dataset, and the research questions posed. If the scores meet the predefined threshold, the process moves to Stage 2. If not, an iterative loop begins, potentially involving refinement of prompts, models, or further manual correction to improve the OIE output.
+
+![Diagram showing the OIE quality assessment step, where validated triples and a gold standard are used to calculate quality metrics (F1, Precision, Recall), leading to a decision on sufficiency.](images/ai-nepi_021_slide_12.jpg)
+
+### Stage 2: Ontology-Driven Knowledge Graph Construction
+
+With a set of validated, albeit ontology-agnostic, triples from Stage 1, the pipeline transitions to Stage 2. This stage focuses on imposing a meaningful structure upon the extracted knowledge, guided by specific research objectives, to construct a coherent Knowledge Graph (KG).
+
+The process begins with the definition of competency questions (CQs). These are specific questions that the final KG should be capable of answering. Formulating CQs ensures that the KG’s structure is tailored to the research aims, rather than being dictated by a pre-existing, generic ontology. While human domain experts ultimately finalise these CQs, a reasoning model first drafts an initial set of 25 to 30 questions, which are then refined and corrected by the experts.
+
+![Diagram illustrating the Competency Question (CQ) generation process, with input being a sample of validated triples and output being manually refined CQs. An example CQ is provided.](images/ai-nepi_021_slide_14.jpg)
+
+Building upon these CQs, the next step involves ontology creation. The CQs, alongside the previously extracted triples, inform the development of a bespoke ontology. Again, a reasoning model drafts an initial version of this ontology. Subsequently, domain experts meticulously review, refine, and correct it to ensure its accuracy, completeness, and relevance to the research context.
+
+From this refined ontology, the system generates SHACL (Shapes Constraint Language) shapes. SHACL shapes are essentially sets of rules or constraints that define what kinds of statements and structures are permissible within the KG. These rules ensure that the data conforms to the established ontology, maintaining consistency and integrity.
+
+![Diagram showing the SHACL creation step, where the ontology and triples are input to a generation call, producing SHACL shapes. The output is mapped triples in conceptual RDF.](images/ai-nepi_021_slide_15.jpg)
+
+The final steps in Stage 2 involve entity disambiguation and data encoding. Entities within the triples are disambiguated and, where possible, resolved to canonical instances in external knowledge bases like Wikidata (e.g., linking "Humboldt Uni Berlin" to its unique Wikidata identifier). The data, now enriched with disambiguated entities and structured according to the ontology, is encoded. This encoding includes crucial metadata such as the source of the information, confidence scores from Stage 1, and the initial text chunk from which the triple was derived. All this information is consolidated into an RDF Star graph. RDF Star is an extension of RDF that allows statements to be made about other statements, a feature particularly useful for capturing contextual information like temporality or provenance. A final validation step checks the RDF Star graph against the SHACL shapes. Upon successful validation, the KG can be exported for various applications, such as network analysis in graph databases like Neo4j, or stored in a triple store for subsequent reasoning and complex querying.
+
+![Diagram illustrating the disambiguation and RDF Star generation phase, with input including mapped triples, SHACL shapes, and metadata, and output being disambiguated triples and RDF-star statements.](images/ai-nepi_021_slide_16.jpg)
+
+## Application and Use Cases
+
+The true measure of such a pipeline lies in its application to real-world scholarly challenges. The described text-to-graph methodology facilitates a controlled approach to transforming unstructured data into structured insights, enabling researchers to pose overarching questions to historical corpora that were previously unanswerable through traditional means.
+
+### Use Case 1: Zieliński's Polish Biographical Dictionary
+
+One significant application involves Stanisław Zieliński's compilations, particularly "A Little Dictionary of Polish Colonial and Maritime Pioneers" (1933). This dictionary, produced in the 1930s, formed part of a broader nation-building effort in Poland, aiming to document Poles who had ventured abroad and contributed to exploration, science, and other fields. The original source material exists as a printed PDF, rendering structured querying nearly impossible.
+
+![Slide titled 'Example: Zieliński - Overview (Sources and Questions)' listing Zieliński's compilations and example research questions about overlooked individuals, migration patterns, and the role of journals.](images/ai-nepi_021_slide_18.jpg)
+
+By processing this dictionary through the pipeline, researchers can now explore complex questions. For instance, they can investigate how the migration of different individuals fostered the introduction of new ideas or spurred innovation in various parts of the world. Furthermore, the role of specific editors or publications within this corpus in disseminating knowledge can be systematically analysed. The resulting knowledge graph allows for network analysis, visualising connections between, for example, editors (represented in green) and authors (in pink). Such visualisations reveal patterns of collaboration and influence that would be entirely obscured in the original textual format. This enables quantitative analyses, such as centrality measures, potentially tracked across time, thereby extracting novel information from a historically significant but previously opaque dataset.
+
+![Social network graph derived from Zieliński's compilations, showing nodes (editors in green, others in pink) and edges representing connections. Node labels indicate names of individuals.](images/ai-nepi_021_slide_19.jpg)
+
+### Use Case 2: "Wer war wer in der DDR?" (Who was Who in the GDR)
+
+Another compelling use case centres on the "Wer war wer in der DDR?" biographical reference work. This extensive compilation documents approximately 4,000 key figures from East German history, including politicians, dissidents, scientists, and artists. Published since the early 1990s, it inherently carries a bias towards 'famousness' as a criterion for inclusion. Although digitised and made available online in the 2000s, the data remains primarily searchable as text, lacking the structure needed for complex relational queries.
+
+Applying the pipeline to this dataset allows for nuanced investigations. For example, one can explore differences between individuals who received state awards and those who did not, particularly concerning their political affiliations and roles within the state apparatus. Preliminary analyses, based on an early version of the pipeline, indicate interesting patterns. Certain prestigious awards, such as the Karl-Marx-Orden and Held der DDR (Hero of the GDR), show strong correlations with SED (Socialist Unity Party of Germany) affiliation and positions of political power. Conversely, other awards, like the Nationalpreis der DDR (National Prize of the GDR), exhibit a weaker link to high-ranking positions, likely because they were more frequently bestowed upon figures in cultural, scientific, or athletic domains.
+
+![Scatter plot comparing GDR state awards based on recipients' SED affiliation rate and high positions rate. A text box provides detailed comparison data for Karl-Marx-Orden recipients versus non-recipients.](images/ai-nepi_021_slide_20.jpg)
+
+For scholars in fields such as the History and Philosophy of Science and Technology (HPSS), analyses of this nature offer considerable value. They provide a means to structurally investigate the intricate interconnections between science, politics, and society. By examining variables like education, political affiliation, or positions of power across different generations or cohorts of scientists, researchers can gain deeper insights into the dynamics of these relationships over time.
+
+## Conclusion and Future Directions
+
+The development of this text-to-graph pipeline represents a significant step towards transforming isolated biographical entries into structurally queryable knowledge. This journey, however, is ongoing, with current efforts focused on addressing several key challenges. Improving entity disambiguation—accurately identifying and linking entities to canonical references—and establishing robust benchmarking procedures are principal among these.
+
+The immediate next steps involve completing and refining the pipeline, which currently exists as a proof of concept. Researchers plan to systematically compare its performance against other established pipelines and packages. Subsequently, the aim is to scale its application to full datasets, enabling comprehensive historical analyses.
+
+Looking further ahead, future goals include fine-tuning the pipeline for specific use cases and exploring the integration of GraphRAG (Retrieval Augmented Generation on Knowledge Graphs) techniques. This would allow for natural language querying of the generated knowledge graphs, making complex data more accessible. Additionally, the construction of multilayered networks, potentially using frameworks like ModelSEN (Multilayer Social-Ecological Networks), promises deeper structural analysis of the interconnected historical data.
+
+![Conclusion slide summarising current challenges (entity disambiguation, benchmarking), next steps (improve pipeline, compare, scale), and future goals (GraphRAG, multilayered networks). Contact emails and a QR code are provided.](images/ai-nepi_021_slide_21.jpg)
+
+The discussions surrounding this work have also highlighted important considerations for future development. The reusability of the extracted triples is a key aspect; once generated and validated, these structured statements can be made openly available, allowing other researchers to build entirely different knowledge graphs tailored to their unique research questions—from family history to literary studies. Collaboration with initiatives like Wikidata, both for resolving entities and potentially contributing new structured data back to the commons, remains an important long-term objective.
+
+The critical dimension of time, especially pertinent in historical datasets, is explicitly addressed by extracting temporal information associated with statements and modelling this using RDF Star. For the dissemination and preservation of these valuable knowledge graphs, adopting FAIR (Findable, Accessible, Interoperable, Reusable) data principles and utilising archival platforms such as Dataverse are under consideration. Finally, the iterative nature of ontology development, moving from a strictly ontology-driven approach to a more flexible research-question-driven one, underscores the learning process. The principle of task decomposition remains central, as it consistently yields higher quality results than attempting end-to-end extraction with single, monolithic LLM calls, particularly for complex, nuanced historical texts. Continued exploration of advanced techniques, such as graph convolutional networks for entity alignment, will further enhance the pipeline's capabilities.

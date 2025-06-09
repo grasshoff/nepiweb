@@ -1,188 +1,72 @@
 ---
-abstract: "The project addresses the problem of extracting citation data from Law and Humanities scholarship, which heavily relies on complex footnotes. Existing bibliometric databases (*Web of Science*, *Scopus*, *OpenAlex*) have extremely poor coverage for historical and non-English SSH publications, are expensive, and have restrictive licenses. Traditional machine learning tools like *ExCite* perform poorly on complex footnote structures, exhibiting low extraction and segmentation accuracy (e.g., *ExCite* ..."
+title: "Parsing Footnotes in Law and Humanities Scholarship with Large Language Models"
 author:
-
-- affiliation: Max Planck Institute for Legal History and Legal Theory
-  email: boulanger@lhlt.mpg.de
-  name: Christian Boulanger, David Carreto Fidalgo & Andreas Wagner
-bibliography: bibliography.bib
+- name: "Christian Boulanger, David Carreto Fidalgo & Andreas Wagner"
+  affiliation: "Max Planck Institute for Legal History and Legal Theory"
+  email: "boulanger@lhlt.mpg.de"
 date: '2025'
+bibliography: bibliography.bib
 ---
+## Overview {.unnumbered}
 
-# Extracting Citation Data from Law and Humanities Scholarship
+Researchers have long grappled with the persistent challenge of extracting citation data from the complex footnotes prevalent in law and humanities scholarship. Historically, bibliometric databases have offered inadequate coverage for these domains. This deficiency stems primarily from a lack of commercial interest, a focus on impact factors over intellectual history, and the inherent complexity of humanities footnotes. Moreover, traditional machine learning tools consistently demonstrate poor performance in parsing these intricate structures. Consequently, this project explores the utility of Large Language Models (LLMs) and Vision Language Models (VLMs) as a more effective solution.
 
-## Overview
+A central tenet of this research involves establishing a robust testing and evaluation framework. To this end, scholars are developing a high-quality gold standard dataset, meticulously annotated using TEI XML encoding. This standard, well-established within the digital humanities, facilitates comprehensive representation of citation phenomena, including crucial contextual information. Furthermore, it ensures interoperability with existing tools such as *Grobid*, enabling direct performance comparisons.
 
-The project addresses the problem of extracting citation data from Law and Humanities scholarship, which heavily relies on complex footnotes. Existing bibliometric databases (*Web of Science*, *Scopus*, *OpenAlex*) have extremely poor coverage for historical and non-English SSH publications, are expensive, and have restrictive licenses.
+To operationalise this approach, engineers crafted *Llamore*, a lightweight Python package. *Llamore* extracts citation data from raw text or PDFs, exporting it into TEI-formatted XML files. Crucially, it also evaluates extraction performance against gold standard references using an F1-score metric, which accounts for precision and recall through an unbalanced assignment problem. Initial evaluations reveal that whilst *Llamore*'s resource consumption exceeds that of traditional tools like *Grobid* for biomedical literature, it significantly outperforms *Grobid* when processing the challenging, footnoted humanities data. Future work aims to expand the training data, refine evaluation metrics, and enhance *Llamore*'s capabilities to capture contextual citation information and resolve complex stylistic variations.
 
-Traditional machine learning tools like *ExCite* perform poorly on complex footnote structures, exhibiting low extraction and segmentation accuracy (e.g., *ExCite* accuracy around 0.22-0.26 for extraction). Footnotes in SSH are often complex, containing commentary, abbreviations, and multiple references ("footnotes from hell"). Creating training data for traditional methods is laborious using annotation tools.
+## Challenges in Humanities Citation Graph Generation
 
-*Large Language Models* (*LLMs*) and *Vision Language Models* (*VLMs*) show promise for handling messy textual data and PDFs, but the primary challenge is trusting the results due to potential hallucinations (e.g., inventing non-existent citations, as seen in legal cases).
+![Slide 01: Visual representation of a complex citation graph.](images/ai-nepi_010_slide_01.jpg)
 
-A robust testing and evaluation solution is required, necessitating a high-quality gold standard dataset, a flexible evaluation framework adaptable to fast-moving technology, and solid testing algorithms for comparable metrics.
+Researchers confront a significant challenge: Large Language Models and other algorithms currently struggle with the intricate footnotes characteristic of law and humanities scholarship. Generating comprehensive citation graphs from these sources represents a primary objective of our work. Such graphs prove invaluable for intellectual history, enabling scholars to discern patterns and relationships within knowledge production, trace intellectual influences, and quantify the reception of published ideas. For instance, one can readily identify the most cited authors within a specific journal over a defined period, as demonstrated by an analysis of the *Journal of Law and Society* between 1994 and 2003.
 
-The project develops a specialized gold standard dataset encoded in *TEI XML*, chosen for its well-established standard, detailed specification covering phenomena beyond mere reference management (including context for citation intention), and compatibility with existing digital humanities corpora and tools like *Grobid*. The dataset creation involves stages: screenshot of the PDF, segmentation of reference strings from non-reference text within footnotes, and parsed structured data.
+A fundamental impediment arises from the extremely poor coverage of historical Social Sciences and Humanities (SSH) literature within existing bibliometric data sources. Leading platforms, including *Web of Science*, *Scopus*, and *OpenAlex*, exhibit substantial deficiencies in this regard. *Web of Science* and *Scopus*, moreover, impose prohibitive costs and restrictive licensing terms, hindering open research initiatives. Whilst *OpenAlex* offers an open-access alternative, it too lacks comprehensive coverage for many A-journals, pre-digital content, and non-English language publications. For example, the *Zeitschrift für Rechtssoziologie*, established in 1980, shows negligible citation data before the 2000s within these widely used databases.
 
-The dataset currently includes over 1,500 references from open access journals to enable full publication from PDF to parsed data structures.
+Several factors contribute to this persistent data gap. Commercial entities demonstrate limited financial interest in humanities scholarship, unlike their engagement with STEM, medicine, and economics. Furthermore, these databases prioritise "impact factor" metrics for scientific evaluation, a focus that diverges significantly from the needs of intellectual history research. Crucially, the pervasive use of complex footnotes within humanities literature presents a unique parsing challenge, which traditional systems have consistently struggled to overcome.
 
-A *Python* package named *Llamore* (*Large Language Models for Reference Extraction*) is developed. *Llamore* is lightweight, acting as an interface to various *LLMs*/*VLMs* (compatible with *OpenAI API*, covering *Ollama*, *VLLM*, etc.). It takes text or PDFs as input and outputs references in *TEI XML* format.
+## Large Language Models and Footnote Complexity
 
-It also provides an evaluation function using the *F1 score* metric to compare extracted references against gold standard references. The *F1 score* calculation involves counting exact matches of bibliographic elements (analytic title, monographic title, surname, publication date, etc.) and dividing by the number of predicted and gold elements.
+![Slide 07: Illustration depicting the complexity of "footnotes from hell" with embedded commentary and non-reference text.](images/ai-nepi_010_slide_07.jpg)
 
-The problem of aligning extracted references to gold references is solved using an unbalanced assignment problem solver (from *SciPy*), maximizing the total *F1 score* with unique assignments and penalizing missing or hallucinated references with an *F1 score* of zero.
+A second, equally pressing problem arises from the inherent complexity of humanities footnotes, often termed "footnotes from hell." These structures frequently incorporate extensive commentary, extraneous content, and non-reference text, embedding the actual citations within considerable noise. Traditional instruments for extracting such information necessitate laborious manual annotation. Moreover, conventional machine learning tools, including those based on conditional random forests, consistently exhibit poor performance when faced with these intricate structures. For instance, the ExCite Performance study (Boulanger/Iurshina 2022) reported low extraction and segmentation accuracies across various training datasets, with combined data yielding an extraction accuracy of merely 0.22 and segmentation accuracy of 0.47. This highlights the limitations of previous approaches.
 
-Evaluation results show that *Llamore* performs comparably to *Grobid* on biomedical datasets (*PLOS 1000*) but significantly outperforms *Grobid* on the specialized humanities dataset, where *Grobid* struggles due to being out of distribution. While *LLMs* require significantly more compute than *Grobid*, their performance on complex SSH footnotes is superior.
+Consequently, researchers have turned to Large Language Models (LLMs) as a promising alternative. Initial experiments in 2022, utilising models such as *text-davinci-003*, demonstrated LLMs' considerable capacity for extracting references from highly unstructured textual data. Newer models offer even greater potential, whilst Vision Language Models (VLMs) extend this capability to direct processing of PDF documents. Developers employ various methods, including prompt engineering, Retrieval-Augmented Generation (RAG), and fine-tuning, to optimise these models for specific tasks. RAG, for example, enhances LLM outputs by retrieving relevant information from a knowledge base before generating a response, thereby improving accuracy and reducing hallucinations.
 
-Error analysis suggests issues include difficulty distinguishing volume/page numbers, misclassifying names in titles as authors, and misinterpreting terminology like "idem" as authors. The required *F1 score* for "good enough" data depends on the analysis goal (tendencies vs. accurate data). The current focus is on achieving reliable results before scaling up to avoid interpreting hallucinated data.
+Nevertheless, a crucial concern persists regarding the trustworthiness of LLM-generated results, particularly the risk of hallucinations. A notable incident involved a lawyer who, relying on *ChatGPT*, submitted a federal court filing citing at least six non-existent cases. Addressing this fundamental issue demands a robust testing and evaluation solution. Such a solution requires a high-quality gold standard dataset, a flexible framework capable of adapting to the rapidly evolving technology landscape, and solid testing algorithms to generate comparable performance metrics.
 
-Future work could involve *retrieval augmented generation* (*RAG*) using disciplinary databases for validation and potentially human-in-the-loop workflows for error correction and iterative model improvement. The project aims for both specific research results (e.g., citation trends in a specific journal) and generic applicability to other projects.
+## Developing a TEI-Annotated Gold Standard
 
-## Project Scope and Problem
+![Slide 13: Diagram illustrating the multi-stage process of TEI XML annotation for footnotes.](images/ai-nepi_010_slide_13.jpg)
 
-![Slide 01](images/ai-nepi_010_slide_01.jpg)
+To address the need for reliable evaluation, researchers have embarked upon compiling a comprehensive training and evaluation dataset, employing TEI XML encoding. This choice rests upon several compelling reasons. TEI XML represents a well-established, precisely specified, and comprehensive standard for text interchange within the digital humanities. Crucially, it encompasses a far broader range of phenomena than more restrictive bibliographical standards, such as *CSL* or *BibTeX*. Indeed, TEI extends beyond mere reference management, allowing for the encoding of citations, cross-references, and other contextual markup, which proves vital for classifying citation intention. Furthermore, adopting this standard enables the project to leverage existing digital editions, text collections, and corpora, thereby enhancing the generalisation and robustness of the developed mechanisms.
 
-The project focuses on extracting citation data specifically from Law and Humanities scholarship, a domain characterized by extensive and complex footnotes. The primary challenge involves parsing these footnotes using *Large Language Models* (*LLMs*) or other algorithmic approaches.
+Nevertheless, the TEI standard presents its own set of challenges, both conceptual and technical. Conceptual difficulties arise in differentiating between pointers (references to a specific part of a text) and references (full bibliographical entries), whilst technical complexities involve managing constrained elements (e.g., specific fields within a citation) versus elliptic material (e.g., abbreviations like *ibid.* or *op. cit.*). Despite these hurdles, the dataset's establishment progresses steadily. The encoding process involves multiple stages: capturing PDF screenshots, segmenting reference strings to distinguish them from non-reference footnote text, and finally, generating parsed structured data.
 
-The extracted data is intended for generating citation graphs, which are valuable tools in intellectual history and the history of science. Citation graphs enable the discovery of patterns and relationships within knowledge production, facilitate the reconstruction of intellectual influences, and allow for the measurement of the reception of specific ideas. An example application involves tracking the change in most-cited authors over time, such as an analysis conducted for the *Journal of Law and Society* between 1994 and 2003.
+The dataset currently comprises 1,100 footnotes and endnotes, drawn from 25 articles across 10 Directory of Open Access Journals (DOAJ) titles. It specifically focuses on humanities scholarship, particularly legal and historical texts, and encompasses a diverse range of languages, including French, German, Spanish, Italian, and Portuguese, spanning the period from 1958 to 2018. Researchers estimate the dataset will contain over 1,600 references, with individual occurrences encoded separately to preserve contextual information. Notably, the project adjusted its strategy midway, shifting to Open Access journals and incorporating PDFs to facilitate Vision Language Model (VLM) mechanisms and enable the full publication of the dataset.
 
-## Problem: Bibliometric Database Coverage
+The interoperability afforded by the TEI XML standard offers a significant advantage, enabling seamless integration with existing tooling. *Grobid*, a widely recognised tool for reference and information extraction, notably utilises TEI XML for its training and evaluation processes. Consequently, this shared data format permits direct performance comparisons with *Grobid* and facilitates the exchange of training data, benefiting both the project and the broader research community.
 
-![Slide 01](images/ai-nepi_010_slide_01.jpg)
+## *Llamore*: A Python Package for Reference Extraction
 
-A significant problem is the extremely poor coverage of historical *Social Sciences and Humanities* (*SSH*) scholarship in existing bibliometric databases. The primary databases in this space include *Web of Science*, *Scopus*, and *OpenAlex*. *Web of Science* and *Scopus* are characterized by high costs and very restrictive licenses, making dependence on them undesirable.
+![Slide 14: Workflow diagram showing *Llamore* processing text/PDFs to TEI XML and evaluating against gold standards.](images/ai-nepi_010_slide_14.jpg)
 
-While *OpenAlex* is preferable due to its open access nature, it also lacks sufficient coverage for the specific content required for this research.
+Researchers have developed *Llamore*, a Python package acronym for "Large LANguage MOdels for Reference Extraction." This tool facilitates two primary functions: extracting citation data from raw text or PDF inputs using multimodal Large Language Models, and subsequently evaluating the extraction performance. The workflow proceeds from text or PDF documents, through *Llamore*, to produce references in TEI XML format. These extracted references then undergo comparison with gold standard references, yielding an F1-score as an evaluation metric.
 
-Common coverage gaps across these databases for *SSH* literature include a lack of inclusion for journals not classified as "A-journals," insufficient data for publications from the pre-digital age, and a general lack of coverage for non-English language content.
+Crafting *Llamore* involved two key objectives. Firstly, the package needed to remain lightweight, comprising fewer than 2,000 lines of code. Crucially, *Llamore* operates as an interface to a model of the user's choosing, rather than embedding any specific model directly. Secondly, this design ensures broad compatibility with both open and closed Large Language Models and Vision Language Models, offering flexibility to researchers.
 
-An illustrative example is the *Zeitschrift für Rechtssoziologie*, a German journal established in 1980. Analysis of available citation data by decade shows very low coverage across *Dimensions*, *OpenAlex*, and *Web of Science* for the decades before the 2000s. Although coverage improves somewhat after 2000, it remains incomplete, particularly for *Web of Science*.
+Implementing *Llamore* proves straightforward. Users can install the package directly from PyPI using `pip install llamore`. For extraction, one imports the relevant extractor, such as *GeminiExtractor* or *OpenaiExtractor*, then instantiates it with an API key. The extractor processes either a PDF file path or a raw input string, returning a collection of references that can then be exported to a TEI XML file. Notably, the *OpenaiExtractor* provides compatibility with numerous open model serving frameworks, including *Olama* and *VLLM*, which offer OpenAI-compatible API endpoints. For evaluation, users import the *F1* class, configure it (e.g., `levenshtein_distance=0` for exact matches), and compute the macro average F1-score by supplying both the extracted and gold references.
 
-Several factors contribute to this poor coverage in *SSH*. Firstly, there is a perceived lack of financial incentive compared to *STEM*, medicine, and economics, which are typically well-represented.
+*Llamore* employs the F1-score, a widely recognised metric for comparing structured data, to assess extraction performance. This score combines precision (the ratio of correctly identified elements to all predicted elements) and recall (the ratio of correctly identified elements to all actual elements in the gold standard) into a single harmonic mean. A perfect extraction yields an F1-score of 1, whilst an F1-score of 0 indicates no matches. For instance, in comparing an extracted reference to a gold standard, *Llamore* identifies matches for `analytic_title`, `monographic_title`, `authors.surname`, and `publication_date`, whilst noting a minor discrepancy in `authors.forename` due to an extraneous character in the gold reference. Furthermore, *Llamore* addresses the complex task of aligning extracted references with gold references by framing it as an unbalanced assignment problem. The tool computes F1 scores for every possible combination, constructs a matrix, and then maximises the total F1-score whilst ensuring a unique assignment, utilising SciPy's solver for this optimisation. Significantly, the system penalises both missing and hallucinated references by assigning them an F1-score of zero.
 
-Secondly, these databases often focus on metrics like the "impact factor," which aligns with science evaluation goals but not necessarily with the objectives of intellectual history research. Finally, the literature itself presents a technical challenge due to the extensive use of complex footnotes, which are difficult for automated systems to process accurately.
+## Performance Analysis and Future Directions
 
-## Complex Footnotes and Training Data
+![Slide 20: Bar chart comparing *Llamore* and *Grobid* F1 scores on biomedical and humanities datasets.](images/ai-nepi_010_slide_20.jpg)
 
-![Slide 04](images/ai-nepi_010_slide_04.jpg)
+Initial performance evaluations provide crucial insights into *Llamore*'s efficacy across diverse datasets. When tested on the *PLOS 1000 Dataset*, which comprises 1,000 biomedical PDFs and demands exact matches, *Grobid* achieved an F1 score of 0.61, whilst *Llamore*, utilising *Gemini 2.0 Flash*, attained a comparable F1 score of 0.62. However, for literature on which *Grobid* was specifically trained, it demonstrates superior efficiency, operating considerably faster and with fewer computational resources; *Llamore*'s compute requirements, conversely, are orders of magnitude greater.
 
-Problem 2 concerns the nature of the footnotes themselves, often referred to as "footnotes from hell." These are typical of humanities scholarship and contain complex structures, including commentary, messy formatting, abbreviations, parenthetical information, and multiple distinct references embedded within surrounding non-citation text. An example image displays a scanned page with a footnote exhibiting these characteristics, featuring content in both German and English, various abbreviations, and multiple citations within a single numbered entry.
+A more compelling distinction emerges when evaluating performance on the project's bespoke humanities dataset, which features complex footnotes and also requires exact matches. Here, *Grobid* struggles significantly, yielding an F1 score of only 0.14, largely due to its training data being out of distribution for such intricate structures. In stark contrast, *Llamore* (*Gemini 2.0 Flash*) achieves an F1 score of 0.45, representing a threefold improvement in performance. This initial evaluation clearly demonstrates *Llamore*'s superior capability in handling the unique challenges posed by humanities footnotes, validating the utility of LLMs for this specific domain. Nevertheless, this current performance metric pertains solely to pure reference extraction, excluding the capture of contextual information or cross-referencing.
 
-Problem 3 highlights the difficulty in creating training data for citation extraction. The traditional approach involves a laborious manual annotation process. A web-based annotation tool is utilized for this purpose, allowing users to highlight segments of text within footnotes and assign specific labels corresponding to bibliographic elements such as:
+Future work outlines several key objectives. Researchers plan to generate additional training data and further refine the test metrics to encompass a broader range of citation phenomena. Crucially, they aim to extend *Llamore*'s capabilities to support citations in context, discerning whether a work is cited approvingly or critically. Furthermore, the tool will incorporate features for resolving *op cit.* references, identifying specific pages cited, and quantifying multiple citations to the same work.
 
-- Author
-
-- Title
-
-- Date
-
-- Journal
-
-- Volume
-
-- Pages
-
-- DOI
-
-- ISBN
-
-- URL
-
-- BackRef
-
-- Signal
-
-- Ignore
-
-and indicators for whether a segment is a reference or not. This manual annotation requires a significant investment of time and effort.
-
-## Limitations of Existing Tools
-
-![Slide 05](images/ai-nepi_010_slide_05.jpg)
-
-Problem 4 identifies a critical limitation: existing tools designed for citation extraction are unable to handle the complexity of humanities footnotes effectively. These traditional tools typically rely on machine learning methods such as *Conditional Random Forests*. However, their performance on the specific type of complex footnote data encountered in this domain is poor.
-
-An example illustrating this limitation is the performance of the tool *ExCite*. Its performance is evaluated using metrics including Extraction Accuracy and Segmentation Accuracy across different training data configurations: Default, Footnoted, and Combined. The results show consistently low accuracy scores.
-
-With Default training data, Extraction Accuracy is 0.24 and Segmentation Accuracy is 0.37. Using Footnoted training data yields Extraction Accuracy of 0.26 and Segmentation Accuracy of 0.37. The Combined training data results in Extraction Accuracy of 0.22 and Segmentation Accuracy of 0.47. These figures, sourced from Boulanger/Iurshina (2022), Table 1, demonstrate that *ExCite*, and by extension other similar traditional tools, struggle significantly with this task, regardless of the training data used.
-
-## LLMs as Solution: The Trust Problem
-
-![Slide 05](images/ai-nepi_010_slide_05.jpg)
-
-The question arises whether *Large Language Models* (*LLMs*) can offer a solution to the challenges of extracting citation data from complex footnotes. Early experiments conducted in 2022 using models such as *text-davinci-003* demonstrated the potential power of *LLMs* to extract references even from messy textual data. Newer models promise even better performance.
-
-Furthermore, *Vision Language Models* (*VLMs*) possess the capability to process PDFs directly, which is advantageous given that source materials are frequently available in this format.
-
-Potential methods for leveraging *LLMs* include *prompt engineering*, *Retrieval Augmented Generation* (*RAG*), and *finetuning*. However, a primary concern is the trustworthiness of the results produced by these models. A significant problem is the potential for hallucination, where *LLMs* invent information that does not exist, including fabricating citations.
-
-A notable example illustrating this issue involved a lawyer who used *ChatGPT* for a federal court filing and cited non-existent cases invented by the model, resulting in severe consequences. This highlights the critical principle that analysis should not be undertaken unless the results are known to be correct and sufficient validation data is available to verify accuracy.
-
-## Solution Requirements
-
-![Slide 06](images/ai-nepi_010_slide_06.jpg)
-
-To address the trust issue and enable reliable citation extraction, a robust testing and evaluation solution is required. This solution must meet several key requirements.
-
-- Firstly, it necessitates a high-quality Gold Standard dataset against which extracted results can be compared.
-
-- Secondly, it requires a flexible framework capable of adapting easily to the rapidly evolving technology landscape of *LLMs* and *VLMs*.
-
-- Finally, the solution must incorporate solid testing and evaluation algorithms designed to produce comparable metrics, allowing for objective assessment of different approaches and models.
-
-## Gold Standard Dataset
-
-![Slide 07](images/ai-nepi_010_slide_07.jpg)
-
-The project involves compiling a high-quality gold standard dataset intended for both training and evaluation purposes. The chosen encoding standard for this dataset is *TEI XML*. This standard was selected because it is well-established and precisely specified within the humanities and digital editorics fields.
-
-*TEI XML* is more comprehensive than simpler bibliographical standards like *CSL* or *BibTeX*, covering a wider range of phenomena and extending beyond basic reference management. It allows for encoding contextual information, which can be valuable for tasks such as classifying citation intention.
-
-Furthermore, adopting *TEI XML* enables the project to potentially utilize existing text collections and corpora from other digital editorics projects that publish their source data, including detailed reference encodings, in this format. Such existing corpora can also serve as resources for testing the generalization and robustness of the developed mechanisms.
-
-The dataset establishment process is currently underway. The encoding involves several stages, illustrated by an example of footnote number four. These stages include capturing a screenshot of the PDF source, segmenting the text to distinguish the actual reference string from surrounding non-reference text within the footnote (such as introductory phrases), and finally creating a parsed structured data representation of the reference.
-
-Midway through the project, the strategy for building the dataset was adjusted. Initially, the focus was on data directly relevant to the primary research question. More recently, the decision was made to include the source PDFs and structure the dataset to enable the use of *Vision Language Models* (*VLMs*). The goal is to be able to publish the entire dataset pipeline, from the source PDFs through to the parsed data structures.
-
-To facilitate this, the selection of source journals was changed to focus on open access publications. The dataset currently includes the encoding of over 1,500 references. It is noted that this count refers to occurrences, meaning the same work referenced multiple times is encoded separately to capture the specific context of each mention.
-
-A significant benefit of using the interoperable *TEI XML* standard is the availability of numerous tools. A particularly relevant tool for this project is *Grobid*, a popular system for reference and information extraction. *Grobid* utilizes *TEI XML* for its own training and evaluation processes. By using the same data format, the project can directly compare its performance against *Grobid*, potentially use *Grobid*'s existing training data, and contribute the newly created dataset to the *Grobid* development team.
-
-## Llamore: Extraction and Evaluation Tool
-
-![Slide 14](images/ai-nepi_010_slide_14.jpg)
-
-The project developed a tool named *Llamore*, which stands for *Large Language Models for Reference Extraction*. *Llamore* is implemented as a small *Python* package. Its core capabilities include taking text or PDF documents as input, extracting references from them, and exporting these extracted references as *TEI* formatted *XML* files.
-
-Additionally, if gold standard references are provided, *Llamore* can evaluate the performance of the extraction process.
-
-The design of *Llamore* prioritized two main objectives: being lightweight and ensuring broad compatibility. It is lightweight because it does not contain any language models internally; instead, it functions as an interface to a model selected by the user. This design also ensures compatibility with a wide range of both open and closed *LLMs* and *VLMs*.
-
-Implementation details include its availability on *PyPI*, allowing simple installation via the `pip` package manager. The extraction workflow involves defining an extractor object specific to the chosen model, such as using the *OpenAIExtractor*. This particular extractor provides compatibility with many open models (like those served by *Ollama* or *VLLM*) by interacting with their *API* endpoints that are designed to be compatible with the *OpenAI API* specification.
-
-The user provides a PDF or text input to the extractor, receives the extracted references, and can then export these references to an *XML* file. For evaluation, the user imports the *F1* class from the package and provides both the gold standard references and the extracted references to this class to compute performance metrics.
-
-## Evaluation Methodology
-
-![Slide 16](images/ai-nepi_010_slide_16.jpg)
-
-The evaluation methodology employed utilizes the *F1 score*, a well-established metric for comparing structured data. The *F1 score* is calculated based on Precision and Recall, which in turn depend on the number of matches between elements in an extracted reference and a corresponding gold standard reference. A match is defined based on the exact correspondence of specific bibliographic elements, such as analytic title, monographic title, surname, and publication date.
-
-Partial matches, like a forename with an extra dot, might not count as an exact match depending on configuration. Precision is calculated as the number of matches divided by the total number of elements predicted in the extracted reference, while Recall is the number of matches divided by the total number of elements in the gold reference. The *F1 score* is the harmonic mean of Precision and Recall. An *F1 score* of 1 indicates perfect extraction, where the reference is perfectly captured, while an *F1 score* of 0 signifies no matches were found.
-
-A key challenge in evaluating performance across a set of references is aligning the extracted references with their corresponding gold standard references. This is tackled by formulating the problem as an unbalanced assignment problem. *Llamore* uses a solver from the *SciPy* library internally to address this. The process involves computing the *F1 score* for every possible pairing between each extracted reference and each gold reference, constructing a matrix of scores.
-
-The solver then finds the assignment of extracted references to gold references that maximizes the total sum of *F1 scores*, ensuring that each reference is assigned uniquely. The final overall score is the macro average of the *F1 scores* for the assigned pairs. The method penalizes missing gold references (those not matched by an extracted reference) and hallucinated extracted references (those not matched to a gold reference) by assigning them an *F1 score* of zero in the averaging process. This approach is noted as being similar to a method recently published by *Packet et al.*
-
-## Evaluation Results
-
-![Slide 20](images/ai-nepi_010_slide_20.jpg)
-
-Evaluation was conducted to assess the effectiveness of the developed approach. Using the *PLOS 1000* dataset, which comprises 1,000 PDFs from the biomedical field, *Llamore*'s performance was found to be comparable to that of *Grobid*. It is noted that *Grobid* was specifically trained on data from similar journal articles.
-
-However, in terms of efficiency and compute resources, *Grobid* is significantly superior, requiring orders of magnitude less computational power than *LLMs* like *Gemini*.
-
-When evaluated on the specialized humanities dataset created by the project, *Grobid* struggled significantly to extract references, indicating that this data is out of its training distribution. In contrast, the *LLM*-based approach implemented in *Llamore* performed significantly better on this complex dataset.
-
-The conclusion drawn is that while less computationally efficient on standard datasets, the *LLM*-based approach implemented in *Llamore* is more effective for extracting references from the challenging, out-of-distribution data characteristic of humanities footnotes compared to *Grobid*.
-
-It is acknowledged that the *F1 scores* achieved are not considered high overall, suggesting substantial room for improvement. The current implementation utilizes a very basic approach, essentially sending the raw PDF text to a pre-trained model. Future work could explore potential improvements through methods such as *fine-tuning* models or incorporating more contextual information to enhance performance.
+Addressing these enhancements will necessitate overcoming several challenges. These include the wide variation in citation styles (e.g., differentiating between volumes and pages, or first page versus cited page), the complexities of multilingual terminology (e.g., diverse contributor roles like "eds" or "hrsg. v.", and special terms such as *passim*, *ibid*, or *n.d.*), the intricacies of canonical citations prevalent in fields like Bible studies or Roman law, and the accurate handling of ellipses, abbreviations, and cross-references. Overcoming these hurdles will significantly enhance *Llamore*'s utility for advanced scholarly analysis.

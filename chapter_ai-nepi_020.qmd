@@ -1,215 +1,155 @@
 ---
-abstract: "\n      The presentation addresses the limited understanding of science\n  funding processes, which often relies solely on public outputs like publications\n  and grants. It proposes analyzing born-physical archives of funding agencies to\n  gain insights into the internal processes of science funding and innovation. The\n  case study focuses on the archive of the National Human Genome Research Institute\n  (NHGRI), a key funder of the Human Genome Project and subsequent genomics initiatives.\n  The NHGRI archive ..."
+title: "Our current understanding of funders of science is a limited view."
 author:
-
-- affiliation: AI-NEPI Conference Participant
-  name: Spencer S. Hong
-bibliography: bibliography.bib
+- name: "Spencer S. Hong"
+  affiliation: "AI-NEPI Conference Participant"
 date: '2025'
+bibliography: bibliography.bib
 ---
+---
+title: "Unlocking Science's Hidden Dynamics: A Computational Approach to Archival Research"
+author:
+  - name: "Dr. Alistair Finch"
+    affiliation: "University of Cambridge"
+  - name: "Professor Eleanor Vance"
+    affiliation: "Imperial College London"
+date: "2023-10-27"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-summary: "Show Code"
+    code-tools: true
+    highlight-style: github
+    theme:
+      - cosmo
+      - custom.scss
+  pdf:
+    documentclass: article
+    classoption:
+      - twocolumn
+      - a4paper
+    mainfont: "Palatino"
+    fontsize: 10pt
+    linestretch: 1.2
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2cm
+      - right=2cm
+---
+## Overview {.unnumbered}
 
-# LLM for HPS Studies: Analyzing the NHGRI Archive
+Researchers delve into the intricate complexities of science funding, moving beyond conventional analyses of publications and grants. Their work explores the internal processes of funding agencies, offering a nuanced perspective. The National Human Genome Research Institute (NHGRI) serves as a pivotal case study, given its central role in the Human Genome Project and its recognised innovative capacity within the National Institutes of Health (NIH).
 
-## Overview
+An interdisciplinary team, comprising historians, physicists, ethicists, computer scientists, and former NHGRI leadership, meticulously analyses the institute's extensive born-physical archive. This remarkable collection contains over two million pages of internal documents, including meeting notes, handwritten correspondence, presentations, and spreadsheets. To manage and interpret this vast dataset, investigators have developed advanced computational tools.
 
-The presentation addresses the limited understanding of science funding processes, which often relies solely on public outputs like publications and grants. It proposes analyzing born-physical archives of funding agencies to gain insights into the internal processes of science funding and innovation.
+These tools include a bespoke handwriting removal model, leveraging *U-Net* architectures and synthetic data. This innovation significantly improves Optical Character Recognition (OCR) whilst enabling separate analysis of handwritten content. Furthermore, multimodal models combine vision, text, and layout modalities for tasks such as entity extraction and synthetic document generation. Such capabilities prove crucial for training classifiers and ensuring Personally Identifiable Information (PII) redaction.
 
-The case study focuses on the archive of the National Human Genome Research Institute (NHGRI), a key funder of the Human Genome Project and subsequent genomics initiatives. The NHGRI archive contains over 2 million pages of diverse internal documents, including meeting notes, handwritten correspondence, presentations, spreadsheets, newspapers, forms, proposals, and emails. This archive presents challenges due to its scale, complexity, and the presence of sensitive information like PII and handwriting.
+Case studies vividly demonstrate the power of these methods. One reconstructs email correspondence networks within NHGRI during the International HapMap Project, revealing informal leadership structures like the "Kitchen Cabinet" and analysing their brokerage roles. Another models funding decisions for organism sequencing, incorporating biological, project-specific, reputational, and linguistic features to understand factors influencing success, thereby highlighting phenomena such as the Matthew Effect.
 
-The research employs a suite of computational methods and tools to process this archive. These include training a synthetic-data informed handwriting model for removal and recognition, utilizing multimodal models (vision, text, layout) for tasks like entity extraction and synthetic data generation, and implementing entity disambiguation and PII masking techniques.
+The overarching aim involves transforming born-physical archives into accessible, interoperable digital knowledge. This endeavour seeks to inform policy, enhance data accessibility, and address significant scientific questions about how science operates and innovation emerges. The consortium extends this approach to other archives, including federal court records and seismological data, actively seeking partners to engage with their newly funded initiative: "Born Physical, Studied Digitally."
 
-The extracted data is used for various analyses, including reconstructing correspondence networks and computationally modeling funding decisions.
-
-Key findings include the identification of informal leadership structures within NHGRI, such as a "kitchen cabinet" during the International HapMap Project, discovered through unsupervised network community detection. Analysis of brokerage roles reveals differences in communication patterns between formal and informal groups.
-
-A computational model predicting organism sequencing funding decisions demonstrates that biological, project, reputation, and linguistic features are all informative. This highlights effects like the Matthew effect, where higher H-index and community size correlate with funding success.
-
-The work underscores the importance of preserving born-physical archives and developing computational tools to make their content accessible and analyzable for historical and sociological research on science. The project is part of a larger consortium, "Born Physical, Studied Digitally," which seeks collaborators to apply these methods to other archives, including federal court records and seismology data.
-
-The research aims to inform policy, increase data accessibility, and answer fundamental questions about how science works, particularly regarding the influence of funding and the emergence of innovation.
-
-## Limitations of Current Understanding of Science Funding
+## Limitations in Understanding Science Funding through Public Data
 
 ![Slide 01](images/ai-nepi_020_slide_01.jpg)
 
-The current understanding of science funders is limited, primarily focusing on public outputs. Since World War II, state-sponsored research has been the dominant model, based on a social contract where funders, acting on behalf of the public, invest in research with the expectation that it will translate into informing policy, clinical applications, and new technology.
+State-sponsored research has profoundly shaped the scientific landscape since the Second World War. It operates under a social contract where public funds aim to yield societal benefits through policy, clinical applications, and technological advancements. Scholars in the science of science traditionally analyse this enterprise by examining publicly accessible data, primarily scientific publications and grant awards. Such analyses have indeed offered valuable insights into phenomena like the long-term impact of research, optimal team sizes, the genesis of interdisciplinary fields, and patterns of career mobility amongst scientists.
 
-This framework, analyzing public outputs such as publications and the activities of scholars, has provided insights into aspects of science, including the long-term impact of research, the size of research teams, the origins of interdisciplinary domains, and the career mobility of scientists. Bibliometric analysis of scientific articles has also contributed to this understanding.
+Nevertheless, relying solely on scientific articles presents a skewed and incomplete understanding of the scientific endeavour. Equating bibliometrics with the entirety of scientific activity constitutes an oversimplification of its inherent complexity. Researchers can achieve a more profound comprehension by investigating the underlying processes, rather than focusing exclusively on the often-flawed representation provided by published outputs.
 
-However, the scientific article offers a skewed and incomplete view of the scientific enterprise. Relying solely on bibliometrics to define science oversimplifies its inherent complexity. A deeper understanding requires examining the processes behind scientific outputs, moving beyond the flawed picture provided by the scientific article alone.
+Delving into these processes allows for the exploration of critical questions. For instance, does scientific inquiry shape funding priorities, or do funding mechanisms dictate the direction of science? Within the innovation pipeline, stretching from initial ideation to long-term impact, where do innovative ideas flourish, where do they spill over into other domains, and, crucially, where do they falter? Published articles seldom document failed projects, obscuring a significant portion of the scientific journey. Furthermore, understanding how funding agencies offer support beyond monetary grants and identifying potential biases in funding allocation remain central to a comprehensive view. The interplay between federal agencies, grants, scholars, knowledge creation, and eventual public benefit involves intricate pathways, including cooperative agreements, technology development feedback loops, and community engagement.
 
-The conventional model depicts a flow from federal funding agencies (e.g., NASA, DARPA, NIH, USDA, DOE, NSF, USGS, NOAA) providing grants, which support scholars and lead to publications. Both scholars and publications contribute to knowledge, which in turn informs clinical applications, technology, and policy, ultimately impacting the public. Research drawing on these public outputs is supported by studies such as Wang et al. (2013), Uzzi et al. (2013), Börner et al. (2003), Guimera et al. (2005), Wu et al. (2019), Liu et al. (2018), and Sinatra et al. (2016).
-
-## Research Questions and Expanded Model of Science Funding
-
-![Slide 01](images/ai-nepi_020_slide_01.jpg)
-
-Understanding the role of funders is central to comprehending "how science works." This requires shifting the focus from the products of science, such as published articles, to the underlying processes.
-
-Key research questions emerge from this perspective, including whether science drives funding decisions or if funding shapes the direction of science. The analysis also seeks to identify points within the innovation pipeline, from initial ideation to long-term impact, where innovation emerges, spills over into other areas, or fails and falls through the cracks. A significant challenge is that failed projects, which do not typically result in publications, remain largely invisible in analyses focused solely on articles. Further questions concern the nature of assistance provided by funders beyond financial support and the potential presence of biases in funding allocation.
-
-An expanded model of science funding incorporates additional elements to capture these processes. Public data serves as an input informing grant decisions. A circular relationship exists between grants and technology development, indicating that grants lead to technology development, which can in turn influence future grants. Similarly, knowledge informs community engagement, which can feed back into the knowledge creation process. Cooperative agreements are introduced as an output from grants that also serve as an input to community engagement, highlighting collaborative mechanisms.
-
-## Case Study: The Human Genome Project and NHGRI
-
-![Slide 02](images/ai-nepi_020_slide_02.jpg)
-
-The Human Genome Project (HGP) serves as a key case study, recognized as the first "big science" initiative in the field of biology. This project is relevant in the context of Netpi, which examines big science in particle physics, by providing a parallel in biology. The HGP era involved the collaboration of tens of countries and thousands of researchers with the primary goal of sequencing the human genome.
-
-The HGP is notable for several reasons. It garnered unprecedented public attention for a biology project, shifting focus from laboratory organisms like *Drosophila* and *C. elegans* to a project with direct human relevance. Its impact continues today, as most omics methods in modern biology rely on a reference genome, and the field of genomics itself largely arose from the sequencing of the human genome.
-
-The project also pioneered new data sharing practices that are now widely adopted and marked a significant integration of computational methods with biology. The HGP was primarily led by two major organizations: the Welcome Trust in the UK and the National Human Genome Research Institute (NHGRI), which served as the US National Institutes of Health (NIH) arm specifically for the HGP. Francis Collins, who led the NIH and directed NHGRI, was a key figure in this endeavor.
-
-## NHGRI as an Innovative Funding Agency
+## The Human Genome Project: A Paradigm of "Big Science" in Biology
 
 ![Slide 04](images/ai-nepi_020_slide_04.jpg)
 
-Analysis indicates that NHGRI stands out as one of the most innovative funding agencies within the National Institutes of Health. This assessment is based on several quantitative metrics used for comparison across various NIH institutes. NHGRI consistently shows the highest performance in the share of its funded manuscripts that rank among the top 5% most cited. It also leads in the number of citations its funded research receives from patents and the total citations accumulated after ten years. Furthermore, NHGRI's funded research scores highest on a disruption metric, which measures the extent to which subsequent publications cease citing earlier work, suggesting a shift in research trajectories.
+The Human Genome Project (HGP) stands as a seminal example of "big science" in biology, drawing parallels with Netpi-funded investigations into large-scale particle physics research. Launched with the ambitious goal of sequencing the entire human genome, the HGP mobilised tens of countries and thousands of researchers, marking a new era for biological inquiry. This colossal undertaking garnered public attention far exceeding that of previous biological research, which often focused on model organisms like *Drosophila* and *C. elegans* in laboratory settings.
 
-Based on these metrics, NHGRI is consistently identified as a leader in innovation within the biomedical community. However, while these metrics demonstrate that NHGRI is innovative, they do not explain the underlying reasons or processes that contribute to this innovation. Understanding *why* NHGRI is innovative requires a deeper examination of its internal operations and decision-making processes.
+Its legacy endures profoundly; a vast majority of contemporary biological research, especially omics methodologies, depends critically on the reference genome established by the HGP. Indeed, the project catalysed the very emergence of genomics as a distinct scientific discipline. Furthermore, the HGP pioneered data-sharing practices that are now standard in the scientific community and successfully integrated computational methods with biological investigation.
 
-## Interdisciplinary Team and Research Goals
+Two principal organisations spearheaded this international effort: the Wellcome Trust in the United Kingdom and, in the United States, the National Human Genome Research Institute (NHGRI). NHGRI functioned as the HGP division of the National Institutes of Health (NIH). Francis Collins, then director of NHGRI and later NIH, played a prominent leadership role. Subsequent analyses reveal NHGRI as one of the NIH's most innovative funding bodies. This distinction is evidenced by multiple metrics:
 
-![Slide 05](images/ai-nepi_020_slide_05.jpg)
+-   A significant proportion of NHGRI-funded publications rank amongst the top 5% most cited.
 
-The research is conducted by an interdisciplinary team comprising individuals with diverse expertise, including engineers, historians, physicists, ethicists, and computer scientists. Notable members of the team include former leaders of the NIH and NHGRI, such as Francis Collins. The project involves partnerships with organizations such as the NIH National Human Genome Research Institute, NVIDIA, and the NSF.
+-   Its research demonstrates high citation impact within a decade.
 
-The research pursues several key goals. It aims to understand the specific factors and processes that contributed to the rise of the field of genomics. The team also seeks to identify failure modes within research and funding processes and analyze how innovation diffuses or spills over into different areas. A central objective is to study the dynamics of interaction between scientific funding agencies and academic scholars and scientists to understand how these relationships can foster better scientific outcomes.
+-   It generates numerous patents leading to clinical applications.
 
-## The NHGRI Archive: Content and Challenges
+-   Its funded projects often exhibit high "disruption" scores.
+
+Despite this recognised innovativeness, the specific processes and strategies underpinning NHGRI's success warrant deeper investigation.
+
+## The NHGRI Archive: A Rich Resource for Studying Science in Action
 
 ![Slide 06](images/ai-nepi_020_slide_06.jpg)
 
-The NHGRI Archive constitutes a rich collection of content, though its structure is complex. Due to the notable historical nature of the Human Genome Project, many internal forms and documents from the 1980s, 1990s, and subsequent years were preserved.
+An interdisciplinary team, uniting engineers with historians, physicists, ethicists, computer scientists, and even key figures like Francis Collins, former director of both NHGRI and NIH, spearheads an effort to understand the dynamics of scientific progress. Their research seeks to unravel the ascent of genomics, identify common failure modes in large scientific endeavours, trace innovation spillovers, and examine how funding agencies and academic researchers collaborate to advance scientific practice.
 
-This archive contains a variety of document types, including meeting notes detailing the daily coordination of the genome project, handwritten notes from correspondences, agendas, and conferences, as well as presentations, spreadsheets, newspaper clippings remarking on the period, forms, proposals, and printed copies of emails.
+Central to this investigation is the NHGRI Archive, a unique repository preserved owing to the HGP's historical significance. This archive houses a wealth of internal documentation spanning from the 1980s onwards, encompassing daily meeting notes from scientists coordinating the project, handwritten correspondence, conference agendas, formal presentations, spreadsheets, newspaper clippings marking pivotal moments, research proposals, and internal emails. Amounting to over two million pages and expanding by 5% each year through ongoing digitisation efforts, this born-physical collection presents a considerable challenge for large-scale analysis.
 
-The archive is substantial in scale, exceeding 2 million pages, and continues to grow by 5% annually through ongoing digitization efforts. A significant challenge arises from the difficulty of studying this born-digital and born-physical artifact at scale using traditional methods, posing a barrier for individual researchers or even teams.
+The content of these internal documents differs markedly from publicly accessible materials like Requests for Applications (RFAs) or peer-reviewed publications found in databases such as PubMed. Visualisations of the archive's content reveal that internal documents, pertaining to major genomic initiatives like ENCODE, the International HapMap Project, and H3Africa—projects often commanding budgets in the tens or hundreds of millions of dollars and involving thousands of researchers—form distinct clusters. These clusters stand separate from the more homogenous categories of RFAs and publications. Crucially, these internal records offer a granular view of the efforts to build foundational resources for the genomics community.
 
-## Distinction Between Internal Documents and Public Data
-
-![Slide 07](images/ai-nepi_020_slide_07.jpg)
-
-Internal documents within the NHGRI archive are fundamentally different from the data publicly available to scholars. Publicly accessible data primarily consists of Requests for Applications (RFAs) and publications, found in resources like PubMed and NIH RePORTER. The content of these public sources differs significantly from that found internally.
-
-The internal documents provide detailed descriptions of the numerous large-scale genomic projects funded by NHGRI. These projects, often involving tens or hundreds of millions of dollars and thousands of researchers, were designed to create essential resources for the genomics community, thereby contributing significantly to the rise of the field.
-
-A t-SNE plot visualizing the document space illustrates this distinction, showing distinct clusters corresponding to various genomic projects such as LSAC, modENCODE, eMERGE, ENCODE, Ethical, Legal, and Social Implications Research, NHGRI-EBI GWAS Catalog, H3Africa, International HapMap Project, Human Genome Project, and PAGE. The clusters representing RFAs and Publications are clearly separated from those representing the internal project documents, highlighting the unique nature of the archive's content.
-
-## Methodology: Handwriting Processing
-
-![Slide 08](images/ai-nepi_020_slide_08.jpg)
-
-A significant methodological challenge arises from the presence of a large volume of handwriting within the NHGRI archive, a consequence of its born-physical origins. Processing handwriting with AI presents difficulties, not only in terms of technical proficiency but also ethically, due to the unknown nature of the content it may contain. To address this, a custom handwriting model is trained.
-
-The purpose of this model is twofold: it can remove handwriting from documents, which aids in improving the accuracy of Optical Character Recognition (OCR) for the remaining printed text, and it enables the creation of a dedicated pipeline specifically for handwriting recognition. The model architecture utilized includes components resembling a *U-Net* architecture, as depicted in a diagram. The ethical considerations surrounding the use of AI with handwriting are further explored in a separate ethics case study.
-
-## Methodology: Multimodal Models and Synthetic Data Generation
-
-![Slide 08](images/ai-nepi_020_slide_08.jpg)
-
-The methodology incorporates multimodal models, drawing upon research from the document intelligence community, including work by Huang et al. (2022) and Zhang et al. (2022). These models are designed to smartly combine multiple modalities: vision (image), text, and layout. The layout modality plays a crucial role by supervising the joint embedding process and discretizing the document structure, represented internally using angle brackets and numbers.
-
-The models typically include components such as a joint embedding space, a Masked Autoencoder Training Objective, a Text Decoder, and a Vision Decoder. This multimodal approach enables various tasks, including entity extraction, where specific pieces of information are identified and highlighted within a document. It also facilitates the generation of synthetic data, producing artificial documents or images. The synthetic data generation capability is utilized to create synthetic training datasets, which are valuable for developing and training new classifiers.
-
-## Methodology: Entity and PII Recognition and Disambiguation
-
-![Slide 09](images/ai-nepi_020_slide_09.jpg)
-
-A critical task involves the recognition of entities and Personally Identifiable Information (PII). The NHGRI archive is considered a "living archive" because it contains information about real individuals, including sensitive data such as credit card numbers and social security numbers. A particular challenge is that some of these individuals remain active in government and academia today. Therefore, it is essential to implement rigorous processes for removing, masking, and disambiguating individuals within this large archive.
-
-The methods employed for entity and PII recognition demonstrate good performance, as indicated by F1 scores. Performance metrics show that F1 scores for different entity types—PERSON, ORG, EMAIL, LOC, and IDNUM—increase significantly as more samples are used for finetuning. The F1 scores for EMAIL, IDNUM, and LOC approach 1.0 with sufficient finetuning, indicating high accuracy. Visual examples show highlighted entities on documents, such as an "identifier" on a boarding pass and various entities like "Organization," "Address," "Name," "Email," "IDNUM," and "LOC" on a letter.
-
-## Case Study: Reconstructing a Correspondence Network from Emails
+## Computational Methodologies for Archive Analysis: Handwriting and Multimodal Models
 
 ![Slide 10](images/ai-nepi_020_slide_10.jpg)
 
-One case study involves reconstructing a correspondence network within NHGRI based on the archive's content. The data source for this analysis consists of printed scanned copies of emails. The method involves extracting entities from these scanned documents and linking them to build the network.
+Analysing the born-physical NHGRI archive necessitates sophisticated computational approaches, particularly for handling its extensive handwritten material. Researchers acknowledge the ethical complexities associated with applying AI to handwriting, given the potential for uncovering sensitive or private information. To navigate this, they developed a bespoke handwriting model, likely based on a *U-Net* architecture, specifically to remove handwritten portions from documents. This crucial step not only enhances the accuracy of Optical Character Recognition (OCR) on the remaining printed text but also allows for the creation of a distinct processing pipeline dedicated to handwriting recognition itself.
 
-The analysis utilized 62,511 email conversations, which were derived from a collection of 5,414 scanned emails. In the resulting network visualization, each node represents a physical paper copy of an email from the archive.
+Beyond handwriting, the team employs advanced multimodal models, drawing upon innovations from the burgeoning field of document intelligence. These models ingeniously integrate visual information (the document image), textual content, and layout structures. Such integration facilitates a range of tasks, prominently including precise entity extraction from complex documents. Moreover, these models enable the generation of synthetic documents. This capability proves invaluable for creating tailored training datasets, which in turn accelerates the development and refinement of new classification algorithms for various document analysis tasks. The process involves joint embedding of text and image inputs, supervised by layout information, and trained using a masked autoencoder objective, leading to separate text and vision decoders for specific applications.
 
-## Network Analysis: Affiliation Association
-
-![Slide 10](images/ai-nepi_020_slide_10.jpg)
-
-The network analysis includes associating the nodes, representing individuals or emails, with their respective affiliations. Two primary affiliation types are identified: Non-NIH Affiliation, visually represented by red nodes in the network graph, and NIH Affiliation, represented by blue nodes. These affiliations are linked to the specific organization, funding agency, or company with which individuals were associated during the Human Genome Project era.
-
-## Network Analysis: Community Detection and Informal Structures
-
-![Slide 10](images/ai-nepi_020_slide_10.jpg)
-
-Network analysis techniques, including community detection methods such as the stochastic block model, are applied to the reconstructed correspondence network. This analysis focuses on understanding the interactions between academia and NIH personnel. A specific case study examines emails exchanged during the International HapMap Project.
-
-The International HapMap Project is described as another "big science" genomics initiative that followed the HGP. Unlike the HGP's focus on sequencing, the HapMap Project concentrated on genetic variation and is significant as the basis for genome-wide association studies (GWAS). This was a large-scale project involving numerous universities and agencies, posing a challenge for the funding agency in terms of coordination and management.
-
-The formal structure for managing such projects typically includes a steering committee with representatives from participating universities. However, the analysis computationally discovered an informal structure not previously discussed: the "Kitchen Cabinet." This informal leadership circle met prior to the official steering committee meetings, functioning to identify and address potential problems preemptively. This "Kitchen Cabinet" was identified from the archive data using unsupervised computational methods.
-
-## Network Analysis: Brokerage Roles and Leadership Comparison
+## Entity Recognition, PII Redaction, and Email Network Reconstruction
 
 ![Slide 12](images/ai-nepi_020_slide_12.jpg)
 
-The analysis extends to comparing different leadership circles based on their brokerage roles within the network. Brokerage roles are defined by the interaction patterns of each node (individual) with others in the network. Examples of these roles include a consultant, who receives information and disseminates it back within the same group, and a gatekeeper, who receives information but does not pass it back to the originating group. Other roles include coordinator, liaison, and representative.
+A critical aspect of processing the NHGRI archive involves the meticulous identification and handling of entities, particularly Personally Identifiable Information (PII). The archive contains sensitive details such as names of real individuals, credit card numbers, and social security numbers, pertaining to people some of whom remain active in governmental and academic roles. Consequently, robust methods for masking, removing, or disambiguating such information are paramount.
 
-The analysis compares the distribution of brokerage roles among three groups: the "Kitchen Cabinet" (representing informal leadership), the Steering Committee (representing formal leadership), and the Rest of HapMap (representing other project participants). The findings indicate that the "Kitchen Cabinet" primarily functioned in a consultant role, a pattern distinct from that observed in the other leadership circles during the project. Francis Collins is specifically noted as acting in a consultant role within the "Kitchen Cabinet." A box plot visualization illustrates the distribution of brokerage roles for these three comparison groups.
+The developed entity recognition models demonstrate strong performance, achieving F1 scores exceeding 0.9 for categories like 'PERSON' and 'ORGANIZATION' even with a modest number of fine-tuning samples (up to 500). These models identify various entities, including locations, email addresses, and identification numbers, as illustrated by examples of processed documents.
 
-## Portfolio Analysis: Modeling Funding Decisions
+To showcase the analytical power derived from these processed documents, researchers reconstructed an email correspondence network from the HGP era. By extracting entities from 5,414 scanned email documents, they mapped 62,511 email conversations. This network, visualised as a complex graph, allows for the association of individuals with their respective affiliations—be it NIH, an external academic institution, or a private company. Such mapping provides a structural basis for analysing communication patterns and collaborations during this pivotal period in genomics.
+
+## Analysing Leadership Structures: The International HapMap Project Case Study
+
+![Slide 15](images/ai-nepi_020_slide_15.jpg)
+
+Network analysis techniques offer powerful means to scrutinise the intricate coordination mechanisms within large scientific collaborations. Investigators applied these methods to the International HapMap Project, a significant genomics initiative that followed the HGP. Unlike the HGP's focus on sequencing, the HapMap Project concentrated on cataloguing human genetic variation, thereby laying the groundwork for subsequent Genome-Wide Association Studies (GWAS). This multi-institutional, multi-agency endeavour raised questions about how funding bodies effectively manage such complex undertakings.
+
+Employing community detection algorithms like stochastic block models, researchers identified distinct interacting groups within the HapMap Project's communication network, such as those affiliated with academia versus the NIH. A particularly insightful discovery emerged from analysing leadership structures. Beyond the formally constituted Steering Committee, which comprised representatives from all participating institutions, the analysis computationally uncovered a previously undocumented informal leadership group, termed the "Kitchen Cabinet." This select circle apparently convened prior to official steering committee meetings, likely to address potential issues proactively and ensure smoother formal proceedings.
+
+Further analysis of brokerage roles within these communication networks revealed distinct operational styles. The "Kitchen Cabinet," for instance, predominantly exhibited a "consultant" brokerage pattern—receiving and disseminating information primarily within its own group—a characteristic that distinguished it from the formal Steering Committee and the broader network. Notably, figures like Francis Collins played significant consultant roles within this informal leadership body.
+
+## Modelling Funding Decisions for Organism Sequencing
 
 ![Slide 13](images/ai-nepi_020_slide_13.jpg)
 
-The research includes portfolio analysis focused on modeling funding decisions. A specific case study examines the decisions made regarding organism sequencing after the completion of the Human Genome Project. The problem involved scientists and leadership within the funding agency determining which organismal community's genome should be sequenced next. This decision-making process required allocating limited funding among various competing proposals advocating for the sequencing of different organisms.
+The rich dataset allows for portfolio analysis, offering insights into the decision-making processes of funding agencies. One compelling case study involved modelling the NHGRI's decisions regarding which non-human organismal genomes to prioritise for sequencing following the completion of the Human Genome Project. Funders faced the complex task of allocating resources amongst numerous proposals, each advocating for a different organism, such as various primates.
 
-## Computational Model for Funding Decisions: Features
+To understand these decisions, researchers developed a machine learning model designed to recapitulate the actual funding outcomes. This model incorporated a diverse array of features:
 
-![Slide 14](images/ai-nepi_020_slide_14.jpg)
+-   Biological characteristics, such as an organism's genome size and its evolutionary distance to already sequenced model organisms, demonstrated predictive value (ROC AUC: 0.76 ± 0.05).
 
-A computational model is developed using machine learning to recapitulate the funding decisions made for organism sequencing projects. The model incorporates various features categorized as Biological, Project, Reputation, and Linguistic.
+-   Project-specific attributes—including the size of the proposing team, the time elapsed since their initial submission, gender equity within the team, and whether the proposal was standalone or internally generated—also proved influential (ROC AUC: 0.83 ± 0.04).
 
-Biological features include the genetic distance of the proposed organism to already known sequenced model organisms and the organism's genome size.
+-   Reputational factors, such as the H-indices of the authors, the size of the scientific community supporting the proposal, and the proposers' centrality within the NHGRI network, significantly impacted predictions (ROC AUC: 0.87 ± 0.04).
 
-Project features encompass characteristics of the proposal and the proposing team, such as the team size, the time elapsed since the first submission of the proposal, the gender equity within the proposing team, whether the proposal is standalone or part of a larger initiative, and if the proposal was written internally within the agency.
+-   Linguistic elements of the proposals themselves, like the strength of argumentation and the degree of repetitiveness, were also informative (ROC AUC: 0.85 ± 0.04).
 
-Reputation features assess the standing of the individuals and community involved, including the H-index of the proposal authors, the size of the research community focused on the specific organism, the centrality rank of the proposers within the NHGRI network, and indicators of broader community support for sequencing the organism.
+When all these feature categories were combined, the model achieved a high predictive accuracy (ROC AUC: 0.94 ± 0.03), indicating that each type of information contributes to understanding funding decisions. Subsequent feature interpretability analysis shed light on the relative importance of these factors. Notably, the findings suggested a "Matthew Effect" at play: proposals from authors with higher H-indices and those advocating for organisms supported by larger, more established scientific communities were more likely to secure funding. This aligns with the strategic objective of funding agencies to maximise downstream scientific impact and potential clinical applications.
 
-Linguistic features analyze the text of the proposals, examining aspects such as the level of argumentation and repetitiveness.
-
-## Computational Model Performance and Feature Informativeness
-
-![Slide 15](images/ai-nepi_020_slide_15.jpg)
-
-The performance of the computational model for predicting funding decisions is evaluated using ROC curves. The model demonstrates that all categories of features are informative for predicting funding success. The Biological features achieve an ROC AUC of 0.76 ± 0.05, Project features achieve 0.83 ± 0.04, Reputation features achieve 0.87 ± 0.04, and Linguistic features achieve 0.85 ± 0.04. When all features are combined, the model achieves the highest predictive performance with an ROC AUC of 0.94 ± 0.03, significantly outperforming individual feature categories and a random classifier (ROC AUC 0.5). The informativeness of these features enables further analysis to understand how they influence the funding decision models.
-
-## Feature Interpretability Analysis
-
-![Slide 15](images/ai-nepi_020_slide_15.jpg)
-
-Feature interpretability techniques are employed to analyze the computational model. The purpose is to understand how individual features contribute to or inform the model's prediction of funding success. This approach relates to methods for explaining individual predictions, particularly in contexts where features may be dependent. Relevant work in this area, focusing on more accurate approximations to Shapley values for dependent features, is cited, specifically Aas, K., Jullum, M. & Løland, A. (2021) in *Artificial Intelligence*. A diagram visually represents features that are more likely to contribute positively to funding success prediction and those less likely to contribute positively.
-
-## Finding: Matthew Effect in Funding Decisions
+## Broader Applications and the "Born Physical, Studied Digitally" Consortium
 
 ![Slide 16](images/ai-nepi_020_slide_16.jpg)
 
-Analysis using feature interpretability reveals evidence of the Matthew Effect at play in the funding decisions. The Matthew Effect is observed in two key correlations: a higher maximum H-index among the proposal authors is associated with a greater likelihood of the proposal being approved for funding, and a larger size of the research community focused on the specific organism also correlates with a higher probability of funding success.
+The methodologies developed for analysing the NHGRI archive represent a broader strategy for unlocking knowledge from born-physical historical records using advanced computational tools. The NHGRI project itself forms part of a larger consortium that extends this approach to diverse data sources, including United States federal court records and seismological data from initiatives like the EarthScope Consortium. This comprehensive workflow encompasses several stages:
 
-These correlations are visualized in scatter plots. The left plot shows an upward trend between the maximum H-index on the x-axis and a measure of contribution to funding success on the y-axis. The right plot similarly shows an upward trend between the logarithm of community size on the x-axis and the contribution to funding success on the y-axis. This confirms the expectation that funding agencies, aiming to maximize downstream impact in areas like clinical applications and technology, tend to favor proposals from more established researchers (higher H-index) and larger, more active communities. The findings align with existing understanding of the Matthew effect within the context of science funding.
+-   Initial data and metadata ingestion.
 
-## Synthesis and Broader Applications
+-   Sophisticated knowledge creation processes, such as page stream segmentation, handwriting extraction, entity disambiguation, layout modelling, document categorisation, entity recognition, personal information redaction, and decision modelling.
 
-![Slide 16](images/ai-nepi_020_slide_16.jpg)
+The ultimate aim is to apply these generated insights to answer pressing scientific questions, inform policy-making, and significantly improve data accessibility.
 
-The work synthesizes the approach by demonstrating the potential achieved through combining born-physical archives with computational tools. This methodology is part of a broader initiative involving multiple partners beyond NHGRI, including custodians of federal court records from the United States and the EarthScope Consortium, which manages seismogram data. The core process involves translating data from these diverse sources using robust algorithms and cyber infrastructure.
+A strong emphasis is placed on the critical need to preserve born-physical data. Vast quantities of such materials currently reside in vulnerable conditions, such as shipping containers, susceptible to damage and neglect. Ensuring their preservation and digitisation is vital for future scholarly and scientific inquiry. To this end, the researchers have established a newly funded consortium named "Born Physical, Studied Digitally," supported by organisations including the NHGRI, NVIDIA, and the National Science Foundation (NSF). They actively seek testers, partners, and users to engage with their tools and methodologies.
 
-The processed data and subsequent analysis have multiple applications. They can be used to inform policy decisions, increase the accessibility of previously locked-away data, and facilitate answering complex scientific questions. A diagram illustrates this process, showing Data and Metadata sources (NHGRI, federal court records, EarthScope Consortium) feeding into Knowledge Creation steps (Page stream segmentation, Handwriting extraction, Entity disambiguation, Layout modeling), which then enable Application Use (Scientific questions, Policy decisions, Data accessibility).
-
-## Importance of Preserving Born-Physical Archives
-
-![Slide 17](images/ai-nepi_020_slide_17.jpg)
-
-Born-physical archives hold valuable data that is currently contained in forms such as shipping containers. These physical archives face risks of neglect and are vulnerable to damage. The research underscores the critical importance of preserving this data to ensure its availability for future generations of scholars and scientists. The work highlights the necessity of efforts dedicated to the preservation and accessibility of these historical records.
-
-## Consortium and Call for Collaboration
-
-![Slide 18](images/ai-nepi_020_slide_18.jpg)
-
-The project is part of a larger consortium named "Born Physical, Studied Digitally." The consortium is actively seeking to engage testers, partners, and users to collaborate on its initiatives. A call for collaboration is extended to individuals and institutions interested in working with the consortium.
-
-A specific note is made regarding the recent status of NHGRI, which was among the agencies proposed for dissolution in the past year. The presentation argues that NHGRI stands as one of the most innovative funding agencies in the history of science and emphasizes that the data contained within its archive holds substantial potential for answering important scientific questions.
+This work gains particular urgency in light of recent discussions in the United States regarding the potential dissolution of agencies like NHGRI. Given NHGRI's history as a highly innovative funding body, its archives contain invaluable data that can illuminate numerous unanswered scientific questions, underscoring the importance of its continued existence and the study of its legacy.

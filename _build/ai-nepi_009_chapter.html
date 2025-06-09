@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.11">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Matteo Ottaviani, Stephan Stahlschmidt">
+<meta name="dcterms.date" content="2004-04-02">
+
+<title>9&nbsp; The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ai-nepi_010_chapter.html" rel="next">
+<link href="./ai-nepi_008_chapter.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-09b140d2d032adf2aedb8b099be3ee13.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ai-nepi_009_chapter.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_001_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_003_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Transformer’s Legacy: Understanding Large Language Models and their Application in HPSS Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_004_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Workflow and Utility of OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_005_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_006_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Towards Computational HPSS: Tracing the Influence of the Ancient Wisdom Tradition on Early Modern Science using the LLM-powered Semantic Matching Tool of the VERITRACE project</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_007_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interpretability for LLMs: Transparency, Applications and Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_008_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_009_chapter.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_010_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_011_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Can We Build an AI Solution to Chat with Papers? Exploring the Ghostwriter and EverythingData Workflow</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai-nepi_012_chapter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Retrieval Augmented Generation (RAG) in HPSS Research: Applications, Methodological Challenges, and Limitations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#the-shifting-landscape-of-sdg-classification-in-bibliometric-databases" id="toc-the-shifting-landscape-of-sdg-classification-in-bibliometric-databases" class="nav-link" data-scroll-target="#the-shifting-landscape-of-sdg-classification-in-bibliometric-databases"><span class="header-section-number">9.1</span> The Shifting Landscape of SDG Classification in Bibliometric Databases</a></li>
+  <li><a href="#investigating-sdg-representation-a-case-study-utilising-large-language-models" id="toc-investigating-sdg-representation-a-case-study-utilising-large-language-models" class="nav-link" data-scroll-target="#investigating-sdg-representation-a-case-study-utilising-large-language-models"><span class="header-section-number">9.2</span> Investigating SDG Representation: A Case Study Utilising Large Language Models</a></li>
+  <li><a href="#methodological-framework" id="toc-methodological-framework" class="nav-link" data-scroll-target="#methodological-framework"><span class="header-section-number">9.3</span> Methodological Framework</a>
+  <ul class="collapse">
+  <li><a href="#data-curation-and-preparation" id="toc-data-curation-and-preparation" class="nav-link" data-scroll-target="#data-curation-and-preparation"><span class="header-section-number">9.3.1</span> Data Curation and Preparation</a></li>
+  <li><a href="#comparative-analysis-of-database-coverage" id="toc-comparative-analysis-of-database-coverage" class="nav-link" data-scroll-target="#comparative-analysis-of-database-coverage"><span class="header-section-number">9.3.2</span> Comparative Analysis of Database Coverage</a></li>
+  <li><a href="#large-language-model-implementation-strategy" id="toc-large-language-model-implementation-strategy" class="nav-link" data-scroll-target="#large-language-model-implementation-strategy"><span class="header-section-number">9.3.3</span> Large Language Model Implementation Strategy</a></li>
+  <li><a href="#establishing-benchmarks-sdg-targets-and-prompts" id="toc-establishing-benchmarks-sdg-targets-and-prompts" class="nav-link" data-scroll-target="#establishing-benchmarks-sdg-targets-and-prompts"><span class="header-section-number">9.3.4</span> Establishing Benchmarks: SDG Targets and Prompts</a></li>
+  <li><a href="#research-workflow" id="toc-research-workflow" class="nav-link" data-scroll-target="#research-workflow"><span class="header-section-number">9.3.5</span> Research Workflow</a></li>
+  </ul></li>
+  <li><a href="#analysis-and-discussion-of-findings" id="toc-analysis-and-discussion-of-findings" class="nav-link" data-scroll-target="#analysis-and-discussion-of-findings"><span class="header-section-number">9.4</span> Analysis and Discussion of Findings</a>
+  <ul class="collapse">
+  <li><a href="#sdg-4-quality-education-an-illustrative-analysis" id="toc-sdg-4-quality-education-an-illustrative-analysis" class="nav-link" data-scroll-target="#sdg-4-quality-education-an-illustrative-analysis"><span class="header-section-number">9.4.1</span> SDG 4 – Quality Education: An Illustrative Analysis</a></li>
+  <li><a href="#identified-gaps-in-llm-responses-for-sdg-4" id="toc-identified-gaps-in-llm-responses-for-sdg-4" class="nav-link" data-scroll-target="#identified-gaps-in-llm-responses-for-sdg-4"><span class="header-section-number">9.4.2</span> Identified Gaps in LLM Responses for SDG 4</a></li>
+  <li><a href="#cross-sdg-observations-and-implications" id="toc-cross-sdg-observations-and-implications" class="nav-link" data-scroll-target="#cross-sdg-observations-and-implications"><span class="header-section-number">9.4.3</span> Cross-SDG Observations and Implications</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Matteo Ottaviani, Stephan Stahlschmidt </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 2, 2004</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>This chapter delves into a conceptual inquiry concerning the representation of Sustainable Development Goal (SDG)-related research within major bibliometric databases. Researchers from the German Centre for Higher Education Research and Science Studies (DZHW, Berlin) explore these complex dynamics, particularly through the innovative application of Large Language Models (LLMs). The investigation seeks to understand how different database-specific classifications of SDGs influence the perceived landscape of scientific contributions towards these global objectives. Furthermore, it examines the potential of LLMs not only to reveal inherent biases within these data sources but also to serve as tools for automated information extraction, thereby informing research policy and decision-making. The work culminates from discussions and findings presented at the “Large Language Models for the History, Philosophy, and Sociology of Science” event at Technische Universität Berlin.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_01.jpg" class="img-fluid figure-img"></p>
+<figcaption>Presentation title slide: The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs. Authors: Matteo Ottaviani, Stephan Stahlschmidt. Affiliation: German Centre for Higher Education Research and Science Studies, DZHW, Berlin. Event: Large Language Models for the History, Philosophy, and Sociology of Science, Technische Universität Berlin, 2-4 April 2025.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-shifting-landscape-of-sdg-classification-in-bibliometric-databases" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="the-shifting-landscape-of-sdg-classification-in-bibliometric-databases"><span class="header-section-number">9.1</span> The Shifting Landscape of SDG Classification in Bibliometric Databases</h2>
+<p>Bibliometric databases function as critical digital infrastructures, enabling extensive bibliometric analyses and impact assessments across the scientific community. From a sociology of science perspective, their role is pivotal. However, one must acknowledge the performative nature of these databases. They are not neutral repositories; rather, they embody specific understandings of the science system and particular value attributions, as scholars such as Whitley and Vinkler have previously noted <span class="citation" data-cites="Whitley2000 Vinkler1988">(<a href="#ref-Whitley2000" role="doc-biblioref"><strong>Whitley2000?</strong></a>; <a href="#ref-Vinkler1988" role="doc-biblioref"><strong>Vinkler1988?</strong></a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_02.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide discussing SDG Classification in Bibliometric Databases, highlighting their critical role, performative nature, and the introduction of SDG classifications by major databases.</figcaption>
+</figure>
+</div>
+<p>In recent years, major bibliometric databases, including Web of Science, Scopus, and OpenAlex, have introduced classifications designed to align published research with the United Nations’ SDGs. This development is significant, yet it introduces new complexities. Previous research, for instance by Armitage and colleagues, discovered that SDG labelling by different providers (such as Elsevier, Bergen, and Aurora) yields disparate results, exhibiting minimal overlap between their respective classifications <span class="citation" data-cites="Armitage2020">(<a href="#ref-Armitage2020" role="doc-biblioref"><strong>Armitage2020?</strong></a>)</span>.</p>
+<p>These discrepancies in classification carry substantial implications. Varying portrayals of SDG-related research can lead to different perceptions of research priorities. Consequently, such differences may influence resource allocation and shape policy decisions, potentially reflecting underlying political and commercial interests.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_03.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide reiterating the performative nature of bibliometric databases and the implications of differing SDG classifications, including potential impacts on research priorities and resource allocation.</figcaption>
+</figure>
+</div>
+</section>
+<section id="investigating-sdg-representation-a-case-study-utilising-large-language-models" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="investigating-sdg-representation-a-case-study-utilising-large-language-models"><span class="header-section-number">9.2</span> Investigating SDG Representation: A Case Study Utilising Large Language Models</h2>
+<p>The core motivation for the current study, detailed by Ottaviani and Stahlschmidt, stems from a desire to understand the aggregated effects on the representation of SDG-related research when LLM-based tools are introduced into bibliometric analysis <span class="citation" data-cites="OttavianiStahlschmidt2024">(<a href="#ref-OttavianiStahlschmidt2024" role="doc-biblioref"><strong>OttavianiStahlschmidt2024?</strong></a>)</span>. The investigation employs pre-trained, relatively small Large Language Models, specifically DistilGPT2, which are separately trained on subsets of publication abstracts. These subsets correspond to the SDG classifications provided by diverse bibliometric databases.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_04.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide outlining the case study on UN SDGs in bibliometric data, detailing the motivation and the means of investigation using LLMs.</figcaption>
+</figure>
+</div>
+<p>Within this framework, LLM technology serves a dual purpose. Firstly, it acts as a detector, helping to identify potential biases present in the data originating from different bibliometric sources. Secondly, its application functions as a proof-of-concept exercise. This exercise explores the viability of introducing LLMs to automate information extraction, a process intended to inform decision-making within the research landscape.</p>
+</section>
+<section id="methodological-framework" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="methodological-framework"><span class="header-section-number">9.3</span> Methodological Framework</h2>
+<p>The research adopts a carefully structured methodological framework to explore these questions. This section outlines the key stages of the research design, from data processing to the specifics of LLM implementation and benchmarking.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_05.jpg" class="img-fluid figure-img"></p>
+<figcaption>Title slide for the “Methods and Research Design” section of the presentation.</figcaption>
+</figure>
+</div>
+<p>A systematic approach underpins the entire investigation, ensuring rigour in the collection, analysis, and interpretation of data related to SDG research representation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_06.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide simply stating “Methods and Research Design”, indicating the beginning of the methodology section.</figcaption>
+</figure>
+</div>
+<section id="data-curation-and-preparation" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="data-curation-and-preparation"><span class="header-section-number">9.3.1</span> Data Curation and Preparation</h3>
+<p>A crucial initial step involved the creation of a jointly indexed subset of publications. This dataset comprises 15,471,336 publications that are shared by all three major bibliometric databases—Web of Science, OpenAlex, and Scopus—identified through exact DOI matching. The period covered spans from January 2015 to July 2023.</p>
+<p>The study then focused on the performance of the three different classification standards for five selected SDGs. This approach means that for each chosen SDG, three distinct subsets of publications were considered, one corresponding to each bibliometric database’s classification. The visual representation on the accompanying slide illustrates this overlap, with the central portion denoting the “jointly indexed publications” common to all three.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_07.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide detailing “Processed Data”, including the size of the jointly indexed subset, the period covered, and a Venn-like diagram showing the overlap between Web of Science, OpenAlex, and Scopus.</figcaption>
+</figure>
+</div>
+</section>
+<section id="comparative-analysis-of-database-coverage" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="comparative-analysis-of-database-coverage"><span class="header-section-number">9.3.2</span> Comparative Analysis of Database Coverage</h3>
+<p>An analysis comparing SDG-classified papers among the three bibliometric databases reveals interesting patterns, particularly within the socio-economic dimension. For instance, considering SDG 4 (Quality Education), SDG 5 (Gender Equality), and SDG 10 (Reduced Inequalities), the overlap in classified papers varies significantly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_08.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide presenting Venn diagrams that compare SDG-classified papers for SDG 4, SDG 5, and SDG 10 across Web of Science, OpenAlex, and Scopus, showing counts and percentages of overlap.</figcaption>
+</figure>
+</div>
+<p>For SDG 4, the intersection of all three databases accounts for 7.2% (46,711 publications) of the total papers classified under this goal by at least one database. OpenAlex uniquely identifies the largest portion (33.6%), followed by Scopus (20.5%) and Web of Science (19.1%). In contrast, for SDG 5, Web of Science uniquely identifies a substantial 57.4% of papers, with the common intersection being smaller at 4.1% (26,327 publications). SDG 10 shows yet another pattern, with OpenAlex (43.3%) and Scopus (32.7%) contributing the largest unique sets, and the shared core representing only 1.3% (9,101 publications). These figures, drawn from Ottaviani and Stahlschmidt’s work, underscore the considerable divergence in how these databases delineate SDG-related research <span class="citation" data-cites="OttavianiStahlschmidt2024">(<a href="#ref-OttavianiStahlschmidt2024" role="doc-biblioref"><strong>OttavianiStahlschmidt2024?</strong></a>)</span>.</p>
+</section>
+<section id="large-language-model-implementation-strategy" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="large-language-model-implementation-strategy"><span class="header-section-number">9.3.3</span> Large Language Model Implementation Strategy</h3>
+<p>The central idea behind employing LLM technology was to construct models whose knowledge originates exclusively from publications classified under a specific SDG by a particular bibliometric database. Ideally, this would involve training an LLM solely on these publications from scratch. However, creating such a bespoke LLM from the ground up is a resource-intensive endeavour.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_09.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide explaining the “Idea” of building specific LLMs for each SDG/database combination and the “Compromise” of fine-tuning an existing pre-trained LLM, illustrated with the SDG 04 Venn diagram.</figcaption>
+</figure>
+</div>
+<p>As a practical compromise, the researchers opted to fine-tune an existing pre-trained LLM that possesses minimal prior knowledge, using the abstracts of the relevant publications. This approach allows for the development of specialised models for each SDG as defined by each database—for example, one LLM trained on Web of Science data for SDG 4, another on OpenAlex data for SDG 4, and so forth. The arrow on the slide (Slide 10) visually connects the concept of training an LLM solely on publications from one database (e.g., Web of Science for SDG 4) to the fine-tuning strategy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_10.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide further illustrating the LLM fine-tuning strategy, with an arrow pointing from the “Training one LLM solely on publications” concept towards the Web of Science portion of the SDG 04 Venn diagram.</figcaption>
+</figure>
+</div>
+<p>The selection of an appropriate LLM was critical. Leading commercial and open-source pre-trained LLMs were deemed unsuitable for this work because they already embed considerable knowledge about SDGs and possess strong, pre-existing semantic associations. Their pre-training datasets often include texts directly related to SDGs, such as content from Wikipedia or Reddit conversations, which would confound the analysis of database-specific representations.</p>
+<p>A fair compromise was found in DistilGPT2. This model is a “very light” pre-trained, English-speaking variant of the open-source GPT2, which employs a technique called “distillation” <span class="citation" data-cites="Sanh2019">(<a href="#ref-Sanh2019" role="doc-biblioref"><strong>Sanh2019?</strong></a>)</span>. DistilGPT2 has significantly fewer parameters (82 million) compared to large models like GPT-4 (estimated at 1.76 trillion parameters), making it feasible to work with proprietary data. Its relatively “little instructed” nature ensures greater similarity with the fine-tuning data, allowing the researchers to create distinct models, denoted as DistilGPT2 {bibDB, SDG}, for each combination of bibliometric database and SDG. This approach led to the fine-tuning of 15 such LLMs for the study, covering five SDGs across the three databases. The accompanying slide displays Venn diagrams for several SDGs (04, 05, 08, 09, 10), illustrating the publication distribution that forms the basis for these fine-tuning datasets.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide detailing the choice of DistilGPT2 as the LLM technology, its characteristics, and the fine-tuning of 15 LLMs, accompanied by Venn diagrams for various SDGs.</figcaption>
+</figure>
+</div>
+</section>
+<section id="establishing-benchmarks-sdg-targets-and-prompts" class="level3" data-number="9.3.4">
+<h3 data-number="9.3.4" class="anchored" data-anchor-id="establishing-benchmarks-sdg-targets-and-prompts"><span class="header-section-number">9.3.4</span> Establishing Benchmarks: SDG Targets and Prompts</h3>
+<p>To evaluate the fine-tuned LLMs and understand their learned representations, the research focused on specific SDG targets. SDG 4, which aims to “Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all” <span class="citation" data-cites="UN2030Agenda">(<a href="#ref-UN2030Agenda" role="doc-biblioref"><strong>UN2030Agenda?</strong></a>)</span>, serves as a clear example. This goal, like others, is broken down into several detailed targets.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_12.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide listing the official targets for SDG 4 (Quality Education) from the UN 2030 Agenda.</figcaption>
+</figure>
+</div>
+<p>The targets for SDG 4, as outlined by the UN, include:</p>
+<ul>
+<li>4.1 By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes.</li>
+<li>4.2 By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre-primary education so that they are ready for primary education.</li>
+<li>4.3 By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university.</li>
+<li>4.4 By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship.</li>
+<li>4.5 By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations.</li>
+<li>4.6 By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy.</li>
+</ul>
+<p>For benchmarking the LLMs, a systematic approach to prompt generation was adopted. Each SDG typically comprises 8 to 12 targets. For every target, researchers formulated 10 diverse questions, or prompts, each designed to probe different facets of that specific target. This process resulted in a dedicated set of 80 to 120 prompts for each SDG. These prompts serve as the benchmark or standard for defining compliance with SDG objectives and for identifying potential “biases” or thematic skews in the knowledge captured by each fine-tuned LLM. For example, Target 4.1 (“ensure that all girls and boys complete free, equitable and quality primary and secondary education”) generated prompts such as “How can countries ensure that all girls and boys complete free, equitable and quality primary and secondary education by 2030?” and “What are the challenges in achieving free and equitable education for all?”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_13.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide explaining the creation of prompts for benchmarking, detailing how SDG targets are used to generate diverse questions, with an example for Target 4.1 of SDG 4.</figcaption>
+</figure>
+</div>
+</section>
+<section id="research-workflow" class="level3" data-number="9.3.5">
+<h3 data-number="9.3.5" class="anchored" data-anchor-id="research-workflow"><span class="header-section-number">9.3.5</span> Research Workflow</h3>
+<p>The overall research design for each combination of bibliometric database (bibDB) and SDG (SDG#) follows a structured workflow. It begins with the set of abstracts classified under a specific SDG by a particular database. This text corpus is used for fine-tuning the DistilGPT2 model.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_14.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide presenting a flowchart of the “Research Design {bibDB, SDG}”, illustrating the process from abstract collection, LLM fine-tuning, prompt application with decoding strategies, to noun phrase extraction from responses.</figcaption>
+</figure>
+</div>
+<p>The fine-tuned DistilGPT2 model, now specific to that SDG and database (Fine-tuned DistilGPT2 SDG# DB#), is then queried using the set of prompts specifically designed for that SDG. Different decoding strategies—namely top-k sampling, nucleus sampling, and contrastive search—are employed to generate responses. These varied strategies help in exploring the breadth and nature of the information the model can produce.</p>
+<p>The responses generated for each decoding strategy (Responses SDG# DB# for top-k, nucleus, contrastive search) subsequently undergo a filtering process, specifically focusing on the words from the original prompts. Finally, noun phrases are extracted from these filtered responses (Noun phrases SDG# DB#). These noun phrases form the basis for analysing the thematic content and biases reflected by each LLM, and by extension, the underlying bibliometric database’s representation of the SDG.</p>
+</section>
+</section>
+<section id="analysis-and-discussion-of-findings" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="analysis-and-discussion-of-findings"><span class="header-section-number">9.4</span> Analysis and Discussion of Findings</h2>
+<p>The subsequent phase of the research involves a detailed discussion of the results obtained from the fine-tuned LLMs. This analysis aims to shed light on how different bibliometric databases represent SDG-related research and what biases might be inherent in these representations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_15.jpg" class="img-fluid figure-img"></p>
+<figcaption>Title slide for the “Discussion of the Results” section.</figcaption>
+</figure>
+</div>
+<section id="sdg-4-quality-education-an-illustrative-analysis" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="sdg-4-quality-education-an-illustrative-analysis"><span class="header-section-number">9.4.1</span> SDG 4 – Quality Education: An Illustrative Analysis</h3>
+<p>An illustrative example using SDG 4 (Quality Education) demonstrates the analytical approach. Researchers analysed the LLM responses by matching the extracted noun phrases with the official SDG 4 targets. This comparison occurred across four data dimensions: Locations, Actors, Data/Metrics, and Focuses. For each SDG, this method allows an assessment of:</p>
+<ol type="1">
+<li><p>Compliance with its targets (i.e., how well the research captured by the database, and reflected by the LLM, addresses the specific aims of the SDG).</p></li>
+<li><p>Biases (i.e., over or under-representation of certain themes, regions, or populations).</p></li>
+</ol>
+<p>The analysis reveals that differences in the source bibliometric databases are indeed present in the LLM outputs. For SDG 4, unique elements surfaced from different database-trained LLMs. For instance, under “Unique DBs” (meaning concepts more prominent in LLMs trained on specific databases), certain locations like South Africa, U.S., Australia, China, and Hong Kong were notable. Actors such as “Classroom” and “Family” appeared, alongside specific data/metrics like “Survey,” “PISA,” “Self-Efficacy,” and “Thematic Analysis.” Focuses included “Engagement,” “Performance,” “Career,” and “Curriculum.”</p>
+<p>When examining “Addressed Targets” more broadly (i.e., aspects of SDG 4 that the LLMs collectively touched upon), actors like “All Women And Men,” “Children,” “Teachers,” and “Youth” were identified. Focuses aligned with “Quality Primary And Secondary Education,” “University,” “Gender,” and “Literacy.”</p>
+<p>Conversely, “Not Addressed Targets” highlighted significant gaps. Geographically, many African countries (except South Africa), developing countries more broadly, least developed countries, and small island developing states received little attention. Vulnerable actors such as “Persons With Disabilities,” “Indigenous Peoples,” and “Children In Vulnerable Situations” were largely overlooked. Key focuses like “Affordable And Technical, Vocational And Tertiary Education,” “Relevant Skills” for employment, “Scholarships,” and “Safe, Non-Violent, Inclusive Learning Environments” were also underrepresented in the LLM-generated content.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_16.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide presenting an “Illustrative example: SDG 4”, with a table summarising LLM response analysis across “Unique DBs”, “Addressed Targets”, and “Not Addressed Targets” for dimensions of Locations, Actors, Data/Metrics, and Focuses.</figcaption>
+</figure>
+</div>
+</section>
+<section id="identified-gaps-in-llm-responses-for-sdg-4" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="identified-gaps-in-llm-responses-for-sdg-4"><span class="header-section-number">9.4.2</span> Identified Gaps in LLM Responses for SDG 4</h3>
+<p>Further scrutiny of what the LLMs did not address, even when stimulated by specific prompts related to SDG 4 targets, reveals persistent omissions. These gaps suggest areas where the collective research corpus, as indexed by the databases and subsequently learned by the LLMs, is deficient or where the models fail to connect existing knowledge to specific target dimensions.</p>
+<p>Regarding locations, the LLMs struggled to provide substantive information concerning:</p>
+<ul>
+<li>African countries (with the exception of South Africa)</li>
+<li>Developing countries (the status of China in this context is noted as a query)</li>
+<li>Least developed countries</li>
+<li>Small island developing States</li>
+</ul>
+<p>In terms of actors, the following groups remained largely unaddressed:</p>
+<ul>
+<li>Vulnerable people</li>
+<li>Persons with disabilities</li>
+<li>Indigenous peoples</li>
+<li>Children in vulnerable situations</li>
+</ul>
+<p>Concerning the focuses of SDG 4, several critical aspects were notably absent or poorly represented in the LLM responses:</p>
+<ul>
+<li>Vocational training</li>
+<li>Scholarships</li>
+<li>The provision of safe, non-violent, inclusive, and effective learning environments</li>
+<li>Education for sustainable lifestyles</li>
+<li>Human rights education</li>
+<li>Promotion of a culture of peace and non-violence</li>
+<li>Global citizenship education</li>
+<li>Appreciation of cultural diversity</li>
+<li>The principle of free primary and secondary education</li>
+<li>Broader aspects of tertiary education beyond general mentions</li>
+</ul>
+<p>This illustrative example for SDG 4 highlights systematic under-emphases within the analysed research literature as represented by the LLMs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_17.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide titled “Although stimulated, the LLM doesn’t address:”, listing specific Locations, Actors, and Focuses related to SDG 4 that were not adequately covered by the LLM responses.</figcaption>
+</figure>
+</div>
+</section>
+<section id="cross-sdg-observations-and-implications" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="cross-sdg-observations-and-implications"><span class="header-section-number">9.4.3</span> Cross-SDG Observations and Implications</h3>
+<p>Expanding the view beyond SDG 4 to consider findings across all five SDGs analysed, several overarching considerations emerge. These observations point towards systemic patterns in how SDG-related research is represented and potentially skewed within bibliometric databases.</p>
+<p>Concerning Locations: Least developed countries are barely addressed in the research corpus for most of the analysed SDGs, with a minor exception for Sub-Saharan Africa in relation to SDG 8 (Decent Work and Economic Growth). Beyond the undoubted monopoly of research focusing on the U.S., South Africa and China emerge as the next most frequently quoted locations. Following these, the UK and Australia also feature prominently. This geographical concentration suggests significant blind spots in the global research landscape concerning SDG implementation and challenges in many parts of the world.</p>
+<p>Regarding Actors: A consistent finding is that discriminated and vulnerable categories of people are systematically overlooked across the board. This lack of focus on those most in need is a critical concern if research is to effectively inform equitable progress towards the SDGs.</p>
+<p>In terms of Metrics: The LLM responses frequently referenced various forms of data (e.g., Demographic and Health Surveys (DHS), World Values Survey (WVS)), specific metrics, indicators, and benchmarks. Different research methodologies, including theoretical and empirical approaches, thematic analysis, market dynamics, and macroeconomic studies, were also apparent. This indicates a diverse methodological landscape but does not necessarily translate to comprehensive coverage of all SDG facets.</p>
+<p>Regarding Focuses: Whilst many SDG-specific themes are addressed, the most sensitive or challenging aspects within each SDG are often missing from the LLM-generated narratives. Examples include topics like human trafficking, various forms of human exploitation, and migration-related issues. The absence or under-representation of these critical themes signals a potential reluctance or inability of the current research landscape, as captured by these databases, to fully engage with the hardest parts of the SDG agenda.</p>
+<p>These cross-cutting observations underscore the value of using LLMs as analytical tools to probe the content and contours of scientific literature. They also highlight the profound influence that database construction and classification practices can have on our understanding of global research efforts towards sustainable development.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_18.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide summarising “A few considerations across the 5 SDGs”, categorised by Locations, Actors, Metrics, and Focuses, highlighting common patterns and omissions.</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ai-nepi_008_chapter.html" class="pagination-link" aria-label="Modeling Science: LLM for the History, Philosophy and Sociology of Science">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ai-nepi_010_chapter.html" class="pagination-link" aria-label="Extracting Citation Data from Law Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

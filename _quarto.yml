@@ -1,6 +1,9 @@
 book:
   title: AI-NEPI Conference Proceedings - Enhanced Edition
-  author: AI-NEPI Project Team
+  author:
+  - "Gerd Gra\xDFhoff"
+  - "Adrian W\xFCthrich"
+  - Arno Simon
   date: '2025'
   chapters:
   - index.qmd
@@ -19,112 +22,13 @@ book:
   - chapter_ai-nepi_016.qmd
   - chapter_ai-nepi_017.qmd
   - chapter_ai-nepi_018.qmd
-  - chapter_ai-nepi_019.qmd
   - chapter_ai-nepi_020.qmd
   - chapter_ai-nepi_021.qmd
-  - references.qmd
-
 format:
   html:
-    theme: 
-      - sandstone
-      - custom.scss
-    # Enhanced Table of Contents
-    toc: true
-    toc-depth: 4
-    toc-expand: 3
-    toc-location: right
-    toc-title: "Table of Contents"
-    # Enhanced Navigation
-    navbar:
-      title: "AI-NEPI Conference Proceedings"
-      logo: false
-      search: true
-      tools:
-        - icon: house-fill
-          href: index.html
-          text: "Home"
-        - icon: github
-          href: https://github.com/friedrichstr/ai-nepi
-          text: "GitHub"
-        - icon: book
-          href: "index.html"
-          text: "Contents"
-      left:
-        - text: "Overview"
-          href: index.html
-        - text: "Chapters"
-          menu:
-            - text: "AI-NEPI 001"
-              href: chapter_ai-nepi_001.html
-            - text: "AI-NEPI 003"
-              href: chapter_ai-nepi_003.html
-            - text: "AI-NEPI 004"
-              href: chapter_ai-nepi_004.html
-            - text: "AI-NEPI 005"
-              href: chapter_ai-nepi_005.html
-            - text: "AI-NEPI 006"
-              href: chapter_ai-nepi_006.html
-            - text: "AI-NEPI 007"
-              href: chapter_ai-nepi_007.html
-            - text: "AI-NEPI 008"
-              href: chapter_ai-nepi_008.html
-            - text: "AI-NEPI 009"
-              href: chapter_ai-nepi_009.html
-            - text: "AI-NEPI 010"
-              href: chapter_ai-nepi_010.html
-        - text: "References"
-          href: references.html
-    # Enhanced Code Features
+    theme: sandstone
     code-fold: true
-    code-tools: 
-      source: true
-      toggle: true
-      caption: "Show code"
-    code-overflow: wrap
-    code-line-numbers: true
-    # Enhanced Content Features
-    anchor-sections: true
-    smooth-scroll: true
-    citations-hover: true
-    footnotes-hover: true
-    crossrefs-hover: true
-    fig-responsive: true
-    fig-width: 8
-    fig-height: 6
-    fig-dpi: 300
-    # Enhanced Typography
-    html-math-method: katex
-    link-external-newwindow: true
-    link-external-icon: true
-    # Enhanced Search
-    search: true
-    # Enhanced Styling
-    css: 
-      - styles.css
-    include-after-body:
-      - sidebar-toggle.html
-    # Enhanced Fonts
-    mainfont: "Source Sans Pro"
-    monofont: "JetBrains Mono"
-    # Page Layout
     page-layout: full
-    title-block-banner: false
-    # Enhanced Responsiveness - Large text width format
-    grid:
-      sidebar-width: 200px
-      body-width: 1200px
-      margin-width: 150px
-    # Enhanced Features
-    comments: false
-    back-to-top-navigation: true
-    page-footer: 
-      left: "© 2025 AI-NEPI Project Team"
-      right: "Enhanced with Quarto"
-    # Social sharing
-    open-graph: true
-    twitter-card: true
-
 project:
   type: book
   output-dir: docs
