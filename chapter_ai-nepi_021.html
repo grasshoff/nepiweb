@@ -2,14 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.11">
+<meta name="generator" content="quarto-1.8.13">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Raphael Schlattmann, Aleksandra Kaye &amp; Malte Vogl">
 <meta name="dcterms.date" content="2025-01-01">
 
-<title>19&nbsp; From Source to Structure: Extracting Knowledge Graphs with LLMs – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>Transforming Biographical Sources into Knowledge Graphs – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
 <link href="./chapter_ai-nepi_020.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -41,10 +74,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-09b140d2d032adf2aedb8b099be3ee13.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c7e942572ce1500e7feb8d820d24bb53.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-75d40e72e685bc8b58b54284f9748aad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -85,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_021.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_021.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -118,116 +151,104 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_001_chapter.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_003_chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Transformer’s Legacy: Understanding Large Language Models and their Application in HPSS Research</span></span></a>
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_004_chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The Workflow and Utility of OpenAlex Mapper</span></span></a>
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_005_chapter.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_006_chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Towards Computational HPSS: Tracing the Influence of the Ancient Wisdom Tradition on Early Modern Science using the LLM-powered Semantic Matching Tool of the VERITRACE project</span></span></a>
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_007_chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interpretability for LLMs: Transparency, Applications and Scientific Insights in the Humanities</span></span></a>
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ai-nepi_008_chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models to Assess Biases in Sustainable Development Goal Classifications Across Major Bibliometric Databases</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Large Language Models for Footnote Parsing in Law and Humanities Scholarship</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science Dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Retrieval Augmented Generation (RAG) in Philosophical Research: Applications and Methodological Challenges</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum Gravity and Plural Pursuit: A Multi-Scale Investigation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of <em>LDA</em> and <em>BERTopic</em> Performance across Text Levels</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leverage Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Beyond Traditional Views of Science Funding</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
   </div>
 </li>
     </ul>
@@ -241,27 +262,25 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#transforming-unstructured-biographical-data-into-queryable-knowledge-graphs" id="toc-transforming-unstructured-biographical-data-into-queryable-knowledge-graphs" class="nav-link" data-scroll-target="#transforming-unstructured-biographical-data-into-queryable-knowledge-graphs"><span class="header-section-number">19.1</span> Transforming Unstructured Biographical Data into Queryable Knowledge Graphs</a></li>
-  <li><a href="#illustrative-extraction-structuring-polish-biographical-entries" id="toc-illustrative-extraction-structuring-polish-biographical-entries" class="nav-link" data-scroll-target="#illustrative-extraction-structuring-polish-biographical-entries"><span class="header-section-number">19.2</span> Illustrative Extraction: Structuring Polish Biographical Entries</a></li>
-  <li><a href="#pipeline-architecture-and-guiding-principles-for-knowledge-extraction" id="toc-pipeline-architecture-and-guiding-principles-for-knowledge-extraction" class="nav-link" data-scroll-target="#pipeline-architecture-and-guiding-principles-for-knowledge-extraction"><span class="header-section-number">19.3</span> Pipeline Architecture and Guiding Principles for Knowledge Extraction</a></li>
-  <li><a href="#stage-1-workflow-open-information-extraction-in-detail" id="toc-stage-1-workflow-open-information-extraction-in-detail" class="nav-link" data-scroll-target="#stage-1-workflow-open-information-extraction-in-detail"><span class="header-section-number">19.4</span> Stage 1 Workflow: Open Information Extraction in Detail</a></li>
-  <li><a href="#stage-2-workflow-ontology-driven-knowledge-graph-construction-in-detail" id="toc-stage-2-workflow-ontology-driven-knowledge-graph-construction-in-detail" class="nav-link" data-scroll-target="#stage-2-workflow-ontology-driven-knowledge-graph-construction-in-detail"><span class="header-section-number">19.5</span> Stage 2 Workflow: Ontology-Driven Knowledge Graph Construction in Detail</a></li>
-  <li><a href="#application-case-study-analysing-zielińskis-polish-biographical-compilations" id="toc-application-case-study-analysing-zielińskis-polish-biographical-compilations" class="nav-link" data-scroll-target="#application-case-study-analysing-zielińskis-polish-biographical-compilations"><span class="header-section-number">19.6</span> Application Case Study: Analysing Zieliński’s Polish Biographical Compilations</a></li>
-  <li><a href="#application-case-study-exploring-east-german-biographies-from-wer-war-wer-in-der-ddr" id="toc-application-case-study-exploring-east-german-biographies-from-wer-war-wer-in-der-ddr" class="nav-link" data-scroll-target="#application-case-study-exploring-east-german-biographies-from-wer-war-wer-in-der-ddr"><span class="header-section-number">19.7</span> Application Case Study: Exploring East German Biographies from “Wer war wer in der DDR?”</a></li>
-  <li><a href="#achievements-current-challenges-and-future-trajectories" id="toc-achievements-current-challenges-and-future-trajectories" class="nav-link" data-scroll-target="#achievements-current-challenges-and-future-trajectories"><span class="header-section-number">19.8</span> Achievements, Current Challenges, and Future Trajectories</a></li>
+  <li><a href="#introduction-unlocking-unstructured-biographical-knowledge" id="toc-introduction-unlocking-unstructured-biographical-knowledge" class="nav-link" data-scroll-target="#introduction-unlocking-unstructured-biographical-knowledge"><span class="header-section-number">18.1</span> Introduction: Unlocking Unstructured Biographical Knowledge</a></li>
+  <li><a href="#conceptual-framework-from-text-to-knowledge-graph" id="toc-conceptual-framework-from-text-to-knowledge-graph" class="nav-link" data-scroll-target="#conceptual-framework-from-text-to-knowledge-graph"><span class="header-section-number">18.2</span> Conceptual Framework: From Text to Knowledge Graph</a></li>
+  <li><a href="#pipeline-stage-1-ontology-agnostic-open-information-extraction" id="toc-pipeline-stage-1-ontology-agnostic-open-information-extraction" class="nav-link" data-scroll-target="#pipeline-stage-1-ontology-agnostic-open-information-extraction"><span class="header-section-number">18.3</span> Pipeline Stage 1: Ontology-Agnostic Open Information Extraction</a></li>
+  <li><a href="#pipeline-stage-2-ontology-driven-knowledge-graph-construction" id="toc-pipeline-stage-2-ontology-driven-knowledge-graph-construction" class="nav-link" data-scroll-target="#pipeline-stage-2-ontology-driven-knowledge-graph-construction"><span class="header-section-number">18.4</span> Pipeline Stage 2: Ontology-Driven Knowledge Graph Construction</a></li>
+  <li><a href="#illustrative-applications-zieliński-compilations-and-gdr-biographies" id="toc-illustrative-applications-zieliński-compilations-and-gdr-biographies" class="nav-link" data-scroll-target="#illustrative-applications-zieliński-compilations-and-gdr-biographies"><span class="header-section-number">18.5</span> Illustrative Applications: Zieliński Compilations and GDR Biographies</a></li>
+  <li><a href="#conclusion-and-future-trajectories" id="toc-conclusion-and-future-trajectories" class="nav-link" data-scroll-target="#conclusion-and-future-trajectories"><span class="header-section-number">18.6</span> Conclusion and Future Trajectories</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></h1>
+<div class="quarto-title-block"><div><h1 class="title">Transforming Biographical Sources into Knowledge Graphs</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
-<div class="quarto-title-meta-author">
+<div class="quarto-title-meta-author column-body">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -275,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
       
     <div>
@@ -295,104 +314,90 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>Researchers Malte Vogl, Raphael Schlattmann, and Alex Kaye confront the formidable challenge of extracting structured knowledge from historically significant, yet computationally intractable, unstructured biographical sources. Their pioneering work introduces a novel method to transform such materials—typically printed books or dictionaries—into readily queryable knowledge graphs.</p>
-<p>This innovative approach transcends the conventional reliance on pre-structured datasets, prevalent within History and Philosophy of Science (<em>HPSS</em>). Instead, it strategically employs <em>Large Language Models</em> (<em>LLMs</em>) not as infallible oracles, but as integral components within a meticulously engineered pipeline. The primary objective involves imposing rigorous structure upon unstructured data, such as Polish and German biographical dictionaries, thereby facilitating complex historical inquiries. These investigations might, for instance, explore the formation of intellectual networks or trace the evolution of professional connections over time.</p>
-<p>The team expertly utilises tools like <em>Neo4j</em> for graph representation, having developed a sophisticated multi-stage pipeline that incorporates crucial human oversight to ensure both accuracy and relevance. Ultimately, this methodology enables the construction of controllable knowledge graphs, where entities—individuals, locations, organisations, and publications—become distinct nodes, and their interconnections, meticulously derived from textual evidence, form the relational edges.</p>
+<p>Malte, Raphael, and Alex K., participating via Zoom, explore innovative methods for transforming unstructured biographical sources into structured knowledge graphs. This approach facilitates sophisticated querying and analysis. Their work directly addresses the challenge of computationally accessing the rich information embedded within traditional formats, such as printed books and archival materials, which typically lack inherent digital structure.</p>
+<p>The core objective involves leveraging Large Language Models (<em>LLMs</em>) not as standalone solutions, but as integral components within a multi-stage pipeline. This pipeline is meticulously designed for specific tasks, aiming to impose structure on unstructured data in a controllable manner. The process commences with diverse sources, including Polish biographical materials and German biographical handbooks, such as <em>Wer war wer in der DDR?</em>. It then proceeds to extract entities—persons, places, countries, and works—and their intricate relationships, representing them as nodes and edges within a knowledge graph. Tools like <em>Neo4j</em> enable the visualisation of these complex networks.</p>
+<p>This structured representation significantly facilitates complex queries. Researchers can, for instance, investigate network formations amongst professionals during specific historical periods or meticulously trace the evolution of ideas. The methodology champions a research-driven, data-oriented approach, incorporating human-in-the-loop validation, transparency, task decomposition, and modularity. Key outputs include validated triples (subject-predicate-object statements), ontologies precisely tailored to research questions, and disambiguated entities linked to external resources like <em>Wikidata</em>. Ultimately, the project aims to construct multilayered networks for deeper structural analysis and potentially enable natural language querying through advanced technologies such as <em>GraphRAG</em>.</p>
 </section>
-<section id="transforming-unstructured-biographical-data-into-queryable-knowledge-graphs" class="level2" data-number="19.1">
-<h2 data-number="19.1" class="anchored" data-anchor-id="transforming-unstructured-biographical-data-into-queryable-knowledge-graphs"><span class="header-section-number">19.1</span> Transforming Unstructured Biographical Data into Queryable Knowledge Graphs</h2>
+<section id="introduction-unlocking-unstructured-biographical-knowledge" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="introduction-unlocking-unstructured-biographical-knowledge"><span class="header-section-number">18.1</span> Introduction: Unlocking Unstructured Biographical Knowledge</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_021_slide_01.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 01</figcaption>
 </figure>
 </div>
-<p>Researchers confront a significant challenge in historical studies: many invaluable biographical sources persist in unstructured textual formats, such as printed dictionaries and compendia. Whilst existing History and Philosophy of Science (<em>HPSS</em>) datasets often comprise structured information—for instance, publication databases or email archives—these unstructured materials, despite their rich detail, resist computational analysis. Consequently, this project pioneers a methodology to systematically impose structure upon such data, specifically targeting biographical entries. The core idea leverages <em>Large Language Models</em> (<em>LLMs</em>), not as standalone solutions, but as crucial components within a larger, controllable pipeline engineered to construct knowledge graphs.</p>
-<p>Historically, tools like <em>Get Grass</em> facilitated access to printed materials for digitisation. The current approach, however, aims for a deeper level of structuration. It conceptualises biographical information as a knowledge graph: a network where entities—individuals, geographical locations, countries, published works, or organisations—constitute the nodes. The relationships between these entities, as described in the source texts, form the connecting edges. Such a graph, once constructed, permits complex, structured queries. For instance, one might investigate how professional networks evolved within a specific discipline during a particular era, or trace the contacts an individual established over their career.</p>
-<p>The team employs <em>LLMs</em> selectively, focusing on their utility for specific tasks within a broader information processing chain, rather than pursuing an elusive ‘perfect’ model. Source materials include Polish biographical collections and German-language resources such as the handbook <em>Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien</em>. An entry from the latter, for Alexander Abusch, might detail his role as Minister für Kultur alongside birth and death dates. An extraction pipeline processes these text-based entries, often derived from scanned documents, transforming them into a visual and queryable graph, potentially managed in a system like <em>Neo4j</em>. This process thus converts isolated, albeit information-dense, textual accounts into a connected, structured dataset ripe for scholarly exploration.</p>
+<p>Researchers consistently confront the significant challenge of unlocking knowledge embedded within unstructured biographical sources. Historically, valuable information, particularly within printed books and archives, has remained largely inaccessible to computational analysis due to its inherent lack of digital structure. Whilst earlier tools like <em>Get Grasso</em> aimed to digitise and process printed materials, the current investigation centres on biographical sources replete with detailed personal data, crucial for understanding, for instance, specific phases in the evolution of physics. These sources, however, typically do not permit direct structured questioning.</p>
+<p>To address this fundamental limitation, investigators propose employing Large Language Models (<em>LLMs</em>). The core idea involves harnessing <em>LLMs</em> not as all-encompassing solutions, but as specialised tools within a controllable pipeline designed to construct knowledge graphs from this unstructured data. Such a knowledge graph comprises entities—individuals, locations, organisations, or publications—represented as nodes, and the relationships between them, depicted as edges. Polish biographical collections and German-language resources, such as the handbook <em>Wer war wer in der DDR?</em>, serve as primary examples of the source material. Visualisation and management of these graphs can occur through platforms like <em>Neo4j</em>.</p>
+<p>Crucially, the project seeks the most <em>useful</em> <em>LLM</em> for specific tasks within this chain, rather than pursuing a universally perfect model. This pragmatic approach allows for complex queries, such as mapping an individual’s birth and work locations or analysing how professional networks formed and evolved during particular historical periods.</p>
 </section>
-<section id="illustrative-extraction-structuring-polish-biographical-entries" class="level2" data-number="19.2">
-<h2 data-number="19.2" class="anchored" data-anchor-id="illustrative-extraction-structuring-polish-biographical-entries"><span class="header-section-number">19.2</span> Illustrative Extraction: Structuring Polish Biographical Entries</h2>
+<section id="conceptual-framework-from-text-to-knowledge-graph" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="conceptual-framework-from-text-to-knowledge-graph"><span class="header-section-number">18.2</span> Conceptual Framework: From Text to Knowledge Graph</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_021_slide_06.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 06</figcaption>
+<p><img src="images/ai-nepi_021_slide_04.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<p>To illustrate the extraction methodology, consider a Polish biographical entry for Bartsch Henryk, an evangelical priest (<em>ks. ewang.</em>). The text records his birth on 12th December 1832 in Wladyslawowo, situated within the Konin district. Furthermore, it details his extensive travels to Italy (<em>Włochy</em>), Greece (<em>Grecja</em>), the Holy Land (<em>Ziemia Święta</em>), and Egypt (<em>Egipt</em>). His scholarly contributions encompass several publications: <em>Wspomnienia z podróży do Jerozolimy i Kairo</em> (Warsaw, 1873), <em>Listy z podróży po Grecji i Sycylji</em> (Warsaw, 1874), and <em>Z teki podróżniczej, szkice dawne i nowe oryginalne i tłumaczone</em> (Warsaw, 1883). The entry itself cites Bystron’s <em>Wielka Encyklopedja</em> as a source.</p>
-<p>From this concise textual snippet, the system extracts key entities and their relationships. ‘Bartsch Henryk’ is identified as a PERSON, his ROLE as ‘<em>ks. ewang.</em>’, his birthdate as ‘12. XII. 1832’ (a DATE), and ‘Wladyslawowo’ along with the countries he visited as LOCATIONs. Relationships such as ‘born on’, ‘born in’, ‘located in’, and ‘travelled to’ link these entities. Consequently, this process yields a set of structured triples: (Bartsch Henryk, is a, <em>ks. ewang.</em>), (Bartsch Henryk, travelled to, <em>Włochy</em>), and so forth, effectively translating narrative information into a machine-readable format suitable for knowledge graph construction.</p>
+<p>The transformation of raw biographical text into a structured knowledge graph follows a carefully designed conceptual framework. Initially, textual information, such as entries from biographical dictionaries, undergoes processing into manageable segments or “chunks”. From these chunks, an extraction pipeline works to identify key entities and their interrelations, which are then assembled into a knowledge graph. For instance, a biographical entry for “Bartsch Henryk” might yield entities like his name (PERSON), role (“ks. ewang.” - evangelical priest, ROLE), birth date (DATE), and birthplace (“Władysławowo”, LOCATION), alongside relationships such as “born in” or “travelled to” various locations like Italy (“Włochy”) or Egypt (“Egipt”). These relationships manifest as structured triples, for example, “(Bartsch Henryk, is a, ks. ewang.)”.</p>
+<p>This entire process operates within a two-stage pipeline. The first stage, “Ontology agnostic Open Information Extraction (<em>OIE</em>)”, focuses on loading and chunking data, performing initial information extraction, validating these extractions, and standardising them, with a quality check to determine sufficiency. Subsequently, the second stage, “Ontology driven Knowledge Graph (<em>KG</em>) building”, commences with the formulation of Competency Questions (<em>CQs</em>) that guide ontology creation. This stage further involves creating <em>SHACL</em> (Shapes Constraint Language) shapes for validation, mapping extracted information to the ontology, performing entity disambiguation (including linking to <em>Wiki IDs</em>), and finally validating the resultant graph using <em>RDF Star</em> and <em>SHACL</em>. Both stages integrate <em>LLM</em> interaction and maintain a crucial “Human-in-the-Loop” layer for oversight and refinement.</p>
+<p>Five core principles underpin this methodology:</p>
+<ul>
+<li><p>A research-driven and data-oriented approach ensures relevance.</p></li>
+<li><p>Human-in-the-loop mechanisms guarantee quality and address ambiguities.</p></li>
+<li><p>Transparency allows for process verification.</p></li>
+<li><p>Task decomposition simplifies complexity.</p></li>
+<li><p>Modularity facilitates iterative development and improvement of individual components.</p></li>
+</ul>
 </section>
-<section id="pipeline-architecture-and-guiding-principles-for-knowledge-extraction" class="level2" data-number="19.3">
-<h2 data-number="19.3" class="anchored" data-anchor-id="pipeline-architecture-and-guiding-principles-for-knowledge-extraction"><span class="header-section-number">19.3</span> Pipeline Architecture and Guiding Principles for Knowledge Extraction</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_021_slide_08.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 08</figcaption>
-</figure>
-</div>
-<p>Engineers have designed a sophisticated two-stage pipeline to transform raw textual data into structured knowledge graphs. This architecture systematically processes information, integrating both automated techniques and human expertise. The first stage, ‘Ontology-agnostic Open Information Extraction’ (<em>OIE</em>), focuses on identifying factual statements. It commences by loading and chunking the source data, then proceeds to <em>OIE</em> extraction, validates these extractions, and standardises them against benchmarks. A critical quality control checkpoint determines the sufficiency of the <em>OIE</em> output; insufficient output triggers a manual correction loop for a sample of triples.</p>
-<p>Subsequently, the second stage, ‘Ontology-driven Knowledge Graph (<em>KG</em>) building’, refines and structures this information. This stage commences by formulating Competency Questions (<em>CQs</em>) that define the <em>KG</em>’s desired analytical capabilities. Based on these <em>CQs</em>, developers create an ontology and define <em>SHACL</em> (Shapes Constraint Language) shapes for validation. The pipeline then maps the extracted triples to this ontology, disambiguates entities (potentially linking them to <em>Wikidata IDs</em>), represents the data using <em>RDF-star</em>, and subsequently performs <em>SHACL</em> validation. Similar to Stage 1, a quality control loop allows for manual correction of <em>CQs</em>, the ontology, or <em>SHACL</em> shapes if necessary. Both stages integrate layers for <em>LLM</em> interaction and crucial ‘Human in the Loop’ interventions, ensuring robust and reliable outcomes.</p>
-<p>Several core principles underpin this pipeline’s design. It is fundamentally research-driven and data-oriented; thus, ontology development directly addresses specific research questions and aligns with the data’s realistic provisions. The human-in-the-loop paradigm strategically combines <em>LLM</em> automation for efficiency with expert oversight at all critical junctures, balancing scale with quality. Transparency is paramount; researchers design each step for verifiability. Furthermore, task decomposition breaks the complex process into manageable, sequential units—notably performing <em>OIE</em> before aligning with an ontology. Finally, modularity ensures the system can adapt, allowing for the integration of improved models or components as technology evolves.</p>
-</section>
-<section id="stage-1-workflow-open-information-extraction-in-detail" class="level2" data-number="19.4">
-<h2 data-number="19.4" class="anchored" data-anchor-id="stage-1-workflow-open-information-extraction-in-detail"><span class="header-section-number">19.4</span> Stage 1 Workflow: Open Information Extraction in Detail</h2>
+<section id="pipeline-stage-1-ontology-agnostic-open-information-extraction" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="pipeline-stage-1-ontology-agnostic-open-information-extraction"><span class="header-section-number">18.3</span> Pipeline Stage 1: Ontology-Agnostic Open Information Extraction</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_021_slide_09.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<p>The initial stage of the pipeline, <em>Open Information Extraction</em> (<em>OIE</em>), meticulously processes raw biographical texts to identify factual assertions. It commences by loading and chunking data: the system ingests pre-processed files containing biographical narratives and segments them into manageable units. This step yields semi-structured data, often organised tabularly, with each row corresponding to a text chunk and including identifiers such as name, role, the biographical snippet itself, and a unique chunk ID.</p>
-<p>Following this preparation, <em>OIE</em> extraction commences. For each chunk—comprising, for example, a person’s name such as ‘Havemann, Robert’ and a segment of their biography like ‘… 1935 Prom. mit … an der Univ. Berlin…’—the system attempts to extract factual statements. This process generates raw Subject-Predicate-Object (<em>SPO</em>) triples, enriched with pertinent metadata such as an associated timeframe and a confidence score indicating the extraction’s reliability.</p>
-<p>Subsequently, <em>OIE</em> validation scrutinises these raw triples. The original text chunk and its corresponding extracted triples serve as input. Human experts, or potentially other specialised <em>LLMs</em>, then assess the accuracy and relevance of each triple against the source text. This critical review produces a set of validated <em>SPO</em> triples. Finally, the <em>OIE</em> Standard step evaluates the overall quality of this extraction phase. Researchers compare the validated triples against a ‘Gold Standard’—a reference set of triples meticulously created or verified by domain experts. This comparison yields key performance indicators such as F1-score, Precision, and Recall, offering a quantitative measure of the <em>OIE</em> process’s success.</p>
+<p>The initial stage of the pipeline, ontology-agnostic Open Information Extraction (<em>OIE</em>), systematically processes raw biographical texts into preliminary structured data. It commences with loading and chunking pre-processed data files. This step transforms biographical information into a semi-structured format, typically a table where each row represents a text chunk associated with a name, role, the chunk content itself (“Biografie”), and a unique chunk identifier.</p>
+<p>Following data preparation, the <em>OIE</em> Extraction step performs an “Extraction Call”. Using the person’s name and the relevant biographical text chunk as input (for example, ‘Havemann, Robert’ and text like ‘… 1935 Prom. mit … an der Univ. Berlin…’), this process generates raw Subject-Predicate-Object (<em>SPO</em>) triples. These triples also include associated metadata, such as the timeframe of the event. Subsequently, an <em>OIE</em> Validation step scrutinises these raw triples. Taking the original text chunk and the extracted triples, a “Validation Call” produces validated <em>SPO</em> triples, now augmented with a confidence score for each assertion.</p>
+<p>To ensure the reliability of this extraction phase, the <em>OIE</em> Standard step compares the validated triples against a “Gold Standard”—a manually created or verified sample of triples. This comparison yields crucial quality metrics, including F1 score, precision, and recall. These metrics inform a decision point regarding whether the <em>OIE</em> quality suffices to proceed to the next stage of the pipeline or if further refinement of the <em>OIE</em> steps proves necessary.</p>
 </section>
-<section id="stage-2-workflow-ontology-driven-knowledge-graph-construction-in-detail" class="level2" data-number="19.5">
-<h2 data-number="19.5" class="anchored" data-anchor-id="stage-2-workflow-ontology-driven-knowledge-graph-construction-in-detail"><span class="header-section-number">19.5</span> Stage 2 Workflow: Ontology-Driven Knowledge Graph Construction in Detail</h2>
+<section id="pipeline-stage-2-ontology-driven-knowledge-graph-construction" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="pipeline-stage-2-ontology-driven-knowledge-graph-construction"><span class="header-section-number">18.4</span> Pipeline Stage 2: Ontology-Driven Knowledge Graph Construction</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_021_slide_12.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 12</figcaption>
 </figure>
 </div>
-<p>The second stage of the pipeline focuses on building the knowledge graph in an ontology-driven manner, ensuring the final structure aligns precisely with research objectives. This stage commences by formulating Competency Questions (<em>CQs</em>). Drawing upon a sample of validated triples from Stage 1, experts define the specific analytical questions the knowledge graph must be capable of answering. This process yields a set of manually refined <em>CQs</em> that guide subsequent development.</p>
-<p>Next, developers create the ontology. Using the <em>CQs</em> and the sample of validated triples as inputs, they design a formal ontology. This ontology specifies the classes of entities (e.g., Person, Organisation, Event), the properties these entities can possess, and the types of relationships that can exist between them, all meticulously tailored to address the <em>CQs</em>. This process yields a comprehensive Ontology Definition.</p>
-<p>With the ontology established, ontology mapping commences. The pipeline processes the validated triples from Stage 1, mapping their constituent subjects, predicates, and objects to the corresponding classes and properties within the defined ontology. This step transforms the relatively raw triples into conceptual <em>RDF</em> (Resource Description Framework) statements. Finally, disambiguation and <em>Wikidata ID</em> linking refine the graph. This crucial step involves resolving ambiguities in entity references—for instance, ensuring that different individuals sharing the same name are correctly distinguished. The system links entities to external identifiers, such as <em>Wikidata IDs</em>, where feasible. This phase also incorporates <em>RDF-star</em> statement generation, allowing annotations or contextual information to attach directly to individual triples, thereby enriching the graph’s expressive power. This process yields a set of disambiguated triples and <em>RDF-star</em> statements, ready for <em>SHACL</em> validation and subsequent querying.</p>
+<p>Once high-quality triples emerge from Stage 1, the second stage, ontology-driven Knowledge Graph (<em>KG</em>) construction, commences. This phase begins with the formulation of Competency Questions (<em>CQs</em>), which are manually refined based on a sample of the validated triples. These <em>CQs</em> articulate the specific research queries the final knowledge graph should address; for instance, “Which <em>GDR</em> scientists conducted research or studied in the Soviet Union between 1950 and 1989? What are their later Party affiliations?”.</p>
+<p>Guided by these <em>CQs</em> and the sample triples, an Ontology Creation step, via a “Generation Call”, produces an ontology definition. This definition specifies classes (e.g., “Person” as an <code>owl:Class</code>, “doctorate” as a class of “academicEvent”) and properties (e.g., <code>:eventYear</code>, <code>:eventInstitution</code>, <code>:eventTopic</code>). Concurrently, <em>SHACL</em> (Shapes Constraint Language) shapes are created to define constraints for validating the graph’s structure and content.</p>
+<p>The subsequent Ontology Mapping step, through a “Mapping Call”, aligns the validated triples with this newly defined ontology and <em>SHACL</em> shapes, incorporating relevant metadata. This results in mapped triples expressed as Conceptual <em>RDF</em>. An example might show an instance for Havemann achieving a doctorate event, with properties specifying the year (1935), topic (Colloid Chemistry), and institution (University of Berlin). Following this, the Disambiguation <em>Wiki ID</em> step processes these mapped triples. This crucial step resolves ambiguities and links entities to external identifiers, such as <em>Wikidata IDs</em> (e.g., mapping “Robert Havemann” to <code>wd:Q77116</code>), producing disambiguated triples and <em>RDF-star</em> statements that allow metadata to be attached to individual statements. Finally, the entire constructed knowledge graph undergoes <em>RDF Star</em> and <em>SHACL</em> Validation to ensure its integrity and conformance to the defined ontology and constraints.</p>
 </section>
-<section id="application-case-study-analysing-zielińskis-polish-biographical-compilations" class="level2" data-number="19.6">
-<h2 data-number="19.6" class="anchored" data-anchor-id="application-case-study-analysing-zielińskis-polish-biographical-compilations"><span class="header-section-number">19.6</span> Application Case Study: Analysing Zieliński’s Polish Biographical Compilations</h2>
+<section id="illustrative-applications-zieliński-compilations-and-gdr-biographies" class="level2" data-number="18.5">
+<h2 data-number="18.5" class="anchored" data-anchor-id="illustrative-applications-zieliński-compilations-and-gdr-biographies"><span class="header-section-number">18.5</span> Illustrative Applications: Zieliński Compilations and GDR Biographies</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_021_slide_15.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 15</figcaption>
 </figure>
 </div>
-<p>Researchers applied the knowledge graph extraction pipeline to a set of significant Polish historical sources: three complementary compilations by Stanisław Zieliński. These encompass <em>Mały słownik pionierów polskich kolonjalnych i morskich</em> (1933), a biographical dictionary of colonial and maritime pioneers; <em>Bibljografja czasopism polskich zagranicą, 1830-1934</em> (1935), a bibliography of Polish periodicals published abroad; and <em>Wybitne czyny Polaków na obczyźnie</em> (1935), a record of notable Polish achievements internationally.</p>
-<p>The structured data extracted from these volumes enables the exploration of several nuanced research questions. For instance, the knowledge graph facilitates the identification of individuals or communities whose pivotal roles in developing ideas and practices might have been obscured by dominant historical narratives. It allows for an analysis of shifts in migration patterns, such as those occurring before and after the January Uprising of 1863. Furthermore, investigators can examine the function of specific journals, determining if they served as ‘boundary objects’ linking diverse intellectual or professional circles, or which publications proved most central to the communities of practice amongst Polish migrants.</p>
-<p>Initial analysis of the Zieliński data yielded a substantial social network graph containing 3,598 nodes and 5,443 edges. Visualisations of this network distinguish editors (coloured green) from other individuals (coloured pink), offering a preliminary glimpse into the relational structures embedded within these historical texts.</p>
+<p>Researchers illustrate the utility of their knowledge graph extraction pipeline through two distinct case studies. The first involves an analysis of Zieliński’s compilations, which encompass three complementary works: a biographical dictionary, a dictionary of publications, and a dictionary of achievements. By applying the knowledge-graph approach to this corpus, investigators can explore complex questions concerning the roles of individuals in idea development, migration patterns of scholars, the function of journals as boundary objects, and the identification of central journals within specific academic disciplines. An example network derived from these compilations reveals a graph of 3598 nodes and 5443 edges, where nodes representing editors are coloured green and others pink, clearly showing clusters of interconnected individuals.</p>
+<p>The second case study focuses on the German biographical lexicon <em>Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien</em>. Published in the 1990s, this resource contains approximately 4000 entries on key figures from East German history and is frequently consulted by researchers and journalists; the presentation displays sample entries for Gustav Hertz and Robert Havemann. An analytical example derived from this dataset examines correlations between awards received, attainment of high positions, and <em>SED</em> (Socialist Unity Party of Germany) affiliation. A scatter plot visualises these relationships for various awards, including the <em>Karl-Marx-Orden</em> and the <em>Nationalpreis der DDR</em>. Further comparative data highlights differences between recipients of the <em>Karl-Marx-Orden</em> and non-recipients regarding <em>SED</em> membership share, average birth year, and holding of specific high-ranking positions within structures like the <em>Politbüro</em> or <em>Ministerrat</em>.</p>
 </section>
-<section id="application-case-study-exploring-east-german-biographies-from-wer-war-wer-in-der-ddr" class="level2" data-number="19.7">
-<h2 data-number="19.7" class="anchored" data-anchor-id="application-case-study-exploring-east-german-biographies-from-wer-war-wer-in-der-ddr"><span class="header-section-number">19.7</span> Application Case Study: Exploring East German Biographies from “Wer war wer in der DDR?”</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_021_slide_17.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 17</figcaption>
-</figure>
-</div>
-<p>Another significant application of the extraction methodology involves the German biographical lexicon, <em>Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien</em>. This extensive work, first published in the 1980s by the Bundesstiftung zur Aufarbeitung der SED-Diktatur and subsequently digitised in the 2000s, profiles approximately 4,000 prominent East German figures from diverse fields including politics, science, culture, and sports. Containing entries for individuals such as Gustav Hertz and Robert Havemann, it serves as an indispensable resource for researchers and journalists seeking to understand the complex legacy of the German Democratic Republic.</p>
-<p>The structured data derived from this lexicon enables quantitative analyses of historical patterns. One such analysis, visually presented as a scatter plot, investigates the relationship between state award recipients, high-ranking positions, and affiliation with the Socialist Unity Party (<em>SED</em>). The plot maps individuals based on their award status (e.g., <em>Karl-Marx-Orden</em>, <em>Nationalpreis der DDR</em>) against their rate of holding high positions and their <em>SED</em> affiliation rate. Comparative statistics reveal striking correlations: for instance, 95.0% of the 38 <em>Karl-Marx-Orden</em> recipients were <em>SED</em> members, compared to only 38.5% of the 1,056 individuals in the sample without this award. Recipients of the <em>Karl-Marx-Orden</em> also held a significantly higher share of high positions (65.8%) compared to those with no awards (28.0%), and an average birth year of 1905.9, substantially earlier than the 1923.0 average for non-recipients. Further detailed breakdowns show that 100% of <em>Karl-Marx-Orden</em> recipients who held Politbüro positions were members, highlighting the award’s strong ties to the highest echelons of power.</p>
-</section>
-<section id="achievements-current-challenges-and-future-trajectories" class="level2" data-number="19.8">
-<h2 data-number="19.8" class="anchored" data-anchor-id="achievements-current-challenges-and-future-trajectories"><span class="header-section-number">19.8</span> Achievements, Current Challenges, and Future Trajectories</h2>
+<section id="conclusion-and-future-trajectories" class="level2" data-number="18.6">
+<h2 data-number="18.6" class="anchored" data-anchor-id="conclusion-and-future-trajectories"><span class="header-section-number">18.6</span> Conclusion and Future Trajectories</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_021_slide_20.jpg" class="img-fluid figure-img"></p>
 <figcaption>Slide 20</figcaption>
 </figure>
 </div>
-<p>The project has successfully demonstrated a significant advancement: the transformation of isolated biographical entries into a resource capable of supporting complex structural queries. This marks a crucial step towards unlocking the rich, latent information within historical texts. Nevertheless, researchers identify ongoing challenges, primarily in refining entity disambiguation techniques to ensure greater accuracy and in enhancing benchmarking methodologies to rigorously assess pipeline performance.</p>
-<p>Looking ahead, researchers will immediately complete and finalise the current pipeline’s development. Subsequently, a systematic comparison of its outputs against alternative pipelines and existing software packages will provide valuable performance context. A key objective involves scaling the entire process to analyse full datasets, thereby enabling more comprehensive historical investigations.</p>
-<p>Beyond these immediate goals, future ambitions include fine-tuning the pipeline for highly specific research use cases. The team also plans to explore the potential of <em>GraphRAG</em> (Graph Retrieval Augmented Generation), which could allow users to query the knowledge graphs using natural language. Furthermore, the team expresses interest in constructing multilayered networks, possibly employing frameworks such as <em>ModelSEN</em> (Multilayer Social-Epistemic Networks), to facilitate even deeper structural analyses of the complex relationships within the historical data. Interested parties may contact Raphael Schlattmann, Alex Kaye, or Malte Vogl via their provided email addresses.</p>
+<p>The project successfully demonstrates a method for progressing from isolated biographical entries to a system capable of supporting structural queries across large datasets. Nevertheless, researchers identify ongoing challenges, primarily in refining entity disambiguation techniques and improving benchmarking procedures to rigorously assess performance.</p>
+<p>Immediate next steps involve completing and further enhancing the extraction pipeline. The team also plans a systematic comparison of its results against those produced by other established pipelines and software packages. Subsequently, the team intends to scale their methodology to analyse full datasets comprehensively.</p>
+<p>Looking further ahead, future goals include fine-tuning the pipeline to cater to more specific use cases. Investigators will also explore the potential of <em>GraphRAG</em> (Graph Retrieval Augmented Generation) to enable natural language querying of the generated knowledge graphs, thereby making complex data more accessible. Furthermore, plans are underway to construct multilayered networks, potentially using frameworks like <em>ModelSEN</em>, to facilitate deeper and more nuanced structural analyses of the biographical information.</p>
 
+
+<!-- -->
 
 </section>
 
@@ -466,6 +471,57 @@ ul.task-list li input[type="checkbox"] {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -796,18 +852,117 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_020.html" class="pagination-link" aria-label="Beyond Traditional Views of Science Funding">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Beyond Traditional Views of Science Funding</span></span>
+      <a href="./chapter_ai-nepi_020.html" class="pagination-link" aria-label="Unlocking Science's Hidden Dynamics: A Computational Approach to Archival Research">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "From Source to Structure: Extracting Knowledge Graphs with LLMs"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">- name: "Raphael Schlattmann, Aleksandra Kaye &amp; Malte Vogl"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  affiliation: "Technische Universität Berlin"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  email: "raphael.schlattmann@tu-berlin.de"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> '2025'</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> bibliography.bib</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>title: "Transforming Biographical Sources into Knowledge Graphs"</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>author:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>name: Malte</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>name: Raphael</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>name: Alex K.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>format:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    toc: true</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    toc-depth: 3</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    number-sections: true</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    code-fold: true</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    code-tools: true</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    highlight-style: atom-one</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview {.unnumbered}</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Malte, Raphael, and Alex K., participating via Zoom, explore innovative methods for transforming unstructured biographical sources into structured knowledge graphs. This approach facilitates sophisticated querying and analysis. Their work directly addresses the challenge of computationally accessing the rich information embedded within traditional formats, such as printed books and archival materials, which typically lack inherent digital structure.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>The core objective involves leveraging Large Language Models (*LLMs*) not as standalone solutions, but as integral components within a multi-stage pipeline. This pipeline is meticulously designed for specific tasks, aiming to impose structure on unstructured data in a controllable manner. The process commences with diverse sources, including Polish biographical materials and German biographical handbooks, such as *Wer war wer in der DDR?*. It then proceeds to extract entities—persons, places, countries, and works—and their intricate relationships, representing them as nodes and edges within a knowledge graph. Tools like *Neo4j* enable the visualisation of these complex networks.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>This structured representation significantly facilitates complex queries. Researchers can, for instance, investigate network formations amongst professionals during specific historical periods or meticulously trace the evolution of ideas. The methodology champions a research-driven, data-oriented approach, incorporating human-in-the-loop validation, transparency, task decomposition, and modularity. Key outputs include validated triples (subject-predicate-object statements), ontologies precisely tailored to research questions, and disambiguated entities linked to external resources like *Wikidata*. Ultimately, the project aims to construct multilayered networks for deeper structural analysis and potentially enable natural language querying through advanced technologies such as *GraphRAG*.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction: Unlocking Unstructured Biographical Knowledge</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 01](images/ai-nepi_021_slide_01.jpg)</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Researchers consistently confront the significant challenge of unlocking knowledge embedded within unstructured biographical sources. Historically, valuable information, particularly within printed books and archives, has remained largely inaccessible to computational analysis due to its inherent lack of digital structure. Whilst earlier tools like *Get Grasso* aimed to digitise and process printed materials, the current investigation centres on biographical sources replete with detailed personal data, crucial for understanding, for instance, specific phases in the evolution of physics. These sources, however, typically do not permit direct structured questioning.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>To address this fundamental limitation, investigators propose employing Large Language Models (*LLMs*). The core idea involves harnessing *LLMs* not as all-encompassing solutions, but as specialised tools within a controllable pipeline designed to construct knowledge graphs from this unstructured data. Such a knowledge graph comprises entities—individuals, locations, organisations, or publications—represented as nodes, and the relationships between them, depicted as edges. Polish biographical collections and German-language resources, such as the handbook *Wer war wer in der DDR?*, serve as primary examples of the source material. Visualisation and management of these graphs can occur through platforms like *Neo4j*.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>Crucially, the project seeks the most *useful* *LLM* for specific tasks within this chain, rather than pursuing a universally perfect model. This pragmatic approach allows for complex queries, such as mapping an individual's birth and work locations or analysing how professional networks formed and evolved during particular historical periods.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conceptual Framework: From Text to Knowledge Graph</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 04](images/ai-nepi_021_slide_04.jpg)</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>The transformation of raw biographical text into a structured knowledge graph follows a carefully designed conceptual framework. Initially, textual information, such as entries from biographical dictionaries, undergoes processing into manageable segments or "chunks". From these chunks, an extraction pipeline works to identify key entities and their interrelations, which are then assembled into a knowledge graph. For instance, a biographical entry for "Bartsch Henryk" might yield entities like his name (PERSON), role ("ks. ewang." - evangelical priest, ROLE), birth date (DATE), and birthplace ("Władysławowo", LOCATION), alongside relationships such as "born in" or "travelled to" various locations like Italy ("Włochy") or Egypt ("Egipt"). These relationships manifest as structured triples, for example, "(Bartsch Henryk, is a, ks. ewang.)".</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>This entire process operates within a two-stage pipeline. The first stage, "Ontology agnostic Open Information Extraction (*OIE*)", focuses on loading and chunking data, performing initial information extraction, validating these extractions, and standardising them, with a quality check to determine sufficiency. Subsequently, the second stage, "Ontology driven Knowledge Graph (*KG*) building", commences with the formulation of Competency Questions (*CQs*) that guide ontology creation. This stage further involves creating *SHACL* (Shapes Constraint Language) shapes for validation, mapping extracted information to the ontology, performing entity disambiguation (including linking to *Wiki IDs*), and finally validating the resultant graph using *RDF Star* and *SHACL*. Both stages integrate *LLM* interaction and maintain a crucial "Human-in-the-Loop" layer for oversight and refinement.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>Five core principles underpin this methodology:</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>A research-driven and data-oriented approach ensures relevance.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Human-in-the-loop mechanisms guarantee quality and address ambiguities.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Transparency allows for process verification.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Task decomposition simplifies complexity.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Modularity facilitates iterative development and improvement of individual components.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pipeline Stage 1: Ontology-Agnostic Open Information Extraction</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 09](images/ai-nepi_021_slide_09.jpg)</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The initial stage of the pipeline, ontology-agnostic Open Information Extraction (*OIE*), systematically processes raw biographical texts into preliminary structured data. It commences with loading and chunking pre-processed data files. This step transforms biographical information into a semi-structured format, typically a table where each row represents a text chunk associated with a name, role, the chunk content itself ("Biografie"), and a unique chunk identifier.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Following data preparation, the *OIE* Extraction step performs an "Extraction Call". Using the person's name and the relevant biographical text chunk as input (for example, 'Havemann, Robert' and text like '... 1935 Prom. mit ... an der Univ. Berlin...'), this process generates raw Subject-Predicate-Object (*SPO*) triples. These triples also include associated metadata, such as the timeframe of the event. Subsequently, an *OIE* Validation step scrutinises these raw triples. Taking the original text chunk and the extracted triples, a "Validation Call" produces validated *SPO* triples, now augmented with a confidence score for each assertion.</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>To ensure the reliability of this extraction phase, the *OIE* Standard step compares the validated triples against a "Gold Standard"—a manually created or verified sample of triples. This comparison yields crucial quality metrics, including F1 score, precision, and recall. These metrics inform a decision point regarding whether the *OIE* quality suffices to proceed to the next stage of the pipeline or if further refinement of the *OIE* steps proves necessary.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pipeline Stage 2: Ontology-Driven Knowledge Graph Construction</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 12](images/ai-nepi_021_slide_12.jpg)</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>Once high-quality triples emerge from Stage 1, the second stage, ontology-driven Knowledge Graph (*KG*) construction, commences. This phase begins with the formulation of Competency Questions (*CQs*), which are manually refined based on a sample of the validated triples. These *CQs* articulate the specific research queries the final knowledge graph should address; for instance, "Which *GDR* scientists conducted research or studied in the Soviet Union between 1950 and 1989? What are their later Party affiliations?".</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Guided by these *CQs* and the sample triples, an Ontology Creation step, via a "Generation Call", produces an ontology definition. This definition specifies classes (e.g., "Person" as an `owl:Class`, "doctorate" as a class of "academicEvent") and properties (e.g., `:eventYear`, `:eventInstitution`, `:eventTopic`). Concurrently, *SHACL* (Shapes Constraint Language) shapes are created to define constraints for validating the graph's structure and content.</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>The subsequent Ontology Mapping step, through a "Mapping Call", aligns the validated triples with this newly defined ontology and *SHACL* shapes, incorporating relevant metadata. This results in mapped triples expressed as Conceptual *RDF*. An example might show an instance for Havemann achieving a doctorate event, with properties specifying the year (1935), topic (Colloid Chemistry), and institution (University of Berlin). Following this, the Disambiguation *Wiki ID* step processes these mapped triples. This crucial step resolves ambiguities and links entities to external identifiers, such as *Wikidata IDs* (e.g., mapping "Robert Havemann" to `wd:Q77116`), producing disambiguated triples and *RDF-star* statements that allow metadata to be attached to individual statements. Finally, the entire constructed knowledge graph undergoes *RDF Star* and *SHACL* Validation to ensure its integrity and conformance to the defined ontology and constraints.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Illustrative Applications: Zieliński Compilations and GDR Biographies</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 15](images/ai-nepi_021_slide_15.jpg)</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Researchers illustrate the utility of their knowledge graph extraction pipeline through two distinct case studies. The first involves an analysis of Zieliński's compilations, which encompass three complementary works: a biographical dictionary, a dictionary of publications, and a dictionary of achievements. By applying the knowledge-graph approach to this corpus, investigators can explore complex questions concerning the roles of individuals in idea development, migration patterns of scholars, the function of journals as boundary objects, and the identification of central journals within specific academic disciplines. An example network derived from these compilations reveals a graph of 3598 nodes and 5443 edges, where nodes representing editors are coloured green and others pink, clearly showing clusters of interconnected individuals.</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>The second case study focuses on the German biographical lexicon *Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien*. Published in the 1990s, this resource contains approximately 4000 entries on key figures from East German history and is frequently consulted by researchers and journalists; the presentation displays sample entries for Gustav Hertz and Robert Havemann. An analytical example derived from this dataset examines correlations between awards received, attainment of high positions, and *SED* (Socialist Unity Party of Germany) affiliation. A scatter plot visualises these relationships for various awards, including the *Karl-Marx-Orden* and the *Nationalpreis der DDR*. Further comparative data highlights differences between recipients of the *Karl-Marx-Orden* and non-recipients regarding *SED* membership share, average birth year, and holding of specific high-ranking positions within structures like the *Politbüro* or *Ministerrat*.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conclusion and Future Trajectories</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="al">![Slide 20](images/ai-nepi_021_slide_20.jpg)</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>The project successfully demonstrates a method for progressing from isolated biographical entries to a system capable of supporting structural queries across large datasets. Nevertheless, researchers identify ongoing challenges, primarily in refining entity disambiguation techniques and improving benchmarking procedures to rigorously assess performance.</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>Immediate next steps involve completing and further enhancing the extraction pipeline. The team also plans a systematic comparison of its results against those produced by other established pipelines and software packages. Subsequently, the team intends to scale their methodology to analyse full datasets comprehensively.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>Looking further ahead, future goals include fine-tuning the pipeline to cater to more specific use cases. Investigators will also explore the potential of *GraphRAG* (Graph Retrieval Augmented Generation) to enable natural language querying of the generated knowledge graphs, thereby making complex data more accessible. Furthermore, plans are underway to construct multilayered networks, potentially using frameworks like *ModelSEN*, to facilitate deeper and more nuanced structural analyses of the biographical information.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 
 

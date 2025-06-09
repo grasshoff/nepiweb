@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Oliver Eberle">
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>7&nbsp; Explainable AI and AI-based Scientific Insights in the Humanities – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_008.html" rel="next">
+<link href="./chapter_ai-nepi_006.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_007.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#explainable-ai-xai-1.0-feature-attributions" id="toc-explainable-ai-xai-1.0-feature-attributions" class="nav-link" data-scroll-target="#explainable-ai-xai-1.0-feature-attributions"><span class="header-section-number">7.1</span> Explainable AI (<em>XAI</em>) 1.0: Feature Attributions</a></li>
+  <li><a href="#generative-ai-and-xai-2.0-challenges" id="toc-generative-ai-and-xai-2.0-challenges" class="nav-link" data-scroll-target="#generative-ai-and-xai-2.0-challenges"><span class="header-section-number">7.2</span> Generative AI and <em>XAI</em> 2.0 Challenges</a></li>
+  <li><a href="#structured-interpretability-first-order-attributions" id="toc-structured-interpretability-first-order-attributions" class="nav-link" data-scroll-target="#structured-interpretability-first-order-attributions"><span class="header-section-number">7.3</span> Structured Interpretability: First-Order Attributions</a></li>
+  <li><a href="#structured-interpretability-second-and-higher-order-interactions" id="toc-structured-interpretability-second-and-higher-order-interactions" class="nav-link" data-scroll-target="#structured-interpretability-second-and-higher-order-interactions"><span class="header-section-number">7.4</span> Structured Interpretability: Second and Higher-Order Interactions</a></li>
+  <li><a href="#first-order-attributions-in-llms-biases-and-long-range-dependencies" id="toc-first-order-attributions-in-llms-biases-and-long-range-dependencies" class="nav-link" data-scroll-target="#first-order-attributions-in-llms-biases-and-long-range-dependencies"><span class="header-section-number">7.5</span> First-Order Attributions in <em>LLMs</em>: Biases and Long-Range Dependencies</a>
+  <ul class="collapse">
+  <li><a href="#biased-sentiment-predictions-in-transformer-llms" id="toc-biased-sentiment-predictions-in-transformer-llms" class="nav-link" data-scroll-target="#biased-sentiment-predictions-in-transformer-llms"><span class="header-section-number">7.5.1</span> Biased Sentiment Predictions in <em>Transformer LLMs</em></a></li>
+  <li><a href="#first-order-attributions-for-long-range-dependencies-in-llms" id="toc-first-order-attributions-for-long-range-dependencies-in-llms" class="nav-link" data-scroll-target="#first-order-attributions-for-long-range-dependencies-in-llms"><span class="header-section-number">7.5.2</span> First-Order Attributions for Long-Range Dependencies in <em>LLMs</em></a></li>
+  </ul></li>
+  <li><a href="#second-higher-order-interactions-in-text" id="toc-second-higher-order-interactions-in-text" class="nav-link" data-scroll-target="#second-higher-order-interactions-in-text"><span class="header-section-number">7.6</span> Second &amp; Higher-Order Interactions in Text</a>
+  <ul class="collapse">
+  <li><a href="#second-order-interactions-for-text-similarity" id="toc-second-order-interactions-for-text-similarity" class="nav-link" data-scroll-target="#second-order-interactions-for-text-similarity"><span class="header-section-number">7.6.1</span> Second-Order Interactions for Text Similarity</a></li>
+  <li><a href="#graph-neural-networks-for-structured-predictions" id="toc-graph-neural-networks-for-structured-predictions" class="nav-link" data-scroll-target="#graph-neural-networks-for-structured-predictions"><span class="header-section-number">7.6.2</span> Graph Neural Networks for Structured Predictions</a></li>
+  <li><a href="#interaction-of-nodes-learns-complex-language-structure" id="toc-interaction-of-nodes-learns-complex-language-structure" class="nav-link" data-scroll-target="#interaction-of-nodes-learns-complex-language-structure"><span class="header-section-number">7.6.3</span> Interaction of Nodes Learns Complex Language Structure</a></li>
+  </ul></li>
+  <li><a href="#ai-based-scientific-insights-in-the-humanities" id="toc-ai-based-scientific-insights-in-the-humanities" class="nav-link" data-scroll-target="#ai-based-scientific-insights-in-the-humanities"><span class="header-section-number">7.7</span> AI-based Scientific Insights in the Humanities</a>
+  <ul class="collapse">
+  <li><a href="#extracting-visual-definitions-from-corpora" id="toc-extracting-visual-definitions-from-corpora" class="nav-link" data-scroll-target="#extracting-visual-definitions-from-corpora"><span class="header-section-number">7.7.1</span> Extracting Visual Definitions from Corpora</a></li>
+  <li><a href="#corpus-level-analysis-of-early-modern-astronomical-tables" id="toc-corpus-level-analysis-of-early-modern-astronomical-tables" class="nav-link" data-scroll-target="#corpus-level-analysis-of-early-modern-astronomical-tables"><span class="header-section-number">7.7.2</span> Corpus-Level Analysis of Early Modern Astronomical Tables</a></li>
+  <li><a href="#historical-insights-at-scale-xai-historian-workflow" id="toc-historical-insights-at-scale-xai-historian-workflow" class="nav-link" data-scroll-target="#historical-insights-at-scale-xai-historian-workflow"><span class="header-section-number">7.7.3</span> Historical Insights at Scale: <em>XAI-Historian</em> Workflow</a></li>
+  <li><a href="#cluster-entropy-analysis-to-investigate-innovation" id="toc-cluster-entropy-analysis-to-investigate-innovation" class="nav-link" data-scroll-target="#cluster-entropy-analysis-to-investigate-innovation"><span class="header-section-number">7.7.4</span> Cluster Entropy Analysis to Investigate Innovation</a></li>
+  </ul></li>
+  <li><a href="#conclusion-ai-based-methods-for-the-humanities" id="toc-conclusion-ai-based-methods-for-the-humanities" class="nav-link" data-scroll-target="#conclusion-ai-based-methods-for-the-humanities"><span class="header-section-number">7.8</span> Conclusion: AI-based Methods for the Humanities</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Oliver Eberle <a href="mailto:oliver.eberle@tu-berlin.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            BIFOLD / TU Berlin
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>This chapter explores the critical domains of Explainable AI (<em>XAI</em>) and the application of AI-based scientific insights within the humanities. Initially, the discourse establishes the foundational principles of <em>XAI</em>, particularly its evolution from feature attribution in classification models to addressing the complexities of generative AI. We underscore the necessity of understanding model predictions, identifying biases, and ensuring regulatory compliance. Furthermore, we meticulously detail various orders of interpretability, progressing from first-order attributions, such as heatmaps, to more intricate second and higher-order interactions, including those within graph structures.</p>
+<p>Subsequently, the chapter transitions to practical applications, showcasing how these advanced AI and <em>XAI</em> methodologies facilitate novel research in the humanities. Specific case studies illustrate the extraction of visual definitions from historical corpora and the large-scale analysis of early modern astronomical tables. A significant workflow, termed <em>XAI-Historian</em>, empowers historians to generate data-driven hypotheses and discover new insights. This system employs specialised statistical models to derive bigram representations from challenging, out-of-domain historical data, enabling robust analysis. Crucially, applying cluster entropy analysis reveals patterns of innovation spread across historical European publishing centres, identifying anomalies such as the politically controlled print programme in Wittenberg. The chapter concludes by acknowledging the inherent challenges in applying AI to heterogeneous, low-resource humanities data whilst underscoring the transformative potential of multimodal approaches and explainable machine learning for scholarly inquiry.</p>
+</section>
+<section id="explainable-ai-xai-1.0-feature-attributions" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="explainable-ai-xai-1.0-feature-attributions"><span class="header-section-number">7.1</span> Explainable AI (<em>XAI</em>) 1.0: Feature Attributions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_03.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>Explainable AI (<em>XAI</em>) encompasses methods and approaches meticulously developed for deciphering the internal workings of highly complex machine learning models. Historically, machine learning predominantly focused on visual data; interest in language, whilst present, gained significant momentum only in recent years. Typically, a “Black Box AI System” receives an input, such as an image, and subsequently generates a prediction, for instance, identifying a “Rooster”. Crucially, users often lack insight into the underlying basis for such classifications.</p>
+<p>To address this opacity, researchers pioneered <em>Post-Hoc Explainability</em> techniques. Heatmaps, for example, visually delineate the specific pixels or features that primarily contributed to a given prediction. In the rooster example, a heatmap would highlight the bird’s head, clearly indicating the model’s focus. Beyond mere transparency, the broader rationale for explainability spans several critical objectives. Firstly, <em>XAI</em> enables verification of predictions, ensuring the model operates logically and produces reasonable outcomes. Secondly, it facilitates the identification of flaws and biases, offering insights into how models make mistakes. Thirdly, it serves as a tool for learning about the underlying problem itself, as models occasionally uncover surprising and unconventional solutions. Finally, and increasingly vital, explainability ensures compliance with evolving legislation, such as the European AI Act. Samek et al.&nbsp;(2017) provided foundational work in this domain.</p>
+</section>
+<section id="generative-ai-and-xai-2.0-challenges" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="generative-ai-and-xai-2.0-challenges"><span class="header-section-number">7.2</span> Generative AI and <em>XAI</em> 2.0 Challenges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_03.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>The artificial intelligence landscape has profoundly shifted from conventional classification models to the era of <em>Generative AI</em> (<em>Gen AI</em>). These advanced models now exhibit multifaceted capabilities, encompassing not only classification but also the retrieval of similar images, the generation of novel images, and comprehensive question-and-answer functionalities across diverse topics. Consequently, grounding a prediction or an answer from a <em>Large Language Model</em> (<em>LLM</em>) system to its specific input has become considerably more challenging. Researchers are therefore exploring new directions for <em>XAI</em>, moving beyond simple heatmap representations to consider intricate feature interactions and adopt a more mechanistic view of model operations—that is, understanding the specific internal computations that lead to an output. These contemporary foundation models function as both multi-task and world models, offering profound insights into societal structures and the evolution of text over time.</p>
+<p>Nevertheless, these sophisticated models can still exhibit surprising errors. A well-known example from object classification illustrates this: a standard classifier predicted a boat based on the surrounding water, a correlated and texturally simpler feature, rather than the boat itself. Lapuschkin et al.&nbsp;(<em>Nat Commun</em> ’19) documented this phenomenon. More recently, Mondal &amp; Webb et al.&nbsp;(<em>arxiv</em> ’24) highlighted multi-step planning mistakes in <em>LLMs</em>. When tasked with the Tower of Hanoi puzzle, for instance, an <em>LLM</em> might immediately attempt to move the largest, inaccessible disc, demonstrating a fundamental misunderstanding of the problem’s physical constraints.</p>
+</section>
+<section id="structured-interpretability-first-order-attributions" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="structured-interpretability-first-order-attributions"><span class="header-section-number">7.3</span> Structured Interpretability: First-Order Attributions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_05.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>Structured interpretability extends the utility of <em>XAI</em> beyond basic visualisations. First-order explanations, for instance, prove particularly effective for elucidating the decisions of classification models. Researchers applied this technique to a classifier designed for historical documents, specifically aiming to distinguish various subgroups of historical tables, such as astronomical or chronological tables.</p>
+<p>To validate the classifier’s efficacy, teams employed heatmaps, meticulously verifying that predictions relied upon genuinely meaningful features. This analysis revealed that the model correctly focused on the numerical content within the tables. This focus served as an accurate proxy for identifying numerical tables, thereby confirming the model’s meaningful operation and providing confidence in its classifications.</p>
+</section>
+<section id="structured-interpretability-second-and-higher-order-interactions" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="structured-interpretability-second-and-higher-order-interactions"><span class="header-section-number">7.4</span> Structured Interpretability: Second and Higher-Order Interactions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_10.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>Beyond first-order attributions, researchers have explored more complex forms of structured interpretability, notably second and higher-order interactions. Second-order features primarily focus on pairwise relationships, with similarity proving particularly important. Scientists computed a dot product from the embeddings of two entities, such as images, yielding a similarity score. Subsequently, interaction scores between specific features, like individual digits, elucidated the basis for these similarity predictions, confirming the model’s intended function.</p>
+<p>Furthermore, in more recent work, higher-order interactions have demonstrated greater significance, particularly within graph structures. These structures might represent citation networks, intricate networks of books, or various interconnected entities. When models are trained on classification tasks within such networks, researchers find that feature subgraphs or feature walks—essentially, sets of interconnected features or paths through the graph—become collectively relevant. Identifying these complex interactions facilitates deeper insights into model behaviour, moving towards a more granular, circuit-level understanding of their internal mechanisms.</p>
+</section>
+<section id="first-order-attributions-in-llms-biases-and-long-range-dependencies" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="first-order-attributions-in-llms-biases-and-long-range-dependencies"><span class="header-section-number">7.5</span> First-Order Attributions in <em>LLMs</em>: Biases and Long-Range Dependencies</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_12.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>First-order attributions offer crucial insights into the internal workings of <em>Large Language Models</em> (<em>LLMs</em>), particularly concerning biases and their handling of long-range dependencies.</p>
+<section id="biased-sentiment-predictions-in-transformer-llms" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="biased-sentiment-predictions-in-transformer-llms"><span class="header-section-number">7.5.1</span> Biased Sentiment Predictions in <em>Transformer LLMs</em></h3>
+<p>Researchers investigated feature importance in <em>LLMs</em> by analysing how specific names influenced sentiment predictions in movie reviews, a common task within the language community. Employing heatmaps generated via a novel method tailored for <em>Transformers</em>, they uncovered notable biases. Male Western names, such as Lee, Barry, Raphael, or the Cohen Brothers, consistently correlated with a higher likelihood of positive sentiment predictions. Conversely, more foreign-sounding names, including Saddam, Castro, or Chan, tended to elicit negative sentiment scores. This demonstrates <em>XAI</em>’s considerable utility in detecting subtle, fine-grained biases embedded within these complex models, a phenomenon now widely recognised within the community. Ali et al.&nbsp;(<em>ICML</em> ‘22) detailed this work in’<em>XAI for Transformers</em>’.</p>
+</section>
+<section id="first-order-attributions-for-long-range-dependencies-in-llms" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="first-order-attributions-for-long-range-dependencies-in-llms"><span class="header-section-number">7.5.2</span> First-Order Attributions for Long-Range Dependencies in <em>LLMs</em></h3>
+<p>Further research explored how <em>LLMs</em> manage long-range dependencies, specifically when generating text summaries from extensive inputs, up to an 8,000-token context window. In a typical scenario involving Wikipedia articles, the model receives a lengthy text and then produces a summary. Analysis revealed that the model predominantly focuses on the latter portions of the provided context, prioritising information presented closer to the prompt. Whilst models can indeed draw upon long-range information from the very beginning of the context, they do so significantly less frequently, as evidenced by a log scale of token counts. Consequently, users should note that <em>LLM</em>-generated summaries may not provide a balanced overview of the entire input text, often emphasising more recently presented data. Jafari et al.&nbsp;(<em>NeurIPS</em> ‘24) presented these findings in’<em>MambaLRP</em>’.</p>
+</section>
+</section>
+<section id="second-higher-order-interactions-in-text" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="second-higher-order-interactions-in-text"><span class="header-section-number">7.6</span> Second &amp; Higher-Order Interactions in Text</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>Exploring second and higher-order interactions offers deeper insights into how models process textual data.</p>
+<section id="second-order-interactions-for-text-similarity" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="second-order-interactions-for-text-similarity"><span class="header-section-number">7.6.1</span> Second-Order Interactions for Text Similarity</h3>
+<p>Consider a scenario involving a pair of sentences, processed by a sentence embedding model, such as a <em>Bird</em> model, to yield a similarity score. The challenge lies in comprehending the precise reasons for that score. Second-order explanations address this by providing granular interaction scores between individual tokens. Analysis of these scores frequently reveals noun matching strategies, encompassing both synonyms and identical noun tokens, alongside interactions involving separators and other token types. This suggests that whilst models compress vast amounts of information, they often rely on surprisingly simplistic underlying strategies to achieve their similarity predictions.</p>
+</section>
+<section id="graph-neural-networks-for-structured-predictions" class="level3" data-number="7.6.2">
+<h3 data-number="7.6.2" class="anchored" data-anchor-id="graph-neural-networks-for-structured-predictions"><span class="header-section-number">7.6.2</span> Graph Neural Networks for Structured Predictions</h3>
+<p><em>Graph Neural Networks</em> (<em>GNNs</em>) offer a powerful framework for structured predictions, providing attributions in terms of “walks” that represent complex feature interactions. Intriguingly, <em>GNNs</em>, which inherently encode structural information, can be conceptualised as <em>LLMs</em>, given that their attention networks facilitate token message passing. This connection enables their application to the analysis of language structure.</p>
+</section>
+<section id="interaction-of-nodes-learns-complex-language-structure" class="level3" data-number="7.6.3">
+<h3 data-number="7.6.3" class="anchored" data-anchor-id="interaction-of-nodes-learns-complex-language-structure"><span class="header-section-number">7.6.3</span> Interaction of Nodes Learns Complex Language Structure</h3>
+<p>Researchers demonstrated this by training a <em>GNN</em> (or an <em>LLM</em>) on a movie review sentiment task, leveraging the hierarchical structure inherent in natural language. They then extracted “walks” to understand the model’s decision-making. First-order attributions proved insufficient, failing to capture the nuanced complexity of language; for instance, the phrase “first I didn’t like the boring pictures” might receive a high positive score solely due to the presence of “like,” neglecting the crucial negation. In stark contrast, higher-order explanations accurately assigned a negative score to the entire negative sentence and correctly captured the hierarchical structure of the subsequent positive statement. Schnake et al.&nbsp;(<em>TPAMI</em> ‘22) published this work in’<em>Higher-Order Explanations of Graph Neural Networks via Relevant Walks</em>’.</p>
+</section>
+</section>
+<section id="ai-based-scientific-insights-in-the-humanities" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="ai-based-scientific-insights-in-the-humanities"><span class="header-section-number">7.7</span> AI-based Scientific Insights in the Humanities</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_20.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 20</figcaption>
+</figure>
+</div>
+<p>AI-based methodologies offer transformative potential for scientific insights within the humanities, as demonstrated through several compelling examples.</p>
+<section id="extracting-visual-definitions-from-corpora" class="level3" data-number="7.7.1">
+<h3 data-number="7.7.1" class="anchored" data-anchor-id="extracting-visual-definitions-from-corpora"><span class="header-section-number">7.7.1</span> Extracting Visual Definitions from Corpora</h3>
+<p>Researchers embarked on a project to extract visual definitions from a corpus of mathematical instruments. Their objective involved classifying these instruments, distinguishing, for instance, between a machine and a purely mathematical instrument. Employing heatmap-based approaches for visual definitions, the team collaborated closely with historians, including Matteo Valeriani and Jochen Büttner. These domain experts provided crucial guidance and meticulously verified the definitions derived from the models. The analysis revealed that fine-grained scales present on the mathematical instruments proved highly relevant for the model’s classification decisions. El-Hajj &amp; Eberle+ (<em>Int J Digit Humanities</em> ’23) published this work on explainability and transparency in digital humanities.</p>
+</section>
+<section id="corpus-level-analysis-of-early-modern-astronomical-tables" class="level3" data-number="7.7.2">
+<h3 data-number="7.7.2" class="anchored" data-anchor-id="corpus-level-analysis-of-early-modern-astronomical-tables"><span class="header-section-number">7.7.2</span> Corpus-Level Analysis of Early Modern Astronomical Tables</h3>
+<p>A larger collaborative project focused on the corpus-level analysis of early modern astronomical tables. This initiative involved the <em>Sphaera Corpus</em> (1472-1650) and the <em>Sacrobosco Table Corpus</em> (1472-1650), collectively comprising 76,000 pages of university textbooks. Historically, these tables, vital carriers of scientific knowledge and indicators of mathematisation processes, had never been analysed at scale. This challenge arose from the data’s extreme heterogeneity, limited annotations, and the inadequacy of conventional <em>Optical Character Recognition</em> (<em>OCR</em>) and foundation models. The primary objective was to develop an automated method for matching tables with similar semantics. Valeriani et al.&nbsp;(2019) and Eberle et al.&nbsp;(2024) detail the foundational corpora.</p>
+</section>
+<section id="historical-insights-at-scale-xai-historian-workflow" class="level3" data-number="7.7.3">
+<h3 data-number="7.7.3" class="anchored" data-anchor-id="historical-insights-at-scale-xai-historian-workflow"><span class="header-section-number">7.7.3</span> Historical Insights at Scale: <em>XAI-Historian</em> Workflow</h3>
+<p>To address these challenges, researchers developed a comprehensive workflow designed to empower historians with insights at scale, coining the term <em>XAI-Historian</em>. This concept envisions a historian leveraging AI and explainable AI to generate data-driven hypotheses and uncover new case studies. The workflow encompasses three key stages: initial data collections from images of books, followed by an atomisation-recomposition phase involving input tables, bigram maps, and histograms, culminating in corpus-level analysis through historical table embedding and data similarity. Rather than relying on general foundation models, which proved ineffective on this out-of-domain historical data, a specialised statistical model was crafted to detect bigrams. This bespoke model’s reliability was rigorously verified by confirming consistent bigram detection, such as “38” across two distinct inputs, thereby establishing trust in its decisions. Eberle et al.&nbsp;(<em>Sci Adv</em> ’24) and Eberle et al.&nbsp;(<em>TPAMI</em> ’22) document this pioneering work.</p>
+</section>
+<section id="cluster-entropy-analysis-to-investigate-innovation" class="level3" data-number="7.7.4">
+<h3 data-number="7.7.4" class="anchored" data-anchor-id="cluster-entropy-analysis-to-investigate-innovation"><span class="header-section-number">7.7.4</span> Cluster Entropy Analysis to Investigate Innovation</h3>
+<p>Building upon these capabilities, researchers employed cluster entropy analysis to investigate the spread of innovation across European publishing centres during the early modern period. Focusing on the output of specific cities within the <em>Sphaera</em> publication (<em>EPISD-626</em>), they quantified the diversity of each city’s print programme using entropy. A low entropy score indicated a tendency to reproduce identical content, whilst a higher score signified a more diverse programme. This approach, utilising model representations for distance-based clustering and entropy calculation, enabled large-scale analysis previously unattainable. The analysis identified two particularly interesting cases: Frankfurt/Main, which exhibited the lowest entropy, confirming its established reputation as a centre for reprinting editions; and Wittenberg, also displaying remarkably low entropy. This latter finding revealed a historical anomaly: the political control exerted by the Protestant reformers, notably Melanchthon, actively limited the print programme and curriculum, a discovery that aligned perfectly with existing historical intuition and scholarly support. Eberle et al.&nbsp;(<em>Sci Adv</em> ’24) further elaborates on these findings.</p>
+</section>
+</section>
+<section id="conclusion-ai-based-methods-for-the-humanities" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="conclusion-ai-based-methods-for-the-humanities"><span class="header-section-number">7.8</span> Conclusion: AI-based Methods for the Humanities</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_007_slide_26.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 26</figcaption>
+</figure>
+</div>
+<p>Humanities and <em>Digital Humanities</em> (<em>DH</em>) research has historically concentrated on the digitisation of source material. Nevertheless, automated analyses of these digitised corpora present significant challenges, primarily owing to their inherent heterogeneity and the scarcity of annotated labels.</p>
+<p>Despite these hurdles, multimodality, advanced <em>Machine Learning</em> (<em>ML</em>), and <em>Explainable AI</em> (<em>XAI</em>) collectively offer substantial potential to scale humanities research and foster entirely novel research directions. This chapter has demonstrated how <em>XAI</em> can provide crucial insights into model behaviour, from understanding feature attributions in classification to unravelling complex interactions in <em>LLMs</em>. Furthermore, we have showcased the transformative power of AI-based methodologies, such as the <em>XAI-Historian</em> workflow and cluster entropy analysis, in enabling large-scale historical inquiry and uncovering previously hidden patterns of innovation.</p>
+<p>Foundation Models and <em>Large Language Models</em> (<em>LLMs</em>), coupled with effective prompting strategies, can automate various intermediate tasks, including labelling, data curation, and error correction. However, their utility remains limited when addressing more complex research questions that require deep domain expertise and nuanced interpretation.</p>
+<p>Significant challenges persist, particularly concerning low-resource data, which acts as a considerable roadblock, impacting the applicability of scaling laws. Moreover, out-of-domain transfer, especially for historical and small-scale datasets, necessitates rigorous evaluation and often bespoke model development. Current <em>LLM</em> training and alignment predominantly focus on natural language tasks and code generation, underscoring the need for specialised approaches when engaging with the unique characteristics of humanities data. Future work should focus on developing more robust methods for handling data scarcity and heterogeneity, alongside fostering deeper interdisciplinary collaboration to ensure AI tools truly serve the complex needs of humanities scholarship.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_006.html" class="pagination-link" aria-label="VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_008.html" class="pagination-link" aria-label="Modelling Science: LLM for the History, Philosophy and Sociology of Science">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

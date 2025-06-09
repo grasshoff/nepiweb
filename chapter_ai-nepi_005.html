@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.13">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Vera Danilova">
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>5&nbsp; Genre Classification for Historical Medical Periodicals – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_006.html" rel="next">
+<link href="./chapter_ai-nepi_004.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_005.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#the-actdisease-project-historical-inquiry-into-patient-organisations" id="toc-the-actdisease-project-historical-inquiry-into-patient-organisations" class="nav-link" data-scroll-target="#the-actdisease-project-historical-inquiry-into-patient-organisations"><span class="header-section-number">5.1</span> The ActDisease Project: Historical Inquiry into Patient Organisations</a></li>
+  <li><a href="#the-actdisease-dataset-periodical-collection-and-scope" id="toc-the-actdisease-dataset-periodical-collection-and-scope" class="nav-link" data-scroll-target="#the-actdisease-dataset-periodical-collection-and-scope"><span class="header-section-number">5.2</span> The ActDisease Dataset: Periodical Collection and Scope</a></li>
+  <li><a href="#digitisation-processes-and-persistent-challenges" id="toc-digitisation-processes-and-persistent-challenges" class="nav-link" data-scroll-target="#digitisation-processes-and-persistent-challenges"><span class="header-section-number">5.3</span> Digitisation Processes and Persistent Challenges</a></li>
+  <li><a href="#rationale-for-genre-classification-in-historical-periodicals" id="toc-rationale-for-genre-classification-in-historical-periodicals" class="nav-link" data-scroll-target="#rationale-for-genre-classification-in-historical-periodicals"><span class="header-section-number">5.4</span> Rationale for Genre Classification in Historical Periodicals</a></li>
+  <li><a href="#illustrative-genre-examples-within-the-actdisease-dataset" id="toc-illustrative-genre-examples-within-the-actdisease-dataset" class="nav-link" data-scroll-target="#illustrative-genre-examples-within-the-actdisease-dataset"><span class="header-section-number">5.5</span> Illustrative Genre Examples within the ActDisease Dataset</a></li>
+  <li><a href="#experimental-design-for-genre-classification-with-limited-data" id="toc-experimental-design-for-genre-classification-with-limited-data" class="nav-link" data-scroll-target="#experimental-design-for-genre-classification-with-limited-data"><span class="header-section-number">5.6</span> Experimental Design for Genre Classification with Limited Data</a></li>
+  <li><a href="#defining-genre-labels-for-historical-periodical-content" id="toc-defining-genre-labels-for-historical-periodical-content" class="nav-link" data-scroll-target="#defining-genre-labels-for-historical-periodical-content"><span class="header-section-number">5.7</span> Defining Genre Labels for Historical Periodical Content</a></li>
+  <li><a href="#annotation-protocol-and-inter-annotator-agreement" id="toc-annotation-protocol-and-inter-annotator-agreement" class="nav-link" data-scroll-target="#annotation-protocol-and-inter-annotator-agreement"><span class="header-section-number">5.8</span> Annotation Protocol and Inter-Annotator Agreement</a></li>
+  <li><a href="#dataset-splitting-and-experimental-configurations" id="toc-dataset-splitting-and-experimental-configurations" class="nav-link" data-scroll-target="#dataset-splitting-and-experimental-configurations"><span class="header-section-number">5.9</span> Dataset Splitting and Experimental Configurations</a></li>
+  <li><a href="#genre-distribution-within-actdisease-training-and-held-out-sets" id="toc-genre-distribution-within-actdisease-training-and-held-out-sets" class="nav-link" data-scroll-target="#genre-distribution-within-actdisease-training-and-held-out-sets"><span class="header-section-number">5.10</span> Genre Distribution within ActDisease Training and Held-Out Sets</a></li>
+  <li><a href="#leveraging-external-datasets-for-zero-shot-classification" id="toc-leveraging-external-datasets-for-zero-shot-classification" class="nav-link" data-scroll-target="#leveraging-external-datasets-for-zero-shot-classification"><span class="header-section-number">5.11</span> Leveraging External Datasets for Zero-Shot Classification</a></li>
+  <li><a href="#cross-dataset-genre-mapping-and-alignment" id="toc-cross-dataset-genre-mapping-and-alignment" class="nav-link" data-scroll-target="#cross-dataset-genre-mapping-and-alignment"><span class="header-section-number">5.12</span> Cross-Dataset Genre Mapping and Alignment</a></li>
+  <li><a href="#training-data-generation-and-multilingual-encoder-models" id="toc-training-data-generation-and-multilingual-encoder-models" class="nav-link" data-scroll-target="#training-data-generation-and-multilingual-encoder-models"><span class="header-section-number">5.13</span> Training Data Generation and Multilingual Encoder Models</a></li>
+  <li><a href="#zero-shot-learning-evaluation-and-performance-analysis" id="toc-zero-shot-learning-evaluation-and-performance-analysis" class="nav-link" data-scroll-target="#zero-shot-learning-evaluation-and-performance-analysis"><span class="header-section-number">5.14</span> Zero-Shot Learning Evaluation and Performance Analysis</a></li>
+  <li><a href="#few-shot-learning-performance-and-model-advantages" id="toc-few-shot-learning-performance-and-model-advantages" class="nav-link" data-scroll-target="#few-shot-learning-performance-and-model-advantages"><span class="header-section-number">5.15</span> Few-Shot Learning Performance and Model Advantages</a></li>
+  <li><a href="#few-shot-prompting-with-llama-3.1-8b-instruct" id="toc-few-shot-prompting-with-llama-3.1-8b-instruct" class="nav-link" data-scroll-target="#few-shot-prompting-with-llama-3.1-8b-instruct"><span class="header-section-number">5.16</span> Few-Shot Prompting with Llama-3.1 8b Instruct</a></li>
+  <li><a href="#key-findings-and-strategic-recommendations" id="toc-key-findings-and-strategic-recommendations" class="nav-link" data-scroll-target="#key-findings-and-strategic-recommendations"><span class="header-section-number">5.17</span> Key Findings and Strategic Recommendations</a></li>
+  <li><a href="#ongoing-and-future-research-directions" id="toc-ongoing-and-future-research-directions" class="nav-link" data-scroll-target="#ongoing-and-future-research-directions"><span class="header-section-number">5.18</span> Ongoing and Future Research Directions</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">5.19</span> Acknowledgements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Vera Danilova <a href="mailto:vera.danilova@idehist.uu.se" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Uppsala University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>Researchers at Uppsala University have pioneered a procedural investigation into genre classification for historical medical periodicals. This endeavour forms a core component of the <em>ERC</em>-funded ActDisease project, which meticulously examines the history of patient organisations in 20th-century Europe. The European Research Council (<em>ERC</em>) provides funding for this initiative. The project’s central aim involves scrutinising the profound influence of these organisations on disease concepts, illness experiences, and prevailing medical practices. Primarily, the project leverages a private, recently digitised collection of patient organisation magazines from Sweden, Germany, France, and Great Britain, encompassing an impressive 96,186 pages published between approximately 1890 and 1990.</p>
+<p>Digitisation efforts, employing <em>ABBYY FineReader Server 14</em>, successfully processed most common layouts. Nevertheless, complex layouts, slanted text, and rare fonts posed persistent challenges, frequently leading to Optical Character Recognition (<em>OCR</em>) errors, particularly in German and French texts. Recognising the diverse and co-occurring text types within these periodicals, the team identified genre classification as a crucial methodological advancement. This approach directly addresses the limitations and potential biases of traditional topic models and term counts, which often fail to account for the varied communicative purposes embedded within single pages.</p>
+<p>To address the scarcity of annotated data, the project explored both zero-shot and few-shot learning paradigms. Zero-shot learning involves applying a model to data from categories it has not seen during training, relying on its understanding of the categories’ descriptions. Few-shot learning, conversely, trains a model with only a very small number of examples per category. Researchers defined a bespoke set of nine genre labels—Academic, Administrative, Advertisement, Guide, Fiction, Legal, News, Nonfiction Prose, and Question and Answer (<em>QA</em>)—under the direct supervision of a specialist historian. Annotation involved six project members, achieving a high inter-annotator agreement of 0.95 Krippendorff’s alpha on paragraphs sampled from Swedish and German periodicals.</p>
+<p>For zero-shot experiments, the team leveraged publicly available datasets, including the <em>Corpus of Online Registers of English</em> (<em>CORE</em>), <em>Functional Text Dimensions</em> (<em>FTD</em>), and <em>UD-MULTIGENRE</em> (<em>UDM</em>). They performed a rigorous cross-dataset genre mapping to align these external datasets with their custom labels. Multilingual encoder models, specifically <em>XLM-Roberta</em>, <em>mBERT</em>, and <em>historical mBERT</em>, underwent fine-tuning across 48 configurations. Findings indicated that models fine-tuned on <em>FTD</em> performed optimally with the custom mapping, whilst <em>historical mBERT</em> demonstrated particular efficacy in distinguishing between fiction and nonfiction prose in few-shot settings.</p>
+<p>Furthermore, the project investigated few-shot prompting with <em>Llama 3.1 8b Instruct</em>, a large language model (LLM), revealing its capacity to handle certain genre labels effectively. However, a limited number of examples proved insufficient for comprehensive representation across all categories. Ultimately, the research concludes that genre classification significantly enhances the accessibility of historical periodical sources for text mining. Few-shot learning of multilingual encoders, particularly <em>historical mBERT</em> with prior Masked Language Model (<em>MLM</em>) fine-tuning, offers the most robust performance. Ongoing work includes developing a more fine-grained annotation scheme, generating synthetic data, and implementing active learning strategies.</p>
+</section>
+<section id="the-actdisease-project-historical-inquiry-into-patient-organisations" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="the-actdisease-project-historical-inquiry-into-patient-organisations"><span class="header-section-number">5.1</span> The ActDisease Project: Historical Inquiry into Patient Organisations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_01.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>Researchers have embarked upon the ActDisease project, formally titled “Acting out Disease: How Patient Organizations Shaped Modern Medicine.” This <em>ERC</em>-funded initiative meticulously investigates the historical trajectory of patient organisations across Europe during the 20th century. Its central purpose involves scrutinising how these organisations fundamentally influenced the evolution of disease concepts, the lived experience of illness, and prevailing medical practices.</p>
+<p>The project’s scope encompasses ten distinct European patient organisations. It draws its primary source material from their periodicals—predominantly magazines—published in England, Germany, France, and Great Britain between approximately 1890 and 1990. Notably, the Hay Fever Association of Heligoland, established in 1897, exemplifies the type of historical entity under examination, with Heligoland, Germany, serving as its foundational site.</p>
+</section>
+<section id="the-actdisease-dataset-periodical-collection-and-scope" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="the-actdisease-dataset-periodical-collection-and-scope"><span class="header-section-number">5.2</span> The ActDisease Dataset: Periodical Collection and Scope</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_06.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>The ActDisease project has assembled a private, recently digitised collection of patient organisation magazines, constituting a substantial dataset of 96,186 pages. This extensive archive spans various countries, diseases, and publication periods.</p>
+<p>Specifically, the dataset includes: * <strong>German collection:</strong> 10,926 pages on Allergy/Asthma from two magazines (1901-1985); 19,324 pages on Diabetes from one magazine (1931-1990); and 5,646 pages on Multiple Sclerosis from one magazine (1954-1990). * <strong>Swedish materials:</strong> 4,054 pages on Allergy/Asthma (1957-1990); 7,150 pages on Diabetes (1949-1990); and 16,790 pages on Lung Diseases (1938-1991), each from a single magazine. * <strong>French contributions:</strong> 6,206 pages on Diabetes (1947-1990); and 9,317 pages on Rheumatism/Paralysis from three magazines (1935-1990). * <strong>UK segment:</strong> 11,127 pages on Diabetes (1935-1990); and 5,646 pages on Rheumatism (1950-1990), each sourced from one magazine.</p>
+</section>
+<section id="digitisation-processes-and-persistent-challenges" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="digitisation-processes-and-persistent-challenges"><span class="header-section-number">5.3</span> Digitisation Processes and Persistent Challenges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_07.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 07</figcaption>
+</figure>
+</div>
+<p>The digitisation process for the ActDisease dataset primarily employed <em>ABBYY FineReader Server 14</em> for Optical Character Recognition (<em>OCR</em>). This tool generally performed well, accurately recognising most common layouts and fonts present in the historical periodicals.</p>
+<p>Nevertheless, significant challenges persisted. Complex layouts, slanted text, rare fonts, and inconsistent scan or photo quality frequently hindered optimal <em>OCR</em> performance. Consequently, researchers observed persistent <em>OCR</em> errors, particularly prevalent in German and French texts, alongside instances of disrupted reading order. Notably, creative text segments, including advertisements, humour pages, and poems, exhibited a higher frequency of <em>OCR</em> inaccuracies. To mitigate these issues, the team conducted specific experiments, focusing on post-<em>OCR</em> correction of German texts through the application of instruction-tuned generative models. This work has been documented in a publication by Danilova and Aangenendt, presented at the <em>RESOURCEFUL-2025</em> workshop.</p>
+</section>
+<section id="rationale-for-genre-classification-in-historical-periodicals" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="rationale-for-genre-classification-in-historical-periodicals"><span class="header-section-number">5.4</span> Rationale for Genre Classification in Historical Periodicals</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>Researchers observed a profound diversity in the textual content of the historical periodicals, yet these varied text types consistently appeared across all magazines. Crucially, distinct text types frequently co-occurred on a single page; for instance, an administrative report might appear alongside an advertisement and a humour section. This inherent textual complexity posed a significant challenge for conventional analytical methods.</p>
+<p>Traditional yearly and decade-based topic models and term counts, the team realised, failed to account for this side-by-side textual variation. Consequently, these methods likely introduced a bias towards the most frequently occurring text type, potentially distorting analytical outcomes. To overcome this limitation, genre emerged as a highly pertinent concept for distinguishing between text types. Genres inherently align with the communicative purposes of authors, as defined in language technology by <em>Petrenz (2004)</em> and <em>Kessler (1997)</em>.</p>
+<p>Implementing genre classification directly supports the project’s core objective: exploring the dataset from multiple perspectives to formulate robust historical arguments. Specifically, this approach enables a nuanced study of communicative strategies as they evolved over time, allowing for comparisons across different countries, diseases, and publications, as highlighted by <em>Broersma (2010)</em>. Furthermore, it facilitates a more granular analysis of term distributions and topic models, enabling insights within specific genre groups.</p>
+</section>
+<section id="illustrative-genre-examples-within-the-actdisease-dataset" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="illustrative-genre-examples-within-the-actdisease-dataset"><span class="header-section-number">5.5</span> Illustrative Genre Examples within the ActDisease Dataset</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_19.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 19</figcaption>
+</figure>
+</div>
+<p>The ActDisease dataset encompasses a rich array of genres, each serving distinct communicative functions. Researchers identified examples such as poetry, which often provided emotional engagement. Academic reports, exemplified by studies on the pancreas, conveyed scientific and medical information. Legal documents, including deeds of covenant, established formal agreements and regulations. Advertisements, such as those promoting chocolate for diabetics, aimed to market products or services.</p>
+<p>Furthermore, the collection featured instructive or guidance messages, offering practical advice like recipes, doctor’s recommendations, or dietary guidelines. Patient organisation reports documented internal affairs, detailing meetings and activities. Finally, narratives about patient lives provided first-hand accounts of illness experiences, offering a unique perspective on the human dimension of disease.</p>
+</section>
+<section id="experimental-design-for-genre-classification-with-limited-data" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="experimental-design-for-genre-classification-with-limited-data"><span class="header-section-number">5.6</span> Experimental Design for Genre Classification with Limited Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_04.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>Confronted with a scarcity of annotated data, researchers systematically explored two distinct methodological paradigms: zero-shot learning and few-shot learning. For zero-shot learning, the investigation posed two primary research questions: firstly, whether an efficient mapping of genre labels from existing public datasets to custom labels could yield satisfactory performance on the test set; and secondly, how classification performance might fluctuate across different datasets and models.</p>
+<p>Conversely, the few-shot learning inquiry focused on two further questions: how performance changes in relation to varying training set sizes across different models; and whether a prior fine-tuning process on the entire dataset could significantly boost classification performance. This comprehensive experimental design forms the basis of a forthcoming publication by Danilova and Söderfeldt, scheduled for presentation at the <em>LaTeCH-CLFL 2025</em> workshop.</p>
+</section>
+<section id="defining-genre-labels-for-historical-periodical-content" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="defining-genre-labels-for-historical-periodical-content"><span class="header-section-number">5.7</span> Defining Genre Labels for Historical Periodical Content</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_32.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 32</figcaption>
+</figure>
+</div>
+<p>Researchers meticulously defined the genre labels under the direct supervision of the project’s lead historian, an expert in patient organisations. This collaborative process aimed to create categories that would effectively segment the content within the historical periodicals, thereby facilitating deeper historical analysis. Crucially, the team endeavoured to formulate these labels with sufficient generality to enable the classifier’s application to comparable datasets in the future.</p>
+<p>Nine distinct genres emerged from this process, each with a precise definition: * <strong>Academic:</strong> Encompasses research-based reports or scientific explanations, designed to bridge the gap between the scientific medical community and the magazine’s readership. * <strong>Administrative:</strong> Documents organisational activities, reporting on patient organisation events and internal affairs. * <strong>Advertisement:</strong> Specifically promotes commercial products or services. * <strong>Guide:</strong> Provides step-by-step instructions, ranging from health tips to recipes. * <strong>Fiction:</strong> Aims to entertain and emotionally engage through stories, poems, or humour. * <strong>Legal:</strong> Explains terms, conditions, or contracts. * <strong>News:</strong> Reports on recent events. * <strong>Nonfiction Prose:</strong> Narrates real events or describes cultural and historical topics, including memoirs and essays. * <strong>QA (Question and Answer):</strong> Designates sections structured as questions with expert responses.</p>
+</section>
+<section id="annotation-protocol-and-inter-annotator-agreement" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="annotation-protocol-and-inter-annotator-agreement"><span class="header-section-number">5.8</span> Annotation Protocol and Inter-Annotator Agreement</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_37.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 37</figcaption>
+</figure>
+</div>
+<p>Researchers employed paragraphs as the fundamental annotation unit, extracting them from the <em>ABBYY OCR</em> output. The team subsequently merged these paragraphs based on consistent font patterns—including type, size, italicisation, and the absence of bolding—within each page. Researchers sampled content from two specific periodicals: the Swedish “Diabetes” and the German “Diabetiker Journal,” focusing on their first and mid-year issues across all publication years.</p>
+<p>Six dedicated project members undertook the annotation task, comprising four historians and two computational linguists. All annotators possessed either native fluency or high proficiency in both Swedish and German. For each paragraph, two independent annotations were meticulously collected. This rigorous approach yielded an impressive average inter-annotator agreement of 0.95, as measured by Krippendorff’s alpha, signifying a remarkably high level of consistency amongst the annotators.</p>
+</section>
+<section id="dataset-splitting-and-experimental-configurations" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="dataset-splitting-and-experimental-configurations"><span class="header-section-number">5.9</span> Dataset Splitting and Experimental Configurations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>For the experimental phase, researchers initially partitioned the annotated data into a primary training set of 1182 paragraphs and a held-out set comprising 552 paragraphs, which represented approximately 30% of the total annotated material. Researchers stratified both these sets by genre label to ensure representative distributions.</p>
+<p>Within the few-shot experiments, the team systematically varied the training set size, employing six distinct configurations: 100, 200, 300, 400, 500, and the full 1182 paragraphs. Each of these smaller training sets was randomly sampled from the main training pool, whilst maintaining a balance across genre labels. The team subsequently divided the held-out set equally into validation and test portions, similarly balanced by label. Notably, researchers excluded the Legal and News genres from these few-shot experiments, as their limited data volume precluded sufficient training. Conversely, the zero-shot experiments leveraged the entirety of the held-out test set.</p>
+</section>
+<section id="genre-distribution-within-actdisease-training-and-held-out-sets" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="genre-distribution-within-actdisease-training-and-held-out-sets"><span class="header-section-number">5.10</span> Genre Distribution within ActDisease Training and Held-Out Sets</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Analysis of the genre distribution across both the training and held-out samples of the ActDisease dataset revealed a pronounced imbalance. Specifically, the Advertisement and Non-fictional Prose genres exhibited significant disparities in their representation across different languages. This imbalance necessitates careful consideration during model training and evaluation to prevent potential biases.</p>
+</section>
+<section id="leveraging-external-datasets-for-zero-shot-classification" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="leveraging-external-datasets-for-zero-shot-classification"><span class="header-section-number">5.11</span> Leveraging External Datasets for Zero-Shot Classification</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>For the zero-shot experiments, researchers incorporated external, modern datasets previously utilised in automatic web genre classification. The <em>Corpus of Online Registers of English</em> (<em>CORE</em>), developed by <em>Egbert et al.&nbsp;(2015)</em>, provides document-level annotations. It encompasses English content, with main categories also available in Swedish, Finnish, and French.</p>
+<p>Similarly, <em>Sharoff’s (2018) Functional Text Dimensions</em> (<em>FTD</em>) dataset, also annotated at the document level, offers balanced content in English and Russian. <em>Kuzman et al.&nbsp;(2023)</em> had previously leveraged this dataset for web genre classification. Additionally, the team employed <em>UD-MULTIGENRE</em> (<em>UDM</em>), a subset of <em>Universal Dependencies</em> (<em>de Marneffe et al., 2021</em>), which features genre annotations at the sentence level across 38 languages, as detailed by <em>Danilova and Stymne (2023)</em>.</p>
+</section>
+<section id="cross-dataset-genre-mapping-and-alignment" class="level2" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="cross-dataset-genre-mapping-and-alignment"><span class="header-section-number">5.12</span> Cross-Dataset Genre Mapping and Alignment</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Researchers meticulously performed genre mapping across datasets, with two independent annotators undertaking the task. The team only included assignments achieving full agreement in the final mapping, ensuring robust alignment.</p>
+<p>This process established correspondences between ActDisease genres and their equivalents in <em>CORE</em>, <em>UDM</em>, and <em>FTD</em>. For instance, “Academic” in ActDisease mapped to “research article” (<em>RA</em>) in <em>CORE</em>, “academic” in <em>UDM</em>, and “academic (<em>A14</em>)” in <em>FTD</em>. “Advertisement” aligned with “advertisement (<em>AD</em>)” in <em>CORE</em>, “description with intent to sell (<em>DS</em>)” in <em>UDM</em>, and “commercial (<em>A12</em>)” in <em>FTD</em>. Similarly, “Fiction” found its counterparts in “poem” (<em>PO</em>) and “short story” (<em>SS</em>) in <em>CORE</em>, “fiction” in <em>UDM</em>, and “fictive (<em>A4</em>)” and “poetic (<em>A19</em>)” in <em>FTD</em>. However, the team encountered a limitation: some ActDisease genres lacked suitable corresponding labels within the available external datasets.</p>
+</section>
+<section id="training-data-generation-and-multilingual-encoder-models" class="level2" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="training-data-generation-and-multilingual-encoder-models"><span class="header-section-number">5.13</span> Training Data Generation and Multilingual Encoder Models</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Researchers generated training data through a meticulous pipeline encompassing mapping, preprocessing, chunking, and systematic sampling. They configured training sets in four distinct ways for each dataset: one configuration (<em>[G+]) focused exclusively on Germanic languages; another (</em>[B1]<em>) balanced data according to ActDisease labels; a third (</em>[G-]<em>) incorporated all language families; and the final configuration (</em>[B2]<em>) balanced data by both ActDisease and original labels. This yielded four </em>FTD<em>, four </em>CORE<em>, four </em>UDM*, and four merged training samples, all subjected to fine-tuning.</p>
+<p>For classification, the team employed several multilingual encoder models, which are transformer-based neural networks capable of processing text in multiple languages. <em>XLM-Roberta</em>, developed by <em>Conneau et al.&nbsp;(2020)</em>, served as a state-of-the-art web genre classifier, as noted by <em>Kuzman et al.&nbsp;(2023)</em>. <em>mBERT</em> (<em>Devlin et al., 2019</em>) provided a baseline for comparison with <em>historical mBERT</em> (<em>Schweter et al., 2022</em>). Crucially, <em>historical mBERT</em>, pretrained on an extensive corpus of multilingual historical newspapers, proved particularly relevant given its inclusion of the target languages. These <em>BERT</em>-like models have consistently demonstrated efficacy in prior web register and genre classification studies, as evidenced by <em>Lepekhin and Sharoff (2022)</em>, <em>Kuzman and Ljubešić (2023)</em>, and <em>Laippala et al.&nbsp;(2023)</em>. Ultimately, the fine-tuning process generated 48 distinct models, and the team subsequently averaged performance metrics across all configurations.</p>
+</section>
+<section id="zero-shot-learning-evaluation-and-performance-analysis" class="level2" data-number="5.14">
+<h2 data-number="5.14" class="anchored" data-anchor-id="zero-shot-learning-evaluation-and-performance-analysis"><span class="header-section-number">5.14</span> Zero-Shot Learning Evaluation and Performance Analysis</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_11.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>Evaluating the zero-shot predictions presented a unique challenge: the imperfect overlap of label sets prevented direct comparison of overall performance metrics. Consequently, researchers meticulously assessed the performance of each genre individually, complementing this analysis with a thorough examination of confusion matrices to mitigate potential biases. The <em>X-GENRE</em> web genre classifier, as detailed by <em>Kuzman et al.&nbsp;(2023)</em>, served as a robust baseline, with predictions focusing exclusively on the most similar labels directly mappable to the ActDisease genres.</p>
+<p>The experimental setup often involved a cross-lingual context. <em>FTD</em> and <em>X-GENRE</em>, for instance, operated without German or Swedish data, whilst <em>UDM</em> and <em>CORE</em> datasets exhibited partially cross-lingual characteristics. Overall, models fine-tuned on <em>FTD</em> consistently demonstrated superior performance when integrated with the ActDisease mapping. Conversely, other datasets revealed distinct class-specific biases.</p>
+<p><em>UDM</em>, for example, exhibited a bias towards news, primarily because its news training data contained the highest proportion of Germanic instances, overwhelmingly German. Similarly, <em>CORE</em> displayed a bias towards the guide genre, as its training data for this category was uniquely multilingual.</p>
+<p>Intriguingly, certain models excelled in specific genre predictions. <em>XLM-Roberta</em>, when fine-tuned on <em>UDM</em>, achieved an average of 32% more correct predictions in the <em>QA</em> genre compared to <em>mBERT</em> and <em>hmBERT</em>. Conversely, <em>hmBERT</em>, also on <em>UDM</em>, produced an average of 16% more accurate predictions in the Administrative genre than <em>XLM-Roberta</em> and <em>mBERT</em>. Furthermore, <em>CORE</em>-based models consistently proved proficient at predicting the legal genre. Confusion matrices visually underscored these observed behavioural patterns, whilst detailed average per-category <em>F1</em> scores provided a comprehensive quantitative assessment across all data configurations.</p>
+</section>
+<section id="few-shot-learning-performance-and-model-advantages" class="level2" data-number="5.15">
+<h2 data-number="5.15" class="anchored" data-anchor-id="few-shot-learning-performance-and-model-advantages"><span class="header-section-number">5.15</span> Few-Shot Learning Performance and Model Advantages</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Few-shot learning experiments unequivocally demonstrated the advantage of further training models on the ActDisease dataset, particularly when incorporating Masked Language Model (<em>MLM</em>) fine-tuning. The <em>F1</em> score consistently improved as the number of training instances increased, though it remained below 0.8 even with the full training set of 1182 instances.</p>
+<p>Amongst the models tested, <em>hmBERT-MLM</em> consistently outperformed its counterparts. A detailed examination of its performance revealed that, unlike other models, <em>hmBERT-MLM</em> retained its capacity to differentiate between fiction and nonfiction genres even when exposed to the full dataset. Conversely, other models, notably <em>XLM-Roberta</em>, exhibited a drastic decline in their ability to distinguish these two categories.</p>
+<p>Analysis of <em>XLM-Roberta</em>’s confusion matrix, when fine-tuned with <em>MLM</em> on the full dataset, indicated a frequent overprediction of nonfiction prose for fiction. This phenomenon likely stems from the shared thematic content within the ActDisease data, where both fictional and autobiographical narratives often revolve around patient experiences, leading to similar themes and narrative structures. Consequently, researchers propose that an increased volume of data is essential to enhance performance in distinguishing these increasingly similar genres.</p>
+</section>
+<section id="few-shot-prompting-with-llama-3.1-8b-instruct" class="level2" data-number="5.16">
+<h2 data-number="5.16" class="anchored" data-anchor-id="few-shot-prompting-with-llama-3.1-8b-instruct"><span class="header-section-number">5.16</span> Few-Shot Prompting with Llama-3.1 8b Instruct</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Given the current insufficiency of data for comprehensive instruction tuning, researchers opted to evaluate few-shot prompting using <em>Llama 3.1 8b Instruct</em>, a widely recognised multilingual generative model with open weights. The prompt structure provided clear genre definitions, complemented by two or three illustrative examples for each category.</p>
+<p>The results indicated that the model handled certain genre labels with reasonable efficacy. For instance, it achieved an <em>F1</em>-score of 0.84 for Legal content and 0.72 for Academic texts. However, the limited number of examples proved insufficient for robust representation across all genres. Notably, nonfictional prose yielded a lower <em>F1</em>-score of 0.49, whilst advertisement and administrative content also demonstrated suboptimal performance, with <em>F1</em>-scores of 0.73 and 0.60 respectively. The overall accuracy stood at 0.62, with a macro average <em>F1</em>-score of 0.59 and a weighted average of 0.63.</p>
+</section>
+<section id="key-findings-and-strategic-recommendations" class="level2" data-number="5.17">
+<h2 data-number="5.17" class="anchored" data-anchor-id="key-findings-and-strategic-recommendations"><span class="header-section-number">5.17</span> Key Findings and Strategic Recommendations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>Popular magazines, unlike more specialised scientific journals or books, frequently encompass a multitude of genres. This characteristic significantly complicates text mining efforts. Researchers have concluded that genres inherently reflect deliberate choices in communicative strategies; consequently, accounting for these distinctions, whilst challenging, proves crucial for achieving accurate and detailed interpretations of text mining outcomes. Fundamentally, genre classification renders these rich historical sources accessible for advanced text mining.</p>
+<p>For scenarios lacking dedicated training data, two viable strategies emerge. Firstly, one can successfully leverage existing modern datasets, provided the target categories maintain a general purpose. Alternatively, few-shot instruction of a proficient generative model offers another effective pathway.</p>
+<p>However, when some training data is available, few-shot learning of multilingual encoders, particularly those with prior Masked Language Model (<em>MLM</em>) fine-tuning—such as <em>XLM-Roberta</em> or <em>historical multilingual BERT</em>—demonstrates superior performance. Indeed, this latter approach emerged as the optimal solution for the project. Notably, <em>historical multilingual BERT</em> exhibited particularly strong gains, achieving a 24% improvement, which significantly surpassed the 14.5% gain for <em>mBERT-MLM</em> and 16.9% for <em>XLM-RoBERTa</em>. These findings underscore the value of domain-specific pre-training for historical text analysis.</p>
+</section>
+<section id="ongoing-and-future-research-directions" class="level2" data-number="5.18">
+<h2 data-number="5.18" class="anchored" data-anchor-id="ongoing-and-future-research-directions"><span class="header-section-number">5.18</span> Ongoing and Future Research Directions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_39.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 39</figcaption>
+</figure>
+</div>
+<p>The research team is actively pursuing several avenues to enhance the quality and scope of this work for both the project and the wider academic community. Currently, researchers are engaging with specific historical hypotheses, leveraging the insights gained from genre classification. Furthermore, they are developing a new, more fine-grained annotation scheme for genres, a project notably financed by <em>Swe-CLARIN</em>. Methodologically, the team is exploring advanced techniques, including synthetic data generation and active learning, to further refine their classification capabilities.</p>
+</section>
+<section id="acknowledgements" class="level2" data-number="5.19">
+<h2 data-number="5.19" class="anchored" data-anchor-id="acknowledgements"><span class="header-section-number">5.19</span> Acknowledgements</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_005_slide_19.jpg" class="img-fluid figure-img"></p>
+<figcaption>Slide 19</figcaption>
+</figure>
+</div>
+<p>The project gratefully acknowledges the invaluable contributions of its annotators and core team members: Ylva Söderfeldt, Julia Reed, Andrew Burchell, Maria Skeppstedt, and Gijs Aangenendt. Funding for this research came generously from the European Research Council under grant <em>ERC-2021-STG 10104099</em>. The Centre for Digital Humanities and Social Sciences offered crucial institutional support, supplying essential <em>GPUs</em> and data storage facilities. Finally, the team extends its gratitude to the diligent reviewers, Dr Maria Skeppstedt and other anonymous contributors, whose feedback significantly enhanced the work. Further details are available on the project website.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_004.html" class="pagination-link" aria-label="Philosophy at Scale: Introducing OpenAlex Mapper">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_006.html" class="pagination-link" aria-label="VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
