@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Paul Näger">
+<meta name="author" content="Sofía Aguilar &amp; Stefania Degaetano-Ortlieb">
 <meta name="dcterms.date" content="2025-01-01">
 
-<title>12&nbsp; RAG Systems for Philosophical Research – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>17&nbsp; Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter_ai-nepi_015.html" rel="next">
-<link href="./chapter_ai-nepi_011.html" rel="prev">
+<link href="./chapter_ai-nepi_020.html" rel="next">
+<link href="./chapter_ai-nepi_018.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_012.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_019.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link active">
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
   </div>
 </li>
@@ -208,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></span></a>
   </div>
 </li>
@@ -234,12 +234,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">12.1</span> Overview</a></li>
-  <li><a href="#addressing-philosophical-research-challenges-with-rag-systems" id="toc-addressing-philosophical-research-challenges-with-rag-systems" class="nav-link" data-scroll-target="#addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.2</span> Addressing Philosophical Research Challenges with <em>RAG</em> Systems</a></li>
-  <li><a href="#diverse-applications-of-rag-systems-in-philosophy" id="toc-diverse-applications-of-rag-systems-in-philosophy" class="nav-link" data-scroll-target="#diverse-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.3</span> Diverse Applications of <em>RAG</em> Systems in Philosophy</a></li>
-  <li><a href="#developing-the-stanford-encyclopedia-of-philosophy-rag-system" id="toc-developing-the-stanford-encyclopedia-of-philosophy-rag-system" class="nav-link" data-scroll-target="#developing-the-stanford-encyclopedia-of-philosophy-rag-system"><span class="header-section-number">12.4</span> Developing the Stanford Encyclopedia of Philosophy <em>RAG</em> System</a></li>
-  <li><a href="#hyperparameter-optimisation-the-critical-role-of-chunk-size" id="toc-hyperparameter-optimisation-the-critical-role-of-chunk-size" class="nav-link" data-scroll-target="#hyperparameter-optimisation-the-critical-role-of-chunk-size"><span class="header-section-number">12.5</span> Hyperparameter Optimisation: The Critical Role of Chunk Size</a></li>
-  <li><a href="#key-findings-and-future-directions-for-rag-systems" id="toc-key-findings-and-future-directions-for-rag-systems" class="nav-link" data-scroll-target="#key-findings-and-future-directions-for-rag-systems"><span class="header-section-number">12.6</span> Key Findings and Future Directions for <em>RAG</em> Systems</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#foundations-contextual-modelling-and-theoretical-underpinnings" id="toc-foundations-contextual-modelling-and-theoretical-underpinnings" class="nav-link" data-scroll-target="#foundations-contextual-modelling-and-theoretical-underpinnings"><span class="header-section-number">17.1</span> Foundations: Contextual Modelling and Theoretical Underpinnings</a></li>
+  <li><a href="#detecting-temporal-shifts-in-language-use-via-kullback-leibler-divergence" id="toc-detecting-temporal-shifts-in-language-use-via-kullback-leibler-divergence" class="nav-link" data-scroll-target="#detecting-temporal-shifts-in-language-use-via-kullback-leibler-divergence"><span class="header-section-number">17.2</span> Detecting Temporal Shifts in Language Use via Kullback-Leibler Divergence</a></li>
+  <li><a href="#analysing-paradigmatic-change-and-identifying-scientific-influence" id="toc-analysing-paradigmatic-change-and-identifying-scientific-influence" class="nav-link" data-scroll-target="#analysing-paradigmatic-change-and-identifying-scientific-influence"><span class="header-section-number">17.3</span> Analysing Paradigmatic Change and Identifying Scientific Influence</a></li>
+  <li><a href="#investigating-linguistic-realisation-and-communicative-drivers-of-change" id="toc-investigating-linguistic-realisation-and-communicative-drivers-of-change" class="nav-link" data-scroll-target="#investigating-linguistic-realisation-and-communicative-drivers-of-change"><span class="header-section-number">17.4</span> Investigating Linguistic Realisation and Communicative Drivers of Change</a></li>
+  <li><a href="#a-proposed-framework-graph-convolutional-networks-for-contextual-dynamics" id="toc-a-proposed-framework-graph-convolutional-networks-for-contextual-dynamics" class="nav-link" data-scroll-target="#a-proposed-framework-graph-convolutional-networks-for-contextual-dynamics"><span class="header-section-number">17.5</span> A Proposed Framework: Graph Convolutional Networks for Contextual Dynamics</a></li>
+  <li><a href="#reflections-limitations-and-future-research-directions" id="toc-reflections-limitations-and-future-research-directions" class="nav-link" data-scroll-target="#reflections-limitations-and-future-research-directions"><span class="header-section-number">17.6</span> Reflections: Limitations and Future Research Directions</a></li>
   </ul>
 </nav>
     </div>
@@ -248,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></h1>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></h1>
 </div>
 
 
@@ -257,11 +258,11 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Paul Näger <a href="mailto:paul.naeger@cis.lmu.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Sofía Aguilar &amp; Stefania Degaetano-Ortlieb </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            LMU München
+            AI-NEPI Conference Participant
           </p>
       </div>
   </div>
@@ -284,79 +285,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">12.1</span> Overview</h2>
-<p>Philosophers frequently grapple with complex research questions that demand precise linguistic and semantic accuracy. Conventional Large Language Models (<em>LLMs</em>), whilst offering differentiated responses, encounter significant limitations concerning access to full texts, context window capacity, and reliable attribution. Consequently, the research team developed Retrieval-Augmented Generation (<em>RAG</em>) systems to overcome these challenges. This approach integrates a data source, a retrieval mechanism (employing semantic, hybrid, or classic search), and a prompt augmentation process, thereby enabling <em>LLMs</em> to access and cite original source material.</p>
-<p>The system’s utility extends across both didactics and research. For pedagogical purposes, it facilitates interactive engagement with philosophical corpora, such as Locke’s <em>Oeuvre</em>, allowing students to delve deeply into complex texts. In research, <em>RAG</em> systems streamline fact-finding in handbooks, enable exploration of previously unexamined corpora, assist in identifying passages for close reading, and potentially provide detailed answers to intricate research questions.</p>
-<p>A practical implementation involved the authors coding a <em>RAG</em> system using the Stanford Encyclopedia of Philosophy as its data source. Initially conceived as a community tool, this project evolved into a qualitative study examining <em>RAG</em> system setup for philosophical inquiry. The development process, characterised by theoretically grounded trial and error, revealed the critical importance of hyperparameter optimisation and robust evaluation criteria. Notably, optimising chunk size proved crucial; selecting main sections as retrieval documents, despite their length, yielded superior results for this highly systematised source.</p>
-<p><em>RAG</em> systems demonstrably integrate verbatim corpora and domain-specific knowledge, significantly reducing hallucinations and enabling the citation of relevant documents. Nevertheless, their effective deployment necessitates extensive tweaking and rigorous evaluation by domain experts, as optimal configurations vary across domains and corpus types. A peculiar observation indicates that <em>RAGs</em> sometimes perform less effectively on broad overview questions, as their focus on local information can obscure the larger perspective. Future developments aim to create more flexible, agentic <em>RAG</em> systems capable of discerning question types and adapting their approach accordingly.</p>
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>The <em>Cascade</em> project, a distinguished Marie Curie doctoral network, explores the computational analysis of semantic change, focusing intently on modelling diverse contextual factors and their intricate interplay. PhD student Sophia Aguilar leads significant contributions to this investigation. Whilst previous work modelled distinct context types in isolation, the current objective seeks to integrate these approaches, thereby illuminating their complex interactions. The chemical revolution, specifically the profound shift from the century-old phlogiston theory to Lavoisier’s oxygen theory within the <em>Royal Society Corpus</em> (RSC), serves as a pivotal pilot study for this endeavour.</p>
+<p>Linguists engaged in this research meticulously examine how language adapts to real-world transformations, drawing critically upon register theory and principles of rational communication. The study aims to achieve several key objectives: to detect precise periods of linguistic change, to analyse the specific lexical and grammatical shifts occurring, to identify influential figures driving these transformations, and ultimately, to comprehend the underlying linguistic mechanisms and communicative drivers. To this end, the team proposes a novel framework employing Graph Convolutional Networks (GCNs) to model language dynamics. This innovative approach positions context as a central signal, thereby aiming to overcome the limitations of existing methods in capturing the nuanced interaction between contextual signals.</p>
 </section>
-<section id="addressing-philosophical-research-challenges-with-rag-systems" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.2</span> Addressing Philosophical Research Challenges with <em>RAG</em> Systems</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_012_slide_01.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
-</figure>
-</div>
-<p>Philosophers frequently pose intricate research questions, such as discerning Aristotle’s theory of matter within his <em>Physics</em> or tracing the evolution of Einstein’s concept of locality from his early relativity works to his 1948 paper, “Quantenmechanik und Wirklichkeit.” Whilst contemporary Large Language Models (<em>LLMs</em>) like <em>ChatGPT</em> offer seemingly decent, differentiated answers to such queries, they encounter fundamental limitations.</p>
-<p>Crucially, <em>LLMs</em> suffer from an “access problem.” Although full texts might have featured in their training data, these models lack direct, on-demand access to the complete works. Consequently, an <em>LLM</em> cannot reliably quote specific chapters or papers verbatim; it either states an inability to quote or, more problematically, hallucinates content. Whilst online search capabilities can sometimes retrieve quotes where copyright permits, reproduction remains a complex issue. Fundamentally, <em>LLM</em> training mechanisms actively prevent verbatim memorisation, instead fostering the learning of generalisable statistical rules for text production. Philosophical research, however, demands direct engagement with original text sources, requiring deep immersion in their fine-grained formulations.</p>
-<p>Beyond this, <em>LLMs</em> contend with a “limited context window.” For instance, <em>ChatGPT-4o</em> offers 128,000 tokens of context; whilst substantial, this capacity quickly proves insufficient when processing extensive philosophical corpora. Furthermore, a significant “attribution problem” persists: standard <em>LLMs</em> do not inherently provide sources or citations for their claims, a critical requirement for academic rigour. Researchers desire precise, numbered citations for each central statement, akin to features found in tools like <em>Perplexity</em>.</p>
-<p>Retrieval-Augmented Generation (<em>RAG</em>) systems directly address these pervasive challenges. A <em>RAG</em> setup integrates a specific data source, such as Aristotle’s or Einstein’s corpus, with a robust retrieval mechanism. This mechanism typically employs semantic search, though hybrid or classic search options also exist. Subsequently, the system augments the <em>LLM</em>’s prompt with relevant chunks of text retrieved from the corpus. This innovative architecture effectively solves the access problem by furnishing the <em>LLM</em> with the necessary full text, mitigates the limited context window by supplying only pertinent information, and resolves the attribution issue by enabling direct citation of sources.</p>
+<section id="foundations-contextual-modelling-and-theoretical-underpinnings" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="foundations-contextual-modelling-and-theoretical-underpinnings"><span class="header-section-number">17.1</span> Foundations: Contextual Modelling and Theoretical Underpinnings</h2>
+<p>Within the <em>Cascade</em> project, a prestigious Marie Curie doctoral network, the research team investigates the computational analysis of semantic change. PhD student Sophia Aguilar spearheads efforts to model context comprehensively, meticulously examining the interplay between its various dimensions. This work builds upon earlier studies that modelled distinct types of context in isolation, now seeking to integrate these approaches for a more complete understanding of their interactions.</p>
+<p>The chemical revolution provides a compelling pilot study for these methodological explorations, drawing extensively upon the <em>Royal Society Corpus</em> (RSC). This historical period witnessed a significant conceptual shift from the long-standing phlogiston theory to Lavoisier’s oxygen theory—a transformation vividly documented in resources such as <em>chemistryworld.com</em> and visually represented by contemporary art, including the iconic painting of Lavoisier and his wife. The investigation aims to model a comprehensive spectrum of contextual factors: situational (where), temporal (when), experiential (what), interpersonal (who), textual (how), and causal (why).</p>
+<p>From a linguistic standpoint, the core interest lies in how language adapts to such profound worldly changes. Two primary theoretical frameworks guide this inquiry. Firstly, language variation and register theory, as articulated by Halliday (1985) and Biber (1988), posits that situational context directly influences language use. Concurrently, the linguistic system itself offers inherent variation, allowing concepts to be expressed in multiple ways—for instance, the evolution from “…air which was dephlogisticated…” to “…dephlogisticated air…” and ultimately to “…oxygen…”. Secondly, principles of rational communication and information theory, associated with the <em>IDeaL SFB 1102</em> research centre and drawing on work by Jaeger and Levy (2007) and Plantadosi et al.&nbsp;(2011), suggest that this linguistic variation serves to modulate information content. Such modulation optimises communication for efficiency whilst maintaining cognitive effort at a reasonable level.</p>
 </section>
-<section id="diverse-applications-of-rag-systems-in-philosophy" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="diverse-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.3</span> Diverse Applications of <em>RAG</em> Systems in Philosophy</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_012_slide_11.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 11</figcaption>
-</figure>
-</div>
-<p>The fundamental concept underpinning <em>RAG</em> systems in philosophy involves enabling interactive engagement with extensive philosophical corpora, such as Locke’s <em>Oeuvre</em>, whilst surpassing the capabilities of conventional <em>LLMs</em>. This approach furnishes users with significantly more detailed domain knowledge and a verifiable verbatim text basis.</p>
-<p>Beyond its research utility, the system offers substantial didactic advantages. Repeated questioning, a core feature, proves highly instructive for students. It allows them to approach complex texts, like Locke’s essay, by initially chatting with the corpus to grasp general concepts, then progressively deepening their inquiry into specific areas such as epistemology or the theory of matter. This interactive method provides an effective pathway for students to immerse themselves in philosophical texts.</p>
-<p>Crucially, <em>RAG</em> systems hold considerable promise for research.</p>
+<section id="detecting-temporal-shifts-in-language-use-via-kullback-leibler-divergence" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="detecting-temporal-shifts-in-language-use-via-kullback-leibler-divergence"><span class="header-section-number">17.2</span> Detecting Temporal Shifts in Language Use via Kullback-Leibler Divergence</h2>
+<p>To pinpoint precisely when linguistic transformations occur, the investigators employ Kullback-Leibler Divergence (KLD), moving beyond comparisons of arbitrarily predefined periods. This information-theoretic measure, represented as p(unit|context), quantifies the difference in language use—specifically, the probability distributions of linguistic units within a given context—between distinct timeframes. For instance, language from the 1740s exhibits low divergence when compared to the 1780s, indicating relative similarity, whereas a comparison with the 1980s would reveal substantially higher divergence due to significant linguistic evolution.</p>
+<p>Degaetano-Ortlieb and Teich (2018, 2019) refined this into a continuous comparison method. Their technique systematically contrasts a “PAST” temporal window (e.g., the 20 years preceding a specific year) with a “FUTURE” window (e.g., the 20 years following it) across a corpus. Plotting KLD values over time (e.g., from 1725 to 1845) reveals periods of accelerated linguistic change. Analysis of lexical units (lemmas) using this method highlights the shifting prominence of terms such as “electricity,” “dephlogisticated,” “experiment,” “nitrous,” “air,” “acid,” “oxide,” “hydrogen,” and “oxygen,” alongside others like “glacier,” “corpuscule,” “urine,” and “current.” Such patterns often signal the emergence or redefinition of concepts. Indeed, a notable period of divergence between 1760 and 1810 coincides with crucial scientific discoveries, including Henry Cavendish’s identification of hydrogen (then “inflammable air”) in 1766 and Joseph Priestley’s discovery of oxygen (as “dephlogisticated air”) in 1774.</p>
+<p>Furthermore, this KLD-based approach extends beyond vocabulary to encompass grammatical shifts. By defining the linguistic unit as a Part-of-Speech (POS) trigram, analysts can track changes in grammatical patterns. Comparisons between KLD analyses of lexis and grammar reveal that periods of significant lexical innovation often correspond with alterations in syntactic structures, suggesting a coupled evolution of vocabulary and grammar.</p>
+</section>
+<section id="analysing-paradigmatic-change-and-identifying-scientific-influence" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="analysing-paradigmatic-change-and-identifying-scientific-influence"><span class="header-section-number">17.3</span> Analysing Paradigmatic Change and Identifying Scientific Influence</h2>
+<p>Beyond temporal detection, the investigation delves into paradigmatic context and the dynamics of conceptual change, referencing seminal work by Fankhauser et al.&nbsp;(2017) and Bizzoni et al.&nbsp;(2019). One analytical technique involves plotting logarithmic growth curves of the relative frequency of specific chemical terms over extended periods, such as 1780 to 1840. In these visualisations, the size of bubbles corresponds to the square root of a term’s relative frequency, clearly depicting which terms are increasing or decreasing in usage. Accompanying scatter plots for distinct years—for example, 1780, 1800, and 1840—reveal evolving clusters of related chemical terms, with data often sourced from repositories such as <em>corpora.ids-mannheim.de</em>.</p>
+<p>To understand precisely who spearheads and propagates these linguistic and conceptual shifts, researchers Yuri Bizzoni, Katrin Menzel, and Elke Teich (associated with <em>IDeaL SFB 1102</em>) employ Cascade models, specifically <em>Hawkes processes</em> (Bizzoni et al.&nbsp;2021). These models generate heatmaps that illustrate networks of influence, plotting “influencers” against “influencees”—typically scientists active during the period. The intensity of colour, often shades of blue, signifies the strength of influence. Through such analysis, distinct roles in the dissemination of new theories and terminologies emerge. For instance, in the context of the chemical revolution, Priestley appears as an “Innovator,” Pearson as an “Early Adopter,” and figures like Davy contribute to the “Early Majority” uptake.</p>
+</section>
+<section id="investigating-linguistic-realisation-and-communicative-drivers-of-change" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="investigating-linguistic-realisation-and-communicative-drivers-of-change"><span class="header-section-number">17.4</span> Investigating Linguistic Realisation and Communicative Drivers of Change</h2>
+<p>The inquiry extends to how linguistic change manifests and the communicative pressures that might drive it, drawing on research by Viktoria Lima-Vaz (MA-Thesis, 2025) and Degaetano-Ortlieb et al.&nbsp;(under review), with notable contributions from Elke Teich. A key concept in this strand of analysis is “surprisal,” originating from Shannon’s (1949) information theory and further developed by Hale (2001), Levy (2008), and Crocker et al.&nbsp;(2016). Surprisal posits that the cognitive effort required to process a linguistic unit is proportional to its unexpectedness or improbability in a given context; for example, the word completing “Jane bought a ____” might have a different surprisal value than one completing “Jane read a ____.”</p>
+<p>Applying this to linguistic change, the researchers examine shifts in how concepts are encoded. A single concept might transition through various linguistic forms, such as a clausal construction like “…the oxygen (which) was consumed,” a prepositional phrase like “…the consumption of oxygen…,” and eventually a more concise compound form like “…the oxygen consumption…”. The underlying hypothesis suggests that shorter, more communicatively efficient encodings tend to emerge and gain currency within a speech community. Longitudinal analysis, visualised through graphs plotting surprisal against year, supports this. For instance, comparing the surprisal trajectories of “consumption of oxygen” (prepositional phrase) and “oxygen consumption” (compound) often reveals that as the shorter compound form becomes more established, its average surprisal value decreases, indicating a reduction in cognitive processing effort for the community using that form.</p>
+</section>
+<section id="a-proposed-framework-graph-convolutional-networks-for-contextual-dynamics" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="a-proposed-framework-graph-convolutional-networks-for-contextual-dynamics"><span class="header-section-number">17.5</span> A Proposed Framework: Graph Convolutional Networks for Contextual Dynamics</h2>
+<p>ECR Sofía Aguilar, funded by the European Union through the <em>CASCADE</em> project, proposes a novel framework for modelling context in the analysis of language variation and change. This work stems from the understanding that language change is intrinsically linked to shifts in social context, including evolving goals, social structures, and domain-specific conventions. Current methodologies, such as semantic change studies, KLD applications, and static network approaches, effectively track shifts but often fall short in modelling the intricate interactions between various contextual signals. The proposed framework positions context as a central signal for modelling language dynamics, with Graph Convolutional Networks (GCNs) identified as a promising technological direction due to their capacity for powerfully modelling complex relational data.</p>
+<p>A pilot application of this framework targets the chemical revolution period (1760s-1820s) and unfolds in four distinct stages:</p>
 <ul>
-<li><p>Firstly, they facilitate reliable fact lookup in handbooks, providing accurate information for orientation, remarks, and footnotes—a significant improvement over the often unreliable factual output of standalone <em>LLMs</em>.</p></li>
-<li><p>Secondly, researchers can employ <em>RAGs</em> to explore previously unexamined corpora; whilst digitisation of unpublished texts remains a prerequisite, the system then allows for a deeper, interactive overview of their content.</p></li>
-<li><p>Thirdly, <em>RAGs</em> assist in identifying specific passages relevant for close reading, streamlining the research process.</p></li>
+<li><p><em>Data Sampling</em>: The team employs KLD to identify words distinctive for specific sub-periods within this era, thereby pinpointing relevant lexical items whose KLD contributions are high.</p></li>
+<li><p><em>Network Construction</em>: This stage begins by creating word- and time-aware feature vectors. <em>BERT</em> generates word vectors, whilst one-hot encoding captures temporal and other features. These combine to form a node feature matrix for successive 20-year intervals. KLD then measures the dissimilarity in these node feature vectors across periods, yielding a diachronic series of graphs. To manage complexity, the team refines network size using community detection algorithms, such as that proposed by Riolo Newman (2020).</p></li>
+<li><p><em>Link Prediction</em>: This stage aims to model how, when, and by whom specific words are used. Word profiles are augmented with semantic embeddings (e.g., from <em>BERT</em>), contextual metadata (such as author, journal, and period), and grammatical information (including part-of-speech tags and syntactic roles). A <em>Transformer-GCN</em> model then learns patterns from these rich profiles to predict new links within the network. The graph convolution component captures structural relationships, while the transformer’s attention mechanism highlights the most influential contextual features.</p></li>
+<li><p><em>Entity Alignment</em>: This final stage facilitates the inspection and interpretation of change. It employs network motifs—small, overrepresented subgraphs that signify meaningful interaction structures. The <em>Kavosh</em> algorithm assists by grouping isomorphic graphs to identify these recurring motifs within the networks, offering profound insights into the patterns of linguistic and conceptual evolution.</p></li>
 </ul>
-<p>Ultimately, these systems may even generate detailed answers to components of complex research questions, painting a compelling picture of future possibilities within philosophical inquiry.</p>
 </section>
-<section id="developing-the-stanford-encyclopedia-of-philosophy-rag-system" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="developing-the-stanford-encyclopedia-of-philosophy-rag-system"><span class="header-section-number">12.4</span> Developing the Stanford Encyclopedia of Philosophy <em>RAG</em> System</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_012_slide_14.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 14</figcaption>
-</figure>
-</div>
-<p>The authors undertook the development of an example <em>RAG</em> system, utilising the Stanford Encyclopedia of Philosophy, a widely recognised online handbook, as its primary data source. Initially, the project involved scraping the encyclopedia’s content and converting it into Markdown format.</p>
-<p>The project’s initial aim centred on crafting a practical tool for the philosophical community. However, during the coding and testing phases, the system’s performance proved unexpectedly poor; initial answers were inferior to those generated by <em>ChatGPT</em> alone. This necessitated a shift in focus, transforming the endeavour into a qualitative study on optimising <em>RAG</em> system configurations specifically for philosophical applications.</p>
-<p>The development methodology adopted a theoretically grounded trial-and-error approach. This involved extensive tweaking of various parameters, including generative models, hyperparameters, and retrieval algorithms such as reranking, to enhance answer quality. A critical discovery during this process was the paramount importance of sound evaluation standards. Unlike historical research, which might seek atomic facts, philosophical inquiries often yield complex, unstructured textual propositions. Consequently, evaluating these answers demands a nuanced assessment of their factual accuracy, a task proving far from straightforward.</p>
-<p>The implemented system features a user-friendly frontend. This interface presents input fields for selecting the generative model, defining prompt token limits, specifying a persona, and entering the philosophical question—for instance, “What is priority monism?” The output section provides a comparative display, benchmarking the answer generated by the <em>LLM</em> alone against that produced by the <em>RAG</em> system, thereby facilitating direct comparison. Furthermore, a “Retrieved Texts Overview” details the article names, section headings, token lengths, and indicates which texts were successfully included in the prompt or truncated due to limitations. Powering this interface, the backend comprises a few thousand lines of Python code, orchestrating the system’s complex operations.</p>
-</section>
-<section id="hyperparameter-optimisation-the-critical-role-of-chunk-size" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="hyperparameter-optimisation-the-critical-role-of-chunk-size"><span class="header-section-number">12.5</span> Hyperparameter Optimisation: The Critical Role of Chunk Size</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_012_slide_15.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 15</figcaption>
-</figure>
-</div>
-<p>Optimising hyperparameters constitutes a critical phase in <em>RAG</em> system development, with chunk size serving as a prime example. Initially, the developers considered three primary options for defining text chunks: a fixed number of words—typically around 500 tokens, a clean criterion favoured in computer science—or alternatively, paragraphs or sections, whether at a low or high level of granularity.</p>
-<p>Surprisingly, empirical testing revealed that employing main sections as the retrieval documents yielded the most favourable results. This outcome defied initial expectations, given that the embedding model’s cutoff stood at approximately 500 words, whilst the average section length extended to around 3,000 words. The success of this seemingly counter-intuitive approach stems from the highly systematised nature of the Stanford Encyclopedia of Philosophy. Within this structured work, the initial 500 words of any given section typically encapsulate its core ideas. Consequently, retrieving entire sections, despite their length, provides sufficient context for the <em>LLM</em> to formulate accurate responses. Nevertheless, this specific optimisation may not generalise effectively to more heterogeneous or less rigorously sectioned textual corpora.</p>
-</section>
-<section id="key-findings-and-future-directions-for-rag-systems" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="key-findings-and-future-directions-for-rag-systems"><span class="header-section-number">12.6</span> Key Findings and Future Directions for <em>RAG</em> Systems</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_012_slide_18.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 18</figcaption>
-</figure>
-</div>
-<p><em>RAG</em> systems offer compelling advantages for academic and scientific endeavours. They seamlessly integrate verbatim corpora with specialised domain knowledge, thereby dramatically reducing instances of hallucination. Furthermore, these systems inherently cite relevant documents for their answers, making them exceptionally well-suited for assisting in diverse scientific tasks.</p>
-<p>Nevertheless, several cautions and challenges accompany their deployment. Fundamentally, <em>RAG</em> systems demand extensive tweaking to achieve optimal performance. Consequently, sound evaluation becomes paramount, necessitating a representative set of questions and anticipated answers. Crucially, domain experts must conduct this evaluation, as the optimal <em>RAG</em> setup remains highly specific to the particular domain, corpus type, and nature of the questions posed. A notable challenge arises when no relevant documents are retrieved, leading to a discernible decrease in answer quality; this scenario often requires prompt adjustment.</p>
-<p>Intriguingly, <em>RAG</em> systems frequently yield inferior results for widely discussed overview questions, such as “What are the central arguments against scientific realism?” This phenomenon occurs because <em>RAGs</em>, by design, concentrate on the local information present in the retrieved text chunks. For broad overview questions, this focus on granular facts can inadvertently distract from the larger, synthesised perspective required. Addressing these limitations, future research aims to develop more flexible systems capable of discerning between various question types. This progression will ultimately lead towards the development of sophisticated, agentic <em>RAG</em> systems.</p>
+<section id="reflections-limitations-and-future-research-directions" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="reflections-limitations-and-future-research-directions"><span class="header-section-number">17.6</span> Reflections: Limitations and Future Research Directions</h2>
+<p>The research team acknowledges several profound questions that delineate current limitations and chart future directions. A primary concern involves the very nature of computationally tracing conceptual change: can current and future models move beyond capturing mere linguistic drift to apprehend deeper epistemic shifts? Another critical area of inquiry centres on how context integrates into the meaning-making processes of language models—specifically, whether metadata functions as external noise or as a core, internalised signal.</p>
+<p>Further consideration must be given to defining the fundamental ‘unit’ of language change. The investigators question whether shifts are most effectively observed at the level of individual words, broader concepts, grammatical structures, or larger discourse patterns. The possibility of identifying recurring linguistic pathways for the emergence of new concepts also presents an intriguing avenue: do novel ideas tend to follow predictable linguistic trajectories as they gain acceptance? Finally, the challenge of interpretability in increasingly complex models remains paramount. Ensuring that the explanations generated by these models are genuinely meaningful, rather than merely plausible, is crucial for advancing the field.</p>
 
 
 </section>
@@ -763,13 +733,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Science dynamics and AI">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span>
+      <a href="./chapter_ai-nepi_018.html" class="pagination-link" aria-label="Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_ai-nepi_015.html" class="pagination-link" aria-label="Quantum gravity and plural pursuit in science">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter_ai-nepi_020.html" class="pagination-link" aria-label="Unlocking Science's Hidden Processes: A Computational Analysis of the NHGRI Archive">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Processes: A Computational Analysis of the NHGRI Archive</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
