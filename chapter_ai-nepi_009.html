@@ -9,7 +9,7 @@
 <meta name="author" content="Matteo Ottaviani &amp; Stephan Stahlschmidt">
 <meta name="dcterms.date" content="2025-01-01">
 
-<title>9&nbsp; Assessing Biases in Bibliometric Databases Using Large Language Models – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>9&nbsp; The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_009.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Assessing Biases in Bibliometric Databases Using Large Language Models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_009.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Assessing Biases in Bibliometric Databases Using Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -235,10 +235,19 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#introduction-and-research-motivation" id="toc-introduction-and-research-motivation" class="nav-link" data-scroll-target="#introduction-and-research-motivation"><span class="header-section-number">9.1</span> Introduction and Research Motivation</a></li>
-  <li><a href="#data-sources-and-sdg-selection" id="toc-data-sources-and-sdg-selection" class="nav-link" data-scroll-target="#data-sources-and-sdg-selection"><span class="header-section-number">9.2</span> Data Sources and SDG Selection</a></li>
-  <li><a href="#initial-findings-on-sdg-labelling-overlap" id="toc-initial-findings-on-sdg-labelling-overlap" class="nav-link" data-scroll-target="#initial-findings-on-sdg-labelling-overlap"><span class="header-section-number">9.3</span> Initial Findings on SDG Labelling Overlap</a></li>
-  <li><a href="#large-language-model-implementation" id="toc-large-language-model-implementation" class="nav-link" data-scroll-target="#large-language-model-implementation"><span class="header-section-number">9.4</span> Large Language Model Implementation</a></li>
+  <li><a href="#initial-research-aim" id="toc-initial-research-aim" class="nav-link" data-scroll-target="#initial-research-aim"><span class="header-section-number">9.1</span> Initial Research Aim</a></li>
+  <li><a href="#sdg-classification-in-bibliometric-databases" id="toc-sdg-classification-in-bibliometric-databases" class="nav-link" data-scroll-target="#sdg-classification-in-bibliometric-databases"><span class="header-section-number">9.2</span> SDG Classification in Bibliometric Databases</a></li>
+  <li><a href="#case-study-sdgs-in-bibliometric-data" id="toc-case-study-sdgs-in-bibliometric-data" class="nav-link" data-scroll-target="#case-study-sdgs-in-bibliometric-data"><span class="header-section-number">9.3</span> Case Study: SDGs in Bibliometric Data</a></li>
+  <li><a href="#partial-chain-of-dependencies" id="toc-partial-chain-of-dependencies" class="nav-link" data-scroll-target="#partial-chain-of-dependencies"><span class="header-section-number">9.4</span> Partial Chain of Dependencies</a></li>
+  <li><a href="#methods-and-research-design" id="toc-methods-and-research-design" class="nav-link" data-scroll-target="#methods-and-research-design"><span class="header-section-number">9.5</span> Methods and Research Design</a></li>
+  <li><a href="#processed-data" id="toc-processed-data" class="nav-link" data-scroll-target="#processed-data"><span class="header-section-number">9.6</span> Processed Data</a></li>
+  <li><a href="#comparing-sdg-classified-papers-socio-dimension" id="toc-comparing-sdg-classified-papers-socio-dimension" class="nav-link" data-scroll-target="#comparing-sdg-classified-papers-socio-dimension"><span class="header-section-number">9.7</span> Comparing SDG-Classified Papers: Socio Dimension</a></li>
+  <li><a href="#economic-dimension-and-llm-approach" id="toc-economic-dimension-and-llm-approach" class="nav-link" data-scroll-target="#economic-dimension-and-llm-approach"><span class="header-section-number">9.8</span> Economic Dimension and LLM Approach</a></li>
+  <li><a href="#sdg-targets-and-prompt-generation" id="toc-sdg-targets-and-prompt-generation" class="nav-link" data-scroll-target="#sdg-targets-and-prompt-generation"><span class="header-section-number">9.9</span> SDG Targets and Prompt Generation</a></li>
+  <li><a href="#research-design-workflow" id="toc-research-design-workflow" class="nav-link" data-scroll-target="#research-design-workflow"><span class="header-section-number">9.10</span> Research Design Workflow</a></li>
+  <li><a href="#illustrative-example-sdg-4-analysis" id="toc-illustrative-example-sdg-4-analysis" class="nav-link" data-scroll-target="#illustrative-example-sdg-4-analysis"><span class="header-section-number">9.11</span> Illustrative Example: SDG 4 Analysis</a></li>
+  <li><a href="#systematic-llm-omissions-sdg-4-illustration" id="toc-systematic-llm-omissions-sdg-4-illustration" class="nav-link" data-scroll-target="#systematic-llm-omissions-sdg-4-illustration"><span class="header-section-number">9.12</span> Systematic LLM Omissions: SDG 4 Illustration</a></li>
+  <li><a href="#cross-sdg-considerations-and-key-findings" id="toc-cross-sdg-considerations-and-key-findings" class="nav-link" data-scroll-target="#cross-sdg-considerations-and-key-findings"><span class="header-section-number">9.13</span> Cross-SDG Considerations and Key Findings</a></li>
   </ul>
 </nav>
     </div>
@@ -247,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Assessing Biases in Bibliometric Databases Using Large Language Models</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></h1>
 </div>
 
 
@@ -285,30 +294,153 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>This chapter outlines an investigation into biases inherent within bibliometric databases, specifically employing large language models (LLMs) to assess the classification of publications related to the Sustainable Development Goals (SDGs). The authors initiated this work, recognising the critical influence of bibliometric databases on the sociology of science, impacting academics, funding institutions, and policymakers alike. Moreover, they acknowledged that these databases often reflect political and commercial interests, possessing a distinctly performative nature.</p>
-<p>The investigation focused on three prominent databases: <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>. Building upon prior research concerning SDG labelling and search query drafting, the project aimed to quantify the aggregate effect of metadata processing by these databases on research policy. A key objective involved employing LLMs to reclassify publications, thereby examining how changes in SDG-related research metadata might influence policy advice, choices, indicators, and measures.</p>
-<p>The methodology encompassed the selection of five specific SDGs related to socio-economic inequalities—namely, education, gender equality, reducing inequalities, and an economic dimension. The authors applied this classification to a shared corpus of publications across the chosen databases. Initial findings corroborated earlier studies, revealing a minimal overlap in SDG labelling amongst the databases. To address this discrepancy, the authors developed an LLM-based approach, fine-tuning a pre-trained model on corpora classified under specific SDGs by each database, thereby creating a novel method for bias assessment.</p>
+<p>The authors embarked on an inquiry to assess biases within the classification of publications related to Sustainable Development Goals (SDGs) across prominent bibliometric databases, employing Large Language Models (<em>LLMs</em>) as a core analytical tool. This project critically examines the performative nature of databases such as Web of Science, Scopus, and OpenAlex. Despite their crucial role in scientific impact assessment, these platforms exhibit inconsistencies in SDG classification. Previous studies highlight minimal overlap in SDG labelling across different providers, potentially distorting perceptions of research priorities and influencing resource allocation and policy decisions.</p>
+<p>This investigation specifically sought to understand the aggregate effects of introducing <em>LLM</em>-based tools on the representation of SDG-related research. The team leveraged <em>LLMs</em> both as a detector of inherent data biases and as a proof-of-concept for automating information extraction to inform research policy. Methodologically, the study focused on five selected SDGs pertinent to socio-economic inequalities, analysing a jointly indexed corpus of over 15 million publications from January 2015 to July 2023.</p>
+<p>A key technical approach involved fine-tuning <em>DistilGPT2</em>, a pre-trained, open-source <em>LLM</em> with limited prior knowledge, on subsets of publication titles and abstracts. The authors meticulously derived prompts for the <em>LLM</em> from the specific targets of each SDG, serving as a benchmark for assessing the completeness of information captured by the models. The research employed three distinct decoding strategies—top-k, nucleus, and contrastive search—to generate responses, which then underwent noun phrase extraction and direct content comparison.</p>
+<p>Crucially, the findings reveal a systematic overlook in the data concerning sensitive locations (e.g., African countries, Least Developed Countries), vulnerable demographic groups (e.g., persons with disabilities, indigenous peoples), and critical SDG-specific focuses (e.g., human trafficking, migration). Whilst the United States consistently featured in <em>LLM</em> responses, followed by South Africa and China, these omissions underscore significant biases. Furthermore, the analysis identified distinct methodological leanings amongst the databases: Web of Science demonstrated a more theoretical approach, whereas Scopus and OpenAlex exhibited a more empirical orientation. These insights highlight the sensitivity of <em>LLMs</em> to their training data and the broader implications for research policy and addressing socio-economic inequalities.</p>
 </section>
-<section id="introduction-and-research-motivation" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="introduction-and-research-motivation"><span class="header-section-number">9.1</span> Introduction and Research Motivation</h2>
-<p>The research team embarked on an ambitious project, aiming to leverage large language models (LLMs) for assessing inherent biases within publications classified across three major bibliometric databases. This endeavour stemmed from the authors’ profound understanding of the critical role these databases play in the sociology of science. Indeed, they exert significant influence over the behaviours of academics, researchers, funding institutions, and policymakers alike. Crucially, these platforms also respond to diverse political and commercial interests, possessing a distinctly performative nature that shapes the scientific landscape.</p>
-<p>The investigation specifically focused on <em>Web of Science</em>, <em>Scopus</em>, and the recently open-sourced <em>OpenAlex</em>. Building upon prior research that explored the labelling of Sustainable Development Goals (SDGs) and the drafting of search queries, the authors observed a consistently minimal overlap in publications across these databases. This observation highlighted a potential aggregate effect stemming from the metadata processing within these systems, which ultimately influences the information available to researchers, policymakers, and consultants.</p>
-<p>Consequently, the LLM project’s primary objective was to develop a general framework for assessing this aggregate effect, particularly its potential impact on research policy. The proposed chain of dependencies posits that LLMs, by altering the metadata associated with SDG-related research, could significantly influence subsequent advice, choices, indicators, and measures.</p>
+<section id="initial-research-aim" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="initial-research-aim"><span class="header-section-number">9.1</span> Initial Research Aim</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>The authors initially aimed to utilise Large Language Models (<em>LLMs</em>) to assess inherent biases within publications classified across three major bibliometric databases. This foundational objective sought to uncover discrepancies in how these extensive repositories categorise scholarly output, thereby influencing academic and policy landscapes.</p>
 </section>
-<section id="data-sources-and-sdg-selection" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="data-sources-and-sdg-selection"><span class="header-section-number">9.2</span> Data Sources and SDG Selection</h2>
-<p>The authors meticulously selected their data sources, focusing on three prominent bibliometric databases: the proprietary platforms <em>Web of Science</em> and <em>Scopus</em>, alongside the recently established open-source alternative, <em>OpenAlex</em>. To specifically model socio-economic inequalities, the research team strategically chose five Sustainable Development Goals. This selection encompassed three SDGs directly related to equity—namely, Education, Gender Equality, and Reducing Inequalities—complemented by an additional SDG addressing the economic dimension.</p>
-<p>To ensure a consistent and comparable analysis, the authors compiled a shared corpus comprising all relevant publications. Rather than classifying entire databases, they applied their classification methodology directly to this shared corpus. This approach provided a robust benchmark, enabling a more precise assessment of classification discrepancies across the different platforms.</p>
+<section id="sdg-classification-in-bibliometric-databases" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sdg-classification-in-bibliometric-databases"><span class="header-section-number">9.2</span> SDG Classification in Bibliometric Databases</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>Bibliometric databases function as critical digital infrastructures, underpinning bibliometric analyses and impact assessments within the scientific community. These platforms, however, possess a performative nature, shaping perceptions of the science system and attributing value based on specific, inherent understandings, as highlighted by Whitley (2000) and Winkler (1988). This study specifically considered three major bibliometric databases: Web of Science, Scopus, and OpenAlex. Each of these platforms has implemented bibliometric classifications designed to align publications with the Sustainable Development Goals (SDGs).</p>
+<p>Previous research, notably by Armitage et al.&nbsp;(2020), revealed that SDG labelling by various providers—including Elsevier, Bergen, and Aurora—produces divergent results, demonstrating minimal overlap in their classifications. Consequently, such disparities in classification can lead to varied perceptions of research priorities, potentially influencing both resource allocation and critical policy decisions. These differences, moreover, often reflect underlying political and commercial interests.</p>
 </section>
-<section id="initial-findings-on-sdg-labelling-overlap" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="initial-findings-on-sdg-labelling-overlap"><span class="header-section-number">9.3</span> Initial Findings on SDG Labelling Overlap</h2>
-<p>The initial results from the classification process decisively aligned with Armitage’s (2020) findings, confirming a critical observation: the overlap in SDG labelling across the bibliometric databases proved remarkably small. This minimal concordance became strikingly evident upon examining the classified publications. For instance, a publication identified as SDG5 by one database might not receive the same classification from another; <em>Scopus</em>, for example, frequently omitted certain relevant publications from its SDG5 category.</p>
-<p>Furthermore, a notable anomaly emerged within <em>Web of Science</em>’s classification of SDG5, where approximately 10% of the publications originated from mathematics, including topics such as geometrical differential equations. This unexpected inclusion suggests a potential misclassification or, at the very least, indicates a significant lack of contextual understanding within the automated labelling processes, highlighting areas where the current systems may be insufficient.</p>
+<section id="case-study-sdgs-in-bibliometric-data" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="case-study-sdgs-in-bibliometric-data"><span class="header-section-number">9.3</span> Case Study: SDGs in Bibliometric Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>This case study, a collaborative effort by Ottaviani and Stahlschmidt (2024), sought to assess the aggregated effects on the representation of SDG-related research within bibliometric databases following the introduction of Large Language Model (<em>LLM</em>)-based tools. The authors employed a method involving the separate training of pre-trained, smaller <em>LLMs</em>, specifically <em>DistilGPT2</em>, on distinct subsets of publication abstracts. They meticulously curated these subsets based on the SDG classifications provided by various bibliometric databases.</p>
+<p>The project conceptualised <em>LLM</em> technology in two primary roles: firstly, as a sophisticated detector of inherent biases within the data; and secondly, as a proof-of-concept exercise for automating information extraction to directly inform decision-making processes in research. Ultimately, the broader aim of this endeavour was to develop a generalisable framework for assessing the potential impact of such technologies on research policy.</p>
 </section>
-<section id="large-language-model-implementation" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="large-language-model-implementation"><span class="header-section-number">9.4</span> Large Language Model Implementation</h2>
-<p>To address the observed inconsistencies in SDG classification, the authors devised a novel approach centred on large language models. Initially, the research team considered training a dedicated LLM exclusively on corpora classified under a specific SDG by a particular bibliometric database.</p>
-<p>However, recognising the substantial computational commitment this would entail, the authors opted for a more pragmatic compromise: fine-tuning a pre-trained LLM. This strategic decision aimed to achieve the overarching goal of assessing the aggregate effect of metadata processing and its subsequent impact on research policy, providing a flexible and efficient pathway to explore these complex interdependencies.</p>
+<section id="partial-chain-of-dependencies" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="partial-chain-of-dependencies"><span class="header-section-number">9.4</span> Partial Chain of Dependencies</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>A conceptual flowchart delineates the intricate chain of dependencies considered within this research. Initially, the established SDG classification frameworks directly define the scope and nature of “Research” pertaining to these global goals. Subsequently, a diverse array of stakeholders—including researchers, Small and Medium-sized Enterprises (SMEs), governmental bodies, and various intermediate figures—actively process this “Research” on SDGs. This processed research, in turn, critically informs “Decision-making to align with SDGs,” which ultimately exerts an impact on existing “Socioeconomic inequalities.”</p>
+<p>Crucially, the model integrates the role of <em>LLMs</em>: “LLM as detector of ‘biases’” is positioned to analyse “Research” on SDGs, whilst the “Introduction of LLM in Research Policy” is depicted as a subsequent step, directly influencing “Socioeconomic inequalities.” Consequently, <em>LLMs</em> possess the capacity to alter the underlying metadata, specifically concerning “research on SDGs,” thereby influencing a multitude of advices, policy choices, performance indicators, and practical measures.</p>
+</section>
+<section id="methods-and-research-design" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="methods-and-research-design"><span class="header-section-number">9.5</span> Methods and Research Design</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>The research design carefully selected key bibliometric databases and Sustainable Development Goals for analysis. The investigators chose three prominent databases: the proprietary Web of Science and Scopus, alongside the open-source platform OpenAlex. Furthermore, the study focused on five specific SDGs, strategically chosen to facilitate the modelling of socio-economic inequalities, thereby providing a targeted lens for the inquiry.</p>
+</section>
+<section id="processed-data" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="processed-data"><span class="header-section-number">9.6</span> Processed Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>The researchers meticulously processed a substantial dataset, comprising a jointly indexed subset of 15,471,336 publications. This comprehensive collection specifically included publications shared by all three bibliometric databases—Web of Science, Scopus, and OpenAlex—identified through exact Digital Object Identifier (DOI) matching. The data spanned a period from January 2015 to July 2023.</p>
+<p>The study then evaluated the performance of three distinct classification standards applied to the five selected SDGs. For each SDG, the team generated three separate subsets of publications, each corresponding to one of the bibliometric databases, all derived from the initial shared corpus. This rigorous approach aimed to establish a robust comparative benchmark for subsequent analyses.</p>
+</section>
+<section id="comparing-sdg-classified-papers-socio-dimension" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="comparing-sdg-classified-papers-socio-dimension"><span class="header-section-number">9.7</span> Comparing SDG-Classified Papers: Socio Dimension</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>Initial findings concerning the socio dimension of SDG-classified papers demonstrated a remarkably small overlap in SDG labelling across the databases, a result entirely consistent with the observations of Armitage (2020). The analysis specifically focused on SDG 04 (Quality Education), SDG 05 (Gender Equality), and SDG 10 (Reduced Inequalities).</p>
+<p>Notably, Scopus, for instance, did not classify certain publications as SDG 5, even though these papers were present within its broader database. Conversely, Web of Science classified a significant 10% of its SDG 5 publications as originating from the field of mathematics, including topics such as geometrical differential equations. This particular finding strongly suggests either a misclassification or a notable absence of relevant information within the database’s tagging system.</p>
+</section>
+<section id="economic-dimension-and-llm-approach" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="economic-dimension-and-llm-approach"><span class="header-section-number">9.8</span> Economic Dimension and LLM Approach</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>The study extended its comparative analysis to the economic dimension, examining SDG 08 (Decent Work and Economic Growth) and SDG 09 (Industry, Innovation, and Infrastructure). A novel approach to <em>LLM</em> modelling underpinned this phase of the research. The core idea involved training a Large Language Model exclusively on specific corpora of publications, each corpus having been classified by a particular bibliometric database for a distinct SDG.</p>
+<p>For practical implementation, the researchers opted to fine-tune <em>DistilGPT2</em>, an existing open-source <em>LLM</em>. This model, characterised by its fundamental architecture and minimal prior knowledge compared to its commercial or larger open-source counterparts, offered a crucial advantage: it ensured the absence of pre-existing semantic knowledge concerning either the publications or the prompts. The fine-tuning process exclusively utilised publication titles and abstracts as training data. Subsequently, a new title served as the prompt input, prompting the <em>LLM</em> to generate a corresponding new abstract.</p>
+</section>
+<section id="sdg-targets-and-prompt-generation" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="sdg-targets-and-prompt-generation"><span class="header-section-number">9.9</span> SDG Targets and Prompt Generation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>Each Sustainable Development Goal is meticulously structured around a series of specific targets; for instance, SDG 4 encompasses targets ranging from 4.1 to 4.6. The SDGs under consideration typically feature between eight and twelve such targets. The researchers meticulously drafted the prompts for the <em>LLM</em> directly from these precise SDG targets.</p>
+<p>This approach simultaneously served as an attempt at validation and benchmarking. Should the <em>LLM</em> fail to generate relevant responses to prompts derived from the targets, it signals a deficiency in the information it has processed, given that these targets fundamentally articulate the core objectives of each SDG, effectively serving as a “ground zero” for expected content. For analytical simplification, the methodology involved noun phrase extraction, alongside direct textual searching within the actual <em>LLM</em> responses during the comparative phase.</p>
+</section>
+<section id="research-design-workflow" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="research-design-workflow"><span class="header-section-number">9.10</span> Research Design Workflow</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>The research design implemented a precise workflow for processing and analysing data. Initially, a curated “Set of abstracts classified SDG# by DB#” directly informed the “Fine-Tuning” of the <em>DistilGPT-2</em> model. Concurrently, a “Set of prompts specifically to SDG#” served as input for the “Fine-tuned <em>DistilGPT-2</em> SDG# DB#”.</p>
+<p>Crucially, the fine-tuned model then employed three distinct decoding strategies—top-k, nucleus, and contrastive search—to generate diverse outputs. These outputs, labelled as “Responses SDG# DB# for top-k”, “Responses SDG# DB# for nucleus”, and “Responses SDG# DB# for contrastive search”, subsequently underwent a rigorous post-processing stage. A “prompts’ words filter” refined these responses, culminating in the extraction of “Noun phrases SDG# DB#”. The analytical phase involved both this noun phrase extraction for simplification and a direct, meticulous search through the actual generated responses during the comparative assessment.</p>
+</section>
+<section id="illustrative-example-sdg-4-analysis" class="level2" data-number="9.11">
+<h2 data-number="9.11" class="anchored" data-anchor-id="illustrative-example-sdg-4-analysis"><span class="header-section-number">9.11</span> Illustrative Example: SDG 4 Analysis</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>For illustrative purposes, the analysis of <em>LLM</em> responses for SDG 4 exemplifies the broader methodology applied across all Sustainable Development Goals. This involved meticulously matching extracted noun phrases with the specific SDG targets. The analysis systematically examined four critical data dimensions: Locations, Actors, Data/Metrics, and Focuses.</p>
+<p>For each SDG, the investigation assessed two primary aspects: its compliance with the stated targets and the identification of any inherent biases. Notably, distinct differences emerged amongst the bibliometric databases. The findings were structured into a comprehensive table, categorised by “Unique DBs,” “Addressed Targets,” “Not Addressed Targets,” and “Focuses.” Within these dimensions, it became evident that all SDG targets consistently reference locations, whilst actors represent another crucial category. Data and metrics primarily emerged from the <em>LLM</em>’s responses, and focuses were identified as inherently SDG-specific.</p>
+</section>
+<section id="systematic-llm-omissions-sdg-4-illustration" class="level2" data-number="9.12">
+<h2 data-number="9.12" class="anchored" data-anchor-id="systematic-llm-omissions-sdg-4-illustration"><span class="header-section-number">9.12</span> Systematic LLM Omissions: SDG 4 Illustration</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>Despite explicit stimulation, the Large Language Model consistently failed to address several critical areas, as exemplified by its performance on SDG 4. The omissions were particularly notable across specific categories. In terms of locations, the <em>LLM</em> neglected to mention African countries (with the exception of South Africa), developing countries (with a question mark over China), least developed countries, and Small Island Developing States.</p>
+<p>Regarding actors, the model systematically overlooked vulnerable populations, including persons with disabilities, indigenous peoples, and children in vulnerable situations. Furthermore, a range of crucial focuses remained unaddressed: vocational training, scholarships, the establishment of safe, non-violent, inclusive, and effective environments, sustainable lifestyles, human rights, the promotion of a culture of peace and non-violence, global citizenship, the appreciation of cultural diversity, free primary and secondary education, and tertiary education. These persistent omissions are highly significant, as they pertain to sensitive categories and focuses explicitly articulated within the SDG targets themselves.</p>
+</section>
+<section id="cross-sdg-considerations-and-key-findings" class="level2" data-number="9.13">
+<h2 data-number="9.13" class="anchored" data-anchor-id="cross-sdg-considerations-and-key-findings"><span class="header-section-number">9.13</span> Cross-SDG Considerations and Key Findings</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_009_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>Across all five Sustainable Development Goals analysed, several recurrent results emerged, highlighting consistent patterns in the <em>LLM</em>’s performance and the underlying data biases. Regarding locations, least developed countries, such as South-Saharan Africa for SDG 8, received minimal attention. Conversely, the United States consistently featured in responses for every SDG, with South Africa and China following as the next most frequently cited locations, ahead of the UK and Australia.</p>
+<p>In terms of metrics, the <em>LLM</em> frequently recalled various surveys as datasets, including the Demographic and Health Surveys (DHS) and the World Values Survey (WVS). The responses also encompassed a range of research methodologies, spanning theoretical, empirical, thematic analysis, market dynamics, and macroeconomics. However, a significant finding concerned actors: discriminated and vulnerable categories were systematically overlooked across different SDGs, with no overarching response addressing these groups. Similarly, whilst SDG-specific focuses were present, the most sensitive topics, such as human trafficking, human exploitation, and migration, were notably absent.</p>
+<p>Furthermore, the analysis revealed distinct methodological orientations among the bibliometric databases. Web of Science consistently exhibited a highly theoretical approach, often emphasising models and abstract concepts. In stark contrast, both Scopus and OpenAlex demonstrated a more empirical orientation in their classifications. Consequently, the primary finding of this research points to a systematic overlook within the data concerning critical actors, the poorest countries, and underrepresented topics.</p>
+<p>The study acknowledges several limitations inherent in its general framework. Specific applied cases might yield different outcomes, though the researchers express some uncertainty regarding the extent of such variation. A high sensitivity of <em>LLMs</em> to their training data remains a significant factor, alongside potential variations in model architecture and calibration parameters. Nevertheless, the research endeavoured to account for these aspects by utilising training data from three distinct databases and employing three different decoding strategies drawn from existing literature.</p>
 
 
 </section>
