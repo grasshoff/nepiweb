@@ -1,0 +1,22 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/* Base styles */
+:root {
+  --font-family: "Crimson Text", serif;
+  --font-family-display: "Crimson Pro", serif;
+  --font-mono: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Ensure proper font inheritance */
+body {
+  font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+} 
