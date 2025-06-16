@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Maximilian Noichl &amp; Andrea Loettgers">
-<meta name="dcterms.date" content="2025-01-01">
 
 <title>4&nbsp; Introducing OpenAlex Mapper – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
@@ -44,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85125aaa381e97e617f4eb7319a810c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -85,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_004.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_004.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,19 +124,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -268,12 +267,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta column-body">
 
       
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -285,37 +278,37 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p><em>OpenAlex Mapper</em>, an innovative tool, addresses critical generalisation and validation challenges prevalent in History, Philosophy, and Sociology of Science (HPSS) research. This presentation introduces the tool, elucidates its technical underpinnings, demonstrates its interactive capabilities, and explores its diverse applications within transdisciplinary contexts.</p>
-<p>The methodology centres on fine-tuning the <em>Specter 2</em> language model to enhance its recognition of disciplinary boundaries. Subsequently, the team sampled 300,000 English abstracts from the <em>OpenAlex</em> database, a comprehensive and openly accessible repository of scholarly material. Engineers embedded these abstracts, reducing their dimensionality to two dimensions using Uniform Manifold Approximation and Projection (<em>UMAP</em>), thereby creating a foundational 2D base map. <em>OpenAlex Mapper</em> then allows users to submit arbitrary queries, downloading and embedding the corresponding records before projecting them onto this pre-trained <em>UMAP</em> model.</p>
-<p>The interactive map facilitates in-depth investigation of specific terms, authors, temporal distributions, and citation networks. Crucially, the tool provides a robust quantitative framework, grounding qualitative, heuristic investigations. This enables researchers to trace the diffusion of models, map the distribution of concepts, and analyse method usage patterns across vast interdisciplinary samples. For instance, one can track the <em>Hopfield</em> model’s adoption, visualise model templates such as <em>Ising</em> and <em>Sherrington-Kirkpatrick</em>, and contrast the spatial distribution of concepts like “phase transition” and “emergence,” alongside methods such as <em>Random Forest</em> and <em>Logistic Regression</em>.</p>
-<p>Despite its considerable utility, the system acknowledges several qualifications. It relies on the <em>OpenAlex</em> database, which, whilst robust, is not without imperfections, particularly concerning disciplinary representation. The current language model processes English-only sources, and the embedding step necessitates the presence of abstracts or well-formed titles. Furthermore, the <em>UMAP</em> algorithm, a stochastic process, introduces inherent trade-offs in dimensionality reduction; the 768 dimensions of the <em>Specter</em> model cannot be perfectly represented in two, inevitably leading to potential misalignments. A working paper, “Philosophy at Scale: Introducing OpenAlex Mapper,” offers more detailed technical insights.</p>
+<p>Maximilian Noichl, Andrea Loetgers, and Taya Knuuttila have developed <em>OpenAlex Mapper</em>, an innovative tool designed to mitigate critical generalisation and validation challenges pervasive in History, Philosophy, and Sociology of Science (HPSS) research. This presentation introduces the tool, clarifies its technical underpinnings, demonstrates its interactive capabilities, and examines its manifold applications within transdisciplinary contexts.</p>
+<p>The methodology centres on fine-tuning the <em>Specter 2</em> language model to enhance its recognition of disciplinary boundaries. Subsequently, the team sampled 300,000 English abstracts from the <em>OpenAlex</em> database, a comprehensive and openly accessible repository of scholarly material. Engineers embedded these abstracts and reduced their dimensionality to two dimensions using Uniform Manifold Approximation and Projection (<em>UMAP</em>), thereby creating a foundational 2D base map. <em>OpenAlex Mapper</em> then allows users to submit arbitrary queries, downloading and embedding the corresponding records before projecting them onto this pre-trained <em>UMAP</em> model.</p>
+<p>The interactive map facilitates in-depth investigation of specific terms, authors, temporal distributions, and citation networks. Significantly, the tool provides a rigorous quantitative framework that grounds qualitative, heuristic investigations, enabling researchers to trace the diffusion of models, map the distribution of concepts, and analyse method usage patterns across vast interdisciplinary samples. Examples include tracking the <em>Hopfield</em> model’s adoption, visualising model templates like <em>Ising</em> and <em>Sherrington-Kirkpatrick</em>, and contrasting the spatial distribution of concepts such as “phase transition” and “emergence,” alongside methods like <em>Random Forest</em> and <em>Logistic Regression</em>.</p>
+<p>Despite its utility, the system acknowledges several qualifications. It relies on the <em>OpenAlex</em> database, which, whilst robust, is not without imperfections, particularly concerning disciplinary representation. The current language model processes English-only sources, and the embedding step necessitates the presence of abstracts or well-formed titles. Furthermore, the <em>UMAP</em> algorithm, a stochastic process, introduces inherent trade-offs in dimensionality reduction, meaning the 768 dimensions of the <em>Specter</em> model cannot be perfectly represented in two, leading to potential misalignments. A working paper, <em>Philosophy at Scale: Introducing OpenAlex Mapper</em>, offers more detailed technical insights.</p>
 </section>
 <section id="openalex-mapper-architecture-and-workflow" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="openalex-mapper-architecture-and-workflow"><span class="header-section-number">4.1</span> OpenAlex Mapper Architecture and Workflow</h2>
-<p>Maximilian Noichl, Andrea Loetgers, and Taya Knuuttila crafted <em>OpenAlex Mapper</em>, a novel tool funded by an ERC grant focused on “possible life.” This innovation aims to introduce the tool, elucidate its high-level technical operations, demonstrate its practical application, and ultimately discuss its utility for research within the History, Philosophy, and Sociology of Science (HPSS).</p>
-<p>The core workflow of <em>OpenAlex Mapper</em> comprises several distinct stages. Initially, the team fine-tuned the <em>Specter 2</em> embedding model, specifically enhancing its recognition of disciplinary boundaries. This process involved training the model on a dataset of articles originating from highly similar disciplinary backgrounds, with <em>UMAP</em> dimensionality reduction providing a visualisation of this training. Notably, these adjustments constituted minor modifications to the language model, rather than a comprehensive retraining effort.</p>
-<p>Subsequently, for base-map preparation, the authors leveraged the <em>OpenAlex</em> database, a vast and inclusive repository of scholarly material that surpasses the scale of <em>Web of Science</em> or <em>Scopus</em>. <em>OpenAlex</em> offers fully open data, facilitating easy batch querying and free accessibility, which distinguishes it from many proprietary alternatives. From this extensive database, the team sampled 300,000 random articles, imposing minimal restrictions beyond requiring reasonably well-formed English abstracts. The previously fine-tuned <em>Specter 2</em> model then embedded these abstracts. Engineers further reduced these embeddings to two dimensions through Uniform Manifold Approximation and Projection (<em>UMAP</em>), yielding both a 2D base map and a trained <em>UMAP</em> model.</p>
+<p>Maximilian Noichl, Andrea Loetgers, and Taya Knuuttila crafted <em>OpenAlex Mapper</em>, a novel tool funded by an ERC grant focused on “possible life.” This innovation aims to introduce the tool, clarify its high-level technical operations, demonstrate its practical application, and ultimately discuss its utility for research within the History, Philosophy, and Sociology of Science (HPSS).</p>
+<p>The core workflow of <em>OpenAlex Mapper</em> comprises several distinct stages. Initially, the team fine-tuned the <em>Specter 2</em> embedding model, specifically to enhance its recognition of disciplinary boundaries. This process involved training the model on a dataset of articles originating from highly similar disciplinary backgrounds, with <em>UMAP</em> dimensionality reduction providing a visualisation of this training. Notably, these adjustments constituted minor modifications to the language model, rather than a comprehensive retraining effort.</p>
+<p>Subsequently, for base-map preparation, the researchers leveraged the <em>OpenAlex</em> database, a vast and inclusive repository of scholarly material that surpasses the scale of <em>Web of Science</em> or <em>Scopus</em>. <em>OpenAlex</em> offers fully open data, facilitating easy batch querying and free accessibility, which distinguishes it from many proprietary alternatives. From this extensive database, the team sampled 300,000 random articles, imposing minimal restrictions beyond requiring reasonably well-formed English abstracts. These abstracts then underwent embedding using the previously fine-tuned <em>Specter 2</em> model. Engineers further reduced these embeddings to two dimensions through Uniform Manifold Approximation and Projection (<em>UMAP</em>), yielding both a 2D base map and a trained <em>UMAP</em> model.</p>
 <p>For individual user queries, <em>OpenAlex Mapper</em> allows submission of arbitrary searches to the <em>OpenAlex</em> database. The tool downloads the relevant records—for instance, the first 1,000 for demonstration purposes—and embeds their abstracts using the identical fine-tuned language model. These new embeddings are then projected through the pre-trained <em>UMAP</em> model, ensuring that the queried articles acquire positions on the two-dimensional map consistent with their hypothetical presence during the original layout process. The resulting interactive map is accessible online and available for download via data mappers, offering features such as temporal distributions and citation graph overlays. Users can access the slides and interactive tool via <code>maxnoichl.eu/talk</code>, whilst a version with a higher latency GPU setup is also available for processing larger queries.</p>
 </section>
 <section id="interactive-demonstration-of-openalex-mapper" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="interactive-demonstration-of-openalex-mapper"><span class="header-section-number">4.2</span> Interactive Demonstration of OpenAlex Mapper</h2>
 <p>The <em>OpenAlex Mapper</em> tool, accessible via <code>https://m7n-openalex-mapper.hf.space</code>, offers a straightforward user experience. Users initiate their investigation by searching the <em>OpenAlex</em> database directly through its comprehensive search interface, for example, by entering a query such as “scale-free network models.”</p>
-<p>In the backend, the system efficiently downloads the initial 1,000 records pertinent to the search query—a limit imposed to optimise processing time. Subsequently, it embeds all abstracts from these downloaded records. If the user enables the option, the tool also processes the citation graph, enriching the analytical output. The primary output manifests as a projection of the search results onto a pre-existing grey base map, visually representing the disciplinary landscape.</p>
-<p>Crucially, the map is fully interactive, empowering users to delve into specific data points. For instance, one can investigate the presence of a term like “coriander” within unexpected fields such as epidemiology or public health, gaining nuanced insights into interdisciplinary connections. The demonstration showcased queries for both “coriander”—a standard <em>OpenAlex</em> example—and “scale-free network models.” Furthermore, the developers have made an alternative setup available, featuring a higher latency GPU, which accommodates larger and more complex queries.</p>
+<p>In the backend, the system efficiently downloads the initial 1,000 records pertinent to the search query, a limit imposed to optimise processing time. Subsequently, it embeds all abstracts from these downloaded records. If the user enables the option, the tool also processes the citation graph, enriching the analytical output. The primary output manifests as a projection of the search results onto a pre-existing grey base map, visually representing the disciplinary landscape.</p>
+<p>Crucially, the map is fully interactive, empowering users to delve into specific data points. For instance, one can investigate the presence of a term like “coriander” within unexpected fields such as epidemiology or public health, gaining nuanced insights into interdisciplinary connections. The demonstration showcased queries for both “coriander,” a standard <em>OpenAlex</em> example, and “scale-free network models.” Furthermore, the developers have made an alternative setup available, featuring a higher latency GPU, which accommodates larger and more complex queries.</p>
 </section>
 <section id="applications-in-history-philosophy-and-sociology-of-science-hpss" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="applications-in-history-philosophy-and-sociology-of-science-hpss"><span class="header-section-number">4.3</span> Applications in History, Philosophy, and Sociology of Science (HPSS)</h2>
 <p><em>OpenAlex Mapper</em> primarily addresses the persistent challenges of generalisation and validation that arise from the reliance on small samples and case studies within History, Philosophy, and Sociology of Science (HPSS). Whilst traditional HPSS methods—such as the close reading of scholarly papers, direct interaction with scientists, and studies conducted by researchers with scientific training—offer invaluable detailed, close-up views of scientific processes, they often struggle to scale. Generalising these granular insights to the vast, global, and rapidly evolving landscape of contemporary science presents a significant hurdle.</p>
-<p><em>OpenAlex Mapper</em> contributes by providing robust quantitative methods that effectively ground qualitative, heuristic investigations. A key feature of the tool is its capacity to trace all analytical results directly back to their original textual sources, ensuring transparency and scholarly rigour.</p>
+<p><em>OpenAlex Mapper</em> contributes by providing rigorous quantitative methods that effectively ground qualitative, heuristic investigations. A key feature of the tool is its capacity to trace all analytical results directly back to their original textual sources, ensuring transparency and scholarly rigour.</p>
 <p>The tool supports several specific applications, offering compelling examples of its utility. Researchers can trace the diffusion of particular models, such as the <em>Hopfield</em> model, to ascertain where it genuinely “stuck” or achieved widespread adoption and sustained reference across diverse scientific domains. Furthermore, the system facilitates the investigation of “model templates”—conceptual frameworks defining models of similar structure that emerge in disparate scientific fields, potentially structuring science in ways orthogonal to established disciplines. Examples like the <em>Ising</em>, <em>Hopfield</em>, and <em>Sherrington-Kirkpatrick</em> models often appear at specific, non-continuous locations on the base map, providing crucial insights for ongoing debates concerning model transfer in science.</p>
-<p>Beyond models, <em>OpenAlex Mapper</em> enables the mapping of concept distribution. For instance, it can visually contrast the spread of “phase transition” (depicted in blue) with “emergence” (in orange), broadening such analyses into interdisciplinary contexts and circumventing common problems associated with acquiring specific datasets. Finally, the tool proves invaluable for analysing method usage. It reveals distinguishable patterns of specific methods within interdisciplinary contexts; for example, neuroscientists frequently employ <em>Random Forest</em> algorithms, whilst researchers in psychiatry or mental health often utilise <em>Logistic Regressions</em>. This observation prompts profound philosophical questions regarding the underlying reasons for these patterns and their implications for debates on machine learning in science versus classical statistics, and the concept of “theory-free science.”</p>
+<p>Beyond models, <em>OpenAlex Mapper</em> enables the mapping of concept distribution. For instance, it can visually contrast the spread of “phase transition” (depicted in blue) with “emergence” (in orange), broadening such analyses into interdisciplinary contexts and circumventing common problems associated with acquiring specific datasets. Finally, the tool proves invaluable for analysing method usage. It reveals distinguishable patterns of specific methods within interdisciplinary contexts; for example, neuroscientists frequently employ <em>Random Forest</em> algorithms, whilst researchers in psychiatry or mental health often utilise <em>Logistic Regression</em>. This observation prompts profound philosophical questions regarding the underlying reasons for these patterns and their implications for debates on machine learning in science versus classical statistics, and the concept of “theory-free science.”</p>
 </section>
 <section id="limitations-and-future-considerations" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="limitations-and-future-considerations"><span class="header-section-number">4.4</span> Limitations and Future Considerations</h2>
 <p>Whilst <em>OpenAlex Mapper</em> offers significant analytical capabilities, its application is subject to several important qualifications. The system’s efficacy inherently depends on the <em>OpenAlex</em> database, which, despite its overall reasonable data quality compared to other available sources, is not without imperfections. Notably, certain disciplines, such as law, may exhibit underrepresentation within the database, potentially skewing comprehensive analyses.</p>
-<p>The current language model processes English-only sources, which somewhat limits the tool’s global scope. Nevertheless, this constraint poses less of a problem for investigations focused on the more recent history of science. In principle, the integration of multilingual models could remedy this limitation, although high-quality, science-trained multilingual models remain scarce. Furthermore, the embedding step of the methodology necessitates that sources include either abstracts or well-formed titles, thereby restricting the range of processable data.</p>
+<p>The current language model processes English-only sources, which somewhat limits the tool’s global scope. Nevertheless, this constraint poses less of a problem for investigations focused on the more recent history of science. In principle, the integration of multilingual models could remedy this limitation, although the availability of high-quality, science-trained multilingual models remains scarce. Furthermore, the embedding step of the methodology necessitates that sources include either abstracts or well-formed titles, thereby restricting the range of processable data.</p>
 <p>Crucially, the method relies heavily on the Uniform Manifold Approximation and Projection (<em>UMAP</em>) algorithm, which presents its own set of imperfections. As a stochastic algorithm, <em>UMAP</em> generates one specific output amongst many possible configurations. Moreover, the algorithm must make inherent trade-offs during dimensionality reduction; the 768 dimensions of the <em>Specter</em> language model cannot be perfectly compressed into two, inevitably leading to some degree of “pushing and pulling and misaligning” of data points.</p>
-<p>For those seeking further information, the presentation slides are available online at <code>maxnoichl.eu/talk</code>. Additionally, a working paper, titled “Philosophy at Scale: Introducing OpenAlex Mapper,” provides more exhaustive technical details regarding the tool’s development and operation.</p>
+<p>For those seeking further information, the presentation slides are available online at <code>maxnoichl.eu/talk</code>. Additionally, a working paper, titled <em>Philosophy at Scale: Introducing OpenAlex Mapper</em>, provides more exhaustive technical details regarding the tool’s development and operation.</p>
 
 
 </section>
@@ -722,13 +715,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_003.html" class="pagination-link" aria-label="Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span>
+      <a href="./chapter_ai-nepi_003.html" class="pagination-link" aria-label="Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_ai-nepi_005.html" class="pagination-link" aria-label="Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter_ai-nepi_005.html" class="pagination-link" aria-label="Genre Classification for Historical Medical Periodicals">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Paul Näger">
-<meta name="dcterms.date" content="2025-01-01">
 
 <title>12&nbsp; Possible applications of RAG systems in philosophy – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
@@ -44,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85125aaa381e97e617f4eb7319a810c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,19 +124,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -235,12 +234,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#addressing-philosophical-research-challenges-with-rag-systems" id="toc-addressing-philosophical-research-challenges-with-rag-systems" class="nav-link" data-scroll-target="#addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with <em>RAG</em> Systems</a></li>
-  <li><a href="#potential-applications-of-rag-systems-in-philosophy" id="toc-potential-applications-of-rag-systems-in-philosophy" class="nav-link" data-scroll-target="#potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of <em>RAG</em> Systems in Philosophy</a></li>
-  <li><a href="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" id="toc-developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" class="nav-link" data-scroll-target="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example <em>RAG</em> System: The <em>Stanford Encyclopedia of Philosophy</em></a></li>
-  <li><a href="#sep-rag-system-overview-and-frontend-details" id="toc-sep-rag-system-overview-and-frontend-details" class="nav-link" data-scroll-target="#sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> <em>SEP RAG</em> System Overview and Frontend Details</a></li>
+  <li><a href="#addressing-philosophical-research-challenges-with-rag-systems" id="toc-addressing-philosophical-research-challenges-with-rag-systems" class="nav-link" data-scroll-target="#addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</a></li>
+  <li><a href="#potential-applications-of-rag-systems-in-philosophy" id="toc-potential-applications-of-rag-systems-in-philosophy" class="nav-link" data-scroll-target="#potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of RAG Systems in Philosophy</a></li>
+  <li><a href="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" id="toc-developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" class="nav-link" data-scroll-target="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example RAG System: The Stanford Encyclopedia of Philosophy</a></li>
+  <li><a href="#sep-rag-system-overview-and-frontend-details" id="toc-sep-rag-system-overview-and-frontend-details" class="nav-link" data-scroll-target="#sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> SEP RAG System Overview and Frontend Details</a></li>
   <li><a href="#optimising-chunk-size-a-philosophical-perspective" id="toc-optimising-chunk-size-a-philosophical-perspective" class="nav-link" data-scroll-target="#optimising-chunk-size-a-philosophical-perspective"><span class="header-section-number">12.5</span> Optimising Chunk Size: A Philosophical Perspective</a></li>
-  <li><a href="#results-cautions-and-open-challenges-in-rag-implementation" id="toc-results-cautions-and-open-challenges-in-rag-implementation" class="nav-link" data-scroll-target="#results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in <em>RAG</em> Implementation</a></li>
+  <li><a href="#results-cautions-and-open-challenges-in-rag-implementation" id="toc-results-cautions-and-open-challenges-in-rag-implementation" class="nav-link" data-scroll-target="#results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in RAG Implementation</a></li>
   </ul>
 </nav>
     </div>
@@ -270,12 +269,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta column-body">
 
       
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -287,45 +280,81 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>This presentation explores the application of Retrieval-Augmented Generation (<em>RAG</em>) systems within philosophical research, particularly addressing the unique challenges posed by the discipline’s emphasis on linguistic and semantic accuracy. The presenters highlight the limitations of standalone Large Language Models (<em>LLMs</em>) for philosophical inquiry, including their lack of direct access to full texts, restricted context windows, and inability to attribute claims reliably. Consequently, <em>RAG</em> systems emerge as an efficacious solution, enabling direct engagement with specific corpora and providing verifiable citations.</p>
-<p>The authors detail a <em>RAG</em> system prototype developed using the <em>Stanford Encyclopedia of Philosophy</em> as its data source. This system endeavours to facilitate both didactic engagement with philosophical texts and advanced research tasks, such as fact-checking, corpus exploration, and passage identification for close reading. Crucially, the development process revealed that effective <em>RAG</em> implementation necessitates extensive “tweaking” and rigorous, domain-specific evaluation. The system’s architecture encompasses a frontend for user interaction, a backend for processing, and a comparative output display that benchmarks <em>RAG</em> performance against <em>LLM</em>-only responses.</p>
-<p>A key optimisation involved determining the optimal chunk size for text retrieval, revealing that main sections of the highly systematised <em>Stanford Encyclopedia</em> yielded superior results despite their length. These findings underscore <em>RAG</em> systems’ capacity to integrate verbatim corpora and domain knowledge, thereby reducing hallucinations and enabling citation. Nevertheless, the presenters caution that <em>RAG</em>s demand domain expertise for effective tweaking and evaluation, as their performance is highly sensitive to the specific corpus, question types, and evaluation criteria. A notable challenge identified involves <em>RAG</em>s’ tendency to provide less effective responses to broad overview questions, as their focus on local information can obscure broader perspectives. This observation suggests a future direction towards more flexible, agentic <em>RAG</em> systems capable of discerning question types.</p>
+<p>This chapter explores the application of Retrieval-Augmented Generation (RAG) systems within philosophical research, specifically addressing the unique challenges posed by the discipline’s emphasis on linguistic and semantic accuracy. The authors highlight the limitations of standalone Large Language Models (<em>LLMs</em>) for philosophical inquiry, including their lack of direct access to full texts, restricted context windows, and inability to attribute claims reliably. Consequently, <em>RAG</em> systems emerge as a suitable solution, enabling direct engagement with specific corpora and providing verifiable citations.</p>
+<p>The authors detail a <em>RAG</em> system prototype developed using the <em>Stanford Encyclopedia of Philosophy</em> as its data source. This system aims to facilitate both didactic engagement with philosophical texts and advanced research tasks, such as fact-checking, corpus exploration, and passage identification for close reading. Crucially, the development process revealed that effective <em>RAG</em> implementation necessitates extensive “tweaking” and rigorous, domain-specific evaluation. The system’s architecture includes a frontend for user interaction, a backend for processing, and a comparative output display that benchmarks <em>RAG</em> performance against <em>LLM</em>-only responses.</p>
+<p>A key optimisation involved determining the optimal chunk size for text retrieval. This process revealed that main sections of the highly systematised <em>Stanford Encyclopedia</em> yielded superior results despite their length. These findings underscore <em>RAG</em> systems’ capacity to integrate verbatim corpora and domain knowledge, thereby reducing hallucinations and enabling citation. Nevertheless, the authors caution that <em>RAGs</em> require domain expertise for effective tweaking and evaluation, as their performance remains highly sensitive to the specific corpus, question types, and evaluation criteria. A notable challenge identified involves <em>RAGs’</em> tendency to provide less effective responses to broad overview questions, as their focus on local information can obscure broader perspectives. This observation suggests a future direction towards more flexible, agentic <em>RAG</em> systems capable of discerning question types.</p>
 </section>
 <section id="addressing-philosophical-research-challenges-with-rag-systems" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with <em>RAG</em> Systems</h2>
-<p>Philosophical inquiry often necessitates precise engagement with foundational texts, exemplified by questions such as Aristotle’s theory of matter in the <em>Physics</em> or the evolution of Einstein’s concept of locality from his early relativity works to his 1948 paper on “Quantenmechanik und Wirklichkeit”. Whilst Large Language Models (<em>LLMs</em>) like <em>ChatGPT</em> can offer decent, differentiated answers to such queries, they present several significant limitations for rigorous philosophical research.</p>
+<h2 data-number="12.1" class="anchored" data-anchor-id="addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>Philosophical inquiry frequently necessitates precise engagement with foundational texts. This requirement is exemplified by questions such as Aristotle’s theory of matter in the <em>Physics</em> or the evolution of Einstein’s concept of locality from his early relativity works to his 1948 paper on “Quantenmechanik und Wirklichkeit.” Whilst Large Language Models (<em>LLMs</em>) like <em>ChatGPT</em> can offer decent, differentiated answers to such queries, they present several significant limitations for rigorous philosophical research.</p>
 <p>Primarily, <em>LLMs</em> contend with an inherent problem of access. Although their training data may include full texts, they cannot directly quote specific passages or chapters verbatim without an online search, which itself is constrained by copyright. Crucially, <em>LLM</em> training mechanisms actively prevent verbatim memorisation, instead focusing on learning generalisable statistical rules for text production. Consequently, they cannot provide the deep, fine-grained textual analysis essential for philosophical work. Furthermore, <em>LLMs</em> face a limited context window; even models like <em>ChatGPT 4o</em>, with 128,000 tokens, quickly exhaust their capacity when processing extensive philosophical corpora. Finally, <em>LLMs</em> inherently struggle with attribution, failing to provide verifiable sources or citations for their claims, which can lead to unverified information or outright hallucinations.</p>
 <p>Retrieval-Augmented Generation (<em>RAG</em>) systems offer a robust solution to these challenges. A typical <em>RAG</em> setup integrates a specific data source—such as Aristotle’s or Einstein’s complete works—from which documents are retrieved, often via semantic search, though hybrid or classic search options also exist. The system then augments user prompts with relevant text chunks, directly addressing the limitations of standalone <em>LLMs</em>. This approach resolves the problem of access by providing the <em>LLM</em> with the original text sources, mitigates context window constraints by supplying only relevant segments, and crucially, enables the attribution of claims, offering verifiable citations akin to those found in platforms like <em>Perplexity</em>.</p>
 </section>
 <section id="potential-applications-of-rag-systems-in-philosophy" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of <em>RAG</em> Systems in Philosophy</h2>
+<h2 data-number="12.2" class="anchored" data-anchor-id="potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of RAG Systems in Philosophy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
 <p><em>RAG</em> systems hold significant promise for philosophical applications, fundamentally transforming how scholars and students interact with complex texts. The overarching concept involves enabling users to “chat” with philosophical corpora, such as Locke’s complete works, in a manner akin to <em>ChatGPT</em>, yet with the crucial advantage of providing much more detailed domain knowledge and a verbatim text basis.</p>
-<p>Didactically, these systems prove invaluable. They facilitate student engagement with challenging texts, for instance, allowing students to initiate their exploration of Locke’s <em>Essay</em> by querying its general ideas before progressively delving into specific concepts like his epistemology or theory of matter. This iterative questioning fosters a deeper, more instructive understanding of the texts.</p>
-<p>Beyond pedagogy, <em>RAG</em> systems offer compelling applications for research. They enable reliable fact lookup in handbooks, effectively modernising the traditional process of manually consulting physical books for footnotes and remarks. Furthermore, the authors demonstrate how <em>RAG</em>s can be utilised to explore previously unexamined or newly digitised corpora, gaining comprehensive overviews of their contents. The systems also assist in identifying specific passages relevant for close reading, directly supporting focused scholarly analysis. Ultimately, the ambition extends to generating detailed answers for at least portions of complex research questions, painting a picture of future capabilities in philosophical inquiry.</p>
+<p>Didactically, these systems prove invaluable. They facilitate student engagement with challenging texts; for instance, they allow students to initiate their exploration of Locke’s <em>Essay</em> by querying its general ideas before progressively delving into specific concepts like his epistemology or theory of matter. This iterative questioning fosters a deeper, more instructive understanding of the texts.</p>
+<p>Beyond pedagogy, <em>RAG</em> systems offer compelling applications for research. They enable reliable fact lookup in handbooks, effectively modernising the traditional process of manually consulting physical books for footnotes and remarks. Furthermore, scholars can utilise <em>RAGs</em> to explore previously unexamined or newly digitised corpora, gaining comprehensive overviews of their contents. The systems also assist in identifying specific passages relevant for close reading, directly supporting focused scholarly analysis. Ultimately, the ambition extends to generating detailed answers for at least portions of complex research questions, painting a picture of future capabilities in philosophical inquiry.</p>
 </section>
 <section id="developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example <em>RAG</em> System: The <em>Stanford Encyclopedia of Philosophy</em></h2>
-<p>To explore the practical utility of <em>RAG</em> systems in philosophy, the authors developed an example implementation utilising the <em>Stanford Encyclopedia of Philosophy</em> (<em>SEP</em>), a widely recognised online handbook, as its primary data source. The content of the <em>SEP</em> was meticulously scraped and converted into Markdown format, forming the basis for the system.</p>
-<p>Initially, the project aimed simply to create a beneficial tool for the philosophical community. However, during the development and testing phases, a significant challenge emerged: the <em>RAG</em> system’s initial answers proved surprisingly poor, often performing worse than direct queries to a standalone <em>ChatGPT</em> instance. This necessitated a shift in the project’s focus, evolving into a qualitative study on the optimal setup of <em>RAG</em> systems for philosophical applications.</p>
-<p>Improving the system’s performance demanded extensive “tweaking,” involving adjustments to the underlying language models, optimisation of various hyperparameters, and the implementation of more complex algorithms, such as reranking. The methodology adopted for this iterative improvement was one of theoretically grounded trial and error, systematically identifying which measures enhanced answer quality. This process underscored the critical importance of sound evaluation standards, particularly given the nature of philosophical inquiry. Unlike historical research that might seek atomic facts, philosophical questions often elicit complex, unstructured textual propositions. Evaluating the factual accuracy and nuanced understanding within these propositions presents a distinct challenge, demanding robust and sophisticated evaluation criteria.</p>
+<h2 data-number="12.3" class="anchored" data-anchor-id="developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example RAG System: The Stanford Encyclopedia of Philosophy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>To explore the practical utility of <em>RAG</em> systems in philosophy, the authors developed an example implementation utilising the <em>Stanford Encyclopedia of Philosophy</em> (<em>SEP</em>), a widely recognised online handbook, as its primary data source. They meticulously scraped and converted the <em>SEP</em> content into Markdown format, forming the basis for the system.</p>
+<p>Initially, the project aimed simply to create a beneficial tool for the philosophical community. However, during the development and testing phases, a significant challenge emerged: the authors found the <em>RAG</em> system’s initial answers surprisingly poor, often performing worse than direct queries to a standalone <em>ChatGPT</em> instance. This outcome necessitated a shift in the project’s focus, evolving into a qualitative study on the optimal setup of <em>RAG</em> systems for philosophical applications.</p>
+<p>The authors found that improving the system’s performance demanded extensive “tweaking,” involving adjustments to the underlying language models, optimisation of various hyperparameters, and the implementation of more complex algorithms, such as reranking. For this iterative improvement, they adopted a methodology of theoretically grounded trial and error, systematically identifying which measures enhanced answer quality. This process underscored the critical importance of sound evaluation standards, particularly given the nature of philosophical inquiry. Unlike historical research that might seek atomic facts, philosophical questions often elicit complex, unstructured textual propositions. Evaluating the factual accuracy and nuanced understanding within these propositions presents a distinct challenge, demanding robust and sophisticated evaluation criteria.</p>
 </section>
 <section id="sep-rag-system-overview-and-frontend-details" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> <em>SEP RAG</em> System Overview and Frontend Details</h2>
-<p>The developed <em>SEP RAG</em> system comprises a user-friendly frontend and a robust backend, implemented in several thousand lines of Python code. The frontend provides a clear interface for user interaction, allowing for the configuration of various parameters.</p>
-<p>Specifically, the <em>SEP RAG Details 1</em> section of the frontend presents input fields for critical hyperparameters, including the choice of generative model, the prompt token limit (both model-defined and user-defined), and the number of texts to retrieve. Users can also define a “Persona” for the system and, crucially, input their “Philosophical Question,” exemplified by a query such as “What is priority monism?” A “Generate answer” button initiates the processing.</p>
-<p>For comparative analysis, the <em>SEP RAG Details 2</em> section displays the output in two distinct columns: an “Answer with <em>LLM</em> alone” column serves as a benchmark, whilst the “Answer with <em>RAG</em>” column showcases the system’s enhanced response. This side-by-side presentation facilitates a direct and immediate comparison of performance. Finally, the <em>SEP RAG Details 3</em> section offers a comprehensive “Retrieved Texts Overview.” This detailed list includes file names, section headings, text lengths in tokens, total tokens, and an explicit indication of which texts were successfully included in the prompt and which were truncated due to token limitations.</p>
+<h2 data-number="12.4" class="anchored" data-anchor-id="sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> SEP RAG System Overview and Frontend Details</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>The authors developed the <em>SEP RAG</em> system, which comprises a user-friendly frontend and a robust backend, implemented in several thousand lines of <em>Python</em> code. The frontend provides a clear interface for user interaction, allowing for the configuration of various parameters.</p>
+<p>Specifically, the frontend’s “SEP RAG Details 1” section presents input fields for critical hyperparameters. These include the choice of generative model, the prompt token limit (both model-defined and user-defined), and the number of texts to retrieve. Users can also define a “Persona” for the system and, crucially, input their “Philosophical Question,” exemplified by a query such as “What is priority monism?” A “Generate answer” button initiates the processing.</p>
+<p>For comparative analysis, the “SEP RAG Details 2” section displays the output in two distinct columns: an “Answer with <em>LLM</em> alone” column serves as a benchmark, whilst the “Answer with <em>RAG</em>” column showcases the system’s enhanced response. This side-by-side presentation facilitates a direct and immediate comparison of performance. Finally, the “SEP RAG Details 3” section offers a comprehensive “Retrieved Texts Overview.” This detailed list includes file names, section headings, text lengths in tokens, total tokens, and an explicit indication of which texts were successfully included in the prompt and which were truncated due to token limitations.</p>
 </section>
 <section id="optimising-chunk-size-a-philosophical-perspective" class="level2" data-number="12.5">
 <h2 data-number="12.5" class="anchored" data-anchor-id="optimising-chunk-size-a-philosophical-perspective"><span class="header-section-number">12.5</span> Optimising Chunk Size: A Philosophical Perspective</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
 <p>Optimising the chunk size represents a critical hyperparameter adjustment in <em>RAG</em> system development. The authors explored three primary chunking options: a fixed number of words, typically around 500 tokens, a common and straightforward criterion in computer science; chunking by paragraphs; and chunking by sections, whether at a low or high level.</p>
-<p>Remarkably, the most effective results emerged from utilising the main sections of the <em>Stanford Encyclopedia of Philosophy</em> as the primary retrieval documents. This outcome proved surprising, particularly given that the average section length, at approximately 3,000 words, substantially exceeded the embedding model’s typical cutoff of just over 500 words. The authors hypothesise that this success stems from the highly systematised nature of the <em>Stanford Encyclopedia</em>; its main sections are so well-structured that their initial 500 words often convey the core ideas effectively.</p>
+<p>Remarkably, the most effective results emerged from utilising the main sections of the <em>Stanford Encyclopedia of Philosophy</em> as the primary retrieval documents. This outcome surprised the authors, particularly given that the average section length, at approximately 3,000 words, substantially exceeded the embedding model’s typical cutoff of just over 500 words. The authors hypothesise that this success stems from the highly systematised nature of the <em>Stanford Encyclopedia</em>; its main sections are so well-structured that their initial 500 words often convey the core ideas effectively.</p>
 <p>Nevertheless, this finding carries a crucial generalisability caveat. This section-based chunking strategy might not prove effective for more heterogeneous texts that lack such rigorous internal organisation. Philosophical arguments, in particular, frequently “spread” across multiple pages, requiring extensive explanation beyond the confines of a single paragraph. Consequently, chunking by paragraphs can artificially fragment semantically coherent arguments, diminishing the quality of the retrieved information.</p>
 </section>
 <section id="results-cautions-and-open-challenges-in-rag-implementation" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in <em>RAG</em> Implementation</h2>
+<h2 data-number="12.6" class="anchored" data-anchor-id="results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in RAG Implementation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
 <p><em>RAG</em> systems offer compelling advantages for scholarly applications. They seamlessly integrate verbatim corpora and highly specific domain knowledge, which dramatically reduces the occurrence of hallucinations whilst enabling the citation of relevant documents for generated answers. Consequently, <em>RAG</em> setups are inherently well-suited to assist with a diverse array of scientific tasks.</p>
-<p>Nevertheless, the presenters highlight crucial cautions. Firstly, <em>RAG</em> systems fundamentally necessitate extensive “tweaking” to achieve optimal performance. Secondly, rigorous evaluation proves indispensable, demanding a representative set of questions and corresponding expected answers. This evaluation process, moreover, critically requires the involvement of domain experts, as no single <em>RAG</em> setup can universally claim superiority across all domains, corpus types, or question types. Each implementation demands specific tailoring.</p>
-<p>Several open challenges persist. A significant issue arises when the system fails to retrieve relevant documents, leading to a noticeable decrease in answer quality and necessitating prompt adjustments. Intriguingly, <em>RAG</em>s often yield inferior results for widely discussed overview questions, such as “What are the central arguments against scientific realism?” This counterintuitive outcome stems from <em>RAG</em>s’ inherent focus on the local information contained within retrieved chunks; this granular focus can inadvertently distract from the broader perspective required for comprehensive overview responses. Addressing this limitation necessitates the development of more flexible systems capable of discerning different question types, thereby paving the way for the emergence of more sophisticated, agentic <em>RAG</em> systems.</p>
+<p>Nevertheless, the authors highlight crucial cautions. Firstly, <em>RAG</em> systems fundamentally necessitate extensive “tweaking” to achieve optimal performance. Secondly, rigorous evaluation proves indispensable, demanding a representative set of questions and corresponding expected answers. This evaluation process, moreover, critically requires the involvement of domain experts, as no single <em>RAG</em> setup can universally claim superiority across all domains, corpus types, or question types. Each implementation demands specific tailoring.</p>
+<p>Several open challenges persist. A significant issue arises when the system fails to retrieve relevant documents, leading to a noticeable decrease in answer quality and necessitating prompt adjustments. Intriguingly, <em>RAGs</em> often yield inferior results for widely discussed overview questions, such as “What are the central arguments against scientific realism?” This counterintuitive outcome stems from <em>RAGs’</em> inherent focus on the local information contained within retrieved chunks; this granular focus can inadvertently distract from the broader perspective required for comprehensive overview responses. Addressing this limitation, the authors suggest developing more flexible systems capable of discerning different question types, thereby paving the way for the emergence of more sophisticated, agentic <em>RAG</em> systems.</p>
 
 
 </section>

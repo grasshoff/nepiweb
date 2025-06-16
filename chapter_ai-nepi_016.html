@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Francis Lareau &amp; Christophe Malaterre">
-<meta name="dcterms.date" content="2025-01-01">
 
 <title>14&nbsp; Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
@@ -44,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85125aaa381e97e617f4eb7319a810c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,19 +124,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -235,20 +234,19 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#research-question-and-study-design" id="toc-research-question-and-study-design" class="nav-link" data-scroll-target="#research-question-and-study-design"><span class="header-section-number">14.1</span> Research Question and Study Design</a></li>
-  <li><a href="#topic-modelling-methodologies" id="toc-topic-modelling-methodologies" class="nav-link" data-scroll-target="#topic-modelling-methodologies"><span class="header-section-number">14.2</span> Topic Modelling Methodologies</a></li>
-  <li><a href="#corpus-and-qualitative-comparison-framework" id="toc-corpus-and-qualitative-comparison-framework" class="nav-link" data-scroll-target="#corpus-and-qualitative-comparison-framework"><span class="header-section-number">14.3</span> Corpus and Qualitative Comparison Framework</a></li>
-  <li><a href="#quantitative-analysis-metrics" id="toc-quantitative-analysis-metrics" class="nav-link" data-scroll-target="#quantitative-analysis-metrics"><span class="header-section-number">14.4</span> Quantitative Analysis Metrics</a></li>
-  <li><a href="#results-adjusted-rand-index-analysis" id="toc-results-adjusted-rand-index-analysis" class="nav-link" data-scroll-target="#results-adjusted-rand-index-analysis"><span class="header-section-number">14.5</span> Results: Adjusted Rand Index Analysis</a></li>
-  <li><a href="#results-lda-model-inter-comparisons" id="toc-results-lda-model-inter-comparisons" class="nav-link" data-scroll-target="#results-lda-model-inter-comparisons"><span class="header-section-number">14.6</span> Results: LDA Model Inter-Comparisons</a></li>
-  <li><a href="#results-bertopic-model-inter-comparisons" id="toc-results-bertopic-model-inter-comparisons" class="nav-link" data-scroll-target="#results-bertopic-model-inter-comparisons"><span class="header-section-number">14.7</span> Results: BERTopic Model Inter-Comparisons</a></li>
-  <li><a href="#results-lda-top-word-correspondence" id="toc-results-lda-top-word-correspondence" class="nav-link" data-scroll-target="#results-lda-top-word-correspondence"><span class="header-section-number">14.8</span> Results: LDA Top-Word Correspondence</a></li>
-  <li><a href="#results-bertopic-top-word-correspondence" id="toc-results-bertopic-top-word-correspondence" class="nav-link" data-scroll-target="#results-bertopic-top-word-correspondence"><span class="header-section-number">14.9</span> Results: BERTopic Top-Word Correspondence</a></li>
-  <li><a href="#results-coherence-performance" id="toc-results-coherence-performance" class="nav-link" data-scroll-target="#results-coherence-performance"><span class="header-section-number">14.10</span> Results: Coherence Performance</a></li>
-  <li><a href="#results-diversity-performance" id="toc-results-diversity-performance" class="nav-link" data-scroll-target="#results-diversity-performance"><span class="header-section-number">14.11</span> Results: Diversity Performance</a></li>
-  <li><a href="#results-joint-recall-performance" id="toc-results-joint-recall-performance" class="nav-link" data-scroll-target="#results-joint-recall-performance"><span class="header-section-number">14.12</span> Results: Joint Recall Performance</a></li>
-  <li><a href="#overall-model-performance-summary" id="toc-overall-model-performance-summary" class="nav-link" data-scroll-target="#overall-model-performance-summary"><span class="header-section-number">14.13</span> Overall Model Performance Summary</a></li>
-  <li><a href="#discussion-and-future-directions" id="toc-discussion-and-future-directions" class="nav-link" data-scroll-target="#discussion-and-future-directions"><span class="header-section-number">14.14</span> Discussion and Future Directions</a></li>
+  <li><a href="#research-question-and-methodological-approach" id="toc-research-question-and-methodological-approach" class="nav-link" data-scroll-target="#research-question-and-methodological-approach"><span class="header-section-number">14.1</span> Research Question and Methodological Approach</a></li>
+  <li><a href="#material-astrobiology-corpus-for-qualitative-comparison" id="toc-material-astrobiology-corpus-for-qualitative-comparison" class="nav-link" data-scroll-target="#material-astrobiology-corpus-for-qualitative-comparison"><span class="header-section-number">14.2</span> Material: Astrobiology Corpus for Qualitative Comparison</a></li>
+  <li><a href="#methodology-quantitative-analysis-metrics" id="toc-methodology-quantitative-analysis-metrics" class="nav-link" data-scroll-target="#methodology-quantitative-analysis-metrics"><span class="header-section-number">14.3</span> Methodology: Quantitative Analysis Metrics</a></li>
+  <li><a href="#results-adjusted-rand-index-between-topic-models" id="toc-results-adjusted-rand-index-between-topic-models" class="nav-link" data-scroll-target="#results-adjusted-rand-index-between-topic-models"><span class="header-section-number">14.4</span> Results: Adjusted Rand Index Between Topic Models</a></li>
+  <li><a href="#results-lda-full-text-versus-abstracts-and-titles" id="toc-results-lda-full-text-versus-abstracts-and-titles" class="nav-link" data-scroll-target="#results-lda-full-text-versus-abstracts-and-titles"><span class="header-section-number">14.5</span> Results: LDA Full-text Versus Abstracts and Titles</a></li>
+  <li><a href="#results-bertopic-full-text-versus-abstracts-and-titles" id="toc-results-bertopic-full-text-versus-abstracts-and-titles" class="nav-link" data-scroll-target="#results-bertopic-full-text-versus-abstracts-and-titles"><span class="header-section-number">14.6</span> Results: BERTopic Full-text Versus Abstracts and Titles</a></li>
+  <li><a href="#results-lda---comparing-top-words" id="toc-results-lda---comparing-top-words" class="nav-link" data-scroll-target="#results-lda---comparing-top-words"><span class="header-section-number">14.7</span> Results: LDA - Comparing Top-words</a></li>
+  <li><a href="#results-bertopic---comparing-top-words" id="toc-results-bertopic---comparing-top-words" class="nav-link" data-scroll-target="#results-bertopic---comparing-top-words"><span class="header-section-number">14.8</span> Results: BERTopic - Comparing Top-words</a></li>
+  <li><a href="#results-of-quantitative-analysis-coherence" id="toc-results-of-quantitative-analysis-coherence" class="nav-link" data-scroll-target="#results-of-quantitative-analysis-coherence"><span class="header-section-number">14.9</span> Results of Quantitative Analysis: Coherence</a></li>
+  <li><a href="#results-of-quantitative-analysis-diversity" id="toc-results-of-quantitative-analysis-diversity" class="nav-link" data-scroll-target="#results-of-quantitative-analysis-diversity"><span class="header-section-number">14.10</span> Results of Quantitative Analysis: Diversity</a></li>
+  <li><a href="#results-of-quantitative-analysis-joint-recall" id="toc-results-of-quantitative-analysis-joint-recall" class="nav-link" data-scroll-target="#results-of-quantitative-analysis-joint-recall"><span class="header-section-number">14.11</span> Results of Quantitative Analysis: Joint Recall</a></li>
+  <li><a href="#summary-of-model-performance" id="toc-summary-of-model-performance" class="nav-link" data-scroll-target="#summary-of-model-performance"><span class="header-section-number">14.12</span> Summary of Model Performance</a></li>
+  <li><a href="#discussion-and-conclusion" id="toc-discussion-and-conclusion" class="nav-link" data-scroll-target="#discussion-and-conclusion"><span class="header-section-number">14.13</span> Discussion and Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -278,12 +276,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta column-body">
 
       
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -295,91 +287,162 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>The authors conducted a comparative study, systematically evaluating the performance of <em>Latent Dirichlet Allocation</em> (<em>LDA</em>) and <em>BERTopic</em> across distinct textual granularities: titles, abstracts, and full texts. This investigation addresses a pivotal inquiry within topic modelling, a crucial analytical tool for scrutinising extensive volumes of scientific literature, particularly within the history, philosophy, and sociology of science. Topic modelling extracts themes from corpora, enabling the identification of research trends, paradigm shifts, substructures, interrelations of themes, and the evolution of scientific vocabulary.</p>
-<p>The study’s core objective was to ascertain whether analysing titles or abstracts suffices for robust topic modelling, or if full-text analysis remains indispensable. This question arises given the substantial resources required for obtaining, preprocessing, and analysing comprehensive corpora. To achieve this, the research team constituted a corpus of scientific articles, meticulously identifying and segmenting title, abstract, and full-text sections. Subsequently, they applied both <em>LDA</em> and <em>BERTopic</em> approaches to each textual level. A dual analytical framework, encompassing both qualitative and quantitative methods, then facilitated the comparison of the resulting topic models. This rigorous methodology involved assessing model similarities, topic diversity, joint recall, and coherence, whilst leveraging a well-known astrobiology corpus for qualitative validation.</p>
+<p>This chapter details a comparative study assessing the efficacy of <em>Latent Dirichlet Allocation</em> (<em>LDA</em>) and <em>BERTopic</em> models when applied to distinct textual levels: titles, abstracts, and full texts within a scientific corpus. The authors aimed to ascertain whether topic modelling on titles or abstracts suffices, or if full-text analysis remains indispensable, particularly given the substantial resources required for its processing.</p>
+<p>Their methodology involved constituting a corpus of scientific articles, segmenting these into titles, abstracts, and full texts, and subsequently applying both <em>LDA</em> and <em>BERTopic</em> approaches. A comprehensive analysis, encompassing both qualitative and quantitative methods, facilitated the comparison of the resulting topic models. Key quantitative metrics included the <em>Adjusted Rand Index</em>, <em>Topic Diversity</em>, <em>Joint Recall</em>, and <em>Coherence CV</em>.</p>
+<p>The authors’ findings indicate that title-based models generally exhibit poor performance, whilst abstract models consistently demonstrate robust and meaningful topic extraction, often aligning well with full-text models. Full-text models, whilst offering comprehensive coverage, can present challenges such as loosely defined topics or class-size imbalances, particularly with <em>BERTopic</em>. Ultimately, the study recommends employing topic modelling on abstracts or full texts with either <em>LDA</em> or <em>BERTopic</em>, provided such approaches do not lead to misclassification of relevant documents.</p>
 </section>
-<section id="research-question-and-study-design" class="level2" data-number="14.1">
-<h2 data-number="14.1" class="anchored" data-anchor-id="research-question-and-study-design"><span class="header-section-number">14.1</span> Research Question and Study Design</h2>
-<p>This research addresses a pivotal question within the domain of topic modelling: does analysing titles or abstracts provide sufficient data, or does full-text analysis remain a prerequisite? Topic modelling, a technique for extracting thematic content from textual corpora, has emerged as an indispensable tool for scrutinising extensive scientific literature, particularly within the history, philosophy, and sociology of science. Indeed, scholars employ it for diverse tasks, including identifying research trends, discerning paradigm shifts, uncovering substructures, mapping thematic interrelations, and tracing the evolution of scientific vocabulary.</p>
-<p>Crucially, existing studies apply topic modelling across various textual structures, encompassing titles, abstracts, and complete articles. This practice, however, raises a significant concern: obtaining, preprocessing, and analysing full-text corpora demand considerable resources. Consequently, the efficiency of utilising shorter textual forms becomes a pressing inquiry.</p>
-<p>To investigate this, the authors meticulously constituted a corpus of scientific articles. They then precisely identified and isolated the title, abstract, and full-text sections within each document. Subsequently, they applied two distinct topic modelling approaches—<em>Latent Dirichlet Allocation</em> (<em>LDA</em>) and <em>BERTopic</em>—to each of these textual levels. A comprehensive analytical framework, integrating both qualitative and quantitative methods, facilitated the systematic comparison of the resultant topic models. This rigorous design ensured a thorough evaluation of performance across different model types and textual granularities.</p>
+<section id="research-question-and-methodological-approach" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="research-question-and-methodological-approach"><span class="header-section-number">14.1</span> Research Question and Methodological Approach</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>This research addresses a critical inquiry: whether applying topic modelling solely to titles or abstracts suffices, or if full-text analysis remains an indispensable requirement. This question gains particular urgency given the substantial resources demanded for the acquisition, preprocessing, and subsequent analysis of extensive full-text corpora.</p>
+<p>To investigate this, the authors meticulously constituted a corpus of scientific articles. They then systematically identified and segmented the title, abstract, and full-text sections from each article. Subsequently, they applied two prominent topic modelling approaches—<em>Latent Dirichlet Allocation</em> (<em>LDA</em>) and <em>BERTopic</em>—to each of these textual levels. The resulting topic models underwent rigorous analysis and comparison, employing both qualitative and quantitative methodologies.</p>
+<p>The overall workflow involved segmenting the scientific corpus into titles, abstracts, and full texts. Each segment then served as input for both <em>LDA</em> and <em>BERTopic</em> models. The outputs from these models were then subjected to both qualitative and quantitative scrutiny. This comprehensive approach aimed to provide robust insights into the comparative performance of these models across different textual granularities.</p>
+<p>Beyond this specific investigation, topic modelling itself stands as a vital analytical instrument for processing vast scientific literature, especially within the history, philosophy, and sociology of science. Historically, researchers have deployed topic modelling for diverse tasks, including discerning research trends and paradigm shifts, identifying thematic substructures and interrelationships, and charting the evolution of scientific vocabulary. These prior applications have consistently involved various textual structures, ranging from titles and abstracts to complete full texts.</p>
 </section>
-<section id="topic-modelling-methodologies" class="level2" data-number="14.2">
-<h2 data-number="14.2" class="anchored" data-anchor-id="topic-modelling-methodologies"><span class="header-section-number">14.2</span> Topic Modelling Methodologies</h2>
-<p>The study employed two principal topic modelling methodologies: <em>Latent Dirichlet Allocation</em> (<em>LDA</em>) and <em>BERTopic</em>. Both approaches fundamentally postulate that documents can be represented as numerical vectors. Within this framework, topics become identifiable through the detection of linguistic regularities, specifically repetitions, whilst machine learning algorithms facilitate the automatic discovery of these patterns.</p>
-<p><em>LDA</em>, a classical statistical technique, constructs simple vector representations by counting words within documents. In this established approach, topics manifest as latent variables, adhering to Dirichlet’s law. Crucially, <em>LDA</em> readily accommodates extensive textual content, allowing for its application to titles, abstracts, or full texts.</p>
-<p>Conversely, <em>BERTopic</em> represents a more recent, modular methodology. It leverages <em>Large Language Model</em> (<em>LLM</em>)-based vector representations, originally drawing upon <em>BERT</em>, which lends the approach its name. Here, topics emerge as clusters of documents. Historically, <em>BERTopic</em> struggled with processing lengthy texts; however, for this investigation, the authors integrated a novel embedding technique. This advancement significantly enhanced <em>BERTopic</em>’s capacity, enabling it to process approximately 131,000 tokens, thereby facilitating its application to full-text analysis.</p>
+<section id="material-astrobiology-corpus-for-qualitative-comparison" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="material-astrobiology-corpus-for-qualitative-comparison"><span class="header-section-number">14.2</span> Material: Astrobiology Corpus for Qualitative Comparison</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>The authors grounded this study in an extensive topic analysis of an astrobiology corpus, previously detailed by Malaterre and Lareau in 2023. Following a thorough evaluation process, they selected a full-text <em>LDA</em> model comprising 25 distinct topics as the primary material for comparison.</p>
+<p>Their analysis of these 25 topics involved a meticulous examination of their most representative words and documents, enabling the authors to assign a descriptive name to each topic based on its key terms. Subsequently, they compared the topics by calculating their mutual correlation, a metric derived from the topics’ presence within the documents. A community detection algorithm then identified four thematic clusters, designated by letters A, B, C, and D, and visually distinguished by red, green, yellow, and blue colours, respectively.</p>
+<p>A graphical representation visually conveys these findings, illustrating the correlations amongst the 25 topics. This graph incorporates topic labels and the colour variations corresponding to their thematic clusters. Crucially, the thickness of the lines connecting topics denotes the strength of their correlation, whilst the size of each circle reflects the topic’s overall prevalence across all documents. This comprehensive analytical framework enables a robust qualitative comparison of the six distinct topic models under investigation.</p>
 </section>
-<section id="corpus-and-qualitative-comparison-framework" class="level2" data-number="14.3">
-<h2 data-number="14.3" class="anchored" data-anchor-id="corpus-and-qualitative-comparison-framework"><span class="header-section-number">14.3</span> Corpus and Qualitative Comparison Framework</h2>
-<p>The study’s qualitative comparisons drew upon a meticulously analysed astrobiology corpus, previously detailed by Malaterre and Lareau in 2023. Following a comprehensive evaluation, the authors selected a full-text <em>LDA</em> model comprising 25 distinct topics to serve as a foundational reference.</p>
-<p>Scholars meticulously analysed these 25 topics, examining their most representative words and documents. This process facilitated the generation of a concise label for each topic, derived directly from its key terms. Subsequently, they compared the topics by calculating their mutual correlation, a metric based on the topics’ presence within individual documents. A community detection algorithm then identified four distinct thematic clusters, designated A, B, C, and D, and visually distinguished by red, green, yellow, and blue hues respectively.</p>
-<p>A graphical representation visually conveyed these findings, illustrating the correlations amongst the 25 topics, complete with their assigned labels and cluster affiliations. In this visualisation, the thickness of the connecting lines denoted the strength of the correlation between topics, whilst the size of each circular node indicated the topic’s overall prevalence across the entire document collection. This established analytical framework provided a robust basis for the qualitative assessment of the six topic models under investigation.</p>
+<section id="methodology-quantitative-analysis-metrics" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="methodology-quantitative-analysis-metrics"><span class="header-section-number">14.3</span> Methodology: Quantitative Analysis Metrics</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>For the quantitative dimension of this study, the authors employed four distinct metrics to compare the various topic models. Firstly, the <em>Adjusted Rand Index</em> (<em>ARI</em>) served to evaluate the similarity between two document clusterings, with a correction applied for chance agreement. This metric precisely quantifies the extent to which documents cluster together, or diverge, across different models.</p>
+<p>Secondly, <em>Topic Diversity</em> assessed the proportion of distinct top words, thereby determining whether individual topics within a given model were characterised by unique vocabulary. Thirdly, <em>Joint Recall</em> measured the average document-topic recall in relation to any topic’s top words, evaluating how effectively these top words collectively represented the documents assigned to each topic. Finally, <em>Coherence CV</em>, calculated as the average cosine relative distance between top words within topics, provided an assessment of whether these top words formed a semantically meaningful grouping. Each of these metrics is underpinned by specific mathematical formulations, ensuring rigorous quantitative comparison.</p>
 </section>
-<section id="quantitative-analysis-metrics" class="level2" data-number="14.4">
-<h2 data-number="14.4" class="anchored" data-anchor-id="quantitative-analysis-metrics"><span class="header-section-number">14.4</span> Quantitative Analysis Metrics</h2>
-<p>For quantitative analysis, the authors employed four distinct metrics to rigorously compare the topic models.</p>
-<ul>
-<li><p>Firstly, the Adjusted Rand Index (<em>ARI</em>) served to evaluate the similarity between any two document clusterings, whilst correcting for chance agreement. This metric precisely assessed the degree to which documents tended to cluster together across different models.</p></li>
-<li><p>Secondly, Topic Diversity quantified the proportion of distinct top words within a given topic model, thereby evaluating whether individual topics were indeed characterised by unique vocabularies.</p></li>
-<li><p>Thirdly, Joint Recall measured the average document-topic recall in relation to any topic’s top words. This metric critically assessed how effectively the top words collectively represented the documents assigned to each topic.</p></li>
-<li><p>Finally, Coherence CV, calculated as the average cosine relative distance between top words within topics, determined whether the constituent words of a topic exhibited a meaningful semantic relationship.</p></li>
-</ul>
+<section id="results-adjusted-rand-index-between-topic-models" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="results-adjusted-rand-index-between-topic-models"><span class="header-section-number">14.4</span> Results: Adjusted Rand Index Between Topic Models</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_07.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 07</figcaption>
+</figure>
+</div>
+<p>The <em>Adjusted Rand Index</em> (<em>ARI</em>) provides crucial insights into the similarities amongst the six topic models. A value of zero for this metric indicates a clustering equivalent to random assignment. Analysis of the heatmap reveals that the <em>LDA</em> model applied to titles stands out as the most distinct, consistently demonstrating poor similarity with all other models, as evidenced by <em>ARI</em> values below 0.20, depicted by yellow hues in the visualisation.</p>
+<p>Conversely, the remaining models generally exhibit a superior overall match, with <em>ARI</em> values consistently exceeding 0.20. Notably, <em>BERTopic</em> models display a stronger internal correspondence, with their inter-model <em>ARI</em> values typically surpassing 0.35. The <em>BERTopic</em> abstract model emerges as particularly central within this network of similarities, demonstrating robust correspondence with every other model, apart from the outlier <em>LDA</em> title model, with values consistently above 0.30. The heatmap visually encapsulates these relationships, where warmer colours signify higher degrees of similarity between the compared topic models.</p>
 </section>
-<section id="results-adjusted-rand-index-analysis" class="level2" data-number="14.5">
-<h2 data-number="14.5" class="anchored" data-anchor-id="results-adjusted-rand-index-analysis"><span class="header-section-number">14.5</span> Results: Adjusted Rand Index Analysis</h2>
-<p>The Adjusted Rand Index (<em>ARI</em>) provided initial insights into the similarities amongst the six topic models. A score of zero on this metric signifies a random clustering, establishing a baseline for comparison. Analysis revealed that the <em>LDA</em> model applied to titles exhibited the most pronounced dissimilarity from all other models, consistently registering <em>ARI</em> values below 0.2 within the heatmap.</p>
-<p>Conversely, the remaining models generally achieved a superior overall match, with <em>ARI</em> scores exceeding 0.2. Notably, <em>BERTopic</em> models demonstrated a stronger mutual fit, consistently yielding values above 0.35. Amongst these, the <em>BERTopic</em> abstract model emerged as particularly central, correlating effectively with every other model, save for the outlier <em>LDA</em> title model.</p>
+<section id="results-lda-full-text-versus-abstracts-and-titles" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="results-lda-full-text-versus-abstracts-and-titles"><span class="header-section-number">14.5</span> Results: LDA Full-text Versus Abstracts and Titles</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>A more granular analysis of the <em>LDA</em> models provides detailed insights into their interrelationships. Table A, which compares the <em>LDA</em> full-text model with the <em>LDA</em> abstract model, indicates a generally good overall fit. This strong correspondence is evident from the reddish diagonal in the table, signifying that each topic from one model typically aligns with a topic from the other, sharing a high proportion of common documents.</p>
+<p>However, this alignment is not without dynamic shifts. Three full-text <em>LDA</em> topics effectively disappear, represented by long horizontal dark grey lines. Conversely, three full-text topics fragment into multiple topics within the abstract model, visible as short horizontal dark grey lines. The abstract model also sees the emergence of three entirely new topics, marked by long vertical dark grey lines, whilst three topics arise from mergers, again indicated by short horizontal dark grey lines. Furthermore, one small class, comprising fewer than 50 documents, is discernible within the abstract topics.</p>
+<p>In stark contrast, Table B, comparing the <em>LDA</em> full-text model with the <em>LDA</em> title model, reveals a poor overall fit. This disparity necessitates substantial reorganisation, manifested by a proliferation of vertical and horizontal dark lines across the table. This indicates that numerous full-text topics vanish, whilst a considerable number of new abstract topics emerge, highlighting a significant divergence in thematic representation.</p>
 </section>
-<section id="results-lda-model-inter-comparisons" class="level2" data-number="14.6">
-<h2 data-number="14.6" class="anchored" data-anchor-id="results-lda-model-inter-comparisons"><span class="header-section-number">14.6</span> Results: LDA Model Inter-Comparisons</h2>
-<p>A more granular analysis of the <em>LDA</em> models provided detailed insights into their inter-relationships. Comparing <em>LDA</em> Full-text with <em>LDA</em> Abstract (Table A) revealed a generally strong fit. A distinct reddish diagonal in the table indicated that each topic from one model largely corresponded to a topic in the other, sharing a high proportion of common documents. Despite this overall alignment, some dynamic shifts occurred: three full-text <em>LDA</em> topics entirely disappeared, whilst another three split into multiple topics within the abstract model. Concurrently, three novel abstract topics emerged, and three abstract topics resulted from the merger of others. Furthermore, one small class within the abstract topics contained fewer than 50 documents.</p>
-<p>In stark contrast, the comparison between <em>LDA</em> Full-text and <em>LDA</em> Title (Table B) demonstrated a poor fit, necessitating substantial reorganisation. This disparity manifested as numerous full-text topics vanishing and a proliferation of new topics appearing within the title model, underscoring the limited correspondence between these two textual granularities for <em>LDA</em>.</p>
+<section id="results-bertopic-full-text-versus-abstracts-and-titles" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="results-bertopic-full-text-versus-abstracts-and-titles"><span class="header-section-number">14.6</span> Results: BERTopic Full-text Versus Abstracts and Titles</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_09.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 09</figcaption>
+</figure>
+</div>
+<p>Analysis of the <em>BERTopic</em> models, when compared against the <em>LDA</em> full-text baseline, reveals varied performance. Table C, which juxtaposes <em>LDA</em> full-text with <em>BERTopic</em> full-text, indicates an average overall fit. Within this comparison, eight <em>LDA</em> topics vanish along the horizontal axis, whilst six <em>LDA</em> topics fragment into the <em>BERTopic</em> model. Conversely, the vertical axis shows the emergence of five new <em>BERTopic</em> topics, with one topic resulting from mergers. A notable observation from the total document count is the presence of four small classes alongside one exceptionally large class.</p>
+<p>Moving to Table D, the comparison between <em>LDA</em> full-text and <em>BERTopic</em> abstract demonstrates a relatively good overall fit. Here, four <em>LDA</em> topics disappear, whilst six topics undergo splitting. The vertical axis reveals two new <em>BERTopic</em> topics appearing and four topics resulting from mergers. Crucially, this model maintains balanced class sizes.</p>
+<p>Finally, Table E, comparing <em>LDA</em> full-text with <em>BERTopic</em> title, again indicates an average overall fit. In this instance, seven <em>LDA</em> topics disappear, and one topic splits. The vertical axis shows seven new <em>BERTopic</em> topics emerging, with one topic resulting from a merger. The total document count for this model highlights three small classes and one large class. These heatmaps collectively illustrate the proportions of shared documents between topics across these diverse model comparisons.</p>
 </section>
-<section id="results-bertopic-model-inter-comparisons" class="level2" data-number="14.7">
-<h2 data-number="14.7" class="anchored" data-anchor-id="results-bertopic-model-inter-comparisons"><span class="header-section-number">14.7</span> Results: BERTopic Model Inter-Comparisons</h2>
-<p>Analysis of the <em>BERTopic</em> models, particularly in comparison with <em>LDA</em> Full-text, revealed varied levels of correspondence. Comparing <em>LDA</em> Full-text with <em>BERTopic</em> Full-text (Table C) indicated an average overall fit. Within this comparison, eight topics from the <em>LDA</em> model disappeared, whilst six topics split into the <em>BERTopic</em> model. Conversely, five new topics emerged within the <em>BERTopic</em> model, and one topic resulted from mergers. Furthermore, the document distribution showed four small classes alongside one notably large class.</p>
-<p>The comparison between <em>LDA</em> Full-text and <em>BERTopic</em> Abstract (Table D) demonstrated a relatively good fit. Here, four topics disappeared, six topics split, two new topics appeared, and four topics resulted from mergers.</p>
-<p>Finally, examining <em>LDA</em> Full-text against <em>BERTopic</em> Title (Table E) again indicated an average overall fit. In this instance, seven topics disappeared, whilst one topic split. Simultaneously, seven new topics emerged, and one topic resulted from a merger. The document distribution for this comparison revealed three small classes and one large class.</p>
+<section id="results-lda---comparing-top-words" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="results-lda---comparing-top-words"><span class="header-section-number">14.7</span> Results: LDA - Comparing Top-words</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>An examination of the top words within the <em>LDA</em> models revealed that topics were generally well-formed across all iterations. The authors observed several robust topics that maintained strong correspondence across the full-text, abstract, and title models. The topic “A-Radiation-spore” serves as a prime example of this consistency.</p>
+<p>Conversely, certain topics from the full-text model fragmented into multiple, more granular topics within both the abstract and title models. For instance, the splitting of “A-Life-civilization” proved semantically coherent, yielding a broader topic encompassing research in astrobiology. However, the fragmentation of “B-Chemistry” presented a more ambiguous case, necessitating further analysis for clear interpretation.</p>
+<p>Furthermore, the study identified instances where topics from the full-text model coalesced into new, merged topics within the abstract and title models. A notable example is the merger of “B-Amino-acid” and “B-Protein-gene-rna” in the <em>LDA</em> abstract model. This particular consolidation formed a more general topic, which aligns logically with the underlying subject matter. The visual representation provides side-by-side tables illustrating the top words for selected topics across these <em>LDA</em> models.</p>
 </section>
-<section id="results-lda-top-word-correspondence" class="level2" data-number="14.8">
-<h2 data-number="14.8" class="anchored" data-anchor-id="results-lda-top-word-correspondence"><span class="header-section-number">14.8</span> Results: LDA Top-Word Correspondence</h2>
-<p>An examination of the top words within the <em>LDA</em> models revealed that topics generally maintained a relatively well-formed structure across all iterations. The authors identified several robust topics exhibiting strong correspondence across every <em>LDA</em> model; “A-Radiation spore” serves as a prime example of such consistency.</p>
-<p>Conversely, certain topics from the full-text model fragmented across the abstract and title models. For instance, “A-Life civilization” split into multiple sub-topics, a division that logically aligned with the broader theme of research in astrobiology. However, the fragmentation of “B-Chemistry” proved more challenging to interpret without deeper investigation.</p>
-<p>Furthermore, the analysis uncovered instances where topics from the full-text model merged into new, consolidated topics within the abstract and title models. The fusion of “B-Amino-acid” and “B-Protein-gene-RNA” exemplified this phenomenon, forming a more generalised and coherent thematic unit.</p>
+<section id="results-bertopic---comparing-top-words" class="level2" data-number="14.8">
+<h2 data-number="14.8" class="anchored" data-anchor-id="results-bertopic---comparing-top-words"><span class="header-section-number">14.8</span> Results: BERTopic - Comparing Top-words</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>Continuing the assessment of top words, the three <em>BERTopic</em> models also yielded relatively well-formed topics. The robustness of “A-Radiation-spore” persisted across all models, including <em>LDA</em> Full-text, <em>BERTopic</em> Full-text, <em>BERTopic</em> Abstract, and <em>BERTopic</em> Title, underscoring its consistent thematic representation.</p>
+<p>Whilst “A-Life-civilization” generally maintained its stability across the <em>BERTopic</em> models, it exhibited some instances of splitting. This fragmentation led to the emergence of more narrowly defined topics specifically pertaining to extraterrestrial life. Similarly, the “B-Chemistry” topic also underwent splitting across the <em>BERTopic</em> models, resulting in a series of more focused thematic areas. The visual data provides comparative tables of top words from selected topics across these models.</p>
 </section>
-<section id="results-bertopic-top-word-correspondence" class="level2" data-number="14.9">
-<h2 data-number="14.9" class="anchored" data-anchor-id="results-bertopic-top-word-correspondence"><span class="header-section-number">14.9</span> Results: BERTopic Top-Word Correspondence</h2>
-<p>Continuing the assessment of top words, the three <em>BERTopic</em> models consistently yielded relatively well-formed topics. Notably, “A-Radiation spore” again demonstrated remarkable robustness, maintaining its coherence across all <em>BERTopic</em> iterations. Similarly, “A-Life civilization” remained comparatively stable across the models, albeit with some observed splitting.</p>
-<p>This fragmentation of “A-Life civilization” specifically led to the emergence of narrower topics, focusing precisely on extraterrestrial life. Furthermore, the splitting of “B-Chemistry” across the <em>BERTopic</em> models also resulted in more specialised, narrower thematic categories.</p>
+<section id="results-of-quantitative-analysis-coherence" class="level2" data-number="14.9">
+<h2 data-number="14.9" class="anchored" data-anchor-id="results-of-quantitative-analysis-coherence"><span class="header-section-number">14.9</span> Results of Quantitative Analysis: Coherence</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>The coherence metric, specifically <em>Coherence CV</em>, provides a quantitative assessment of the semantic meaningfulness of the top words within each topic. Across a range of topics from 5 to 50, distinct patterns emerged. Models based on titles consistently exhibited the poorest coherence. Conversely, abstract models demonstrably outperformed full-text models in this regard.</p>
+<p>Furthermore, <em>BERTopic</em> models generally achieved superior coherence compared to <em>LDA</em>, particularly for abstract and title-based analyses. However, this performance differential tended to diminish as the number of topics increased, indicating a convergence in coherence scores at higher topic counts. Ultimately, the <em>BERTopic</em> abstract model unequivocally emerged as the leading performer in terms of topic coherence. A line graph visually represents these trends, plotting the <em>Coherence CV</em> for each of the six models against varying numbers of topics.</p>
 </section>
-<section id="results-coherence-performance" class="level2" data-number="14.10">
-<h2 data-number="14.10" class="anchored" data-anchor-id="results-coherence-performance"><span class="header-section-number">14.10</span> Results: Coherence Performance</h2>
-<p>An evaluation of the models’ coherence, a metric assessing the meaningfulness of topic top words, revealed distinct performance patterns across a range of 5 to 50 topics. Titles consistently yielded the poorest coherence scores, indicating a less meaningful grouping of their constituent words. Conversely, abstract models generally demonstrated superior coherence compared to their full-text counterparts.</p>
-<p>Across the board, <em>BERTopic</em> models exhibited better coherence than <em>LDA</em>, particularly for abstract and title analyses. However, this performance gap narrowed as the number of topics increased. Ultimately, the <em>BERTopic</em> Abstract model emerged as the unequivocal leader in terms of coherence.</p>
+<section id="results-of-quantitative-analysis-diversity" class="level2" data-number="14.10">
+<h2 data-number="14.10" class="anchored" data-anchor-id="results-of-quantitative-analysis-diversity"><span class="header-section-number">14.10</span> Results of Quantitative Analysis: Diversity</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>Regarding the diversity of top words characterising the topics, a clear trend emerged: diversity generally diminishes as the number of topics increases. Within this context, models derived from titles consistently offered the highest diversity, surpassing their abstract or full-text counterparts.</p>
+<p>Moreover, <em>BERTopic</em> models demonstrated superior diversity compared to <em>LDA</em> across the board. The <em>BERTopic</em> title model ultimately emerged as the top performer in terms of diversity, with the <em>BERTopic</em> full-text model closely trailing. A line graph visually illustrates these diversity trends for each of the six models across varying topic counts.</p>
 </section>
-<section id="results-diversity-performance" class="level2" data-number="14.11">
-<h2 data-number="14.11" class="anchored" data-anchor-id="results-diversity-performance"><span class="header-section-number">14.11</span> Results: Diversity Performance</h2>
-<p>Assessing the diversity of top words representing the topics, a clear trend emerged: diversity generally diminished as the number of topics increased. Titles, surprisingly, offered the highest diversity amongst all models, suggesting a broader range of unique words characterising their topics.</p>
-<p>Furthermore, <em>BERTopic</em> consistently outperformed <em>LDA</em> in terms of diversity. Ultimately, the <em>BERTopic</em> Title model secured the top position for diversity, with <em>BERTopic</em> Full-text closely trailing.</p>
+<section id="results-of-quantitative-analysis-joint-recall" class="level2" data-number="14.11">
+<h2 data-number="14.11" class="anchored" data-anchor-id="results-of-quantitative-analysis-joint-recall"><span class="header-section-number">14.11</span> Results of Quantitative Analysis: Joint Recall</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>The <em>Joint Recall</em> metric assesses the efficacy with which the top words collectively represent every document assigned to a given topic. Analysis revealed that models based on titles consistently yielded the poorest recall. Conversely, full-text models demonstrated superior performance compared to their abstract and title counterparts.</p>
+<p>In terms of algorithmic performance, <em>LDA</em> models generally exhibited better <em>Joint Recall</em> than <em>BERTopic</em>. The <em>LDA</em> full-text and <em>BERTopic</em> full-text models emerged as the leading performers in this category, with the <em>BERTopic</em> abstract model following very closely behind. A line graph visually depicts the micro <em>Joint Recall</em> for each of the six models across a range of topic numbers.</p>
 </section>
-<section id="results-joint-recall-performance" class="level2" data-number="14.12">
-<h2 data-number="14.12" class="anchored" data-anchor-id="results-joint-recall-performance"><span class="header-section-number">14.12</span> Results: Joint Recall Performance</h2>
-<p>The joint recall metric, which evaluates the efficacy of top words in collectively representing documents classified within each topic, revealed distinct performance hierarchies. Titles consistently yielded the poorest recall scores, indicating a limited ability of their top words to capture the full scope of associated documents. Conversely, full-text models demonstrated superior recall compared to both their abstract and title counterparts.</p>
-<p>Between the two primary approaches, <em>LDA</em> generally exhibited better joint recall than <em>BERTopic</em>. Ultimately, <em>LDA</em> Full-text and <em>BERTopic</em> Full-text emerged as joint leaders in this category, with <em>BERTopic</em> Abstract following very closely behind.</p>
+<section id="summary-of-model-performance" class="level2" data-number="14.12">
+<h2 data-number="14.12" class="anchored" data-anchor-id="summary-of-model-performance"><span class="header-section-number">14.12</span> Summary of Model Performance</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>The authors compiled the individual assessment results to offer a holistic perspective on the models’ performance. For each criterion—overall fit, top-words, coherence, diversity, and joint recall—a circular representation indicates performance: a black circle denotes the highest score, a white circle signifies a lesser score, and a half-black, half-white circle indicates intermediate performance. Crucially, the study underscores that no single model emerges as universally superior; rather, diverse research objectives inherently dictate varying needs and, consequently, different model choices.</p>
+<p>For instance, if the primary objective involves the discovery of main topics without stringent requirements for precise document classification, then issues such as poor recall or large class sizes might be acceptable. In such scenarios, the <em>BERTopic</em> Full-text model performed commendably, albeit with some observed class imbalance. Similarly, whilst far from optimal, the <em>BERTopic</em> Title model did yield certain robust topics that were consistently identified across other models.</p>
+<p>Conversely, if the aim is to achieve maximum document coverage across all topics, then neither <em>BERTopic</em> Full-text nor <em>BERTopic</em> Title is recommended, as both approaches lead to large document classes and, in the case of <em>BERTopic</em> Title, poor recall. Furthermore, the <em>LDA</em> Title model receives a general non-recommendation due to its consistently poor performance across nearly all assessments. In essence, the study advocates for conducting topic modelling on either abstracts or full texts, employing either <em>LDA</em> or <em>BERTopic</em>, provided that such applications do not result in the misclassification of documents pertinent to specific topics.</p>
 </section>
-<section id="overall-model-performance-summary" class="level2" data-number="14.13">
-<h2 data-number="14.13" class="anchored" data-anchor-id="overall-model-performance-summary"><span class="header-section-number">14.13</span> Overall Model Performance Summary</h2>
-<p>The authors compiled the comprehensive results into a summary table, visually representing each model’s performance across various assessments using a graded circle system: black denoted the highest score, whilst white indicated the lowest. Crucially, this synthesis underscored the absence of an absolute “best” model, as varying research objectives inherently dictate differing needs and, consequently, distinct model choices.</p>
-<p>Consider, for instance, an objective focused solely on discovering main topics, where precise document classification is not paramount. In such a scenario, issues like poor recall or significant class imbalance might prove negligible. Here, full-text <em>BERTopic</em> performed commendably, despite exhibiting some class imbalance. Similarly, whilst far from optimal, title <em>BERTopic</em> nonetheless generated several robust topics that consistently appeared across other models. Conversely, the authors strongly advise against employing <em>LDA</em> Title, given its consistently poor performance across nearly all assessment criteria.</p>
-<p>Ultimately, the study recommends conducting topic modelling on either abstract or full-text data, utilising both <em>LDA</em> and <em>BERTopic</em>, provided such an approach does not result in the misclassification of documents pertinent to the identified topics.</p>
-</section>
-<section id="discussion-and-future-directions" class="level2" data-number="14.14">
-<h2 data-number="14.14" class="anchored" data-anchor-id="discussion-and-future-directions"><span class="header-section-number">14.14</span> Discussion and Future Directions</h2>
-<p>This research yielded several crucial findings, informing future approaches to topic modelling. Firstly, title models consistently demonstrated poor performance. This deficiency likely stems from the inherent lack of information within titles, which can lead to the false classification of documents. Nevertheless, the <em>BERTopic</em> title model surprisingly revealed several meaningful topics, suggesting a potential balance between well-defined topics and comprehensive document coverage remains achievable.</p>
-<p>Secondly, full-text models, whilst offering comprehensive data, sometimes struggle to process vast quantities of information effectively. With <em>LDA</em>, topics can become more loosely defined and broader in scope, occasionally encompassing secondary themes such as methodology. Conversely, <em>BERTopic</em>, when applied to full text, can generate overly narrow topics, resulting in inadequate document coverage and issues with class size.</p>
-<p>Thirdly, abstract models consistently performed well with summary information. Notably, the results obtained from <em>LDA</em> full text exhibited strong consistency with both abstract models, underscoring their utility. Fourthly, the study revealed a remarkable robustness of topics across all models. The authors identified very similar topics across the board, a consistency that facilitates the application of meta-analytic methods to pinpoint the most robust thematic elements. Moreover, leveraging the relative distance across models could enable the identification of an optimal solution, as exemplified by the <em>BERTopic</em> abstract model in this study, which performed exceptionally well across numerous metrics.</p>
-<p>Finally, the findings prompt consideration of new model paradigms. It appears feasible to exploit the inherent structural information—encompassing full text, abstracts, and titles—to extract more semantically meaningful sets of topics or top words, thereby advancing the precision and utility of topic modelling.</p>
+<section id="discussion-and-conclusion" class="level2" data-number="14.13">
+<h2 data-number="14.13" class="anchored" data-anchor-id="discussion-and-conclusion"><span class="header-section-number">14.13</span> Discussion and Conclusion</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_016_slide_16.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>This research yields several pivotal findings. Firstly, title models consistently exhibit poor performance, primarily attributable to the inherent lack of information within titles, which can consequently lead to erroneous document classification. Nevertheless, the <em>BERTopic</em> title model, surprisingly, generated numerous meaningful topics, suggesting that future efforts might focus on striking a balance between precisely defined topics and comprehensive document coverage.</p>
+<p>Secondly, full-text models occasionally encounter difficulties in processing vast quantities of information. With <em>LDA</em>, topics can become more broadly defined and encompass wider coverage, potentially including secondary or transverse themes such as methodologies. Conversely, <em>BERTopic</em>, when applied to full texts, can produce overly narrow topics, resulting in inadequate document coverage and issues with class size.</p>
+<p>Thirdly, abstract models consistently demonstrate strong performance with summary information. Their results align remarkably well with the <em>LDA</em> full-text model, as well as with both <em>LDA</em> and <em>BERTopic</em> abstract models. This consistency underscores their utility in capturing core thematic content.</p>
+<p>Fourthly, the study highlights the notable robustness of topics. Across the board, the authors identified highly similar topics, a finding that facilitates the application of meta-analytic methods to pinpoint the most enduring and robust themes. Moreover, this consistency suggests the potential for employing relative distance metrics across models to identify an optimal solution; in this study, the <em>BERTopic</em> abstract model emerged as such an optimum, performing exceptionally well across all other metrics.</p>
+<p>Finally, the findings prompt a consideration of new model development. It appears feasible and potentially beneficial to leverage the structural information inherent in documents—specifically, full text, abstract, and title—to extract more semantically rich sets of top words or topics.</p>
 
 
 </section>

@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas Gautheron &amp; Mike D. Schneider">
-<meta name="dcterms.date" content="2025-01-01">
 
 <title>13&nbsp; Quantum Gravity and Plural Pursuit in Science – AI-NEPI Conference Proceedings - Enhanced Edition</title>
 <style>
@@ -44,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85125aaa381e97e617f4eb7319a810c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,19 +124,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification in Historical Patient Organisation Periodicals: A Methodological Report</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -279,12 +278,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta column-body">
 
       
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -296,80 +289,170 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>This chapter elucidates a novel methodology for addressing fundamental questions within the philosophy of science, particularly those concerning the inherent structure of research fields. The authors integrate advanced computational methods, including linguistic analysis and social network analysis, to meticulously reconstruct the intellectual and social landscape of scientific inquiry. Their work focuses on quantum gravity as a compelling case study, a field notably characterised by a plurality of theoretical approaches.</p>
-<p>The methodology involves a two-pronged, bottom-up reconstruction. Firstly, the authors undertake a linguistic analysis of a substantial corpus of theoretical physics abstracts and titles, employing the <em>Bertopic</em> pipeline to identify intellectual topics. Secondly, they conduct a social network analysis of co-authorship data to delineate scientific communities. Recognising the scale-dependent nature of both topics and communities, their approach employs hierarchical clustering for both structures, utilising Ward agglomerative clustering for topics and a hierarchical stochastic block model for communities. A crucial adaptive topic coarse-graining strategy, based on the Minimum Description Length (<em>MDL</em>) criterion, refines the linguistic partition by prioritising information relevant to the social structure.</p>
-<p>The findings reveal that this bottom-up reconstruction can either confirm or critically re-evaluate physicists’ intuitive understanding of their field’s structure. For instance, whilst some approaches align well with emergent topics, others, particularly those less conceptually autonomous, do not. Notably, the analysis suggests that string theory and supergravity, despite historical distinctions, coalesce into a single intellectual cluster when linguistic nuances without social consequences are removed. This convergence highlights the utility of computational methods in challenging long-standing philosophical intuitions, positing computation as a continuation of philosophical inquiry.</p>
+<p>This chapter details a novel methodology for addressing fundamental questions in the philosophy of science, specifically concerning the structure of research fields. The authors integrate advanced computational methods, including linguistic analysis and social network analysis, to reconstruct the intellectual and social landscape of scientific inquiry. Their work focuses on quantum gravity as a compelling case study, a field characterised by a plurality of theoretical approaches.</p>
+<p>The authors’ methodology involves a two-pronged, bottom-up reconstruction. Firstly, they conduct a linguistic analysis of a large corpus of theoretical physics abstracts and titles, employing the <em>Bertopic</em> pipeline to identify intellectual topics. Secondly, they perform a social network analysis of co-authorship data to delineate scientific communities. Recognising the scale-dependent nature of both topics and communities, the authors employ hierarchical clustering for both structures, utilising Ward agglomerative clustering for topics and a hierarchical stochastic block model for communities. Crucially, an adaptive topic coarse-graining strategy, based on the Minimum Description Length (MDL) criterion, refines the linguistic partition by prioritising information relevant to the social structure.</p>
+<p>The authors’ findings reveal that their bottom-up reconstruction can either confirm or re-evaluate physicists’ intuitive understanding of their field’s structure. For instance, whilst some approaches align well with emergent topics, others, particularly those less conceptually autonomous, do not. Notably, their analysis suggests that string theory and supergravity, despite historical distinctions, coalesce into a single intellectual cluster when linguistic nuances without social consequences are removed. This convergence underscores the utility of computational methods in challenging long-standing philosophical intuitions, positing computation as a continuation of philosophical inquiry.</p>
 </section>
 <section id="investigating-plural-pursuit-in-quantum-gravity" class="level2" data-number="13.1">
 <h2 data-number="13.1" class="anchored" data-anchor-id="investigating-plural-pursuit-in-quantum-gravity"><span class="header-section-number">13.1</span> Investigating Plural Pursuit in Quantum Gravity</h2>
-<p>This research endeavours to address fundamental questions within the philosophy of science by integrating social network analysis with established computational methodologies. The authors’ investigation centres on quantum gravity, a complex field serving as a compelling case study.</p>
-<p>Their approach unfolds in three distinct stages. Initially, the authors introduce the quantum gravity case study, establishing its philosophical context. Subsequently, they propose a bottom-up reconstruction of the quantum gravity research landscape, meticulously detailing its intellectual and social contours. Finally, this empirically derived reconstruction undergoes rigorous comparison with the prevailing intuitions of physicists regarding their field’s inherent structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>The authors’ research endeavours to address fundamental questions within the philosophy of science, specifically by integrating social network analysis with established computational methodologies. Their investigation centres on quantum gravity, a complex field serving as a compelling case study.</p>
+<p>The authors’ approach unfolds in three distinct stages. Initially, they introduce the quantum gravity case study, establishing its philosophical context. Subsequently, they propose a bottom-up reconstruction of the quantum gravity research landscape, meticulously detailing its intellectual and social contours. Finally, they rigorously compare this empirically derived reconstruction with the prevailing intuitions of physicists regarding their field’s inherent structure.</p>
 </section>
 <section id="the-plurality-of-approaches-to-quantum-gravity" class="level2" data-number="13.2">
 <h2 data-number="13.2" class="anchored" data-anchor-id="the-plurality-of-approaches-to-quantum-gravity"><span class="header-section-number">13.2</span> The Plurality of Approaches to Quantum Gravity</h2>
-<p>The core of this inquiry focuses on quantum gravity and the concept of plural pursuit within scientific research. This area of fundamental physics presents a unique landscape for exploring how diverse approaches co-exist and evolve.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>This inquiry focuses on quantum gravity and the concept of plural pursuit within scientific research. This area of fundamental physics presents a unique landscape for exploring how diverse approaches co-exist and evolve.</p>
 </section>
 <section id="problem-and-attempted-solutions-in-fundamental-physics" class="level2" data-number="13.3">
 <h2 data-number="13.3" class="anchored" data-anchor-id="problem-and-attempted-solutions-in-fundamental-physics"><span class="header-section-number">13.3</span> Problem and Attempted Solutions in Fundamental Physics</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
 <p>A long-standing contemporary issue in fundamental physics concerns the formulation of a quantum theory of gravity. This formidable challenge necessitates reconciling our understanding of phenomena at minuscule scales with observations at vast cosmological dimensions.</p>
-<p>Numerous attempted solutions to this problem have been proposed. String theory stands as the most prominent amongst these, whilst other notable approaches include Supergravity, Loop Quantum Gravity, spin foams, Causal Set Theory, and Asymptotic Safety. To comprehensively account for this diverse landscape of concurrent research efforts, the concept of “plural pursuit” becomes indispensable.</p>
+<p>Physicists have proposed numerous attempted solutions to this problem. String theory stands as the most prominent amongst these, whilst other notable approaches include Supergravity, Loop Quantum Gravity, spin foams, Causal Set Theory, and Asymptotic Safety. To comprehensively account for this diverse landscape of concurrent research efforts, the authors contend that the concept of “plural pursuit” becomes indispensable.</p>
 </section>
 <section id="defining-plural-pursuit-and-empirical-inquiry" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="defining-plural-pursuit-and-empirical-inquiry"><span class="header-section-number">13.4</span> Defining Plural Pursuit and Empirical Inquiry</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
 <p>Plural pursuit designates situations where distinct yet concurrent instances of normal science converge on a singular, common problem-solving objective. In the context of fundamental physics, this objective involves reconciling quantum mechanics with gravitation.</p>
-<p>Each instance of normal science, as conceptualised here, finds articulation through a specific social community inextricably linked to an intellectual disciplinary matrix. This framework resonates with established accounts of research programmes, including Kuhn’s paradigms, Laudan’s research traditions, and Lakatos’ research programmes. Consequently, a pivotal empirical question arises: does quantum gravity research exemplify plural pursuit, manifesting as independent communities concurrently advancing distinct paradigms?</p>
+<p>Each instance of normal science, as conceptualised by the authors, finds articulation through a specific social community inextricably linked to an intellectual disciplinary matrix. This framework resonates with established accounts of research programmes, including Kuhn’s paradigms, Laudan’s research traditions, and Lakatos’ research programmes. Consequently, the authors pose a pivotal empirical question: does quantum gravity research exemplify plural pursuit, manifesting as independent communities concurrently advancing distinct paradigms?</p>
 </section>
 <section id="bottom-up-reconstruction-of-research-landscape" class="level2" data-number="13.5">
 <h2 data-number="13.5" class="anchored" data-anchor-id="bottom-up-reconstruction-of-research-landscape"><span class="header-section-number">13.5</span> Bottom-Up Reconstruction of Research Landscape</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
 <p>To address the empirical question concerning plural pursuit, the authors first undertake a comprehensive bottom-up reconstruction of the quantum gravity research landscape. This process meticulously delineates both the linguistic and intellectual architecture of the field, alongside its intricate social structure.</p>
 </section>
 <section id="clustering-pipeline-data-acquisition-and-linguistic-analysis" class="level2" data-number="13.6">
 <h2 data-number="13.6" class="anchored" data-anchor-id="clustering-pipeline-data-acquisition-and-linguistic-analysis"><span class="header-section-number">13.6</span> Clustering Pipeline: Data Acquisition and Linguistic Analysis</h2>
-<p>The authors initiated their analysis by gathering a substantial dataset comprising approximately 228,748 abstracts and titles from theoretical physics literature, sourced from Inspire HEP. Their subsequent analytical pipeline unfolds in two principal stages: a linguistic analysis to reconstruct the intellectual framework, followed by a social network analysis to map the field’s social architecture.</p>
-<p>The linguistic analysis, powered by the <em>Bertopic</em> pipeline, commences by spatialising the collected documents into an embedding space. Subsequently, an unsupervised clustering algorithm operates on this space, identifying 611 distinct, fine-grained topics. This granular resolution proves essential for capturing niche approaches within quantum gravity, some of which may encompass as few as one hundred papers. Finally, the system assigns a “specialty” to each physicist, determined by the predominant topic across their published works. This process ultimately yields a comprehensive partition of authors into topics, thereby illuminating the field’s underlying linguistic and intellectual structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>The authors initiated their analysis by gathering a substantial dataset comprising approximately 228,748 abstracts and titles from theoretical physics literature, sourced from <em>Inspire HEP</em>. Their subsequent analytical pipeline unfolds in two principal stages: a linguistic analysis to reconstruct the intellectual framework, followed by a social network analysis to map the field’s social architecture.</p>
+<p>The linguistic analysis, powered by the <em>Bertopic</em> pipeline, commences by spatialising the collected documents into an embedding space. Subsequently, an unsupervised clustering algorithm operates on this space, identifying 611 distinct, fine-grained topics. This granular resolution proves essential for capturing niche approaches within quantum gravity, some of which may encompass as few as one hundred papers. Finally, the authors’ system assigns a “specialty” to each physicist, determined by the predominant topic across their published works. This process ultimately yields a comprehensive partition of authors into topics, thereby illuminating the field’s underlying linguistic and intellectual structure.</p>
 </section>
 <section id="clustering-pipeline-social-network-analysis" class="level2" data-number="13.7">
 <h2 data-number="13.7" class="anchored" data-anchor-id="clustering-pipeline-social-network-analysis"><span class="header-section-number">13.7</span> Clustering Pipeline: Social Network Analysis</h2>
-<p>Complementing the linguistic analysis, the authors conducted a comprehensive social network analysis. This commenced with the construction of a co-authorship graph, wherein individual physicists represent the nodes and co-authorship relationships form the edges connecting them.</p>
-<p>Applying a community detection method to this extensive network of 30,000 physicists, their analysis successfully identified approximately 800 distinct communities. This process ultimately yields a robust partition of authors into these communities, thereby providing a clear reflection of the field’s intricate social structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>Complementing the linguistic analysis, the authors conducted a comprehensive social network analysis. They commenced this by constructing a co-authorship graph, wherein individual physicists represent the nodes, whilst co-authorship relationships form the edges connecting them.</p>
+<p>Applying a community detection method to this extensive network of 30,000 physicists, the authors’ analysis successfully identified approximately 800 distinct communities. This process ultimately yields a robust partition of authors into these communities, thereby providing a clear reflection of the field’s intricate social structure.</p>
 </section>
 <section id="operationalising-plural-pursuit-community-topic-mapping" class="level2" data-number="13.8">
 <h2 data-number="13.8" class="anchored" data-anchor-id="operationalising-plural-pursuit-community-topic-mapping"><span class="header-section-number">13.8</span> Operationalising Plural Pursuit: Community-Topic Mapping</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
 <p>Operationally, plural pursuit manifests as a direct, one-to-one correspondence between identified communities and their associated intellectual topics. Conceptually, this ideal scenario would appear as a block-diagonal correlation matrix, where communities align perfectly with distinct topics. Such a configuration would signify that each community dedicates itself entirely to a singular topic, thereby establishing a clear and unambiguous division of labour across the research landscape.</p>
 </section>
 <section id="challenges-in-interpreting-fine-grained-partitions" class="level2" data-number="13.9">
 <h2 data-number="13.9" class="anchored" data-anchor-id="challenges-in-interpreting-fine-grained-partitions"><span class="header-section-number">13.9</span> Challenges in Interpreting Fine-Grained Partitions</h2>
-<p>Initial attempts to directly apply the fine-grained partitions, comprising 611 topics and 800 communities, yielded a highly complex and largely indecipherable correlation matrix. This complexity stems from several inherent challenges.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>The authors’ initial attempts to directly apply the fine-grained partitions, comprising 611 topics and 800 communities, yielded a highly complex and largely indecipherable correlation matrix. This complexity stems from several inherent challenges.</p>
 <p>Firstly, the level of fine-graining for topics proves somewhat arbitrary; for instance, a major research programme like string theory might inadvertently scatter across numerous granular topics. Secondly, large-scale research programmes often involve parallel efforts undertaken by multiple distinct communities. Thirdly, and more fundamentally, the computational definitions of both “topic” and “community” exhibit inherent scale-dependency, meaning their delineation varies with the chosen level of granularity. Beyond these technical considerations, a deeper conceptual issue arises: research programmes are themselves hierarchically nested. String theory, for example, encompasses Superstring Theory, which further branches into Type II and Heterotic varieties, amongst others. Consequently, this inherent ambiguity across different scales mandates a strategic approach to effectively identify genuine instances of plural pursuit.</p>
 </section>
 <section id="hierarchical-reconstruction-of-research-landscape" class="level2" data-number="13.10">
 <h2 data-number="13.10" class="anchored" data-anchor-id="hierarchical-reconstruction-of-research-landscape"><span class="header-section-number">13.10</span> Hierarchical Reconstruction of Research Landscape</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_07.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 07</figcaption>
+</figure>
+</div>
 <p>To overcome the challenges posed by scale-dependency, the authors propose a hierarchical reconstruction of the quantum gravity research landscape. For topics, they employ Ward agglomerative clustering, systematically merging the initial 600 fine-grained topics one by one according to a defined objective function.</p>
-<p>Concurrently, for the community structure, the team implemented a hierarchical stochastic block model from the outset. This model intrinsically learns a multi-level partition, progressively grouping physicists into coarser communities. These resultant hierarchical structures collectively introduce a crucial notion of scale, enabling the observation and analysis of the research system at various levels of granularity. For example, a co-authorship network can be visualised where each physicist’s specialty, indicated by colour, reflects the linguistic structure at different levels of coarse-graining.</p>
+<p>Concurrently, for the community structure, the authors implement a hierarchical stochastic block model from the outset. This model intrinsically learns a multi-level partition, progressively grouping physicists into coarser communities. These resultant hierarchical structures collectively introduce a crucial notion of scale, enabling the observation and analysis of the research system at various levels of granularity. For example, the authors can visualise a co-authorship network where each physicist’s specialty, indicated by colour, reflects the linguistic structure at different levels of coarse-graining.</p>
 </section>
 <section id="adaptive-scale-selection-for-optimal-interpretation" class="level2" data-number="13.11">
 <h2 data-number="13.11" class="anchored" data-anchor-id="adaptive-scale-selection-for-optimal-interpretation"><span class="header-section-number">13.11</span> Adaptive Scale Selection for Optimal Interpretation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
 <p>A significant challenge arises from the arbitrary nature of selecting an appropriate observation scale for both topic and community structures. To address this, the authors propose an adaptive topic coarse-graining strategy. This approach acknowledges that whilst linguistic topics capture subtle nuances, some of these distinctions hold no practical consequence for the collaborative dynamics amongst scientists.</p>
-<p>The methodology systematically removes degrees of freedom from the fine-grained partition, but only when such removal does not diminish useful information pertinent to understanding the social structure. This process is governed by the Minimum Description Length (<em>MDL</em>) criterion, which seeks to minimise the quantity <code>[- log P(G|sigma) - log P(sigma)]</code>. This criterion effectively balances the model’s fit—the linguistic partition’s explanatory power regarding the social structure—with its complexity, ensuring the partition remains parsimonious. The process involves iteratively refining the topic dendrogram, halting when the increase in complexity no longer yields a commensurate gain in information about the social structure.</p>
+<p>Their methodology systematically removes degrees of freedom from the fine-grained partition, but only when such removal does not diminish useful information pertinent to understanding the social structure. This process is governed by the Minimum Description Length (MDL) criterion, which seeks to minimise the quantity <code>[- log P(G|sigma) - log P(sigma)]</code>. This criterion effectively balances the model’s fit—the linguistic partition’s explanatory power regarding the social structure—with its complexity, ensuring the partition remains parsimonious. The process involves iteratively refining the topic dendrogram, halting when the increase in complexity no longer yields a commensurate gain in information about the social structure.</p>
 </section>
 <section id="resulting-topics-and-community-topic-correlations" class="level2" data-number="13.12">
 <h2 data-number="13.12" class="anchored" data-anchor-id="resulting-topics-and-community-topic-correlations"><span class="header-section-number">13.12</span> Resulting Topics and Community-Topic Correlations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
 <p>The adaptive coarse-graining strategy ultimately yielded 50 distinct topics, each clearly labelled by representative N-grams. To analyse their relationship with social structures, the authors constructed a correlation matrix, mapping these coarse-grained topics against community structures across various scales.</p>
 <p>Their analysis revealed nuanced patterns. Some topics, such as a large purple cluster, demonstrated universal relevance, remaining untethered to specific communities. Conversely, other topics, notably string theory, exhibited strong correspondence with community structures at particular hierarchical levels, specifically the third level in this instance. Intriguingly, certain research programmes, such as loop quantum gravity, aligned with communities situated at much lower, more fine-grained levels within the hierarchy. Overall, the findings indicate the presence of nested structures and entangled scales, rather than a clear, simple division of labour. For example, a smaller community embedded within the broader string theory community showed a distinct connection to the intellectual topic of holography, thereby exemplifying these complex, nested relationships and the absence of a straightforward plural pursuit configuration.</p>
 </section>
 <section id="top-down-approach-physicists-intuitions" class="level2" data-number="13.13">
 <h2 data-number="13.13" class="anchored" data-anchor-id="top-down-approach-physicists-intuitions"><span class="header-section-number">13.13</span> Top-Down Approach: Physicists’ Intuitions</h2>
-<p>To validate their bottom-up reconstruction, the authors systematically confronted it with the prevailing intuitions of physicists themselves. This involved surveying the founding members of the International Society for Quantum Gravity, requesting them to enumerate the quantum gravity approaches they perceived as structuring the overall research landscape.</p>
-<p>The collected responses yielded a detailed list of approaches, including asymptotic safety, causal sets, dynamical triangulations, group field theory, Loop Quantum Gravity (<em>LQG</em>), spin foams, noncommutative geometry, swampland conjectures, modified dispersion relations (<em>DSR</em>), quantum modified black holes, shape dynamics, tensor models, string theory, supergravity, and holography. A particular focus emerged on string theory, supergravity, and holography, primarily because some physicists expressed disagreement regarding whether these should be considered distinct entities, despite their historical and conceptual differences.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>To validate the bottom-up reconstruction, the authors systematically confronted it with the prevailing intuitions of physicists themselves. They surveyed the founding members of the International Society for Quantum Gravity, requesting them to enumerate the quantum gravity approaches they perceived as structuring the overall research landscape.</p>
+<p>The collected responses yielded a detailed list of approaches, including asymptotic safety, causal sets, dynamical triangulations, group field theory, Loop Quantum Gravity (LQG), spin foams, noncommutative geometry, swampland conjectures, modified dispersion relations (DSR), quantum modified black holes, shape dynamics, tensor models, string theory, supergravity, and holography. A particular focus emerged on string theory, supergravity, and holography, primarily because some physicists expressed disagreement regarding whether these should be considered distinct entities, despite their historical and conceptual differences.</p>
 </section>
 <section id="comparing-top-down-and-bottom-up-perspectives" class="level2" data-number="13.14">
 <h2 data-number="13.14" class="anchored" data-anchor-id="comparing-top-down-and-bottom-up-perspectives"><span class="header-section-number">13.14</span> Comparing Top-Down and Bottom-Up Perspectives</h2>
-<p>The authors trained a Support Vector Machine (<em>SVM</em>) classifier to predict the specific approach of individual papers, leveraging text embeddings derived from titles and abstracts (using <em>all-MiniLM-L6-v2</em>) and hand-coded labels for training. This supervised, top-down classification then underwent comparison with their bottom-up reconstruction.</p>
-<p>The results demonstrated varied alignment. Certain top-down approaches exhibited strong correspondence with the emergent bottom-up topics. Conversely, other approaches, particularly those of a phenomenological nature or lacking a comprehensive conceptual framework, did not align effectively. The method proved most robust for well-defined, conceptually autonomous frameworks. Notably, the bottom-up analysis identified a substantial string theory cluster that encompassed both supergravity and string theory. This finding resonates with physicists’ intuitions, as articulated in a survey response: “I suppose there are a few people still interested in supergravity as a theory in its own right, […but] I don’t think this is a large community […] the overlap of people working on”supergravity” and “string theory” is so large that I’m not sure the communities can be separated in a meaningful way.” This convergence suggests that when linguistic nuances without direct social consequences are disregarded, conceptually distinct areas may merge, a finding supported by both empirical data and expert perception.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>The authors trained a <em>Support Vector Machine</em> (SVM) classifier to predict the specific approach of individual papers, leveraging text embeddings derived from titles and abstracts (using <em>all-MiniLM-L6-v2</em>) and hand-coded labels for training. The authors then compared this supervised, top-down classification with the bottom-up reconstruction.</p>
+<p>Their results demonstrated varied alignment. Certain top-down approaches exhibited strong correspondence with the emergent bottom-up topics. Conversely, other approaches, particularly those of a phenomenological nature or lacking a comprehensive conceptual framework, did not align effectively. The method proved most robust for well-defined, conceptually autonomous frameworks. Notably, the authors’ bottom-up analysis identified a substantial string theory cluster that encompassed both supergravity and string theory. This finding resonates with physicists’ intuitions, as articulated in a survey response: “I suppose there are a few people still interested in supergravity as a theory in its own right, […but] I don’t think this is a large community […] the overlap of people working on”supergravity” and “string theory” is so large that I’m not sure the communities can be separated in a meaningful way.” This convergence suggests that when linguistic nuances without direct social consequences are disregarded, conceptually distinct areas may merge, a finding supported by both empirical data and expert perception.</p>
 </section>
 <section id="key-conclusions-and-philosophical-implications" class="level2" data-number="13.15">
 <h2 data-number="13.15" class="anchored" data-anchor-id="key-conclusions-and-philosophical-implications"><span class="header-section-number">13.15</span> Key Conclusions and Philosophical Implications</h2>
-<p>This research yields several significant conclusions. Firstly, socio-epistemic systems demonstrably operate across multiple scales, implying that the very notions of communities and disciplinary matrices are inherently scale-dependent. Secondly, effectively identifying configurations of plural pursuit—characterised by a one-to-one mapping between communities and their intellectual substrate—demands a meticulous alignment of these structures across their respective scales. Thirdly, the authors’ bottom-up reconstruction of the quantum gravity research landscape offers a robust mechanism to either confirm or critically re-assess the prevailing intuitions of physicists.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_015_slide_15.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 15</figcaption>
+</figure>
+</div>
+<p>The authors’ research yields several significant conclusions. Firstly, socio-epistemic systems demonstrably operate across multiple scales, implying that the very notions of communities and disciplinary matrices are inherently scale-dependent. Secondly, effectively identifying configurations of plural pursuit—characterised by a one-to-one mapping between communities and their intellectual substrate—demands a meticulous alignment of these structures across their respective scales. Thirdly, a bottom-up reconstruction of the quantum gravity research landscape offers a robust mechanism to either confirm or critically re-assess the prevailing intuitions of physicists.</p>
 <p>Finally, and perhaps most profoundly, the increasing power of computational methods empowers scholars to revisit and challenge long-held philosophical insights and intuitions, particularly those concerning the nature of paradigms or communities within specific scientific contexts like quantum gravity. This work compellingly argues that “Computation is the continuation of philosophy by other means!”</p>
 
 
