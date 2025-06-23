@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Christian Boulanger, David Carreto Fidalgo &amp; Andreas Wagner">
+<meta name="dcterms.date" content="2025-01-01">
 
-<title>10&nbsp; LLMs and Footnotes: Challenges in Humanities Scholarship – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>10&nbsp; Extracting Citation Data from Law and Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d85b766abd26745604bb74d2576c60a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_010.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_010.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law and Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+      <a href="./">AI-NEPI Conference Proceedings</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -125,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer, Applications, and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy, and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -137,19 +138,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals, ActDisease Project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Towards Computational HPSS: Tracing the Influence of the Ancient Wisdom Tradition on Early Modern Science using the LLM-powered Semantic Matching Tool of the VERITRACE project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Interpretability for LLMs: Transparency, Applications and Scientific Insights in the Humanities.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -167,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law and Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -179,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG in HPSS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -235,20 +236,19 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#the-research-imperative-unlocking-citation-graphs" id="toc-the-research-imperative-unlocking-citation-graphs" class="nav-link" data-scroll-target="#the-research-imperative-unlocking-citation-graphs"><span class="header-section-number">10.1</span> The Research Imperative: Unlocking Citation Graphs</a></li>
-  <li><a href="#problem-one-inadequate-bibliometric-data-coverage" id="toc-problem-one-inadequate-bibliometric-data-coverage" class="nav-link" data-scroll-target="#problem-one-inadequate-bibliometric-data-coverage"><span class="header-section-number">10.2</span> Problem One: Inadequate Bibliometric Data Coverage</a></li>
-  <li><a href="#empirical-evidence-of-data-gaps" id="toc-empirical-evidence-of-data-gaps" class="nav-link" data-scroll-target="#empirical-evidence-of-data-gaps"><span class="header-section-number">10.3</span> Empirical Evidence of Data Gaps</a></li>
-  <li><a href="#problem-two-the-intricacies-of-humanities-footnotes" id="toc-problem-two-the-intricacies-of-humanities-footnotes" class="nav-link" data-scroll-target="#problem-two-the-intricacies-of-humanities-footnotes"><span class="header-section-number">10.4</span> Problem Two: The Intricacies of Humanities Footnotes</a></li>
-  <li><a href="#large-language-models-a-promising-yet-challenging-solution" id="toc-large-language-models-a-promising-yet-challenging-solution" class="nav-link" data-scroll-target="#large-language-models-a-promising-yet-challenging-solution"><span class="header-section-number">10.5</span> Large Language Models: A Promising Yet Challenging Solution</a></li>
-  <li><a href="#establishing-a-robust-evaluation-framework" id="toc-establishing-a-robust-evaluation-framework" class="nav-link" data-scroll-target="#establishing-a-robust-evaluation-framework"><span class="header-section-number">10.6</span> Establishing a Robust Evaluation Framework</a></li>
-  <li><a href="#developing-a-tei-annotated-gold-standard" id="toc-developing-a-tei-annotated-gold-standard" class="nav-link" data-scroll-target="#developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.7</span> Developing a TEI-Annotated Gold Standard</a></li>
-  <li><a href="#leveraging-tei-for-tooling-and-comparison" id="toc-leveraging-tei-for-tooling-and-comparison" class="nav-link" data-scroll-target="#leveraging-tei-for-tooling-and-comparison"><span class="header-section-number">10.8</span> Leveraging TEI for Tooling and Comparison</a></li>
+  <li><a href="#citation-graphs-in-intellectual-history" id="toc-citation-graphs-in-intellectual-history" class="nav-link" data-scroll-target="#citation-graphs-in-intellectual-history"><span class="header-section-number">10.1</span> Citation Graphs in Intellectual History</a></li>
+  <li><a href="#deficiencies-in-existing-bibliometric-databases-for-ssh" id="toc-deficiencies-in-existing-bibliometric-databases-for-ssh" class="nav-link" data-scroll-target="#deficiencies-in-existing-bibliometric-databases-for-ssh"><span class="header-section-number">10.2</span> Deficiencies in Existing Bibliometric Databases for SSH</a></li>
+  <li><a href="#limitations-of-commercial-and-open-bibliometric-databases" id="toc-limitations-of-commercial-and-open-bibliometric-databases" class="nav-link" data-scroll-target="#limitations-of-commercial-and-open-bibliometric-databases"><span class="header-section-number">10.3</span> Limitations of Commercial and Open Bibliometric Databases</a></li>
+  <li><a href="#challenges-in-humanities-data-coverage-and-footnote-complexity" id="toc-challenges-in-humanities-data-coverage-and-footnote-complexity" class="nav-link" data-scroll-target="#challenges-in-humanities-data-coverage-and-footnote-complexity"><span class="header-section-number">10.4</span> Challenges in Humanities Data Coverage and Footnote Complexity</a></li>
+  <li><a href="#limitations-of-traditional-tools-and-promise-of-llms" id="toc-limitations-of-traditional-tools-and-promise-of-llms" class="nav-link" data-scroll-target="#limitations-of-traditional-tools-and-promise-of-llms"><span class="header-section-number">10.5</span> Limitations of Traditional Tools and Promise of LLMs</a></li>
+  <li><a href="#ensuring-trustworthiness-and-robust-evaluation" id="toc-ensuring-trustworthiness-and-robust-evaluation" class="nav-link" data-scroll-target="#ensuring-trustworthiness-and-robust-evaluation"><span class="header-section-number">10.6</span> Ensuring Trustworthiness and Robust Evaluation</a></li>
+  <li><a href="#tei-annotated-gold-standard-dataset-development" id="toc-tei-annotated-gold-standard-dataset-development" class="nav-link" data-scroll-target="#tei-annotated-gold-standard-dataset-development"><span class="header-section-number">10.7</span> TEI-Annotated Gold Standard Dataset Development</a></li>
+  <li><a href="#dataset-strategy-evolution-and-tooling-integration" id="toc-dataset-strategy-evolution-and-tooling-integration" class="nav-link" data-scroll-target="#dataset-strategy-evolution-and-tooling-integration"><span class="header-section-number">10.8</span> Dataset Strategy Evolution and Tooling Integration</a></li>
   <li><a href="#introducing-llamore-a-reference-extraction-and-evaluation-package" id="toc-introducing-llamore-a-reference-extraction-and-evaluation-package" class="nav-link" data-scroll-target="#introducing-llamore-a-reference-extraction-and-evaluation-package"><span class="header-section-number">10.9</span> Introducing Llamore: A Reference Extraction and Evaluation Package</a></li>
-  <li><a href="#llamore-implementation-and-workflow" id="toc-llamore-implementation-and-workflow" class="nav-link" data-scroll-target="#llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore: Implementation and Workflow</a></li>
-  <li><a href="#evaluation-metrics-f1-score-for-reference-comparison" id="toc-evaluation-metrics-f1-score-for-reference-comparison" class="nav-link" data-scroll-target="#evaluation-metrics-f1-score-for-reference-comparison"><span class="header-section-number">10.11</span> Evaluation Metrics: F1-Score for Reference Comparison</a></li>
-  <li><a href="#reference-alignment-the-unbalanced-assignment-problem" id="toc-reference-alignment-the-unbalanced-assignment-problem" class="nav-link" data-scroll-target="#reference-alignment-the-unbalanced-assignment-problem"><span class="header-section-number">10.12</span> Reference Alignment: The Unbalanced Assignment Problem</a></li>
-  <li><a href="#performance-evaluation-llamore-vs.-grobid" id="toc-performance-evaluation-llamore-vs.-grobid" class="nav-link" data-scroll-target="#performance-evaluation-llamore-vs.-grobid"><span class="header-section-number">10.13</span> Performance Evaluation: Llamore vs.&nbsp;Grobid</a></li>
-  <li><a href="#conclusion-and-takeaways" id="toc-conclusion-and-takeaways" class="nav-link" data-scroll-target="#conclusion-and-takeaways"><span class="header-section-number">10.14</span> Conclusion and Takeaways</a></li>
+  <li><a href="#llamore-implementation-and-workflow" id="toc-llamore-implementation-and-workflow" class="nav-link" data-scroll-target="#llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore Implementation and Workflow</a></li>
+  <li><a href="#llamores-evaluation-methodology-f1-score-and-reference-alignment" id="toc-llamores-evaluation-methodology-f1-score-and-reference-alignment" class="nav-link" data-scroll-target="#llamores-evaluation-methodology-f1-score-and-reference-alignment"><span class="header-section-number">10.11</span> Llamore’s Evaluation Methodology: F1-Score and Reference Alignment</a></li>
+  <li><a href="#performance-evaluation-of-llamore" id="toc-performance-evaluation-of-llamore" class="nav-link" data-scroll-target="#performance-evaluation-of-llamore"><span class="header-section-number">10.12</span> Performance Evaluation of Llamore</a></li>
+  <li><a href="#conclusion-and-takeaways" id="toc-conclusion-and-takeaways" class="nav-link" data-scroll-target="#conclusion-and-takeaways"><span class="header-section-number">10.13</span> Conclusion and Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Extracting Citation Data from Law and Humanities Scholarship Using LLMs and a Specialized Gold Standard Dataset</span></h1>
 </div>
 
 
@@ -278,6 +278,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
       
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -289,167 +295,114 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>This chapter addresses the persistent challenges inherent in parsing footnotes from legal and humanities scholarship, particularly when generating citation graphs for intellectual history. The authors highlight the severe limitations of existing bibliometric databases, such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>, which offer inadequate coverage for historical, non-English, and non-STEM literature. Moreover, these platforms struggle with the complex, commentary-rich footnotes prevalent in the humanities.</p>
-<p>To overcome these obstacles, the project introduces a novel approach leveraging <em>Large Language Models</em> (<em>LLMs</em>) and <em>Vision Language Models</em> (<em>VLMs</em>). A core component of this initiative involves the meticulous compilation of a high-quality, <em>TEI XML</em>-encoded gold standard dataset. This dataset comprises 1,100 foot- and endnotes extracted from 25 articles across 10 <em>Open Access</em> (<em>DOAJ</em>) journals, focusing on legal and historical humanities. It encompasses French, German, Spanish, Italian, and Portuguese texts published between 1958 and 2018. This compilation yields over 1,600 distinct references, with each occurrence encoded separately to preserve contextual information.</p>
-<p>A pivotal tool developed for this endeavour is <em>Llamore</em>, a lightweight <em>Python</em> package. <em>Llamore</em> facilitates the extraction of citation data from raw text or <em>PDFs</em> using <em>LLMs</em> and <em>VLMs</em>, subsequently exporting the results in <em>TEI XML</em> format. Furthermore, it provides a robust framework for evaluating extraction performance through F1-scores, meticulously comparing extracted references against the gold standard. The evaluation methodology employs precision and recall metrics for exact matches, incorporating an unbalanced assignment problem solver (from <em>SciPy</em>) to align extracted and gold references, thereby penalising both missing and hallucinated entries.</p>
-<p>Initial findings demonstrate <em>Llamore</em>’s efficacy. When tested on the <em>PLOS 1000</em> biomedical dataset, <em>Llamore</em> (utilising <em>Gemini 2.0 Flash</em>) achieved an F1-score of 0.62, closely matching <em>Grobid</em>’s performance of 0.61. Crucially, on the custom-curated humanities dataset, <em>Llamore</em> significantly outperformed <em>Grobid</em>, achieving an F1-score of 0.45 compared to <em>Grobid</em>’s 0.14. This underscores its superior capability in handling complex, footnoted literature. Future work aims to expand the training data, refine evaluation metrics, and enhance the system’s capacity for contextual citation analysis, including the resolution of <em>op cit.</em> and the identification of approving or contracting citations.</p>
+<p>This chapter details an innovative approach to extracting citation data from law and humanities scholarship, a domain historically underserved by conventional bibliometric databases. The research team has developed a specialised methodology to overcome the challenges posed by complex, often multilingual, footnotes and the poor coverage of non-STEM fields in existing data sources. At the core of this solution lies the strategic leverage of <em>Large Language Models</em> (<em>LLMs</em>) and <em>Vision Language Models</em> (<em>VLMs</em>), underpinned by a meticulously crafted, <em>TEI XML</em>-encoded gold standard dataset.</p>
+<p>The project directly addresses critical limitations inherent in current bibliometric tools, such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>. These platforms frequently lack comprehensive coverage for pre-digital, non-English, or non-“A-journal” content, whilst also imposing prohibitive costs and restrictive licences. Furthermore, the intricate nature of humanities footnotes, often laden with commentary and varied citation styles, renders traditional machine learning tools largely ineffective.</p>
+<p>To ensure the reliability of <em>LLM</em>-extracted data, the team has established a robust testing and evaluation framework. This framework relies on a high-quality gold standard dataset, comprising over 1,000 footnotes from 20 open-access articles across multiple languages and historical periods, yielding more than 1,500 references. This dataset is encoded in <em>TEI XML</em>, a well-established standard in digital humanities, which facilitates detailed contextual markup beyond mere reference management.</p>
+<p>A key technological contribution from the authors is “<em>Llamore</em>”, a lightweight <em>Python</em> package engineered for <em>LLM</em>-based reference extraction and performance evaluation. <em>Llamore</em> extracts citation data from raw text or PDFs, outputting <em>TEI XML</em>, and assesses extraction accuracy using the <em>F1-score</em>. It employs an unbalanced assignment problem solver to align extracted references with gold standard data, thereby maximising the total <em>F1-score</em> for robust evaluation.</p>
+<p>Initial evaluations demonstrate <em>Llamore</em>’s efficacy. When tested against the <em>PLOS 1000</em> biomedical dataset, <em>Llamore</em> (using <em>Gemini 2.0 Flash</em>) achieved an <em>F1-score</em> of 0.62, comparable to <em>Grobid</em>’s 0.61. Crucially, on the specialised footnoted humanities dataset, <em>Llamore</em> significantly outperformed <em>Grobid</em>, achieving an <em>F1-score</em> of 0.45 compared to <em>Grobid</em>’s 0.14. Whilst <em>Grobid</em> remains more resource-efficient for its trained literature, <em>Llamore</em> proves three times more effective for complex footnoted content. This research paves the way for generating comprehensive citation graphs, enabling deeper insights into intellectual history, influence reconstruction, and the reception of ideas within the humanities.</p>
 </section>
-<section id="the-research-imperative-unlocking-citation-graphs" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="the-research-imperative-unlocking-citation-graphs"><span class="header-section-number">10.1</span> The Research Imperative: Unlocking Citation Graphs</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_01.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
-</figure>
-</div>
-<p>The authors embark upon a critical investigation into the intricate nature of footnotes within law and humanities scholarship. They specifically address the inherent difficulties <em>Large Language Models</em> (<em>LLMs</em>) and other algorithms encounter when attempting to parse them. The overarching objective involves generating comprehensive citation graphs, which offer profound utility across various academic disciplines.</p>
-<p>These graphs prove invaluable for scholars engaged in the history of science and intellectual history more broadly. They facilitate the discovery of intricate patterns and relationships within knowledge production, enabling a nuanced analysis of intellectual influences and a precise measurement of how ideas have been received and disseminated over time. A compelling application of this methodology involves identifying the most-cited authors across specific periods, exemplified by an analysis of the <em>Journal of Law and Society</em> between 1994 and 2003.</p>
-</section>
-<section id="problem-one-inadequate-bibliometric-data-coverage" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="problem-one-inadequate-bibliometric-data-coverage"><span class="header-section-number">10.2</span> Problem One: Inadequate Bibliometric Data Coverage</h2>
+<section id="citation-graphs-in-intellectual-history" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="citation-graphs-in-intellectual-history"><span class="header-section-number">10.1</span> Citation Graphs in Intellectual History</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_02.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 02</figcaption>
 </figure>
 </div>
-<p>A significant impediment to scholarly inquiry arises from the extremely poor coverage of historical Social Sciences and Humanities (<em>SSH</em>) literature within conventional bibliometric databases. Prominent platforms such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em> exhibit considerable deficiencies in this domain.</p>
-<p><em>Web of Science</em> and <em>Scopus</em>, in particular, impose substantial financial burdens and operate under highly restrictive licensing agreements, fundamentally hindering open research. Whilst <em>OpenAlex</em> offers a more accessible, open-access alternative, it nonetheless falls short of meeting the specific data requirements for this research. Critically, these databases collectively lack comprehensive coverage for journals not classified as “A-journals,” exhibit significant gaps concerning pre-digital publications, and frequently omit content published in languages other than English.</p>
+<p>Scholars primarily employ citation graphs to illuminate patterns and relationships within knowledge production, particularly in the realm of intellectual history. These analytical tools prove invaluable for reconstructing influences and meticulously measuring the reception of published ideas. Consequently, researchers can identify, for instance, the most-cited authors across specific timeframes. An illustrative example involves an analysis of the <em>Journal of Law and Society</em>, for which an interactive web application provides detailed insights.</p>
 </section>
-<section id="empirical-evidence-of-data-gaps" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="empirical-evidence-of-data-gaps"><span class="header-section-number">10.3</span> Empirical Evidence of Data Gaps</h2>
+<section id="deficiencies-in-existing-bibliometric-databases-for-ssh" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="deficiencies-in-existing-bibliometric-databases-for-ssh"><span class="header-section-number">10.2</span> Deficiencies in Existing Bibliometric Databases for SSH</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_03.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>An illustrative example underscores the pervasive data gaps within existing bibliometric resources. The authors’ analysis of the <em>Zeitschrift für Rechtssoziologie</em>, a German journal dedicated to law and society established in 1980, reveals stark disparities in citation data availability. A comparative bar chart, contrasting data from <em>Dimensions</em> and <em>OpenAlex</em> across decades, clearly demonstrates that whilst coverage improves considerably after the 2000s, it remains almost non-existent for the journal’s earlier decades. This empirical observation highlights the critical need for alternative data acquisition strategies.</p>
+<p>A significant challenge arises from the extremely poor coverage of historical Social Sciences and Humanities (<em>SSH</em>) within existing bibliometric data sources. The research team deems these databases, including prominent platforms such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>, fundamentally unusable for the specific domain under investigation, primarily owing to their pervasive lack of relevant data.</p>
 </section>
-<section id="problem-two-the-intricacies-of-humanities-footnotes" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="problem-two-the-intricacies-of-humanities-footnotes"><span class="header-section-number">10.4</span> Problem Two: The Intricacies of Humanities Footnotes</h2>
+<section id="limitations-of-commercial-and-open-bibliometric-databases" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="limitations-of-commercial-and-open-bibliometric-databases"><span class="header-section-number">10.3</span> Limitations of Commercial and Open Bibliometric Databases</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_04.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<p>The inadequate coverage within bibliometric databases stems from several fundamental issues. Primarily, humanities scholarship attracts less commercial interest compared to fields such as <em>STEM</em>, medicine, and economics, which typically dominate large bibliometric databases. Furthermore, these databases predominantly focus on “impact factor” for scientific evaluation, a metric largely irrelevant to research in intellectual history.</p>
-<p>Crucially, the literature of interest in the humanities frequently employs highly complex footnotes, colloquially termed “footnotes from hell.” These often incorporate extensive commentary, present in a messy, unstructured format, and are embedded within considerable textual “noise” that is not part of the direct citation. Traditional information extraction instruments, whilst requiring laborious manual annotation processes, consistently demonstrate poor performance. For instance, machine learning tools relying on conditional random forests exhibit low extraction and segmentation accuracies, as evidenced by the <em>ExCite</em> Performance table, where even combined training data yields limited improvement.</p>
+<p>Beyond the general inadequacy, specific limitations plague both commercial and open bibliometric databases. <em>Web of Science</em> and <em>Scopus</em>, for instance, impose exorbitant costs and operate under highly restrictive licences; consequently, the authors advocate for a decisive shift away from reliance on these proprietary systems. Whilst <em>OpenAlex</em> offers the significant advantage of open access, it nonetheless presents considerable shortcomings for Social Sciences and Humanities research. Specifically, it frequently lacks comprehensive coverage for numerous “A-journals,” provides insufficient data from the pre-digital era, and typically omits content published in languages other than English.</p>
 </section>
-<section id="large-language-models-a-promising-yet-challenging-solution" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="large-language-models-a-promising-yet-challenging-solution"><span class="header-section-number">10.5</span> Large Language Models: A Promising Yet Challenging Solution</h2>
+<section id="challenges-in-humanities-data-coverage-and-footnote-complexity" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="challenges-in-humanities-data-coverage-and-footnote-complexity"><span class="header-section-number">10.4</span> Challenges in Humanities Data Coverage and Footnote Complexity</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_05.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p><em>Large Language Models</em> (<em>LLMs</em>) emerge as a promising avenue for addressing the challenges of footnote parsing. Initial experiments conducted by the authors in 2022, utilising models such as <em>text-davinci-003</em>, unequivocally demonstrated their considerable power in extracting references from highly unstructured and complex textual data. Subsequent advancements in model architecture promise even more refined results, whilst the advent of <em>Vision Language Models</em> (<em>VLMs</em>) now enables direct processing of <em>PDF</em> documents.</p>
-<p>The authors can employ various methods to leverage these models effectively, including sophisticated prompt engineering, <em>Retrieval Augmented Generation</em> (<em>RAG</em>), and fine-tuning. Nevertheless, an overriding concern persists regarding the trustworthiness of the results. <em>LLMs</em>, whilst powerful, can “hallucinate,” inventing non-existent citations. A lawyer who submitted federal court filings citing fabricated cases generated by <em>ChatGPT</em> starkly illustrates this phenomenon. Consequently, a fundamental principle guides this research: one must refrain from conducting any analysis unless robust validation data confirms the accuracy of the extracted information.</p>
+<p>The <em>Zeitschrift für Rechtssoziologie</em>, a German Journal for Law and Society established in 1980, exemplifies the pervasive issue of poor data coverage within the humanities. Its citation data, as observed in bibliometric databases, only demonstrates significant improvement after the year 2000, with minimal records available for the preceding decades. This deficiency stems from several factors. Primarily, the humanities attract less commercial interest compared to STEM, medicine, and economics, which typically dominate large bibliometric databases. Moreover, these databases prioritise the “impact factor” for scientific evaluation, a metric largely irrelevant to research in intellectual history.</p>
+<p>Crucially, the literature of interest in humanities scholarship frequently features highly complex footnotes, colloquially termed “footnotes from hell.” These are not mere citations; they often incorporate extensive commentary and various “messy” elements, all embedded within a considerable amount of non-citation “noise,” making automated extraction profoundly challenging.</p>
 </section>
-<section id="establishing-a-robust-evaluation-framework" class="level2" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="establishing-a-robust-evaluation-framework"><span class="header-section-number">10.6</span> Establishing a Robust Evaluation Framework</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_05.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 05</figcaption>
-</figure>
-</div>
-<p>Establishing a robust testing and evaluation solution constitutes a core requirement for advancing reliable information extraction. The authors determined that this solution necessitates three critical components:</p>
-<ul>
-<li><p>A high-quality Gold Standard dataset must be meticulously compiled, serving as the definitive ground truth against which system performance can be measured.</p></li>
-<li><p>Researchers require a flexible framework, one capable of readily adapting to the rapidly evolving technological landscape of <em>Large Language Models</em> and their associated methodologies.</p></li>
-<li><p>The framework must incorporate solid testing and evaluation algorithms, ensuring the production of consistent and comparable metrics across different solutions and iterations.</p></li>
-</ul>
+<section id="limitations-of-traditional-tools-and-promise-of-llms" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="limitations-of-traditional-tools-and-promise-of-llms"><span class="header-section-number">10.5</span> Limitations of Traditional Tools and Promise of LLMs</h2>
+<p>Creating training data presents a formidable challenge, necessitating a labour-intensive annotation process that demands substantial time investment. Furthermore, existing tools, particularly those reliant on traditional machine learning methods such as <em>Conditional Random Forests</em>, exhibit poor performance when confronted with complex footnotes. For instance, <em>ExCite</em>’s performance, as documented by Boulanger and Iurshina in 2022, reveals consistently low extraction and segmentation accuracies across various training datasets.</p>
+<p>Nevertheless, <em>Large Language Models</em> (<em>LLMs</em>) offer a promising avenue for resolution. Early experiments conducted in 2022 with models like <em>text-davinci-003</em> already demonstrated the significant power of <em>LLMs</em> in extracting references from highly unstructured textual data. Newer models promise even better results, whilst <em>Vision Language Models</em> (<em>VLMs</em>) extend this capability to direct PDF processing. The research team is currently exploring various methods to harness these advanced models effectively.</p>
 </section>
-<section id="developing-a-tei-annotated-gold-standard" class="level2" data-number="10.7">
-<h2 data-number="10.7" class="anchored" data-anchor-id="developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.7</span> Developing a TEI-Annotated Gold Standard</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_06.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 06</figcaption>
-</figure>
-</div>
-<p>The authors have meticulously compiled a comprehensive dataset for both training and evaluation, employing <em>TEI XML</em> encoding. This choice of standard is deliberate, as <em>TEI XML</em> offers a well-established, precisely specified, and highly comprehensive framework for text interchange. Crucially, it surpasses more limited bibliographical standards, such as <em>CSL</em> or <em>BibTeX</em>, by encompassing a broader spectrum of textual phenomena.</p>
-<p>Beyond mere reference management, <em>TEI XML</em> facilitates the encoding of citations, cross-references, and other contextual markup, enabling the classification of citation intention—a feature of significant interest to bibliometric projects. Furthermore, its widespread adoption in digital editorics projects allows for the integration of existing corpora, thereby enhancing the generalisation and robustness of the developed mechanisms. Despite its advantages, the <em>TEI</em> standard presents certain challenges, including conceptual distinctions between pointers and references, and technical considerations regarding constrained elements versus elliptic material.</p>
-<p>The dataset’s establishment involves several stages: initially capturing <em>PDF</em> screenshots, then segmenting reference strings from the surrounding non-reference text within footnotes, and finally parsing these into a structured data format. Currently, the dataset comprises 1,100 foot- and endnotes, meticulously extracted from 25 articles published across 10 <em>DOAJ</em> journals. It specifically focuses on legal and historical humanities, incorporating multilingual content in French, German, Spanish, Italian, and Portuguese, spanning the period from 1958 to 2018. This compilation is expected to yield over 1,600 references, with each occurrence of a work encoded separately to preserve its specific context. The dataset remains a work in progress, with a strategic shift mid-way to include <em>PDFs</em> from <em>Open Access</em> journals, ensuring compatibility with <em>Vision Language Models</em>.</p>
-</section>
-<section id="leveraging-tei-for-tooling-and-comparison" class="level2" data-number="10.8">
-<h2 data-number="10.8" class="anchored" data-anchor-id="leveraging-tei-for-tooling-and-comparison"><span class="header-section-number">10.8</span> Leveraging TEI for Tooling and Comparison</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_10.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 10</figcaption>
-</figure>
-</div>
-<p>A significant advantage of adopting the <em>TEI XML</em> standard lies in the extensive availability of compatible tooling. Among these, <em>Grobid</em> stands out as a particularly important resource for reference and information extraction. This widely used tool already employs <em>TEI XML</em> for its own training and evaluation processes.</p>
-<p>Consequently, utilising the same data format offers multiple benefits. It directly enables a rigorous comparison of the developed tool’s performance against <em>Grobid</em>’s established benchmarks. Moreover, the authors can leverage <em>Grobid</em>’s existing training data to enhance their own mechanisms, whilst simultaneously contributing their newly compiled data to the <em>Grobid</em> team, fostering a collaborative environment for mutual advancement in the field.</p>
-</section>
-<section id="introducing-llamore-a-reference-extraction-and-evaluation-package" class="level2" data-number="10.9">
-<h2 data-number="10.9" class="anchored" data-anchor-id="introducing-llamore-a-reference-extraction-and-evaluation-package"><span class="header-section-number">10.9</span> Introducing Llamore: A Reference Extraction and Evaluation Package</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_11.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 11</figcaption>
-</figure>
-</div>
-<p>The authors have developed <em>Llamore</em>, a concise <em>Python</em> package, to address the complexities of reference extraction. The name, an acronym for <em>Large LANguage MOdels for Reference Extraction</em>, precisely encapsulates its core functionality. This lightweight package, comprising fewer than 2000 lines of code, performs two essential tasks: it extracts citation data from either raw text or <em>PDF</em> documents using various <em>Large Language Models</em>, including multimodal variants, and subsequently evaluates the accuracy of these extractions.</p>
-<p><em>Llamore</em> operates on a clear input-output workflow: it processes textual or <em>PDF</em> inputs to generate references formatted in <em>TEI XML</em>, and it compares these extracted references against a set of gold standard references to compute an F1-score, serving as the primary evaluation metric. During its development, two key objectives guided its design: maintaining a lightweight architecture by functioning as an interface to external models rather than embedding them, and ensuring broad compatibility with both proprietary and open-source <em>LLMs</em> and <em>Vision Language Models</em>.</p>
-</section>
-<section id="llamore-implementation-and-workflow" class="level2" data-number="10.10">
-<h2 data-number="10.10" class="anchored" data-anchor-id="llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore: Implementation and Workflow</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_12.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 12</figcaption>
-</figure>
-</div>
-<p><em>Llamore</em> offers a straightforward implementation and workflow, readily accessible via <em>PyPI</em> for installation using <code>pip</code>. For the extraction process, users import specific extractor classes, such as <em>GeminiExtractor</em> or <em>OpenaiExtractor</em>, and then instantiate an extractor, typically providing an <em>API</em> key. The system processes either a <em>PDF</em> file path or a raw input string, subsequently returning the extracted references. These references can then be conveniently exported to a <em>TEI biblStructs XML</em> file. Notably, the <em>OpenaiExtractor</em> ensures broad compatibility, as most open model serving frameworks, including <em>Olama</em> and <em>VLLM</em>, provide an <em>API</em> endpoint compatible with <em>OpenAI</em>’s standard.</p>
-<p>The evaluation process involves importing the <em>F1</em> class, which can be instantiated with an optional <code>levenshtein_distance</code> parameter, defaulting to zero for an exact match. Subsequently, the authors compute the macro-average F1-score by supplying both the extracted and the gold standard references to the <code>compute_macro_average</code> method.</p>
-</section>
-<section id="evaluation-metrics-f1-score-for-reference-comparison" class="level2" data-number="10.11">
-<h2 data-number="10.11" class="anchored" data-anchor-id="evaluation-metrics-f1-score-for-reference-comparison"><span class="header-section-number">10.11</span> Evaluation Metrics: F1-Score for Reference Comparison</h2>
+<section id="ensuring-trustworthiness-and-robust-evaluation" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="ensuring-trustworthiness-and-robust-evaluation"><span class="header-section-number">10.6</span> Ensuring Trustworthiness and Robust Evaluation</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_13.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 13</figcaption>
 </figure>
 </div>
-<p>The F1-score serves as the primary evaluation metric, a well-established standard for comparing structured data. This composite measure integrates both Precision and Recall. Precision quantifies the proportion of correctly identified elements among all predicted elements, whilst Recall measures the proportion of correctly identified elements among all actual gold standard elements. By default, <em>Llamore</em> employs an exact match criterion, though this can be configured to allow for a specified Levenshtein distance, accommodating minor discrepancies.</p>
-<p>Consider an example: an extracted reference might contain an analytic title, a monographic title, author details (forename and surname), and a publication date. A corresponding gold reference might include these fields plus a cited range. If the analytic title, monographic title, surname, and publication date align perfectly, these constitute four matches. However, a slight deviation, such as an extra dot in the forename within the gold reference, would render that specific field a mismatch. The F1-score is then calculated as the harmonic mean of these precision and recall values. An F1-score of one signifies perfect extraction, indicating that the reference has been flawlessly identified, whereas a score of zero denotes a complete absence of matches.</p>
+<p>A fundamental concern centres on the trustworthiness of results generated by <em>Large Language Models</em>. Instances of <em>LLMs</em> fabricating non-existent citations, as exemplified by a lawyer’s disastrous use of <em>ChatGPT</em> in federal court, underscore this critical issue. Consequently, a guiding principle dictates against attempting to solve problems for which no validation data exists.</p>
+<p>To address this, the authors necessitate a robust testing and evaluation solution. This solution comprises three essential components:</p>
+<ul>
+<li><p>A high-quality Gold Standard dataset.</p></li>
+<li><p>A flexible framework capable of adapting to the rapidly evolving technological landscape.</p></li>
+<li><p>Solid testing and evaluation algorithms designed to produce comparable metrics.</p></li>
+</ul>
 </section>
-<section id="reference-alignment-the-unbalanced-assignment-problem" class="level2" data-number="10.12">
-<h2 data-number="10.12" class="anchored" data-anchor-id="reference-alignment-the-unbalanced-assignment-problem"><span class="header-section-number">10.12</span> Reference Alignment: The Unbalanced Assignment Problem</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_15.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 15</figcaption>
-</figure>
-</div>
-<p>Beyond merely comparing individual references, a significant challenge involves accurately aligning the set of extracted references with their corresponding gold standard counterparts. The authors address this by formulating the problem as an “Unbalanced Assignment Problem,” a well-documented class of optimisation challenges. <em>Llamore</em> employs an internal solver from the <em>SciPy</em> library to resolve this.</p>
-<p>The process entails computing F1-scores for every conceivable combination of extracted and gold references, subsequently constructing a comprehensive matrix from these scores. The solver then works to maximise the total F1-score across the entire set, whilst rigorously ensuring a unique assignment for each reference. Finally, the system macro-averages the F1-scores of these uniquely assigned pairs. Crucially, the methodology incorporates a stringent penalisation mechanism: both missing references and any hallucinated entries are assigned an F1-score of zero, thereby accurately reflecting their impact on overall performance.</p>
-</section>
-<section id="performance-evaluation-llamore-vs.-grobid" class="level2" data-number="10.13">
-<h2 data-number="10.13" class="anchored" data-anchor-id="performance-evaluation-llamore-vs.-grobid"><span class="header-section-number">10.13</span> Performance Evaluation: Llamore vs.&nbsp;Grobid</h2>
+<section id="tei-annotated-gold-standard-dataset-development" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="tei-annotated-gold-standard-dataset-development"><span class="header-section-number">10.7</span> TEI-Annotated Gold Standard Dataset Development</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_010_slide_16.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 16</figcaption>
 </figure>
 </div>
-<p>The authors rigorously compared <em>Llamore</em> against <em>Grobid</em> across two distinct datasets. On the <em>PLOS 1000 Dataset</em>, comprising 1,000 biomedical <em>PDFs</em>, <em>Llamore</em>, utilising <em>Gemini 2.0 Flash</em>, achieved an F1-score of 0.62 for exact matches, closely mirroring <em>Grobid</em>’s score of 0.61. Whilst their accuracy proved comparable on this dataset, <em>Grobid</em> demonstrated superior efficiency and reduced resource intensity, largely attributable to its prior training on similar journal articles.</p>
-<p>However, a stark contrast emerged when testing on the custom-curated humanities dataset, which features complex footnoted literature. Here, <em>Grobid</em> struggled considerably, yielding an F1-score of merely 0.14. In stark contrast, <em>Llamore</em>’s approach achieved a significantly higher F1-score of 0.45, unequivocally demonstrating its superior capability in extracting references from this challenging domain.</p>
+<p>The research team has embarked upon compiling a comprehensive training dataset, specifically designed for dual utility as evaluation data, employing <em>TEI XML</em> encoding. This choice stems from <em>TEI</em>’s status as a well-established, meticulously specified, and comprehensive standard for text interchange within the humanities and digital editorics. Unlike more constrained bibliographical standards such as <em>CSL</em> or <em>BibTeX</em>, <em>TEI</em> encompasses a broader array of phenomena, extending beyond mere reference management to facilitate the encoding of contextual information, including citation intention. Furthermore, its adoption enables the integration of existing <em>TEI XML</em> corpora from various digital editorics projects, thereby supporting the testing of generalisation and robustness features.</p>
+<p>Despite its advantages, the <em>TEI</em> standard presents certain challenges, both conceptual—concerning the distinction between pointers and references—and technical—regarding constrained elements versus elliptic material. The dataset development process involves several stages: initially, capturing PDF screenshots; subsequently, segmenting the reference string to isolate the citation from surrounding non-reference text within footnotes; and finally, parsing the content into a structured data format, utilising <em>TEI</em> elements such as <code>biblStruct</code>, <code>analytic</code>, <code>monogr</code>, <code>author</code>, <code>title</code>, <code>imprint</code>, <code>date</code>, <code>biblScope</code>, and <code>biblRef</code>. This dataset is currently under active development.</p>
 </section>
-<section id="conclusion-and-takeaways" class="level2" data-number="10.14">
-<h2 data-number="10.14" class="anchored" data-anchor-id="conclusion-and-takeaways"><span class="header-section-number">10.14</span> Conclusion and Takeaways</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_010_slide_17.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 17</figcaption>
-</figure>
-</div>
-<p>In conclusion, <em>Grobid</em> retains its advantage as the preferred tool for literature types upon which it was specifically trained, primarily owing to its superior processing speed and significantly lower resource demands. Nevertheless, for the particularly challenging domain of footnoted literature, experiments employing <em>Llamore</em> in conjunction with <em>Gemini</em> models reveal a compelling three-fold improvement in extraction performance. It is important to note that the current performance metrics pertain exclusively to pure reference extraction, deliberately excluding considerations of contextual information or complex cross-referencing.</p>
+<section id="dataset-strategy-evolution-and-tooling-integration" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="dataset-strategy-evolution-and-tooling-integration"><span class="header-section-number">10.8</span> Dataset Strategy Evolution and Tooling Integration</h2>
+<p>The strategy for constructing this dataset has evolved significantly. Initially, the focus centred on compiling data directly relevant to the primary research question. More recently, however, the authors made a strategic decision to incorporate PDFs, thereby enabling the utilisation of <em>Vision Language Model</em> (<em>VLM</em>) mechanisms. The overarching aim now involves publishing the complete dataset, encompassing everything from the raw PDFs to the meticulously parsed references. To achieve this, the team is sourcing material from open-access journals. The current scope involves coding over 1,000 footnotes derived from 20 articles, spanning several languages and a broad historical timeframe, which are expected to yield more than 1,500 references. Notably, even multiple occurrences of the same work are encoded separately to capture their distinct contexts.</p>
+<p>A significant benefit of adopting the <em>TEI XML</em> standard lies in the extensive tooling available for this interoperable format. <em>Grobid</em>, a widely recognised tool for reference and information extraction, notably employs <em>TEI XML</em> for its training and evaluation processes. This alignment facilitates direct performance comparisons with <em>Grobid</em> and enables the provision of new training data to the <em>Grobid</em> team, fostering collaborative advancement.</p>
+</section>
+<section id="introducing-llamore-a-reference-extraction-and-evaluation-package" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="introducing-llamore-a-reference-extraction-and-evaluation-package"><span class="header-section-number">10.9</span> Introducing Llamore: A Reference Extraction and Evaluation Package</h2>
+<p>The research team has developed “<em>Llamore</em>”, an acronym for <em>Large LANguage MOdels for Reference Extraction</em>, as a dedicated <em>Python</em> package. This tool serves a dual purpose: it extracts citation data from either raw text or PDF documents, leveraging multimodal <em>Large Language Models</em>, and subsequently evaluates the performance of this extraction. Specifically, <em>Llamore</em> processes textual or PDF inputs to generate references in <em>TEI XML</em> format, whilst also accepting gold standard references to produce an <em>F1-score</em> as an evaluation metric. The design of <em>Llamore</em> prioritises two key objectives: it remains lightweight, comprising fewer than 2,000 lines of code, and ensures broad compatibility with both open and closed <em>Large Language Models</em>.</p>
+</section>
+<section id="llamore-implementation-and-workflow" class="level2" data-number="10.10">
+<h2 data-number="10.10" class="anchored" data-anchor-id="llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore Implementation and Workflow</h2>
+<p><em>Llamore</em> is readily available on <em>Pypi</em>, enabling straightforward installation via <code>pip</code>. The extraction workflow commences with defining an extractor, which is contingent upon the specific <em>Large Language Model</em> selected. For instance, the <em>OpenAI</em> extractor offers broad compatibility, as many open model serving frameworks, including <em>Olama</em> and <em>VLLM</em>, provide <em>OpenAI</em>-compatible APIs. Subsequently, users supply either a PDF or raw text as input to this extractor, which then yields the extracted references. These references can then be exported conveniently to an <em>XML</em> file. For evaluation purposes, users import the dedicated <em>F1</em> class and provide both the gold standard references and the extracted references to compute the macro average of performance metrics.</p>
+</section>
+<section id="llamores-evaluation-methodology-f1-score-and-reference-alignment" class="level2" data-number="10.11">
+<h2 data-number="10.11" class="anchored" data-anchor-id="llamores-evaluation-methodology-f1-score-and-reference-alignment"><span class="header-section-number">10.11</span> Llamore’s Evaluation Methodology: F1-Score and Reference Alignment</h2>
+<p><em>Llamore</em> employs the <em>F1-score</em> as its primary evaluation metric, a well-established standard for comparing structured data. This score represents the harmonic mean of <em>Precision</em> and <em>Recall</em>, where <em>Precision</em> is calculated as the ratio of matches to predicted elements, and <em>Recall</em> as the ratio of matches to gold elements. An <em>F1-score</em> of 1 signifies perfect extraction, whilst a score of 0 indicates no matches whatsoever. For instance, an extracted reference might align perfectly with a gold reference on fields such as <code>analytic_title</code>, <code>monographic_title</code>, <code>surname</code>, and <code>publication_date</code>, yet exhibit a mismatch in the <code>forename</code> due to a minor discrepancy like an extraneous dot in the gold standard.</p>
+<p>A more complex challenge arises in aligning multiple extracted references with their corresponding gold references. <em>Llamore</em> addresses this as an unbalanced assignment problem. The system computes <em>F1-scores</em> for every possible combination of extracted and gold references, subsequently constructing a matrix from these scores. It then leverages <em>SciPy</em>’s solver to maximise the total <em>F1-score</em> whilst ensuring a unique assignment between the extracted and gold references. Following this alignment, the individual <em>F1-scores</em> are macro-averaged to provide an overall performance metric.</p>
+</section>
+<section id="performance-evaluation-of-llamore" class="level2" data-number="10.12">
+<h2 data-number="10.12" class="anchored" data-anchor-id="performance-evaluation-of-llamore"><span class="header-section-number">10.12</span> Performance Evaluation of Llamore</h2>
+<p>Performance evaluations of <em>Llamore</em> reveal distinct capabilities across different datasets. When tested against the <em>PLOS 1000</em> dataset, comprising 1,000 PDFs from the biomedical field, <em>Llamore</em> (utilising <em>Gemini 2.0 Flash</em>) achieved an exact match <em>F1-score</em> of 0.62, closely aligning with <em>Grobid</em>’s score of 0.61. This indicates comparable performance on literature for which <em>Grobid</em> was specifically trained. However, it is crucial to note that <em>Grobid</em> maintains a significant advantage in resource efficiency, requiring orders of magnitude less computational power than <em>Gemini</em>.</p>
+<p>Conversely, on the custom humanities dataset, which features complex footnoted literature, <em>Llamore</em> demonstrated a marked superiority. <em>Grobid</em> struggled considerably, yielding an <em>F1-score</em> of merely 0.14, whilst <em>Llamore</em> (<em>Gemini 2.0 Flash</em>) achieved a substantially higher score of 0.45. This represents approximately a threefold improvement in performance for the challenging domain of footnoted humanities scholarship.</p>
+</section>
+<section id="conclusion-and-takeaways" class="level2" data-number="10.13">
+<h2 data-number="10.13" class="anchored" data-anchor-id="conclusion-and-takeaways"><span class="header-section-number">10.13</span> Conclusion and Takeaways</h2>
+<p><em>Grobid</em> remains the preferred choice for literature upon which it has been specifically trained, primarily owing to its significantly faster processing speed and reduced resource intensity. Conversely, <em>Llamore</em>, when paired with <em>Gemini</em>, demonstrates approximately three times better performance for the challenging domain of footnoted literature. This performance specifically pertains to pure reference extraction, excluding contextual or cross-referencing information.</p>
+<p>A critical aspect of utilising open-source databases, such as <em>OpenAlex</em>, involves the burden of quality assurance falling directly upon the user. The authors advise a cautious approach towards both <em>OpenAlex</em> and commercial databases like <em>Web of Science</em> and <em>Scopus</em>, as their quality assurance priorities may not align with specific research questions. <em>Large Language Models</em>, whilst powerful, can produce false positives by inventing citations, thus necessitating the attainment of reliable results before any large-scale application. The ultimate ambition extends beyond mere reference string extraction to obtaining reliable results for nuanced contextual information, such as whether a citation is approving or not.</p>
+<p>Analysis reveals that <em>Grobid</em>’s poor performance on humanities data stems from its training data being out of distribution for this domain. <em>Large Language Models</em>, however, exhibit their own distinct failure modes. These include difficulty discerning ambiguous elements, such as whether a number represents a volume or a page, and being misled by capitalisation. They frequently misidentify personal names appearing within titles as authors and struggle with specialised terminology like <em>Idem</em>, <em>Derselbe</em>, <em>passim</em>, <em>ibid</em>, or <em>n.d.</em>. Furthermore, canonical citations found in fields such as Bible studies, Roman law, and classical literature, along with ellipses, abbreviations, and cross-references, present considerable challenges.</p>
+<p>The requisite <em>F1-score</em> for a gold standard dataset is contingent upon the analytical ambition; a lower score might suffice for identifying broad tendencies, whilst high accuracy demands a much higher score. For less precise needs, such as fuzzy searching in bibliographical databases using only a title and author, an exact match may not be essential. Nevertheless, the current stage of research prioritises achieving highly reliable results to facilitate the extraction of richer contextual information. A human-in-the-loop approach has been considered for the dataset establishment workflow, where <em>Llamore</em> could pre-annotate data for subsequent human correction. However, intermediate stages, such as merely marking the referring string without full parsing, still necessitate substantial manual effort.</p>
 
 
 </section>
