@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Arno Simons">
 <meta name="dcterms.date" content="2025-06-21">
 
-<title>3&nbsp; Large Language Models for the History, Philosophy, and Sociology of Science – AI-NEPI Conference Proceedings</title>
+<title>Large Language Models for the History, Philosophy, and Sociology of Science – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -236,25 +235,24 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#presentation-agenda-and-objectives" id="toc-presentation-agenda-and-objectives" class="nav-link" data-scroll-target="#presentation-agenda-and-objectives"><span class="header-section-number">3.1</span> Presentation Agenda and Objectives</a></li>
-  <li><a href="#the-transformer-model-architecture" id="toc-the-transformer-model-architecture" class="nav-link" data-scroll-target="#the-transformer-model-architecture"><span class="header-section-number">3.2</span> The <em>Transformer</em> Model Architecture</a></li>
-  <li><a href="#pre-trained-language-models-bert" id="toc-pre-trained-language-models-bert" class="nav-link" data-scroll-target="#pre-trained-language-models-bert"><span class="header-section-number">3.3</span> Pre-trained Language Models: <em>BERT</em></a></li>
-  <li><a href="#pre-trained-language-models-gpt-and-model-distinctions" id="toc-pre-trained-language-models-gpt-and-model-distinctions" class="nav-link" data-scroll-target="#pre-trained-language-models-gpt-and-model-distinctions"><span class="header-section-number">3.4</span> Pre-trained Language Models: <em>GPT</em> and Model Distinctions</a></li>
-  <li><a href="#evolution-of-scientific-large-language-models" id="toc-evolution-of-scientific-large-language-models" class="nav-link" data-scroll-target="#evolution-of-scientific-large-language-models"><span class="header-section-number">3.5</span> Evolution of Scientific Large Language Models</a></li>
-  <li><a href="#domain-and-task-adaptation-of-large-language-models" id="toc-domain-and-task-adaptation-of-large-language-models" class="nav-link" data-scroll-target="#domain-and-task-adaptation-of-large-language-models"><span class="header-section-number">3.6</span> Domain and Task Adaptation of Large Language Models</a></li>
-  <li><a href="#retrieval-augmented-generation-rag-for-domain-adaptation" id="toc-retrieval-augmented-generation-rag-for-domain-adaptation" class="nav-link" data-scroll-target="#retrieval-augmented-generation-rag-for-domain-adaptation"><span class="header-section-number">3.7</span> Retrieval Augmented Generation (<em>RAG</em>) for Domain Adaptation</a></li>
-  <li><a href="#key-distinctions-in-large-language-models" id="toc-key-distinctions-in-large-language-models" class="nav-link" data-scroll-target="#key-distinctions-in-large-language-models"><span class="header-section-number">3.8</span> Key Distinctions in Large Language Models</a></li>
-  <li><a href="#applications-of-large-language-models-in-hpss-research" id="toc-applications-of-large-language-models-in-hpss-research" class="nav-link" data-scroll-target="#applications-of-large-language-models-in-hpss-research"><span class="header-section-number">3.9</span> Applications of Large Language Models in <em>HPSS</em> Research</a></li>
-  <li><a href="#trends-and-concerns-in-llm-adoption-for-hpss" id="toc-trends-and-concerns-in-llm-adoption-for-hpss" class="nav-link" data-scroll-target="#trends-and-concerns-in-llm-adoption-for-hpss"><span class="header-section-number">3.10</span> Trends and Concerns in <em>LLM</em> Adoption for <em>HPSS</em></a></li>
-  <li><a href="#critical-reflections-and-future-directions-for-llms-in-hpss" id="toc-critical-reflections-and-future-directions-for-llms-in-hpss" class="nav-link" data-scroll-target="#critical-reflections-and-future-directions-for-llms-in-hpss"><span class="header-section-number">3.11</span> Critical Reflections and Future Directions for <em>LLMs</em> in <em>HPSS</em></a></li>
+  <li><a href="#introduction-to-large-language-models-and-hpss-applications" id="toc-introduction-to-large-language-models-and-hpss-applications" class="nav-link" data-scroll-target="#introduction-to-large-language-models-and-hpss-applications"><span class="header-section-number">3.1</span> Introduction to Large Language Models and HPSS Applications</a></li>
+  <li><a href="#the-transformer-architecture-foundation-of-modern-llms" id="toc-the-transformer-architecture-foundation-of-modern-llms" class="nav-link" data-scroll-target="#the-transformer-architecture-foundation-of-modern-llms"><span class="header-section-number">3.2</span> The Transformer Architecture: Foundation of Modern LLMs</a></li>
+  <li><a href="#encoder-based-models-bert-for-bidirectional-contextual-understanding" id="toc-encoder-based-models-bert-for-bidirectional-contextual-understanding" class="nav-link" data-scroll-target="#encoder-based-models-bert-for-bidirectional-contextual-understanding"><span class="header-section-number">3.3</span> Encoder-Based Models: BERT for Bidirectional Contextual Understanding</a></li>
+  <li><a href="#decoder-based-models-gpt-for-unidirectional-generative-capabilities" id="toc-decoder-based-models-gpt-for-unidirectional-generative-capabilities" class="nav-link" data-scroll-target="#decoder-based-models-gpt-for-unidirectional-generative-capabilities"><span class="header-section-number">3.4</span> Decoder-Based Models: GPT for Unidirectional Generative Capabilities</a></li>
+  <li><a href="#evolution-and-specialisation-of-scientific-llms" id="toc-evolution-and-specialisation-of-scientific-llms" class="nav-link" data-scroll-target="#evolution-and-specialisation-of-scientific-llms"><span class="header-section-number">3.5</span> Evolution and Specialisation of Scientific LLMs</a></li>
+  <li><a href="#strategies-for-domain-and-task-adaptation-of-llms" id="toc-strategies-for-domain-and-task-adaptation-of-llms" class="nav-link" data-scroll-target="#strategies-for-domain-and-task-adaptation-of-llms"><span class="header-section-number">3.6</span> Strategies for Domain and Task Adaptation of LLMs</a></li>
+  <li><a href="#retrieval-augmented-generation-rag-pipelines" id="toc-retrieval-augmented-generation-rag-pipelines" class="nav-link" data-scroll-target="#retrieval-augmented-generation-rag-pipelines"><span class="header-section-number">3.7</span> Retrieval-Augmented Generation (RAG) Pipelines</a></li>
+  <li><a href="#key-distinctions-in-large-language-model-paradigms" id="toc-key-distinctions-in-large-language-model-paradigms" class="nav-link" data-scroll-target="#key-distinctions-in-large-language-model-paradigms"><span class="header-section-number">3.8</span> Key Distinctions in Large Language Model Paradigms</a></li>
+  <li><a href="#applications-of-llms-in-history-philosophy-and-sociology-of-science" id="toc-applications-of-llms-in-history-philosophy-and-sociology-of-science" class="nav-link" data-scroll-target="#applications-of-llms-in-history-philosophy-and-sociology-of-science"><span class="header-section-number">3.9</span> Applications of LLMs in History, Philosophy, and Sociology of Science</a></li>
+  <li><a href="#observations-and-concerns-in-hpss-llm-adoption" id="toc-observations-and-concerns-in-hpss-llm-adoption" class="nav-link" data-scroll-target="#observations-and-concerns-in-hpss-llm-adoption"><span class="header-section-number">3.10</span> Observations and Concerns in HPSS LLM Adoption</a></li>
+  <li><a href="#reflections-on-hpss-specific-challenges-and-llm-integration" id="toc-reflections-on-hpss-specific-challenges-and-llm-integration" class="nav-link" data-scroll-target="#reflections-on-hpss-specific-challenges-and-llm-integration"><span class="header-section-number">3.11</span> Reflections on HPSS-Specific Challenges and LLM Integration</a></li>
   <li><a href="#additional-visual-materials" id="toc-additional-visual-materials" class="nav-link" data-scroll-target="#additional-visual-materials"><span class="header-section-number">3.12</span> Additional Visual Materials</a>
   <ul class="collapse">
   <li><a href="#slide-02" id="toc-slide-02" class="nav-link" data-scroll-target="#slide-02"><span class="header-section-number">3.12.1</span> Slide 02</a></li>
   <li><a href="#slide-08" id="toc-slide-08" class="nav-link" data-scroll-target="#slide-08"><span class="header-section-number">3.12.2</span> Slide 08</a></li>
-  <li><a href="#slide-13" id="toc-slide-13" class="nav-link" data-scroll-target="#slide-13"><span class="header-section-number">3.12.3</span> Slide 13</a></li>
-  <li><a href="#slide-14" id="toc-slide-14" class="nav-link" data-scroll-target="#slide-14"><span class="header-section-number">3.12.4</span> Slide 14</a></li>
-  <li><a href="#slide-15" id="toc-slide-15" class="nav-link" data-scroll-target="#slide-15"><span class="header-section-number">3.12.5</span> Slide 15</a></li>
-  <li><a href="#slide-16" id="toc-slide-16" class="nav-link" data-scroll-target="#slide-16"><span class="header-section-number">3.12.6</span> Slide 16</a></li>
+  <li><a href="#slide-14" id="toc-slide-14" class="nav-link" data-scroll-target="#slide-14"><span class="header-section-number">3.12.3</span> Slide 14</a></li>
+  <li><a href="#slide-15" id="toc-slide-15" class="nav-link" data-scroll-target="#slide-15"><span class="header-section-number">3.12.4</span> Slide 15</a></li>
+  <li><a href="#slide-16" id="toc-slide-16" class="nav-link" data-scroll-target="#slide-16"><span class="header-section-number">3.12.5</span> Slide 16</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -264,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy, and Sociology of Science</span></h1>
+<h1 class="title">Large Language Models for the History, Philosophy, and Sociology of Science</h1>
 </div>
 
 
@@ -288,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 21, 2025</p>
+      <p class="date">2025-06-21</p>
     </div>
   </div>
   
@@ -302,140 +300,140 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>The authors meticulously detail the architecture and application of Large Language Models (<em>LLMs</em>) within the History, Philosophy, and Sociology of Science (<em>HPSS</em>). They commence by providing a foundational primer on <em>LLMs</em>, particularly focusing on the <em>Transformer</em> architecture and its derivatives, <em>BERT</em> and <em>GPT</em>. The discussion then transitions to specific applications within <em>HPSS</em>, categorising them into data handling, knowledge structuring, dynamics, and practices. Crucially, the authors identify significant challenges inherent in adapting <em>LLMs</em> for <em>HPSS</em> research, such as the historical evolution of language and the discipline’s critical, reconstructive perspective. They advocate for enhanced <em>LLM</em> literacy amongst researchers, the development of shared datasets, and a steadfast adherence to <em>HPSS</em> methodologies whilst embracing new opportunities for bridging qualitative and quantitative approaches. The speaker highlights Retrieval Augmented Generation (<em>RAG</em>) as a pivotal pipeline for domain adaptation without extensive model retraining, and underscores that contemporary “agents” represent complex systems of multiple <em>LLMs</em> integrated with diverse tools, rather than standalone models.</p>
+<p>This chapter comprehensively explores the application of Large Language Models (LLMs) within the History, Philosophy, and Sociology of Science (HPSS) domain. It commences by providing a foundational primer on LLM architectures, specifically detailing the <em>Transformer</em> model and its derivatives, <em>BERT</em> and <em>GPT</em>. The discussion then transitions to summarising current applications of LLMs in HPSS research, categorising them into data handling, knowledge structuring, knowledge dynamics, and knowledge practices.</p>
+<p>Crucially, the authors identify key distinctions in LLM types and adaptation strategies, including pre-training, fine-tuning, and Retrieval-Augmented Generation (RAG) pipelines. The chapter highlights the accelerating interest in LLMs across academic journals, whilst acknowledging persistent concerns regarding computational resources, model opaqueness, data scarcity, and the absence of standardised benchmarks.</p>
+<p>The authors conclude by offering critical reflections on HPSS-specific challenges, such as the historical evolution of concepts and sparse, multilingual data. They advocate for enhanced LLM literacy amongst researchers and a steadfast adherence to HPSS methodologies to prevent technological tools from dictating research objectives. Ultimately, this chapter underscores the potential of LLMs to bridge qualitative and quantitative research approaches within the HPSS field, fostering new avenues for interdisciplinary inquiry.</p>
 </section>
-<section id="presentation-agenda-and-objectives" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="presentation-agenda-and-objectives"><span class="header-section-number">3.1</span> Presentation Agenda and Objectives</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_003_slide_01.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
-</figure>
-</div>
-<p>The authors establish a clear agenda, outlining three core components: a primer on Large Language Models, an exploration of their applications within the History, Philosophy, and Sociology of Science, and a series of critical reflections intended to stimulate workshop discussions. Recognising the diverse technical backgrounds amongst the audience, the speaker prioritises delivering a concise yet comprehensive introduction to <em>LLMs</em>, particularly focusing on their adaptation for scientific domains. Beyond this foundational overview, the session aims to summarise existing applications within <em>HPSS</em> and to present key considerations for future research and engagement with these powerful tools.</p>
+<section id="introduction-to-large-language-models-and-hpss-applications" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction-to-large-language-models-and-hpss-applications"><span class="header-section-number">3.1</span> Introduction to Large Language Models and HPSS Applications</h2>
+<p>This chapter establishes a foundational understanding of Large Language Models (LLMs) and their specific applications within the History, Philosophy, and Sociology of Science (HPSS). Primarily, it aims to furnish a concise primer on LLMs, detailing their adaptation to diverse scientific domains. Subsequently, the discussion summarises current LLM applications pertinent to HPSS research. Finally, the authors offer critical reflections, intended to stimulate further discussion throughout the workshop. Given the varied technical backgrounds of the audience, the initial segment focuses on accessible explanations of complex LLM concepts.</p>
 </section>
-<section id="the-transformer-model-architecture" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="the-transformer-model-architecture"><span class="header-section-number">3.2</span> The <em>Transformer</em> Model Architecture</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_003_slide_01.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
-</figure>
-</div>
-<p>At the heart of contemporary Large Language Models resides the renowned <em>Transformer</em> architecture, originally conceptualised by Vaswani and colleagues in their seminal 2017 paper, “<em>Attention is All You Need</em>”. The engineers initially designed this model for language translation tasks, such as converting German text into English. This architecture fundamentally comprises two interconnected streams: an Encoder on the left and a Decoder on the right.</p>
-<p>The Encoder processes input words, transforming them into numerical representations. Crucially, it reads the entire input sentence at once, enabling each word to interact bidirectionally with every other word. This comprehensive interaction allows the Encoder to construct a full, contextualised representation of the sentence’s complete meaning. Conversely, the Decoder receives these encoded numerical representations and generates output words sequentially. The Decoder then feeds each produced word back into its own input, creating a loop. A key distinction lies in the Decoder’s unidirectional nature: it can only access preceding words to predict the next word, preventing it from “looking ahead” into the future. Within both the Encoder and Decoder, various layers perform complex numerical computations, progressively refining and contextualising the word embeddings.</p>
+<section id="the-transformer-architecture-foundation-of-modern-llms" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="the-transformer-architecture-foundation-of-modern-llms"><span class="header-section-number">3.2</span> The Transformer Architecture: Foundation of Modern LLMs</h2>
+<p>The foundational architecture underpinning contemporary Large Language Models is the <em>Transformer</em>. Vaswani and colleagues originally introduced this model in their seminal 2017 paper, “<em>Attention is all you need</em>” <span class="citation" data-cites="vaswani2017attention">(<a href="#ref-vaswani2017attention" role="doc-biblioref"><strong>vaswani2017attention?</strong></a>)</span>. Initially conceived for language translation tasks, such as converting German to English, this architecture comprises two interconnected streams: an encoder and a decoder.</p>
+<p>The encoder, positioned on the left, processes the entire input sentence simultaneously. Crucially, it enables each word within the input to interact with every other word, thereby constructing a comprehensive contextual representation of the complete sentence. Words initially feed into this component and subsequently encode into numerical representations.</p>
+<p>Conversely, the decoder, located on the right, generates the output sentence. This component operates sequentially, predicting each subsequent word based solely on its predecessors; it cannot access future words. The numerical representations from the encoder transmit to the decoder, which then transforms them back into words. Each generated word subsequently feeds back into the decoder’s input, forming a loop that continues until the complete sentence is produced. Within both the encoder and decoder, various layers refine contextualised word embeddings, progressively enhancing their contextual understanding.</p>
 </section>
-<section id="pre-trained-language-models-bert" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="pre-trained-language-models-bert"><span class="header-section-number">3.3</span> Pre-trained Language Models: <em>BERT</em></h2>
+<section id="encoder-based-models-bert-for-bidirectional-contextual-understanding" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="encoder-based-models-bert-for-bidirectional-contextual-understanding"><span class="header-section-number">3.3</span> Encoder-Based Models: BERT for Bidirectional Contextual Understanding</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_03.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>Following the introduction of the <em>Transformer</em> model, researchers swiftly re-engineered its individual streams to develop pre-trained language models, marking a significant shift in the field. This innovation moved beyond direct translation, focusing instead on crafting models capable of profound language comprehension and generation. These pre-trained models subsequently serve as robust foundations, requiring only minor or additional training to accomplish diverse Natural Language Processing tasks.</p>
-<p>One prominent example is <em>BERT</em>, an encoder-side model that remains widely prevalent. <em>BERT</em> operates on the principle that every word within an input stream can interact with all other words. This bidirectional, full-contextual understanding allows the model to construct a comprehensive representation of the entire input at once.</p>
+<p>Following the introduction of the <em>Transformer</em> model, Devlin and colleagues promptly began re-engineering its individual streams to develop pre-trained language models <span class="citation" data-cites="devlin2018bert">(<a href="#ref-devlin2018bert" role="doc-biblioref"><strong>devlin2018bert?</strong></a>)</span>. These models, rather than focusing solely on translation, excel at understanding and generating language, making them highly adaptable for various Natural Language Processing (NLP) tasks with minimal additional training.</p>
+<p>A prominent example of such a model is <em>BERT</em>, or Bidirectional Encoder Representations from Transformers. <em>BERT</em> specifically leverages the encoder side of the <em>Transformer</em> architecture. Its defining characteristic is its capacity for bidirectional, full-context understanding; every word within the input stream can interact with all other words, thereby constructing a comprehensive contextual representation of the entire input at once. During its pre-training phase, <em>BERT</em> learns by predicting randomly masked words within a text. Consequently, <em>BERT</em>-like models are primarily designed for coherent sentence understanding, distinguishing them from models focused on generating novel text. Despite newer developments, the <em>BERT</em> family of models maintains a significant presence and utility in the field.</p>
 </section>
-<section id="pre-trained-language-models-gpt-and-model-distinctions" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="pre-trained-language-models-gpt-and-model-distinctions"><span class="header-section-number">3.4</span> Pre-trained Language Models: <em>GPT</em> and Model Distinctions</h2>
+<section id="decoder-based-models-gpt-for-unidirectional-generative-capabilities" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="decoder-based-models-gpt-for-unidirectional-generative-capabilities"><span class="header-section-number">3.4</span> Decoder-Based Models: GPT for Unidirectional Generative Capabilities</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_04.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<p>Conversely, the <em>GPT</em> models, or Generative Pre-trained Transformers, represent the decoder-side evolution of the <em>Transformer</em> architecture. These models power prominent generative AI systems such as <em>ChatGPT</em>. Their unidirectional structure, which permits them to consider only preceding words, enables them to generate entirely new text, a capability not inherent in <em>BERT</em> models. This fundamental difference delineates their primary functions: <em>GPT</em> models excel at producing novel language, whereas <em>BERT</em>-like models demonstrate superior coherence in understanding existing sentences. Beyond these two primary types, researchers have also developed models that combine encoder and decoder elements, and have even devised sophisticated methods to enable decoders to operate with encoder-like functionalities, as exemplified by models such as <em>XLM</em> and <em>XLNet</em>.</p>
+<p>Conversely, the <em>GPT</em> models, standing for Generative Pre-trained Transformers, derive from the decoder side of the <em>Transformer</em> architecture, as detailed by Radford and colleagues in 2018 <span class="citation" data-cites="radford2018improving">(<a href="#ref-radford2018improving" role="doc-biblioref"><strong>radford2018improving?</strong></a>)</span>. These models possess a unidirectional generative capability, meaning they can only consider preceding words when generating new text. This structural difference enables <em>GPT</em> models to produce novel language, a feature that powers widely used applications such as <em>ChatGPT</em>.</p>
+<p>Notably, <em>GPT</em> models fundamentally differ from <em>BERT</em> models: whilst <em>GPT</em> excels at generating new words, <em>BERT</em> primarily focuses on understanding the full context of an input. Beyond these two primary types, the field also features hybrid architectures that combine encoders and decoders, alongside decoder-only models engineered to emulate encoder-like functionalities, such as <em>XLNet</em> and <em>XLM</em>. Understanding this core distinction between generative models, which produce language, and full-context models, which coherently understand sentences, remains paramount for effective application.</p>
 </section>
-<section id="evolution-of-scientific-large-language-models" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="evolution-of-scientific-large-language-models"><span class="header-section-number">3.5</span> Evolution of Scientific Large Language Models</h2>
+<section id="evolution-and-specialisation-of-scientific-llms" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="evolution-and-specialisation-of-scientific-llms"><span class="header-section-number">3.5</span> Evolution and Specialisation of Scientific LLMs</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_06.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 06</figcaption>
 </figure>
 </div>
-<p>Ho and colleagues’ 2024 work, “<em>A Survey of Pre-trained Language Models for Processing Scientific Text</em>”, provides a comprehensive overview charting the evolution of Large Language Models from 2018 to 2024, specifically highlighting their development for scientific domains and tasks. Their intricate diagram categorises models into Encoders (typified by <em>BERT</em>), Decoders (typified by <em>GPT</em>), Encoder-Decoders, and other less common architectures. Notably, the Encoder category exhibits a far greater population of models compared to the Decoder category within scientific applications. This detailed survey identifies early influential models such as <em>BioBERT</em>, <em>Specter</em>, and <em>Cyber</em>. The observed proliferation of encoder models suggests their particular relevance and potential utility for researchers in the History, Philosophy, and Sociology of Science, who might either leverage these existing models or embark upon developing bespoke solutions.</p>
+<p>The landscape of Large Language Models has undergone rapid and diverse evolution between 2018 and 2024, particularly within scientific domains. Researchers categorise these models primarily by their underlying architecture: encoders, such as the <em>BERT</em>-type models; decoders, exemplified by <em>GPT</em>-type models; and hybrid encoder-decoder configurations, alongside other distinct architectures.</p>
+<p>Early popular examples of domain-specific models include <em>BioBERT</em>, <em>Specter</em>, and <em>Cyber</em>. Subsequently, the field has witnessed the development of specialised LLMs tailored for a wide array of scientific disciplines, encompassing biomedicine, chemistry, material science, climate science, mathematics, physics, and social science. For researchers in the History, Philosophy, and Sociology of Science, this proliferation signifies a substantial opportunity either to leverage existing domain-specific models or to develop bespoke solutions. Analysis of the current landscape indicates a greater prevalence of encoder models in scientific applications compared to decoder models.</p>
 </section>
-<section id="domain-and-task-adaptation-of-large-language-models" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="domain-and-task-adaptation-of-large-language-models"><span class="header-section-number">3.6</span> Domain and Task Adaptation of Large Language Models</h2>
+<section id="strategies-for-domain-and-task-adaptation-of-llms" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="strategies-for-domain-and-task-adaptation-of-llms"><span class="header-section-number">3.6</span> Strategies for Domain and Task Adaptation of LLMs</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_07.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 07</figcaption>
 </figure>
 </div>
-<p>Adapting Large Language Models to specific scientific language necessitates several distinct training approaches. Initial pretraining, where models learn language by predicting subsequent tokens, as in <em>GPT</em>, or by predicting masked words, as in <em>BERT</em>, demands an exorbitant amount of computational power and data, rendering it largely impractical for individual researchers. A more accessible strategy involves continued pretraining, where an already pre-trained model, such as <em>BERT</em>, undergoes further training on domain-specific language; for instance, the speaker and Micha applied this method to physics texts.</p>
-<p>Beyond this, researchers can implement fine-tuning by adding extra layers to pre-trained models and training them to function as classifiers for tasks like sentiment analysis or named entity recognition. Whilst prompt-based adaptation receives a brief mention, contrastive learning emerges as a pivotal method for generating sentence or document embeddings from existing word embeddings. This technique proves crucial for positioning documents and sentences within the same embedding space as individual words, thereby facilitating comparative analysis. <em>Sentence BERT</em>, a widely utilised model, exemplifies this approach, and its intricacies may feature in forthcoming discussions by Irina Gurevich.</p>
+<p>Adapting Large Language Models to specific scientific languages and tasks involves several distinct strategies. The most fundamental approach is pre-training, wherein a model initially learns language by predicting either the next token, as seen in <em>GPT</em> models, or random masked words, characteristic of <em>BERT</em> models. However, this process demands prohibitive computational resources and vast datasets, rendering it generally unfeasible for individual researchers.</p>
+<p>A more accessible alternative is continued pre-training. This involves taking an already pre-trained model and further training it on domain-specific language; for instance, the authors’ own research has refined a <em>BERT</em> model using physics texts. Beyond this, researchers can adapt models by adding extra parameters or layers atop pre-trained architectures, which then train for specific downstream tasks such as sentiment analysis or named entity recognition.</p>
+<p>Whilst prompt-based adaptation offers another avenue for guiding model behaviour without extensive retraining, contrastive learning represents a crucial method for generating sentence or document embeddings. This technique, often leveraging <em>BERT</em> models, produces embeddings where semantically similar inputs position closely in the embedding space, whilst dissimilar inputs keep distant. <em>Sentence BERT</em>, for example, is a widely adopted approach that facilitates the creation of comprehensive sentence and document embeddings from initial word embeddings.</p>
 </section>
-<section id="retrieval-augmented-generation-rag-for-domain-adaptation" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="retrieval-augmented-generation-rag-for-domain-adaptation"><span class="header-section-number">3.7</span> Retrieval Augmented Generation (<em>RAG</em>) for Domain Adaptation</h2>
+<section id="retrieval-augmented-generation-rag-pipelines" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="retrieval-augmented-generation-rag-pipelines"><span class="header-section-number">3.7</span> Retrieval-Augmented Generation (RAG) Pipelines</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_09.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<p>Retrieval Augmented Generation, or <em>RAG</em>, represents a sophisticated pipeline approach to domain adaptation, fundamentally differing from the direct training of a singular model. This system orchestrates the concerted action of at least two or more models, often integrating additional tools to achieve its objectives.</p>
-<p>The process commences with retrieval: a <em>BERT</em>-type model encodes a user’s query, such as “What are <em>LLMs</em>?”, into a precise sentence embedding. Subsequently, this embedding facilitates a search within a dedicated document database, identifying and extracting the most semantically similar passages. These retrieved sentences or passages then become integral to the generation phase. Here, the system seamlessly incorporates them into the prompt of a generative model, typically a <em>GPT</em>-type architecture. This model then synthesises an answer, critically informed by the newly provided context. Modern generative AI systems, including current iterations of <em>ChatGPT</em>, extensively employ <em>RAG</em> for tasks such as internet searching and presenting relevant results. Crucially, this paradigm underscores a broader trend: contemporary reasoning models and “agents” are not monolithic Large Language Models but rather intricate systems that combine <em>LLMs</em> with a diverse array of supplementary tools.</p>
+<p>Retrieval-Augmented Generation (RAG) constitutes a sophisticated pipeline system rather than a singular Large Language Model. This architecture typically integrates at least two or more models that operate in concert. Specifically, <em>BERT</em>-type models are employed to assess the semantic similarity between a user’s query and a corpus of documents. Concurrently, generative models are tasked with formulating responses, drawing upon the context retrieved by the <em>BERT</em>-type components.</p>
+<p>The RAG workflow unfolds systematically: a user’s query, such as “What are LLMs?”, first encodes into a sentence embedding by a <em>BERT</em>-type model. This model then queries a database of relevant documents, identifying and retrieving passages that exhibit the highest semantic similarity. Subsequently, these retrieved passages seamlessly integrate into the prompt provided to a generative model. Armed with this augmented context, the generative model then synthesises a comprehensive answer. This sophisticated pipeline is now a ubiquitous feature in contemporary LLM applications, exemplified by <em>ChatGPT</em>’s capacity to search the internet and present relevant results. More broadly, advanced reasoning models and agents represent complex systems that combine LLMs with a diverse array of other computational tools.</p>
 </section>
-<section id="key-distinctions-in-large-language-models" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="key-distinctions-in-large-language-models"><span class="header-section-number">3.8</span> Key Distinctions in Large Language Models</h2>
+<section id="key-distinctions-in-large-language-model-paradigms" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="key-distinctions-in-large-language-model-paradigms"><span class="header-section-number">3.8</span> Key Distinctions in Large Language Model Paradigms</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_10.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 10</figcaption>
 </figure>
 </div>
-<p>To understand Large Language Models, one must grasp several key distinctions. Firstly, their fundamental architecture and pretraining methodologies vary significantly, encompassing Encoder-based models like <em>BERT</em>, Decoder-based models such as <em>GPT</em>, and hybrid Encoder-Decoder configurations. Secondly, a diverse array of fine-tuning strategies exists, each designed to adapt these models for specific tasks. Thirdly, a critical conceptual difference lies between word embeddings and sentence embeddings; whilst both capture semantic meaning, they operate at distinct levels of abstraction. Finally, the level of abstraction itself provides a crucial categorisation, moving from individual Large Language Models to complex pipelines, exemplified by Retrieval Augmented Generation, and culminating in sophisticated agents that integrate multiple <em>LLMs</em> with a suite of other tools.</p>
+<p>To navigate the complex landscape of Large Language Models effectively, several key distinctions warrant careful consideration.</p>
+<ul>
+<li>Firstly, models fundamentally differ in their underlying architecture, broadly categorised as encoder-based, decoder-based, or hybrid encoder-decoder configurations.</li>
+<li>Secondly, a diverse array of fine-tuning strategies exists, each designed to adapt pre-trained models for specific tasks.</li>
+<li>Thirdly, a critical conceptual difference lies between word embeddings and sentence embeddings, as these represent distinct levels of semantic representation.</li>
+<li>Finally, it is imperative to recognise the varying levels of abstraction at which LLMs operate: they can function as individual models, as integral components within larger pipelines such as RAG systems, or as sophisticated agents that combine LLMs with a multitude of other computational tools.</li>
+</ul>
 </section>
-<section id="applications-of-large-language-models-in-hpss-research" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="applications-of-large-language-models-in-hpss-research"><span class="header-section-number">3.9</span> Applications of Large Language Models in <em>HPSS</em> Research</h2>
+<section id="applications-of-llms-in-history-philosophy-and-sociology-of-science" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="applications-of-llms-in-history-philosophy-and-sociology-of-science"><span class="header-section-number">3.9</span> Applications of LLMs in History, Philosophy, and Sociology of Science</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_11.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 11</figcaption>
 </figure>
 </div>
-<p>An ongoing survey systematically categorises the diverse applications of Large Language Models within History, Philosophy, and Sociology of Science research into four principal areas:</p>
+<p>A recent survey of Large Language Model users within History, Philosophy, and Sociology of Science (HPSS) research has delineated four primary categories of application.</p>
 <ul>
-<li><p><em>Dealing with Data and Sources</em>: This area encompasses functionalities such as parsing and extracting specific information, including publication types, acknowledgements, and citations. It also involves more interactive engagements with sources, facilitating summarisation and <em>RAG</em>-type conversational interfaces.</p></li>
-<li><p><em>Knowledge Structures</em>: This category focuses on extracting entities like scientific instruments, celestial bodies, and chemicals. Furthermore, it enables the mapping of complex relationships, including disciplinary boundaries, interdisciplinary fields, and science-policy discourses.</p></li>
-<li><p><em>Knowledge Dynamics</em>: This third area sees <em>LLMs</em> assisting in tracing conceptual histories, exemplified by tracking terms such as “theory” within Digital Humanities or “virtual” and “Planck” in physics. This category also extends to identifying novelty, pinpointing breakthrough papers and emerging technologies.</p></li>
-<li><p><em>Knowledge Practices</em>: Finally, this area delves into the analysis of how knowledge is constructed and communicated. This includes argument reconstruction, discerning premises, conclusions, and causal links. It also encompasses citation context analysis, a long-standing <em>HPSS</em> tradition now frequently employed for evaluatory purposes, which determines the purpose and sentiment behind citations. Moreover, <em>LLMs</em> facilitate discourse analysis, identifying nuanced linguistic features such as hedge sentences, specialised jargon, and instances of boundary work.</p></li>
+<li><strong>Dealing with data and sources:</strong> LLMs prove invaluable for facilitating the parsing and extraction of diverse information, including publication types, acknowledgements, and citations. Moreover, they enable more dynamic interaction with sources through summarisation and RAG-type conversational interfaces.</li>
+<li><strong>Analysis of knowledge structures:</strong> LLMs contribute significantly to this area. This encompasses the extraction of specific entities, such as scientific instruments, celestial bodies, or chemicals, alongside the mapping of complex relationships, including disciplinary boundaries, interdisciplinary fields, and science-policy discourses.</li>
+<li><strong>Investigation of knowledge dynamics:</strong> The models offer powerful tools for this purpose. This involves tracing conceptual histories—for instance, the evolution of terms like “theory” in Digital Humanities or “virtual” and “Planck” in physics. Furthermore, LLMs can assist in detecting novelty, identifying breakthrough papers, and pinpointing emerging technologies.</li>
+<li><strong>Enhancement of knowledge practices:</strong> LLMs support argument reconstruction by identifying premises, conclusions, and causal links within texts. Citation context analysis, an established HPSS tradition often now confined to evaluatory purposes, gains renewed utility for broader HPSS tasks. Additionally, LLMs facilitate nuanced discourse analysis, enabling the detection of subtle linguistic features such as hedge sentences, specialised jargon, and instances of boundary work.</li>
 </ul>
 </section>
-<section id="trends-and-concerns-in-llm-adoption-for-hpss" class="level2" data-number="3.10">
-<h2 data-number="3.10" class="anchored" data-anchor-id="trends-and-concerns-in-llm-adoption-for-hpss"><span class="header-section-number">3.10</span> Trends and Concerns in <em>LLM</em> Adoption for <em>HPSS</em></h2>
+<section id="observations-and-concerns-in-hpss-llm-adoption" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="observations-and-concerns-in-hpss-llm-adoption"><span class="header-section-number">3.10</span> Observations and Concerns in HPSS LLM Adoption</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_12.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 12</figcaption>
 </figure>
 </div>
-<p>The adoption of Large Language Models within academic research demonstrates an accelerating interest, extending beyond traditionally computational journals like <em>Scientometrics</em> and <em>JASIST</em> into publications not typically associated with computational methods. This expansion largely stems from the models’ potent semantic capabilities, which appeal to qualitative researchers and philosophers alike.</p>
-<p>Researchers exhibit varying degrees of customisation in their <em>LLM</em> usage, ranging from straightforward, off-the-shelf applications of <em>ChatGPT</em> to the development of entirely new architectures and bespoke pretraining regimes. Despite this burgeoning interest, several recurring concerns persist. These include the prohibitive computational resources often required, the inherent opaqueness of model operations, a pervasive lack of suitable training data, and the absence of standardised benchmarks for evaluation. Furthermore, researchers consistently encounter trade-offs between different model types, recognising that no single model serves all purposes; rather, the selection of an adequate model remains contingent upon the specific research objective. Nevertheless, a discernible trend towards greater accessibility is emerging, exemplified by tools such as <em>BERTopic</em>, which offers a user-friendly and well-maintained solution for topic modelling.</p>
+<p>Current trends indicate an accelerating interest in Large Language Models within the academic community, extending even to journals not traditionally associated with computational methods, such as <em>Scientometrics</em> and <em>JASIST</em>. This growing adoption reflects the profound semantic capabilities of these models, which increasingly appeal to qualitative researchers and philosophers.</p>
+<p>The degree of customisation in LLM application varies considerably, ranging from the straightforward, off-the-shelf use of tools like <em>ChatGPT</em> to the development of entirely new architectures, alongside custom pre-training and fine-tuning. Despite this burgeoning interest, several recurring concerns persist. Researchers frequently highlight the overwhelming computational resources required, the inherent opaqueness of many models, and a pervasive lack of both sufficient training data and standardised benchmarks.</p>
+<p>Furthermore, the necessity of navigating trade-offs between different model types, such as <em>BERT</em>-like and <em>GPT</em>-like architectures, underscores that no single model serves all purposes. Rather, the selection of an adequate model remains contingent upon the specific research objective. Nevertheless, a discernible trend towards greater accessibility is emerging, exemplified by tools like <em>BERTopic</em> for topic modelling, which are gaining widespread adoption due to their user-friendliness and robust maintenance.</p>
 </section>
-<section id="critical-reflections-and-future-directions-for-llms-in-hpss" class="level2" data-number="3.11">
-<h2 data-number="3.11" class="anchored" data-anchor-id="critical-reflections-and-future-directions-for-llms-in-hpss"><span class="header-section-number">3.11</span> Critical Reflections and Future Directions for <em>LLMs</em> in <em>HPSS</em></h2>
+<section id="reflections-on-hpss-specific-challenges-and-llm-integration" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="reflections-on-hpss-specific-challenges-and-llm-integration"><span class="header-section-number">3.11</span> Reflections on HPSS-Specific Challenges and LLM Integration</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_003_slide_12.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 12</figcaption>
+<p><img src="images/ai-nepi_003_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
 </figure>
 </div>
-<p>Critical reflections on the integration of Large Language Models into <em>HPSS</em> research highlight several discipline-specific challenges. The historical evolution of concepts and language poses a significant hurdle, as <em>LLMs</em> are predominantly trained on contemporary language. This necessitates either the development of bespoke models or the careful application of existing ones, whilst actively mitigating inherent biases when analysing historical texts. Furthermore, <em>HPSS</em> researchers typically adopt a reconstructive and critically reflective perspective, reading between the lines to understand authorial context and subtle discursive strategies, such as boundary work. <em>LLMs</em> are not inherently trained to detect such nuances, thus demanding innovative methods to enable this deeper form of “reading.” Practical data challenges, including sparse datasets, the presence of multiple languages, and archaic scripts, further complicate their application.</p>
-<p>To navigate these complexities, several recommendations emerge for <em>HPSS</em> researchers:</p>
+<p>Integrating Large Language Models into History, Philosophy, and Sociology of Science (HPSS) necessitates a careful consideration of several HPSS-specific challenges.</p>
 <ul>
-<li><p>Cultivating <em>LLM</em> literacy is paramount, requiring a thorough understanding of both the theoretical underpinnings and practical implications of these tools.</p></li>
-<li><p>Acquiring coding skills remains essential, even as <em>NLP</em> coding interfaces become more intuitive; this prevents the uncritical adoption of off-the-shelf tools that might yield visually appealing but ultimately uninterpretable outputs.</p></li>
-<li><p>The development of shared datasets and standardised benchmarks is crucial for fostering collaborative progress and ensuring rigorous evaluation.</p></li>
-<li><p>Researchers must remain steadfast in their <em>HPSS</em> methodologies, carefully translating disciplinary problems into <em>NLP</em> tasks without allowing the technical objectives of classification, generation, or summarisation to “hijack” the core research purpose.</p></li>
+<li>Firstly, the historical evolution of concepts and language presents a significant hurdle. As LLMs predominantly train on modern language, they may exhibit biases when applied to historical texts. This necessitates either the development of bespoke models or the judicious application of existing ones, whilst acknowledging their inherent limitations.</li>
+<li>Secondly, HPSS adopts a reconstructive and critically reflective perspective, involving reading “between the lines” to understand authorial context and subtle discursive strategies, such as boundary work. Current LLMs do not inherently train for such nuanced interpretation, demanding innovative approaches to align model capabilities with HPSS methodologies.</li>
+<li>Thirdly, practical data issues persist, including sparse datasets, the presence of multiple languages, old scripts, and a general lack of digitalisation.</li>
 </ul>
-<p>Despite these challenges, <em>LLMs</em> present compelling new opportunities. They offer a unique pathway for bridging qualitative and quantitative research approaches, fostering greater methodological integration within <em>HPSS</em>. Moreover, these developments prompt a valuable reflection on the discipline’s own history, drawing connections to the pre-history of related methods, such as the co-word analysis pioneered by Colon and Ari Rip in the 1980s, which itself emerged from an Actor-Network Theory framework. A compelling example of <em>LLMs</em>’ transformative potential lies in their capacity to track the evolution of word meanings over time through contextualised word embeddings. This enables researchers to distinguish various senses of a term, such as “Planck” (referring to Max Planck, the Planck Institutes, or the Planck satellite mission), and to observe their changing dominance within historical physics archives—a feat previously unattainable without <em>LLMs</em>. Ultimately, these models hold the promise of addressing core <em>STS</em> and <em>HPSS</em> problems, including the nuanced understanding of paradigm shifts, from Newton’s physics to Einstein’s relativity.</p>
+<p>Addressing these challenges requires cultivating robust LLM literacy amongst researchers. This involves familiarising oneself with the tools and theoretical underpinnings of LLMs, Natural Language Processing (NLP), and Deep Learning (DL). Researchers must learn to identify the most appropriate architecture and training regimen for their specific problems, whilst collectively developing shared datasets and benchmarks tailored to HPSS needs. Although advancements in natural language processing may gradually reduce the need for extensive coding, a foundational understanding remains crucial to avoid merely generating aesthetically pleasing but analytically shallow visualisations.</p>
+<p>Crucially, HPSS researchers must remain steadfast in their methodological principles. This entails translating complex HPSS problems into NLP tasks without compromising the original research focus or purpose. Nevertheless, LLMs present unprecedented opportunities for bridging qualitative and quantitative approaches, fostering interdisciplinary collaboration. Furthermore, it is pertinent to reflect upon HPSS’s own historical contributions to the pre-history of these models, exemplified by the co-word analysis developed by scholars like Colon and Ari Rip in the 1980s, which emerged from an Actor-Network Theory perspective and demonstrates a long-standing engagement with computational tools for conceptual analysis.</p>
 </section>
 <section id="additional-visual-materials" class="level2" data-number="3.12">
 <h2 data-number="3.12" class="anchored" data-anchor-id="additional-visual-materials"><span class="header-section-number">3.12</span> Additional Visual Materials</h2>
-<p>The following slides provide supplementary visual information that complements the main presentation content:</p>
+<p>The following slides provide supplementary visual information that complements the main chapter content:</p>
 <section id="slide-02" class="level3" data-number="3.12.1">
 <h3 data-number="3.12.1" class="anchored" data-anchor-id="slide-02"><span class="header-section-number">3.12.1</span> Slide 02</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -444,7 +442,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Slide 02</figcaption>
 </figure>
 </div>
-<p>This slide presents the agenda for the presentation, titled ‘<em>Today’s Menu</em>’. The main sections outlined are: ‘Primer on <em>LLMs</em>’, ‘Applications in <em>HPSS</em>’ (History, Philosophy, and Sociology of Science), and ‘Reflections’. The visual is a chalkboard, reinforcing the ‘menu’ theme.</p>
+<p>The slide presents the agenda for the presentation, framed as “Today’s Menu”. The main sections to be covered are listed as: “Primer on LLMs” (Large Language Models), “Applications in HPSS” (History, Philosophy, and Sociology of Science), and “Reflections”. This slide serves as a roadmap for the audience.</p>
 </section>
 <section id="slide-08" class="level3" data-number="3.12.2">
 <h3 data-number="3.12.2" class="anchored" data-anchor-id="slide-08"><span class="header-section-number">3.12.2</span> Slide 08</h3>
@@ -454,67 +452,37 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Slide 08</figcaption>
 </figure>
 </div>
-<p>This slide offers a comprehensive comparison of <em>BERT</em> and <em>GPT</em> models within the context of the <em>Transformer</em> architecture. On the left, the ‘<em>BERT</em>’ model is shown as ‘bidirectional full-context’, associated with the ‘Encoder’ part of the <em>Transformer</em>. On the right, a new ‘<em>GPT</em>’ block is introduced, described as ‘unidirectional generative’ and associated with the ‘Decoder’. Both <em>BERT</em> and <em>GPT</em> blocks include ‘<em>LLMs</em> for <em>HPSS</em> ?’ and ‘Vocab’ labels. The central <em>Transformer</em> model architecture remains fully visible. Three citations are present: ‘Devlin et al.&nbsp;2018. <em>BERT: Pre-training of…</em>’, ‘Vaswani et al.&nbsp;2017: <em>Attention is all you need</em>’, and ‘Radford et al.&nbsp;2018. <em>Improving Language…</em>’. This slide appears to be the complete version of the model comparison.</p>
+<p>This slide, titled “Transformer”, presents the complete <em>Transformer</em> model architecture, now augmented with specific examples of Large Language Models (LLMs). On the “Encoder” side, “<em>BERT</em>” is shown, characterised as “bidirectional full-context” and linked to “LLMs for HPSS ?” and “Vocab”. On the “Decoder” side, “<em>GPT</em>” is introduced, characterised as “unidirectional generative” and also linked to “LLMs for HPSS ?” and “Vocab”. The full internal components of the <em>Transformer</em> (Input/Output Embedding, Positional Encoding, Multi-Head Attention, Feed Forward, Add &amp; Norm, Softmax, Linear) are visible. The slide includes citations for “Vaswani et al.&nbsp;2017: <em>Attention is all you need</em>”, “Devlin et al.&nbsp;2018. <em>BERT: Pre-training of…</em>”, and “Radford et al.&nbsp;2018. <em>Improving Language…</em>”.</p>
 </section>
-<section id="slide-13" class="level3" data-number="3.12.3">
-<h3 data-number="3.12.3" class="anchored" data-anchor-id="slide-13"><span class="header-section-number">3.12.3</span> Slide 13</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_003_slide_13.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 13</figcaption>
-</figure>
-</div>
-<p>This slide outlines key distinctions related to Large Language Models. It presents four main categories:</p>
-<ul>
-<li><p><em>Architecture/Pretraining</em>, distinguishing between ‘Encoder-based vs.&nbsp;Decoder-based vs.&nbsp;Encoder-Decoder-based’ models.</p></li>
-<li><p><em>Fine-tuning</em>, noting ‘Various strategies’.</p></li>
-<li><p><em>Embeddings</em>, differentiating between ‘Word vs.&nbsp;Sentence’ embeddings.</p></li>
-<li><p><em>Level of abstraction</em>, comparing ‘<em>LLMs</em> vs.&nbsp;Pipelines vs.&nbsp;Agents’.</p></li>
-</ul>
-<p>This slide provides a structured overview of important conceptual differences in the field of <em>LLMs</em>.</p>
-</section>
-<section id="slide-14" class="level3" data-number="3.12.4">
-<h3 data-number="3.12.4" class="anchored" data-anchor-id="slide-14"><span class="header-section-number">3.12.4</span> Slide 14</h3>
+<section id="slide-14" class="level3" data-number="3.12.3">
+<h3 data-number="3.12.3" class="anchored" data-anchor-id="slide-14"><span class="header-section-number">3.12.3</span> Slide 14</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_14.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 14</figcaption>
 </figure>
 </div>
-<p>This slide details applications in <em>HPSS</em> (History, Philosophy, and Sociology of Science). It categorises applications into four areas:</p>
-<ul>
-<li><p><em>Dealing with data and sources</em>, including ‘Parsing and extracting (publication types, acknowledgements, citations)’ and ‘Interacting with sources (summarization, <em>RAG</em>-type chatting)’.</p></li>
-<li><p><em>Knowledge structures</em>, covering ‘Entity extraction (scientific instruments, celestial bodies, chemicals)’ and ‘Mappings (disciplines, interdisciplinary fields, science-policy discourses)’.</p></li>
-<li><p><em>Knowledge dynamics</em>, with ‘Conceptual histories (’theory’ in DH, ‘virtual’ and ‘Planck’ in physics)’ and ‘Novelty (breakthrough papers, emerging technologies)’.</p></li>
-<li><p><em>Knowledge practices</em>, which includes ‘Argument reconstruction (premises &amp; conclusions, causality)’, ‘Citation context analysis (purpose, sentiment)’, and ‘Discourse analysis (hedge sentences, jargon, boundary work)’.</p></li>
-</ul>
-<p>This slide provides concrete examples of how <em>LLMs</em> can be applied in <em>HPSS</em> research.</p>
+<p>The slide, titled “Applications in HPSS”, provides a comprehensive list of potential uses for Large Language Models within the History, Philosophy, and Sociology of Science. These applications are categorised into four main areas: “Dealing with data and sources”, which includes “Parsing and extracting (publication types, acknowledgements, citations)” and “Interacting with sources (summarisation, RAG-type chatting)”; “Knowledge structures”, covering “Entity extraction (scientific instruments, celestial bodies, chemicals)” and “Mappings (disciplines, interdisciplinary fields, science-policy discourses)”; “Knowledge dynamics”, addressing “Conceptual histories (“theory” in DH, “virtual” and “Planck” in physics)” and “Novelty (breakthrough papers, emerging technologies)”; and “Knowledge practices”, encompassing “Argument reconstruction (premises &amp; conclusions, causality)”, “Citation context analysis (purpose, sentiment)”, and “Discourse analysis (hedge sentences, jargon, boundary work)”.</p>
 </section>
-<section id="slide-15" class="level3" data-number="3.12.5">
-<h3 data-number="3.12.5" class="anchored" data-anchor-id="slide-15"><span class="header-section-number">3.12.5</span> Slide 15</h3>
+<section id="slide-15" class="level3" data-number="3.12.4">
+<h3 data-number="3.12.4" class="anchored" data-anchor-id="slide-15"><span class="header-section-number">3.12.4</span> Slide 15</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_15.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 15</figcaption>
 </figure>
 </div>
-<p>This slide continues the discussion on applications in <em>HPSS</em>, focusing on broader trends and challenges. It notes accelerating interest in <em>LLMs</em>, even in non-computational journals. It highlights varying degrees of customisation, ranging ‘From architectural tweakings and custom pretraining over custom fine-tuning to off-the-shelf use of <em>ChatGPT</em>’. The slide also addresses repeating concerns such as ‘Overwhelming computational resources, opaqueness, lack of training data, lack of benchmarks, trade-offs between model types (<em>BERT</em>-like vs.&nbsp;<em>GPT</em>-like)’. Finally, it points to a trend toward accessibility, exemplified by ‘<em>BERTopic</em> as the new <em>pyLDAvis</em>?’. This slide provides a critical perspective on the adoption and challenges of <em>LLMs</em> in <em>HPSS</em>.</p>
+<p>The slide, titled “Applications in HPSS”, continues the discussion by highlighting current trends and challenges. It notes “Accelerating interest in LLMs”, even in “non-computational journals”. It describes “Varying degrees of customisation”, ranging “From architectural tweakings and custom pretraining over custom fine-tuning to off-the-shelf use of <em>ChatGPT</em>”. The slide also lists “Repeating concerns” such as “Overwhelming computational resources, opaqueness, lack of training data, lack of benchmarks, trade-offs between model types (<em>BERT</em>-like vs.&nbsp;<em>GPT</em>-like)”. Finally, it points to a “Trend toward accessibility”, exemplified by the question “E.g. <em>BERTopic</em> as the new pyLDAvis?”.</p>
 </section>
-<section id="slide-16" class="level3" data-number="3.12.6">
-<h3 data-number="3.12.6" class="anchored" data-anchor-id="slide-16"><span class="header-section-number">3.12.6</span> Slide 16</h3>
+<section id="slide-16" class="level3" data-number="3.12.5">
+<h3 data-number="3.12.5" class="anchored" data-anchor-id="slide-16"><span class="header-section-number">3.12.5</span> Slide 16</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_003_slide_16.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 16</figcaption>
 </figure>
 </div>
-<p>This slide presents reflections on the use of <em>LLMs</em> in <em>HPSS</em>. It identifies three key areas:</p>
-<ul>
-<li><p><em>Acknowledging HPSS-specific challenges</em>, including ‘Historical evolution of concepts and language’, ‘Reconstructive perspective, reading between the lines, reflecting social implications’, and ‘Sparse data, multiple languages, old scripts, lack of digitalization’.</p></li>
-<li><p><em>Building LLM literacy</em>, which involves familiarising with ‘<em>LLMs</em>, <em>NLP</em>, and <em>DL</em>, both tools and theory’, learning ‘what’s the right architecture and training for our problems’, and developing ‘our own shared datasets and benchmarks’.</p></li>
-<li><p><em>Staying true to HPSS methodologies</em>, by translating ‘<em>HPSS</em> problems into <em>NLP</em> tasks without losing our focus’, exploring ‘New opportunities for bridging qualitative and quantitative approaches’, and reflecting on ‘<em>HPSS</em>’ own role in <em>LLM</em> pre-history (e.g.&nbsp;co-word analysis)’.</p></li>
-</ul>
-<p>This slide offers a forward-looking and critical summary of the integration of <em>LLMs</em> into <em>HPSS</em>.</p>
+<p>The slide, titled “Reflections”, presents key considerations and future directions for LLMs in HPSS. It outlines “Acknowledging HPSS-specific challenges”, including “Historical evolution of concepts and language”, adopting a “Reconstructive perspective, reading between the lines, reflecting social implications”, and dealing with “Sparse data, multiple languages, old scripts, lack of digitalisation”. It emphasises “Building LLM literacy” by encouraging familiarity with “LLMs, NLP, and DL, both tools and theory”, learning “what’s the right architecture and training for our problems”, and developing “our own shared datasets and benchmarks”. Lastly, it stresses “Staying true to HPSS methodologies”, which involves translating “HPSS problems into NLP tasks without losing our focus”, exploring “New opportunities for bridging qualitative and quantitative approaches”, and reflecting on “HPSS’ own role in LLM pre-history (e.g.&nbsp;co-word analysis)”.</p>
 
 
 </section>
