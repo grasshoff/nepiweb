@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Philipp Mayr, Slava Tykhonov, Jetze Touber &amp; Andrea Scharnhorst">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-06-21">
 
-<title>11&nbsp; Science dynamics and AI – AI-NEPI Conference Proceedings</title>
+<title>11&nbsp; AI Solutions for Academic Information Retrieval: The Ghostwriter and EverythingData Approach – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_011.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_011.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">AI Solutions for Academic Information Retrieval: The Ghostwriter and EverythingData Approach</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">AI Solutions for Academic Information Retrieval: The Ghostwriter and EverythingData Approach</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -236,19 +236,21 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#presentation-objectives-and-core-research-question" id="toc-presentation-objectives-and-core-research-question" class="nav-link" data-scroll-target="#presentation-objectives-and-core-research-question"><span class="header-section-number">11.1</span> Presentation Objectives and Core Research Question</a></li>
-  <li><a href="#the-ghostwriter-interface-a-new-paradigm-for-information-retrieval" id="toc-the-ghostwriter-interface-a-new-paradigm-for-information-retrieval" class="nav-link" data-scroll-target="#the-ghostwriter-interface-a-new-paradigm-for-information-retrieval"><span class="header-section-number">11.2</span> The Ghostwriter Interface: A New Paradigm for Information Retrieval</a></li>
-  <li><a href="#retrieval-augmented-generation-rag-and-graphrag-architecture" id="toc-retrieval-augmented-generation-rag-and-graphrag-architecture" class="nav-link" data-scroll-target="#retrieval-augmented-generation-rag-and-graphrag-architecture"><span class="header-section-number">11.3</span> Retrieval Augmented Generation (RAG) and GraphRAG Architecture</a></li>
-  <li><a href="#ghostwriter-and-everythingdata-workflow" id="toc-ghostwriter-and-everythingdata-workflow" class="nav-link" data-scroll-target="#ghostwriter-and-everythingdata-workflow"><span class="header-section-number">11.4</span> Ghostwriter and EverythingData Workflow</a></li>
-  <li><a href="#ghostwriter-document-indexing-and-collection-management" id="toc-ghostwriter-document-indexing-and-collection-management" class="nav-link" data-scroll-target="#ghostwriter-document-indexing-and-collection-management"><span class="header-section-number">11.5</span> Ghostwriter: Document Indexing and Collection Management</a></li>
-  <li><a href="#ghostwriter-chatting-with-papers-and-hallucination-prevention" id="toc-ghostwriter-chatting-with-papers-and-hallucination-prevention" class="nav-link" data-scroll-target="#ghostwriter-chatting-with-papers-and-hallucination-prevention"><span class="header-section-number">11.6</span> Ghostwriter: Chatting with Papers and Hallucination Prevention</a></li>
-  <li><a href="#iterative-query-refinement-and-content-addition" id="toc-iterative-query-refinement-and-content-addition" class="nav-link" data-scroll-target="#iterative-query-refinement-and-content-addition"><span class="header-section-number">11.7</span> Iterative Query Refinement and Content Addition</a></li>
-  <li><a href="#behind-the-screens-entity-extraction-and-multilinguality" id="toc-behind-the-screens-entity-extraction-and-multilinguality" class="nav-link" data-scroll-target="#behind-the-screens-entity-extraction-and-multilinguality"><span class="header-section-number">11.8</span> Behind the Screens: Entity Extraction and Multilinguality</a></li>
-  <li><a href="#fact-extraction-and-knowledge-organisation-systems" id="toc-fact-extraction-and-knowledge-organisation-systems" class="nav-link" data-scroll-target="#fact-extraction-and-knowledge-organisation-systems"><span class="header-section-number">11.9</span> Fact Extraction and Knowledge Organisation Systems</a></li>
-  <li><a href="#linking-entities-to-wikidata-for-multilingual-support" id="toc-linking-entities-to-wikidata-for-multilingual-support" class="nav-link" data-scroll-target="#linking-entities-to-wikidata-for-multilingual-support"><span class="header-section-number">11.10</span> Linking Entities to Wikidata for Multilingual Support</a></li>
-  <li><a href="#multilingual-query-translation" id="toc-multilingual-query-translation" class="nav-link" data-scroll-target="#multilingual-query-translation"><span class="header-section-number">11.11</span> Multilingual Query Translation</a></li>
-  <li><a href="#summary-of-pipeline-capabilities-and-future-vision" id="toc-summary-of-pipeline-capabilities-and-future-vision" class="nav-link" data-scroll-target="#summary-of-pipeline-capabilities-and-future-vision"><span class="header-section-number">11.12</span> Summary of Pipeline Capabilities and Future Vision</a></li>
-  <li><a href="#live-demonstration-querying-and-multilingual-capabilities" id="toc-live-demonstration-querying-and-multilingual-capabilities" class="nav-link" data-scroll-target="#live-demonstration-querying-and-multilingual-capabilities"><span class="header-section-number">11.13</span> Live Demonstration: Querying and Multilingual Capabilities</a></li>
+  <li><a href="#science-dynamics-and-ai" id="toc-science-dynamics-and-ai" class="nav-link" data-scroll-target="#science-dynamics-and-ai"><span class="header-section-number">11.1</span> Science Dynamics and AI</a></li>
+  <li><a href="#presentation-outline-and-research-question" id="toc-presentation-outline-and-research-question" class="nav-link" data-scroll-target="#presentation-outline-and-research-question"><span class="header-section-number">11.2</span> Presentation Outline and Research Question</a></li>
+  <li><a href="#the-ghostwriter-approach-a-new-ir-interface" id="toc-the-ghostwriter-approach-a-new-ir-interface" class="nav-link" data-scroll-target="#the-ghostwriter-approach-a-new-ir-interface"><span class="header-section-number">11.3</span> The <em>Ghostwriter</em> Approach: A New IR Interface</a></li>
+  <li><a href="#ghostwriter-and-everythingdata-core-components" id="toc-ghostwriter-and-everythingdata-core-components" class="nav-link" data-scroll-target="#ghostwriter-and-everythingdata-core-components"><span class="header-section-number">11.4</span> <em>Ghostwriter</em> and <em>EverythingData</em>: Core Components</a></li>
+  <li><a href="#vector-versus-graph-databases-for-rag" id="toc-vector-versus-graph-databases-for-rag" class="nav-link" data-scroll-target="#vector-versus-graph-databases-for-rag"><span class="header-section-number">11.5</span> Vector versus Graph Databases for RAG</a></li>
+  <li><a href="#system-architecture" id="toc-system-architecture" class="nav-link" data-scroll-target="#system-architecture"><span class="header-section-number">11.6</span> System Architecture</a></li>
+  <li><a href="#ghostwriter-content-indexing" id="toc-ghostwriter-content-indexing" class="nav-link" data-scroll-target="#ghostwriter-content-indexing"><span class="header-section-number">11.7</span> <em>Ghostwriter</em>: Content Indexing</a></li>
+  <li><a href="#interactive-queries-and-source-transparency" id="toc-interactive-queries-and-source-transparency" class="nav-link" data-scroll-target="#interactive-queries-and-source-transparency"><span class="header-section-number">11.8</span> Interactive Queries and Source Transparency</a></li>
+  <li><a href="#iterative-refinement-and-verifiability" id="toc-iterative-refinement-and-verifiability" class="nav-link" data-scroll-target="#iterative-refinement-and-verifiability"><span class="header-section-number">11.9</span> Iterative Refinement and Verifiability</a></li>
+  <li><a href="#entity-extraction-and-multilingual-support" id="toc-entity-extraction-and-multilingual-support" class="nav-link" data-scroll-target="#entity-extraction-and-multilingual-support"><span class="header-section-number">11.10</span> Entity Extraction and Multilingual Support</a></li>
+  <li><a href="#query-mapping-to-graph-representations" id="toc-query-mapping-to-graph-representations" class="nav-link" data-scroll-target="#query-mapping-to-graph-representations"><span class="header-section-number">11.11</span> Query Mapping to Graph Representations</a></li>
+  <li><a href="#entity-linking-with-wikidata" id="toc-entity-linking-with-wikidata" class="nav-link" data-scroll-target="#entity-linking-with-wikidata"><span class="header-section-number">11.12</span> Entity Linking with Wikidata</a></li>
+  <li><a href="#conceptual-translation-with-gemma3" id="toc-conceptual-translation-with-gemma3" class="nav-link" data-scroll-target="#conceptual-translation-with-gemma3"><span class="header-section-number">11.13</span> Conceptual Translation with <em>Gemma3</em></a></li>
+  <li><a href="#system-functionality-and-benefits" id="toc-system-functionality-and-benefits" class="nav-link" data-scroll-target="#system-functionality-and-benefits"><span class="header-section-number">11.14</span> System Functionality and Benefits</a></li>
+  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions"><span class="header-section-number">11.15</span> Future Directions</a></li>
   </ul>
 </nav>
     </div>
@@ -257,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">AI Solutions for Academic Information Retrieval: The Ghostwriter and EverythingData Approach</span></h1>
 </div>
 
 
@@ -281,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">June 21, 2025</p>
     </div>
   </div>
   
@@ -295,184 +297,178 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<pre><code>  This presentation details the development of an AI solution designed to facilitate interaction with scholarly papers, addressing the increasing volume of scientific information. Researchers from DANS, the data archive of the Royal Netherlands Academy of Arts and Sciences, and GESIS, an archive also engaged in research, collaborated on this project. Their primary objective involved constructing an AI system that enables users to "chat" with selected academic texts, thereby enhancing information retrieval processes.
-
-  The solution comprises two principal components: Ghostwriter, serving as the user interface, and EverythingData, which manages the underlying backend workflow. Ghostwriter functions as a novel information retrieval interface, allowing simultaneous interaction with both structured data (metaphorically, a "librarian" representing knowledge organisation systems) and natural language content (an "expert"). This approach aligns with the broader scientific discourse surrounding Retrieval Augmented Generation (RAG), specifically advocating for a GraphRAG methodology.
-
-  The system's core ingredients include a vector space, constructed from data file content encoded as embeddings via various machine learning algorithms and Large Language Models (LLMs), and a graph, which represents a metadata layer integrated with diverse ontologies and controlled vocabularies, including those for responsible AI, expressed using the Croissant ML standard. The vision centres on unifying these graph and vector representations within a single model, creating a local, distributed AI where the LLM acts as both an interface and a reasoning engine. This engine connects to a "RAG library" (the graph), navigates datasets, and consumes embeddings (vectors) as contextual information.
-
-  Implementation begins with ingesting a collection of articles, such as those from the *methods, data, analyses* (MDA) journal. EverythingData processes these articles, storing information in a vector store (Qdrant) and performing operations like term extraction, embedding construction, and enrichment. Crucially, the system couples these processes with knowledge graphs, thereby contextualising embeddings and enhancing their value. Users formulate natural language queries within the Ghostwriter interface, prompting the system to return a list of relevant documents and an explanatory summary.
-
-  To prevent hallucinations, the system explicitly states when information is not directly available within the provided text, offering users the option to add new papers. Backend operations involve an entity extraction pipeline that annotates terms with semantic meaning by mapping them to controlled vocabularies, transitioning from vector space to the knowledge graph. Entities are further linked to the Wikidata ontology, providing immediate multilingual support by enabling queries in various languages. The LLM then synthesises these extracted text pieces to produce the final explanatory output.
-
-  The pipeline demonstrates versatility, functioning with any collection, including webpages, RSS feeds, and trusted data repositories like Dataverse instances. This capability enables localised interaction with papers, supporting close reading and containing the search space by situating questions within specific areas of scientific knowledge. The system extracts information beyond explicit text and metadata, forging associations at both natural language and Knowledge Organisation System levels. The Ghostwriter interface specifically facilitates the identification of related documents and the refinement of queries.
-
-  A key innovation lies in decoupling knowledge from questions and papers, storing this knowledge externally (e.g., as Wikidata identifiers). This separation allows for benchmarking different models against established Knowledge Organisation Systems, fostering future advancements in scientific inquiry. The project actively collaborates with industry partners, including Google and Meta, to ensure the sustainability of this KOS-based approach. During a live demonstration, the Ghostwriter interface successfully processed queries regarding "rational choice theory" and "utility in rational choice theory," providing accurate summaries and references, whilst showcasing its multilingual capabilities by processing a German-language paper. The system employs a 1 billion parameter LLM (Llama), capable of local execution, and segments papers into small, identifiable blocks, leveraging LLM techniques and knowledge graphs to predict relevant text segments. This local processing capability offers greater control and cost-effectiveness compared to reliance on large, external models, ultimately supporting human thought processes in formulating research questions rather than providing definitive answers. The system has already demonstrated scalability, handling approximately 300,000 documents for Harvard University.</code></pre>
+<p>This presentation introduces a novel AI-driven solution, comprising <em>Ghostwriter</em> and <em>EverythingData</em>, which a collaborative team from Dans (Data Archiving and Networked Services) and GESIS (Leibniz Institute for the Social Sciences) has meticulously crafted. Their work addresses the burgeoning challenge of information overload within scientific disciplines. The system facilitates knowledge production by enabling users to ‘chat with papers’, directly engaging with the core research question: is it feasible to construct an AI solution for conversational interaction with specific collections of academic literature?</p>
+<p>The system architecture integrates Retrieval-Augmented Generation (RAG) with a hybrid of vector and graph database methodologies. <em>EverythingData</em> constitutes the backend, processing raw document collections—such as full-text articles from the <em>method-data-analysis (mda) journal</em>—into a structured knowledge base. This process involves comprehensive term extraction, the generation of embeddings using various Machine Learning algorithms and Large Language Models (LLMs), and subsequent enrichment through external knowledge graphs like Wikidata.</p>
+<p>For implementation, the team employs a vector store, specifically <em>Q-drant</em>, for content embeddings and a graph database for metadata, formally expressed using the Croissant ML standard. This hybrid ‘GraphRAG’ model combines the semantic understanding afforded by vector spaces with the relational insights provided by knowledge graphs. It fosters a ‘locally’ implemented Distributed AI where the LLM functions dually as an intuitive interface and a powerful reasoning engine.</p>
+<p><em>Ghostwriter</em> operates as the user-facing interface, facilitating natural language queries. It dynamically generates both a list of relevant documents and an explanatory text, crucially providing transparent sourcing to prevent hallucinations. The system’s iterative approach empowers users to refine their questions. Its entity extraction pipeline meticulously maps query terms to controlled vocabularies and links them to broader knowledge graph representations, thereby supporting immediate multilinguality. This robust architecture ensures that responses are rigorously grounded in the specific collection, offering a controlled search space for ‘close reading’ and enabling the discovery of associations that extend beyond explicit text or metadata.</p>
+<p>Future developments include expanding the pilot to incorporate bibliometric questions by integrating metadata harvesting. The team also plans to apply the methodology to large-scale official statistical data, such as CBS data via the ODISSEI Portal and the SSHOC.nl project, and to extend its application to specialised cultural heritage datasets, as in the MuseIT case. Key challenges ahead involve rigorously evaluating the workflow’s efficacy and developing advanced visualisation techniques to represent the spatial and temporal evolution of research topics. The project champions a sustainable, local AI approach, reducing reliance on large industry models and fostering collaborative development within the academic community.</p>
 </section>
-<section id="presentation-objectives-and-core-research-question" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="presentation-objectives-and-core-research-question"><span class="header-section-number">11.1</span> Presentation Objectives and Core Research Question</h2>
+<section id="science-dynamics-and-ai" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="science-dynamics-and-ai"><span class="header-section-number">11.1</span> Science Dynamics and AI</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_02.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 02</figcaption>
 </figure>
 </div>
-<pre><code>    This presentation addresses a pivotal research question: whether an AI solution can be effectively constructed to facilitate interactive "chatting" with a curated selection of academic papers. The discussion commences by introducing fundamental concepts in information retrieval, exploring the intricate dynamics of human-machine interaction, and detailing the principles of Retrieval-Augmented Generation (RAG) within generative AI.
-
-    A specific use case, drawing upon articles from the *methods, data, analyses* (MDA) journal, illustrates the practical application of the developed system. The presentation then introduces the underlying workflow of a "local" or "tailored AI solution," which comprises two key components: Ghostwriter, serving as the interface, and EverythingData, encompassing the comprehensive backend operations. Subsequent sections provide detailed illustrations of both front-end and back-end functionalities, culminating in a summary and an outlook on future developments.
-
-    The broader context for this endeavour stems from the pervasive challenge of managing the overwhelming flood of information in contemporary science. This initiative represents a collaborative effort between DANS, the data archive of the Royal Netherlands Academy of Arts and Sciences, and GESIS, an institution that combines archiving with active research.
-  </code></pre>
+<p>The evolution of scientific disciplines consistently demonstrates both growth and increasing differentiation, leading to an overwhelming volume of information. This expansion presents a significant practical challenge: the imperative to efficiently review, evaluate, and select pertinent content. Fundamentally, the creation of new knowledge, whether within individual minds or across broader academia, relies upon the ability to locate and comprehend existing information.</p>
+<p>Whilst machines, particularly recent advancements in Artificial Intelligence, have undeniably fostered this growth, a critical question arises: can they also actively support the knowledge production process itself? This inquiry forms a core challenge within the domain of Information Retrieval. At Dans, senior research engineer Slava Tikhonov has pioneered extensive experimentation, meticulously building complex data pipelines. His intricate work, though challenging to unravel, has inspired the current endeavour. The primary objective involves applying these AI-driven methodologies to manage the burgeoning flood of information, thereby addressing fundamental information retrieval challenges.</p>
 </section>
-<section id="the-ghostwriter-interface-a-new-paradigm-for-information-retrieval" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="the-ghostwriter-interface-a-new-paradigm-for-information-retrieval"><span class="header-section-number">11.2</span> The Ghostwriter Interface: A New Paradigm for Information Retrieval</h2>
+<section id="presentation-outline-and-research-question" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="presentation-outline-and-research-question"><span class="header-section-number">11.2</span> Presentation Outline and Research Question</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_03.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<pre><code>    The Ghostwriter approach introduces a novel interface for information retrieval, fundamentally altering how users interact with data. This system conceptualises information access through a series of evolving metaphors, each representing increasing sophistication in interaction. Initially, querying a single database, akin to "Me and a database," necessitates explicit knowledge of the schema and its typical values to yield results, embodying a classic information retrieval challenge.
-
-    Progressing beyond this, the interaction with "Me and a librarian" signifies engagement with a single data collection or space, where connected structured databases or graphs operate in the background. This "librarian" metaphor specifically refers to structured data, encompassing knowledge organisation systems (KOS) and pre-existing classifications. Further still, the advent of Large Language Models (LLMs) transforms the interaction into "Me and a library" or "Me and a round of experts," where natural language becomes the primary mode of engagement.
-
-    Crucially, the Ghostwriter interface claims to enable simultaneous "chatting with experts and librarians." This advanced interaction is facilitated by a local LLM, integrated with a target data collection or space, and embedded within a network of additional data interpretation sources via APIs. This innovative design allows users to leverage both structured knowledge and the nuanced understanding provided by natural language processing in a unified environment.
-  </code></pre>
+<p>This presentation addresses the central research question: can an AI solution be developed to facilitate conversational interaction with academic papers? The introductory segment will delve into foundational concepts, encompassing information retrieval principles, the dynamics of human-machine interaction, and the sophisticated techniques of Retrieval-Augmented Generation (RAG) within generative AI.</p>
+<p>A concrete use case focuses on the <em>method-data-analysis (mda) journal</em>, providing a specific domain for application. The discussion will then introduce the bespoke workflow underpinning this ‘local’ or tailored AI solution, highlighting two principal components: <em>Ghostwriter</em>, which functions as the user interface, and <em>EverythingData</em>, a comprehensive term encapsulating the entire backend infrastructure. The talk will subsequently provide illustrations of both front-end and back-end operations, culminating in a summary and an outlook on future directions. Specifically, the AI solution aims to enable users to chat with papers derived from a carefully curated selection.</p>
 </section>
-<section id="retrieval-augmented-generation-rag-and-graphrag-architecture" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="retrieval-augmented-generation-rag-and-graphrag-architecture"><span class="header-section-number">11.3</span> Retrieval Augmented Generation (RAG) and GraphRAG Architecture</h2>
+<section id="the-ghostwriter-approach-a-new-ir-interface" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="the-ghostwriter-approach-a-new-ir-interface"><span class="header-section-number">11.3</span> The <em>Ghostwriter</em> Approach: A New IR Interface</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_04.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<pre><code>    Scientifically, this project situates itself within the broader discourse of Retrieval Augmented Generation (RAG). A particularly insightful resource on this topic is Philip Rustle's paper from Neo4j, which offers a comprehensive introduction to the field. The system's architecture relies on two main ingredients: a vector space and a graph.
-
-    The vector space is meticulously constructed from the content of data files, with information encoded into embeddings. Various Machine Learning (ML) algorithms and diverse Large Language Models (LLMs) compute these embeddings. Concurrently, a graph component represents a sophisticated metadata layer. This graph integrates seamlessly with a range of ontologies and controlled vocabularies, notably including those pertaining to responsible AI, and adheres to the Croissant ML standard for its expression.
-
-    The overarching vision for this system involves the integration of both graph and vector representations into a singular, cohesive model, termed GraphRAG. This model is designed for implementation as a "local" Distributed AI, where the LLM performs a dual function: serving as the primary interface between human users and the AI, and operating as a robust reasoning engine. In practice, the LLM connects to a "RAG library," which embodies the graph structure. Through this connection, the LLM navigates extensive datasets and consumes embeddings, which represent the vector component, as crucial contextual information.
-  </code></pre>
+<p>The initial challenge in effective information retrieval centres upon formulating the precise question, identifying the most appropriate information source, and accurately interpreting the resultant findings. The project team proposes the <em>Ghostwriter</em> approach as a novel interface to address these complexities, contrasting it with existing query interaction models.</p>
+<p>Traditionally, information retrieval (IR) involves a query interacting with a single database representation. This necessitates the user’s explicit knowledge of the schema and its typical values to obtain results—a scenario likened to ‘Me and a database’. A more advanced model, exemplified by Google Features and schema.org, involves a query interacting with a data collection underpinned by connected structured databases or graphs. This is akin to ‘Me and a librarian’, where the system offers suggestions for similar or improved queries based on schema connections.</p>
+<p>The advent of Large Language Models (LLMs) introduced a paradigm where a query interacts directly with an LLM, resembling ‘Me and a library’ or ‘Me and a round of experts’. Here, the system interprets natural language input and suggests results, also expressed in natural language.</p>
+<p>The <em>Ghostwriter</em> approach, however, represents a significant advancement. It involves a query interacting with a <em>local</em> LLM, a specific target data collection, and a network of additional data interpretation sources accessed via APIs. The authors describe this sophisticated interaction metaphorically as ‘Me chatting with experts and librarians at the same time’. <em>Ghostwriter</em> dynamically creates a family of terms related to the query, identifies pertinent structured information, and returns a comprehensive list of results. Its iterative application empowers users to reformulate their questions, fostering a deeper understanding of what they genuinely seek to ask and what the available data space can realistically provide.</p>
 </section>
-<section id="ghostwriter-and-everythingdata-workflow" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="ghostwriter-and-everythingdata-workflow"><span class="header-section-number">11.4</span> Ghostwriter and EverythingData Workflow</h2>
-<pre><code>    The Ghostwriter and EverythingData workflow commences with a designated collection of articles, exemplified by those from the *methods, data, analyses* (MDA) journal. This system, however, demonstrates versatility, accepting any collection of documents as its input. The "EverythingData" component, representing the upper part of the workflow, orchestrates a series of operations.
-
-    Initially, this component stores information within a vector store, specifically utilising Qdrant. Subsequently, it executes various processes, including term extraction, the construction of embeddings, and further enrichments. A critical aspect involves the integration with knowledge graphs, which couples the processed information to contextualise the embeddings. This integration significantly enhances the value of specific words, phrases, and embeddings by providing a richer context.
-
-    All processed data then converges into a unified vector space, termed the RAG-Graph. The Ghostwriter interface directly interacts with this RAG-Graph vector space, allowing users to formulate queries as natural language questions. In response, the system delivers a list of relevant documents and an explanatory summary, generated by the underlying machinery. A key design principle ensures that the system does not hallucinate; it precisely identifies the source of its information.
-
-    From an implementation perspective, the system meticulously splits each paper into small, manageable blocks, assigning a unique identifier to every block. Leveraging advanced LLM techniques, the system intelligently connects and retrieves these blocks, employing weights in conjunction with knowledge graphs to accurately predict which pieces of text will best respond to a specific question.
-  </code></pre>
-</section>
-<section id="ghostwriter-document-indexing-and-collection-management" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="ghostwriter-document-indexing-and-collection-management"><span class="header-section-number">11.5</span> Ghostwriter: Document Indexing and Collection Management</h2>
+<section id="ghostwriter-and-everythingdata-core-components" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="ghostwriter-and-everythingdata-core-components"><span class="header-section-number">11.4</span> <em>Ghostwriter</em> and <em>EverythingData</em>: Core Components</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_011_slide_06.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 06</figcaption>
+<p><img src="images/ai-nepi_011_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<pre><code>    Ghostwriter functions as a sophisticated tool for indexing documents and webpages, enabling their organisation into distinct collections. The system initially ingested articles from the *methods, data, analyses* (MDA) journal, creating a test collection of approximately 100 articles scraped directly from its website. This demonstrates the system's capacity to process and manage specific datasets.
-
-    Crucially, Ghostwriter exhibits considerable input flexibility, capable of ingesting virtually any content from the web, including spreadsheets, individual webpages, entire websites via crawling, and RSS feeds. A core design principle ensures that the system relies exclusively on the ingested source data, thereby preventing hallucinations. Rather than employing large, complex LLMs, the system leverages a more modest 1 billion parameter LLM to address intricate questions, achieving accuracy through its integration with knowledge graphs. The primary objective remains to furnish only factual information present within the paper, explicitly stating "I don't know" if the requested information is unavailable in the source material.
-
-    The user interface, accessible via the "Ask Questions" section on the GESIS website, provides an intuitive input field for queries. Users can readily create new collections, manage available collections (such as the pre-selected "mda" collection), and add new content through options like "Single Webpage," "Website Crawler," or "RSS Feed." The Ghostwriter system, specifically for MDA papers, is accessible online via `https://gesis.now.museum`.
-  </code></pre>
+<p>Scientifically, the <em>Ghostwriter</em> and <em>EverythingData</em> system aligns with the broader discourse surrounding Retrieval Augmented Generation (RAG). This approach integrates two primary ingredients: a vector space and a graph. The team meticulously constructs the vector space from the content of data files, where information is encoded into embeddings that capture inherent properties and their attributes. These embeddings are computed using diverse Machine Learning algorithms and can leverage various Large Language Models.</p>
+<p>Conversely, the graph constitutes a metadata layer, seamlessly integrated with a range of ontologies and controlled vocabularies, including those pertinent to responsible AI. The authors formally express this graph structure using the Croissant ML standard. The overarching vision for this system proposes combining both graph and vector representations into a singular model, termed ‘GraphRAG’. This innovative approach aims for a locally implemented Distributed AI, where the LLM functions dually as an intuitive interface between human users and the AI, and as a powerful reasoning engine.</p>
+<p>In terms of implementation, the LLM is robustly connected to a RAG library, which effectively embodies the knowledge graph. This connection enables the LLM to navigate through extensive datasets and consume embeddings as contextual input for its operations. The conceptual design, which draws inspiration from seminal works such as ‘The GraphRAG Manifesto’ by Phipa Rathie, illustrates the progressive evolution of AI systems, moving from basic LLMs to a complex, interconnected graph structure that symbolises a fully realised knowledge-augmented system.</p>
 </section>
-<section id="ghostwriter-chatting-with-papers-and-hallucination-prevention" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="ghostwriter-chatting-with-papers-and-hallucination-prevention"><span class="header-section-number">11.6</span> Ghostwriter: Chatting with Papers and Hallucination Prevention</h2>
-<pre><code>    Ghostwriter's core functionality centres on enabling users to "chat" directly with academic papers. For instance, when presented with the query "explain male breadwinner model to me," the system delivers a concise explanation alongside precise references. These references, unlike those often generated by general-purpose LLMs, are accurate and directly traceable to the original sources, such as "The Past, Present and Future of Factorial Survey Experiments" and "Gender and Survey Participation."
-
-    A fundamental design principle ensures that the system does not hallucinate; it maintains an exact awareness of its information sources. This precision is achieved through a meticulous implementation strategy: each paper undergoes a process of segmentation into small, discrete blocks, with a unique identifier assigned to every block. The underlying LLM then employs sophisticated techniques to connect and retrieve these blocks, applying weights in conjunction with knowledge graphs to accurately predict which text segments are most pertinent to a given question. The interface clearly presents the answer, followed by a "Sources" section that lists the contributing papers, complete with a "Chat" button, title, reference URL, and a relevance score.
-  </code></pre>
+<section id="vector-versus-graph-databases-for-rag" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="vector-versus-graph-databases-for-rag"><span class="header-section-number">11.5</span> Vector versus Graph Databases for RAG</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_011_slide_07.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 07</figcaption>
+</figure>
+</div>
+<p>A comparative analysis, drawing upon insights from TheAiEdge.io, elucidates the distinct paradigms of Vector and Graph Databases for Retrieval Augmented Generation (RAG). The Vector Database approach systematically processes information by first partitioning data into discrete chunks. Subsequently, these chunks are encoded into numerical vectors using an LLM, then indexed and stored. For retrieval, a posed question is similarly transformed into an embedding, and the system identifies the nearest neighbours—semantically similar chunks—to provide as context for an LLM-generated response.</p>
+<p>In contrast, the Graph Database approach commences with an LLM extracting relational information between entities from raw data, such as ‘MACHINE LEARNING’ and ‘FUN’ linked by ‘IS’. This process forms a structured knowledge representation organised as a network of interconnected entities and relationships, which is then stored in a Graph database. When a question concerning a specific entity arises, retrieval involves extracting a relevant subgraph from the database to pass as context to an LLM.</p>
+<p>Further insights into vector space models reveal a document-term matrix structure, enriched by LLMs identifying semantically similar words and by knowledge graphs capturing deeper meaning. This yields a vector space founded upon distinct ‘classes’ of words, which in turn determine weights and facilitate a more sophisticated understanding of document similarity.</p>
 </section>
-<section id="iterative-query-refinement-and-content-addition" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="iterative-query-refinement-and-content-addition"><span class="header-section-number">11.7</span> Iterative Query Refinement and Content Addition</h2>
+<section id="system-architecture" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="system-architecture"><span class="header-section-number">11.6</span> System Architecture</h2>
+<p>The <em>Ghostwriter</em> and <em>EverythingData</em> system architecture systematically transforms raw textual data into a structured, queryable knowledge base. The process commences with a collection of full-text articles, exemplified by the <em>MDA Journal</em>, serving as the primary data source.</p>
+<p>This full text undergoes comprehensive processing within the <em>EverythingData</em> backend. Information is initially stored in a Vector Store, <em>Q-drant</em>, which houses all data. From this store, the system executes several critical operations: it extracts key terms, converts text segments into numerical vector representations (embeddings), and adds further contextual information through enrichments. Crucially, selected terms are then expressed as structured data within a graph, subsequently enriched with external knowledge from Wikidata. This structured and enriched data then feeds into a Vector space RAG-Graph.</p>
+<p>Users interact with the system via the <em>Ghostwriter</em> interface, posing natural language queries such as ‘Explain male breadwinner model to me?’. The system processes this query through the Vector space RAG-Graph, producing two distinct outputs: a list of relevant documents and a concise explanatory text. The authors clarify that whilst the system begins with <em>MDA Journal</em> articles, any document collection could serve as input. Coupling this process with knowledge graphs enhances the value of the embeddings, ultimately feeding into a unified system that delivers both document lists and summarised responses.</p>
+</section>
+<section id="ghostwriter-content-indexing" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="ghostwriter-content-indexing"><span class="header-section-number">11.7</span> <em>Ghostwriter</em>: Content Indexing</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_08.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 08</figcaption>
 </figure>
 </div>
-<pre><code>    The Ghostwriter system incorporates an iterative approach to prevent hallucinations, explicitly stating when information is unavailable. For example, if a user poses the question "explain how data was collected on male breadwinner model," and the direct information is not present in the indexed texts, the system will respond by stating, "According to the provided text, there is no direct information about how data was collected on the male breadwinner model," whilst potentially referring to other related articles.
-
-    This design encourages users to actively participate in refining the knowledge base. Should a user locate an article containing the missing information, they can utilise the "Add Paper" button to ingest it into the system. Consequently, upon subsequent queries regarding the same topic, the system will then be able to provide a comprehensive response, drawing upon the newly added content. The sources section continues to list relevant papers, such as "The Past, Present and Future of Factorial Survey Experiments" and "Gender of Interviewer Effects," even when direct answers are not found for specific sub-queries.
-  </code></pre>
+<p><em>Ghostwriter</em> functions as a dedicated tool for content indexing, enabling the ingestion of documents and webpages into a queryable collection. The <em>mda methods, data, analyses</em> journal website serves as a primary content source. The <em>Ghostwriter</em> tool itself, residing on the <em>gesis Leibniz-Institut Sozialwissenschaften</em> platform, presents distinct sections for ‘Ask Questions’ and ‘Add Page’.</p>
+<p>Within the ‘Add Page’ section, users can input a webpage URL or RSS feed, with the system supporting various source types. The interface also displays available collections and management capabilities. The current scope involves a test collection of 100 articles, acquired through web scraping, with the tool accessible at <code>https://gesis.now.museum</code>.</p>
+<p>The speaker, whilst initially cautious about Large Language Models, systematically deconstructed the training process to identify specific applications. This work, though demonstrated for academic papers, is versatile enough for any web content. Crucially, the system prevents hallucinations by exclusively relying on the ingested source material; if information is unavailable, it explicitly states, ‘I don’t know’. The system achieves complex query responses by combining a relatively simple LLM with sophisticated knowledge graphs, ensuring a curated collection is built by adding papers incrementally.</p>
 </section>
-<section id="behind-the-screens-entity-extraction-and-multilinguality" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="behind-the-screens-entity-extraction-and-multilinguality"><span class="header-section-number">11.8</span> Behind the Screens: Entity Extraction and Multilinguality</h2>
+<section id="interactive-queries-and-source-transparency" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="interactive-queries-and-source-transparency"><span class="header-section-number">11.8</span> Interactive Queries and Source Transparency</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_09.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<pre><code>    Behind the Ghostwriter interface, a sophisticated entity extraction pipeline operates, meticulously annotating terms with semantic meaning. This process involves mapping terms to controlled vocabularies, effectively transitioning data from the vector space into a structured knowledge graph. Crucially, the system links these extracted entities to broader knowledge graph representations, notably leveraging Wikidata. This linking is paramount as it establishes a "ground truth," enabling the validation of LLM-generated answers and ensuring their accuracy.
-
-    Furthermore, the system provides immediate and robust multilinguality support. This capability is critical; it allows users to pose questions in one language, such as English, and receive reliable answers even when the source papers are written in entirely different languages, like Chinese or German. Ultimately, the LLM synthesises these disparate pieces of text to produce a coherent, explanatory summary.
-  </code></pre>
+<p>The <em>Ghostwriter</em> system facilitates interactive engagement with academic literature. When a user poses a question, such as ‘explain male breadwinner model to me’, the system provides a detailed explanation within its ‘Answer’ section. A ‘Sources’ section transparently lists the academic papers that informed the answer, complete with relevance scores.</p>
+<p>For instance, the response to the male breadwinner model query cites ‘The Past, Present and Future of Factorial Survey Experiments’ by Treischl and ‘Gender and Survey Participation’ by Becker, both from the <em>MDA GESIS</em> journal. The system’s output comprises both an explanation and a list of documents, notably including those that may not explicitly contain the query terms, thereby indicating a sophisticated semantic search. The tool operates on <em>MDA</em> papers and is accessible at <code>https://gesis.now.museum</code>.</p>
+<p>The speaker emphasises that, unlike some generative AI models, this implementation provides precise references and demonstrably avoids hallucination because it accurately identifies the information’s origin. The underlying mechanism involves splitting each paper into small, uniquely identified blocks. The LLM technique then intelligently connects and retrieves these blocks, applying weights and leveraging knowledge graphs to predict which text segments will most effectively respond to a given question.</p>
 </section>
-<section id="fact-extraction-and-knowledge-organisation-systems" class="level2" data-number="11.9">
-<h2 data-number="11.9" class="anchored" data-anchor-id="fact-extraction-and-knowledge-organisation-systems"><span class="header-section-number">11.9</span> Fact Extraction and Knowledge Organisation Systems</h2>
+<section id="iterative-refinement-and-verifiability" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="iterative-refinement-and-verifiability"><span class="header-section-number">11.9</span> Iterative Refinement and Verifiability</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_10.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 10</figcaption>
 </figure>
 </div>
-<pre><code>    The fact extraction process within Ghostwriter meticulously dissects a user's query into smaller, manageable pieces. The system then maps this query to a comprehensive graph representation, whilst simultaneously annotating the query strings with specific "facts." For instance, a query such as "explain male breadwinner model to me" prompts the extraction of pertinent facts, including "gender roles societal expectations," "male breadwinner model economic systems," and "male breadwinner model social structures," amongst others.
-
-    The resulting graph representation encapsulates key concepts like "gender roles," "male breadwinner model," "economic systems," "patriarchal society," and "feminine role," complete with their interrelationships and assigned importance scores. This entire mechanism operates as a dynamic Knowledge Organisation System (KOS), capable of repeated querying. Each iteration can generate new, deeper levels of detail beneath the initial terms, providing an increasingly granular understanding of the subject matter.
-  </code></pre>
+<p>The <em>Ghostwriter</em> system employs an iterative approach to ensure accurate, verifiable answers. This is exemplified by its query refinement capability: an initial broad query, such as ‘Explain the male Breadwinner model to me?’, can be refined into a more specific follow-up, like ‘Explain how data were collected on male breadwinner model?’.</p>
+<p>For such refined queries, the system transparently states if direct information is unavailable. Nevertheless, it provides valuable contextual information, noting, for example, that a study utilised German data and employed a mixed-methods research strategy. The ‘Sources’ section lists relevant academic papers, such as Treischl’s ‘The Past, Present and Future of Factorial Survey Experiments’, complete with relevance scores and direct download URLs. An interactive ‘Chat’ column allows users to pose follow-up questions directly related to specific documents. The speaker underscores that if the system lacks information, it explicitly states this limitation, whilst users retain the ability to add missing articles, thereby enhancing the knowledge base for future queries.</p>
 </section>
-<section id="linking-entities-to-wikidata-for-multilingual-support" class="level2" data-number="11.10">
-<h2 data-number="11.10" class="anchored" data-anchor-id="linking-entities-to-wikidata-for-multilingual-support"><span class="header-section-number">11.10</span> Linking Entities to Wikidata for Multilingual Support</h2>
+<section id="entity-extraction-and-multilingual-support" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="entity-extraction-and-multilingual-support"><span class="header-section-number">11.10</span> Entity Extraction and Multilingual Support</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_11.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 11</figcaption>
 </figure>
 </div>
-<pre><code>    A crucial step in the Ghostwriter workflow involves linking all extracted entities directly to Wikidata. This process transforms free-form strings into standardised identifiers, which are inherently connected to a wealth of multilingual translations. Consequently, the system gains the profound ability to comprehend questions posed in various languages, ensuring that the underlying knowledge remains accessible regardless of the query's linguistic origin. The similarity measure, which quantifies the relevance of a link, is derived directly from the LLM embeddings. For example, the term "Male" might be linked to the Wikidata entity `Q12308941`, representing a male given name, with an associated similarity score of 0.3429.
-  </code></pre>
+<p>Behind the operational facade lies a sophisticated entity extraction pipeline. This pipeline meticulously annotates terms with semantic meaning by mapping them to controlled vocabularies, effectively transforming raw data from a numerical vector space representation into a structured knowledge graph. Furthermore, the system extends this process by linking extracted entities to broader knowledge graph representations, with Wikidata serving as a prominent example. This comprehensive linking establishes a ‘ground truth’ against which the accuracy of LLM-generated answers can be rigorously assessed.</p>
+<p>A key capability of the system is its immediate multilinguality. This is particularly critical when processing papers in languages such as Chinese or German and expecting reliable answers in English. The underlying processes, including entity extraction and linking, inherently support multiple languages. Ultimately, an LLM completes the feedback loop by synthesising the insights derived from the knowledge graph operations into concise, human-readable ‘explanatory text’ summaries.</p>
 </section>
-<section id="multilingual-query-translation" class="level2" data-number="11.11">
-<h2 data-number="11.11" class="anchored" data-anchor-id="multilingual-query-translation"><span class="header-section-number">11.11</span> Multilingual Query Translation</h2>
-<pre><code>    The system's robust multilingual support treats the core query, such as "bread winner model," as a conceptual entity rather than a fixed string. An integrated LLM, specifically Gemma3, then generates translations of this concept into hundreds of languages. This comprehensive set of translations subsequently forms the complete query submitted to the LLM. For instance, the concept is translated into Chinese as "男性主要收入模式 (nánxì zhǔyào shōurù móshì)," alongside translations into Czech, Danish, Dutch, English, French, German, Greek, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Slovak, Spanish, Swedish, and Ukrainian, ensuring broad linguistic coverage.
-  </code></pre>
+<section id="query-mapping-to-graph-representations" class="level2" data-number="11.11">
+<h2 data-number="11.11" class="anchored" data-anchor-id="query-mapping-to-graph-representations"><span class="header-section-number">11.11</span> Query Mapping to Graph Representations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_011_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>The system meticulously processes user queries by mapping them to a graph representation, whilst simultaneously annotating the query strings with ‘facts’. For instance, the input query ‘explain male breadwinner model to me’ undergoes an initial fact extraction phase, where semantic triples and relationships are identified. These facts often reference ontological relationships, such as ‘gender roles societal expectations(owl:partOf) male breadwinner model’, indicating that societal expectations related to gender roles constitute a component of the male breadwinner model.</p>
+<p>Following this extraction, a comprehensive graph representation is constructed, comprising an array of structured objects. Each object precisely defines a relationship between two concepts; for example, one entry explicitly states <code>concept1: 'gender roles'</code>, <code>concept2: 'male breadwinner model'</code>, and <code>relationship: 'owl:partOf'</code>. The speaker elaborates that this fact extraction process systematically splits the question into smaller, manageable pieces, leveraging a knowledge organisation system that can iteratively generate new levels of terms.</p>
 </section>
-<section id="summary-of-pipeline-capabilities-and-future-vision" class="level2" data-number="11.12">
-<h2 data-number="11.12" class="anchored" data-anchor-id="summary-of-pipeline-capabilities-and-future-vision"><span class="header-section-number">11.12</span> Summary of Pipeline Capabilities and Future Vision</h2>
+<section id="entity-linking-with-wikidata" class="level2" data-number="11.12">
+<h2 data-number="11.12" class="anchored" data-anchor-id="entity-linking-with-wikidata"><span class="header-section-number">11.12</span> Entity Linking with Wikidata</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_011_slide_13.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 13</figcaption>
 </figure>
 </div>
-<pre><code>    The developed pipeline demonstrates remarkable versatility, functioning effectively with any collection of documents, whether sourced from webpages, websites, RSS feeds, or trusted data repositories such as Dataverse instances. This capability enables the creation of a "semantic index" and a localised chatbot for diverse collections, thereby supporting "close reading" by human researchers.
-
-    The system strategically contains the search space by situating user questions and their associated collections within specific, relevant areas of the networked scientific knowledge domain. Crucially, it facilitates the acquisition of information that extends beyond what is explicitly stated in the text or annotated in the metadata. This is achieved by forging intricate associations at both the natural language level and within Knowledge Organisation Systems (KOS), effectively simulating a dialogue with the "experts" or "invisible colleges" that underpin the scholarly papers.
-
-    The Ghostwriter interface itself offers dual functionalities: it assists users in identifying related documents and provides mechanisms for refining questions or queries. A significant innovation lies in the system's ability to decouple knowledge from specific questions and papers, storing this knowledge externally, for instance, as Wikidata identifiers. This separation establishes a robust "ground truth," allowing researchers to benchmark different models by comparing the identifier lists they produce in response to identical questions. This method readily identifies models unsuitable for particular tasks, whilst simultaneously leveraging KOS for the benefit of future generations of scientists. The project actively collaborates with industry leaders, including Google and Meta, to ensure the long-term sustainability of this KOS-centric approach, which the developers firmly believe represents the future of information management in science.
-  </code></pre>
+<p>The system meticulously links entities to the Wikidata ontology, exemplified by the disambiguation and mapping of the term ‘male’ to structured knowledge. Various examples illustrate the polysemy of this term, each associated with a Wikidata entity, its label, a description, a Concept URI, and a similarity score derived from LLM embeddings.</p>
+<p>The highest similarity score is attributed to ‘male given name’, indicating a strong LLM association. Other significant associations include ‘male’ as human sex or gender and ‘male organism’. The system also identifies technical usages, such as ‘male connector’, and distinguishes homographs like ‘Malé’, the capital of the Maldives. The speaker clarifies that this process involves linking all entities to Wikidata, thereby obtaining identifiers rather than free strings. These identifiers are inherently linked to multilingual translations, providing access to all properties and enabling queries in diverse languages.</p>
 </section>
-<section id="live-demonstration-querying-and-multilingual-capabilities" class="level2" data-number="11.13">
-<h2 data-number="11.13" class="anchored" data-anchor-id="live-demonstration-querying-and-multilingual-capabilities"><span class="header-section-number">11.13</span> Live Demonstration: Querying and Multilingual Capabilities</h2>
+<section id="conceptual-translation-with-gemma3" class="level2" data-number="11.13">
+<h2 data-number="11.13" class="anchored" data-anchor-id="conceptual-translation-with-gemma3"><span class="header-section-number">11.13</span> Conceptual Translation with <em>Gemma3</em></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_011_slide_13.png" class="img-fluid figure-img"></p>
-<figcaption>Slide 13</figcaption>
+<p><img src="images/ai-nepi_011_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
 </figure>
 </div>
-<pre><code>    A live demonstration showcased the "Ask Questions" web interface developed by the GESIS Leibniz-Institut für Sozialwissenschaften. The interface displayed the "mda" collection, comprising 37,637 vectors, as the selected dataset.
-
-    When presented with the query "what is the role of utility in the Rational Choice Theory," the system promptly provided a detailed explanation, citing various researchers and studies. The sources section accurately listed the contributing papers, including "The measurement of utility and subjective probability" and "Responding to Socially Desirable and Undesirable Topics," complete with their respective reference URLs and scores. A subsequent query, "explain utility in rational choice theory," yielded different, yet relevant, pieces of information, consistently pointing back to the same source papers.
-
-    The system also offers an API, enabling an automatic mode for building agentic architectures, where results can be collected and new insights from papers identified. Users can contribute new content via an "Add page" button, ensuring the knowledge base remains current. A compelling aspect of the demonstration involved the system's multilingual capability: whilst the query was posed in English, the primary source paper, "Die Messung von Nutzen und subjektiven Wahrscheinlichkeiten," was entirely in German, save for its abstract. The system successfully processed this, demonstrating its linguistic versatility.
-
-    Technically, the system operates efficiently on a local computer, even accommodating paper training processes, utilising a compact 1 billion parameter LLM. This local deployment offers significant advantages in terms of control and cost-effectiveness, particularly for handling private or sensitive information. The system has already proven its scalability, having been developed for Harvard University to manage approximately 300,000 documents. The developers advocate for this local, controlled approach over a full reliance on external models like ChatGPT, emphasising its role in supporting the human thought process and aiding in the formulation of research questions, rather than merely providing definitive answers. The team actively seeks collaborations with external parties who have concrete research questions, offering resources for try-outs and facilitating the handover of the system for further tinkering and refinement.
-  </code></pre>
+<p>The system demonstrates robust multilingual support by treating the core of a query, such as ‘bread winner model’, as a distinct conceptual entity. A Large Language Model, specifically <em>Gemma3</em>, then produces comprehensive translations for this concept. The underlying mechanism employs a structured data representation, akin to RDF/Turtle, to define and translate the concept of a ‘male breadwinner model’.</p>
+<p>This involves defining the central concept with a unique URI and associating it with an extensive list of languages, from Czech to Ukrainian. For each language, a precise translation is provided; for example, the Chinese translation is ‘男性主導收入模式’. The frequent inclusion of gendered terms in many translations underscores the specific nature of the concept. The speaker confirms that this process enables the question to be translated into hundreds of languages, with all such translations serving as queries to the LLM.</p>
+</section>
+<section id="system-functionality-and-benefits" class="level2" data-number="11.14">
+<h2 data-number="11.14" class="anchored" data-anchor-id="system-functionality-and-benefits"><span class="header-section-number">11.14</span> System Functionality and Benefits</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_011_slide_15.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 15</figcaption>
+</figure>
+</div>
+<p>This system offers a robust pipeline that functions effectively for any collection, systematically creating a semantic index and a local chatbot. The capability for ‘local chatting with papers’ significantly supports human ‘close reading’, offering an interactive tool for in-depth textual analysis.</p>
+<p>Furthermore, the system effectively ‘contains the search space’ by integrating the user’s question and the specific collection into a particular area within the networked space of scientific knowledge. Crucially, it enables users to gain information extending beyond what is explicitly expressed in the text or annotated in the metadata. This is achieved by forging associations at both the natural language and the Knowledge Organisation Systems level, uncovering implicit knowledge and connections. The <em>Ghostwriter</em> interface, built upon the <em>EverythingData</em> workflow, enables users to find related documents and to refine their queries.</p>
+<p>The speaker elaborates on the concept of ‘ground truth’, explaining that knowledge has been decoupled from questions and papers, allowing it to be stored independently of the model. This separation permits the use of entirely different models to produce the same list of identifiers, thereby enabling the creation of benchmarks for future generations of scientists.</p>
+</section>
+<section id="future-directions" class="level2" data-number="11.15">
+<h2 data-number="11.15" class="anchored" data-anchor-id="future-directions"><span class="header-section-number">11.15</span> Future Directions</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_011_slide_16.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>The ‘MDA case’ currently serves as a pilot, yet future developments aim to incorporate bibliometric questions, necessitating the integration of metadata harvesting. This progression distinguishes between ‘chatting-with-papers’ and ‘chatting-about-ensemble of papers’. The project intends to expand its application to other significant use cases, including CBS (Dutch Statistical Office) data, which is intrinsically linked to the ODISSEI Portal and the SSHOC.nl project. Furthermore, the scope will extend to specialised Dataverse instances concerning performing arts and inclusion, exemplified by the MuseIT case.</p>
+<p>Critical methodological questions for the future revolve around rigorously evaluating the workflow and developing advanced visualisation techniques to display new findings effectively. An API facilitates an automatic mode for agentic architectures, enabling the collection of results and the identification of novel knowledge within papers. The speaker underscored the inherent value of this local approach, highlighting its benefits over reliance on large, less controllable, and often costly external machines. This ‘chatting with papers’ is conceptualised as engaging with an ‘invisible college’, not merely for definitive facts, but primarily to provoke and support the human thought process in formulating precise research questions.</p>
 
 
 </section>
