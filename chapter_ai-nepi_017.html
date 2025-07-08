@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Study of LDA and BERTopic Performance Across Text Levels</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -236,20 +236,19 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#limitations-of-current-llms-and-the-need-for-temporal-awareness" id="toc-limitations-of-current-llms-and-the-need-for-temporal-awareness" class="nav-link" data-scroll-target="#limitations-of-current-llms-and-the-need-for-temporal-awareness"><span class="header-section-number">15.1</span> Limitations of Current <em>LLMs</em> and the Need for Temporal Awareness</a></li>
-  <li><a href="#formalising-temporal-dependence-in-llms" id="toc-formalising-temporal-dependence-in-llms" class="nav-link" data-scroll-target="#formalising-temporal-dependence-in-llms"><span class="header-section-number">15.2</span> Formalising Temporal Dependence in <em>LLMs</em></a></li>
-  <li><a href="#addressing-temporal-drift-in-llm-training" id="toc-addressing-temporal-drift-in-llm-training" class="nav-link" data-scroll-target="#addressing-temporal-drift-in-llm-training"><span class="header-section-number">15.3</span> Addressing Temporal Drift in <em>LLM</em> Training</a></li>
-  <li><a href="#the-time-transformer-concept-and-data-acquisition" id="toc-the-time-transformer-concept-and-data-acquisition" class="nav-link" data-scroll-target="#the-time-transformer-concept-and-data-acquisition"><span class="header-section-number">15.4</span> The Time Transformer Concept and Data Acquisition</a></li>
-  <li><a href="#weather-report-dataset-processing" id="toc-weather-report-dataset-processing" class="nav-link" data-scroll-target="#weather-report-dataset-processing"><span class="header-section-number">15.5</span> Weather Report Dataset Processing</a></li>
-  <li><a href="#vanilla-transformer-model-architecture-and-training" id="toc-vanilla-transformer-model-architecture-and-training" class="nav-link" data-scroll-target="#vanilla-transformer-model-architecture-and-training"><span class="header-section-number">15.6</span> Vanilla Transformer Model Architecture and Training</a></li>
-  <li><a href="#integrating-time-into-the-transformer-architecture" id="toc-integrating-time-into-the-transformer-architecture" class="nav-link" data-scroll-target="#integrating-time-into-the-transformer-architecture"><span class="header-section-number">15.7</span> Integrating Time into the Transformer Architecture</a></li>
-  <li><a href="#dataset-characteristics-and-tokenisation-for-time-aware-models" id="toc-dataset-characteristics-and-tokenisation-for-time-aware-models" class="nav-link" data-scroll-target="#dataset-characteristics-and-tokenisation-for-time-aware-models"><span class="header-section-number">15.8</span> Dataset Characteristics and Tokenisation for Time-Aware Models</a></li>
-  <li><a href="#comparative-architecture-of-vanilla-and-time-transformers" id="toc-comparative-architecture-of-vanilla-and-time-transformers" class="nav-link" data-scroll-target="#comparative-architecture-of-vanilla-and-time-transformers"><span class="header-section-number">15.9</span> Comparative Architecture of Vanilla and Time Transformers</a></li>
-  <li><a href="#experiment-1---efficient-learning-of-temporal-drift-synonymic-succession" id="toc-experiment-1---efficient-learning-of-temporal-drift-synonymic-succession" class="nav-link" data-scroll-target="#experiment-1---efficient-learning-of-temporal-drift-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1 - Efficient Learning of Temporal Drift (Synonymic Succession)</a></li>
-  <li><a href="#experiment-2---changing-weather-patterns-and-collocation-fixation" id="toc-experiment-2---changing-weather-patterns-and-collocation-fixation" class="nav-link" data-scroll-target="#experiment-2---changing-weather-patterns-and-collocation-fixation"><span class="header-section-number">15.11</span> Experiment 2 - Changing Weather Patterns and Collocation Fixation</a></li>
-  <li><a href="#proof-of-concept-applications-next-steps-and-challenges" id="toc-proof-of-concept-applications-next-steps-and-challenges" class="nav-link" data-scroll-target="#proof-of-concept-applications-next-steps-and-challenges"><span class="header-section-number">15.12</span> Proof of Concept, Applications, Next Steps, and Challenges</a></li>
+  <li><a href="#temporal-limitations-in-current-llms" id="toc-temporal-limitations-in-current-llms" class="nav-link" data-scroll-target="#temporal-limitations-in-current-llms"><span class="header-section-number">15.1</span> Temporal Limitations in Current LLMs</a></li>
+  <li><a href="#formalising-temporal-dependence" id="toc-formalising-temporal-dependence" class="nav-link" data-scroll-target="#formalising-temporal-dependence"><span class="header-section-number">15.2</span> Formalising Temporal Dependence</a></li>
+  <li><a href="#modelling-temporal-drift" id="toc-modelling-temporal-drift" class="nav-link" data-scroll-target="#modelling-temporal-drift"><span class="header-section-number">15.3</span> Modelling Temporal Drift</a></li>
+  <li><a href="#the-time-transformer-concept" id="toc-the-time-transformer-concept" class="nav-link" data-scroll-target="#the-time-transformer-concept"><span class="header-section-number">15.4</span> The <em>Time Transformer</em> Concept</a></li>
+  <li><a href="#dataset-curation-and-processing" id="toc-dataset-curation-and-processing" class="nav-link" data-scroll-target="#dataset-curation-and-processing"><span class="header-section-number">15.5</span> Dataset Curation and Processing</a></li>
+  <li><a href="#baseline-model-architecture" id="toc-baseline-model-architecture" class="nav-link" data-scroll-target="#baseline-model-architecture"><span class="header-section-number">15.6</span> Baseline Model Architecture</a></li>
+  <li><a href="#integrating-the-temporal-dimension" id="toc-integrating-the-temporal-dimension" class="nav-link" data-scroll-target="#integrating-the-temporal-dimension"><span class="header-section-number">15.7</span> Integrating the Temporal Dimension</a></li>
+  <li><a href="#dataset-suitability-for-time-aware-models" id="toc-dataset-suitability-for-time-aware-models" class="nav-link" data-scroll-target="#dataset-suitability-for-time-aware-models"><span class="header-section-number">15.8</span> Dataset Suitability for Time-Aware Models</a></li>
+  <li><a href="#a-comparative-architecture" id="toc-a-comparative-architecture" class="nav-link" data-scroll-target="#a-comparative-architecture"><span class="header-section-number">15.9</span> A Comparative Architecture</a></li>
+  <li><a href="#experiment-1-synonymic-succession" id="toc-experiment-1-synonymic-succession" class="nav-link" data-scroll-target="#experiment-1-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1: Synonymic Succession</a></li>
+  <li><a href="#experiment-2-collocation-fixation" id="toc-experiment-2-collocation-fixation" class="nav-link" data-scroll-target="#experiment-2-collocation-fixation"><span class="header-section-number">15.11</span> Experiment 2: Collocation Fixation</a></li>
+  <li><a href="#conclusions-and-future-directions" id="toc-conclusions-and-future-directions" class="nav-link" data-scroll-target="#conclusions-and-future-directions"><span class="header-section-number">15.12</span> Conclusions and Future Directions</a></li>
   <li><a href="#supplementary-resource" id="toc-supplementary-resource" class="nav-link" data-scroll-target="#supplementary-resource"><span class="header-section-number">15.13</span> Supplementary Resource</a></li>
-  <li><a href="#additional-visual-materials" id="toc-additional-visual-materials" class="nav-link" data-scroll-target="#additional-visual-materials"><span class="header-section-number">15.14</span> Additional Visual Materials</a></li>
   </ul>
 </nav>
     </div>
@@ -296,140 +295,142 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>The presentation introduces a novel architectural approach for Large Language Models (<em>LLMs</em>), termed the “Time Transformer”, designed to imbue them with explicit temporal awareness. This innovation directly addresses the inherent limitation of current <em>LLMs</em>, which derive only an implicit understanding of time from statistical patterns within their training data. The speaker highlights that whilst existing models demonstrate remarkable capabilities, their lack of explicit temporal conditioning can lead to inconsistencies when processing information that evolves over time, such as historical data. The proposed “Time Transformer” integrates a dedicated temporal dimension directly into the token embeddings, thereby enabling the model to learn and reproduce changing linguistic patterns as a function of time. The authors validated this concept using a small generative <em>LLM</em> trained on a highly constrained dataset of Met Office weather reports, demonstrating its ability to efficiently capture and reproduce time-dependent linguistic shifts. The presentation explores the theoretical underpinnings of this approach, details the model architecture and data preparation, and presents two experiments demonstrating its efficacy in learning synthetic temporal drifts. Furthermore, it outlines potential applications, including historical analysis and instruction-tuned models, whilst acknowledging challenges related to fine-tuning and data curation.</p>
+<p>This presentation introduces a novel architectural approach for Large Language Models (LLMs), which the speaker terms the <em>Time Transformer</em>. The innovation directly addresses a fundamental limitation of current models, which derive only an implicit understanding of time from statistical patterns within their training data. The speaker highlights that whilst existing models demonstrate remarkable capabilities, their lack of explicit temporal conditioning can lead to inconsistencies when processing information that evolves, such as historical facts or linguistic trends.</p>
+<p>The proposed <em>Time Transformer</em> integrates a dedicated temporal dimension directly into the token embeddings, thereby enabling the model to learn and reproduce changing linguistic patterns as a direct function of time. The authors validated this concept using a small generative LLM trained on a highly constrained dataset of Met Office weather reports. Their work demonstrates the model’s ability to capture and reproduce time-dependent linguistic shifts with high efficiency. The presentation explores the theoretical underpinnings of this approach, details the model architecture and data preparation, and presents two experiments demonstrating its efficacy in learning synthetic temporal drifts. Furthermore, it outlines potential applications, including historical analysis and instruction-tuned models, whilst acknowledging challenges related to fine-tuning and data curation.</p>
 </section>
-<section id="limitations-of-current-llms-and-the-need-for-temporal-awareness" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="limitations-of-current-llms-and-the-need-for-temporal-awareness"><span class="header-section-number">15.1</span> Limitations of Current <em>LLMs</em> and the Need for Temporal Awareness</h2>
+<section id="temporal-limitations-in-current-llms" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="temporal-limitations-in-current-llms"><span class="header-section-number">15.1</span> Temporal Limitations in Current LLMs</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_02.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 02</figcaption>
 </figure>
 </div>
-<p>Current Large Language Models (<em>LLMs</em>) inherently possess only an implicit understanding of time, which they derive statistically from the vast textual corpora used for their training. Whilst these models exhibit a profound grasp of temporal concepts, their comprehension stems from subtle cues embedded within the data rather than explicit temporal conditioning. Explicit time awareness, however, would demonstrably enhance their utility, particularly within historical analysis and, indeed, across a broader spectrum of applications.</p>
-<p>Consider, for instance, two sentences that differ solely in their temporal context, such as ‘The primary architecture for processing text through Neural Networks is <em>LSTM</em>’ and ‘The primary architecture for processing text through Neural Networks is <em>Transformer</em>.’ Without explicit temporal information, these statements, representing different states of affairs in 2017 and 2025 respectively, directly contradict one another within the <em>LLM</em>’s training data. The model then struggles to perfectly fulfil its objective, as it must arbitrarily favour one, inevitably making an error regarding the other. Furthermore, a discernible recency bias often influences <em>LLM</em> predictions, favouring more contemporary information. Current methods, such as prompt engineering, merely attempt to exploit the model’s implicit temporal understanding, akin to ‘fishing in the dark’ for desired outcomes.</p>
-<p>To overcome these limitations, the authors propose integrating time directly into the token embeddings of <em>Transformer</em>-based <em>LLMs</em>. This architectural modification aims to render <em>LLMs</em> explicitly time-aware, enabling them to precisely learn and reproduce the evolving patterns within their training data as a direct function of time. A proof of concept, utilising a small generative <em>LLM</em>, has already been developed to validate this innovative approach.</p>
+<p>Current Large Language Models possess an inherently implicit understanding of time, derived statistically from the vast textual corpora used for their training. Whilst these models exhibit a profound grasp of temporal concepts, their comprehension stems from subtle cues embedded within the data rather than from explicit temporal conditioning. The authors contend that explicit time awareness would demonstrably enhance their utility, particularly within historical analysis and across a broader spectrum of applications.</p>
+<p>Consider, for instance, two sentences that differ solely in their temporal context: ‘The primary architecture for processing text through Neural Networks is LSTM’ and ‘The primary architecture for processing text through Neural Networks is <em>Transformer</em>.’ Without explicit temporal information, these statements, representing different states of affairs in 2017 and 2025 respectively, directly contradict one another within an LLM’s training data. The model must then arbitrarily favour one, inevitably making an error regarding the other.</p>
+<p>Furthermore, a discernible recency bias often influences LLM predictions, favouring more contemporary information. Current methods, such as prompt engineering, merely attempt to exploit the model’s implicit temporal understanding, a process the speaker likens to ‘fishing in the dark’ for desired outcomes. To overcome these limitations, the authors propose integrating time directly into the token embeddings of <em>Transformer</em>-based LLMs. This architectural modification aims to render LLMs explicitly time-aware, enabling them to learn and reproduce evolving linguistic patterns as a direct function of time.</p>
 </section>
-<section id="formalising-temporal-dependence-in-llms" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="formalising-temporal-dependence-in-llms"><span class="header-section-number">15.2</span> Formalising Temporal Dependence in <em>LLMs</em></h2>
+<section id="formalising-temporal-dependence" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="formalising-temporal-dependence"><span class="header-section-number">15.2</span> Formalising Temporal Dependence</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_03.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>Fundamentally, Large Language Models operate by estimating the probability distribution over their vocabulary for the next token, conditioned on a given sequence of preceding tokens. This process is mathematically represented as p(x_n | x_1, …, x_{n-1}). However, in real-world scenarios, the likelihood of a token appearing within a specific context is not static; rather, it is intrinsically dependent on time, thus becoming p(x_n | x_1, …, x_{n-1}, t).</p>
-<p>Extending this principle, the joint probability for an entire sequence of tokens uttered at a particular time t is expressed as the product of conditional probabilities: p(x_1, …, x_n | t) = product p(x_k | x_1, …, x_{k-1}, t). Despite this inherent temporal variability, current <em>LLM</em> training processes frequently treat these probability distributions as static. Consequently, during inference, these models can only reflect temporal drift in the underlying token sequences through in-context learning, a mechanism that relies on the immediate context provided rather than an explicit, integrated understanding of time.</p>
+<p>Fundamentally, Large Language Models operate by estimating the probability distribution over their vocabulary for the next token, conditioned on a sequence of preceding tokens. This process is mathematically represented as p(x_n | x_1, …, x_{n-1}). In the real world, however, the likelihood of a token appearing is not static; it is intrinsically dependent on time, thus becoming p(x_n | x_1, …, x_{n-1}, t).</p>
+<p>Extending this principle, the joint probability for an entire sequence of tokens uttered at a particular time <em>t</em> is expressed as the product of these conditional probabilities: p(x_1, …, x_n | t) = ∏ p(x_k | x_1, …, x_{k-1}, t). Despite this inherent temporal variability, current LLM training processes frequently treat these probability distributions as static. Consequently, during inference, these models can only reflect temporal drift through in-context learning, a mechanism that relies on the immediate context provided rather than an explicit, integrated understanding of time.</p>
 </section>
-<section id="addressing-temporal-drift-in-llm-training" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="addressing-temporal-drift-in-llm-training"><span class="header-section-number">15.3</span> Addressing Temporal Drift in <em>LLM</em> Training</h2>
+<section id="modelling-temporal-drift" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="modelling-temporal-drift"><span class="header-section-number">15.3</span> Modelling Temporal Drift</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_04.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<p>A significant challenge in current Large Language Model (<em>LLM</em>) training lies in their tendency to treat inherently time-dependent probability distributions as static. This simplification means that whilst the real-world likelihood of a token given its preceding context is a direct function of time—for instance, the probability of ‘transformer’ completing a sentence was effectively zero in 2017—<em>LLMs</em> primarily reflect such temporal drift only through in-context learning during inference.</p>
-<p>To improve upon this, the authors must develop more effective methods for modelling these dynamic, time-dependent probability distributions. Existing strategies, such as ‘time slicing’—where distinct models are trained for specific temporal segments, assuming static distributions within those slices—prove remarkably data inefficient. A more streamlined and integrated approach is therefore imperative.</p>
+<p>A significant challenge in current LLM training lies in the treatment of inherently time-dependent probability distributions as static. This simplification means that whilst the real-world likelihood of a token is a direct function of time—for instance, the probability of ‘transformer’ completing a sentence was effectively zero in 2017—LLMs primarily reflect such temporal drift only through in-context learning during inference.</p>
+<p>To improve upon this, the authors sought more effective methods for modelling these dynamic, time-dependent probability distributions. Existing strategies, such as ‘time slicing’—where distinct models are trained for specific temporal segments—prove remarkably data-inefficient, as they assume static distributions within those slices. A more streamlined and integrated approach is therefore imperative.</p>
 </section>
-<section id="the-time-transformer-concept-and-data-acquisition" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="the-time-transformer-concept-and-data-acquisition"><span class="header-section-number">15.4</span> The Time Transformer Concept and Data Acquisition</h2>
+<section id="the-time-transformer-concept" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="the-time-transformer-concept"><span class="header-section-number">15.4</span> The <em>Time Transformer</em> Concept</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_05.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p>To overcome the limitations of implicit temporal understanding, the authors propose an innovative solution termed the ‘Time Transformer’. This concept centres on a remarkably simple yet profound architectural adjustment: reserving a single dimension within the token embedding space specifically for time. This dedicated dimension explicitly conveys the utterance date for each token sequence, thereby providing direct temporal context.</p>
-<p>The initial implementation employs a non-trainable, min-max normalised ‘day of the year’ as the time embedding. This particular choice strategically exploits natural seasonal variations inherent in the chosen dataset, such as the prevalence of snow in winter or heat in summer. However, the framework readily accommodates alternative time embeddings as required.</p>
-<p>For the proof of concept, the research team selected Met Office weather reports as the primary dataset. This text corpus is characterised by its limited vocabulary and simple, repetitive language, making it an ideal candidate for initial validation. The UK’s national meteorological service issues these daily reports, and historical data remains accessible through their digital archive. Additionally, the ‘TinyStories’ dataset was identified as another potentially suitable resource for similar investigations.</p>
+<p>To overcome the limitations of implicit temporal understanding, the authors propose an innovative solution termed the <em>Time Transformer</em>. This concept centres on a remarkably simple yet profound architectural adjustment: reserving a single dimension within the token embedding space specifically for time. This dedicated dimension explicitly conveys the utterance date for each token sequence, thereby providing direct temporal context.</p>
+<p>The initial implementation employs a non-trainable, min-max normalised ‘day of the year’ as the time embedding. The team strategically chose this feature to exploit natural seasonal variations inherent in their chosen dataset, such as the prevalence of snow in winter or heat in summer. The framework, however, readily accommodates alternative time embeddings as required.</p>
+<p>For their proof of concept, the authors selected Met Office weather reports as the primary dataset. This text corpus is characterised by its limited vocabulary and simple, repetitive language, making it an ideal candidate for initial validation. The UK’s national meteorological service issues these daily reports, and historical data remains accessible through its digital archive.</p>
 </section>
-<section id="weather-report-dataset-processing" class="level2" data-number="15.5">
-<h2 data-number="15.5" class="anchored" data-anchor-id="weather-report-dataset-processing"><span class="header-section-number">15.5</span> Weather Report Dataset Processing</h2>
+<section id="dataset-curation-and-processing" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="dataset-curation-and-processing"><span class="header-section-number">15.5</span> Dataset Curation and Processing</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_06.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 06</figcaption>
 </figure>
 </div>
-<p>The research team systematically acquired the dataset by scraping daily weather reports from Met Office <em>PDFs</em> spanning the years 2018 to 2024. This process yielded approximately 2,500 reports, each comprising between 150 and 200 words. For text processing, the team employed <em>tf.keras.layers.TextVectorization</em>, standardising the input by converting text to lowercase and stripping punctuation. Crucially, the tokenisation process avoided sub-word segmentation and deliberately neglected case and interpunctuation, reflecting the inherently simple nature of the language. This straightforward approach resulted in a remarkably concise vocabulary of just 3,395 unique words across the entire seven-year corpus. An illustrative example, the Daily Weather Summary for Sunday 04 August 2019, details showery rain and mist, whilst the Daily Extremes table highlights a highest maximum temperature of 27.5°C recorded in Writtle, Essex, and a lowest maximum of 14.1°C in Fair Isle, Shetland.</p>
+<p>The team systematically acquired the dataset by scraping daily weather reports from Met Office PDFs spanning the years 2018 to 2024. This process yielded approximately 2,500 reports, each comprising between 150 and 200 words. For text processing, they employed <em>tf.keras.layers.TextVectorization</em>, standardising the input by converting text to lowercase and stripping punctuation.</p>
+<p>Crucially, the tokenization process avoided sub-word segmentation and deliberately neglected case and interpunctuation, reflecting the inherently simple nature of the language. This straightforward approach resulted in a remarkably concise vocabulary of just 3,395 unique words across the entire seven-year corpus. An illustrative example, the Daily Weather Summary for Sunday 04 August 2019, details showery rain and mist, whilst its Daily Extremes table highlights a highest maximum temperature of 27.5°C recorded in Writtle, Essex.</p>
 </section>
-<section id="vanilla-transformer-model-architecture-and-training" class="level2" data-number="15.6">
-<h2 data-number="15.6" class="anchored" data-anchor-id="vanilla-transformer-model-architecture-and-training"><span class="header-section-number">15.6</span> Vanilla Transformer Model Architecture and Training</h2>
+<section id="baseline-model-architecture" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="baseline-model-architecture"><span class="header-section-number">15.6</span> Baseline Model Architecture</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_07.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 07</figcaption>
 </figure>
 </div>
-<p>The authors constructed a modest-sized, decoder-only <em>Transformer</em> architecture, termed the ‘<em>Vanilla model</em>’, to establish a baseline for language pattern learning within the weather report dataset. This architecture processes input through an Embedding Layer with a d_model of 512, followed by Positional Encoding and a Dropout layer set at a 0.1 rate. Subsequently, the processed input traverses a stack of four Multi-Head Attention Decoder Blocks. Each decoder layer comprises a Multi-Head Attention mechanism with eight heads and a key_dim of 512, succeeded by an Add &amp; Norm operation, then a Feed Forward Network (dff=2048), and another Add &amp; Norm. The final output from these layers feeds into a Dense Layer, sized to the vocabulary, which ultimately produces the model’s output.</p>
-<p>This compact model contains 39 million parameters, equating to approximately 150 <em>MB</em>, a stark contrast to models such as <em>GPT-4</em>, which commands 1.8 trillion parameters across 120 layers. Despite its modest scale, the model trains with remarkable efficiency on an <em>HPC</em> cluster in Munich, utilising two <em>A100 GPUs</em>, completing each epoch in merely 11 seconds—a speed attributable to both the small dataset and the model’s compact size. The associated code, available on <em>GitHub</em>, was primarily developed for foundational understanding rather than production use. During training, the model’s accuracy steadily improved, with training accuracy reaching approximately 0.47 and validation accuracy stabilising around 0.38, demonstrating its capacity to perfectly reproduce the language patterns observed in the weather reports.</p>
+<p>To establish a baseline for language pattern learning, the authors constructed a modest-sized, decoder-only <em>Transformer</em> architecture, which they term the <em>Vanilla model</em>. This architecture processes input through an Embedding Layer (d_model=512), followed by Positional Encoding and a Dropout layer (rate=0.1). Subsequently, the input traverses a stack of four Multi-Head Attention Decoder Blocks. The final output from these layers feeds into a Dense Layer, sized to the vocabulary, which produces the model’s predictions.</p>
+<p>This compact model contains 39 million parameters, a stark contrast to models such as <em>GPT-4</em>, which commands 1.8 trillion parameters. Despite its modest scale, the model trains with remarkable efficiency on an HPC cluster, completing each epoch in merely 11 seconds. During training, its accuracy steadily improved, with validation accuracy stabilising around 0.38, demonstrating its capacity to reproduce the language patterns observed in the weather reports.</p>
 </section>
-<section id="integrating-time-into-the-transformer-architecture" class="level2" data-number="15.7">
-<h2 data-number="15.7" class="anchored" data-anchor-id="integrating-time-into-the-transformer-architecture"><span class="header-section-number">15.7</span> Integrating Time into the Transformer Architecture</h2>
+<section id="integrating-the-temporal-dimension" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="integrating-the-temporal-dimension"><span class="header-section-number">15.7</span> Integrating the Temporal Dimension</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_08.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 08</figcaption>
 </figure>
 </div>
-<p>The established ‘<em>Vanilla model</em>’ demonstrates a robust capacity to perfectly reproduce the language of weather reports. For instance, when provided with a seed sequence such as ‘During the night, a band…’, the model autoregressively generates coherent and contextually relevant text, closely mimicking actual weather forecasts.</p>
-<p>The transition to a ‘Time Transformer’ involves a remarkably minimal architectural adjustment. Instead of solely embedding all information within a 512-dimensional latent semantic space, the authors propose reserving one dimension specifically for temporal data. This dedicated dimension explicitly informs each token about the precise date on which its sequence was uttered. The current implementation employs a non-trainable, min-max normalised ‘day of the year’ as this time embedding, a choice driven by the desire to leverage natural seasonal variations inherent in weather data, such as the distinct patterns of snow in winter and heat in summer. Crucially, this design allows for the integration of various other time embedding approaches as required by different datasets or research objectives.</p>
+<p>The established <em>Vanilla model</em> demonstrates a robust capacity to reproduce the language of weather reports. When provided with a seed sequence such as ‘During the night, a band…’, the model autoregressively generates coherent and contextually relevant text that closely mimics actual forecasts.</p>
+<p>The transition to a <em>Time Transformer</em> involves a remarkably minimal architectural adjustment. Instead of embedding all information within a 512-dimensional latent semantic space, the authors reserve one dimension specifically for temporal data. This dedicated dimension explicitly informs each token about the precise date on which its sequence was uttered. The current implementation employs a non-trainable, min-max normalised ‘day of the year’ as this time embedding, a choice driven by the desire to leverage natural seasonal variations inherent in weather data.</p>
 </section>
-<section id="dataset-characteristics-and-tokenisation-for-time-aware-models" class="level2" data-number="15.8">
-<h2 data-number="15.8" class="anchored" data-anchor-id="dataset-characteristics-and-tokenisation-for-time-aware-models"><span class="header-section-number">15.8</span> Dataset Characteristics and Tokenisation for Time-Aware Models</h2>
+<section id="dataset-suitability-for-time-aware-models" class="level2" data-number="15.8">
+<h2 data-number="15.8" class="anchored" data-anchor-id="dataset-suitability-for-time-aware-models"><span class="header-section-number">15.8</span> Dataset Suitability for Time-Aware Models</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_09.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<p>To rigorously test their proposed time-aware model, the authors sought a dataset characterised by restricted, repetitive language and a small vocabulary, thereby simplifying the task of pattern learning. The <em>UK</em> Met Office weather reports proved an ideal choice, readily accessible online from the national meteorological service. The ‘Tiny Stories’ dataset was also identified as a potential alternative for future investigations.</p>
-<p>The data, originally presented as monthly <em>PDFs</em> containing daily reports, was systematically scraped for the period spanning 2018 to 2024. This yielded approximately 2,500 reports, each comprising between 150 and 200 words. The tokenisation process remained intentionally simple, eschewing sub-word segmentation and deliberately neglecting both case and interpunctuation. This streamlined approach underscored the inherent simplicity of the language, resulting in a remarkably compact vocabulary of just 3,400 words across the entire seven-year corpus.</p>
+<p>To test their proposed time-aware model rigorously, the authors required a dataset characterised by restricted, repetitive language and a small vocabulary, thereby simplifying the task of pattern learning. The UK Met Office weather reports proved an ideal choice, being readily accessible online from the national meteorological service. The team also identified the <em>TinyStories</em> dataset as a potential alternative for future investigations.</p>
+<p>The data, originally presented as monthly PDFs, was systematically scraped for the period spanning 2018 to 2024, yielding approximately 2,500 reports. The intentionally simple tokenization process, which eschewed sub-word segmentation and neglected case, resulted in a compact vocabulary of just 3,400 words. This linguistic simplicity makes the dataset an excellent testbed for isolating and analysing the model’s ability to learn temporal dependencies.</p>
 </section>
-<section id="comparative-architecture-of-vanilla-and-time-transformers" class="level2" data-number="15.9">
-<h2 data-number="15.9" class="anchored" data-anchor-id="comparative-architecture-of-vanilla-and-time-transformers"><span class="header-section-number">15.9</span> Comparative Architecture of Vanilla and Time Transformers</h2>
+<section id="a-comparative-architecture" class="level2" data-number="15.9">
+<h2 data-number="15.9" class="anchored" data-anchor-id="a-comparative-architecture"><span class="header-section-number">15.9</span> A Comparative Architecture</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_10.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 10</figcaption>
 </figure>
 </div>
-<p>The ‘Time Transformer’ represents a minimal yet impactful architectural adjustment to the standard <em>Transformer</em> decoder. In a conventional <em>Vanilla Transformer</em>, the input directly flows into an Embedding Layer, typically with a d_model of 512, followed by Positional Encoding, a Dropout layer, and then a series of four Decoder Layers before culminating in a Final Dense Layer and the ultimate output.</p>
-<p>Conversely, the ‘Time Transformer’ introduces two distinct inputs: textual data and temporal data. The textual input undergoes embedding into a d_model of 511, whilst the temporal data is embedded into a dedicated d_model of 1. These two embedded streams are then concatenated, maintaining the overall embedding dimension, before proceeding through the familiar sequence of Positional Encoding, Dropout, and the identical stack of four Decoder Layers. The time dimension itself is implemented as a non-trainable, min-max normalised ‘day of the year’, calculated using the formula (day of year - 1) / (365 - 1). This explicit integration directly addresses the fundamental challenge that whilst Large Language Models estimate token probabilities based on preceding sequences, real-world token likelihoods are inherently time-dependent, a dynamic often overlooked by training processes that treat distributions as static. Consequently, without this explicit temporal conditioning, current models can only reflect temporal drift through less efficient in-context learning during inference.</p>
+<p>The <em>Time Transformer</em> represents a minimal yet impactful architectural adjustment to the standard <em>Transformer</em> decoder. In a conventional <em>Vanilla Transformer</em>, the input flows directly into an Embedding Layer (d_model=512), followed by Positional Encoding, Dropout, and a series of Decoder Layers before the final output.</p>
+<p>Conversely, the <em>Time Transformer</em> introduces two distinct inputs: textual data and temporal data. The textual input undergoes embedding into a d_model of 511, whilst the temporal data is embedded into a dedicated d_model of 1. These two embedded streams are then concatenated, maintaining the overall embedding dimension, before proceeding through the identical sequence of Positional Encoding, Dropout, and Decoder Layers. The time dimension itself is implemented as a non-trainable, min-max normalised ‘day of the year’. This explicit integration directly addresses the challenge that real-world token likelihoods are inherently time-dependent, a dynamic often overlooked by conventional training processes.</p>
 </section>
-<section id="experiment-1---efficient-learning-of-temporal-drift-synonymic-succession" class="level2" data-number="15.10">
-<h2 data-number="15.10" class="anchored" data-anchor-id="experiment-1---efficient-learning-of-temporal-drift-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1 - Efficient Learning of Temporal Drift (Synonymic Succession)</h2>
+<section id="experiment-1-synonymic-succession" class="level2" data-number="15.10">
+<h2 data-number="15.10" class="anchored" data-anchor-id="experiment-1-synonymic-succession"><span class="header-section-number">15.10</span> Experiment 1: Synonymic Succession</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_11.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 11</figcaption>
 </figure>
 </div>
-<p>To assess the ‘Time Transformer’s’ capacity for efficiently learning temporal drift, the authors conducted a ‘synonymic succession’ experiment. This involved injecting a synthetic, time-dependent drift directly into the training data: the word ‘rain’ was progressively replaced by ‘liquid sunshine’ throughout the year. The objective was to ascertain whether the model could reproduce this engineered temporal dependence within its predicted token sequences for each day of the year.</p>
-<p>The probability of this replacement followed an S-shaped curve, commencing near zero in January and gradually ascending to approach 1.00 by the year’s end. Analysis of monthly occurrences in the generated sequences clearly demonstrated the model’s successful capture of this drift: ‘Rain’ occurrences predominated in the earlier months, whilst ‘Liquidsunshine’ became significantly more frequent and eventually dominant in the latter half of the year, particularly from August through December.</p>
+<p>To assess the <em>Time Transformer’s</em> capacity for learning temporal drift efficiently, the authors conducted an experiment they term <em>synonymic succession</em>. This involved injecting a synthetic, time-dependent drift directly into the training data: the word ‘rain’ was progressively replaced by ‘liquid sunshine’ throughout the year. The objective was to ascertain whether the model could reproduce this engineered temporal dependence in its predictions.</p>
+<p>The probability of this replacement followed an S-shaped curve, commencing near zero in January and ascending to approach 1.00 by the year’s end. Analysis of monthly occurrences in the generated sequences clearly demonstrated the model’s successful capture of this drift. Occurrences of ‘Rain’ predominated in the earlier months, whilst ‘Liquidsunshine’ became significantly more frequent and eventually dominant in the latter half of the year.</p>
 </section>
-<section id="experiment-2---changing-weather-patterns-and-collocation-fixation" class="level2" data-number="15.11">
-<h2 data-number="15.11" class="anchored" data-anchor-id="experiment-2---changing-weather-patterns-and-collocation-fixation"><span class="header-section-number">15.11</span> Experiment 2 - Changing Weather Patterns and Collocation Fixation</h2>
+<section id="experiment-2-collocation-fixation" class="level2" data-number="15.11">
+<h2 data-number="15.11" class="anchored" data-anchor-id="experiment-2-collocation-fixation"><span class="header-section-number">15.11</span> Experiment 2: Collocation Fixation</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_13.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 13</figcaption>
 </figure>
 </div>
-<p>A second experiment, termed ‘changing a weather pattern’ or ‘fixation of a collocation’, further investigated the model’s ability to capture temporal shifts. This involved injecting a synthetic, time-dependent change in co-occurrence: the pattern ‘rain’ followed by any word other than ‘and’ was progressively altered to ‘rain and snow’. Linguistically, this simulates the ‘fixation of a collocation’, akin to the established phrase ‘bread and butter’.</p>
-<p>The results, visualised through monthly comparisons, clearly demonstrated the injected temporal shift. ‘Rain Only’ occurrences were notably higher in the first half of the year, whilst ‘Rain and Snow’ occurrences became significantly more frequent in the latter half, peaking around October and November. Furthermore, an analysis of attention weights revealed that the token ‘snow’ consistently exhibited the highest attention on ‘rain’, followed by ‘heavy’ and ‘and’ (specifically in Head 5), indicating that the model successfully learned this evolving co-occurrence pattern. Example sentences from Day 1 and Day 363 illustrate this learned association, consistently featuring ‘heavy rain and snow’ as the year progresses.</p>
+<p>A second experiment, described as ‘changing a weather pattern’ or <em>fixation of a collocation</em>, further investigated the model’s ability to capture temporal shifts. This involved injecting a synthetic change in co-occurrence: the pattern ‘rain’ followed by any word other than ‘and’ was progressively altered to ‘rain and snow’. Linguistically, this process simulates the fixation of a collocation, akin to an established phrase such as ‘bread and butter’.</p>
+<p>The results, visualised through monthly comparisons, clearly demonstrated the injected temporal shift. Occurrences of ‘Rain Only’ were notably higher in the first half of the year, whilst ‘Rain and Snow’ became significantly more frequent in the latter half. Furthermore, an analysis of attention weights revealed that the token ‘snow’ consistently exhibited the highest attention on ‘rain’, indicating that the model successfully learned this evolving co-occurrence pattern.</p>
 </section>
-<section id="proof-of-concept-applications-next-steps-and-challenges" class="level2" data-number="15.12">
-<h2 data-number="15.12" class="anchored" data-anchor-id="proof-of-concept-applications-next-steps-and-challenges"><span class="header-section-number">15.12</span> Proof of Concept, Applications, Next Steps, and Challenges</h2>
+<section id="conclusions-and-future-directions" class="level2" data-number="15.12">
+<h2 data-number="15.12" class="anchored" data-anchor-id="conclusions-and-future-directions"><span class="header-section-number">15.12</span> Conclusions and Future Directions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_017_slide_14.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 14</figcaption>
 </figure>
 </div>
-<p>The conducted research establishes a clear proof of concept: <em>Transformer</em>-based Large Language Models can be efficiently rendered time-aware through the integration of a dedicated temporal dimension within their token embeddings. This innovation opens several compelling applications. A foundational ‘Time Transformer’, for instance, could provide an exceptional basis for a myriad of downstream tasks involving historical data. Moreover, an instruction-tuned variant would empower users to ‘talk to a specific time’, potentially yielding superior results even in common usage scenarios where interaction with the present is desired. Beyond temporal dynamics, the methodology readily extends to modelling dependencies on other contextual or metadata dimensions, such as country or genre.</p>
-<p>Future research endeavours include benchmarking this approach against explicit time-token methods and rigorously testing for potential increases in training efficiency. Nevertheless, challenges persist towards broader application. Uncertainty surrounds the feasibility and efficiency of fine-tuning due to the architectural modifications. Furthermore, the approach necessitates a departure from the simplicity of metadata-free self-supervised learning, plunging the authors into the intricate complexities of data curation. Fundamental questions also arise, such as determining the generation time of a given token sequence and exploring the utility of a more modest, targeted encoder model.</p>
+<p>The conducted research establishes a clear proof of concept: <em>Transformer</em>-based models can be efficiently rendered time-aware by integrating a dedicated temporal dimension within their token embeddings. This innovation opens several compelling applications. A foundational <em>Time Transformer</em>, for instance, could provide an exceptional basis for downstream tasks involving historical data. Moreover, an instruction-tuned variant would empower users to ‘talk to a specific time’, potentially yielding superior results even in common usage.</p>
+<p>Beyond temporal dynamics, the methodology readily extends to modelling dependencies on other contextual dimensions, such as country or genre. Future research endeavours include benchmarking this approach against explicit time-token methods and testing for potential increases in training efficiency. Nevertheless, challenges persist. Uncertainty surrounds the feasibility of fine-tuning due to the architectural modifications. Furthermore, the approach necessitates a departure from metadata-free self-supervised learning, plunging the team into the complexities of data curation.</p>
 </section>
 <section id="supplementary-resource" class="level2" data-number="15.13">
 <h2 data-number="15.13" class="anchored" data-anchor-id="supplementary-resource"><span class="header-section-number">15.13</span> Supplementary Resource</h2>
@@ -439,12 +440,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Slide 16</figcaption>
 </figure>
 </div>
-<p>A supplementary resource, specifically a <em>ChatGPT</em> conversation, is available for further exploration. This resource can be accessed directly via the provided <em>URL</em>: https://chatgpt.com/c/67b8237a-2a48-8012-9862-80af84830a17.</p>
-</section>
-<section id="additional-visual-materials" class="level2" data-number="15.14">
-<h2 data-number="15.14" class="anchored" data-anchor-id="additional-visual-materials"><span class="header-section-number">15.14</span> Additional Visual Materials</h2>
-<p>The following slides provide supplementary visual information relevant to the presentation:</p>
-<p><img src="images/ai-nepi_017_slide_12.png" class="img-fluid" alt="Slide 12"> <em>Failed to analyse slide</em></p>
+<p>A supplementary resource, specifically a <em>ChatGPT</em> conversation, is available for further exploration at the following URL: https://chatgpt.com/c/67b8237a-2a48-8012-9862-80af84830a17.</p>
 
 
 </section>
@@ -851,8 +847,8 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_016.html" class="pagination-link" aria-label="Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span>
+      <a href="./chapter_ai-nepi_016.html" class="pagination-link" aria-label="A Comparative Study of LDA and BERTopic Performance Across Text Levels">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Study of LDA and BERTopic Performance Across Text Levels</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
