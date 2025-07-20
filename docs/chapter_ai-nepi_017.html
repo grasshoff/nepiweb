@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.13">
+<meta name="generator" content="quarto-1.8.17">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jochen Büttner">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-06-21">
 
-<title>15&nbsp; Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>15&nbsp; Making Transformer-Based LLMs Time-Aware: A Proof of Concept – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a0afd4a9b901cc50d8ed64d4ec5e2aec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_017.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_017.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,12 +96,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+      <a href="./">AI-NEPI Conference Proceedings</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -119,85 +122,85 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AI-assisted Methods for History and Philosophy of Science Workshop: Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE: Tracing the Influence of Ancient Wisdom on Early Modern Natural Philosophy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Understanding LLMs &amp; AI-based Scientific Insights in the Humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI, Computational Epistemology, and Open Science Infrastructure</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -208,14 +211,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context for Language Variation and Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
   </div>
 </li>
     </ul>
@@ -229,24 +238,28 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#addressing-implicit-temporal-understanding" id="toc-addressing-implicit-temporal-understanding" class="nav-link" data-scroll-target="#addressing-implicit-temporal-understanding"><span class="header-section-number">15.1</span> Addressing Implicit Temporal Understanding</a></li>
-  <li><a href="#formalising-time-dependent-probabilities-the-time-transformer" id="toc-formalising-time-dependent-probabilities-the-time-transformer" class="nav-link" data-scroll-target="#formalising-time-dependent-probabilities-the-time-transformer"><span class="header-section-number">15.2</span> Formalising Time-Dependent Probabilities: The Time Transformer</a></li>
-  <li><a href="#empirical-validation-data-and-architecture" id="toc-empirical-validation-data-and-architecture" class="nav-link" data-scroll-target="#empirical-validation-data-and-architecture"><span class="header-section-number">15.3</span> Empirical Validation: Data and Architecture</a></li>
-  <li><a href="#time-transformer-implementation-and-results" id="toc-time-transformer-implementation-and-results" class="nav-link" data-scroll-target="#time-transformer-implementation-and-results"><span class="header-section-number">15.4</span> Time Transformer: Implementation and Results</a></li>
-  <li><a href="#proof-of-concept-applications-and-challenges" id="toc-proof-of-concept-applications-and-challenges" class="nav-link" data-scroll-target="#proof-of-concept-applications-and-challenges"><span class="header-section-number">15.5</span> Proof of Concept, Applications, and Challenges</a></li>
+  <li><a href="#the-problem-of-implicit-time" id="toc-the-problem-of-implicit-time" class="nav-link" data-scroll-target="#the-problem-of-implicit-time"><span class="header-section-number">15.1</span> The Problem of Implicit Time</a></li>
+  <li><a href="#formalising-temporal-dependence" id="toc-formalising-temporal-dependence" class="nav-link" data-scroll-target="#formalising-temporal-dependence"><span class="header-section-number">15.2</span> Formalising Temporal Dependence</a></li>
+  <li><a href="#the-time-transformer-architecture" id="toc-the-time-transformer-architecture" class="nav-link" data-scroll-target="#the-time-transformer-architecture"><span class="header-section-number">15.3</span> The <em>Time Transformer</em> Architecture</a></li>
+  <li><a href="#dataset-curation-and-pre-processing" id="toc-dataset-curation-and-pre-processing" class="nav-link" data-scroll-target="#dataset-curation-and-pre-processing"><span class="header-section-number">15.4</span> Dataset Curation and Pre-processing</a></li>
+  <li><a href="#baseline-model-and-training" id="toc-baseline-model-and-training" class="nav-link" data-scroll-target="#baseline-model-and-training"><span class="header-section-number">15.5</span> Baseline Model and Training</a></li>
+  <li><a href="#implementing-the-time-transformer" id="toc-implementing-the-time-transformer" class="nav-link" data-scroll-target="#implementing-the-time-transformer"><span class="header-section-number">15.6</span> Implementing the <em>Time Transformer</em></a></li>
+  <li><a href="#experiment-one-synonymic-succession" id="toc-experiment-one-synonymic-succession" class="nav-link" data-scroll-target="#experiment-one-synonymic-succession"><span class="header-section-number">15.7</span> Experiment One: Synonymic Succession</a></li>
+  <li><a href="#experiment-two-collocation-fixation" id="toc-experiment-two-collocation-fixation" class="nav-link" data-scroll-target="#experiment-two-collocation-fixation"><span class="header-section-number">15.8</span> Experiment Two: Collocation Fixation</a></li>
+  <li><a href="#conclusions-and-future-challenges" id="toc-conclusions-and-future-challenges" class="nav-link" data-scroll-target="#conclusions-and-future-challenges"><span class="header-section-number">15.9</span> Conclusions and Future Challenges</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-body">
+<div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -260,13 +273,13 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
       
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">June 21, 2025</p>
     </div>
   </div>
   
@@ -280,67 +293,114 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>This report details a novel approach for imbuing large language models (<em>LLMs</em>) with explicit temporal awareness, directly addressing a fundamental limitation of current architectures. Presently, <em>LLMs</em> derive their understanding of time implicitly from statistical patterns within training texts <span class="citation" data-cites="Brown2020 Devlin2019">(<a href="#ref-Brown2020" role="doc-biblioref"><strong>Brown2020?</strong></a>; <a href="#ref-Devlin2019" role="doc-biblioref"><strong>Devlin2019?</strong></a>)</span>. However, this implicit method proves insufficient for tasks demanding precise temporal context, often leading to “recency bias” or an inability to reconcile temporally contradictory information.</p>
-<p>To overcome this, researchers propose the “<em>Time Transformer</em>”, an architectural modification that integrates a dedicated temporal dimension directly into token embeddings. This innovation enables models to learn and reproduce changing linguistic patterns as a function of time, thereby resolving ambiguities arising from temporally contradictory information within training data.</p>
-<p>To validate this concept, engineers developed a modest <em>Transformer</em> model and trained it on a bespoke dataset of UK Met Office weather reports spanning 2018 to 2024. This dataset, characterised by its restricted vocabulary and repetitive language, provided an ideal testbed for demonstrating the <em>Time Transformer</em>’s efficacy. Experiments involved injecting synthetic temporal drifts—both synonymic succession (e.g., replacing “rain” with “liquid sunshine”) and co-occurrence changes (e.g., <code>rain</code> becoming <code>rain and snow</code>)—into the training data. The <em>Time Transformer</em> consistently reproduced these time-dependent patterns with high fidelity, confirming its ability to efficiently learn and reflect temporal variations in underlying data distributions.</p>
-<p>Beyond this proof of concept, the <em>Time Transformer</em> holds significant implications for historical analysis, offering a robust foundation for downstream tasks on historical data and enabling instruction-tuned models to “talk to a specific time.” Whilst this architectural modification necessitates training from scratch, posing computational challenges for large-scale applications and introducing data curation complexities, the potential for enhanced training efficiency and more precise temporal reasoning remains compelling. Further research explores benchmarking against explicit time-token approaches and investigating the utility of a modest, targeted encoder model. This work represents a crucial step towards developing more temporally intelligent and historically accurate language models.</p>
+<p>This chapter details a novel approach for integrating explicit time awareness into <em>Transformer</em>-based Large Language Models (LLMs). The authors identify a core limitation in current models: they possess only an implicit, statistical understanding of time derived from their training data. This deficiency leads to an inability to resolve time-dependent contradictory information and contributes to a pronounced recency bias.</p>
+<p>To address this, the team proposes the <em>Time Transformer</em>, an architecture that incorporates an explicit temporal dimension directly into the token embedding space. This minimal adjustment allows the model to learn the influence of time on language patterns without altering the fundamental training objective of maximising log likelihood.</p>
+<p>A proof of concept was developed using a small, decoder-only <em>Transformer</em> model built from scratch, featuring 39 million parameters. For training, the authors curated a specialised dataset of UK Met Office daily weather reports from 2018 to 2024, selected for its restricted vocabulary and repetitive linguistic structures.</p>
+<p>Two experiments involving synthetically injected temporal drift demonstrated the model’s efficacy. The first involved a ‘synonymic succession’ where one word was progressively replaced by another over a year, a pattern the model successfully learned and reproduced. The second, a more complex ‘collocation fixation’, altered word co-occurrence probabilities over time, which the model also learned, as verified by analysing its internal attention mechanisms.</p>
+<p>Whilst the proof of concept is successful, the authors acknowledge significant challenges for broader application. These include the necessity of training new models from scratch and the extensive data curation required to assign accurate timestamps to all training sequences.</p>
 </section>
-<section id="addressing-implicit-temporal-understanding" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="addressing-implicit-temporal-understanding"><span class="header-section-number">15.1</span> Addressing Implicit Temporal Understanding</h2>
+<section id="the-problem-of-implicit-time" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="the-problem-of-implicit-time"><span class="header-section-number">15.1</span> The Problem of Implicit Time</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_017_slide_01.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
+<p><img src="images/ai-nepi_017_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>Current large language models (<em>LLMs</em>) fundamentally derive their understanding of time implicitly, through statistical analysis of patterns within their extensive training corpora <span class="citation" data-cites="Brown2020">(<a href="#ref-Brown2020" role="doc-biblioref"><strong>Brown2020?</strong></a>)</span>. Whilst these models exhibit a remarkable grasp of temporal concepts, their reliance on implicit cues presents inherent limitations. Explicit time awareness, defined as the capacity to learn and reproduce evolving patterns in training data as a function of time, would profoundly enhance their utility, particularly within historical analysis and beyond.</p>
-<p>A critical challenge arises when training data contains temporally contradictory information. Consider, for instance, two sentences: “The primary architectures for processing text through NNs are <em>LSTMs</em>” (true in 2017) and “The primary architectures for processing text through NNs are <em>Transformers</em>” (true in 2025) <span class="citation" data-cites="Vaswani2017 Hochreiter1997">(<a href="#ref-Vaswani2017" role="doc-biblioref"><strong>Vaswani2017?</strong></a>; <a href="#ref-Hochreiter1997" role="doc-biblioref"><strong>Hochreiter1997?</strong></a>)</span>. Without explicit temporal context, an <em>LLM</em> treats these as competing statements, unable to perfectly fulfil its objective without making an error. Consequently, models often exhibit a “recency bias,” favouring more recent information in next-token prediction. Current workarounds, such as prompt engineering—inserting explicit temporal cues like “In 2017”—offer only limited guarantees and represent an imprecise method for eliciting time-specific knowledge <span class="citation" data-cites="Liu2023">(<a href="#ref-Liu2023" role="doc-biblioref"><strong>Liu2023?</strong></a>)</span>. A more robust solution necessitates an architecture that enables <em>LLMs</em> to explicitly learn and reproduce these changing patterns as a direct function of time.</p>
+<p>Current Large Language Models derive their understanding of time statistically, extracting implicit cues from vast training corpora. Whilst remarkably capable, this approach has inherent limitations. Models cannot easily resolve information that is contradictory without temporal context; for example, two statements identifying different dominant neural network architectures are both valid, but at different points in time. During training, these sentences compete directly for attention, forcing the model into a state where it cannot perfectly fulfil its objective because validating one statement necessitates penalising the other.</p>
+<p>Consequently, during inference, these models often exhibit a recency bias, favouring the most recently prevalent information. An input sequence about neural architectures will likely elicit the completion ‘Transformers’, even though ‘long short-term memories’ (<em>LSTMs</em>) is also present within its learned knowledge. To retrieve this older information, users must resort to prompt engineering—adjusting the input by adding a year or changing a verb’s tense. This process is imprecise and unreliable, as it depends on exploiting how the model has happened to learn temporal cues.</p>
+<p>A more robust solution requires models that are explicitly time-aware, capable of learning and reproducing evolving patterns as a direct function of time. To this end, the authors have developed a proof of concept that achieves this for generative language models.</p>
 </section>
-<section id="formalising-time-dependent-probabilities-the-time-transformer" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="formalising-time-dependent-probabilities-the-time-transformer"><span class="header-section-number">15.2</span> Formalising Time-Dependent Probabilities: The Time Transformer</h2>
+<section id="formalising-temporal-dependence" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="formalising-temporal-dependence"><span class="header-section-number">15.2</span> Formalising Temporal Dependence</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_017_slide_05.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/ai-nepi_017_slide_05.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p>Formalising the challenge, current large language models estimate the probability distribution over their vocabulary for the next token, <code>x_n</code>, given a sequence of preceding tokens, <code>x_1, ..., x_{n-1}</code> <span class="citation" data-cites="Radford2018">(<a href="#ref-Radford2018" role="doc-biblioref"><strong>Radford2018?</strong></a>)</span>. Crucially, in real-world contexts, this probability is not static; it inherently depends on time, rendering the true distribution as <code>p(x_n | x_1, ..., x_{n-1}, t)</code>. Consequently, the probability for an entire sequence of tokens uttered at a specific time <code>t</code> is expressed as the product of these time-dependent conditional probabilities. Despite this temporal dependency, existing <em>LLMs</em> largely treat these underlying distributions as static during their training process, reflecting temporal drift solely through in-context learning during inference.</p>
-<p>To overcome this limitation, a direct approach involves explicitly modelling the time-dependent probability distribution <code>p(x_n | x_1, ..., x_{n-1}, t)</code>. Whilst time slicing—training separate models for distinct temporal periods—offers a conceptual solution, it proves prohibitively data-inefficient. A more elegant and efficient method, termed the “<em>Time Transformer</em>”, introduces a simple yet profound modification: an additional dimension, <code>φ(t)</code>, is appended to the latent semantic feature vector of each token. This creates a time-aware embedding, <code>E(x, t)</code>, which then serves as input to the <em>Transformer</em> architecture. Consequently, the <em>Transformer</em> processes a sequence of time-dependent token embeddings, enabling it to estimate the time-conditioned probability distribution <code>p_θ(x_n | x_1, ..., x_{n-1}, t)</code>. The training objective remains the standard maximisation of log likelihood across all sequences <span class="citation" data-cites="Goodfellow2016">(<a href="#ref-Goodfellow2016" role="doc-biblioref"><strong>Goodfellow2016?</strong></a>)</span>. This direct injection of time into each token’s representation empowers the model to precisely learn how strongly or weakly the temporal dimension influences individual tokens, thereby capturing dynamic linguistic patterns.</p>
+<p>To formalise the problem, it is necessary to consider the core function of a language model. Based on its training data, an LLM learns to estimate the probability distribution over its entire vocabulary for the next token, given a preceding sequence of tokens. It then outputs the most probable continuation.</p>
+<p>A critical factor, however, is that these probabilities are not static in the real world; they are inherently a function of time. For instance, the probability of the token ‘Transformers’ completing a specific sentence about neural architectures was effectively zero in 2017.</p>
+<p>Despite this reality, the training process typically treats the probability distributions for token sequences as static. This simplification means that when the model is later used for inference, it can only reflect the temporal drift in language patterns via in-context learning. The model’s ability to generate time-appropriate text is therefore contingent on the specific cues provided in the immediate prompt, rather than on a fundamental, built-in understanding of temporal dynamics.</p>
 </section>
-<section id="empirical-validation-data-and-architecture" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="empirical-validation-data-and-architecture"><span class="header-section-number">15.3</span> Empirical Validation: Data and Architecture</h2>
+<section id="the-time-transformer-architecture" class="level2" data-number="15.3">
+<h2 data-number="15.3" class="anchored" data-anchor-id="the-time-transformer-architecture"><span class="header-section-number">15.3</span> The <em>Time Transformer</em> Architecture</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_017_slide_16.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 16</figcaption>
+<p><img src="images/ai-nepi_017_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
 </figure>
 </div>
-<p>To empirically validate the <em>Time Transformer</em> concept, researchers required a text dataset characterised by a restricted vocabulary and simple, repetitive language patterns. UK Met Office weather reports, sourced from the National Meteorological Service’s digital archive, proved an ideal choice <span class="citation" data-cites="UKMetOffice">(<a href="#ref-UKMetOffice" role="doc-biblioref"><strong>UKMetOffice?</strong></a>)</span>. Researchers scraped daily reports for the years 2018 to 2024, yielding approximately 2,500 documents, each comprising 150 to 200 words. The tokenisation process was intentionally simplistic, neglecting sub-word tokenisation, case, and interpunctuation, resulting in a compact vocabulary of only 3,395 unique words across the entire seven-year period. An alternative dataset, <em>TinyStories</em>, was also considered for its similar characteristics, offering short, synthetically generated narratives <span class="citation" data-cites="Xu2023">(<a href="#ref-Xu2023" role="doc-biblioref"><strong>Xu2023?</strong></a>)</span>.</p>
-<p>A modest <em>Transformer</em> architecture, termed the “<em>Vanilla model</em>”, underpinned the experimental setup. This model incorporated an Embedding Layer, Positional Encoding, Dropout, Multi-Head Attention, Add &amp; Norm layers, a Feed-Forward Network, and multiple Decoder Layers culminating in a Final Dense Layer for output <span class="citation" data-cites="Vaswani2017">(<a href="#ref-Vaswani2017" role="doc-biblioref"><strong>Vaswani2017?</strong></a>)</span>. Specifically, the architecture featured four multi-head attention decoder blocks, each employing eight attention heads. With a mere 39 million parameters, equating to 150 MB, this model stands in stark contrast to colossal architectures like <em>GPT-4</em>, which boasts 1.8 trillion parameters distributed across 120 layers <span class="citation" data-cites="OpenAI2023">(<a href="#ref-OpenAI2023" role="doc-biblioref"><strong>OpenAI2023?</strong></a>)</span>. Training occurred on an HPC cluster in Munich, utilising two H100 GPUs. Remarkably, each epoch completed in just 11 seconds—a testament to the dataset’s small scale and the model’s compact design. The code for this implementation is publicly available on GitHub <span class="citation" data-cites="Büttner2025GitHub">(<a href="#ref-Büttner2025GitHub" role="doc-biblioref"><strong>Büttner2025GitHub?</strong></a>)</span>, though it was developed primarily for foundational understanding rather than optimal performance. Crucially, the trained model demonstrated a perfect ability to reproduce the language of weather reports; generated texts, initiated from a seed sequence such as “During the night, a band …”, proved indistinguishable from authentic reports, confirming the model’s proficiency in capturing the underlying linguistic patterns.</p>
+<p>To model time-dependent probability distributions effectively, the authors propose a new architecture, the <em>Time Transformer</em>, as a more efficient alternative to data-intensive methods like time-slicing. The core idea is elegant in its simplicity. Every natural language processing task begins by converting tokens into a vectorial representation, or embedding, within a latent space that is learned during training. The <em>Time Transformer</em> augments this process by adding a single, additional dimension to the embedding that explicitly encodes the token’s time of utterance.</p>
+<p>In this model, every token in an input sequence is assigned a specific time value, meaning its vector representation will differ slightly based on when it was recorded. When these time-aware embeddings are processed by the <em>Transformer</em>, the resulting output probability distributions for subsequent tokens are inherently time-dependent.</p>
+<p>Crucially, the training objective remains the standard maximisation of log likelihood. The beauty of this approach lies in the <em>Transformer’s</em> innate ability to process statistical relationships; it learns precisely how much influence the temporal dimension should have on each token, allowing some words to remain stable over time whilst others change significantly.</p>
 </section>
-<section id="time-transformer-implementation-and-results" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="time-transformer-implementation-and-results"><span class="header-section-number">15.4</span> Time Transformer: Implementation and Results</h2>
+<section id="dataset-curation-and-pre-processing" class="level2" data-number="15.4">
+<h2 data-number="15.4" class="anchored" data-anchor-id="dataset-curation-and-pre-processing"><span class="header-section-number">15.4</span> Dataset Curation and Pre-processing</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_017_slide_15.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 15</figcaption>
+<p><img src="images/ai-nepi_017_slide_07.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 07</figcaption>
 </figure>
 </div>
-<p>Implementing the <em>Time Transformer</em> required only a minimal architectural adjustment to the previously described <em>Vanilla model</em>. Engineers reserved a single dimension within the 512-dimensional latent semantic space to encode temporal information. This time dimension is non-trainable and employs a min-max normalised representation of the day of the year, calculated as <code>(day of year - 1) / (365 - 1)</code>. This specific encoding was chosen to leverage the natural seasonal variations inherent in weather data, such as the prevalence of snow in winter or heat in summer, though alternative temporal embeddings remain feasible.</p>
-<p>The first experiment aimed to demonstrate the model’s capacity for learning synthetic temporal drift through synonymic succession. Researchers injected a time-dependent replacement rule into the training data: <code>rain</code> was replaced by <code>liquid sunshine</code> according to a sigmoid probability function, transitioning from zero replacement at the year’s beginning to full replacement by its end. Validation involved generating a weather prediction for each day of the year and subsequently counting the monthly frequencies of <code>rain</code> versus <code>liquid sunshine</code>. The <em>Time Transformer</em> flawlessly reproduced the injected sigmoid pattern, exhibiting <code>rain</code> predominantly early in the year and <code>liquid sunshine</code> towards the end, with the transition occurring precisely mid-year.</p>
-<p>The second experiment explored the model’s ability to learn a more complex temporal pattern: a change in co-occurrence, or the “fixation of a collocation.” Here, instances of <code>rain</code> not immediately followed by <code>and</code> were synthetically replaced with <code>rain and snow</code>. This modification effectively transformed a variable collocation into an obligatory one. Validation involved generating daily predictions and comparing the monthly occurrences of <code>rain and snow</code> against <code>rain only</code>. The model successfully acquired this pattern, generating <code>rain and snow</code> almost exclusively in the latter part of the year, whilst early-year occurrences of <code>rain</code> (sometimes accompanied by <code>snow</code>) reflected natural January weather patterns. Furthermore, introspection into the model’s attention heads revealed specialised learning of these temporal patterns, with specific heads conditioning early-year <code>rain and snow</code> on the presence of a “cold system,” underscoring the model’s capacity for intricate pattern recognition even in this modest experimental setup.</p>
+<p>To test the <em>Time Transformer</em> concept, the authors required a dataset with a restricted language and a small vocabulary, which would allow a modest model to learn its linguistic patterns. They identified UK Met Office daily weather reports as an ideal candidate. These reports, available online as monthly PDFs from the UK’s national meteorological service, feature highly repetitive language. As a potential alternative, the <em>TinyStories</em> dataset was also noted.</p>
+<p>The team scraped all daily reports from 2018 to 2024, creating a corpus of roughly 2,500 documents. The text was then chunked and tokenised using <em>Keras TextVectorization</em>. A simple pre-processing scheme was employed, which ignored case and punctuation and did not use subword tokenisation. This straightforward approach was sufficient for the simple language of the reports, which, across seven years of data, comprised a vocabulary of only 3,400 words.</p>
 </section>
-<section id="proof-of-concept-applications-and-challenges" class="level2" data-number="15.5">
-<h2 data-number="15.5" class="anchored" data-anchor-id="proof-of-concept-applications-and-challenges"><span class="header-section-number">15.5</span> Proof of Concept, Applications, and Challenges</h2>
+<section id="baseline-model-and-training" class="level2" data-number="15.5">
+<h2 data-number="15.5" class="anchored" data-anchor-id="baseline-model-and-training"><span class="header-section-number">15.5</span> Baseline Model and Training</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_017_slide_21.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 21</figcaption>
+<p><img src="images/ai-nepi_017_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
 </figure>
 </div>
-<p>This research unequivocally establishes a proof of concept: <em>Transformer</em>-based large language models can indeed achieve explicit time awareness through the simple addition of a temporal dimension to their token embeddings. This fundamental capability opens a spectrum of fascinating applications. A foundation <em>Time Transformer</em>, for instance, could provide an unparalleled basis for a myriad of downstream tasks involving historical data. Furthermore, an instruction-tuned variant would empower users to “talk to a specific time,” potentially yielding superior results even in conventional usage scenarios by providing more precise temporal context. Beyond this, the methodology extends to modelling the dependence of token sequence distributions on other crucial metadata dimensions, such as country or genre.</p>
-<p>Several promising avenues for future research emerge from this work. Benchmarking the <em>Time Transformer</em> against explicit time-token approaches will quantify its performance advantages and identify optimal use cases. Crucially, investigating whether the temporal dimension enhances training efficiency, by aiding the model in deciphering inherent patterns, represents a significant next step.</p>
-<p>Nevertheless, substantial challenges persist concerning practical application. The architectural modification fundamentally alters the model, rendering it unclear whether fine-tuning existing, pre-trained <em>LLMs</em> remains feasible or efficient; this often necessitates training models from scratch, which demands prohibitive computational resources for any serious application beyond the presented toy case. Moreover, the elegant simplicity of metadata-free self-supervised learning is lost, plunging the process into the intricate complexities of data curation. Assigning accurate dates to historical token sequences presents a formidable task for historians, fraught with ambiguities concerning original utterance dates versus reprint dates. Despite these hurdles, a compelling future direction involves exploring a modest, targeted encoder model, akin to <em>BERT</em> <span class="citation" data-cites="Devlin2019">(<a href="#ref-Devlin2019" role="doc-biblioref"><strong>Devlin2019?</strong></a>)</span>, built upon the same temporal principle. Such an encoder would focus on learning only the patterns relevant to a specific task, circumventing the need to capture all intricate linguistic variations and offering a more scalable path forward for historical language analysis.</p>
+<p>Before implementing the temporal component, the authors constructed a baseline ‘vanilla’ <em>Transformer</em> from scratch to confirm that a small model could learn the language patterns of the weather report dataset. This modest, decoder-only model features four decoder layers. Each layer is composed of a multi-head attention block with eight heads, followed by a normalisation layer, a non-linear feed-forward layer, and a final normalisation layer. A concluding dense layer performs the classification task of assigning probabilities across the vocabulary.</p>
+<p>The resulting model is very small by modern standards, with only 39 million parameters and a file size of 150 MB. It was trained on an HPC cluster in Munich using two A100 GPUs, with each training epoch completing in just 11 seconds. After training, the model demonstrated its ability to autoregressively generate coherent and realistic weather reports from a simple seed phrase, proving it had successfully captured the linguistic patterns of the source data. The code for this model and the subsequent experiments is publicly available.</p>
+</section>
+<section id="implementing-the-time-transformer" class="level2" data-number="15.6">
+<h2 data-number="15.6" class="anchored" data-anchor-id="implementing-the-time-transformer"><span class="header-section-number">15.6</span> Implementing the <em>Time Transformer</em></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_017_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>Adapting the baseline model into the <em>Time Transformer</em> requires a remarkably minimal architectural change. The implementation reserves just one dimension within the model’s 512-dimensional latent semantic space to carry temporal information. For this proof of concept, every token is assigned a non-trainable, min-max normalised value corresponding to the day of the year on which its source report was published.</p>
+<p>This specific encoding—the day of the year—was deliberately chosen to exploit the seasonal variations naturally present in the weather data, such as the higher frequency of ‘snow’ in winter and ‘hot’ in summer. This design choice enables the model to directly associate linguistic patterns with cyclical time. Nevertheless, the framework is flexible, and any other form of time embedding could be integrated as needed.</p>
+</section>
+<section id="experiment-one-synonymic-succession" class="level2" data-number="15.7">
+<h2 data-number="15.7" class="anchored" data-anchor-id="experiment-one-synonymic-succession"><span class="header-section-number">15.7</span> Experiment One: Synonymic Succession</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_017_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>The first experiment sought to determine if the new architecture could efficiently learn a temporal drift injected into its training data. The authors designed a ‘synonymic succession’ by systematically replacing the word ‘rain’ with ‘liquid sunshine’. This replacement was governed by a sigmoid function tied to the day of the year, where the probability of replacement was zero at the beginning of the year and gradually increased to one by the end.</p>
+<p>After training on this modified dataset, the model was tasked with generating one weather prediction for every day of the year. By counting the monthly frequencies of ‘rain’ and ‘liquid sunshine’ in the output, the team confirmed the experiment’s success. The generated text, with some expected statistical variation, faithfully reproduced the engineered pattern: ‘rain’ appeared almost exclusively in the early months, ‘liquid sunshine’ dominated the later months, and the transition occurred precisely in the middle of the year.</p>
+</section>
+<section id="experiment-two-collocation-fixation" class="level2" data-number="15.8">
+<h2 data-number="15.8" class="anchored" data-anchor-id="experiment-two-collocation-fixation"><span class="header-section-number">15.8</span> Experiment Two: Collocation Fixation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_017_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>Seeking a more complex challenge than simple word replacement, a second experiment was designed to test if the model could learn a change in word co-occurrence. This ‘collocation fixation’ synthetically altered the weather language over the course of the year. Specifically, instances of the word ‘rain’ not already followed by ‘and’ were replaced with the phrase ‘rain and snow’, with the probability of this replacement increasing throughout the year. From the model’s perspective, this changes the language such that by the year’s end, the appearance of ‘snow’ becomes almost entirely conditioned on the preceding token being ‘rain’.</p>
+<p>Once again, the model successfully learned the injected pattern. Generated forecasts for the end of the year almost always featured ‘rain and snow’ together, whereas forecasts for the beginning of the year showed more varied patterns. Deeper analysis into the model’s internals provided further proof. The authors found that specific attention heads had specialised to detect this relationship, paying significantly more attention to the token ‘rain’ late in the year when deciding whether to generate ‘snow’.</p>
+</section>
+<section id="conclusions-and-future-challenges" class="level2" data-number="15.9">
+<h2 data-number="15.9" class="anchored" data-anchor-id="conclusions-and-future-challenges"><span class="header-section-number">15.9</span> Conclusions and Future Challenges</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_017_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>The research successfully demonstrates as a proof of concept that <em>Transformer</em>-based LLMs can be made explicitly time-aware. This is achieved simply by adding a temporal dimension to the initial token embeddings. Whilst this opens up fascinating application possibilities, several potential next steps and significant challenges remain. One promising avenue for future work is to investigate whether the explicit time signal could actually make training more efficient, as it provides a clear signal for patterns the model would otherwise have to decipher from implicit clues.</p>
+<p>However, major hurdles exist for widespread application. Firstly, because this is a novel architecture, one cannot simply fine-tune an existing pre-trained model; it requires training from scratch, a computationally prohibitive task for large-scale models. Secondly, the approach sacrifices the simplicity of metadata-free learning. It necessitates a rigorous data curation process to assign an accurate date to every text sequence, a complex and often ambiguous task, especially for historians.</p>
+<p>As a final thought, a more practical application might be to use this principle not for a full generative model, but to build a targeted, <em>BERT</em>-like embedder for specific, time-sensitive analytical tasks.</p>
 
 
 </section>
@@ -745,10 +805,10 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_016.html" class="pagination-link" aria-label="Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span>
+      <a href="./chapter_ai-nepi_016.html" class="pagination-link" aria-label="A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

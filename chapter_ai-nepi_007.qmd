@@ -1,112 +1,146 @@
 ---
-title: "Explainable AI and AI-based Scientific Insights in the Humanities"
+title: "Explainable AI and Understanding LLMs & AI-based Scientific Insights in the Humanities"
 author:
 - name: "Oliver Eberle"
   affiliation: "BIFOLD / TU Berlin"
   email: "oliver.eberle@tu-berlin.de"
-date: '2025'
+date: '2025-06-21'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
 
-This chapter explores the critical domains of Explainable AI (*XAI*) and the application of AI-based scientific insights within the humanities. Initially, the discourse establishes the foundational principles of *XAI*, particularly its evolution from feature attribution in classification models to addressing the complexities of generative AI. We underscore the necessity of understanding model predictions, identifying biases, and ensuring regulatory compliance. Furthermore, we meticulously detail various orders of interpretability, progressing from first-order attributions, such as heatmaps, to more intricate second and higher-order interactions, including those within graph structures.
+This presentation details a dual-pronged investigation into artificial intelligence. The authors first explore the evolution of explainable AI (XAI) before demonstrating its application in generating novel scientific insights within the humanities.
 
-Subsequently, the chapter transitions to practical applications, showcasing how these advanced AI and *XAI* methodologies facilitate novel research in the humanities. Specific case studies illustrate the extraction of visual definitions from historical corpora and the large-scale analysis of early modern astronomical tables. A significant workflow, termed *XAI-Historian*, empowers historians to generate data-driven hypotheses and discover new insights. This system employs specialised statistical models to derive bigram representations from challenging, out-of-domain historical data, enabling robust analysis. Crucially, applying cluster entropy analysis reveals patterns of innovation spread across historical European publishing centres, identifying anomalies such as the politically controlled print programme in Wittenberg. The chapter concludes by acknowledging the inherent challenges in applying AI to heterogeneous, low-resource humanities data whilst underscoring the transformative potential of multimodal approaches and explainable machine learning for scholarly inquiry.
+The initial part of the discourse charts the progression from first-generation XAI, which relied upon heatmap-based feature attributions for simple classification models, towards a more sophisticated paradigm the authors term 'XAI 2.0'. This advanced approach focuses on structured interpretability, analysing second-order (pairwise) and higher-order (graph-based) feature interactions to understand the complex mechanisms of modern foundation models, including Large Language Models (LLMs). The team demonstrates how these methods can uncover biases in sentiment prediction, analyse how LLMs handle long-range dependencies, and reveal the surprisingly simple heuristics, such as noun matching, that models employ for tasks like sentence similarity.
 
-## Explainable AI (*XAI*) 1.0: Feature Attributions
+The second part presents a series of case studies applying these AI techniques to historical research. One project involves classifying a corpus of early modern mathematical instruments, using heatmaps to derive visual definitions based on features like fine-grained scales. A more extensive project, the *XAI-Historian*, analyses the Sphera corpus of numerical tables from 1472–1650. By developing a specialised model for bigram detection and using XAI to verify its logic, the authors could analyse historical publishing patterns at scale. A key finding emerged from a cluster entropy analysis, which identified Wittenberg as a centre of low print diversity—a data-driven discovery that corroborated historical knowledge about the political control exerted over its publishing curriculum by Protestant reformers.
 
-![Slide 03](images/ai-nepi_007_slide_03.jpg)
+## Presentation Structure
 
-Explainable AI (*XAI*) encompasses methods and approaches meticulously developed for deciphering the internal workings of highly complex machine learning models. Historically, machine learning predominantly focused on visual data; interest in language, whilst present, gained significant momentum only in recent years. Typically, a "Black Box AI System" receives an input, such as an image, and subsequently generates a prediction, for instance, identifying a "Rooster". Crucially, users often lack insight into the underlying basis for such classifications.
+![Slide 02](images/ai-nepi_007_slide_02.png)
 
-To address this opacity, researchers pioneered *Post-Hoc Explainability* techniques. Heatmaps, for example, visually delineate the specific pixels or features that primarily contributed to a given prediction. In the rooster example, a heatmap would highlight the bird's head, clearly indicating the model's focus. Beyond mere transparency, the broader rationale for explainability spans several critical objectives. Firstly, *XAI* enables verification of predictions, ensuring the model operates logically and produces reasonable outcomes. Secondly, it facilitates the identification of flaws and biases, offering insights into how models make mistakes. Thirdly, it serves as a tool for learning about the underlying problem itself, as models occasionally uncover surprising and unconventional solutions. Finally, and increasingly vital, explainability ensures compliance with evolving legislation, such as the European AI Act. Samek et al. (2017) provided foundational work in this domain.
+The discourse is structured into two principal sections. The first part addresses the field of Explainable AI and its role in understanding the inner workings of Large Language Models. Subsequently, the second part transitions to demonstrate how AI-driven methods can yield new scientific insights within the humanities.
 
-## Generative AI and *XAI* 2.0 Challenges
+## The Dawn of Explainable AI: XAI 1.0
 
-![Slide 03](images/ai-nepi_007_slide_03.jpg)
+![Slide 03](images/ai-nepi_007_slide_03.png)
 
-The artificial intelligence landscape has profoundly shifted from conventional classification models to the era of *Generative AI* (*Gen AI*). These advanced models now exhibit multifaceted capabilities, encompassing not only classification but also the retrieval of similar images, the generation of novel images, and comprehensive question-and-answer functionalities across diverse topics. Consequently, grounding a prediction or an answer from a *Large Language Model* (*LLM*) system to its specific input has become considerably more challenging. Researchers are therefore exploring new directions for *XAI*, moving beyond simple heatmap representations to consider intricate feature interactions and adopt a more mechanistic view of model operations—that is, understanding the specific internal computations that lead to an output. These contemporary foundation models function as both multi-task and world models, offering profound insights into societal structures and the evolution of text over time.
+The initial exploration into explainable AI, which the authors designate XAI 1.0, was centred on the concept of feature attribution. This approach sought to establish a clear definition of what constitutes a model explanation within the machine learning community, thereby providing a foundation for subsequent, more complex methods of interpretability.
 
-Nevertheless, these sophisticated models can still exhibit surprising errors. A well-known example from object classification illustrates this: a standard classifier predicted a boat based on the surrounding water, a correlated and texturally simpler feature, rather than the boat itself. Lapuschkin et al. (*Nat Commun* '19) documented this phenomenon. More recently, Mondal & Webb et al. (*arxiv* '24) highlighted multi-step planning mistakes in *LLMs*. When tasked with the Tower of Hanoi puzzle, for instance, an *LLM* might immediately attempt to move the largest, inaccessible disc, demonstrating a fundamental misunderstanding of the problem's physical constraints.
+## The 'Black Box' Problem and Post-Hoc Explainability
 
-## Structured Interpretability: First-Order Attributions
+![Slide 04](images/ai-nepi_007_slide_04.png)
 
-![Slide 05](images/ai-nepi_007_slide_05.jpg)
+Historically, machine learning research focused predominantly on visual data, creating powerful but opaque 'black box' systems. These models could, for instance, correctly classify an object in an image but offered no insight into the basis for their decision. The field of explainable AI emerged to address this opacity, dedicating a decade of research to methods that trace a model's predictions back to its inputs. A foundational technique is the heatmap, which visually highlights the input pixels most influential in a classification, thereby showing why a model recognised a rooster.
 
-Structured interpretability extends the utility of *XAI* beyond basic visualisations. First-order explanations, for instance, prove particularly effective for elucidating the decisions of classification models. Researchers applied this technique to a classifier designed for historical documents, specifically aiming to distinguish various subgroups of historical tables, such as astronomical or chronological tables.
+The imperative for such explainability is fourfold. It enables the team to:
 
-To validate the classifier's efficacy, teams employed heatmaps, meticulously verifying that predictions relied upon genuinely meaningful features. This analysis revealed that the model correctly focused on the numerical content within the tables. This focus served as an accurate proxy for identifying numerical tables, thereby confirming the model's meaningful operation and providing confidence in its classifications.
+-   Verify that a model is functioning reasonably.
 
-## Structured Interpretability: Second and Higher-Order Interactions
+-   Diagnose and correct its errors.
 
-![Slide 10](images/ai-nepi_007_slide_10.jpg)
+-   Learn from the surprising or novel solutions that models can uncover.
 
-Beyond first-order attributions, researchers have explored more complex forms of structured interpretability, notably second and higher-order interactions. Second-order features primarily focus on pairwise relationships, with similarity proving particularly important. Scientists computed a dot product from the embeddings of two entities, such as images, yielding a similarity score. Subsequently, interaction scores between specific features, like individual digits, elucidated the basis for these similarity predictions, confirming the model's intended function.
+-   Ensure compliance with emerging regulatory frameworks, including the European AI Act.
 
-Furthermore, in more recent work, higher-order interactions have demonstrated greater significance, particularly within graph structures. These structures might represent citation networks, intricate networks of books, or various interconnected entities. When models are trained on classification tasks within such networks, researchers find that feature subgraphs or feature walks—essentially, sets of interconnected features or paths through the graph—become collectively relevant. Identifying these complex interactions facilitates deeper insights into model behaviour, moving towards a more granular, circuit-level understanding of their internal mechanisms.
+## The Shift to Generative AI and Foundation Models
 
-## First-Order Attributions in *LLMs*: Biases and Long-Range Dependencies
+![Slide 06](images/ai-nepi_007_slide_06.png)
 
-![Slide 12](images/ai-nepi_007_slide_12.jpg)
+The landscape of AI has shifted dramatically from the standard classification models prevalent five years ago to the current era of Generative AI. Unlike their predecessors, today's foundation models are multi-task systems. They can classify content, retrieve similar images, generate entirely new images, and answer questions across a vast range of topics.
 
-First-order attributions offer crucial insights into the internal workings of *Large Language Models* (*LLMs*), particularly concerning biases and their handling of long-range dependencies.
+This expanded capability introduces a significant challenge: grounding a model's output, such as a generated answer, in specific input data becomes far more complex. Consequently, the authors argue that research must now advance beyond simple heatmap representations. The focus is shifting towards analysing feature interactions and adopting more mechanistic perspectives to understand these models, which effectively act as 'world models' that encode societal knowledge and patterns of textual evolution.
 
-### Biased Sentiment Predictions in *Transformer LLMs*
+## Illustrative Model Failures
 
-Researchers investigated feature importance in *LLMs* by analysing how specific names influenced sentiment predictions in movie reviews, a common task within the language community. Employing heatmaps generated via a novel method tailored for *Transformers*, they uncovered notable biases. Male Western names, such as Lee, Barry, Raphael, or the Cohen Brothers, consistently correlated with a higher likelihood of positive sentiment predictions. Conversely, more foreign-sounding names, including Saddam, Castro, or Chan, tended to elicit negative sentiment scores. This demonstrates *XAI*'s considerable utility in detecting subtle, fine-grained biases embedded within these complex models, a phenomenon now widely recognised within the community. Ali et al. (*ICML* '22) detailed this work in '*XAI for Transformers*'.
+![Slide 07](images/ai-nepi_007_slide_07.png)
 
-### First-Order Attributions for Long-Range Dependencies in *LLMs*
+AI models are prone to making surprising and revealing errors. One well-known example involves an object classifier that incorrectly bases its identification of a boat on the surrounding water; the model learns this correlation because the water's texture is a simpler feature to detect than the boat itself.
 
-Further research explored how *LLMs* manage long-range dependencies, specifically when generating text summaries from extensive inputs, up to an 8,000-token context window. In a typical scenario involving Wikipedia articles, the model receives a lengthy text and then produces a summary. Analysis revealed that the model predominantly focuses on the latter portions of the provided context, prioritising information presented closer to the prompt. Whilst models can indeed draw upon long-range information from the very beginning of the context, they do so significantly less frequently, as evidenced by a log scale of token counts. Consequently, users should note that *LLM*-generated summaries may not provide a balanced overview of the entire input text, often emphasising more recently presented data. Jafari et al. (*NeurIPS* '24) presented these findings in '*MambaLRP*'.
+Another example highlights failures in multi-step planning. When the authors prompted a standard LLM, such as a *Llama 3* model, to solve the Tower of Hanoi puzzle, it immediately violated the game's rules by attempting to move the largest, inaccessible disk. This error demonstrates a fundamental misunderstanding of the problem's physical constraints.
 
-## Second & Higher-Order Interactions in Text
+## XAI 2.0: Structured Interpretability
 
-![Slide 11](images/ai-nepi_007_slide_11.jpg)
+![Slide 08](images/ai-nepi_007_slide_08.png)
 
-Exploring second and higher-order interactions offers deeper insights into how models process textual data.
+To address the limitations of earlier methods, the presenters introduce a new paradigm they term 'XAI 2.0', which champions the concept of structured interpretability. This approach aims to move beyond simple heatmap visualisations to uncover more complex relational patterns within a model's decision-making process. The need for such methods is underscored by failures in standard models, like the *Llama 3* variant that struggled with the Tower of Hanoi, although more recent reasoning models may show improvement.
 
-### Second-Order Interactions for Text Similarity
+## First and Second-Order Explanations
 
-Consider a scenario involving a pair of sentences, processed by a sentence embedding model, such as a *Bird* model, to yield a similarity score. The challenge lies in comprehending the precise reasons for that score. Second-order explanations address this by providing granular interaction scores between individual tokens. Analysis of these scores frequently reveals noun matching strategies, encompassing both synonyms and identical noun tokens, alongside interactions involving separators and other token types. This suggests that whilst models compress vast amounts of information, they often rely on surprisingly simplistic underlying strategies to achieve their similarity predictions.
+![Slide 10](images/ai-nepi_007_slide_10.png)
 
-### Graph Neural Networks for Structured Predictions
+Structured interpretability distinguishes between different orders of explanation. First-order explanations, akin to heatmaps, are useful for simple classifiers. For instance, when the team trained a model to classify historical tables, these explanations verified that the model correctly focused on numerical content to make its predictions.
 
-*Graph Neural Networks* (*GNNs*) offer a powerful framework for structured predictions, providing attributions in terms of "walks" that represent complex feature interactions. Intriguingly, *GNNs*, which inherently encode structural information, can be conceptualised as *LLMs*, given that their attention networks facilitate token message passing. This connection enables their application to the analysis of language structure.
+Second-order explanations, however, analyse pairwise relationships between features. This becomes crucial for understanding tasks like similarity measurement. When explaining the similarity score between two images, an interaction-based method reveals the specific features that correspond. In an example with two identical tables, this approach correctly highlights the interactions between matching digits, confirming the model's logic.
 
-### Interaction of Nodes Learns Complex Language Structure
+## Higher-Order Interactions in Graph Structures
 
-Researchers demonstrated this by training a *GNN* (or an *LLM*) on a movie review sentiment task, leveraging the hierarchical structure inherent in natural language. They then extracted "walks" to understand the model's decision-making. First-order attributions proved insufficient, failing to capture the nuanced complexity of language; for instance, the phrase "first I didn't like the boring pictures" might receive a high positive score solely due to the presence of "like," neglecting the crucial negation. In stark contrast, higher-order explanations accurately assigned a negative score to the entire negative sentence and correctly captured the hierarchical structure of the subsequent positive statement. Schnake et al. (*TPAMI* '22) published this work in '*Higher-Order Explanations of Graph Neural Networks via Relevant Walks*'.
+![Slide 11](images/ai-nepi_007_slide_11.png)
 
-## AI-based Scientific Insights in the Humanities
+The authors' more recent work extends this analysis to graph structures, such as citation networks or relationships between entities like books. In these contexts, higher-order interactions provide more meaningful explanations than simpler methods. For models trained on graph classification tasks, explanations manifest as 'feature walks' or subgraphs—sets of interconnected features that become relevant collectively. The ultimate goal of this research is to derive more complex insights into model behaviour and progress towards a circuit-level understanding of their internal mechanisms.
 
-![Slide 20](images/ai-nepi_007_slide_20.jpg)
+## Detecting Bias in LLMs with First-Order Attribution
 
-AI-based methodologies offer transformative potential for scientific insights within the humanities, as demonstrated through several compelling examples.
+![Slide 13](images/ai-nepi_007_slide_13.png)
 
-### Extracting Visual Definitions from Corpora
+Applying first-order attributions to language models reveals their underlying biases. In a standard sentiment prediction task using a movie review dataset, the team employed a heatmap-style method adapted for *Transformers*. The analysis showed that the model's predictions were skewed by the names present in the text. A review was more likely to receive a positive classification if it contained male, Western names like 'Lee' or 'Raphael', whereas the presence of foreign-sounding names like 'Saddam' or 'Chan' correlated with a negative score. This demonstrates that explainable AI is a powerful tool for detecting such fine-grained, and often unintended, biases within language models.
 
-Researchers embarked on a project to extract visual definitions from a corpus of mathematical instruments. Their objective involved classifying these instruments, distinguishing, for instance, between a machine and a purely mathematical instrument. Employing heatmap-based approaches for visual definitions, the team collaborated closely with historians, including Matteo Valeriani and Jochen Büttner. These domain experts provided crucial guidance and meticulously verified the definitions derived from the models. The analysis revealed that fine-grained scales present on the mathematical instruments proved highly relevant for the model's classification decisions. El-Hajj & Eberle+ (*Int J Digit Humanities* '23) published this work on explainability and transparency in digital humanities.
+## Analysing Long-Range Dependencies in Summarisation
 
-### Corpus-Level Analysis of Early Modern Astronomical Tables
+![Slide 14](images/ai-nepi_007_slide_14.png)
 
-A larger collaborative project focused on the corpus-level analysis of early modern astronomical tables. This initiative involved the *Sphaera Corpus* (1472-1650) and the *Sacrobosco Table Corpus* (1472-1650), collectively comprising 76,000 pages of university textbooks. Historically, these tables, vital carriers of scientific knowledge and indicators of mathematisation processes, had never been analysed at scale. This challenge arose from the data's extreme heterogeneity, limited annotations, and the inadequacy of conventional *Optical Character Recognition* (*OCR*) and foundation models. The primary objective was to develop an automated method for matching tables with similar semantics. Valeriani et al. (2019) and Eberle et al. (2024) detail the foundational corpora.
+The research group investigated how LLMs handle long-range dependencies when summarising extensive texts, such as Wikipedia articles, within an 8,000-token context window. By tracing the generated summary back to its sources in the input, they sought to determine if the models effectively use information from the entire document.
 
-### Historical Insights at Scale: *XAI-Historian* Workflow
+Their analysis revealed a strong recency bias: the model predominantly focuses on information from the latter parts of the context. Although it can access information from the beginning of the text, it is significantly less likely to do so, as shown by a logarithmic scale of attribution counts. This finding implies that LLM-generated summaries are not balanced representations of the source material but are skewed towards content presented closer to the end of the prompt.
 
-To address these challenges, researchers developed a comprehensive workflow designed to empower historians with insights at scale, coining the term *XAI-Historian*. This concept envisions a historian leveraging AI and explainable AI to generate data-driven hypotheses and uncover new case studies. The workflow encompasses three key stages: initial data collections from images of books, followed by an atomisation-recomposition phase involving input tables, bigram maps, and histograms, culminating in corpus-level analysis through historical table embedding and data similarity. Rather than relying on general foundation models, which proved ineffective on this out-of-domain historical data, a specialised statistical model was crafted to detect bigrams. This bespoke model's reliability was rigorously verified by confirming consistent bigram detection, such as "38" across two distinct inputs, thereby establishing trust in its decisions. Eberle et al. (*Sci Adv* '24) and Eberle et al. (*TPAMI* '22) document this pioneering work.
+## Explaining Sentence Similarity with Second-Order Methods
 
-### Cluster Entropy Analysis to Investigate Innovation
+![Slide 17](images/ai-nepi_007_slide_17.png)
 
-Building upon these capabilities, researchers employed cluster entropy analysis to investigate the spread of innovation across European publishing centres during the early modern period. Focusing on the output of specific cities within the *Sphaera* publication (*EPISD-626*), they quantified the diversity of each city's print programme using entropy. A low entropy score indicated a tendency to reproduce identical content, whilst a higher score signified a more diverse programme. This approach, utilising model representations for distance-based clustering and entropy calculation, enabled large-scale analysis previously unattainable. The analysis identified two particularly interesting cases: Frankfurt/Main, which exhibited the lowest entropy, confirming its established reputation as a centre for reprinting editions; and Wittenberg, also displaying remarkably low entropy. This latter finding revealed a historical anomaly: the political control exerted by the Protestant reformers, notably Melanchthon, actively limited the print programme and curriculum, a discovery that aligned perfectly with existing historical intuition and scholarly support. Eberle et al. (*Sci Adv* '24) further elaborates on these findings.
+To understand how models compute sentence similarity, the authors applied second-order explanations to a standard pretrained model like *Sentence-BERT*. Given two sentences, the method generates interaction scores between their tokens to reveal the basis for the calculated similarity score.
 
-## Conclusion: AI-based Methods for the Humanities
+The analysis of a toy example ('A cat I really like' and 'It is a great cat') and other pairs revealed that the models do not employ complex semantic reasoning. Instead, they rely on surprisingly simplistic heuristics, operating like a 'bag-of-tokens' system. The primary strategy is simple noun matching, supplemented by noun-verb pairings and interactions with separator tokens. This suggests that in the process of compressing vast amounts of information, these models default to simple, and perhaps not immediately obvious, decision-making strategies.
 
-![Slide 26](images/ai-nepi_007_slide_26.jpg)
+## Higher-Order Interactions for Complex Language
 
-Humanities and *Digital Humanities* (*DH*) research has historically concentrated on the digitisation of source material. Nevertheless, automated analyses of these digitised corpora present significant challenges, primarily owing to their inherent heterogeneity and the scarcity of annotated labels.
+![Slide 19](images/ai-nepi_007_slide_19.png)
 
-Despite these hurdles, multimodality, advanced *Machine Learning* (*ML*), and *Explainable AI* (*XAI*) collectively offer substantial potential to scale humanities research and foster entirely novel research directions. This chapter has demonstrated how *XAI* can provide crucial insights into model behaviour, from understanding feature attributions in classification to unravelling complex interactions in *LLMs*. Furthermore, we have showcased the transformative power of AI-based methodologies, such as the *XAI-Historian* workflow and cluster entropy analysis, in enabling large-scale historical inquiry and uncovering previously hidden patterns of innovation.
+The presenters conceptually frame Graph Neural Networks (GNNs) as LLMs, as their message-passing mechanism is analogous to an LLM's attention network. This perspective allows for the application of higher-order explanation methods to complex language phenomena.
 
-Foundation Models and *Large Language Models* (*LLMs*), coupled with effective prompting strategies, can automate various intermediate tasks, including labelling, data curation, and error correction. However, their utility remains limited when addressing more complex research questions that require deep domain expertise and nuanced interpretation.
+Standard first-order, or bag-of-words, explanations often fail in this regard. For instance, in the sentence 'First, I didn't like the boring pictures', such a method would incorrectly assign a positive sentiment due to the word 'like', completely missing the negation. In contrast, a higher-order explanation method successfully captures the complex structure. It correctly assigns a negative value to the entire negated phrase and properly interprets the sentence's overall sentiment hierarchy, demonstrating a more nuanced understanding of language.
 
-Significant challenges persist, particularly concerning low-resource data, which acts as a considerable roadblock, impacting the applicability of scaling laws. Moreover, out-of-domain transfer, especially for historical and small-scale datasets, necessitates rigorous evaluation and often bespoke model development. Current *LLM* training and alignment predominantly focus on natural language tasks and code generation, underscoring the need for specialised approaches when engaging with the unique characteristics of humanities data. Future work should focus on developing more robust methods for handling data scarcity and heterogeneity, alongside fostering deeper interdisciplinary collaboration to ensure AI tools truly serve the complex needs of humanities scholarship.
+## Case Study 1: Visual Definitions of Instruments
+
+![Slide 24](images/ai-nepi_007_slide_24.png)
+
+In a collaborative project with historians Matteo Valeriani and Jochen Büttner, the authors applied AI to a corpus of historical mathematical instruments. Their goal was to build a classifier that could distinguish between categories such as 'machine' and 'mathematical instrument'. By employing heatmap-based explanations, the team sought to extract objective 'visual definitions' that the model used for its classifications.
+
+This process necessitated close interaction with the domain experts to validate the meaningfulness of the AI-derived criteria. A key finding was that the model correctly identified fine-grained scales as a highly relevant and defining feature for the 'mathematical instrument' class.
+
+## Case Study 2: The Sphera Corpus Project
+
+![Slide 25](images/ai-nepi_007_slide_25.png)
+
+The team's largest collaborative project with historians from the Bifold institute involved the Sphera corpus, a collection of early modern texts published between 1472 and 1650. The central challenge, brought forward by Matteo Valeriani and Jochen Büttner, was to analyse the corpus's vast collection of numerical tables. Despite initial assessments that the data would be extremely difficult to process computationally, the research goal was to develop an automated method for matching tables based on semantic similarity—a task that had been impossible to conduct at scale using traditional methods.
+
+## The *XAI-Historian* Workflow
+
+![Slide 26](images/ai-nepi_007_slide_26.png)
+
+The authors developed a workflow to support what they term the *XAI-Historian*—a scholar who leverages AI and its explanations for data-driven hypothesis generation. Rather than applying a large, general foundation model, which performs poorly on such specialised, out-of-domain data, the team engineered a small, custom model.
+
+This model was trained specifically to detect numerical bigrams within the historical tables. Crucially, they used explainable AI to verify that the model functioned as intended. By confirming that it correctly identified identical bigrams across different tables, they could trust its outputs and proceed with large-scale analysis.
+
+## Case Study 3: Cluster Entropy and Innovation
+
+![Slide 28](images/ai-nepi_007_slide_28.png)
+
+With a trusted model in place, the team conducted case studies, including an analysis of innovation diffusion using cluster entropy. They analysed the publishing output of various European cities by clustering the representations of their printed tables. By calculating the entropy of each city's output, they could quantify its diversity; low entropy signified a programme focused on reprinting, whilst high entropy indicated a more varied and innovative output.
+
+The analysis yielded two notable low-entropy cases. It confirmed Frankfurt am Main's known status as a reprinting hub. More significantly, it uncovered a historical anomaly in Wittenberg. The model detected an unusually low diversity in its print programme, a finding that perfectly matched historical knowledge about the active political control exerted by Protestant reformers, who strictly managed the city's curriculum.
+
+## Conclusion and Future Potential
+
+![Slide 33](images/ai-nepi_007_slide_33.png)
+
+In conclusion, this research demonstrates the successful application of bespoke AI and explainability methods to complex historical data, yielding verifiable insights that augment traditional scholarship. Whilst the presentation concluded before detailing future challenges related to data scarcity and model capabilities, the work establishes a strong foundation for a new, computationally-assisted approach to humanities research.

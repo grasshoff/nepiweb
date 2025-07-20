@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.13">
+<meta name="generator" content="quarto-1.8.17">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Maximilian Noichl &amp; Andrea Loettgers">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-06-21">
 
-<title>4&nbsp; Philosophy at Scale: Introducing OpenAlex Mapper – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>4&nbsp; Methodological Frameworks for Analysing Scientific Literature and Debates – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a0afd4a9b901cc50d8ed64d4ec5e2aec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_004.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_004.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,12 +96,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+      <a href="./">AI-NEPI Conference Proceedings</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -119,85 +122,85 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AI-assisted Methods for History and Philosophy of Science Workshop: Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE: Tracing the Influence of Ancient Wisdom on Early Modern Natural Philosophy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Understanding LLMs &amp; AI-based Scientific Insights in the Humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI, Computational Epistemology, and Open Science Infrastructure</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -208,14 +211,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context for Language Variation and Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
   </div>
 </li>
     </ul>
@@ -229,23 +238,25 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#openalex-mapper-technical-foundations" id="toc-openalex-mapper-technical-foundations" class="nav-link" data-scroll-target="#openalex-mapper-technical-foundations"><span class="header-section-number">4.1</span> OpenAlex Mapper: Technical Foundations</a></li>
-  <li><a href="#interactive-demonstration-and-core-challenge" id="toc-interactive-demonstration-and-core-challenge" class="nav-link" data-scroll-target="#interactive-demonstration-and-core-challenge"><span class="header-section-number">4.2</span> Interactive Demonstration and Core Challenge</a></li>
-  <li><a href="#applications-in-scholarly-analysis" id="toc-applications-in-scholarly-analysis" class="nav-link" data-scroll-target="#applications-in-scholarly-analysis"><span class="header-section-number">4.3</span> Applications in Scholarly Analysis</a></li>
-  <li><a href="#limitations-and-future-directions" id="toc-limitations-and-future-directions" class="nav-link" data-scroll-target="#limitations-and-future-directions"><span class="header-section-number">4.4</span> Limitations and Future Directions</a></li>
+  <li><a href="#the-openalex-mapper-workflow" id="toc-the-openalex-mapper-workflow" class="nav-link" data-scroll-target="#the-openalex-mapper-workflow"><span class="header-section-number">4.1</span> The <em>OpenAlex Mapper</em> Workflow</a></li>
+  <li><a href="#quantitative-models-in-hpss" id="toc-quantitative-models-in-hpss" class="nav-link" data-scroll-target="#quantitative-models-in-hpss"><span class="header-section-number">4.2</span> Quantitative Models in HPSS</a></li>
+  <li><a href="#model-templates-as-a-structuring-discipline" id="toc-model-templates-as-a-structuring-discipline" class="nav-link" data-scroll-target="#model-templates-as-a-structuring-discipline"><span class="header-section-number">4.3</span> Model Templates as a Structuring Discipline</a></li>
+  <li><a href="#analysing-concept-distribution" id="toc-analysing-concept-distribution" class="nav-link" data-scroll-target="#analysing-concept-distribution"><span class="header-section-number">4.4</span> Analysing Concept Distribution</a></li>
+  <li><a href="#frameworks-for-machine-learning-debates" id="toc-frameworks-for-machine-learning-debates" class="nav-link" data-scroll-target="#frameworks-for-machine-learning-debates"><span class="header-section-number">4.5</span> Frameworks for Machine Learning Debates</a></li>
+  <li><a href="#methodological-limitations" id="toc-methodological-limitations" class="nav-link" data-scroll-target="#methodological-limitations"><span class="header-section-number">4.6</span> Methodological Limitations</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-body">
+<div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -259,13 +270,13 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
       
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">June 21, 2025</p>
     </div>
   </div>
   
@@ -279,62 +290,45 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>Maximilian Noichl, Andrea Loettgers, and Taya Knuuttila introduced <em>OpenAlex Mapper</em>, a novel tool designed to facilitate transdisciplinary investigations within the history, philosophy, and sociology of science (HPSS). Developed by researchers at Utrecht University and the University of Vienna, this instrument received funding from an ERC grant focused on “possible life”. The presentation meticulously detailed the tool’s technical architecture, its operational workflow, and its diverse applications in scholarly analysis.</p>
-<p><em>OpenAlex Mapper</em> directly addresses the inherent challenges of generalising findings from small samples and case studies prevalent in HPSS research. The tool leverages a fine-tuned <em>Specter 2</em> language model, specifically adapted to discern disciplinary boundaries. This model processes a vast dataset of 300,000 randomly sampled English-language abstracts from the <em>OpenAlex</em> database. Subsequently, the system employs Uniform Manifold Approximation and Projection (<em>UMAP</em>) to reduce these high-dimensional embeddings into a two-dimensional, interactive base map.</p>
-<p>Users can submit arbitrary queries to <em>OpenAlex</em>; the tool then embeds the retrieved abstracts and projects them onto this pre-existing map, thereby revealing their disciplinary locations. Crucially, <em>OpenAlex Mapper</em> supports qualitative, heuristic investigations by grounding them in extensive quantitative data, whilst always linking back to original textual sources.</p>
-<p>Demonstrations highlighted the tool’s utility in mapping the distribution of model templates, such as the <em>Ising</em>, <em>Hopfield</em>, and <em>Sherrington-Kirkpatrick</em> models, across scientific fields. Furthermore, the tool effectively visualises the spread of key concepts, exemplified by “phase transition” and “emergence”. It also analyses the interdisciplinary adoption patterns of specific methods, including “<em>Random Forest</em>” and “<em>Logistic Regression</em>”. The developers acknowledged certain limitations, notably <em>OpenAlex</em>’s data quality, the current English-only language model, the requirement for abstracts or robust titles, and the inherent stochasticity and dimensionality reduction trade-offs of the <em>UMAP</em> algorithm.</p>
+<p>This presentation introduces a suite of methodological and conceptual tools tailored for research in the History, Philosophy, and Sociology of Science (HPSS). The authors begin by delineating the <em>OpenAlex Mapper</em> workflow, a system they have developed to navigate and analyse scholarly literature with precision. Their discussion then extends to the application of quantitative methods, such as the <em>Hopfield Model</em>, to pressing HPSS research questions.</p>
+<p>A central theme is the pivotal role of ‘model templates’ in scientific discourse. Drawing upon the work of Humphreys (2004) and Knuuttila and Loettgers (2020), the authors define these templates as a structuring discipline for scientific inquiry, particularly illuminating in the context of model transfer between domains. Furthermore, the presentation addresses the challenge of tracing the distribution of concepts across large, interdisciplinary corpora, building on the research of Malaterre, Chartier, and Lareau (2020).</p>
+<p>The authors also furnish methods directly relevant to contemporary debates on machine learning and the notion of ‘theory-free’ science, engaging with contributions from Breiman, Bzdok et al., and Andrews. In the spirit of scholarly transparency, the presentation concludes by candidly acknowledging several qualifications and limitations inherent in the proposed methods, including specific issues with data sources and a particular analytical technique.</p>
 </section>
-<section id="openalex-mapper-technical-foundations" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="openalex-mapper-technical-foundations"><span class="header-section-number">4.1</span> OpenAlex Mapper: Technical Foundations</h2>
+<section id="the-openalex-mapper-workflow" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-openalex-mapper-workflow"><span class="header-section-number">4.1</span> The <em>OpenAlex Mapper</em> Workflow</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_004_slide_01.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
+<p><img src="images/ai-nepi_004_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
 </figure>
 </div>
-<p>Maximilian Noichl, Andrea Loettgers, and Taya Knuuttila introduced <em>OpenAlex Mapper</em>, a sophisticated tool developed through collaborative research. Noichl, a PhD candidate at Utrecht University’s Theoretical Philosophy Department, collaborated with Loettgers and Knuuttila from the University of Vienna’s Philosophy Department. This endeavour received funding from an ERC grant specifically supporting research on “possible life”.</p>
-<p>The presentation systematically unfolded, first elucidating the tool’s core functions and high-level technical specifications. Subsequently, a live demonstration illustrated its practical application, culminating in a detailed discussion of its utility within the History, Philosophy, and Sociology of Science (HPSS) domain.</p>
-<p>At the heart of <em>OpenAlex Mapper</em>’s functionality lies a meticulously fine-tuned <em>Specter 2</em> language model. Researchers adapted this model to enhance its capacity for discerning disciplinary boundaries, training it on a dataset of articles from closely related fields to improve distinction. The resulting embeddings from this training process are then visually represented using a <em>UMAP</em> dimensionality reduction technique. Crucially, these modifications represent minor adjustments to the language model, rather than a comprehensive retraining effort.</p>
-<p>For base-map preparation, the team drew upon the extensive <em>OpenAlex</em> database. This resource is renowned for its size and inclusivity, surpassing proprietary databases such as <em>Web of Science</em> and <em>Scopus</em>. Its open data policy facilitates easy, batch-query access, making it an invaluable asset for large-scale scholarly analysis. From this vast repository, researchers sampled 300,000 random articles, selecting only those with well-formed English abstracts. The fine-tuned <em>Specter 2</em> model then processed these abstracts, generating high-dimensional embeddings.</p>
-<p>To render these complex embeddings visually interpretable, the system employs Uniform Manifold Approximation and Projection (<em>UMAP</em>). This dimensionality reduction algorithm transforms the high-dimensional data into a two-dimensional base map, simultaneously producing a trained <em>UMAP</em> model. Consequently, when users submit arbitrary queries through the <em>OpenAlex</em> search interface, the tool first downloads the initial 1,000 records. It then embeds their abstracts using the same fine-tuned language model, and subsequently projects these new embeddings onto the pre-existing 2D map via the trained <em>UMAP</em> model. This inherent feature of <em>UMAP</em> ensures consistent and accurate positioning of new documents within the established disciplinary landscape.</p>
+<p>The authors introduce the <em>OpenAlex Mapper</em>, a structured workflow they have engineered for the systematic analysis of scholarly literature. This system provides a methodical approach to navigating and interpreting vast datasets of academic publications, grounding its methodology in key academic works that inform its design and function.</p>
+<p>To facilitate its adoption by the wider research community, the team provides an associated online resource that offers further details and direct access to the tool.</p>
 </section>
-<section id="interactive-demonstration-and-core-challenge" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="interactive-demonstration-and-core-challenge"><span class="header-section-number">4.2</span> Interactive Demonstration and Core Challenge</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_004_slide_08.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 08</figcaption>
-</figure>
-</div>
-<p>The <em>OpenAlex Mapper</em>, accessible online at <code>https://m7n-openalex-mapper.hf.space</code>, offers an interactive platform for scholarly exploration. An alternative version, featuring a higher latency GPU setup, also accommodates larger, more demanding queries. Users initiate their investigations by inputting search terms, such as “scale-free network models” or “coriander,” leveraging the comprehensive capabilities of the <em>OpenAlex</em> search interface.</p>
-<p>Once a query is submitted, the system efficiently downloads the initial 1,000 records corresponding to the user’s input, subsequently embedding their abstracts. If enabled by the user, the tool also processes the citation graph, enriching the analytical output. The primary output manifests as an interactive projection of these search results onto a grey base map, visually indicating where specific terms, authors, or concepts appear across various disciplines. This interactive functionality empowers users to delve deeper; for instance, one can investigate the presence of “coriander” in epidemiology or public health literature. Moreover, the tool offers visualisations of temporal distributions and the overlay of citation graphs, providing multifaceted insights.</p>
-<p>Fundamentally, <em>OpenAlex Mapper</em> addresses a critical challenge in the History, Philosophy, and Sociology of Science: the generalisation and validation of findings derived from small samples and case studies. It aims to answer nuanced questions regarding the adoption and prevalence of specific models, such as “Where did the <em>Hopfield</em> model truly establish itself?” By employing rigorous quantitative methods, the tool provides a robust foundation for qualitative, heuristic investigations. Crucially, it maintains a direct link to the actual textual sources, ensuring that all findings remain traceable and verifiable.</p>
+<section id="quantitative-models-in-hpss" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="quantitative-models-in-hpss"><span class="header-section-number">4.2</span> Quantitative Models in HPSS</h2>
+<p>The presentation explores the utility of applying quantitative models to research in the History, Philosophy, and Sociology of Science. This approach leverages formal methods to analyse historical and philosophical currents within scientific disciplines.</p>
+<p>Specifically, the authors adapt the <em>Hopfield Model</em> as an exemplary quantitative tool for HPSS inquiries. Their work demonstrates how such models can furnish the field with novel perspectives and enhanced analytical rigour.</p>
 </section>
-<section id="applications-in-scholarly-analysis" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="applications-in-scholarly-analysis"><span class="header-section-number">4.3</span> Applications in Scholarly Analysis</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_004_slide_17.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 17</figcaption>
-</figure>
-</div>
-<p>The development of <em>OpenAlex Mapper</em> represents an ongoing research endeavour, with several compelling applications already emerging. Initially, researchers conceived the tool specifically for investigating model templates. This approach explores how models possessing similar structural properties manifest across disparate scientific disciplines, potentially imposing a structure on science that operates orthogonally to traditional disciplinary boundaries. For instance, the system has mapped the distribution of the <em>Ising</em> model (7,819 instances), the <em>Hopfield</em> model (589 instances), and the <em>Sherrington-Kirkpatrick</em> model (1,437 instances). These analyses reveal their presence in distinct, non-continuous regions across the base map. This work draws upon foundational ideas from Humphreys (2004) and Knuuttila and Loettgers (2023).</p>
-<p>Beyond model templates, the tool effectively visualises the distribution of key concepts. A notable example contrasts the concept of “phase transition” with “emergence,” depicted in orange on the map. This capability proves particularly advantageous for broadening conceptual analysis into interdisciplinary contexts, circumventing the common difficulties associated with acquiring specific, cross-disciplinary datasets. Relevant scholarship in this area includes contributions from Malaterre, Chartier, and Lareau (2020), and Zichert and Wüthrich (2024).</p>
-<p>Furthermore, <em>OpenAlex Mapper</em> facilitates the analysis of method distribution across scientific fields. Examining the usage patterns of “<em>Random Forest</em>” (2,000 instances) versus “<em>Logistic Regression</em>” (1,997 instances) reveals clearly distinguishable patterns of adoption within interdisciplinary research. This observation prompts profound philosophical questions, such as why neuroscientists might favour <em>Random Forest</em> algorithms whilst researchers in psychiatry or mental health predominantly employ <em>Logistic Regressions</em>. This application engages with discussions from Breiman (2001), Bzdok, Altman, and Krzywinski (2018), and Andrews (2023).</p>
+<section id="model-templates-as-a-structuring-discipline" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="model-templates-as-a-structuring-discipline"><span class="header-section-number">4.3</span> Model Templates as a Structuring Discipline</h2>
+<p>A core concept the authors examine is that of ‘model templates’ and their function within scientific debates. They define these templates not merely as predictive instruments but as a structuring discipline that shapes scientific practice, especially concerning the transfer of models between different domains.</p>
+<p>This conceptualisation, which builds upon foundational work by Humphreys (2004) and Knuuttila and Loettgers (2020), offers a robust framework for understanding how abstract models are adapted and implemented across the scientific landscape.</p>
 </section>
-<section id="limitations-and-future-directions" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="limitations-and-future-directions"><span class="header-section-number">4.4</span> Limitations and Future Directions</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/ai-nepi_004_slide_21.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 21</figcaption>
-</figure>
-</div>
-<p>Despite its considerable utility, <em>OpenAlex Mapper</em> operates with several acknowledged limitations. Foremost amongst these is the inherent quality of the <em>OpenAlex</em> database itself. Whilst not flawless, its data quality remains commendably reasonable when compared to alternative scholarly data sources.</p>
-<p>A significant constraint currently stems from the language model’s scope: it processes English-language content exclusively. This naturally limits the tool’s overall reach; nevertheless, for investigations focusing on the more recent history of science, this presents a less severe impediment. Developers recognise the potential for future enhancement through the integration of multilingual models, though they note the current scarcity of robust, science-trained multilingual models.</p>
-<p>Furthermore, the embedding process necessitates source data that includes either comprehensive abstracts or sufficiently descriptive titles. This requirement inherently restricts the range of documents the tool can effectively analyse.</p>
-<p>Finally, the Uniform Manifold Approximation and Projection (<em>UMAP</em>) algorithm, central to the tool’s visualisation, introduces its own set of challenges. As a stochastic algorithm, <em>UMAP</em> generates one specific output from a multitude of possibilities, implying that alternative visualisations could emerge from repeated runs. Moreover, the algorithm must inevitably make trade-offs during dimensionality reduction. Compressing the <em>Specter</em> language model’s 768 dimensions into a mere two introduces unavoidable distortions, manifesting as “pushing, pulling, and misaligning” of data points within the two-dimensional space.</p>
-<p>For those seeking further information, the presentation slides remain accessible online at <code>maxnoichl.eu/talk</code>. Additionally, a comprehensive working paper, titled “Philosophy at Scale: Introducing <em>OpenAlex Mapper</em>,” provides more detailed technical explanations of the system’s architecture and methodology.</p>
+<section id="analysing-concept-distribution" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="analysing-concept-distribution"><span class="header-section-number">4.4</span> Analysing Concept Distribution</h2>
+<p>The authors articulate a focused inquiry into the distribution of concepts across vast and interdisciplinary samples of academic texts. This line of investigation seeks to map how specific ideas and terms propagate, evolve, and are utilised in disparate fields of study.</p>
+<p>Their approach builds upon the research of Malaterre, Chartier, and Lareau (2020), who have previously explored methods for tracking conceptual dynamics in large-scale corpora.</p>
+</section>
+<section id="frameworks-for-machine-learning-debates" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="frameworks-for-machine-learning-debates"><span class="header-section-number">4.5</span> Frameworks for Machine Learning Debates</h2>
+<p>The presentation introduces methods directly relevant to contemporary debates surrounding the role of machine learning in science. These discussions often centre on the prospect of a ‘theory-free’ scientific practice, where data-driven models might supplant traditional, hypothesis-led inquiry.</p>
+<p>The methodological approaches put forward by the authors draw from key contributions by scholars such as Breiman, Bzdok et al., and Andrews, providing analytical tools to engage with these complex and evolving arguments.</p>
+</section>
+<section id="methodological-limitations" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="methodological-limitations"><span class="header-section-number">4.6</span> Methodological Limitations</h2>
+<p>In the interest of scholarly rigour, the authors outline several important qualifications and limitations of the methods under discussion. These acknowledgements highlight potential challenges that may be encountered when applying the framework.</p>
+<p>Specifically, they identify known issues with the underlying data sources as a constraint. Furthermore, the presentation points to certain shortcomings within a specific analytical technique employed, thereby suggesting clear avenues for future refinement and development.</p>
 
 
 </section>
@@ -739,15 +733,15 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_003.html" class="pagination-link" aria-label="Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span>
+      <a href="./chapter_ai-nepi_003.html" class="pagination-link" aria-label="Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_ai-nepi_005.html" class="pagination-link" aria-label="Genre Classification for Historical Medical Periodicals">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter_ai-nepi_005.html" class="pagination-link" aria-label="Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

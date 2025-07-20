@@ -1,108 +1,128 @@
 ---
-title: "Science dynamics and AI"
+title: "Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections"
 author:
 - name: "Philipp Mayr, Slava Tykhonov, Jetze Touber & Andrea Scharnhorst"
   affiliation: "GESIS – Leibniz Institute for the Social Sciences"
   email: "philipp.mayr@gesis.org"
-date: '2025'
+date: '2025-06-21'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
 
-Researchers at DANS, the data archive of the Royal Netherlands Academy of Arts and Science, in collaboration with GESIS, a research-engaged archive, have pioneered an AI-driven solution to manage the escalating volume of scientific information. This initiative directly addresses the challenges of growth and increasing differentiation within the sciences, which complicate the review, evaluation, and selection of relevant content. A fundamental precondition for creating new knowledge, whether individually or across academia, involves efficiently finding and understanding existing information. Consequently, the project investigates whether contemporary Artificial Intelligence (AI), particularly Large Language Models (LLMs), can support the knowledge production process through advanced information retrieval.
+To address the profound challenge of managing and comprehending vast quantities of scientific information, the authors have engineered an artificial intelligence solution comprising the *Ghostwriter* interface and the *EverythingData* backend. This system enables users to interact with a curated collection of academic papers through natural language queries, functioning as a sophisticated information retrieval tool. Its core methodology extends *Retrieval Augmented Generation (RAG)* by integrating knowledge graphs, a technique the team has termed 'GraphRAG', to deliver more contextual and accurate results.
 
-The core research question explores the feasibility of constructing an AI solution capable of facilitating conversational interaction with academic papers from specific collections. Developers have crafted a dual-component system: *Ghostwriter*, serving as the user interface, and *EverythingData*, encompassing the comprehensive backend operations. This architecture integrates principles of information retrieval, human-machine interaction, and Retrieval-Augmented Generation (*RAG*). The project employs the *method-data-analysis (mda)* journal as a practical use case, demonstrating a 'local' and 'tailored' AI solution workflow.
+The workflow begins by ingesting documents, such as a test collection of 100 articles from the *mda* journal, into a bespoke pipeline. This pipeline processes the full-text articles, partitions them into identifiable blocks, and performs term extraction and embedding construction. A key innovation involves linking extracted entities to the *Wikidata* knowledge graph, which enriches the semantic context and provides stable, multilingual identifiers.
 
-The *Ghostwriter* interface redefines information retrieval by enabling simultaneous interaction with structured data—analogous to a librarian—and natural language—akin to an expert. This approach leverages Knowledge Organisation Systems (KOS) and classification schemes whilst interpreting natural language queries. The underlying technical infrastructure, *EverythingData*, processes input document collections, such as articles from the *mda* journal, by ingesting them into a vector store, specifically *Qdrant*. It performs crucial operations including term extraction, embedding construction, and crucially, coupling these with knowledge graphs. This integration enriches embeddings by contextualising them, thereby adding significant value to the information.
+All processed information populates a vector store managed by *Quadrant*, creating a queryable vector space. When a user poses a question, the system retrieves the most relevant text segments, generates a coherent summary, and crucially, provides direct references to the source documents. This design choice effectively prevents AI 'hallucination'. The architecture supports multilingual queries and is designed to run locally on standard hardware using a compact one-billion-parameter LLM, ensuring complete user control and data privacy.
 
-The system prioritises factual accuracy, aiming to prevent hallucinations by relying exclusively on the ingested source material. It segments papers into small, identifiable blocks, employing LLM techniques to intelligently connect and retrieve relevant sections. Knowledge graphs further enhance this process by predicting which text segments will best address specific queries. A key innovation links extracted entities to *Wikidata*, transforming free strings into multilingual identifiers. This mechanism supports immediate multilinguality, allowing users to query in one language and retrieve information from documents in another. Moreover, decoupling knowledge from the model and storing it as *Wikidata* identifiers establishes a robust ground truth for benchmarking and validating future AI models. The project envisions this knowledge organisation system as a sustainable future for scientific information management, fostering collaborations with industry leaders like Google and Meta.
+## The Challenge of Information Overload
 
-## Navigating Scientific Information Overload
+![Slide 02](images/ai-nepi_011_slide_02.png)
 
-![Slide 01](images/ai-nepi_011_slide_01.jpg)
+Scientific progress confronts a significant impediment in the escalating volume of published information, a deluge that threatens to overwhelm the modern researcher. Effectively navigating this landscape through advanced retrieval techniques is a fundamental prerequisite for generating new knowledge.
 
-This collaborative endeavour, uniting DANS—the data archive of the Royal Netherlands Academy of Arts and Science—with GESIS, an archive actively engaged in research, addresses a critical challenge within contemporary science. The sciences exhibit continuous growth and increasing differentiation, which consequently complicates the processes of reviewing, evaluating, and selecting pertinent information.
+This project explores how artificial intelligence can assist in this process, stemming from experimental work on complex data pipelines conducted at Dans. The authors sought to apply these technical frameworks to a practical use case, aiming to demonstrate their capabilities in a manner that is both powerful and comprehensible to a broader audience.
 
-A fundamental precondition for generating new knowledge, whether within individual minds or across broader academic communities, necessitates the capacity to locate and comprehend existing information effectively. Therefore, a central research question explores whether advanced AI systems can genuinely support the knowledge production process, specifically focusing on information retrieval.
+## Research Question and System Design
 
-The project originated from extensive experimentation conducted by Slava Tikhonov, a senior research engineer at DANS, who meticulously constructs complex data pipelines. Rather than simple linear pipelines, these systems represent intricate "backs of things," as one colleague aptly described, making them challenging to unravel and explain. Consequently, the project aims to illustrate the application of these AI capabilities in a manner accessible to a broader audience. From a wider perspective, this initiative seeks to harness AI's potential to manage the overwhelming deluge of information in which researchers increasingly find themselves immersed.
+![Slide 03](images/ai-nepi_011_slide_03.png)
 
-## System Architecture and Core Components
+The investigation centres on a precise research question: is it feasible to construct an AI solution that enables a conversational interaction with a selected corpus of academic papers?
 
-![Slide 02](images/ai-nepi_011_slide_02.jpg)
+To achieve this, the development team engineered a system with two principal components. *Ghostwriter* functions as the user interface, providing the conversational layer for posing queries. Supporting this is *EverythingData*, a term encompassing the entire backend architecture responsible for data ingestion, processing, and retrieval.
 
-A central research question drives this project: can developers construct an AI solution enabling conversational interaction with academic papers drawn from a specific selection? This inquiry integrates several key concepts, including information retrieval, the dynamics of human-machine interaction, and the principles of Retrieval-Augmented Generation (*RAG*). Researchers have selected the *method-data-analysis (mda)* journal as a pertinent use case, providing a concrete context for demonstrating the system's capabilities.
+## The *Ghostwriter* Paradigm
 
-The project introduces a workflow for a 'local' or 'tailored' AI solution, comprising two primary components. Developers have affectionately named these *Ghostwriter*, which functions as the user interface, and *EverythingData*, serving as a comprehensive summary for all underlying backend operations. This chapter will further illustrate both the front-end user experience and the intricate back-end processes, culminating in a summary and outlook on future developments.
+![Slide 04](images/ai-nepi_011_slide_04.png)
 
-## The *Ghostwriter* Interface: A Novel Retrieval Paradigm
+A new approach to information retrieval, embodied by the *Ghostwriter* interface, directly addresses the twin challenges of formulating precise questions and identifying relevant sources. The system's design rests on a powerful metaphor that simplifies its operation: it allows a user to converse simultaneously with two conceptual entities.
 
-![Slide 03](images/ai-nepi_011_slide_03.jpg)
+The 'librarian' persona represents the world of structured data, including formal knowledge organisation systems and established classifications. In contrast, the 'expert' persona embodies the domain of pure natural language. The authors' central claim is that *Ghostwriter* unifies these two modes of interaction, providing a single, coherent conversational experience.
 
-The *Ghostwriter* approach introduces a novel paradigm for information retrieval, fundamentally altering how users interact with data. This system conceptualises queries across various levels of complexity and data representation.
+## GraphRAG: Augmenting Retrieval with Knowledge Graphs
 
-Initially, a direct query to a single database representation necessitates prior knowledge of its schema and typical values to yield results, akin to a user interacting solely with a database. Progressing beyond this, a query directed at a data collection or space, underpinned by connected structured databases or graphs, prompts the system to suggest similar or improved queries based on schema interconnections, whilst providing a list of potential results. This interaction mirrors a user consulting a librarian.
+![Slide 05](images/ai-nepi_011_slide_05.png)
 
-Further advancing, a query posed to a Large Language Model (LLM) interprets natural language input and generates results, also expressed in natural language. This scenario evokes the experience of engaging with a library or a panel of experts. Crucially, the *Ghostwriter* system integrates a local LLM with a target data collection, embedding it within a network of additional data interpretation sources accessible via Application Programming Interfaces (APIs). This sophisticated setup generates a family of terms around the query, identifies related structured information, and ultimately returns a comprehensive list of results. This advanced interaction simulates a user simultaneously chatting with both experts and librarians.
+This work positions itself within the scientific discourse of *Retrieval Augmented Generation (RAG)*, a prominent technique for enhancing language models with external knowledge. For a thorough introduction to this topic, the authors recommend a paper by Philip Rustle from Neo4j.
 
-Traditionally, information retrieval has grappled with the challenge of formulating the precise query. Whilst Google features and schema.org enable machines to make informed guesses about user queries, these typically operate within a web-based context, not a local interaction. *Ghostwriter*, however, through its iterative application, empowers users to reformulate their questions, thereby fostering a deeper understanding of their actual intent and the available data space. This innovative interface, drawing on the metaphors of a "librarian"—representing structured data, Knowledge Organisation Systems (KOS), and historical classifications—and an "expert"—embodying natural language—claims to facilitate simultaneous conversational interaction with both.
+The system's architecture combines two fundamental ingredients: a vector space for semantic similarity searches and a graph for representing structured relationships. This fusion results in what the team terms 'GraphRAG', an implementation that functions as a sophisticated reasoning engine.
 
-## Retrieval-Augmented Generation (*RAG*) Architecture
+## System Architecture and Workflow
 
-![Slide 04](images/ai-nepi_011_slide_04.jpg)
+![Slide 07](images/ai-nepi_011_slide_07.png)
 
-Scientifically, this project firmly situates itself within the broader discourse surrounding Retrieval-Augmented Generation (*RAG*). Philip Rattliff's paper from Neo4j offers a highly recommended introduction to this intricate topic. [CITATION NEEDED for Rattliff's paper]. The system's architecture fundamentally relies upon two main ingredients: a vector space and a knowledge graph. Developers construct the vector space from the content of data files, encoding this information into embeddings. Various Machine Learning (ML) algorithms compute these embeddings, employing diverse Large Language Models (LLMs) in the process.
+The system's architecture processes document collections into a highly structured, queryable resource. It begins by ingesting a set of articles, for instance from the *mda* journal, into the *EverythingData* backend. This pipeline first populates a vector store using the *Quadrant* engine, then executes operations such as term extraction and the construction of semantic embeddings.
 
-Conversely, the knowledge graph represents a sophisticated metadata layer. Engineers integrate this layer with a range of ontologies and controlled vocabularies, notably incorporating principles of responsible AI. The *Croissant ML standard* precisely expresses this graph. The overarching vision for this system involves seamlessly combining both graph and vector representations into a unified model, termed *GraphRAG*. Developers implement this approach 'locally', conceptualising it as a form of Distributed AI. Within this framework, the LLM assumes a dual role, functioning both as an interface between human users and the AI, and as a powerful reasoning engine. Operationally, the LLM connects to a 'RAG library'—the knowledge graph—enabling it to navigate through datasets and consume embeddings, or vectors, as contextual information.
+A crucial innovation lies in coupling this vector store with knowledge graphs. This integration enriches the embeddings with structured relationships, adding a deeper layer of context. The final output is a sophisticated vector space, augmented with a graph structure, that users can query with natural language questions. In response, the system delivers both a generated summary and a precise list of the source documents used to formulate the answer.
 
-## Operational Workflow: Data Ingestion and Processing
+## Implementation and Factual Grounding
 
-![Slide 05](images/ai-nepi_011_slide_05.jpg)
+![Slide 08](images/ai-nepi_011_slide_08.png)
 
-The system initiates its operational workflow by ingesting a collection of articles, specifically those sourced from the *method-data-analysis (mda)* journal. Developers have scraped a limited number of these articles for the current implementation; however, the architecture accommodates any collection of documents as input. This raw information then enters the *EverythingData* component, which orchestrates a series of sophisticated operations.
+The engineers implemented the system to be versatile, capable of processing diverse web content including academic papers and spreadsheets. It operates using a lean one-billion-parameter Large Language Model, a design choice that prioritises efficiency and local deployment.
 
-Initially, the system stores this information within a vector store, utilising *Qdrant* for this purpose. Subsequently, it performs crucial processes, including term extraction and the construction of embeddings. A pivotal aspect of this workflow involves coupling the processed information with knowledge graphs. This integration significantly enhances the value of words, phrases, and embeddings by contextualising them, effectively enriching the overall context. All this meticulously processed data then feeds into a unified vector space, forming the *RAG-Graph*. The *Ghostwriter* interface interacts directly with this vector space and its integrated graph. Users formulate questions in natural language, and in response, the system provides both a list of relevant documents and a concise summary text, reflecting its understanding of the query.
+A core principle of the design is its commitment to factual grounding; the system exclusively uses the provided source material to generate answers, thereby preventing hallucination. If the required information is absent from its knowledge base, it explicitly states its inability to answer. For demonstration, the team created a curated collection of 100 articles from the GESIS *mda* journal via web scraping. This highlights another key feature: the system begins with no knowledge and builds its expertise only from the documents users add to its collection.
 
-## *Ghostwriter* Implementation: Preventing Hallucinations
+## Source-Referenced Answer Generation
 
-![Slide 07](images/ai-nepi_011_slide_07.jpg)
+![Slide 09](images/ai-nepi_011_slide_09.png)
 
-The developer, whilst having engaged with early iterations of LLMs such as *GPT-2* in 2020, expresses a nuanced perspective, focusing instead on deconstructing and repurposing their training processes. This work, initially conceived for academic papers, demonstrates remarkable versatility, extending its application to any web content or even spreadsheets, enabling users to query specific values.
+The system's ability to generate reliable, source-backed answers is central to its design. When presented with a query, such as a request to explain the 'male breadwinner model', it produces a synthesised response accompanied by direct references to the source documents. This mechanism effectively prevents hallucination by tying every piece of generated text to a specific origin.
 
-A cornerstone of its design lies in its robust mechanism for preventing hallucinations: the system exclusively draws information from the provided source material. Consequently, if a query pertains to information absent from the ingested data, the system transparently responds with "I don't know."
+Technically, the authors achieve this by partitioning each paper into small, uniquely identified blocks. The retrieval process then employs a combination of LLM techniques and knowledge graph analysis to intelligently predict and retrieve the most relevant text blocks for answering the user's question, applying weights to prioritise the best-fitting information.
 
-Notably, this implementation employs a relatively simple 1 billion parameter LLM, yet it effectively addresses complex questions through the strategic integration of knowledge graphs. For instance, papers from the *mda*, a GESIS journal, have been ingested into *Ghostwriter*, forming a distinct collection. A core principle guiding this system dictates that it does not rely on any knowledge pre-ingested into the LLM. Instead, its explicit goal is to furnish only factual information directly present within the specific paper under scrutiny.
+## Iterative Knowledge Building
 
-## *Ghostwriter* in Practice: Querying and Refinement
+![Slide 10](images/ai-nepi_011_slide_10.png)
 
-![Slide 10](images/ai-nepi_011_slide_10.jpg)
+Rather than guessing, the system explicitly communicates its limitations by stating when no direct information is available to answer a query. This transparency is complemented by a feature for iterative knowledge building.
 
-Demonstrating its capabilities, the system processes a query such as "explain male breadwinner model to me," providing a comprehensive explanation of the concept. Crucially, it accompanies this explanation with a detailed list of references, each entry specifying a chat number, article title, direct URL, and a relevance score. This meticulous referencing ensures the system's output remains grounded in verifiable sources, effectively preventing hallucinations by precisely identifying where information originates.
+An 'add paper' function empowers users to expand the system's corpus directly. Consequently, if a user finds an answer in a document not yet in the collection, they can add it. The system will then successfully answer the same question on subsequent attempts, creating a dynamic and collaborative learning loop.
 
-Internally, the system operates by segmenting each paper into small, distinct blocks, assigning a unique identifier to every block. It then employs sophisticated LLM techniques to intelligently connect and retrieve these blocks, applying weights and leveraging knowledge graphs to predict which text segments will most accurately respond to a given question. This iterative approach is evident when a refined query, for instance, "explain how data was collected on male breadwinner model," yields a response indicating "no direct information" if the content is not present within the ingested papers. Furthermore, a user-friendly "Add paper" button empowers users to contribute new articles, seamlessly integrating fresh content for subsequent queries.
+## Knowledge Graph Construction
 
-## Underlying Architecture: Entity Extraction and Multilingual Capabilities
+![Slide 11](images/ai-nepi_011_slide_11.png)
 
-![Slide 11](images/ai-nepi_011_slide_11.jpg)
+The system's technical backbone is a multi-stage pipeline designed for robust knowledge construction. It begins with an entity extraction process that annotates key concepts within the source texts. Crucially, these entities are then linked to external knowledge graphs, which establish a 'ground truth' for validating information.
 
-The system's robust underlying architecture comprises several interconnected components: entity extraction, knowledge graph linking, multilinguality support, and summary generation. An entity extraction pipeline meticulously annotates terms with semantic meaning, mapping them to controlled vocabularies and thereby transitioning information from the vector space into the knowledge graph. This process extends to linking extracted entities to broader knowledge graph representations, notably *Wikidata*. Knowledge graphs assume critical importance, serving as a "ground truth" against which the accuracy of LLM-generated answers can be rigorously validated.
+This structure underpins the system's powerful multilingual support, enabling a user to query documents in one language, such as German, using a different language, like English. In the final stage, the Large Language Model synthesises the various retrieved text fragments into a single, coherent summary for the user.
 
-Furthermore, the system incorporates immediate multilinguality support, a vital feature enabling it to process papers in diverse languages, such as Chinese or German, whilst responding to queries posed in English. Ultimately, the LLM synthesises these disparate pieces of text to produce the final results, including summary or explanatory content.
+## Hierarchical Knowledge Organisation
 
-The fact extraction process begins by segmenting the user's query into smaller components, which are then mapped to a Knowledge Organisation System (KOS). This KOS possesses the unique characteristic of iteratively generating new levels of terms, enriching the semantic understanding.
+![Slide 12](images/ai-nepi_011_slide_12.png)
 
-Crucially, the system links these extracted entities to *Wikidata*, transforming free strings into unique identifiers. These identifiers, in turn, connect to multilingual translations, providing comprehensive properties that facilitate cross-language comprehension. For instance, the core concept of a query, such as "bread winner mo," can be translated by *LLM/Gemma3* into hundreds of languages. This mechanism establishes a robust ground truth by decoupling knowledge from both questions and papers, storing it externally as *Wikidata* identifiers. Consequently, researchers can benchmark different models by testing them against the same list of identifiers, precisely assessing their suitability and identifying any inaccuracies. The project's proponents envision the Knowledge Organisation System as the future of sustainable information management, actively pursuing collaborations with industry leaders like Google and Meta to realise this vision.
+Fact extraction begins by deconstructing a user's query into its constituent conceptual pieces. The authors describe this procedure as part of a repeatable framework for knowledge organisation.
 
-## Live Demonstration: Engaging with *Ghostwriter*
+By applying this process iteratively, the system can generate progressively deeper and more detailed layers of information beneath a given term. This creates a rich, hierarchical representation of concepts, allowing for nuanced exploration of the subject matter.
 
-![Slide 15](images/ai-nepi_011_slide_15.jpg)
+## Entity Linking with *Wikidata*
 
-A live demonstration showcased the *Ghostwriter* interface, accessible via the GESIS Leibniz-Institut für Sozialwissenschaften website, specifically within its "Ask Questions" section. Users interact with an input field labelled "Enter your question:", submitting queries via a prominent red "Ask" button. The system also provides collection management functionalities, including an "Add New Collection" dropdown and an "Available Collections" section, where the *mda* (Methods, Data, Analyses) journal collection was selected, indicating "Vectors 37,637" as its size.
+![Slide 13](images/ai-nepi_011_slide_13.png)
 
-During the demonstration, a query for "Rational Choice Theory" yielded a concise summary compiled from various papers, accompanied by precise references detailing titles, URLs, and relevance scores. A subsequent, more specific query, "explain utility in Rational Choice Theory," prompted the system to select distinct pieces of information, presenting varied results whilst consistently pointing to the same foundational papers. An available Application Programming Interface (API) further extends the system's utility, enabling an automatic mode for agentic architectures, which can collect results and identify new knowledge. Users can also expand the system's knowledge base via an "Add Page" section, allowing the input of webpage URLs or RSS feeds, with options for single webpages, website crawling, or RSS feed integration. Notably, the demonstration highlighted the system's robust multilingual capabilities: a query posed in English successfully retrieved and processed information from a source paper written entirely in German, save for its abstract.
+To ensure consistency and enable cross-lingual capabilities, the system links extracted entities to the *Wikidata* knowledge base. This critical step converts potentially ambiguous text strings into stable, language-agnostic identifiers.
 
-## Project Vision and Future Trajectories
+Because each *Wikidata* identifier is connected to a network of multilingual translations and structured properties, the system can correctly interpret queries across different languages. The developers describe this mechanism as being analogous to a *Transformer* model, but one that is grounded in the structured knowledge of *Wikidata*.
 
-This project champions a key benefit: the provision of local control and cost-effectiveness, contrasting sharply with the reliance on large, external AI models. The interaction with the system is conceptualised as conversing with an "invisible college," a dynamic exchange designed to provoke human thinking and assist in formulating precise research questions. Crucially, the AI's role remains one of support for the human thought process; it does not aim to furnish ultimate factual answers or to independently formulate research questions for its users.
+## Cross-Lingual Query Expansion
 
-From a strategic perspective, the project explicitly avoids a business model centred on developing and selling software. Instead, it prioritises collaborative engagements, particularly with partners who present concrete research questions. The team actively seeks resources to facilitate initial try-outs, intending thereafter to hand over the developed solutions to collaborators. This handover model empowers partners to further tinker with, validate, and polish the systems, fostering a sustainable ecosystem for scientific inquiry. The project's key contributions lie in demonstrating a practical, localised *RAG* solution for scientific information management, emphasising factual accuracy, multilingual capabilities, and a robust knowledge organisation framework.
+![Slide 14](images/ai-nepi_011_slide_14.png)
+
+The system's multilingual functionality is powered by a comprehensive query expansion process. For a given concept, such as the 'breadwinner model', the system generates translations across hundreds of languages.
+
+This expanded set of multilingual terms, rather than just the original English phrase, constitutes the full query submitted to the Large Language Model. This method ensures that relevant information is retrieved regardless of the language in which it was originally written.
+
+## A Decoupled System for Sustainability
+
+![Slide 15](images/ai-nepi_011_slide_15.png)
+
+A key architectural decision was to decouple the extracted knowledge from the language models that process it. By converting queries into lists of stable *Wikidata* identifiers, the system creates an external, model-agnostic knowledge base.
+
+This separation provides a powerful method for benchmarking; one can evaluate any LLM, including those developed in the future, by assessing its ability to generate the correct set of identifiers for a specific query. The authors propose this knowledge organisation system as a sustainable foundation for the next generation of scientific tools, an effort being pursued in collaboration with industry partners like Google and Meta.
+
+## Demonstration and Concluding Vision
+
+![Slide 16](images/ai-nepi_011_slide_16.png)
+
+A live demonstration showcased the system's capabilities. A query for 'rational choice theory' returned a broad summary with references, whilst a more specific query about 'utility in rational choice theory' generated a focused answer using different information from the same sources. The system's multilingual prowess was proven by successfully answering a question in English about a paper written almost entirely in German.
+
+Beyond manual use, an API enables the construction of automated agentic workflows. The overarching vision is for the tool to serve as a local, controllable resource that facilitates a dialogue with scientific literature—akin to conversing with an 'invisible college'. Its ultimate purpose is not to replace human intellect, but to provoke and support the researcher's own thought process.

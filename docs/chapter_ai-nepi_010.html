@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.13">
+<meta name="generator" content="quarto-1.8.17">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Christian Boulanger, David Carreto Fidalgo &amp; Andreas Wagner">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-06-21">
 
-<title>10&nbsp; Parsing Footnotes in Law and Humanities Scholarship with Large Language Models – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>10&nbsp; AI-NEPI: Citation extraction from scholarly publications in the humanities – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a0afd4a9b901cc50d8ed64d4ec5e2aec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_010.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_010.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,12 +96,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+      <a href="./">AI-NEPI Conference Proceedings</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -119,85 +122,85 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AI-assisted Methods for History and Philosophy of Science Workshop: Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE: Tracing the Influence of Ancient Wisdom on Early Modern Natural Philosophy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Understanding LLMs &amp; AI-based Scientific Insights in the Humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI, Computational Epistemology, and Open Science Infrastructure</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -208,14 +211,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context for Language Variation and Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
   </div>
 </li>
     </ul>
@@ -229,24 +238,28 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#challenges-in-humanities-citation-graph-generation" id="toc-challenges-in-humanities-citation-graph-generation" class="nav-link" data-scroll-target="#challenges-in-humanities-citation-graph-generation"><span class="header-section-number">10.1</span> Challenges in Humanities Citation Graph Generation</a></li>
-  <li><a href="#large-language-models-and-footnote-complexity" id="toc-large-language-models-and-footnote-complexity" class="nav-link" data-scroll-target="#large-language-models-and-footnote-complexity"><span class="header-section-number">10.2</span> Large Language Models and Footnote Complexity</a></li>
-  <li><a href="#developing-a-tei-annotated-gold-standard" id="toc-developing-a-tei-annotated-gold-standard" class="nav-link" data-scroll-target="#developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.3</span> Developing a TEI-Annotated Gold Standard</a></li>
-  <li><a href="#llamore-a-python-package-for-reference-extraction" id="toc-llamore-a-python-package-for-reference-extraction" class="nav-link" data-scroll-target="#llamore-a-python-package-for-reference-extraction"><span class="header-section-number">10.4</span> <em>Llamore</em>: A Python Package for Reference Extraction</a></li>
-  <li><a href="#performance-analysis-and-future-directions" id="toc-performance-analysis-and-future-directions" class="nav-link" data-scroll-target="#performance-analysis-and-future-directions"><span class="header-section-number">10.5</span> Performance Analysis and Future Directions</a></li>
+  <li><a href="#citation-graphs-in-intellectual-history" id="toc-citation-graphs-in-intellectual-history" class="nav-link" data-scroll-target="#citation-graphs-in-intellectual-history"><span class="header-section-number">10.1</span> Citation Graphs in Intellectual History</a></li>
+  <li><a href="#limitations-of-bibliometric-databases" id="toc-limitations-of-bibliometric-databases" class="nav-link" data-scroll-target="#limitations-of-bibliometric-databases"><span class="header-section-number">10.2</span> Limitations of Bibliometric Databases</a></li>
+  <li><a href="#systemic-biases-and-technical-hurdles" id="toc-systemic-biases-and-technical-hurdles" class="nav-link" data-scroll-target="#systemic-biases-and-technical-hurdles"><span class="header-section-number">10.3</span> Systemic Biases and Technical Hurdles</a></li>
+  <li><a href="#the-promise-of-language-models" id="toc-the-promise-of-language-models" class="nav-link" data-scroll-target="#the-promise-of-language-models"><span class="header-section-number">10.4</span> The Promise of Language Models</a></li>
+  <li><a href="#a-robust-evaluation-framework" id="toc-a-robust-evaluation-framework" class="nav-link" data-scroll-target="#a-robust-evaluation-framework"><span class="header-section-number">10.5</span> A Robust Evaluation Framework</a></li>
+  <li><a href="#developing-a-tei-gold-standard" id="toc-developing-a-tei-gold-standard" class="nav-link" data-scroll-target="#developing-a-tei-gold-standard"><span class="header-section-number">10.6</span> Developing a TEI Gold Standard</a></li>
+  <li><a href="#constructing-the-humanities-dataset" id="toc-constructing-the-humanities-dataset" class="nav-link" data-scroll-target="#constructing-the-humanities-dataset"><span class="header-section-number">10.7</span> Constructing the Humanities Dataset</a></li>
+  <li><a href="#llamore-a-lightweight-python-package" id="toc-llamore-a-lightweight-python-package" class="nav-link" data-scroll-target="#llamore-a-lightweight-python-package"><span class="header-section-number">10.8</span> <em>Llamore</em>: A Lightweight Python Package</a></li>
+  <li><a href="#evaluation-and-comparative-results" id="toc-evaluation-and-comparative-results" class="nav-link" data-scroll-target="#evaluation-and-comparative-results"><span class="header-section-number">10.9</span> Evaluation and Comparative Results</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-body">
+<div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -260,13 +273,13 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
       
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">June 21, 2025</p>
     </div>
   </div>
   
@@ -280,72 +293,107 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>Researchers have long grappled with the persistent challenge of extracting citation data from the complex footnotes prevalent in law and humanities scholarship. Historically, bibliometric databases have offered inadequate coverage for these domains. This deficiency stems primarily from a lack of commercial interest, a focus on impact factors over intellectual history, and the inherent complexity of humanities footnotes. Moreover, traditional machine learning tools consistently demonstrate poor performance in parsing these intricate structures. Consequently, this project explores the utility of Large Language Models (LLMs) and Vision Language Models (VLMs) as a more effective solution.</p>
-<p>A central tenet of this research involves establishing a robust testing and evaluation framework. To this end, scholars are developing a high-quality gold standard dataset, meticulously annotated using TEI XML encoding. This standard, well-established within the digital humanities, facilitates comprehensive representation of citation phenomena, including crucial contextual information. Furthermore, it ensures interoperability with existing tools such as <em>Grobid</em>, enabling direct performance comparisons.</p>
-<p>To operationalise this approach, engineers crafted <em>Llamore</em>, a lightweight Python package. <em>Llamore</em> extracts citation data from raw text or PDFs, exporting it into TEI-formatted XML files. Crucially, it also evaluates extraction performance against gold standard references using an F1-score metric, which accounts for precision and recall through an unbalanced assignment problem. Initial evaluations reveal that whilst <em>Llamore</em>’s resource consumption exceeds that of traditional tools like <em>Grobid</em> for biomedical literature, it significantly outperforms <em>Grobid</em> when processing the challenging, footnoted humanities data. Future work aims to expand the training data, refine evaluation metrics, and enhance <em>Llamore</em>’s capabilities to capture contextual citation information and resolve complex stylistic variations.</p>
+<p>This chapter details a significant new methodology for extracting accurate citation data from scholarly publications in the humanities, a domain historically underserved by commercial bibliometric databases. The authors, from the Max Planck Institute for Legal History and Legal Theory and the Max Planck Computing &amp; Data Facility, articulate a core research problem: the profound inadequacy of platforms like <em>Web of Science</em> and <em>Scopus</em> for intellectual history. These databases struggle with non-English, pre-digital, and footnote-heavy literature, rendering them unsuitable for the field.</p>
+<p>To surmount these obstacles, the team proposes an approach centred on Large Language Models (LLMs) and a robust evaluation framework. They developed a high-quality, <em>TEI</em>-annotated Gold Standard dataset from open-access humanities journals, which serves as a benchmark for their new Python package, <em>Llamore</em>. Designed as a lightweight interface for LLMs, <em>Llamore</em> performs reference extraction with notable precision. The chapter outlines <em>Llamore’s</em> architecture, its evaluation methodology, and its comparative performance. Whilst its results on a standard biomedical dataset (<em>PLOS 1000</em>) are comparable to the established tool <em>Grobid</em>, on the custom humanities dataset, <em>Llamore</em> significantly outperforms it, demonstrating the value of LLM-based approaches for complex, domain-specific tasks.</p>
 </section>
-<section id="challenges-in-humanities-citation-graph-generation" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="challenges-in-humanities-citation-graph-generation"><span class="header-section-number">10.1</span> Challenges in Humanities Citation Graph Generation</h2>
+<section id="citation-graphs-in-intellectual-history" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="citation-graphs-in-intellectual-history"><span class="header-section-number">10.1</span> Citation Graphs in Intellectual History</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_010_slide_01.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 01: Visual representation of a complex citation graph.</figcaption>
+<p><img src="images/ai-nepi_010_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>Researchers confront a significant challenge: Large Language Models and other algorithms currently struggle with the intricate footnotes characteristic of law and humanities scholarship. Generating comprehensive citation graphs from these sources represents a primary objective of our work. Such graphs prove invaluable for intellectual history, enabling scholars to discern patterns and relationships within knowledge production, trace intellectual influences, and quantify the reception of published ideas. For instance, one can readily identify the most cited authors within a specific journal over a defined period, as demonstrated by an analysis of the <em>Journal of Law and Society</em> between 1994 and 2003.</p>
-<p>A fundamental impediment arises from the extremely poor coverage of historical Social Sciences and Humanities (SSH) literature within existing bibliometric data sources. Leading platforms, including <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>, exhibit substantial deficiencies in this regard. <em>Web of Science</em> and <em>Scopus</em>, moreover, impose prohibitive costs and restrictive licensing terms, hindering open research initiatives. Whilst <em>OpenAlex</em> offers an open-access alternative, it too lacks comprehensive coverage for many A-journals, pre-digital content, and non-English language publications. For example, the <em>Zeitschrift für Rechtssoziologie</em>, established in 1980, shows negligible citation data before the 2000s within these widely used databases.</p>
-<p>Several factors contribute to this persistent data gap. Commercial entities demonstrate limited financial interest in humanities scholarship, unlike their engagement with STEM, medicine, and economics. Furthermore, these databases prioritise “impact factor” metrics for scientific evaluation, a focus that diverges significantly from the needs of intellectual history research. Crucially, the pervasive use of complex footnotes within humanities literature presents a unique parsing challenge, which traditional systems have consistently struggled to overcome.</p>
+<p>The authors’ central research objective is to create comprehensive citation graphs that illuminate trends in intellectual history. Such graphs are powerful analytical tools, enabling scholars to uncover latent patterns in knowledge production, trace the influence of specific authors and ideas, and quantitatively measure their reception within a scholarly community.</p>
+<p>An analysis of the most cited authors over a given period, for instance, provides a clear window into a field’s intellectual evolution. A key challenge, however, lies in the initial data production. The team acknowledges that a significant detour is required to generate the specialised data necessary to construct these graphs and, ultimately, to address their core research questions.</p>
 </section>
-<section id="large-language-models-and-footnote-complexity" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="large-language-models-and-footnote-complexity"><span class="header-section-number">10.2</span> Large Language Models and Footnote Complexity</h2>
+<section id="limitations-of-bibliometric-databases" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="limitations-of-bibliometric-databases"><span class="header-section-number">10.2</span> Limitations of Bibliometric Databases</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_010_slide_07.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 07: Illustration depicting the complexity of “footnotes from hell” with embedded commentary and non-reference text.</figcaption>
+<p><img src="images/ai-nepi_010_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p>A second, equally pressing problem arises from the inherent complexity of humanities footnotes, often termed “footnotes from hell.” These structures frequently incorporate extensive commentary, extraneous content, and non-reference text, embedding the actual citations within considerable noise. Traditional instruments for extracting such information necessitate laborious manual annotation. Moreover, conventional machine learning tools, including those based on conditional random forests, consistently exhibit poor performance when faced with these intricate structures. For instance, the ExCite Performance study (Boulanger/Iurshina 2022) reported low extraction and segmentation accuracies across various training datasets, with combined data yielding an extraction accuracy of merely 0.22 and segmentation accuracy of 0.47. This highlights the limitations of previous approaches.</p>
-<p>Consequently, researchers have turned to Large Language Models (LLMs) as a promising alternative. Initial experiments in 2022, utilising models such as <em>text-davinci-003</em>, demonstrated LLMs’ considerable capacity for extracting references from highly unstructured textual data. Newer models offer even greater potential, whilst Vision Language Models (VLMs) extend this capability to direct processing of PDF documents. Developers employ various methods, including prompt engineering, Retrieval-Augmented Generation (RAG), and fine-tuning, to optimise these models for specific tasks. RAG, for example, enhances LLM outputs by retrieving relevant information from a knowledge base before generating a response, thereby improving accuracy and reducing hallucinations.</p>
-<p>Nevertheless, a crucial concern persists regarding the trustworthiness of LLM-generated results, particularly the risk of hallucinations. A notable incident involved a lawyer who, relying on <em>ChatGPT</em>, submitted a federal court filing citing at least six non-existent cases. Addressing this fundamental issue demands a robust testing and evaluation solution. Such a solution requires a high-quality gold standard dataset, a flexible framework capable of adapting to the rapidly evolving technology landscape, and solid testing algorithms to generate comparable performance metrics.</p>
+<p>A fundamental problem impedes research in this domain: the inadequacy of established bibliometric databases. For the specific field of intellectual history, the authors find that major platforms such as <em>Web of Science</em> and <em>Scopus</em> are effectively unusable due to critical data deficiencies.</p>
+<p>Their coverage of essential academic journals is incomplete, they largely neglect scholarship from the pre-digital age, and they exhibit a strong bias towards English-language content. Beyond these content-related failings, these commercial services are also prohibitively expensive and impose restrictive licensing terms, fostering an undesirable dependency for the academic community.</p>
 </section>
-<section id="developing-a-tei-annotated-gold-standard" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.3</span> Developing a TEI-Annotated Gold Standard</h2>
+<section id="systemic-biases-and-technical-hurdles" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="systemic-biases-and-technical-hurdles"><span class="header-section-number">10.3</span> Systemic Biases and Technical Hurdles</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_010_slide_13.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 13: Diagram illustrating the multi-stage process of TEI XML annotation for footnotes.</figcaption>
+<p><img src="images/ai-nepi_010_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
 </figure>
 </div>
-<p>To address the need for reliable evaluation, researchers have embarked upon compiling a comprehensive training and evaluation dataset, employing TEI XML encoding. This choice rests upon several compelling reasons. TEI XML represents a well-established, precisely specified, and comprehensive standard for text interchange within the digital humanities. Crucially, it encompasses a far broader range of phenomena than more restrictive bibliographical standards, such as <em>CSL</em> or <em>BibTeX</em>. Indeed, TEI extends beyond mere reference management, allowing for the encoding of citations, cross-references, and other contextual markup, which proves vital for classifying citation intention. Furthermore, adopting this standard enables the project to leverage existing digital editions, text collections, and corpora, thereby enhancing the generalisation and robustness of the developed mechanisms.</p>
-<p>Nevertheless, the TEI standard presents its own set of challenges, both conceptual and technical. Conceptual difficulties arise in differentiating between pointers (references to a specific part of a text) and references (full bibliographical entries), whilst technical complexities involve managing constrained elements (e.g., specific fields within a citation) versus elliptic material (e.g., abbreviations like <em>ibid.</em> or <em>op. cit.</em>). Despite these hurdles, the dataset’s establishment progresses steadily. The encoding process involves multiple stages: capturing PDF screenshots, segmenting reference strings to distinguish them from non-reference footnote text, and finally, generating parsed structured data.</p>
-<p>The dataset currently comprises 1,100 footnotes and endnotes, drawn from 25 articles across 10 Directory of Open Access Journals (DOAJ) titles. It specifically focuses on humanities scholarship, particularly legal and historical texts, and encompasses a diverse range of languages, including French, German, Spanish, Italian, and Portuguese, spanning the period from 1958 to 2018. Researchers estimate the dataset will contain over 1,600 references, with individual occurrences encoded separately to preserve contextual information. Notably, the project adjusted its strategy midway, shifting to Open Access journals and incorporating PDFs to facilitate Vision Language Model (VLM) mechanisms and enable the full publication of the dataset.</p>
-<p>The interoperability afforded by the TEI XML standard offers a significant advantage, enabling seamless integration with existing tooling. <em>Grobid</em>, a widely recognised tool for reference and information extraction, notably utilises TEI XML for its training and evaluation processes. Consequently, this shared data format permits direct performance comparisons with <em>Grobid</em> and facilitates the exchange of training data, benefiting both the project and the broader research community.</p>
+<p>The team’s analysis of the German journal <em>Zeitschrift für Rechtssoziologie</em> exemplifies this poor coverage, revealing almost no citation data in major databases prior to the 2000s. This gap stems from systemic biases. Commercial database providers focus on STEM, medicine, and economics—fields perceived as more profitable than the humanities. Consequently, their infrastructure is optimised for metrics like the impact factor, which holds little relevance for tracking intellectual history.</p>
+<p>Furthermore, a significant technical hurdle arises from the very nature of humanities scholarship. Texts are frequently replete with dense, discursive footnotes that embed citations within extensive commentary and other textual noise. This complexity, which one presenter memorably termed a ‘footnote from hell’, frustrates conventional extraction tools.</p>
 </section>
-<section id="llamore-a-python-package-for-reference-extraction" class="level2" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="llamore-a-python-package-for-reference-extraction"><span class="header-section-number">10.4</span> <em>Llamore</em>: A Python Package for Reference Extraction</h2>
+<section id="the-promise-of-language-models" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="the-promise-of-language-models"><span class="header-section-number">10.4</span> The Promise of Language Models</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_010_slide_14.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 14: Workflow diagram showing <em>Llamore</em> processing text/PDFs to TEI XML and evaluating against gold standards.</figcaption>
+<p><img src="images/ai-nepi_010_slide_09.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<p>Researchers have developed <em>Llamore</em>, a Python package acronym for “Large LANguage MOdels for Reference Extraction.” This tool facilitates two primary functions: extracting citation data from raw text or PDF inputs using multimodal Large Language Models, and subsequently evaluating the extraction performance. The workflow proceeds from text or PDF documents, through <em>Llamore</em>, to produce references in TEI XML format. These extracted references then undergo comparison with gold standard references, yielding an F1-score as an evaluation metric.</p>
-<p>Crafting <em>Llamore</em> involved two key objectives. Firstly, the package needed to remain lightweight, comprising fewer than 2,000 lines of code. Crucially, <em>Llamore</em> operates as an interface to a model of the user’s choosing, rather than embedding any specific model directly. Secondly, this design ensures broad compatibility with both open and closed Large Language Models and Vision Language Models, offering flexibility to researchers.</p>
-<p>Implementing <em>Llamore</em> proves straightforward. Users can install the package directly from PyPI using <code>pip install llamore</code>. For extraction, one imports the relevant extractor, such as <em>GeminiExtractor</em> or <em>OpenaiExtractor</em>, then instantiates it with an API key. The extractor processes either a PDF file path or a raw input string, returning a collection of references that can then be exported to a TEI XML file. Notably, the <em>OpenaiExtractor</em> provides compatibility with numerous open model serving frameworks, including <em>Olama</em> and <em>VLLM</em>, which offer OpenAI-compatible API endpoints. For evaluation, users import the <em>F1</em> class, configure it (e.g., <code>levenshtein_distance=0</code> for exact matches), and compute the macro average F1-score by supplying both the extracted and gold references.</p>
-<p><em>Llamore</em> employs the F1-score, a widely recognised metric for comparing structured data, to assess extraction performance. This score combines precision (the ratio of correctly identified elements to all predicted elements) and recall (the ratio of correctly identified elements to all actual elements in the gold standard) into a single harmonic mean. A perfect extraction yields an F1-score of 1, whilst an F1-score of 0 indicates no matches. For instance, in comparing an extracted reference to a gold standard, <em>Llamore</em> identifies matches for <code>analytic_title</code>, <code>monographic_title</code>, <code>authors.surname</code>, and <code>publication_date</code>, whilst noting a minor discrepancy in <code>authors.forename</code> due to an extraneous character in the gold reference. Furthermore, <em>Llamore</em> addresses the complex task of aligning extracted references with gold references by framing it as an unbalanced assignment problem. The tool computes F1 scores for every possible combination, constructs a matrix, and then maximises the total F1-score whilst ensuring a unique assignment, utilising SciPy’s solver for this optimisation. Significantly, the system penalises both missing and hallucinated references by assigning them an F1-score of zero.</p>
+<p>Traditional approaches to citation extraction have proven insufficient for these complex documents. The authors note that creating the necessary training data involves a laborious manual annotation process, yet even with this investment, the performance of tools relying on established machine learning techniques like <em>Conditional Random Forests</em> is poor.</p>
+<p>In contrast, their early experiments with Large Language Models (LLMs) yielded surprisingly effective results, with performance improving further in subsequent model generations. The advent of Visual Language Models (VLMs) now enables the direct processing of PDF documents, introducing a new frontier of methods that the research team is beginning to investigate.</p>
 </section>
-<section id="performance-analysis-and-future-directions" class="level2" data-number="10.5">
-<h2 data-number="10.5" class="anchored" data-anchor-id="performance-analysis-and-future-directions"><span class="header-section-number">10.5</span> Performance Analysis and Future Directions</h2>
+<section id="a-robust-evaluation-framework" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="a-robust-evaluation-framework"><span class="header-section-number">10.5</span> A Robust Evaluation Framework</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_010_slide_20.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 20: Bar chart comparing <em>Llamore</em> and <em>Grobid</em> F1 scores on biomedical and humanities datasets.</figcaption>
+<p><img src="images/ai-nepi_010_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
 </figure>
 </div>
-<p>Initial performance evaluations provide crucial insights into <em>Llamore</em>’s efficacy across diverse datasets. When tested on the <em>PLOS 1000 Dataset</em>, which comprises 1,000 biomedical PDFs and demands exact matches, <em>Grobid</em> achieved an F1 score of 0.61, whilst <em>Llamore</em>, utilising <em>Gemini 2.0 Flash</em>, attained a comparable F1 score of 0.62. However, for literature on which <em>Grobid</em> was specifically trained, it demonstrates superior efficiency, operating considerably faster and with fewer computational resources; <em>Llamore</em>’s compute requirements, conversely, are orders of magnitude greater.</p>
-<p>A more compelling distinction emerges when evaluating performance on the project’s bespoke humanities dataset, which features complex footnotes and also requires exact matches. Here, <em>Grobid</em> struggles significantly, yielding an F1 score of only 0.14, largely due to its training data being out of distribution for such intricate structures. In stark contrast, <em>Llamore</em> (<em>Gemini 2.0 Flash</em>) achieves an F1 score of 0.45, representing a threefold improvement in performance. This initial evaluation clearly demonstrates <em>Llamore</em>’s superior capability in handling the unique challenges posed by humanities footnotes, validating the utility of LLMs for this specific domain. Nevertheless, this current performance metric pertains solely to pure reference extraction, excluding the capture of contextual information or cross-referencing.</p>
-<p>Future work outlines several key objectives. Researchers plan to generate additional training data and further refine the test metrics to encompass a broader range of citation phenomena. Crucially, they aim to extend <em>Llamore</em>’s capabilities to support citations in context, discerning whether a work is cited approvingly or critically. Furthermore, the tool will incorporate features for resolving <em>op cit.</em> references, identifying specific pages cited, and quantifying multiple citations to the same work.</p>
-<p>Addressing these enhancements will necessitate overcoming several challenges. These include the wide variation in citation styles (e.g., differentiating between volumes and pages, or first page versus cited page), the complexities of multilingual terminology (e.g., diverse contributor roles like “eds” or “hrsg. v.”, and special terms such as <em>passim</em>, <em>ibid</em>, or <em>n.d.</em>), the intricacies of canonical citations prevalent in fields like Bible studies or Roman law, and the accurate handling of ellipses, abbreviations, and cross-references. Overcoming these hurdles will significantly enhance <em>Llamore</em>’s utility for advanced scholarly analysis.</p>
+<p>To harness the power of LLMs responsibly, the authors contend that a robust testing and evaluation regime is non-negotiable. Their work operates on a core principle: one must not attempt to solve problems without first securing the data needed for validation.</p>
+<p>This philosophy necessitates the development of a high-quality Gold Standard dataset to serve as a benchmark for accuracy. Moreover, the evaluation framework itself must be flexible enough to accommodate the fast-moving technological landscape. Finally, the testing tools must generate comparable metrics, allowing for rigorous and transparent performance comparisons against other existing or future solutions.</p>
+</section>
+<section id="developing-a-tei-gold-standard" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="developing-a-tei-gold-standard"><span class="header-section-number">10.6</span> Developing a TEI Gold Standard</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_16.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>The authors selected the Text Encoding Initiative (<em>TEI</em>) XML format to build their Gold Standard dataset, a decision grounded in its status as the pre-eminent standard in the digital humanities. Unlike purely bibliographic formats such as <em>CSL</em> or <em>BibTeX</em>, <em>TEI</em> offers a far more comprehensive and well-specified framework. Its richness allows for the encoding of crucial contextual phenomena, such as the author’s intention behind a citation, which goes beyond simple reference management.</p>
+<p>This choice also enables the team to tap into a wealth of existing digital editions and text corpora already encoded in <em>TEI</em>. Crucially, using this interoperable standard ensures compatibility with key information extraction tools like <em>Grobid</em>. This alignment allows for direct performance comparisons, the use of <em>Grobid’s</em> training data, and the contribution of their new dataset back to the <em>Grobid</em> project.</p>
+</section>
+<section id="constructing-the-humanities-dataset" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="constructing-the-humanities-dataset"><span class="header-section-number">10.7</span> Constructing the Humanities Dataset</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_17.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 17</figcaption>
+</figure>
+</div>
+<p>The team is actively constructing a new dataset comprising over 1,000 footnotes sourced from 20 different articles, which are expected to yield more than 1,500 reference instances. Midway through the project, their strategy shifted towards using Open Access journals; this change ensures that the entire pipeline—from the original PDFs to the final parsed data—can be made publicly available.</p>
+<p>The selected articles provide linguistic and temporal diversity, spanning multiple languages and a broad historical period. The encoding workflow proceeds in stages: first, the reference string is segmented and isolated from non-bibliographic text within the footnote, and second, this string is parsed into a structured format. Notably, the team encodes every single reference as a unique occurrence, thereby preserving the context of each citation.</p>
+</section>
+<section id="llamore-a-lightweight-python-package" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="llamore-a-lightweight-python-package"><span class="header-section-number">10.8</span> <em>Llamore</em>: A Lightweight Python Package</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_20.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 20</figcaption>
+</figure>
+</div>
+<p>To implement their LLM-based approach, the team developed <em>Llamore</em>, a Python package for Large Language Models for Reference Extraction. This tool performs two primary functions: it extracts references from supplied text or PDF files, and it evaluates the performance of this extraction against a gold standard.</p>
+<p>Two key objectives guided its design. First, it is lightweight, containing no models itself but rather serving as a flexible interface to a user-selected model. Second, it ensures broad compatibility with both open and closed-source LLMs and VLMs. Available via <code>pip</code>, <em>Llamore’s</em> workflow involves defining an extractor, which can connect to any OpenAI-compatible API and thus supports a wide range of model-serving frameworks like <em>Olama</em>. The extracted references can then be exported as <em>TEI</em> XML, and their accuracy assessed using the package’s built-in F1 evaluation class.</p>
+</section>
+<section id="evaluation-and-comparative-results" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="evaluation-and-comparative-results"><span class="header-section-number">10.9</span> Evaluation and Comparative Results</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_24.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 24</figcaption>
+</figure>
+</div>
+<p>The project employs a rigorous evaluation methodology centred on the F1 score, a well-established metric for structured data comparison. This score is calculated from precision and recall, which are determined by counting the number of exact matches for each field within a reference.</p>
+<p>To solve the complex problem of aligning the list of extracted references with the gold standard list, the authors frame it as an unbalanced assignment problem. They use a solver from the <em>SciPy</em> library to find the optimal one-to-one mapping that maximises the overall F1 score, penalising both missing and hallucinated references with a score of zero. Comparative tests reveal a telling divergence. On the <em>PLOS 1000</em> biomedical dataset, <em>Llamore</em> performs on par with the highly optimised <em>Grobid</em> tool, albeit at a much higher computational expense. On the custom humanities dataset, however, <em>Grobid’s</em> performance falters, whereas <em>Llamore</em> demonstrates significantly superior extraction accuracy.</p>
 
 
 </section>
@@ -750,15 +798,15 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_009.html" class="pagination-link" aria-label="SDG-Research in Bibliometric DBs - LLMs for HPSS">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span>
+      <a href="./chapter_ai-nepi_009.html" class="pagination-link" aria-label="An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Science dynamics and AI">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

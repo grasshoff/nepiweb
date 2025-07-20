@@ -1,74 +1,84 @@
 ---
-title: "Modelling Science: LLM for the History, Philosophy and Sociology of Science"
-shorttitle: "Modelling Science"
+title: "AI, Computational Epistemology, and Open Science Infrastructure"
 author:
 - name: "Gerd Graßhoff"
   affiliation: "Humboldt Universität zu Berlin"
   email: "gerd.grasshoff@hu-berlin.de"
-date: '2025'
+date: '2025-06-21'
 bibliography: bibliography.bib
 ---
-
 ## Overview {.unnumbered}
 
-This chapter introduces a pioneering framework for historical and scientific inquiry. It meticulously harnesses advanced Large Language Models (LLMs) whilst systematically mitigating their inherent limitations, particularly concerning factual hallucination and validation. The authors propose a novel "computational epistemology" paradigm, which fundamentally prioritises robust validation mechanisms over the mere expansion of contextual understanding or the simulated "thinking" capabilities of contemporary LLMs.
+The authors chart a course for integrating Artificial Intelligence into scholarly research, progressing from the foundational concepts of Large Language Model evolution towards a robust framework grounded in validation and critical thinking. Their work identifies key deficiencies in current AI, such as a lack of information verification, and proposes a solution centred on computational epistemology and epistemic agency.
 
-A bespoke research infrastructure, aptly named *Scholarium*, forms the bedrock of this methodology. This sophisticated system seamlessly integrates meticulously curated scholarly sources, exemplified by the exhaustive *Opera Omnia Euler*, with a structured registry database. This registry systematically records historical activities and communications, thereby offering a validated alternative to conventional embedding-based approaches. The team implemented this intricate system within the *Cursor* environment, leveraging a suite of multimodal LLMs, including *Gemini 2.5*, *Claude*, and *Llama*, alongside a dedicated AI agent christened *Bernoulli*.
+To realise this vision, the team introduces a suite of tools and platforms. The *Scholarium* initiative, governed by a curated editorial board, provides access to validated historical sources, including the collected works of Euler. A digital academic workspace, featuring an *AI Cockpit*, demonstrates how scholars can interact with LLMs to analyse historical documents. The entire technical infrastructure is built upon the principles of Open Science Technology—embracing open source, open access, open data, and open collaboration—and exemplifies FAIR data principles through platforms like *Zenodo*, a repository for the academic community.
 
-Furthermore, the project strategically employs *Zenodo*, a long-term FAIR (Findable, Accessible, Interoperable, Reusable) repository, for enduring data preservation and dissemination. *Open Science Technology* provides crucial technical support, operating a Model Context Protocol Application Programming Interface (MCP API) server. This server ensures global access to the curated data via standardised APIs for artificial intelligence models, fostering principles of open access, open data, and open collaboration. Ultimately, the system aims to deliver complete, rigorously validated answers to complex historical queries—a critical capability currently absent in existing LLM applications.
+## The Evolution of LLM Competence
 
-## Evolution and Limitations of Large Language Models
+![Slide 02](images/ai-nepi_008_slide_02.png)
 
-![Slide 01](images/ai-nepi_008_slide_01.jpg)
+The authors trace the evolution of competence in Large Language Models (LLMs) through three distinct conceptual stages. This progression begins with the foundational mechanism of *attention*, which allows models to weigh the significance of different words in a sequence.
 
-Large Language Models have undergone a remarkably swift evolution, progressing through distinct conceptual phases. Initially, the paradigm centred on "Attention is all you need," emphasising the core mechanism of *Transformer* architectures. Subsequently, the focus shifted towards "Context is all you need," prompting developments such as *Retrieval-Augmented Generation* (RAG) to expand contextual understanding. The latest conceptualisation now postulates "Thinking is all you need," suggesting a further layer of cognitive capability.
+Subsequently, development advanced to incorporate *context*, enabling LLMs to understand and process information within a broader frame of reference. The most recent stage in this evolution introduces the capacity for *thinking*, characterising a move towards more sophisticated reasoning and problem-solving capabilities.
 
-Despite this rapid advancement, current LLM iterations exhibit significant deficiencies, particularly concerning the rigorous demands of scholarly inquiry. Crucially, these models lack an inherent opponent mechanism to effectively counter hallucination, a pervasive challenge in generative AI. Furthermore, embedding vectors, whilst powerful for semantic similarity, fundamentally fail to capture the true meaning of expressions. These models frequently formulate statements that, whilst sounding plausible, prove factually incorrect.
+## Deficiencies in Current AI Systems
 
-Moreover, LLMs struggle to differentiate genuine knowledge from mere internet media or hearsay, often repeating unverified information. Consequently, LLMs currently cannot reliably seek the best-justified information or formulate coherent plans for complex scientific inquiry. While these are significant limitations, the framework presented in this chapter offers a promising approach to mitigate some of these fundamental challenges through robust validation.
+![Slide 03](images/ai-nepi_008_slide_03.png)
 
-## The Imperative of Validation and Computational Epistemology
+A critical examination of current AI capabilities reveals fundamental principles that are largely absent from contemporary systems. These deficiencies primarily concern the need for robust critical thinking, a capacity that extends far beyond mere pattern recognition.
 
-![Slide 03](images/ai-nepi_008_slide_03.jpg)
+Furthermore, a significant gap exists in the domain of information verification, as models often generate content without a reliable mechanism for confirming its accuracy. This analysis also highlights the inherent limitations of AI representations, acknowledging that they are not infallible and require careful scrutiny.
 
-A critical need emerges for robust validation mechanisms within advanced computational systems. Such validation must furnish comprehensive reasons, compelling arguments, and verifiable evidence both for and against the truth of any given proposition. Moreover, it must extend to providing justifications for or against the pursuit of specific actions.
+## Validation in Computational Epistemology
 
-To address this profound gap, scholars propose a nascent discipline: computational epistemology. This new subject systematically develops the methods and methodologies essential for bridging the validation deficit inherent in current AI approaches. Computational epistemology aims to equip AI systems with the capacity for genuine epistemic agency, enabling them to reason about knowledge and justification.
+![Slide 04](images/ai-nepi_008_slide_04.png)
 
-Achieving genuine epistemic agency necessitates several key capabilities. Researchers must identify propositions that extend beyond simple sentences, discerning their underlying meaning and scope. Furthermore, the system must accurately identify arguments embedded within diverse texts, historical sources, and complex inquiries. Crucially, it must also discern the intentions, plans, and actions of historical figures, meticulously documented within their surviving records.
+Validation emerges as a central theme in the authors' framework for advancing trustworthy AI. This principle applies not only to the propositions an AI generates but also to the actions it recommends or undertakes, ensuring both are sound and justifiable.
 
-## The Research Inquiry Environment
+Situating this work within the field of *Computational Epistemology* provides a formal structure for analysing knowledge in computational systems. Moreover, it connects directly to the nature of *Epistemic Agency*, exploring how systems can responsibly and accurately acquire, assess, and use information.
 
-![Slide 04](images/ai-nepi_008_slide_04.jpg)
+## AI-Assisted Document Analysis
 
-A specialised working environment facilitates rigorous historical inquiry. The interface presents an open historical source, such as a book title page, on its left pane. This context involves the construction of *Sanssouci Castle* under Frederick the Great and the contentious role of *Leonhard Euler*, one of the 18th century's most eminent mathematicians, in what proved a significant construction failure. Historians continue to debate Euler's precise responsibility for this setback.
+![Slide 05](images/ai-nepi_008_slide_05.png)
 
-The right pane features a text editor where users formulate specific inquiries. For instance, a user might pose the question: "*Rekonstruiere welche Personen an der Wasserfontaine welche Arbeiten ausführten*" (Reconstruct which persons performed which work on the water fountain). The system aims to provide a validated, qualifying answer, rigorously supported by proven evidence rather than mere hearsay. Consequently, the output lists individuals, such as *Nahl*, *Benkert* and *Heymüller*, and *Giese*, detailing their specific contributions, periods of work, earnings, and documented achievements or failures, with explicit references to associated files like "Manger1789_p81-91.xml".
+A digital academic workspace, developed by the team, demonstrates the practical application of AI in scholarly research, particularly within the humanities. The user interface presents a historical document, such as a PDF, alongside an AI-powered analysis panel.
 
-The *Cursor* environment, situated at the bottom right of the interface, enables the deployment of AI agents. Here, a dedicated agent, named *Bernoulli*, assists in navigating and querying these complex sources. A significant challenge, however, extends beyond merely reading individual PDF sources; it necessitates searching all available, relevant sources—a task for which conventional token-based indexing proves inadequate.
+In a specific use case, the system processes a document related to a historical art commission. The AI successfully extracts and organises key information, identifying all the individuals involved and detailing their respective roles in the commission, thereby accelerating the research process.
 
-## Scholarium: Curated Scholarly Sources
+## The Scholarium Platform
 
-![Slide 07](images/ai-nepi_008_slide_07.jpg)
+![Slide 06](images/ai-nepi_008_slide_06.png)
 
-The system fundamentally relies upon a scholarly curated editorial board, which meticulously validates all integrated sources. A prime example of this rigorous approach is the *Opera Omnia* of Euler, a monumental collection spanning 86 volumes. Scholars dedicated over 120 years to its comprehensive editing, a process completed just two years prior. This exhaustive work encompasses all 866 of Euler's publications and his complete correspondence.
+The *Scholarium* initiative provides a dedicated platform for high-integrity academic work, distinguishing itself through rigorous oversight. A Curated Scholarly Editorial Board governs the platform, ensuring that all included sources meet stringent academic standards.
 
-Other significant scholarly works, including the *Kepler Gesammelte Werke* and *Brahe Opera Omnia*, further complement this foundational collection. Users access these resources via a dedicated *Euler Opera Omnia Viewer*, which provides intuitive navigation through collection, series, volume, and index dropdowns. This curated approach ensures the highest level of data integrity for historical research.
+The scope of its collection includes the major collected works of influential historical scientists. To illustrate its function, the system showcases a digital viewer for navigating the comprehensive works of Leonhard Euler, offering researchers direct access to this foundational scientific corpus.
 
-## Scholarium: Registry as an Embedding Alternative
+## The AI Cockpit Interface
 
-![Slide 06](images/ai-nepi_008_slide_06.jpg)
+![Slide 08](images/ai-nepi_008_slide_08.png)
 
-A pivotal innovation within this framework is the *Scholarium*, which serves as a sophisticated alternative to conventional embedding-based approaches. Functioning as a meticulously curated database of content items, the *Scholarium* maintains a highly detailed inventory of historically proven activities, with each entry rigorously validated against original sources.
+The team has engineered the *AI Cockpit*, a specialised user interface designed to streamline interaction with Large Language Models. This tool provides a focused environment for conducting complex, AI-assisted tasks.
 
-This comprehensive registry systematically captures a diverse array of information. It meticulously documents personal actions, various communication acts—including letters, publications, and reports—and specific statements. Furthermore, it records implications, arguments, and inquiries, alongside the nuanced use of language, terminology, and concepts. The system also tracks the application of specific concepts and their relations, the deployment of models and methods, and the utilisation of tools and devices. Crucially, it catalogues the precise use of data, information, evidence, and sources. An integrated AI API, specifically leveraging the Model Context Protocol (MCP API), facilitates seamless interaction with this rich, structured data.
+Its capabilities are demonstrated through its effective use in processing historical documents. The *AI Cockpit* can automatically extract salient information and generate concise summaries, enabling scholars to grasp the core content of archival materials with greater efficiency.
 
-## Technical Infrastructure and FAIR Principles
+## FAIR Principles and the Zenodo Repository
 
-![Slide 07](images/ai-nepi_008_slide_07.jpg)
+![Slide 09](images/ai-nepi_008_slide_09.png)
 
-The system queries its meticulously compiled records using a suite of accessible multimodal models. Researchers have determined that the latest multimodal models, such as *Gemini 2.5*, prove optimal for the task requirements, adeptly combining information derived from both text and images. The *Cursor* environment integrates a range of LLM models, including *Claude*, *Gemini*, *Llama*, and *LettreAI*.
+The authors highlight the *Zenodo* research data repository as a prime example of an infrastructure built upon FAIR principles. By design, it ensures that research outputs are Findable, Accessible, Interoperable, and Reusable, promoting transparency and collaboration across academic communities.
 
-For enduring data preservation and publication, a long-term FAIR (Findable, Accessible, Interoperable, Reusable) repository is indispensable. *Zenodo*, hosted by CERN in Geneva, fulfils this critical role, ensuring the longevity and accessibility of the project's data for many years.
+As a general-purpose repository, it supports a wide range of disciplines and data types. Its active and continuous use is evident from its interface, which showcases a dynamic list of recent uploads from researchers worldwide, underscoring its role in the scholarly ecosystem.
 
-Technical support for the underlying infrastructure is provided by *Open Science Technology*, a dedicated startup. This entity manages the operational aspects of the system, including the crucial Model Context Protocol (MCP API) server. This server facilitates worldwide access to the curated data via standardised APIs, enabling seamless interaction with artificial intelligence models. This comprehensive technical framework actively promotes principles of open collaboration, open source development, open access to resources, and open data sharing, thereby contributing to a more transparent and verifiable scholarly ecosystem.
+## Principles of Open Science Technology
+
+![Slide 10](images/ai-nepi_008_slide_10.png)
+
+The technical support framework for this scholarly ecosystem rests upon the core principles of Open Science Technology. This commitment manifests in four key areas.
+
+- It embraces open-source software, ensuring that the underlying tools are transparent and customisable.
+
+- It champions open access to publications, removing barriers to knowledge.
+
+- It mandates open data, allowing for the verification of results and the reuse of datasets.
+
+- It fosters open collaboration, creating an environment where researchers can work together effectively.

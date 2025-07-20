@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.14">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Paul Näger">
+
+<title>12&nbsp; Possible applications of RAG systems in philosophy – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_015.html" rel="next">
+<link href="./chapter_ai-nepi_011.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_012.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy, and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GENRE CLASSIFICATION FOR HISTORICAL MEDICAL PERIODICALS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum Gravity and Plural Pursuit in Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#addressing-philosophical-research-challenges-with-rag-systems" id="toc-addressing-philosophical-research-challenges-with-rag-systems" class="nav-link" data-scroll-target="#addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</a></li>
+  <li><a href="#potential-applications-of-rag-systems-in-philosophy" id="toc-potential-applications-of-rag-systems-in-philosophy" class="nav-link" data-scroll-target="#potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of RAG Systems in Philosophy</a></li>
+  <li><a href="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" id="toc-developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" class="nav-link" data-scroll-target="#developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example RAG System: The Stanford Encyclopedia of Philosophy</a></li>
+  <li><a href="#sep-rag-system-overview-and-frontend-details" id="toc-sep-rag-system-overview-and-frontend-details" class="nav-link" data-scroll-target="#sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> SEP RAG System Overview and Frontend Details</a></li>
+  <li><a href="#optimising-chunk-size-a-philosophical-perspective" id="toc-optimising-chunk-size-a-philosophical-perspective" class="nav-link" data-scroll-target="#optimising-chunk-size-a-philosophical-perspective"><span class="header-section-number">12.5</span> Optimising Chunk Size: A Philosophical Perspective</a></li>
+  <li><a href="#results-cautions-and-open-challenges-in-rag-implementation" id="toc-results-cautions-and-open-challenges-in-rag-implementation" class="nav-link" data-scroll-target="#results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in RAG Implementation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Paul Näger <a href="mailto:paul.naeger@cis.lmu.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            LMU München
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>This chapter explores the application of Retrieval-Augmented Generation (RAG) systems within philosophical research, specifically addressing the unique challenges posed by the discipline’s emphasis on linguistic and semantic accuracy. The authors highlight the limitations of standalone Large Language Models (<em>LLMs</em>) for philosophical inquiry, including their lack of direct access to full texts, restricted context windows, and inability to attribute claims reliably. Consequently, <em>RAG</em> systems emerge as a suitable solution, enabling direct engagement with specific corpora and providing verifiable citations.</p>
+<p>The authors detail a <em>RAG</em> system prototype developed using the <em>Stanford Encyclopedia of Philosophy</em> as its data source. This system aims to facilitate both didactic engagement with philosophical texts and advanced research tasks, such as fact-checking, corpus exploration, and passage identification for close reading. Crucially, the development process revealed that effective <em>RAG</em> implementation necessitates extensive “tweaking” and rigorous, domain-specific evaluation. The system’s architecture includes a frontend for user interaction, a backend for processing, and a comparative output display that benchmarks <em>RAG</em> performance against <em>LLM</em>-only responses.</p>
+<p>A key optimisation involved determining the optimal chunk size for text retrieval. This process revealed that main sections of the highly systematised <em>Stanford Encyclopedia</em> yielded superior results despite their length. These findings underscore <em>RAG</em> systems’ capacity to integrate verbatim corpora and domain knowledge, thereby reducing hallucinations and enabling citation. Nevertheless, the authors caution that <em>RAGs</em> require domain expertise for effective tweaking and evaluation, as their performance remains highly sensitive to the specific corpus, question types, and evaluation criteria. A notable challenge identified involves <em>RAGs’</em> tendency to provide less effective responses to broad overview questions, as their focus on local information can obscure broader perspectives. This observation suggests a future direction towards more flexible, agentic <em>RAG</em> systems capable of discerning question types.</p>
+</section>
+<section id="addressing-philosophical-research-challenges-with-rag-systems" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>Philosophical inquiry frequently necessitates precise engagement with foundational texts. This requirement is exemplified by questions such as Aristotle’s theory of matter in the <em>Physics</em> or the evolution of Einstein’s concept of locality from his early relativity works to his 1948 paper on “Quantenmechanik und Wirklichkeit.” Whilst Large Language Models (<em>LLMs</em>) like <em>ChatGPT</em> can offer decent, differentiated answers to such queries, they present several significant limitations for rigorous philosophical research.</p>
+<p>Primarily, <em>LLMs</em> contend with an inherent problem of access. Although their training data may include full texts, they cannot directly quote specific passages or chapters verbatim without an online search, which itself is constrained by copyright. Crucially, <em>LLM</em> training mechanisms actively prevent verbatim memorisation, instead focusing on learning generalisable statistical rules for text production. Consequently, they cannot provide the deep, fine-grained textual analysis essential for philosophical work. Furthermore, <em>LLMs</em> face a limited context window; even models like <em>ChatGPT 4o</em>, with 128,000 tokens, quickly exhaust their capacity when processing extensive philosophical corpora. Finally, <em>LLMs</em> inherently struggle with attribution, failing to provide verifiable sources or citations for their claims, which can lead to unverified information or outright hallucinations.</p>
+<p>Retrieval-Augmented Generation (<em>RAG</em>) systems offer a robust solution to these challenges. A typical <em>RAG</em> setup integrates a specific data source—such as Aristotle’s or Einstein’s complete works—from which documents are retrieved, often via semantic search, though hybrid or classic search options also exist. The system then augments user prompts with relevant text chunks, directly addressing the limitations of standalone <em>LLMs</em>. This approach resolves the problem of access by providing the <em>LLM</em> with the original text sources, mitigates context window constraints by supplying only relevant segments, and crucially, enables the attribution of claims, offering verifiable citations akin to those found in platforms like <em>Perplexity</em>.</p>
+</section>
+<section id="potential-applications-of-rag-systems-in-philosophy" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="potential-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Potential Applications of RAG Systems in Philosophy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p><em>RAG</em> systems hold significant promise for philosophical applications, fundamentally transforming how scholars and students interact with complex texts. The overarching concept involves enabling users to “chat” with philosophical corpora, such as Locke’s complete works, in a manner akin to <em>ChatGPT</em>, yet with the crucial advantage of providing much more detailed domain knowledge and a verbatim text basis.</p>
+<p>Didactically, these systems prove invaluable. They facilitate student engagement with challenging texts; for instance, they allow students to initiate their exploration of Locke’s <em>Essay</em> by querying its general ideas before progressively delving into specific concepts like his epistemology or theory of matter. This iterative questioning fosters a deeper, more instructive understanding of the texts.</p>
+<p>Beyond pedagogy, <em>RAG</em> systems offer compelling applications for research. They enable reliable fact lookup in handbooks, effectively modernising the traditional process of manually consulting physical books for footnotes and remarks. Furthermore, scholars can utilise <em>RAGs</em> to explore previously unexamined or newly digitised corpora, gaining comprehensive overviews of their contents. The systems also assist in identifying specific passages relevant for close reading, directly supporting focused scholarly analysis. Ultimately, the ambition extends to generating detailed answers for at least portions of complex research questions, painting a picture of future capabilities in philosophical inquiry.</p>
+</section>
+<section id="developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="developing-an-example-rag-system-the-stanford-encyclopedia-of-philosophy"><span class="header-section-number">12.3</span> Developing an Example RAG System: The Stanford Encyclopedia of Philosophy</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>To explore the practical utility of <em>RAG</em> systems in philosophy, the authors developed an example implementation utilising the <em>Stanford Encyclopedia of Philosophy</em> (<em>SEP</em>), a widely recognised online handbook, as its primary data source. They meticulously scraped and converted the <em>SEP</em> content into Markdown format, forming the basis for the system.</p>
+<p>Initially, the project aimed simply to create a beneficial tool for the philosophical community. However, during the development and testing phases, a significant challenge emerged: the authors found the <em>RAG</em> system’s initial answers surprisingly poor, often performing worse than direct queries to a standalone <em>ChatGPT</em> instance. This outcome necessitated a shift in the project’s focus, evolving into a qualitative study on the optimal setup of <em>RAG</em> systems for philosophical applications.</p>
+<p>The authors found that improving the system’s performance demanded extensive “tweaking,” involving adjustments to the underlying language models, optimisation of various hyperparameters, and the implementation of more complex algorithms, such as reranking. For this iterative improvement, they adopted a methodology of theoretically grounded trial and error, systematically identifying which measures enhanced answer quality. This process underscored the critical importance of sound evaluation standards, particularly given the nature of philosophical inquiry. Unlike historical research that might seek atomic facts, philosophical questions often elicit complex, unstructured textual propositions. Evaluating the factual accuracy and nuanced understanding within these propositions presents a distinct challenge, demanding robust and sophisticated evaluation criteria.</p>
+</section>
+<section id="sep-rag-system-overview-and-frontend-details" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="sep-rag-system-overview-and-frontend-details"><span class="header-section-number">12.4</span> SEP RAG System Overview and Frontend Details</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>The authors developed the <em>SEP RAG</em> system, which comprises a user-friendly frontend and a robust backend, implemented in several thousand lines of <em>Python</em> code. The frontend provides a clear interface for user interaction, allowing for the configuration of various parameters.</p>
+<p>Specifically, the frontend’s “SEP RAG Details 1” section presents input fields for critical hyperparameters. These include the choice of generative model, the prompt token limit (both model-defined and user-defined), and the number of texts to retrieve. Users can also define a “Persona” for the system and, crucially, input their “Philosophical Question,” exemplified by a query such as “What is priority monism?” A “Generate answer” button initiates the processing.</p>
+<p>For comparative analysis, the “SEP RAG Details 2” section displays the output in two distinct columns: an “Answer with <em>LLM</em> alone” column serves as a benchmark, whilst the “Answer with <em>RAG</em>” column showcases the system’s enhanced response. This side-by-side presentation facilitates a direct and immediate comparison of performance. Finally, the “SEP RAG Details 3” section offers a comprehensive “Retrieved Texts Overview.” This detailed list includes file names, section headings, text lengths in tokens, total tokens, and an explicit indication of which texts were successfully included in the prompt and which were truncated due to token limitations.</p>
+</section>
+<section id="optimising-chunk-size-a-philosophical-perspective" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="optimising-chunk-size-a-philosophical-perspective"><span class="header-section-number">12.5</span> Optimising Chunk Size: A Philosophical Perspective</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p>Optimising the chunk size represents a critical hyperparameter adjustment in <em>RAG</em> system development. The authors explored three primary chunking options: a fixed number of words, typically around 500 tokens, a common and straightforward criterion in computer science; chunking by paragraphs; and chunking by sections, whether at a low or high level.</p>
+<p>Remarkably, the most effective results emerged from utilising the main sections of the <em>Stanford Encyclopedia of Philosophy</em> as the primary retrieval documents. This outcome surprised the authors, particularly given that the average section length, at approximately 3,000 words, substantially exceeded the embedding model’s typical cutoff of just over 500 words. The authors hypothesise that this success stems from the highly systematised nature of the <em>Stanford Encyclopedia</em>; its main sections are so well-structured that their initial 500 words often convey the core ideas effectively.</p>
+<p>Nevertheless, this finding carries a crucial generalisability caveat. This section-based chunking strategy might not prove effective for more heterogeneous texts that lack such rigorous internal organisation. Philosophical arguments, in particular, frequently “spread” across multiple pages, requiring extensive explanation beyond the confines of a single paragraph. Consequently, chunking by paragraphs can artificially fragment semantically coherent arguments, diminishing the quality of the retrieved information.</p>
+</section>
+<section id="results-cautions-and-open-challenges-in-rag-implementation" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="results-cautions-and-open-challenges-in-rag-implementation"><span class="header-section-number">12.6</span> Results, Cautions, and Open Challenges in RAG Implementation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_012_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p><em>RAG</em> systems offer compelling advantages for scholarly applications. They seamlessly integrate verbatim corpora and highly specific domain knowledge, which dramatically reduces the occurrence of hallucinations whilst enabling the citation of relevant documents for generated answers. Consequently, <em>RAG</em> setups are inherently well-suited to assist with a diverse array of scientific tasks.</p>
+<p>Nevertheless, the authors highlight crucial cautions. Firstly, <em>RAG</em> systems fundamentally necessitate extensive “tweaking” to achieve optimal performance. Secondly, rigorous evaluation proves indispensable, demanding a representative set of questions and corresponding expected answers. This evaluation process, moreover, critically requires the involvement of domain experts, as no single <em>RAG</em> setup can universally claim superiority across all domains, corpus types, or question types. Each implementation demands specific tailoring.</p>
+<p>Several open challenges persist. A significant issue arises when the system fails to retrieve relevant documents, leading to a noticeable decrease in answer quality and necessitating prompt adjustments. Intriguingly, <em>RAGs</em> often yield inferior results for widely discussed overview questions, such as “What are the central arguments against scientific realism?” This counterintuitive outcome stems from <em>RAGs’</em> inherent focus on the local information contained within retrieved chunks; this granular focus can inadvertently distract from the broader perspective required for comprehensive overview responses. Addressing this limitation, the authors suggest developing more flexible systems capable of discerning different question types, thereby paving the way for the emergence of more sophisticated, agentic <em>RAG</em> systems.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Science dynamics and AI">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_015.html" class="pagination-link" aria-label="Quantum Gravity and Plural Pursuit in Science">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum Gravity and Plural Pursuit in Science</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

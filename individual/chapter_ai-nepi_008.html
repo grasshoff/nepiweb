@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.14">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gerd Graßhoff">
+<meta name="dcterms.date" content="2025-01-01">
+
+<title>8&nbsp; Modeling Science – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_009.html" rel="next">
+<link href="./chapter_ai-nepi_007.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_008.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy, and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GENRE CLASSIFICATION FOR HISTORICAL MEDICAL PERIODICALS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum Gravity and Plural Pursuit in Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#evolution-of-large-language-models-and-their-limitations" id="toc-evolution-of-large-language-models-and-their-limitations" class="nav-link" data-scroll-target="#evolution-of-large-language-models-and-their-limitations"><span class="header-section-number">8.1</span> Evolution of Large Language Models and Their Limitations</a></li>
+  <li><a href="#the-imperative-of-validation-introducing-computational-epistemology" id="toc-the-imperative-of-validation-introducing-computational-epistemology" class="nav-link" data-scroll-target="#the-imperative-of-validation-introducing-computational-epistemology"><span class="header-section-number">8.2</span> The Imperative of Validation: Introducing Computational Epistemology</a></li>
+  <li><a href="#practical-application-historical-inquiry-workflow" id="toc-practical-application-historical-inquiry-workflow" class="nav-link" data-scroll-target="#practical-application-historical-inquiry-workflow"><span class="header-section-number">8.3</span> Practical Application: Historical Inquiry Workflow</a></li>
+  <li><a href="#scholarly-curation-of-evidence" id="toc-scholarly-curation-of-evidence" class="nav-link" data-scroll-target="#scholarly-curation-of-evidence"><span class="header-section-number">8.4</span> Scholarly Curation of Evidence</a></li>
+  <li><a href="#the-scholarium-registry-a-substitute-for-embeddings" id="toc-the-scholarium-registry-a-substitute-for-embeddings" class="nav-link" data-scroll-target="#the-scholarium-registry-a-substitute-for-embeddings"><span class="header-section-number">8.5</span> The Scholarium Registry: A Substitute for Embeddings</a></li>
+  <li><a href="#user-interface-and-multimodal-model-integration" id="toc-user-interface-and-multimodal-model-integration" class="nav-link" data-scroll-target="#user-interface-and-multimodal-model-integration"><span class="header-section-number">8.6</span> User Interface and Multimodal Model Integration</a></li>
+  <li><a href="#fair-data-infrastructure" id="toc-fair-data-infrastructure" class="nav-link" data-scroll-target="#fair-data-infrastructure"><span class="header-section-number">8.7</span> FAIR Data Infrastructure</a></li>
+  <li><a href="#technical-support-and-open-collaboration" id="toc-technical-support-and-open-collaboration" class="nav-link" data-scroll-target="#technical-support-and-open-collaboration"><span class="header-section-number">8.8</span> Technical Support and Open Collaboration</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gerd Graßhoff <a href="mailto:gerd.grasshoff@hu-berlin.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Humboldt Universität zu Berlin
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>This chapter meticulously details a novel approach to historical and scientific inquiry. The authors leverage advanced AI models whilst addressing the inherent limitations of current Large Language Models (<em>LLMs</em>). Their core objective involves establishing a robust framework for “Computational Epistemology,” a new discipline focused on validating propositions, arguments, and evidence within scholarly contexts. The authors contend that contemporary <em>LLMs</em>, despite their rapid evolution—from “Attention is all you need” to “Thinking is all you need”—lack crucial capabilities. These include countering hallucinations, discerning true meaning from embedding vectors, prioritising justified knowledge over popular falsehoods, and formulating effective inquiry plans.</p>
+<p>To bridge these critical gaps, the proposed system champions “validation” as the paramount requirement. It aims to provide reasons, arguments, and evidence for propositions, alongside justifications for actions, thereby fostering genuine “epistemic agency.” This necessitates the identification of propositions beyond mere sentences, the extraction of arguments from texts, and the reconstruction of intentions, plans, and actions of historical figures from documented traces.</p>
+<p>The practical implementation centres on a sophisticated working environment, exemplified by the <em>Cursor</em> platform, which integrates multimodal <em>LLMs</em> such as <em>Gemini 2.5</em>, <em>Claude</em>, and <em>Llama</em>. An AI agent, named <em>Bernoulli</em> by the research team, operates within this environment, enabling complex historical inquiries, such as reconstructing the involvement of Leonhard Euler in the construction failures at Sanssouci castle.</p>
+<p>The infrastructure comprises five essential components:</p>
+<ul>
+<li><p>Firstly, a scholarly curated editorial board oversees the validation of primary sources, including monumental works like the <em>Opera Omnia Euler</em>.</p></li>
+<li><p>Secondly, a “<em>Scholarium</em>” registry serves as a structured database of content items—encompassing personal chronologies, communication acts, and the historical use of terminology, tools, and data—critically serving as a validated substitute for embedding-based approaches.</p></li>
+<li><p>Thirdly, an <em>AI Cockpit</em> user interface facilitates interaction with the integrated <em>LLMs</em>.</p></li>
+<li><p>Fourthly, a FAIR (Findable, Accessible, Interoperable, Reusable) data infrastructure, specifically <em>Zenodo</em> hosted by <em>CERN</em>, ensures the long-term preservation and publication of research data.</p></li>
+<li><p>Finally, <em>Open Science Technology</em>, a dedicated startup, provides technical support, including an <em>MCP API</em> server, promoting open source, open access, open data, and fostering global open collaboration for standardised AI access to knowledge.</p></li>
+</ul>
+<p>This comprehensive framework directly addresses the challenges of maintaining scholarly expertise in the digital age, ensuring data longevity, and overcoming the limitations of current AI in delivering complete and historically validated answers.</p>
+</section>
+<section id="evolution-of-large-language-models-and-their-limitations" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="evolution-of-large-language-models-and-their-limitations"><span class="header-section-number">8.1</span> Evolution of Large Language Models and Their Limitations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>Large Language Models have undergone a remarkably swift evolution. They progressed from the foundational principle of “Attention is all you need” to the widespread adoption of “Chat with <em>GPT</em>.” Subsequently, the emphasis shifted towards “Context is all you need,” often augmented by Retrieval Augmented Generation (<em>RAG</em>) techniques. The latest models now propose that “Thinking is all you need,” signifying the current frontier of <em>LLM</em> development.</p>
+<p>Nevertheless, the authors observe that significant capabilities remain absent from these advanced models. Crucially, they lack an inherent “opponent” mechanism to counter hallucinations, a pervasive issue in AI-generated content. Furthermore, embedding vectors, whilst useful for semantic similarity, do not genuinely represent the meanings of expressions. Consequently, <em>LLMs</em> frequently formulate statements that, whilst superficially appealing, prove factually incorrect. They also tend to replicate information disseminated via internet media, rather than discerning and prioritising genuinely justified knowledge. Beyond these shortcomings, current models cannot effectively seek what is best justified nor can they formulate optimal plans for scientific inquiry.</p>
+<p>Present technological limitations mean no existing model can achieve these critical objectives, even to a minimal degree. Indeed, current technologies offer no discernible path towards realising these missing goals.</p>
+</section>
+<section id="the-imperative-of-validation-introducing-computational-epistemology" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="the-imperative-of-validation-introducing-computational-epistemology"><span class="header-section-number">8.2</span> The Imperative of Validation: Introducing Computational Epistemology</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>A fundamental requirement for advancing AI capabilities in scholarly contexts centres on validation. Indeed, validation proves indispensable. This process furnishes reasons, arguments, and evidence both for and against the truth of a given proposition. Moreover, it provides justifications for or against the pursuit of specific actions.</p>
+<p>To address this critical need, the authors propose a new discipline: computational epistemology. This field specifically concerns itself with the methods and methodologies required to bridge the existing validation gap. It aims to cultivate “epistemic agency” within AI systems. Achieving this agency necessitates the ability to identify propositions that extend beyond mere sentences, to discern and extract arguments embedded within texts, sources, and historical inquiries, and to accurately identify the intentions, plans, and actions of individuals as documented and traced through historical records.</p>
+</section>
+<section id="practical-application-historical-inquiry-workflow" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="practical-application-historical-inquiry-workflow"><span class="header-section-number">8.3</span> Practical Application: Historical Inquiry Workflow</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>The research team has developed a functional working environment to facilitate historical inquiry. A screenshot of this interface reveals an open historical source on the left-hand side—specifically, a book titled “<em>Dem Allerdurchlauchtigsten, Großmächtigsten König und Herrn Friedrich Wilhelm dem Zweiten König von Preußen</em>.” The right-hand panel, labelled “<em>Personen und Aufgaben in der Bibliothek</em>” (Persons and tasks in the library), presents the inquiry interface.</p>
+<p>Within this environment, users can formulate precise questions, such as “<em>Rekonstruiere welche Personen an der Wasserfontaine welche Arbeiten ausführten</em>” (Reconstruct which persons performed which work on the water fountain). This particular query relates to the historical context of Sanssouci castle’s construction under Frederick the Great, a project notable for one of the 18th century’s most significant construction failures. Historians of science have long debated the extent of Leonhard Euler’s involvement and culpability in this failure, an open question that this AI-assisted inquiry seeks to address. The system aims to provide a validated, qualified, and reliable answer, grounded in proven evidence rather than mere hearsay. The output typically comprises a detailed list of individuals, their contributions, work dates, payments received, and their successes or failures.</p>
+<p>The technical infrastructure underpinning this system includes a dedicated inquiry window within the <em>Cursor</em> environment, a versatile platform designed for AI agents. An AI agent, presumptuously named <em>Bernoulli</em> by the authors, conducts these complex historical investigations. A significant challenge, however, extends beyond merely reading individual <em>PDF</em> sources; the system must search all available sources, as simple indexing or token concentration proves insufficient for comprehensive historical analysis.</p>
+</section>
+<section id="scholarly-curation-of-evidence" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="scholarly-curation-of-evidence"><span class="header-section-number">8.4</span> Scholarly Curation of Evidence</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>The research infrastructure incorporates a crucial first component: a scholarly curated editorial board responsible for validating and preparing primary sources. This rigorous oversight ensures the integrity and reliability of the foundational data. Exemplifying this commitment to scholarly excellence, the <em>Opera Omnia</em> of Euler stands as a monumental achievement. This collection, comprising 86 volumes, represents 120 years of dedicated scholarly work by numerous experts. Its comprehensive editing, completed just two years prior, encompasses all of Euler’s letters and his 866 published works.</p>
+<p>Beyond Euler’s oeuvre, the authors integrate other foundational scholarly collections, including the <em>Kepler Gesammelte Werke</em> and the <em>Brahe Opera Omnia</em>, further enriching their evidential base. A visual representation of this meticulous curation appears in a screenshot of the “<em>LEONHARD EULER BRIEFWECHSEL OPERA OMNIA SERIES QUARTA A: COMMERCIUM EPISTOLICUM VOL. I HERAUSGEBER A. JUSKEVIČ</em>” webpage, highlighting the detailed organisation of these invaluable historical documents.</p>
+</section>
+<section id="the-scholarium-registry-a-substitute-for-embeddings" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="the-scholarium-registry-a-substitute-for-embeddings"><span class="header-section-number">8.5</span> The Scholarium Registry: A Substitute for Embeddings</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 08</figcaption>
+</figure>
+</div>
+<p>A pivotal and innovative component of the system is the “<em>Scholarium</em>” registry, which serves as a direct substitute for conventional embedding-based approaches. This <em>Scholarium</em> functions as a meticulously curated database of content items, designed by the authors to provide a highly detailed inventory of historically proven activities.</p>
+<p>The registry organises information into various chronologies, capturing a comprehensive range of historical data. These include chronologies of personal actions, statements, and the implications, arguments, and inquiries made by individuals. Furthermore, it meticulously documents the historical use of language, terminology, and concepts, alongside the application of specific concepts, relations, models, and methods. The registry also tracks the utilisation of tools, devices, data, information, evidence, and sources. Each entry undergoes rigorous validation against original historical sources, ensuring the integrity and accuracy of the documented activities. The system also integrates with the <em>MCP API</em>, as indicated by a screenshot of “<em>ANTHROPIC Introducing the Model Context Protocol</em>,” signifying its adherence to modern <em>API</em> standards for AI interaction.</p>
+</section>
+<section id="user-interface-and-multimodal-model-integration" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="user-interface-and-multimodal-model-integration"><span class="header-section-number">8.6</span> User Interface and Multimodal Model Integration</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_09.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 09</figcaption>
+</figure>
+</div>
+<p>The system’s third key component is its user interface, termed the “<em>AI Cockpit</em>.” This interface allows researchers to interact with the meticulously curated historical records using readily accessible multimodal models. The developers have found that employing multimodal models optimally addresses the complex requirements of historical inquiry tasks.</p>
+<p>Specifically, the system integrates leading models such as <em>Claude</em>, <em>Gemini</em> (including the latest <em>Gemini 2.5</em> iteration), and <em>Llama</em>. The distinct advantage of these multimodal models lies in their capacity to seamlessly combine information derived from both text and images, a crucial feature for comprehensive historical analysis. The entire platform operates within the <em>LettreAI</em> framework on <em>Cursor</em>, providing a consistent and powerful working environment, visually similar to the inquiry panel previously shown in the presentation.</p>
+</section>
+<section id="fair-data-infrastructure" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="fair-data-infrastructure"><span class="header-section-number">8.7</span> FAIR Data Infrastructure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>A critical fourth component establishes a robust FAIR (Findable, Accessible, Interoperable, Reusable) repository for the long-term storage and publication of research data. The authors have selected <em>Zenodo</em> for this purpose, a platform hosted by <em>CERN</em> in Geneva. This choice ensures the enduring availability of the data for many years, supporting the principles of open science. A screenshot of the <em>Zenodo</em> website illustrates its functionality, displaying “Featured communities” and recent uploads, including a dataset for a journal article on “<em>Wide spectral range optical characterization of terbium gallium garnet (TGG) single crystal by universal dispersion mode</em>.”</p>
+</section>
+<section id="technical-support-and-open-collaboration" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="technical-support-and-open-collaboration"><span class="header-section-number">8.8</span> Technical Support and Open Collaboration</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_008_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>The final essential component involves dedicated technical support, provided by <em>Open Science Technology</em>, a startup committed to the principles of Open Source, Open Access, and Open Data. This organisation manages the operational infrastructure, including an <em>MCP API Server</em>.</p>
+<p>The <em>MCP API Server</em> plays a crucial role in standardising AI access <em>APIs</em> to knowledge globally, thereby enabling worldwide inquiries by various artificial intelligence models. This initiative represents a significant endeavour to establish a universal standard for AI interaction with scholarly knowledge, fostering an environment of open collaboration across the international research community.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_007.html" class="pagination-link" aria-label="Explainable AI and AI-based Scientific Insights in the Humanities">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_009.html" class="pagination-link" aria-label="The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

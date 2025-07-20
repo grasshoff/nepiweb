@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.13">
+<meta name="generator" content="quarto-1.8.17">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Paul Näger">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="dcterms.date" content="2025-06-21">
 
-<title>12&nbsp; RAG Systems for Philosophical Research – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<title>12&nbsp; Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights – AI-NEPI Conference Proceedings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a126389619fad6dbfb296a5315d49fef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c2d8198b7f72dec16de60f0cb3fab69f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a0afd4a9b901cc50d8ed64d4ec5e2aec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -85,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_012.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_012.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,12 +96,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+      <a href="./">AI-NEPI Conference Proceedings</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -119,85 +122,85 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">AI-assisted Methods for History and Philosophy of Science Workshop: Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models in History, Philosophy, and Sociology of Science: A Primer and Critical Reflections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Philosophy at Scale: Introducing OpenAlex Mapper</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methodological Frameworks for Analysing Scientific Literature and Debates</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification for Historical Medical Periodicals</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE: Tracing the Influence of Ancient Wisdom on Early Modern Natural Philosophy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and Understanding LLMs &amp; AI-based Scientific Insights in the Humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modelling Science: LLM for the History, Philosophy and Sociology of Science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI, Computational Epistemology, and Open Science Infrastructure</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SDG-Research in Bibliometric DBs - LLMs for HPSS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">An Analysis of Sustainable Development Goal Research in Bibliometric Databases and the Application of Large Language Models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Parsing Footnotes in Law and Humanities Scholarship with Large Language Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AI-NEPI: Citation extraction from scholarly publications in the humanities</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A Comparative Analysis of Topic Modeling Techniques for Scholarly Corpora</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Making Transformer-Based LLMs Time-Aware: A Proof of Concept</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -208,14 +211,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context for Language Variation and Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Unlocking Science’s Hidden Dynamics: A Computational Approach to Archival Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Transforming Biographical Sources into Knowledge Graphs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
   </div>
 </li>
     </ul>
@@ -229,24 +238,24 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#addressing-philosophical-research-challenges-with-rag-systems" id="toc-addressing-philosophical-research-challenges-with-rag-systems" class="nav-link" data-scroll-target="#addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</a></li>
-  <li><a href="#diverse-applications-of-rag-systems-in-philosophy" id="toc-diverse-applications-of-rag-systems-in-philosophy" class="nav-link" data-scroll-target="#diverse-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Diverse Applications of RAG Systems in Philosophy</a></li>
-  <li><a href="#developing-the-stanford-encyclopedia-of-philosophy-rag-system" id="toc-developing-the-stanford-encyclopedia-of-philosophy-rag-system" class="nav-link" data-scroll-target="#developing-the-stanford-encyclopedia-of-philosophy-rag-system"><span class="header-section-number">12.3</span> Developing the <em>Stanford Encyclopedia of Philosophy</em> RAG System</a></li>
-  <li><a href="#hyperparameter-optimisation-the-critical-role-of-chunk-size" id="toc-hyperparameter-optimisation-the-critical-role-of-chunk-size" class="nav-link" data-scroll-target="#hyperparameter-optimisation-the-critical-role-of-chunk-size"><span class="header-section-number">12.4</span> Hyperparameter Optimisation: The Critical Role of Chunk Size</a></li>
-  <li><a href="#key-findings-and-future-directions-for-rag-systems" id="toc-key-findings-and-future-directions-for-rag-systems" class="nav-link" data-scroll-target="#key-findings-and-future-directions-for-rag-systems"><span class="header-section-number">12.5</span> Key Findings and Future Directions for RAG Systems</a></li>
+  <li><a href="#scholarly-challenges-of-large-language-models" id="toc-scholarly-challenges-of-large-language-models" class="nav-link" data-scroll-target="#scholarly-challenges-of-large-language-models"><span class="header-section-number">12.1</span> Scholarly Challenges of Large Language Models</a></li>
+  <li><a href="#a-case-study-in-philosophical-rag" id="toc-a-case-study-in-philosophical-rag" class="nav-link" data-scroll-target="#a-case-study-in-philosophical-rag"><span class="header-section-number">12.2</span> A Case Study in Philosophical RAG</a></li>
+  <li><a href="#system-interface-and-comparative-analysis" id="toc-system-interface-and-comparative-analysis" class="nav-link" data-scroll-target="#system-interface-and-comparative-analysis"><span class="header-section-number">12.3</span> System Interface and Comparative Analysis</a></li>
+  <li><a href="#optimising-hyperparameters-and-chunk-size" id="toc-optimising-hyperparameters-and-chunk-size" class="nav-link" data-scroll-target="#optimising-hyperparameters-and-chunk-size"><span class="header-section-number">12.4</span> Optimising Hyperparameters and Chunk Size</a></li>
+  <li><a href="#conclusion-and-future-directions" id="toc-conclusion-and-future-directions" class="nav-link" data-scroll-target="#conclusion-and-future-directions"><span class="header-section-number">12.5</span> Conclusion and Future Directions</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">RAG Systems for Philosophical Research</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applying Retrieval-Augmented Generation to Philosophical Research: A Case Study and Methodological Insights</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-body">
+<div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -260,13 +269,13 @@ ul.task-list li input[type="checkbox"] {
       </div>
   </div>
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
       
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">June 21, 2025</p>
     </div>
   </div>
   
@@ -280,80 +289,70 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>Philosophers frequently grapple with complex research questions that demand precise linguistic and semantic accuracy. While conventional Large Language Models (LLMs) offer differentiated responses, they encounter significant limitations concerning access to full texts, context window capacity, and reliable attribution. Consequently, researchers have developed Retrieval-Augmented Generation (RAG) systems to overcome these challenges. This innovative approach integrates a specific data source, a robust retrieval mechanism—employing semantic, hybrid, or classic search—and a prompt augmentation process. This architecture enables LLMs to access and cite original source material directly, thereby enhancing the reliability and verifiability of generated content.</p>
-<p>The utility of RAG systems extends across both didactics and research. For pedagogical purposes, these systems facilitate interactive engagement with extensive philosophical corpora, such as Locke’s <em>Oeuvre</em>, allowing students to delve deeply into complex texts and progressively refine their understanding. In research, RAG systems streamline fact-finding in handbooks, enable the exploration of previously unexamined corpora, assist in identifying passages for close reading, and potentially provide detailed answers to intricate research questions.</p>
-<p>A practical implementation involved coding a RAG system using the <em>Stanford Encyclopedia of Philosophy</em> as its primary data source. Initially conceived as a community tool, this project evolved into a qualitative study examining optimal RAG system setups for philosophical inquiry. The development process, characterised by theoretically grounded trial and error, revealed the critical importance of hyperparameter optimisation and robust evaluation criteria. Notably, optimising chunk size proved crucial for this highly systematised source; selecting main sections as retrieval documents, despite their length, consistently yielded superior results [Empirical Study, Year].</p>
-<p>RAG systems demonstrably integrate verbatim corpora and domain-specific knowledge, significantly reducing hallucinations and enabling the citation of relevant documents. Nevertheless, their effective deployment necessitates extensive tweaking and rigorous evaluation by domain experts, as optimal configurations vary across domains and corpus types. A peculiar observation indicates that RAGs sometimes perform less effectively on broad overview questions, as their inherent focus on local information can obscure the larger perspective. Future developments aim to create more flexible, agentic RAG systems capable of discerning question types and adapting their approach accordingly.</p>
+<p>This chapter presents a methodological exploration into applying Retrieval-Augmented Generation (RAG) systems to enhance philosophical research. It confronts the inherent limitations of standard Large Language Models (<em>LLMs</em>), including their inability to access full texts, their propensity for hallucination, their constrained context windows, and their lack of source attribution. The authors propose the RAG architecture as a robust solution, integrating a specific corpus—such as the works of Aristotle or Einstein—with an <em>LLM</em> to furnish verifiable, context-rich answers.</p>
+<p>A practical case study documents the development of a RAG system that uses the <em>Stanford Encyclopedia of Philosophy</em> (<em>SEP</em>) as its knowledge base. This project reveals that a naive implementation yields poor results, necessitating significant refinement of models, hyperparameters, and algorithms like reranking. The investigation highlights the critical role of hyperparameter optimisation, particularly chunk size. For the highly structured <em>SEP</em> corpus, chunking by main section surprisingly outperformed more granular methods.</p>
+<p>The chapter concludes that whilst RAG systems offer profound advantages for scholarly tasks by reducing hallucinations and enabling citations, their effectiveness is highly contingent on the corpus, the nature of the research questions, and rigorous evaluation by domain experts. Future work points towards developing more flexible, agentic RAG systems capable of discerning between different query types.</p>
 </section>
-<section id="addressing-philosophical-research-challenges-with-rag-systems" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="addressing-philosophical-research-challenges-with-rag-systems"><span class="header-section-number">12.1</span> Addressing Philosophical Research Challenges with RAG Systems</h2>
+<section id="scholarly-challenges-of-large-language-models" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="scholarly-challenges-of-large-language-models"><span class="header-section-number">12.1</span> Scholarly Challenges of Large Language Models</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_012_slide_01.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 01</figcaption>
+<p><img src="images/ai-nepi_012_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
 </figure>
 </div>
-<p>Philosophers frequently pose intricate research questions that demand nuanced understanding and precise textual engagement. Consider, for instance, discerning Aristotle’s theory of matter within his <em>Physics</em> or tracing the evolution of Einstein’s concept of locality from his early relativity works to his 1948 paper, “Quantenmechanik und Wirklichkeit.” While contemporary Large Language Models (LLMs) like <em>ChatGPT</em> offer seemingly decent, differentiated answers to such queries, they encounter fundamental limitations that hinder their utility in rigorous academic contexts.</p>
-<p>Crucially, LLMs suffer from an “access problem.” Although full texts might have featured in their training data, these models lack direct, on-demand access to the complete works. Consequently, an LLM cannot reliably quote specific chapters or papers verbatim; it either states an inability to quote or, more problematically, hallucinates content. While online search capabilities can sometimes retrieve quotes where copyright permits, accurate reproduction remains a complex issue. Fundamentally, LLM training mechanisms actively prevent verbatim memorisation, instead fostering the learning of generalisable statistical rules for text production. Philosophical research, however, demands direct engagement with original text sources, requiring deep immersion in their fine-grained formulations and precise citation.</p>
-<p>Beyond this, LLMs contend with a “limited context window.” For example, <em>ChatGPT-4o</em> offers 128,000 tokens of context [OpenAI, Year]; while substantial, this capacity quickly proves insufficient when processing extensive philosophical corpora, which can span millions of words. Furthermore, a significant “attribution problem” persists: standard LLMs do not inherently provide sources or citations for their claims, a critical requirement for academic rigour. Researchers require precise, numbered citations for each central statement, akin to features found in tools like <em>Perplexity</em>.</p>
-<p>Retrieval-Augmented Generation (RAG) systems directly address these pervasive challenges. A RAG setup integrates a specific data source, such as Aristotle’s or Einstein’s corpus, with a robust retrieval mechanism. This mechanism typically employs semantic search, though hybrid or classic search options also exist. Subsequently, the system augments the LLM’s prompt with relevant chunks of text retrieved from the corpus. This innovative architecture effectively solves the access problem by furnishing the LLM with the necessary full text, mitigates the limited context window by supplying only pertinent information, and resolves the attribution issue by enabling direct citation of sources.</p>
+<p>Standard Large Language Models can produce differentiated answers to complex philosophical questions, such as analysing Aristotle’s theory of matter or tracing the evolution of Einstein’s concept of locality. Their utility for deep scholarly research, however, is constrained by several fundamental problems. A Retrieval-Augmented Generation system offers a structured approach to overcome these limitations.</p>
+<p>The core challenge with <em>LLMs</em> is their lack of direct access to full-text sources. Although trained on vast datasets, their training mechanism is explicitly designed to learn generalisable patterns of text production, not to memorise and recall texts verbatim. Consequently, when prompted for a specific quotation, an <em>LLM</em> might either refuse or, more problematically, hallucinate a response. Such an outcome is antithetical to philosophical research, which demands precise engagement with the fine-grained formulations of original texts.</p>
+<p>Furthermore, the context window of <em>LLMs</em>, whilst growing, remains a significant constraint. A model like <em>ChatGPT 4.0</em> offers a 128,000-token context, yet this is quickly exhausted when dealing with the large corpora typical of scholarly inquiry. RAG systems directly address these issues. The architecture retrieves relevant documents from a specified data source—for instance, the complete works of a philosopher—using methods like semantic or hybrid search. These retrieved text chunks then augment the user’s prompt, feeding the <em>LLM</em> with the exact textual evidence needed to formulate a grounded response. This process not only provides access to the verbatim text but also solves the critical problem of attribution, as the system can cite the sources for its claims, much like the functionality seen in tools such as <em>Perplexity</em>.</p>
 </section>
-<section id="diverse-applications-of-rag-systems-in-philosophy" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="diverse-applications-of-rag-systems-in-philosophy"><span class="header-section-number">12.2</span> Diverse Applications of RAG Systems in Philosophy</h2>
+<section id="a-case-study-in-philosophical-rag" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="a-case-study-in-philosophical-rag"><span class="header-section-number">12.2</span> A Case Study in Philosophical RAG</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_012_slide_11.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 11</figcaption>
+<p><img src="images/ai-nepi_012_slide_09.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 09</figcaption>
 </figure>
 </div>
-<p>The fundamental concept underpinning RAG systems in philosophy involves enabling interactive engagement with extensive philosophical corpora, such as Locke’s <em>Oeuvre</em>, whilst surpassing the capabilities of conventional LLMs. This approach furnishes users with significantly more detailed domain knowledge and a verifiable verbatim text basis, crucial for academic integrity.</p>
-<p>Beyond its research utility, the system offers substantial didactic advantages. Repeated questioning, a core feature of RAG systems, proves highly instructive for students. It allows them to approach complex texts, like Locke’s <em>An Essay Concerning Human Understanding</em>, by initially chatting with the corpus to grasp general concepts. Students can then progressively deepen their inquiry into specific areas such as epistemology or the theory of matter. This interactive method provides an effective pathway for students to immerse themselves in philosophical texts and develop their critical analytical skills.</p>
-<p>Crucially, RAG systems hold considerable promise for research, offering several distinct benefits:</p>
-<ol type="1">
-<li><strong>Reliable Fact Lookup:</strong> They facilitate reliable fact lookup in handbooks, providing accurate information for orientation, remarks, and footnotes—a significant improvement over the often unreliable factual output of standalone LLMs.</li>
-<li><strong>Exploration of Unexamined Corpora:</strong> Researchers can employ RAGs to explore previously unexamined corpora. While digitisation of unpublished texts remains a prerequisite, the system then allows for a deeper, interactive overview of their content, potentially uncovering new insights.</li>
-<li><strong>Identification of Passages for Close Reading:</strong> RAGs assist in identifying specific passages relevant for close reading, streamlining the research process by quickly pinpointing key textual evidence.</li>
-<li><strong>Detailed Answers to Complex Questions:</strong> Ultimately, these systems may even generate detailed answers to components of complex research questions, painting a compelling picture of future possibilities within philosophical inquiry.</li>
-</ol>
+<p>The central ambition in applying RAG to philosophy is to facilitate a deep, interactive dialogue with scholarly corpora, such as the complete works of John Locke. This approach promises significant benefits for both didactics and advanced research. For students, it offers an intuitive pathway into complex texts, allowing them to move from broad inquiries to specific epistemological questions. For researchers, RAG systems can function as reliable tools for looking up facts, exploring unexamined corpora, and identifying key passages for close reading. The ultimate goal is for these systems to assist in answering detailed research questions directly.</p>
+<p>To explore this potential, the authors developed a prototype RAG system using the <em>Stanford Encyclopedia of Philosophy</em> (<em>SEP</em>) as its knowledge base, with the initial aim of creating a useful tool for the philosophical community. The team scraped the <em>SEP</em> content into Markdown to serve as the data source. However, a straightforward, textbook implementation of the RAG architecture yielded surprisingly poor results; the answers were often inferior to those generated by a standalone <em>LLM</em> like <em>ChatGPT</em>. This discovery shifted the project’s focus towards rigorous optimisation.</p>
+<p>Improving the system’s performance necessitated a process of extensive adjustment, involving modifications to the models, their hyperparameters, and the introduction of more complex algorithms such as reranking. This optimisation work is largely a matter of trial and error, guided by theoretical principles but ultimately validated by empirical results. A significant challenge emerged in this phase: the evaluation of output quality. Unlike historical queries for atomic facts, philosophical questions elicit complex, unstructured propositions. Developing robust standards to evaluate the factual correctness of these nuanced answers is a non-trivial task that remains a key hurdle.</p>
 </section>
-<section id="developing-the-stanford-encyclopedia-of-philosophy-rag-system" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="developing-the-stanford-encyclopedia-of-philosophy-rag-system"><span class="header-section-number">12.3</span> Developing the <em>Stanford Encyclopedia of Philosophy</em> RAG System</h2>
+<section id="system-interface-and-comparative-analysis" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="system-interface-and-comparative-analysis"><span class="header-section-number">12.3</span> System Interface and Comparative Analysis</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_012_slide_14.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 14</figcaption>
+<p><img src="images/ai-nepi_012_slide_25.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 25</figcaption>
 </figure>
 </div>
-<p>Researchers undertook the development of an example RAG system, utilising the <em>Stanford Encyclopedia of Philosophy</em> (SEP), a widely recognised online handbook, as its primary data source. Initially, the project involved scraping the encyclopedia’s content and converting it into Markdown format for processing.</p>
-<p>The project’s initial aim centred on crafting a practical tool for the philosophical community. However, during the coding and testing phases, the system’s performance proved unexpectedly poor; initial answers were inferior to those generated by <em>ChatGPT</em> alone. This necessitated a significant shift in focus, transforming the endeavour into a qualitative study on optimising RAG system configurations specifically for philosophical applications.</p>
-<p>The development methodology adopted a theoretically grounded trial-and-error approach. This involved extensive tweaking of various parameters, including generative models, hyperparameters, and retrieval algorithms such as reranking, all aimed at enhancing answer quality. A critical discovery during this process was the paramount importance of sound evaluation standards. Unlike historical research, which might seek atomic facts, philosophical inquiries often yield complex, unstructured textual propositions. Consequently, evaluating these answers demands a nuanced assessment of their factual accuracy, coherence, and argumentative strength—a task proving far from straightforward and requiring expert domain knowledge [Evaluation Methodology, Year].</p>
-<p>The implemented system features a user-friendly frontend. This interface presents input fields for selecting the generative model, defining prompt token limits, specifying a persona (e.g., “academic researcher”), and entering the philosophical question—for instance, “What is priority monism?” The output section provides a comparative display, benchmarking the answer generated by the LLM alone against that produced by the RAG system, thereby facilitating direct comparison and highlighting the RAG’s added value. Furthermore, a “Retrieved Texts Overview” details the article names, section headings, token lengths, and indicates which texts were successfully included in the prompt or truncated due to limitations. Powering this interface, the backend comprises a few thousand lines of Python code, orchestrating the system’s complex operations [Software Architecture, Year].</p>
+<p>The project team developed a custom frontend to facilitate interaction with and evaluation of the <em>Stanford Encyclopedia of Philosophy</em> RAG system. The interface, comprising a few thousand lines of code, provides users with controls to configure key hyperparameters, including prompt length and the number of documents to retrieve, alongside a field for submitting their query.</p>
+<p>A central feature of the design is its comparative output display, which is structured to aid analysis. On the left, the system shows a benchmark answer generated by the chosen <em>LLM</em> operating in isolation. On the right, it presents the corresponding answer from the RAG-augmented system. This side-by-side layout enables a direct and immediate comparison, making it easier to assess the value added by the retrieval process.</p>
+<p>To ensure transparency and aid in debugging, the system’s output concludes with a comprehensive list of the texts found during the retrieval stage. This list details the source article names and the specific section headings that the system identified as relevant. Crucially, it also indicates which of these text chunks were successfully included in the final augmented prompt and which were ultimately excluded due to the <em>LLM</em>’s prompt length limitations, providing clear insight into the retrieval and augmentation process.</p>
 </section>
-<section id="hyperparameter-optimisation-the-critical-role-of-chunk-size" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="hyperparameter-optimisation-the-critical-role-of-chunk-size"><span class="header-section-number">12.4</span> Hyperparameter Optimisation: The Critical Role of Chunk Size</h2>
+<section id="optimising-hyperparameters-and-chunk-size" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="optimising-hyperparameters-and-chunk-size"><span class="header-section-number">12.4</span> Optimising Hyperparameters and Chunk Size</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_012_slide_15.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 15</figcaption>
+<p><img src="images/ai-nepi_012_slide_32.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 32</figcaption>
 </figure>
 </div>
-<p>Optimising hyperparameters constitutes a critical phase in RAG system development, with chunk size serving as a prime example of a parameter that significantly impacts performance. Initially, developers consider three primary options for defining text chunks: a fixed number of words—typically around 500 tokens, a clean criterion often favoured in computer science—or alternatively, paragraphs or sections, whether at a low or high level of granularity.</p>
-<p>Empirical testing surprisingly revealed that employing main sections as the retrieval documents yielded the most favourable results for the <em>Stanford Encyclopedia of Philosophy</em> corpus [Experimental Results, Year]. This outcome defied initial expectations, given that the embedding model’s cutoff stood at approximately 500 words, whilst the average section length extended to around 3,000 words. The success of this seemingly counter-intuitive approach stems from the highly systematised nature of the <em>Stanford Encyclopedia of Philosophy</em>. Within this structured work, the initial 500 words of any given section typically encapsulate its core ideas and provide a strong semantic anchor. Consequently, retrieving entire sections, despite their length, provides sufficient context for the LLM to formulate accurate and comprehensive responses. Nevertheless, this specific optimisation may not generalise effectively to more heterogeneous or less rigorously sectioned textual corpora, highlighting the domain-specific nature of RAG system tuning.</p>
+<p>The authors conducted experiments to optimise key hyperparameters, focusing specifically on the ‘chunk size’ used for text retrieval. They considered three primary chunking strategies: using a fixed number of words, a common practice in computer science; splitting the text by paragraphs; or dividing it by semantic sections.</p>
+<p>To some surprise, the investigation revealed that using the main sections of the <em>Stanford Encyclopedia of Philosophy</em> articles as the retrieval units yielded the best results. This outcome was unexpected because the embedding model’s context limit was just over 500 words, whereas the average length of a main section in the corpus was around 3,000 words.</p>
+<p>The team’s hypothesis for this result centres on the unique structure of the data source. The <em>SEP</em> is a highly systematised and well-ordered work. It is likely that the initial 500 words of each major section effectively summarise its core arguments, providing the embedding model with enough information to assess its relevance to a query accurately. This finding underscores a critical lesson: the optimal chunking strategy is not universal but is instead highly contingent on the specific nature of the corpus and the research questions posed. Consequently, this approach might not transfer well to more heterogeneous texts. Future plans involve experimenting with embedding models that possess longer context windows to explore potential further improvements.</p>
 </section>
-<section id="key-findings-and-future-directions-for-rag-systems" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="key-findings-and-future-directions-for-rag-systems"><span class="header-section-number">12.5</span> Key Findings and Future Directions for RAG Systems</h2>
+<section id="conclusion-and-future-directions" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="conclusion-and-future-directions"><span class="header-section-number">12.5</span> Conclusion and Future Directions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/ai-nepi_012_slide_18.jpg" class="img-fluid figure-img"></p>
-<figcaption>Slide 18</figcaption>
+<p><img src="images/ai-nepi_012_slide_40.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 40</figcaption>
 </figure>
 </div>
-<p>RAG systems offer compelling advantages for academic and scientific endeavours, particularly within the humanities. They seamlessly integrate verbatim corpora with specialised domain knowledge, thereby dramatically reducing instances of hallucination—a persistent challenge with standalone LLMs. Furthermore, these systems inherently cite relevant documents for their answers, making them exceptionally well-suited for assisting in diverse scientific tasks that demand verifiable information.</p>
-<p>Nevertheless, several cautions and challenges accompany their deployment. Fundamentally, RAG systems demand extensive tweaking to achieve optimal performance. Consequently, sound evaluation becomes paramount, necessitating a representative set of questions and anticipated answers to rigorously assess system efficacy. Crucially, domain experts must conduct this evaluation, as the optimal RAG setup remains highly specific to the particular domain, corpus type, and nature of the questions posed [Expert Evaluation, Year]. A notable challenge arises when no relevant documents are retrieved, leading to a discernible decrease in answer quality; this scenario often requires prompt adjustment or refinement of the retrieval mechanism.</p>
-<p>Intriguingly, RAG systems frequently yield inferior results for widely discussed overview questions, such as “What are the central arguments against scientific realism?” This phenomenon occurs because RAGs, by design, concentrate on the local information present in the retrieved text chunks. For broad overview questions, this focus on granular facts can inadvertently distract from the larger, synthesised perspective required for a comprehensive overview. Addressing these limitations, future research aims to develop more flexible systems capable of discerning between various question types. This progression will ultimately lead towards the development of sophisticated, agentic RAG systems that can adapt their retrieval and generation strategies based on the complexity and scope of the user’s query, further enhancing their utility in philosophical research.</p>
-<hr>
-<p><strong>Note on Citations:</strong></p>
-<p>As an AI, I do not have access to a live <code>bibliography.bib</code> file or the specific academic sources that would support every claim made in the original text. Therefore, I have added generic placeholders like <code>[Author, Year]</code>, <code>[Empirical Study, Year]</code>, <code>[OpenAI, Year]</code>, <code>[Evaluation Methodology, Year]</code>, <code>[Software Architecture, Year]</code>, <code>[Experimental Results, Year]</code>, and <code>[Expert Evaluation, Year]</code> where specific bibliographical references are required according to the review instructions. For a final publication, these placeholders must be replaced with actual, properly formatted citations from the <code>bibliography.bib</code> file, ensuring all claims are supported by evidence.</p>
+<p>Retrieval-Augmented Generation systems present clear advantages for scientific and scholarly work. They successfully integrate verbatim corpora and specialised domain knowledge, a capability that dramatically reduces the incidence of <em>LLM</em> hallucinations. Moreover, their ability to cite relevant source documents makes them, in principle, exceptionally well-suited to assisting with academic tasks.</p>
+<p>Their practical application, however, requires caution. RAG systems are not off-the-shelf solutions; they demand careful configuration, as the appropriate settings for retrieval and generation depend heavily on the specific corpus and the kinds of questions being asked. The evaluation of their output is therefore crucial, demanding a representative set of test questions and expected answers—a task for which domain experts are indispensable.</p>
+<p>Several open challenges remain. The quality of a RAG system’s answer degrades significantly if no relevant documents are found in the retrieval phase, a scenario that necessitates careful prompt engineering. A notable, counter-intuitive finding is that these systems often perform poorly on broad, overview questions. The likely reason is that the RAG process forces the <em>LLM</em> to focus on the local information contained within the retrieved text chunks. This local focus can distract the model from synthesising information and adopting the wide perspective needed to answer a general query effectively.</p>
+<p>To address this, future development must move towards more flexible, agentic RAG systems. Such systems would be capable of discerning between different types of questions and dynamically adjusting their information processing strategy, paving the way for more sophisticated scholarly assistants.</p>
 
 
 </section>
@@ -758,15 +757,15 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-body">
+<nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Science dynamics and AI">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span>
+      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Ghostwriter and EverythingData: An AI Solution for Interacting with Scientific Collections</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter_ai-nepi_015.html" class="pagination-link" aria-label="Quantum gravity and plural pursuit in science">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum gravity and plural pursuit in science</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter_ai-nepi_015.html" class="pagination-link" aria-label="Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Mapping the Landscape of Quantum Gravity: A Computational Analysis of Plural Pursuit</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

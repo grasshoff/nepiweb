@@ -1,10 +1,11 @@
 book:
-  title: AI-NEPI Conference Proceedings - Enhanced Edition
+  title: AI-NEPI Conference Proceedings
   author:
-  - "Gerd Gra\xDFhoff"
-  - "Adrian W\xFCthrich"
-  - Arno Simon
-  date: '2025'
+  - "Gerd Graßhoff"
+  - "Adrian Wüthrich"
+  - "Michael Zichert"
+  - "Arno Simons"
+  date: '2025-06-21'
   chapters:
   - index.qmd
   - chapter_ai-nepi_001.qmd
@@ -22,17 +23,23 @@ book:
   - chapter_ai-nepi_016.qmd
   - chapter_ai-nepi_017.qmd
   - chapter_ai-nepi_018.qmd
+  - chapter_ai-nepi_019.qmd
   - chapter_ai-nepi_020.qmd
   - chapter_ai-nepi_021.qmd
+
 format:
   html:
     theme: sandstone
     code-fold: true
-    page-layout: full
+    css: styles.css
+    toc: true
+    toc-location: right
+    number-sections: true
+    number-depth: 3
+    mainfont: "Crimson Text"
+    fontsize: 1.1em
+    linestretch: 1.5
+
 project:
   type: book
   output-dir: docs
-
-publish:
-  gh-pages:
-    location: docs

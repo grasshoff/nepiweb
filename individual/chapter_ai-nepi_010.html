@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.14">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christian Boulanger, David Carreto Fidalgo &amp; Andreas Wagner">
+
+<title>10&nbsp; LLMs and Footnotes: Challenges in Humanities Scholarship – AI-NEPI Conference Proceedings - Enhanced Edition</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter_ai-nepi_011.html" rel="next">
+<link href="./chapter_ai-nepi_009.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-350fb9e808f7eb2950c9598fb3f8c4a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter_ai-nepi_010.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI-NEPI Conference Proceedings - Enhanced Edition</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI-NEPI Conference Proceedings - Enhanced Edition</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy and Sociology of Science (Workshop)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_003.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Large Language Models for the History, Philosophy, and Sociology of Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Introducing OpenAlex Mapper</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GENRE CLASSIFICATION FOR HISTORICAL MEDICAL PERIODICALS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_006.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">VERITRACE Traces de la Vérité: The reappropriation of ancient wisdom in early modern natural philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_007.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Explainable AI and AI-based Scientific Insights in the Humanities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_008.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Modeling Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_009.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_010.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_011.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_012.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Possible applications of RAG systems in philosophy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Quantum Gravity and Plural Pursuit in Science</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_016.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Titles, Abstracts, or Full-Texts? A Comparative Study of LDA and BERTopic Performance</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_017.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Time-Aware Language Models: Towards a Novel Architecture for Historical Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_018.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Leveraging Large Language Models for Metadata Enrichment and Diachronic Analysis of Chemical Knowledge in Historical Scientific Texts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Modelling Context and its Interplay in Language Variation and Change: A Pilot Study on the Chemical Revolution</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_020.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Our current understanding of funders of science is a limited view.</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter_ai-nepi_021.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">From Source to Structure: Extracting Knowledge Graphs with LLMs</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#the-research-imperative-unlocking-citation-graphs" id="toc-the-research-imperative-unlocking-citation-graphs" class="nav-link" data-scroll-target="#the-research-imperative-unlocking-citation-graphs"><span class="header-section-number">10.1</span> The Research Imperative: Unlocking Citation Graphs</a></li>
+  <li><a href="#problem-one-inadequate-bibliometric-data-coverage" id="toc-problem-one-inadequate-bibliometric-data-coverage" class="nav-link" data-scroll-target="#problem-one-inadequate-bibliometric-data-coverage"><span class="header-section-number">10.2</span> Problem One: Inadequate Bibliometric Data Coverage</a></li>
+  <li><a href="#empirical-evidence-of-data-gaps" id="toc-empirical-evidence-of-data-gaps" class="nav-link" data-scroll-target="#empirical-evidence-of-data-gaps"><span class="header-section-number">10.3</span> Empirical Evidence of Data Gaps</a></li>
+  <li><a href="#problem-two-the-intricacies-of-humanities-footnotes" id="toc-problem-two-the-intricacies-of-humanities-footnotes" class="nav-link" data-scroll-target="#problem-two-the-intricacies-of-humanities-footnotes"><span class="header-section-number">10.4</span> Problem Two: The Intricacies of Humanities Footnotes</a></li>
+  <li><a href="#large-language-models-a-promising-yet-challenging-solution" id="toc-large-language-models-a-promising-yet-challenging-solution" class="nav-link" data-scroll-target="#large-language-models-a-promising-yet-challenging-solution"><span class="header-section-number">10.5</span> Large Language Models: A Promising Yet Challenging Solution</a></li>
+  <li><a href="#establishing-a-robust-evaluation-framework" id="toc-establishing-a-robust-evaluation-framework" class="nav-link" data-scroll-target="#establishing-a-robust-evaluation-framework"><span class="header-section-number">10.6</span> Establishing a Robust Evaluation Framework</a></li>
+  <li><a href="#developing-a-tei-annotated-gold-standard" id="toc-developing-a-tei-annotated-gold-standard" class="nav-link" data-scroll-target="#developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.7</span> Developing a TEI-Annotated Gold Standard</a></li>
+  <li><a href="#leveraging-tei-for-tooling-and-comparison" id="toc-leveraging-tei-for-tooling-and-comparison" class="nav-link" data-scroll-target="#leveraging-tei-for-tooling-and-comparison"><span class="header-section-number">10.8</span> Leveraging TEI for Tooling and Comparison</a></li>
+  <li><a href="#introducing-llamore-a-reference-extraction-and-evaluation-package" id="toc-introducing-llamore-a-reference-extraction-and-evaluation-package" class="nav-link" data-scroll-target="#introducing-llamore-a-reference-extraction-and-evaluation-package"><span class="header-section-number">10.9</span> Introducing Llamore: A Reference Extraction and Evaluation Package</a></li>
+  <li><a href="#llamore-implementation-and-workflow" id="toc-llamore-implementation-and-workflow" class="nav-link" data-scroll-target="#llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore: Implementation and Workflow</a></li>
+  <li><a href="#evaluation-metrics-f1-score-for-reference-comparison" id="toc-evaluation-metrics-f1-score-for-reference-comparison" class="nav-link" data-scroll-target="#evaluation-metrics-f1-score-for-reference-comparison"><span class="header-section-number">10.11</span> Evaluation Metrics: F1-Score for Reference Comparison</a></li>
+  <li><a href="#reference-alignment-the-unbalanced-assignment-problem" id="toc-reference-alignment-the-unbalanced-assignment-problem" class="nav-link" data-scroll-target="#reference-alignment-the-unbalanced-assignment-problem"><span class="header-section-number">10.12</span> Reference Alignment: The Unbalanced Assignment Problem</a></li>
+  <li><a href="#performance-evaluation-llamore-vs.-grobid" id="toc-performance-evaluation-llamore-vs.-grobid" class="nav-link" data-scroll-target="#performance-evaluation-llamore-vs.-grobid"><span class="header-section-number">10.13</span> Performance Evaluation: Llamore vs.&nbsp;Grobid</a></li>
+  <li><a href="#conclusion-and-takeaways" id="toc-conclusion-and-takeaways" class="nav-link" data-scroll-target="#conclusion-and-takeaways"><span class="header-section-number">10.14</span> Conclusion and Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">LLMs and Footnotes: Challenges in Humanities Scholarship</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Christian Boulanger, David Carreto Fidalgo &amp; Andreas Wagner <a href="mailto:boulanger@lhlt.mpg.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Max Planck Institute for Legal History and Legal Theory
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
+<p>This chapter addresses the persistent challenges inherent in parsing footnotes from legal and humanities scholarship, particularly when generating citation graphs for intellectual history. The authors highlight the severe limitations of existing bibliometric databases, such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em>, which offer inadequate coverage for historical, non-English, and non-STEM literature. Moreover, these platforms struggle with the complex, commentary-rich footnotes prevalent in the humanities.</p>
+<p>To overcome these obstacles, the project introduces a novel approach leveraging <em>Large Language Models</em> (<em>LLMs</em>) and <em>Vision Language Models</em> (<em>VLMs</em>). A core component of this initiative involves the meticulous compilation of a high-quality, <em>TEI XML</em>-encoded gold standard dataset. This dataset comprises 1,100 foot- and endnotes extracted from 25 articles across 10 <em>Open Access</em> (<em>DOAJ</em>) journals, focusing on legal and historical humanities. It encompasses French, German, Spanish, Italian, and Portuguese texts published between 1958 and 2018. This compilation yields over 1,600 distinct references, with each occurrence encoded separately to preserve contextual information.</p>
+<p>A pivotal tool developed for this endeavour is <em>Llamore</em>, a lightweight <em>Python</em> package. <em>Llamore</em> facilitates the extraction of citation data from raw text or <em>PDFs</em> using <em>LLMs</em> and <em>VLMs</em>, subsequently exporting the results in <em>TEI XML</em> format. Furthermore, it provides a robust framework for evaluating extraction performance through F1-scores, meticulously comparing extracted references against the gold standard. The evaluation methodology employs precision and recall metrics for exact matches, incorporating an unbalanced assignment problem solver (from <em>SciPy</em>) to align extracted and gold references, thereby penalising both missing and hallucinated entries.</p>
+<p>Initial findings demonstrate <em>Llamore</em>’s efficacy. When tested on the <em>PLOS 1000</em> biomedical dataset, <em>Llamore</em> (utilising <em>Gemini 2.0 Flash</em>) achieved an F1-score of 0.62, closely matching <em>Grobid</em>’s performance of 0.61. Crucially, on the custom-curated humanities dataset, <em>Llamore</em> significantly outperformed <em>Grobid</em>, achieving an F1-score of 0.45 compared to <em>Grobid</em>’s 0.14. This underscores its superior capability in handling complex, footnoted literature. Future work aims to expand the training data, refine evaluation metrics, and enhance the system’s capacity for contextual citation analysis, including the resolution of <em>op cit.</em> and the identification of approving or contracting citations.</p>
+</section>
+<section id="the-research-imperative-unlocking-citation-graphs" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="the-research-imperative-unlocking-citation-graphs"><span class="header-section-number">10.1</span> The Research Imperative: Unlocking Citation Graphs</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_01.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 01</figcaption>
+</figure>
+</div>
+<p>The authors embark upon a critical investigation into the intricate nature of footnotes within law and humanities scholarship. They specifically address the inherent difficulties <em>Large Language Models</em> (<em>LLMs</em>) and other algorithms encounter when attempting to parse them. The overarching objective involves generating comprehensive citation graphs, which offer profound utility across various academic disciplines.</p>
+<p>These graphs prove invaluable for scholars engaged in the history of science and intellectual history more broadly. They facilitate the discovery of intricate patterns and relationships within knowledge production, enabling a nuanced analysis of intellectual influences and a precise measurement of how ideas have been received and disseminated over time. A compelling application of this methodology involves identifying the most-cited authors across specific periods, exemplified by an analysis of the <em>Journal of Law and Society</em> between 1994 and 2003.</p>
+</section>
+<section id="problem-one-inadequate-bibliometric-data-coverage" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="problem-one-inadequate-bibliometric-data-coverage"><span class="header-section-number">10.2</span> Problem One: Inadequate Bibliometric Data Coverage</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 02</figcaption>
+</figure>
+</div>
+<p>A significant impediment to scholarly inquiry arises from the extremely poor coverage of historical Social Sciences and Humanities (<em>SSH</em>) literature within conventional bibliometric databases. Prominent platforms such as <em>Web of Science</em>, <em>Scopus</em>, and <em>OpenAlex</em> exhibit considerable deficiencies in this domain.</p>
+<p><em>Web of Science</em> and <em>Scopus</em>, in particular, impose substantial financial burdens and operate under highly restrictive licensing agreements, fundamentally hindering open research. Whilst <em>OpenAlex</em> offers a more accessible, open-access alternative, it nonetheless falls short of meeting the specific data requirements for this research. Critically, these databases collectively lack comprehensive coverage for journals not classified as “A-journals,” exhibit significant gaps concerning pre-digital publications, and frequently omit content published in languages other than English.</p>
+</section>
+<section id="empirical-evidence-of-data-gaps" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="empirical-evidence-of-data-gaps"><span class="header-section-number">10.3</span> Empirical Evidence of Data Gaps</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 03</figcaption>
+</figure>
+</div>
+<p>An illustrative example underscores the pervasive data gaps within existing bibliometric resources. The authors’ analysis of the <em>Zeitschrift für Rechtssoziologie</em>, a German journal dedicated to law and society established in 1980, reveals stark disparities in citation data availability. A comparative bar chart, contrasting data from <em>Dimensions</em> and <em>OpenAlex</em> across decades, clearly demonstrates that whilst coverage improves considerably after the 2000s, it remains almost non-existent for the journal’s earlier decades. This empirical observation highlights the critical need for alternative data acquisition strategies.</p>
+</section>
+<section id="problem-two-the-intricacies-of-humanities-footnotes" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="problem-two-the-intricacies-of-humanities-footnotes"><span class="header-section-number">10.4</span> Problem Two: The Intricacies of Humanities Footnotes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 04</figcaption>
+</figure>
+</div>
+<p>The inadequate coverage within bibliometric databases stems from several fundamental issues. Primarily, humanities scholarship attracts less commercial interest compared to fields such as <em>STEM</em>, medicine, and economics, which typically dominate large bibliometric databases. Furthermore, these databases predominantly focus on “impact factor” for scientific evaluation, a metric largely irrelevant to research in intellectual history.</p>
+<p>Crucially, the literature of interest in the humanities frequently employs highly complex footnotes, colloquially termed “footnotes from hell.” These often incorporate extensive commentary, present in a messy, unstructured format, and are embedded within considerable textual “noise” that is not part of the direct citation. Traditional information extraction instruments, whilst requiring laborious manual annotation processes, consistently demonstrate poor performance. For instance, machine learning tools relying on conditional random forests exhibit low extraction and segmentation accuracies, as evidenced by the <em>ExCite</em> Performance table, where even combined training data yields limited improvement.</p>
+</section>
+<section id="large-language-models-a-promising-yet-challenging-solution" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="large-language-models-a-promising-yet-challenging-solution"><span class="header-section-number">10.5</span> Large Language Models: A Promising Yet Challenging Solution</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p><em>Large Language Models</em> (<em>LLMs</em>) emerge as a promising avenue for addressing the challenges of footnote parsing. Initial experiments conducted by the authors in 2022, utilising models such as <em>text-davinci-003</em>, unequivocally demonstrated their considerable power in extracting references from highly unstructured and complex textual data. Subsequent advancements in model architecture promise even more refined results, whilst the advent of <em>Vision Language Models</em> (<em>VLMs</em>) now enables direct processing of <em>PDF</em> documents.</p>
+<p>The authors can employ various methods to leverage these models effectively, including sophisticated prompt engineering, <em>Retrieval Augmented Generation</em> (<em>RAG</em>), and fine-tuning. Nevertheless, an overriding concern persists regarding the trustworthiness of the results. <em>LLMs</em>, whilst powerful, can “hallucinate,” inventing non-existent citations. A lawyer who submitted federal court filings citing fabricated cases generated by <em>ChatGPT</em> starkly illustrates this phenomenon. Consequently, a fundamental principle guides this research: one must refrain from conducting any analysis unless robust validation data confirms the accuracy of the extracted information.</p>
+</section>
+<section id="establishing-a-robust-evaluation-framework" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="establishing-a-robust-evaluation-framework"><span class="header-section-number">10.6</span> Establishing a Robust Evaluation Framework</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 05</figcaption>
+</figure>
+</div>
+<p>Establishing a robust testing and evaluation solution constitutes a core requirement for advancing reliable information extraction. The authors determined that this solution necessitates three critical components:</p>
+<ul>
+<li><p>A high-quality Gold Standard dataset must be meticulously compiled, serving as the definitive ground truth against which system performance can be measured.</p></li>
+<li><p>Researchers require a flexible framework, one capable of readily adapting to the rapidly evolving technological landscape of <em>Large Language Models</em> and their associated methodologies.</p></li>
+<li><p>The framework must incorporate solid testing and evaluation algorithms, ensuring the production of consistent and comparable metrics across different solutions and iterations.</p></li>
+</ul>
+</section>
+<section id="developing-a-tei-annotated-gold-standard" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="developing-a-tei-annotated-gold-standard"><span class="header-section-number">10.7</span> Developing a TEI-Annotated Gold Standard</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 06</figcaption>
+</figure>
+</div>
+<p>The authors have meticulously compiled a comprehensive dataset for both training and evaluation, employing <em>TEI XML</em> encoding. This choice of standard is deliberate, as <em>TEI XML</em> offers a well-established, precisely specified, and highly comprehensive framework for text interchange. Crucially, it surpasses more limited bibliographical standards, such as <em>CSL</em> or <em>BibTeX</em>, by encompassing a broader spectrum of textual phenomena.</p>
+<p>Beyond mere reference management, <em>TEI XML</em> facilitates the encoding of citations, cross-references, and other contextual markup, enabling the classification of citation intention—a feature of significant interest to bibliometric projects. Furthermore, its widespread adoption in digital editorics projects allows for the integration of existing corpora, thereby enhancing the generalisation and robustness of the developed mechanisms. Despite its advantages, the <em>TEI</em> standard presents certain challenges, including conceptual distinctions between pointers and references, and technical considerations regarding constrained elements versus elliptic material.</p>
+<p>The dataset’s establishment involves several stages: initially capturing <em>PDF</em> screenshots, then segmenting reference strings from the surrounding non-reference text within footnotes, and finally parsing these into a structured data format. Currently, the dataset comprises 1,100 foot- and endnotes, meticulously extracted from 25 articles published across 10 <em>DOAJ</em> journals. It specifically focuses on legal and historical humanities, incorporating multilingual content in French, German, Spanish, Italian, and Portuguese, spanning the period from 1958 to 2018. This compilation is expected to yield over 1,600 references, with each occurrence of a work encoded separately to preserve its specific context. The dataset remains a work in progress, with a strategic shift mid-way to include <em>PDFs</em> from <em>Open Access</em> journals, ensuring compatibility with <em>Vision Language Models</em>.</p>
+</section>
+<section id="leveraging-tei-for-tooling-and-comparison" class="level2" data-number="10.8">
+<h2 data-number="10.8" class="anchored" data-anchor-id="leveraging-tei-for-tooling-and-comparison"><span class="header-section-number">10.8</span> Leveraging TEI for Tooling and Comparison</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
+<p>A significant advantage of adopting the <em>TEI XML</em> standard lies in the extensive availability of compatible tooling. Among these, <em>Grobid</em> stands out as a particularly important resource for reference and information extraction. This widely used tool already employs <em>TEI XML</em> for its own training and evaluation processes.</p>
+<p>Consequently, utilising the same data format offers multiple benefits. It directly enables a rigorous comparison of the developed tool’s performance against <em>Grobid</em>’s established benchmarks. Moreover, the authors can leverage <em>Grobid</em>’s existing training data to enhance their own mechanisms, whilst simultaneously contributing their newly compiled data to the <em>Grobid</em> team, fostering a collaborative environment for mutual advancement in the field.</p>
+</section>
+<section id="introducing-llamore-a-reference-extraction-and-evaluation-package" class="level2" data-number="10.9">
+<h2 data-number="10.9" class="anchored" data-anchor-id="introducing-llamore-a-reference-extraction-and-evaluation-package"><span class="header-section-number">10.9</span> Introducing Llamore: A Reference Extraction and Evaluation Package</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_11.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 11</figcaption>
+</figure>
+</div>
+<p>The authors have developed <em>Llamore</em>, a concise <em>Python</em> package, to address the complexities of reference extraction. The name, an acronym for <em>Large LANguage MOdels for Reference Extraction</em>, precisely encapsulates its core functionality. This lightweight package, comprising fewer than 2000 lines of code, performs two essential tasks: it extracts citation data from either raw text or <em>PDF</em> documents using various <em>Large Language Models</em>, including multimodal variants, and subsequently evaluates the accuracy of these extractions.</p>
+<p><em>Llamore</em> operates on a clear input-output workflow: it processes textual or <em>PDF</em> inputs to generate references formatted in <em>TEI XML</em>, and it compares these extracted references against a set of gold standard references to compute an F1-score, serving as the primary evaluation metric. During its development, two key objectives guided its design: maintaining a lightweight architecture by functioning as an interface to external models rather than embedding them, and ensuring broad compatibility with both proprietary and open-source <em>LLMs</em> and <em>Vision Language Models</em>.</p>
+</section>
+<section id="llamore-implementation-and-workflow" class="level2" data-number="10.10">
+<h2 data-number="10.10" class="anchored" data-anchor-id="llamore-implementation-and-workflow"><span class="header-section-number">10.10</span> Llamore: Implementation and Workflow</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
+<p><em>Llamore</em> offers a straightforward implementation and workflow, readily accessible via <em>PyPI</em> for installation using <code>pip</code>. For the extraction process, users import specific extractor classes, such as <em>GeminiExtractor</em> or <em>OpenaiExtractor</em>, and then instantiate an extractor, typically providing an <em>API</em> key. The system processes either a <em>PDF</em> file path or a raw input string, subsequently returning the extracted references. These references can then be conveniently exported to a <em>TEI biblStructs XML</em> file. Notably, the <em>OpenaiExtractor</em> ensures broad compatibility, as most open model serving frameworks, including <em>Olama</em> and <em>VLLM</em>, provide an <em>API</em> endpoint compatible with <em>OpenAI</em>’s standard.</p>
+<p>The evaluation process involves importing the <em>F1</em> class, which can be instantiated with an optional <code>levenshtein_distance</code> parameter, defaulting to zero for an exact match. Subsequently, the authors compute the macro-average F1-score by supplying both the extracted and the gold standard references to the <code>compute_macro_average</code> method.</p>
+</section>
+<section id="evaluation-metrics-f1-score-for-reference-comparison" class="level2" data-number="10.11">
+<h2 data-number="10.11" class="anchored" data-anchor-id="evaluation-metrics-f1-score-for-reference-comparison"><span class="header-section-number">10.11</span> Evaluation Metrics: F1-Score for Reference Comparison</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
+<p>The F1-score serves as the primary evaluation metric, a well-established standard for comparing structured data. This composite measure integrates both Precision and Recall. Precision quantifies the proportion of correctly identified elements among all predicted elements, whilst Recall measures the proportion of correctly identified elements among all actual gold standard elements. By default, <em>Llamore</em> employs an exact match criterion, though this can be configured to allow for a specified Levenshtein distance, accommodating minor discrepancies.</p>
+<p>Consider an example: an extracted reference might contain an analytic title, a monographic title, author details (forename and surname), and a publication date. A corresponding gold reference might include these fields plus a cited range. If the analytic title, monographic title, surname, and publication date align perfectly, these constitute four matches. However, a slight deviation, such as an extra dot in the forename within the gold reference, would render that specific field a mismatch. The F1-score is then calculated as the harmonic mean of these precision and recall values. An F1-score of one signifies perfect extraction, indicating that the reference has been flawlessly identified, whereas a score of zero denotes a complete absence of matches.</p>
+</section>
+<section id="reference-alignment-the-unbalanced-assignment-problem" class="level2" data-number="10.12">
+<h2 data-number="10.12" class="anchored" data-anchor-id="reference-alignment-the-unbalanced-assignment-problem"><span class="header-section-number">10.12</span> Reference Alignment: The Unbalanced Assignment Problem</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_15.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 15</figcaption>
+</figure>
+</div>
+<p>Beyond merely comparing individual references, a significant challenge involves accurately aligning the set of extracted references with their corresponding gold standard counterparts. The authors address this by formulating the problem as an “Unbalanced Assignment Problem,” a well-documented class of optimisation challenges. <em>Llamore</em> employs an internal solver from the <em>SciPy</em> library to resolve this.</p>
+<p>The process entails computing F1-scores for every conceivable combination of extracted and gold references, subsequently constructing a comprehensive matrix from these scores. The solver then works to maximise the total F1-score across the entire set, whilst rigorously ensuring a unique assignment for each reference. Finally, the system macro-averages the F1-scores of these uniquely assigned pairs. Crucially, the methodology incorporates a stringent penalisation mechanism: both missing references and any hallucinated entries are assigned an F1-score of zero, thereby accurately reflecting their impact on overall performance.</p>
+</section>
+<section id="performance-evaluation-llamore-vs.-grobid" class="level2" data-number="10.13">
+<h2 data-number="10.13" class="anchored" data-anchor-id="performance-evaluation-llamore-vs.-grobid"><span class="header-section-number">10.13</span> Performance Evaluation: Llamore vs.&nbsp;Grobid</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_16.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
+<p>The authors rigorously compared <em>Llamore</em> against <em>Grobid</em> across two distinct datasets. On the <em>PLOS 1000 Dataset</em>, comprising 1,000 biomedical <em>PDFs</em>, <em>Llamore</em>, utilising <em>Gemini 2.0 Flash</em>, achieved an F1-score of 0.62 for exact matches, closely mirroring <em>Grobid</em>’s score of 0.61. Whilst their accuracy proved comparable on this dataset, <em>Grobid</em> demonstrated superior efficiency and reduced resource intensity, largely attributable to its prior training on similar journal articles.</p>
+<p>However, a stark contrast emerged when testing on the custom-curated humanities dataset, which features complex footnoted literature. Here, <em>Grobid</em> struggled considerably, yielding an F1-score of merely 0.14. In stark contrast, <em>Llamore</em>’s approach achieved a significantly higher F1-score of 0.45, unequivocally demonstrating its superior capability in extracting references from this challenging domain.</p>
+</section>
+<section id="conclusion-and-takeaways" class="level2" data-number="10.14">
+<h2 data-number="10.14" class="anchored" data-anchor-id="conclusion-and-takeaways"><span class="header-section-number">10.14</span> Conclusion and Takeaways</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_010_slide_17.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 17</figcaption>
+</figure>
+</div>
+<p>In conclusion, <em>Grobid</em> retains its advantage as the preferred tool for literature types upon which it was specifically trained, primarily owing to its superior processing speed and significantly lower resource demands. Nevertheless, for the particularly challenging domain of footnoted literature, experiments employing <em>Llamore</em> in conjunction with <em>Gemini</em> models reveal a compelling three-fold improvement in extraction performance. It is important to note that the current performance metrics pertain exclusively to pure reference extraction, deliberately excluding considerations of contextual information or complex cross-referencing.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter_ai-nepi_009.html" class="pagination-link" aria-label="The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">The Representation of SDG-Related Research in Bibliometric Databases: A Conceptual Inquiry via LLMs</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter_ai-nepi_011.html" class="pagination-link" aria-label="Science dynamics and AI">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Science dynamics and AI</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

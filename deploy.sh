@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# AI-NEPI GitHub Pages Deployment Script using Quarto Publish
-echo "🚀 Deploying AI-NEPI to GitHub Pages with Quarto Publish..."
+# AI-NEPI Book Deployment Script
+echo "🚀 Building AI-NEPI Book..."
 
-# Use quarto publish to handle everything
-echo "📝 Publishing with Quarto..."
-quarto publish gh-pages
+# Render the Quarto book
+echo "📝 Rendering Quarto book..."
+quarto render
 
-echo "✅ Deployment complete! Check https://grasshoff.github.io/nepiweb/ in a few minutes." 
+echo "✅ Book build complete! Output in docs/ directory."
+echo "📁 To deploy to GitHub Pages, copy contents to nepiweb/ and push." 

@@ -1,189 +1,230 @@
 ---
-title: "Genre Classification for Historical Medical Periodicals"
+title: "Genre Classification Experiments for Historical Patient Periodicals: The ActDisease Project"
 author:
 - name: "Vera Danilova"
   affiliation: "Uppsala University"
   email: "vera.danilova@idehist.uu.se"
-date: '2025'
+date: '2025-06-21'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
 
-Researchers at Uppsala University have pioneered a procedural investigation into genre classification for historical medical periodicals. This endeavour forms a core component of the *ERC*-funded ActDisease project, which meticulously examines the history of patient organisations in 20th-century Europe. The European Research Council (*ERC*) provides funding for this initiative. The project's central aim involves scrutinising the profound influence of these organisations on disease concepts, illness experiences, and prevailing medical practices. Primarily, the project leverages a private, recently digitised collection of patient organisation magazines from Sweden, Germany, France, and Great Britain, encompassing an impressive 96,186 pages published between approximately 1890 and 1990.
+The authors present a comprehensive study on genre classification within historical patient periodicals, conducted as part of the ERC-funded ActDisease project. This programme investigates how patient organisations in 20th-century Europe shaped concepts of disease and medical practices, employing their magazines as a primary data source. A substantial corpus, the ActDisease Dataset, underpins this work, comprising 96,186 digitised pages from patient magazines across Germany, Sweden, France, and the United Kingdom.
 
-Digitisation efforts, employing *ABBYY FineReader Server 14*, successfully processed most common layouts. Nevertheless, complex layouts, slanted text, and rare fonts posed persistent challenges, frequently leading to Optical Character Recognition (*OCR*) errors, particularly in German and French texts. Recognising the diverse and co-occurring text types within these periodicals, the team identified genre classification as a crucial methodological advancement. This approach directly addresses the limitations and potential biases of traditional topic models and term counts, which often fail to account for the varied communicative purposes embedded within single pages.
+The core technical challenge the authors address is the classification of diverse and often ambiguous textual genres found within these historical documents. This task is complicated by issues in Optical Character Recognition (OCR) and the limitations of traditional methods like topic modelling. To overcome these obstacles, the research team developed a sophisticated, expert-driven genre-labelling scheme and conducted extensive experiments using both zero-shot and few-shot learning paradigms.
 
-To address the scarcity of annotated data, the project explored both zero-shot and few-shot learning paradigms. Zero-shot learning involves applying a model to data from categories it has not seen during training, relying on its understanding of the categories' descriptions. Few-shot learning, conversely, trains a model with only a very small number of examples per category. Researchers defined a bespoke set of nine genre labels—Academic, Administrative, Advertisement, Guide, Fiction, Legal, News, Nonfiction Prose, and Question and Answer (*QA*)—under the direct supervision of a specialist historian. Annotation involved six project members, achieving a high inter-annotator agreement of 0.95 Krippendorff's alpha on paragraphs sampled from Swedish and German periodicals.
+Their study evaluates a range of multilingual encoder models, including *XLM-Roberta*, *mBERT*, and a specialised historical *mBERT* (*hmBERT*), alongside generative models such as *Llama-3.1 8b*. Key findings demonstrate that few-shot learning, particularly with Masked Language Model (MLM) fine-tuning, significantly improves performance. The *hmBERT-MLM* model emerges as the most effective, highlighting the value of domain-specific pre-training for historical texts. The work concludes that the rich generic diversity of popular magazines makes them a more complex text mining target than scientific journals, underscoring the necessity of robust genre classification for fine-grained historical analysis.
 
-For zero-shot experiments, the team leveraged publicly available datasets, including the *Corpus of Online Registers of English* (*CORE*), *Functional Text Dimensions* (*FTD*), and *UD-MULTIGENRE* (*UDM*). They performed a rigorous cross-dataset genre mapping to align these external datasets with their custom labels. Multilingual encoder models, specifically *XLM-Roberta*, *mBERT*, and *historical mBERT*, underwent fine-tuning across 48 configurations. Findings indicated that models fine-tuned on *FTD* performed optimally with the custom mapping, whilst *historical mBERT* demonstrated particular efficacy in distinguishing between fiction and nonfiction prose in few-shot settings.
+## Presentation Outline
 
-Furthermore, the project investigated few-shot prompting with *Llama 3.1 8b Instruct*, a large language model (LLM), revealing its capacity to handle certain genre labels effectively. However, a limited number of examples proved insufficient for comprehensive representation across all categories. Ultimately, the research concludes that genre classification significantly enhances the accessibility of historical periodical sources for text mining. Few-shot learning of multilingual encoders, particularly *historical mBERT* with prior Masked Language Model (*MLM*) fine-tuning, offers the most robust performance. Ongoing work includes developing a more fine-grained annotation scheme, generating synthetic data, and implementing active learning strategies.
+![Slide 02](images/ai-nepi_005_slide_02.png)
 
-## The ActDisease Project: Historical Inquiry into Patient Organisations
+The authors structure their research programme into three principal sections. It begins with an introduction to the ActDisease project, followed by a detailed examination of the genre classification experiments. The presentation culminates in a summary of the key conclusions drawn from the research.
 
-![Slide 01](images/ai-nepi_005_slide_01.jpg)
+## The ActDisease Project
 
-Researchers have embarked upon the ActDisease project, formally titled "Acting out Disease: How Patient Organizations Shaped Modern Medicine." This *ERC*-funded initiative meticulously investigates the historical trajectory of patient organisations across Europe during the 20th century. Its central purpose involves scrutinising how these organisations fundamentally influenced the evolution of disease concepts, the lived experience of illness, and prevailing medical practices.
+![Slide 03](images/ai-nepi_005_slide_03.png)
 
-The project’s scope encompasses ten distinct European patient organisations. It draws its primary source material from their periodicals—predominantly magazines—published in England, Germany, France, and Great Britain between approximately 1890 and 1990. Notably, the Hay Fever Association of Heligoland, established in 1897, exemplifies the type of historical entity under examination, with Heligoland, Germany, serving as its foundational site.
+The authors initiated the 'ActDisease' project, an ERC-funded research programme designed to explore the influence of patient organisations on medicine and society. Central to the project is an analysis of how these groups, active throughout 20th-century Europe, shaped concepts of disease, the personal experience of illness, and prevailing medical practices. To achieve this, the investigators use patient-published periodicals as the primary source material for their historical analysis. An image of Heligoland, Germany, provides visual context for the historical settings under investigation.
 
-## The ActDisease Dataset: Periodical Collection and Scope
+## Dataset Composition
 
-![Slide 06](images/ai-nepi_005_slide_06.jpg)
+![Slide 04](images/ai-nepi_005_slide_04.png)
 
-The ActDisease project has assembled a private, recently digitised collection of patient organisation magazines, constituting a substantial dataset of 96,186 pages. This extensive archive spans various countries, diseases, and publication periods.
+The project team compiled the ActDisease Dataset, a specialised corpus of digitised magazines published by patient organisations. This collection spans materials from Germany, Sweden, France, and the UK, amounting to a total of 96,186 pages. A summary table provides a detailed breakdown of the dataset, specifying the number of unique magazine titles, total page counts, and the range of publication years for different diseases within each country.
 
-Specifically, the dataset includes:
-*   **German collection:** 10,926 pages on Allergy/Asthma from two magazines (1901-1985); 19,324 pages on Diabetes from one magazine (1931-1990); and 5,646 pages on Multiple Sclerosis from one magazine (1954-1990).
-*   **Swedish materials:** 4,054 pages on Allergy/Asthma (1957-1990); 7,150 pages on Diabetes (1949-1990); and 16,790 pages on Lung Diseases (1938-1991), each from a single magazine.
-*   **French contributions:** 6,206 pages on Diabetes (1947-1990); and 9,317 pages on Rheumatism/Paralysis from three magazines (1935-1990).
-*   **UK segment:** 11,127 pages on Diabetes (1935-1990); and 5,646 pages on Rheumatism (1950-1990), each sourced from one magazine.
+## Digitisation and OCR Challenges
 
-## Digitisation Processes and Persistent Challenges
+![Slide 05](images/ai-nepi_005_slide_05.png)
 
-![Slide 07](images/ai-nepi_005_slide_07.jpg)
+The digitisation of historical documents presented a significant technical hurdle. The process of Optical Character Recognition (OCR), in particular, often yields suboptimal results when applied to older, varied source materials. This challenge necessitates further research into effective post-OCR correction methods, which are crucial for enhancing the accuracy and utility of the digitised text for subsequent analysis.
 
-The digitisation process for the ActDisease dataset primarily employed *ABBYY FineReader Server 14* for Optical Character Recognition (*OCR*). This tool generally performed well, accurately recognising most common layouts and fonts present in the historical periodicals.
+## Genre Classification Challenges
 
-Nevertheless, significant challenges persisted. Complex layouts, slanted text, rare fonts, and inconsistent scan or photo quality frequently hindered optimal *OCR* performance. Consequently, researchers observed persistent *OCR* errors, particularly prevalent in German and French texts, alongside instances of disrupted reading order. Notably, creative text segments, including advertisements, humour pages, and poems, exhibited a higher frequency of *OCR* inaccuracies. To mitigate these issues, the team conducted specific experiments, focusing on post-*OCR* correction of German texts through the application of instruction-tuned generative models. This work has been documented in a publication by Danilova and Aangenendt, presented at the *RESOURCEFUL-2025* workshop.
+![Slide 06](images/ai-nepi_005_slide_06.png)
 
-## Rationale for Genre Classification in Historical Periodicals
+Analysing patient periodicals introduces a distinct challenge in genre classification. The source materials contain a wide diversity of text types, ranging from medical advice to personal stories and advertisements. Consequently, conventional methods such as topic modelling or basic term-counting prove inadequate for accurately differentiating these nuanced genres, which often share overlapping vocabularies.
 
-![Slide 11](images/ai-nepi_005_slide_11.jpg)
+## Motivation for Classification
 
-Researchers observed a profound diversity in the textual content of the historical periodicals, yet these varied text types consistently appeared across all magazines. Crucially, distinct text types frequently co-occurred on a single page; for instance, an administrative report might appear alongside an advertisement and a humour section. This inherent textual complexity posed a significant challenge for conventional analytical methods.
+![Slide 07](images/ai-nepi_005_slide_07.png)
 
-Traditional yearly and decade-based topic models and term counts, the team realised, failed to account for this side-by-side textual variation. Consequently, these methods likely introduced a bias towards the most frequently occurring text type, potentially distorting analytical outcomes. To overcome this limitation, genre emerged as a highly pertinent concept for distinguishing between text types. Genres inherently align with the communicative purposes of authors, as defined in language technology by *Petrenz (2004)* and *Kessler (1997)*.
+The authors' focus on genre classification stems from its analytical utility. From a language technology standpoint, genre provides a framework for understanding the communicative purpose of a text. By classifying content into distinct genres, the team can conduct more rigorous historical investigations, separating, for instance, official announcements from personal testimonials. Ultimately, this capability enables a more fine-grained and context-aware analysis of the entire dataset.
 
-Implementing genre classification directly supports the project's core objective: exploring the dataset from multiple perspectives to formulate robust historical arguments. Specifically, this approach enables a nuanced study of communicative strategies as they evolved over time, allowing for comparisons across different countries, diseases, and publications, as highlighted by *Broersma (2010)*. Furthermore, it facilitates a more granular analysis of term distributions and topic models, enabling insights within specific genre groups.
+## Illustrating Genre Diversity
 
-## Illustrative Genre Examples within the ActDisease Dataset
+![Slide 08](images/ai-nepi_005_slide_08.png)
 
-![Slide 19](images/ai-nepi_005_slide_19.jpg)
+A collage of documents illustrates the project's central challenge, showcasing the diverse textual genres related to a specific disease, likely diabetes. This visual representation effectively communicates the variety of formats and styles—from scientific articles to personal letters and advertisements—that the authors must categorise. It underscores the complexity of performing automated analysis on such heterogeneous source material.
 
-The ActDisease dataset encompasses a rich array of genres, each serving distinct communicative functions. Researchers identified examples such as poetry, which often provided emotional engagement. Academic reports, exemplified by studies on the pancreas, conveyed scientific and medical information. Legal documents, including deeds of covenant, established formal agreements and regulations. Advertisements, such as those promoting chocolate for diabetics, aimed to market products or services.
+## Textual Examples of Variation
 
-Furthermore, the collection featured instructive or guidance messages, offering practical advice like recipes, doctor's recommendations, or dietary guidelines. Patient organisation reports documented internal affairs, detailing meetings and activities. Finally, narratives about patient lives provided first-hand accounts of illness experiences, offering a unique perspective on the human dimension of disease.
+![Slide 09](images/ai-nepi_005_slide_09.png)
 
-## Experimental Design for Genre Classification with Limited Data
+To reinforce the concept of genre diversity, the authors provide several concrete textual examples from the 'ActDisease' domain, specifically concerning diabetes. These snippets highlight the distinct linguistic and structural features of different genres found within the patient magazines. By presenting these varied examples, the team clarifies the practical difficulties and the importance of developing a robust classification system.
 
-![Slide 04](images/ai-nepi_005_slide_04.jpg)
+## Defining Genre Labels
 
-Confronted with a scarcity of annotated data, researchers systematically explored two distinct methodological paradigms: zero-shot learning and few-shot learning. For zero-shot learning, the investigation posed two primary research questions: firstly, whether an efficient mapping of genre labels from existing public datasets to custom labels could yield satisfactory performance on the test set; and secondly, how classification performance might fluctuate across different datasets and models.
+![Slide 11](images/ai-nepi_005_slide_11.png)
 
-Conversely, the few-shot learning inquiry focused on two further questions: how performance changes in relation to varying training set sizes across different models; and whether a prior fine-tuning process on the entire dataset could significantly boost classification performance. This comprehensive experimental design forms the basis of a forthcoming publication by Danilova and Söderfeldt, scheduled for presentation at the *LaTeCH-CLFL 2025* workshop.
+The authors established a formal set of genre labels to structure their classification task. Rather than being algorithmically derived, these labels were defined by subject-matter experts to ensure historical and contextual relevance. The primary function of this schema is to enable the systematic separation of content according to its type, which is essential for nuanced historical analysis. Moreover, the team designed the labels with a view towards general-purpose applicability, aiming for a system that could be adapted for other historical text analysis projects.
 
-## Defining Genre Labels for Historical Periodical Content
+## Genre Classification Schema
 
-![Slide 32](images/ai-nepi_005_slide_32.jpg)
+![Slide 12](images/ai-nepi_005_slide_12.png)
 
-Researchers meticulously defined the genre labels under the direct supervision of the project's lead historian, an expert in patient organisations. This collaborative process aimed to create categories that would effectively segment the content within the historical periodicals, thereby facilitating deeper historical analysis. Crucially, the team endeavoured to formulate these labels with sufficient generality to enable the classifier's application to comparable datasets in the future.
+A detailed classification schema formally defines the nine distinct text genres used in the project: *Academic*, *Administrative*, *Advertisement*, *Guide*, *Fiction*, *Legal*, *News*, *Nonfiction Prose*, and *QA (Question & Answer)*. For clarity and consistency in annotation, a comprehensive table outlines the specific characteristics of each genre and provides representative examples drawn from the source material.
 
-Nine distinct genres emerged from this process, each with a precise definition:
-*   **Academic:** Encompasses research-based reports or scientific explanations, designed to bridge the gap between the scientific medical community and the magazine's readership.
-*   **Administrative:** Documents organisational activities, reporting on patient organisation events and internal affairs.
-*   **Advertisement:** Specifically promotes commercial products or services.
-*   **Guide:** Provides step-by-step instructions, ranging from health tips to recipes.
-*   **Fiction:** Aims to entertain and emotionally engage through stories, poems, or humour.
-*   **Legal:** Explains terms, conditions, or contracts.
-*   **News:** Reports on recent events.
-*   **Nonfiction Prose:** Narrates real events or describes cultural and historical topics, including memoirs and essays.
-*   **QA (Question and Answer):** Designates sections structured as questions with expert responses.
+## Annotation Methodology
 
-## Annotation Protocol and Inter-Annotator Agreement
+![Slide 13](images/ai-nepi_005_slide_13.png)
 
-![Slide 37](images/ai-nepi_005_slide_37.jpg)
+The team developed a rigorous methodology for creating the ground-truth dataset, establishing the paragraph as the fundamental unit for genre annotation. Two student annotators, working with German patient magazines focused on diabetes, applied the predefined genre labels to the text. To ensure the reliability of this process, the authors calculated the inter-annotator agreement, achieving a Cohen's Kappa score of 0.77, which signifies a substantial level of consistency.
 
-Researchers employed paragraphs as the fundamental annotation unit, extracting them from the *ABBYY OCR* output. The team subsequently merged these paragraphs based on consistent font patterns—including type, size, italicisation, and the absence of bolding—within each page. Researchers sampled content from two specific periodicals: the Swedish "Diabetes" and the German "Diabetiker Journal," focusing on their first and mid-year issues across all publication years.
+## Annotation in Practice
 
-Six dedicated project members undertook the annotation task, comprising four historians and two computational linguists. All annotators possessed either native fluency or high proficiency in both Swedish and German. For each paragraph, two independent annotations were meticulously collected. This rigorous approach yielded an impressive average inter-annotator agreement of 0.95, as measured by Krippendorff's alpha, signifying a remarkably high level of consistency amongst the annotators.
+![Slide 14](images/ai-nepi_005_slide_14.png)
 
-## Dataset Splitting and Experimental Configurations
+A practical example demonstrates the annotation process. Three sample paragraphs extracted from the German magazine *Der Diabetiker* are presented in a table. Each paragraph is paired with its assigned genre label, clearly illustrating how the classification schema is applied to actual source text. This example serves to clarify the task for both training and evaluation purposes.
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+## Dataset Splits for Experiments
 
-For the experimental phase, researchers initially partitioned the annotated data into a primary training set of 1182 paragraphs and a held-out set comprising 552 paragraphs, which represented approximately 30% of the total annotated material. Researchers stratified both these sets by genre label to ensure representative distributions.
+![Slide 15](images/ai-nepi_005_slide_15.png)
 
-Within the few-shot experiments, the team systematically varied the training set size, employing six distinct configurations: 100, 200, 300, 400, 500, and the full 1182 paragraphs. Each of these smaller training sets was randomly sampled from the main training pool, whilst maintaining a balance across genre labels. The team subsequently divided the held-out set equally into validation and test portions, similarly balanced by label. Notably, researchers excluded the Legal and News genres from these few-shot experiments, as their limited data volume precluded sufficient training. Conversely, the zero-shot experiments leveraged the entirety of the held-out test set.
+For their machine learning experiments, the authors partitioned the annotated ActDisease data into specific training and held-out sets. They carefully designed this division to evaluate model performance in both few-shot and zero-shot learning scenarios. The training set consists exclusively of annotated German texts. In contrast, the held-out (test) set comprises texts in German, French, and Swedish, and crucially, it includes genres that are deliberately absent from the training data to test zero-shot generalisation.
 
-## Genre Distribution within ActDisease Training and Held-Out Sets
+## Genre and Language Distribution
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+![Slide 16](images/ai-nepi_005_slide_16.png)
 
-Analysis of the genre distribution across both the training and held-out samples of the ActDisease dataset revealed a pronounced imbalance. Specifically, the Advertisement and Non-fictional Prose genres exhibited significant disparities in their representation across different languages. This imbalance necessitates careful consideration during model training and evaluation to prevent potential biases.
+An analysis of the dataset reveals the distribution of text instances across different languages and genres. A comparison between the training and held-out sets highlights two important characteristics. First, there are significant imbalances in the prevalence of certain genres, a common feature of real-world data. Second, the held-out set intentionally includes novel genres absent from the training set, a design critical for rigorously assessing the zero-shot classification capabilities of the models.
 
-## Leveraging External Datasets for Zero-Shot Classification
+## External Datasets for Zero-Shot
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+![Slide 17](images/ai-nepi_005_slide_17.png)
 
-For the zero-shot experiments, researchers incorporated external, modern datasets previously utilised in automatic web genre classification. The *Corpus of Online Registers of English* (*CORE*), developed by *Egbert et al. (2015)*, provides document-level annotations. It encompasses English content, with main categories also available in Swedish, Finnish, and French.
+To enhance their zero-shot learning experiments, the team incorporated several publicly available, multilingual datasets for genre classification. These external resources, which include *CORE*, *UDM*, and *FTD*, provide a mix of document-level and sentence-level annotations. Leveraging these datasets allows for more robust training and evaluation of the models' ability to generalise to unseen labels and data distributions.
 
-Similarly, *Sharoff's (2018) Functional Text Dimensions* (*FTD*) dataset, also annotated at the document level, offers balanced content in English and Russian. *Kuzman et al. (2023)* had previously leveraged this dataset for web genre classification. Additionally, the team employed *UD-MULTIGENRE* (*UDM*), a subset of *Universal Dependencies* (*de Marneffe et al., 2021*), which features genre annotations at the sentence level across 38 languages, as detailed by *Danilova and Stymne (2023)*.
+## Cross-Dataset Label Mapping
 
-## Cross-Dataset Genre Mapping and Alignment
+![Slide 18](images/ai-nepi_005_slide_18.png)
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+A comparative table illustrates the mapping of genre labels across the four datasets used in the study: *ActDisease*, *CORE*, *UDM*, and *FTD*. This visualisation reveals considerable variation in the classification schemas, with different datasets using distinct and sometimes conflicting genre definitions. Such heterogeneity poses a significant challenge for zero-shot learning, as models trained on one schema must adapt to another, necessitating a thoughtful approach to label mapping.
 
-Researchers meticulously performed genre mapping across datasets, with two independent annotators undertaking the task. The team only included assignments achieving full agreement in the final mapping, ensuring robust alignment.
+## Training Data Pipeline
 
-This process established correspondences between ActDisease genres and their equivalents in *CORE*, *UDM*, and *FTD*. For instance, "Academic" in ActDisease mapped to "research article" (*RA*) in *CORE*, "academic" in *UDM*, and "academic (*A14*)" in *FTD*. "Advertisement" aligned with "advertisement (*AD*)" in *CORE*, "description with intent to sell (*DS*)" in *UDM*, and "commercial (*A12*)" in *FTD*. Similarly, "Fiction" found its counterparts in "poem" (*PO*) and "short story" (*SS*) in *CORE*, "fiction" in *UDM*, and "fictive (*A4*)" and "poetic (*A19*)" in *FTD*. However, the team encountered a limitation: some ActDisease genres lacked suitable corresponding labels within the available external datasets.
+![Slide 19](images/ai-nepi_005_slide_19.png)
 
-## Training Data Generation and Multilingual Encoder Models
+The authors designed a comprehensive and flexible pipeline for generating training data. This process integrates data from all four sources—*ActDisease*, *CORE*, *UDM*, and *FTD*—and subjects them to a series of preprocessing steps. Crucially, the pipeline incorporates configurable sampling strategies, allowing the team to create various training set compositions to test different hypotheses about model performance and data balancing systematically.
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+## Multilingual Encoder Models
 
-Researchers generated training data through a meticulous pipeline encompassing mapping, preprocessing, chunking, and systematic sampling. They configured training sets in four distinct ways for each dataset: one configuration (*[G+]) focused exclusively on Germanic languages; another (*[B1]*) balanced data according to ActDisease labels; a third (*[G-]*) incorporated all language families; and the final configuration (*[B2]*) balanced data by both ActDisease and original labels. This yielded four *FTD*, four *CORE*, four *UDM*, and four merged training samples, all subjected to fine-tuning.
+![Slide 20](images/ai-nepi_005_slide_20.png)
 
-For classification, the team employed several multilingual encoder models, which are transformer-based neural networks capable of processing text in multiple languages. *XLM-Roberta*, developed by *Conneau et al. (2020)*, served as a state-of-the-art web genre classifier, as noted by *Kuzman et al. (2023)*. *mBERT* (*Devlin et al., 2019*) provided a baseline for comparison with *historical mBERT* (*Schweter et al., 2022*). Crucially, *historical mBERT*, pretrained on an extensive corpus of multilingual historical newspapers, proved particularly relevant given its inclusion of the target languages. These *BERT*-like models have consistently demonstrated efficacy in prior web register and genre classification studies, as evidenced by *Lepekhin and Sharoff (2022)*, *Kuzman and Ljubešić (2023)*, and *Laippala et al. (2023)*. Ultimately, the fine-tuning process generated 48 distinct models, and the team subsequently averaged performance metrics across all configurations.
+The experiments leverage several powerful multilingual encoder models as the basis for classification. The selected models include the widely used *XLM-Roberta* (*xlmr*) and multilingual *BERT* (*mBERT*). In addition, the team evaluates a specialised historical *mBERT* (*hmbert*), which has been pre-trained on a large corpus of historical texts. This selection allows for a comparison between general-purpose multilingual models and a model adapted for the specific domain of historical language.
 
-## Zero-Shot Learning Evaluation and Performance Analysis
+## Fine-Tuning Setup
 
-![Slide 11](images/ai-nepi_005_slide_11.jpg)
+![Slide 21](images/ai-nepi_005_slide_21.png)
 
-Evaluating the zero-shot predictions presented a unique challenge: the imperfect overlap of label sets prevented direct comparison of overall performance metrics. Consequently, researchers meticulously assessed the performance of each genre individually, complementing this analysis with a thorough examination of confusion matrices to mitigate potential biases. The *X-GENRE* web genre classifier, as detailed by *Kuzman et al. (2023)*, served as a robust baseline, with predictions focusing exclusively on the most similar labels directly mappable to the ActDisease genres.
+The experimental design for fine-tuning involved a systematic and large-scale approach. The authors created 16 unique training set configurations by varying the data sources and sampling strategies. They then fine-tuned each of the three base language models (*XLM-R*, *mBERT*, and *hmBERT*) on every one of these 16 configurations. This comprehensive methodology resulted in a total of 48 distinct fine-tuned models, enabling a thorough analysis of how training data composition affects performance.
 
-The experimental setup often involved a cross-lingual context. *FTD* and *X-GENRE*, for instance, operated without German or Swedish data, whilst *UDM* and *CORE* datasets exhibited partially cross-lingual characteristics. Overall, models fine-tuned on *FTD* consistently demonstrated superior performance when integrated with the ActDisease mapping. Conversely, other datasets revealed distinct class-specific biases.
+## Evaluating Zero-Shot Learning
 
-*UDM*, for example, exhibited a bias towards news, primarily because its news training data contained the highest proportion of Germanic instances, overwhelmingly German. Similarly, *CORE* displayed a bias towards the guide genre, as its training data for this category was uniquely multilingual.
+![Slide 22](images/ai-nepi_005_slide_22.png)
 
-Intriguingly, certain models excelled in specific genre predictions. *XLM-Roberta*, when fine-tuned on *UDM*, achieved an average of 32% more correct predictions in the *QA* genre compared to *mBERT* and *hmBERT*. Conversely, *hmBERT*, also on *UDM*, produced an average of 16% more accurate predictions in the Administrative genre than *XLM-Roberta* and *mBERT*. Furthermore, *CORE*-based models consistently proved proficient at predicting the legal genre. Confusion matrices visually underscored these observed behavioural patterns, whilst detailed average per-category *F1* scores provided a comprehensive quantitative assessment across all data configurations.
+The investigation now shifts its focus towards evaluating the models' performance in a zero-shot learning context. This phase assesses the ability of the fine-tuned models to classify genres that they have not encountered during their training phase.
 
-## Few-Shot Learning Performance and Model Advantages
+## Zero-Shot Evaluation Methodology
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+![Slide 23](images/ai-nepi_005_slide_23.png)
 
-Few-shot learning experiments unequivocally demonstrated the advantage of further training models on the ActDisease dataset, particularly when incorporating Masked Language Model (*MLM*) fine-tuning. The *F1* score consistently improved as the number of training instances increased, though it remained below 0.8 even with the full training set of 1182 instances.
+Evaluating zero-shot predictions requires a specialised methodology to handle inherent complexities. The primary challenges include managing the partial overlap between genre label sets from different source datasets and accounting for cross-lingual scenarios where a model is tested on a language not present in its training data. The authors' evaluation protocol is designed specifically to navigate these issues, ensuring a robust and fair assessment of model generalisation.
 
-Amongst the models tested, *hmBERT-MLM* consistently outperformed its counterparts. A detailed examination of its performance revealed that, unlike other models, *hmBERT-MLM* retained its capacity to differentiate between fiction and nonfiction genres even when exposed to the full dataset. Conversely, other models, notably *XLM-Roberta*, exhibited a drastic decline in their ability to distinguish these two categories.
+## Zero-Shot Results Overview
 
-Analysis of *XLM-Roberta*'s confusion matrix, when fine-tuned with *MLM* on the full dataset, indicated a frequent overprediction of nonfiction prose for fiction. This phenomenon likely stems from the shared thematic content within the ActDisease data, where both fictional and autobiographical narratives often revolve around patient experiences, leading to similar themes and narrative structures. Consequently, researchers propose that an increased volume of data is essential to enhance performance in distinguishing these increasingly similar genres.
+![Slide 24](images/ai-nepi_005_slide_24.png)
 
-## Few-Shot Prompting with Llama-3.1 8b Instruct
+An overview of the zero-shot experiment results reveals several key patterns. For the *FTD* dataset, employing a specific label mapping strategy yields a noticeable improvement in model performance. Across other datasets, however, results indicate the presence of class-specific and language-related biases. On the *UDM* dataset, the investigators observed intriguing performance variations between the different models for certain classification tasks. Notably, models fine-tuned using the *CORE* dataset demonstrate a particular aptitude for correctly identifying texts belonging to the *Legal* genre.
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+## Comparative Confusion Matrices
 
-Given the current insufficiency of data for comprehensive instruction tuning, researchers opted to evaluate few-shot prompting using *Llama 3.1 8b Instruct*, a widely recognised multilingual generative model with open weights. The prompt structure provided clear genre definitions, complemented by two or three illustrative examples for each category.
+![Slide 25](images/ai-nepi_005_slide_25.png)
 
-The results indicated that the model handled certain genre labels with reasonable efficacy. For instance, it achieved an *F1*-score of 0.84 for Legal content and 0.72 for Academic texts. However, the limited number of examples proved insufficient for robust representation across all genres. Notably, nonfictional prose yielded a lower *F1*-score of 0.49, whilst advertisement and administrative content also demonstrated suboptimal performance, with *F1*-scores of 0.73 and 0.60 respectively. The overall accuracy stood at 0.62, with a macro average *F1*-score of 0.59 and a weighted average of 0.63.
+Four confusion matrices provide a visual comparison of the performance of different genre classification models. The matrices detail the results for models such as *hmbert_UDM*, *xlmr_CORE*, *xlmr_UDM*, and *xlmr_FTD*, each representing a unique combination of base architecture and training data. These visualisations allow for a direct comparison of error patterns and classification accuracy under various experimental conditions when evaluated on the held-out ActDisease data.
 
-## Key Findings and Strategic Recommendations
+## Zero-Shot F1 Scores
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+![Slide 26](images/ai-nepi_005_slide_26.png)
 
-Popular magazines, unlike more specialised scientific journals or books, frequently encompass a multitude of genres. This characteristic significantly complicates text mining efforts. Researchers have concluded that genres inherently reflect deliberate choices in communicative strategies; consequently, accounting for these distinctions, whilst challenging, proves crucial for achieving accurate and detailed interpretations of text mining outcomes. Fundamentally, genre classification renders these rich historical sources accessible for advanced text mining.
+A summary table presents the zero-shot performance using the per-category F1 score as the primary metric. These scores, which measure the balance between precision and recall for each genre, are averaged across the various training data configurations. This allows for a consolidated view of how well each language model performs on individual genre categories in a zero-shot setting.
 
-For scenarios lacking dedicated training data, two viable strategies emerge. Firstly, one can successfully leverage existing modern datasets, provided the target categories maintain a general purpose. Alternatively, few-shot instruction of a proficient generative model offers another effective pathway.
+## Impact of Data Configuration
 
-However, when some training data is available, few-shot learning of multilingual encoders, particularly those with prior Masked Language Model (*MLM*) fine-tuning—such as *XLM-Roberta* or *historical multilingual BERT*—demonstrates superior performance. Indeed, this latter approach emerged as the optimal solution for the project. Notably, *historical multilingual BERT* exhibited particularly strong gains, achieving a 24% improvement, which significantly surpassed the 14.5% gain for *mBERT-MLM* and 16.9% for *XLM-RoBERTa*. These findings underscore the value of domain-specific pre-training for historical text analysis.
+![Slide 27](images/ai-nepi_005_slide_27.png)
 
-## Ongoing and Future Research Directions
+The authors analysed the average F1 performance of the classification models across three distinct target tasks, corresponding to the *FTD*, *CORE*, and *UDM* datasets. This analysis specifically investigates how performance is affected by two key factors in the training data construction: the application of data balancing techniques and the inclusion or exclusion of certain language families. The results illuminate the sensitivity of model performance to the composition of the training corpus.
 
-![Slide 39](images/ai-nepi_005_slide_39.jpg)
+## Evaluating Few-Shot Learning
 
-The research team is actively pursuing several avenues to enhance the quality and scope of this work for both the project and the wider academic community. Currently, researchers are engaging with specific historical hypotheses, leveraging the insights gained from genre classification. Furthermore, they are developing a new, more fine-grained annotation scheme for genres, a project notably financed by *Swe-CLARIN*. Methodologically, the team is exploring advanced techniques, including synthetic data generation and active learning, to further refine their classification capabilities.
+![Slide 28](images/ai-nepi_005_slide_28.png)
 
-## Acknowledgements
+The report now transitions to an evaluation of the models under a few-shot learning paradigm. This section assesses how effectively the models can learn to classify genres when provided with only a small number of training examples from the target ActDisease dataset.
 
-![Slide 19](images/ai-nepi_005_slide_19.jpg)
+## Few-Shot Learning Performance
 
-The project gratefully acknowledges the invaluable contributions of its annotators and core team members: Ylva Söderfeldt, Julia Reed, Andrew Burchell, Maria Skeppstedt, and Gijs Aangenendt. Funding for this research came generously from the European Research Council under grant *ERC-2021-STG 10104099*. The Centre for Digital Humanities and Social Sciences offered crucial institutional support, supplying essential *GPUs* and data storage facilities. Finally, the team extends its gratitude to the diligent reviewers, Dr Maria Skeppstedt and other anonymous contributors, whose feedback significantly enhanced the work. Further details are available on the project website.
+![Slide 29](images/ai-nepi_005_slide_29.png)
+
+The evaluation of few-shot learning reveals clear performance trends. As expected, F1 scores for all models generally improve as the number of available training examples increases. A crucial finding is that an intermediate step of Masked Language Model (MLM) fine-tuning on the target domain's text confers a distinct advantage, consistently boosting classification accuracy. Amongst all configurations, the *hmBERT-MLM* model, which combines historical pre-training with domain-specific MLM fine-tuning, achieves the highest performance.
+
+## Few-Shot F1 Score Details
+
+![Slide 30](images/ai-nepi_005_slide_30.png)
+
+A detailed table presents the per-category F1 scores for the few-shot learning experiments. The results are broken down for each language model and are shown at two distinct levels of data availability (for example, with 16 and 32 training examples per class). In addition to the granular, per-category scores, the table also includes overall performance metrics, allowing for a comprehensive comparison of the models' effectiveness in a data-scarce environment.
+
+## Full-Dataset Performance
+
+![Slide 31](images/ai-nepi_005_slide_31.png)
+
+When trained on the full dataset, the *XLM-Roberta-MLM* model demonstrates strong classification capabilities, as illustrated by a confusion matrix. The matrix reveals specific patterns of misclassification, which in turn provide insights into the nature of the data. For instance, it highlights the thematic and stylistic similarities between the *Guide*, *Nonfiction Prose*, and *QA* genres as they appear within the context of diabetes patient magazines, explaining why the model sometimes confuses them.
+
+## Evaluating Few-Shot Prompting
+
+![Slide 32](images/ai-nepi_005_slide_32.png)
+
+The final experimental section shifts to an evaluation of few-shot prompting. This approach assesses the ability of large generative language models to perform genre classification based on instructions and a small number of examples provided directly in the input prompt.
+
+## Instruction-Based Classification
+
+![Slide 33](images/ai-nepi_005_slide_33.png)
+
+For the prompting experiment, the authors formulated a detailed set of instructions for a text genre classification task. The prompt explicitly defines the nine target genres, complete with illustrative examples for each, and specifies the required input and output format. The chosen language model for executing this instruction-based, few-shot task is *Llama-3.1 8b*.
+
+## Llama-3.1 8b Performance
+
+![Slide 34](images/ai-nepi_005_slide_34.png)
+
+The performance of the *Llama-3.1 8b Instruct* model on the few-shot prompting task is presented. The results include F1-scores for each genre, quantifying the model's accuracy. A detailed confusion matrix is also provided, offering a granular view of the model's classification decisions and revealing which genres were most frequently confused with one another.
+
+## Conclusion on Text Mining
+
+![Slide 35](images/ai-nepi_005_slide_35.png)
+
+A primary conclusion from this work is that applying text mining techniques to popular magazines is an inherently more complex task than analysing more uniform corpora like scientific journals or books. The authors attribute this increased difficulty directly to the rich and varied multitude of genres that coexist within a single magazine issue, demanding more sophisticated analytical approaches.
+
+## Summary of Conclusions
+
+![Slide 37](images/ai-nepi_005_slide_37.png)
+
+The authors' research yields several key conclusions:
+
+- The generic diversity of historical magazines poses a substantial challenge for text mining.
+
+- Genre classification proves to be an indispensable tool, enabling the kind of fine-grained analysis necessary for deep historical inquiry.
+
+- Modern, large-scale datasets can be successfully leveraged to improve the analysis of historical texts.
+
+- Contemporary generative models exhibit promising quality on these classification tasks.
+
+- Few-shot learning with multilingual encoders is a highly effective strategy, with performance being particularly strong when using models specifically adapted for historical language.
