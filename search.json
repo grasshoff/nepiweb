@@ -164,17 +164,17 @@
     "href": "chapter_ai-nepi_004.html",
     "title": "4  OpenAlex Mapper presentation slide",
     "section": "",
-    "text": "Overview\nMax Neuchel, Andrea Loetgers, and Taya Knulla of Utrecht University have crafted OpenAlex Mapper, a sophisticated tool for visualising and querying scientific discourse. Their system processes extensive datasets of scholarly articles from OpenAlex, employing advanced dimensionality reduction to map publications into a two-dimensional conceptual space.\nThe team’s methodology involves sampling 300,000 English-language articles with well-formed abstracts, embedding them with a language model, and subsequently projecting them via a pre-trained UMAP model. A key feature of the tool is its capacity to accept arbitrary user queries to OpenAlex, download the results, and seamlessly integrate these new articles into the existing conceptual map. This functionality facilitates a dynamic exploration of research trends and the conceptual distribution of scientific knowledge, despite a minor technical issue encountered during a live demonstration.",
+    "text": "Overview\nMax Neuchel, Andrea Loetgers, and Taya Knulla of Utrecht University have developed OpenAlex Mapper, a novel tool designed to visualise and query scientific discourse. Their system processes large datasets of scholarly articles from OpenAlex, employing advanced dimensionality reduction techniques to map publications into a two-dimensional conceptual space.\nThe team’s methodology involves sampling 300,000 English-language articles with well-formed abstracts, embedding them with a language model, and projecting them via a pre-trained UMAP model. Crucially, the tool enables users to submit arbitrary queries to OpenAlex, download the results, and seamlessly integrate these new articles into the existing conceptual map. This design allows for the dynamic exploration of research trends and the conceptual distribution of scientific knowledge, despite a minor technical issue encountered during a live demonstration.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#project-origins-and-data-acquisition",
-    "href": "chapter_ai-nepi_004.html#project-origins-and-data-acquisition",
+    "objectID": "chapter_ai-nepi_004.html#project-origins-and-data",
+    "href": "chapter_ai-nepi_004.html#project-origins-and-data",
     "title": "4  OpenAlex Mapper presentation slide",
-    "section": "4.1 Project Origins and Data Acquisition",
-    "text": "4.1 Project Origins and Data Acquisition\n\n\n\nSlide 02\n\n\nThe OpenAlex Mapper project, a collaborative endeavour by Max Neuchel, Andrea Loetgers, and Taya Knulla, originates from the Department of Theoretical Philosophy at Utrecht University. The team initiated their work by acquiring a substantial dataset from the OpenAlex database, comprising 300,000 randomly selected articles.\nTo ensure data quality, the authors applied stringent selection criteria. Each article was required to possess a well-formed abstract and be published in English, thereby establishing a robust foundation for the subsequent analysis.",
+    "section": "4.1 Project Origins and Data",
+    "text": "4.1 Project Origins and Data\n\n\n\nSlide 02\n\n\nOriginating from the theoretical philosophy department at Utrecht University, the OpenAlex Mapper project is a collaborative endeavour by Max Neuchel, Andrea Loetgers, and Taya Knulla. The authors initiated their work by acquiring a substantial dataset from the OpenAlex database, comprising 300,000 randomly selected articles.\nTo ensure data quality, they applied stringent selection criteria: each article required a reasonably well-formed abstract and publication in English. This careful curation established a robust foundation for all subsequent analysis.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
@@ -184,7 +184,7 @@
     "href": "chapter_ai-nepi_004.html#dimensionality-reduction-and-functionality",
     "title": "4  OpenAlex Mapper presentation slide",
     "section": "4.2 Dimensionality Reduction and Functionality",
-    "text": "4.2 Dimensionality Reduction and Functionality\n\n\n\nSlide 03\n\n\nTo process the extensive article dataset, the team applied Uniform Manifold Approximation and Projection (UMAP), a technique that effectively reduces the data’s dimensionality to two. This trained UMAP model is meticulously retained, ensuring consistent application across all operations.\nAs a dedicated tool, OpenAlex Mapper leverages this foundational model. It enables users to submit arbitrary queries directly to the OpenAlex database, which facilitates dynamic data retrieval and analysis.",
+    "text": "4.2 Dimensionality Reduction and Functionality\n\n\n\nSlide 03\n\n\nTo manage the extensive article dataset, the team applied Uniform Manifold Approximation and Projection (UMAP), which effectively reduces the data’s dimensionality to two dimensions. The authors meticulously retained this trained UMAP model to ensure consistent application across all operations.\nAs a dedicated tool, OpenAlex Mapper leverages this foundational model whilst enabling users to submit arbitrary queries directly to the OpenAlex database. This functionality facilitates dynamic data retrieval and analysis within the established conceptual space.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
@@ -194,37 +194,37 @@
     "href": "chapter_ai-nepi_004.html#embedding-and-projection-workflow",
     "title": "4  OpenAlex Mapper presentation slide",
     "section": "4.3 Embedding and Projection Workflow",
-    "text": "4.3 Embedding and Projection Workflow\n\n\n\nSlide 04\n\n\nThe team established a precise workflow for integrating new data into OpenAlex Mapper. The process begins with the tool downloading query results directly from the OpenAlex database.\nSubsequently, it embeds these newly acquired articles using the identical language model employed during the initial dataset processing. Finally, the system projects these embedded representations through the pre-trained UMAP model, ensuring a consistent placement within the established two-dimensional conceptual space.",
+    "text": "4.3 Embedding and Projection Workflow\n\n\n\nSlide 04\n\n\nThe workflow for integrating new data into OpenAlex Mapper is precisely defined. First, the tool downloads query results directly from the OpenAlex database. Subsequently, it embeds these newly acquired articles using the identical language model employed during the initial dataset processing.\nFinally, the system projects these embedded representations through the pre-trained UMAP model. This procedure ensures a consistent and coherent projection into the established two-dimensional conceptual space.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#conceptual-integration",
-    "href": "chapter_ai-nepi_004.html#conceptual-integration",
+    "objectID": "chapter_ai-nepi_004.html#conceptual-mapping-and-integration",
+    "href": "chapter_ai-nepi_004.html#conceptual-mapping-and-integration",
     "title": "4  OpenAlex Mapper presentation slide",
-    "section": "4.4 Conceptual Integration",
-    "text": "4.4 Conceptual Integration\n\n\n\nSlide 05\n\n\nThrough this systematic process, newly processed articles acquire precise positions on the two-dimensional conceptual map. The underlying principle ensures that these positions are assigned as if the articles had been an integral part of the original layout.\nThis seamless integration facilitates a coherent and continuously evolving visualisation of scholarly discourse, thereby maintaining the integrity of the conceptual distribution.",
+    "section": "4.4 Conceptual Mapping and Integration",
+    "text": "4.4 Conceptual Mapping and Integration\n\n\n\nSlide 05\n\n\nThrough this systematic process, newly processed articles acquire precise positions on the two-dimensional conceptual map. The underlying principle ensures that these positions are assigned as if the articles had been an integral part of the original layout.\nThis seamless integration allows for a coherent and continuously evolving visualisation of scholarly discourse, thereby maintaining the integrity of the conceptual distribution over time.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#the-role-of-umap-and-live-demonstration",
-    "href": "chapter_ai-nepi_004.html#the-role-of-umap-and-live-demonstration",
+    "objectID": "chapter_ai-nepi_004.html#umaps-role-and-demonstration",
+    "href": "chapter_ai-nepi_004.html#umaps-role-and-demonstration",
     "title": "4  OpenAlex Mapper presentation slide",
-    "section": "4.5 The Role of UMAP and Live Demonstration",
-    "text": "4.5 The Role of UMAP and Live Demonstration\n\n\n\nSlide 06\n\n\nThe inherent features of UMAP significantly simplify the integration of new data points into the existing map, streamlining the process considerably. Following this technical explanation, the presenter proceeded with a live demonstration of the OpenAlex Mapper tool, aiming to illustrate its functionality in real-time.",
+    "section": "4.5 UMAP’s Role and Demonstration",
+    "text": "4.5 UMAP’s Role and Demonstration\n\n\n\nSlide 06\n\n\nThe inherent features of UMAP significantly simplify the integration of new data points into the existing map, streamlining the process considerably. Following the technical explanation, the presenter proceeded to attempt a live demonstration of the OpenAlex Mapper tool, aiming to illustrate its real-time functionality.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#demonstration-challenges",
-    "href": "chapter_ai-nepi_004.html#demonstration-challenges",
+    "objectID": "chapter_ai-nepi_004.html#technical-challenges",
+    "href": "chapter_ai-nepi_004.html#technical-challenges",
     "title": "4  OpenAlex Mapper presentation slide",
-    "section": "4.6 Demonstration Challenges",
-    "text": "4.6 Demonstration Challenges\n\n\n\nSlide 07\n\n\nAn unexpected technical issue arose during the live demonstration, which unfortunately prevented the tool from operating as intended. This anomaly, which had not been observed during extensive prior testing, was unforeseen. Nevertheless, the presenter promptly initiated a second attempt to run the demonstration and resolve the challenge.",
+    "section": "4.6 Technical Challenges",
+    "text": "4.6 Technical Challenges\n\n\n\nSlide 07\n\n\nRegrettably, an unexpected technical issue arose during the live demonstration, which prevented the tool from operating as intended. This anomaly, which had not been observed during extensive prior testing, was unforeseen. Nevertheless, the presenter promptly initiated a second attempt to run the demonstration and resolve the challenge.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]

@@ -238,12 +238,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#project-origins-and-data-acquisition" id="toc-project-origins-and-data-acquisition" class="nav-link" data-scroll-target="#project-origins-and-data-acquisition"><span class="header-section-number">4.1</span> Project Origins and Data Acquisition</a></li>
+  <li><a href="#project-origins-and-data" id="toc-project-origins-and-data" class="nav-link" data-scroll-target="#project-origins-and-data"><span class="header-section-number">4.1</span> Project Origins and Data</a></li>
   <li><a href="#dimensionality-reduction-and-functionality" id="toc-dimensionality-reduction-and-functionality" class="nav-link" data-scroll-target="#dimensionality-reduction-and-functionality"><span class="header-section-number">4.2</span> Dimensionality Reduction and Functionality</a></li>
   <li><a href="#embedding-and-projection-workflow" id="toc-embedding-and-projection-workflow" class="nav-link" data-scroll-target="#embedding-and-projection-workflow"><span class="header-section-number">4.3</span> Embedding and Projection Workflow</a></li>
-  <li><a href="#conceptual-integration" id="toc-conceptual-integration" class="nav-link" data-scroll-target="#conceptual-integration"><span class="header-section-number">4.4</span> Conceptual Integration</a></li>
-  <li><a href="#the-role-of-umap-and-live-demonstration" id="toc-the-role-of-umap-and-live-demonstration" class="nav-link" data-scroll-target="#the-role-of-umap-and-live-demonstration"><span class="header-section-number">4.5</span> The Role of <em>UMAP</em> and Live Demonstration</a></li>
-  <li><a href="#demonstration-challenges" id="toc-demonstration-challenges" class="nav-link" data-scroll-target="#demonstration-challenges"><span class="header-section-number">4.6</span> Demonstration Challenges</a></li>
+  <li><a href="#conceptual-mapping-and-integration" id="toc-conceptual-mapping-and-integration" class="nav-link" data-scroll-target="#conceptual-mapping-and-integration"><span class="header-section-number">4.4</span> Conceptual Mapping and Integration</a></li>
+  <li><a href="#umaps-role-and-demonstration" id="toc-umaps-role-and-demonstration" class="nav-link" data-scroll-target="#umaps-role-and-demonstration"><span class="header-section-number">4.5</span> <em>UMAP</em>’s Role and Demonstration</a></li>
+  <li><a href="#technical-challenges" id="toc-technical-challenges" class="nav-link" data-scroll-target="#technical-challenges"><span class="header-section-number">4.6</span> Technical Challenges</a></li>
   </ul>
 </nav>
     </div>
@@ -290,19 +290,19 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>Max Neuchel, Andrea Loetgers, and Taya Knulla of Utrecht University have crafted <em>OpenAlex Mapper</em>, a sophisticated tool for visualising and querying scientific discourse. Their system processes extensive datasets of scholarly articles from OpenAlex, employing advanced dimensionality reduction to map publications into a two-dimensional conceptual space.</p>
-<p>The team’s methodology involves sampling 300,000 English-language articles with well-formed abstracts, embedding them with a language model, and subsequently projecting them via a pre-trained <em>UMAP</em> model. A key feature of the tool is its capacity to accept arbitrary user queries to OpenAlex, download the results, and seamlessly integrate these new articles into the existing conceptual map. This functionality facilitates a dynamic exploration of research trends and the conceptual distribution of scientific knowledge, despite a minor technical issue encountered during a live demonstration.</p>
+<p>Max Neuchel, Andrea Loetgers, and Taya Knulla of Utrecht University have developed <em>OpenAlex Mapper</em>, a novel tool designed to visualise and query scientific discourse. Their system processes large datasets of scholarly articles from OpenAlex, employing advanced dimensionality reduction techniques to map publications into a two-dimensional conceptual space.</p>
+<p>The team’s methodology involves sampling 300,000 English-language articles with well-formed abstracts, embedding them with a language model, and projecting them via a pre-trained <em>UMAP</em> model. Crucially, the tool enables users to submit arbitrary queries to OpenAlex, download the results, and seamlessly integrate these new articles into the existing conceptual map. This design allows for the dynamic exploration of research trends and the conceptual distribution of scientific knowledge, despite a minor technical issue encountered during a live demonstration.</p>
 </section>
-<section id="project-origins-and-data-acquisition" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="project-origins-and-data-acquisition"><span class="header-section-number">4.1</span> Project Origins and Data Acquisition</h2>
+<section id="project-origins-and-data" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="project-origins-and-data"><span class="header-section-number">4.1</span> Project Origins and Data</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_004_slide_02.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 02</figcaption>
 </figure>
 </div>
-<p>The <em>OpenAlex Mapper</em> project, a collaborative endeavour by Max Neuchel, Andrea Loetgers, and Taya Knulla, originates from the Department of Theoretical Philosophy at Utrecht University. The team initiated their work by acquiring a substantial dataset from the OpenAlex database, comprising 300,000 randomly selected articles.</p>
-<p>To ensure data quality, the authors applied stringent selection criteria. Each article was required to possess a well-formed abstract and be published in English, thereby establishing a robust foundation for the subsequent analysis.</p>
+<p>Originating from the theoretical philosophy department at Utrecht University, the <em>OpenAlex Mapper</em> project is a collaborative endeavour by Max Neuchel, Andrea Loetgers, and Taya Knulla. The authors initiated their work by acquiring a substantial dataset from the OpenAlex database, comprising 300,000 randomly selected articles.</p>
+<p>To ensure data quality, they applied stringent selection criteria: each article required a reasonably well-formed abstract and publication in English. This careful curation established a robust foundation for all subsequent analysis.</p>
 </section>
 <section id="dimensionality-reduction-and-functionality" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="dimensionality-reduction-and-functionality"><span class="header-section-number">4.2</span> Dimensionality Reduction and Functionality</h2>
@@ -312,8 +312,8 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Slide 03</figcaption>
 </figure>
 </div>
-<p>To process the extensive article dataset, the team applied <em>Uniform Manifold Approximation and Projection</em> (<em>UMAP</em>), a technique that effectively reduces the data’s dimensionality to two. This trained <em>UMAP</em> model is meticulously retained, ensuring consistent application across all operations.</p>
-<p>As a dedicated tool, <em>OpenAlex Mapper</em> leverages this foundational model. It enables users to submit arbitrary queries directly to the OpenAlex database, which facilitates dynamic data retrieval and analysis.</p>
+<p>To manage the extensive article dataset, the team applied Uniform Manifold Approximation and Projection (<em>UMAP</em>), which effectively reduces the data’s dimensionality to two dimensions. The authors meticulously retained this trained <em>UMAP</em> model to ensure consistent application across all operations.</p>
+<p>As a dedicated tool, <em>OpenAlex Mapper</em> leverages this foundational model whilst enabling users to submit arbitrary queries directly to the OpenAlex database. This functionality facilitates dynamic data retrieval and analysis within the established conceptual space.</p>
 </section>
 <section id="embedding-and-projection-workflow" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="embedding-and-projection-workflow"><span class="header-section-number">4.3</span> Embedding and Projection Workflow</h2>
@@ -323,11 +323,11 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Slide 04</figcaption>
 </figure>
 </div>
-<p>The team established a precise workflow for integrating new data into <em>OpenAlex Mapper</em>. The process begins with the tool downloading query results directly from the OpenAlex database.</p>
-<p>Subsequently, it embeds these newly acquired articles using the identical language model employed during the initial dataset processing. Finally, the system projects these embedded representations through the pre-trained <em>UMAP</em> model, ensuring a consistent placement within the established two-dimensional conceptual space.</p>
+<p>The workflow for integrating new data into <em>OpenAlex Mapper</em> is precisely defined. First, the tool downloads query results directly from the OpenAlex database. Subsequently, it embeds these newly acquired articles using the identical language model employed during the initial dataset processing.</p>
+<p>Finally, the system projects these embedded representations through the pre-trained <em>UMAP</em> model. This procedure ensures a consistent and coherent projection into the established two-dimensional conceptual space.</p>
 </section>
-<section id="conceptual-integration" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="conceptual-integration"><span class="header-section-number">4.4</span> Conceptual Integration</h2>
+<section id="conceptual-mapping-and-integration" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="conceptual-mapping-and-integration"><span class="header-section-number">4.4</span> Conceptual Mapping and Integration</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_004_slide_05.png" class="img-fluid figure-img"></p>
@@ -335,27 +335,27 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Through this systematic process, newly processed articles acquire precise positions on the two-dimensional conceptual map. The underlying principle ensures that these positions are assigned as if the articles had been an integral part of the original layout.</p>
-<p>This seamless integration facilitates a coherent and continuously evolving visualisation of scholarly discourse, thereby maintaining the integrity of the conceptual distribution.</p>
+<p>This seamless integration allows for a coherent and continuously evolving visualisation of scholarly discourse, thereby maintaining the integrity of the conceptual distribution over time.</p>
 </section>
-<section id="the-role-of-umap-and-live-demonstration" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="the-role-of-umap-and-live-demonstration"><span class="header-section-number">4.5</span> The Role of <em>UMAP</em> and Live Demonstration</h2>
+<section id="umaps-role-and-demonstration" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="umaps-role-and-demonstration"><span class="header-section-number">4.5</span> <em>UMAP</em>’s Role and Demonstration</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_004_slide_06.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 06</figcaption>
 </figure>
 </div>
-<p>The inherent features of <em>UMAP</em> significantly simplify the integration of new data points into the existing map, streamlining the process considerably. Following this technical explanation, the presenter proceeded with a live demonstration of the <em>OpenAlex Mapper</em> tool, aiming to illustrate its functionality in real-time.</p>
+<p>The inherent features of <em>UMAP</em> significantly simplify the integration of new data points into the existing map, streamlining the process considerably. Following the technical explanation, the presenter proceeded to attempt a live demonstration of the <em>OpenAlex Mapper</em> tool, aiming to illustrate its real-time functionality.</p>
 </section>
-<section id="demonstration-challenges" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="demonstration-challenges"><span class="header-section-number">4.6</span> Demonstration Challenges</h2>
+<section id="technical-challenges" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="technical-challenges"><span class="header-section-number">4.6</span> Technical Challenges</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ai-nepi_004_slide_07.png" class="img-fluid figure-img"></p>
 <figcaption>Slide 07</figcaption>
 </figure>
 </div>
-<p>An unexpected technical issue arose during the live demonstration, which unfortunately prevented the tool from operating as intended. This anomaly, which had not been observed during extensive prior testing, was unforeseen. Nevertheless, the presenter promptly initiated a second attempt to run the demonstration and resolve the challenge.</p>
+<p>Regrettably, an unexpected technical issue arose during the live demonstration, which prevented the tool from operating as intended. This anomaly, which had not been observed during extensive prior testing, was unforeseen. Nevertheless, the presenter promptly initiated a second attempt to run the demonstration and resolve the challenge.</p>
 
 
 </section>
