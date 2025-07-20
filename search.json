@@ -12,51 +12,51 @@
   {
     "objectID": "chapter_ai-nepi_001.html",
     "href": "chapter_ai-nepi_001.html",
-    "title": "2  Large Language Models for the History, Philosophy, and Sociology of Science",
+    "title": "2  NEPI Workshop Content Overview",
     "section": "",
-    "text": "Overview\nThis workshop convenes experts to explore the application of large language models (LLMs) within the history, philosophy, and sociology of science. The event, organised by Adrian Wüthrich, Arno Simons, Michael Zich, and Gerd Grasshoff, has attracted considerable attention, with over 50 paper submissions and more than 220 registered participants attending both in person and online.\nThe workshop’s conception arises from two principal sources: the Network Epistemology in Practice (NEPI) project and Gerd Grasshoff’s sustained advocacy for artificial intelligence in the history and philosophy of science. Within the NEPI project, Arno Simons has pioneered the training of LLMs on physics texts, whilst Michael Zich has applied these models to analyse conceptual challenges in physics. Concurrently, Gerd Grasshoff has long championed the use of AI to examine the processes of scientific discovery.\nFunded by the ERC Grant Network Epistemology in Practice, the workshop directly advances the NEPI project’s central objective: to meticulously study the internal communications of the ATLAS collaboration at CERN. This research seeks to illuminate how one of the world’s largest particle physics collaborations collectively generates new knowledge. To this end, the project integrates network analysis for mapping communication structures with semantic tools, including LLMs, to trace the flow of ideas.\nThe organisers extend their sincere gratitude to Svenja Götz, Lea Stengel, and Julia Kim for their invaluable administrative and organisational support. Thanks are also due to Oliver Ziegler and the Unicam team for their technical expertise in recording the sessions and managing the Zoom meeting.",
+    "text": "Overview\nThis chapter documents the operational and academic architecture of the workshop, detailing essential logistics alongside the intellectual focus of its keynote sessions. The discussion begins with the recording policy for all sessions, including the specific equipment employed and the consent-based protocol for disseminating talks via NEPI’s YouTube channel.\nFollowing this, the chapter provides practical guidance on the social programme, outlining the designated venues for coffee breaks, lunch, and the main reception. The academic core of the workshop is then introduced through two keynote addresses.\nThe first, from Pierluigi Cassotti and Nina Tahmasebi of the University of Gothenburg, explores large-scale text analysis for studying cultural and societal change. Their work centres on semantic change detection and the application of data science within the humanities. The second keynote, delivered by Iryna Gurevych from the Technical University of Darmstadt, investigates the challenge of elevating Natural Language Processing to a cross-document level. Her presentation covers information extraction, semantic processing, and machine learning, with a particular focus on their utility in the social sciences and humanities.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Large Language Models for the History, Philosophy, and Sociology of Science</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NEPI Workshop Content Overview</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_001.html#logistics-and-recording",
-    "href": "chapter_ai-nepi_001.html#logistics-and-recording",
-    "title": "2  Large Language Models for the History, Philosophy, and Sociology of Science",
-    "section": "2.1 Logistics and Recording",
-    "text": "2.1 Logistics and Recording\n\n\n\nSlide 02\n\n\nAll workshop sessions are being recorded, a condition to which participants consented during registration. The recording setup consists of a single camera focused on the presenter and four microphones, with an iPhone serving as an audio backup.\nWith the explicit consent of each speaker, videos of the talks—including both the presentation and subsequent discussion—will be made available on the NEPI YouTube Channel. During discussion periods, the recording will capture only the presenter’s audio and video. Participants may approach the organisers for further information or to withdraw their consent.\nTo manage time effectively with a large audience, attendees are kindly asked to keep questions and comments concise. The organisers will collate approximately four questions after each talk for the presenter to address as a group.\nFor ongoing dialogue, participants may use the provided Etherpad (Cryptpad) to post comments and questions. Additionally, the Zoom chat facilitates real-time interaction for all attendees. The programme also includes scheduled lunch and coffee breaks, a reception, and a workshop dinner to encourage informal networking. Please note that seating for the dinner is limited.",
+    "objectID": "chapter_ai-nepi_001.html#recording-protocols-and-dissemination",
+    "href": "chapter_ai-nepi_001.html#recording-protocols-and-dissemination",
+    "title": "2  NEPI Workshop Content Overview",
+    "section": "2.1 Recording Protocols and Dissemination",
+    "text": "2.1 Recording Protocols and Dissemination\n\n\n\nSlide 02\n\n\nThe organisers established a transparent recording protocol, clearly communicated to participants through on-screen notifications and during the registration process. The technical configuration is precise: a single camera remains fixed on the presenter, whilst four microphones capture high-quality audio. An iPhone serves as a supplementary backup device to ensure a complete record.\nA cornerstone of this policy is presenter autonomy. NEPI will only upload recordings of talks and their subsequent discussions to its YouTube channel after securing explicit consent from each speaker. Attendees with questions or concerns regarding consent were encouraged to speak directly with the organising team.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Large Language Models for the History, Philosophy, and Sociology of Science</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NEPI Workshop Content Overview</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_001.html#venues-and-keynote-introductions",
-    "href": "chapter_ai-nepi_001.html#venues-and-keynote-introductions",
-    "title": "2  Large Language Models for the History, Philosophy, and Sociology of Science",
-    "section": "2.2 Venues and Keynote Introductions",
-    "text": "2.2 Venues and Keynote Introductions\n\n\n\nSlide 04\n\n\nThe workshop dinner is reserved for participants who have received prior confirmation. Coffee breaks and refreshments will be served here in room H 3005.\nLunch and the evening reception, however, will be held in room H 2051. This room is located at the end of the hall and one floor below the current level. The organisers will guide everyone to this location after today’s final presentation.\nThe programme now turns to the keynote speakers. The first presentation will be delivered by Pierluigi Cassotti and Nina Tahmasebi from the University of Gothenburg.",
+    "objectID": "chapter_ai-nepi_001.html#social-programme-and-venues",
+    "href": "chapter_ai-nepi_001.html#social-programme-and-venues",
+    "title": "2  NEPI Workshop Content Overview",
+    "section": "2.2 Social Programme and Venues",
+    "text": "2.2 Social Programme and Venues\n\n\n\nSlide 04\n\n\nThe workshop’s social programme is designed to foster community and collegial exchange. A vibrant, comic-style illustration, evoking the communal feasts of the Asterix series, sets a convivial tone for these gatherings.\nTo facilitate networking and refreshment, the organisers have arranged specific venues for all social events. Coffee and other refreshments will be served in H 3005. The adjacent H 2051 will host both the lunch breaks and the evening reception, providing a central hub for informal discussion.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Large Language Models for the History, Philosophy, and Sociology of Science</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NEPI Workshop Content Overview</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_001.html#keynote-1-cultural-and-societal-change",
-    "href": "chapter_ai-nepi_001.html#keynote-1-cultural-and-societal-change",
-    "title": "2  Large Language Models for the History, Philosophy, and Sociology of Science",
-    "section": "2.3 Keynote 1: Cultural and Societal Change",
-    "text": "2.3 Keynote 1: Cultural and Societal Change\n\n\n\nSlide 05\n\n\nThe first keynote, titled Large-scale text analysis for the study of cultural and societal change, will be presented by Pierluigi Cassotti and Nina Tahmasebi of the University of Gothenburg.\nWithin the ‘Change is Key’ research programme, Nina Tahmasebi serves as Principal Investigator and Pierluigi Cassotti contributes as a researcher. Both are known for their influential work in semantic change detection.\nTheir research agenda is notably comprehensive, addressing not only the technical development of benchmarks for evaluating analytical methods but also the broader methodological challenges of applying data science to complex questions in the humanities. This interdisciplinary focus makes their work particularly relevant to the themes of this workshop.",
+    "objectID": "chapter_ai-nepi_001.html#keynote-analysing-cultural-change-with-large-scale-text",
+    "href": "chapter_ai-nepi_001.html#keynote-analysing-cultural-change-with-large-scale-text",
+    "title": "2  NEPI Workshop Content Overview",
+    "section": "2.3 Keynote: Analysing Cultural Change with Large-Scale Text",
+    "text": "2.3 Keynote: Analysing Cultural Change with Large-Scale Text\n\n\n\nSlide 05\n\n\nPierluigi Cassotti and Nina Tahmasebi of the University of Gothenburg deliver the first keynote, titled Large-scale text analysis for the study of cultural and societal change. Their presentation articulates a central theme: that ‘Change is Key!’ to understanding our world through computational methods.\nTheir research delves into the technical domain of semantic change detection, where they employ computational techniques to trace shifts in word meanings across vast textual archives. This work involves establishing robust benchmarks to standardise the evaluation of such analytical models. Ultimately, Cassotti and Tahmasebi demonstrate how data science methodologies can be powerfully applied within the humanities, forging a vital link between computational precision and humanistic inquiry.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Large Language Models for the History, Philosophy, and Sociology of Science</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NEPI Workshop Content Overview</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_001.html#keynote-2-cross-document-analysis",
-    "href": "chapter_ai-nepi_001.html#keynote-2-cross-document-analysis",
-    "title": "2  Large Language Models for the History, Philosophy, and Sociology of Science",
-    "section": "2.4 Keynote 2: Cross-Document Analysis",
-    "text": "2.4 Keynote 2: Cross-Document Analysis\n\n\n\nSlide 06\n\n\nThe second keynote, scheduled for tomorrow afternoon, will be delivered by Iryna Gurevych. Her presentation is titled How to InterText? Elevating NLP to the cross-document level.\nProfessor Gurevych is the director of the Ubiquitous Knowledge Processing (UKP) Lab at the Technical University Darmstadt. Her research portfolio is extensive, covering information extraction, advanced semantic text processing, and machine learning methods.\nOf particular importance to this workshop, her work also involves the direct application of Natural Language Processing techniques to challenges within the social sciences and humanities, reinforcing the event’s interdisciplinary spirit.",
+    "objectID": "chapter_ai-nepi_001.html#keynote-elevating-nlp-to-the-cross-document-level",
+    "href": "chapter_ai-nepi_001.html#keynote-elevating-nlp-to-the-cross-document-level",
+    "title": "2  NEPI Workshop Content Overview",
+    "section": "2.4 Keynote: Elevating NLP to the Cross-Document Level",
+    "text": "2.4 Keynote: Elevating NLP to the Cross-Document Level\n\n\n\nSlide 06\n\n\nIn the second keynote, Iryna Gurevych addresses the complex challenge articulated in her title: How to InterText? Elevating NLP to the cross-document level. Representing the Ubiquitous Knowledge Processing (UKP) Lab at the Technical University of Darmstadt, she brings deep expertise to this field.\nProfessor Gurevych’s research programme integrates information extraction, semantic text processing, and machine learning. These pillars form the foundation for developing more sophisticated Natural Language Processing systems capable of analysing information across multiple documents. Her work underscores the profound potential of these advanced computational methods, particularly through their practical application in the social sciences and humanities, thereby highlighting their interdisciplinary value.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Large Language Models for the History, Philosophy, and Sociology of Science</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NEPI Workshop Content Overview</span>"
     ]
   },
   {
@@ -254,367 +254,357 @@
     "href": "chapter_ai-nepi_005.html",
     "title": "5  Genre Classification for Historical Medical Periodicals",
     "section": "",
-    "text": "Overview\nThis report systematically documents the research conducted within the ActDisease project at Uppsala University, focusing on genre classification for historical medical periodicals. Researchers aimed to develop automated methods for categorising diverse text types found in these publications, thereby enhancing their accessibility for digital humanities research. The project, funded by the ERC, investigates how patient organisations influenced modern medicine in 20th-century Europe, primarily utilising their periodicals as source material. The methodology encompassed rigorous data collection, addressing significant digitisation challenges such as Optical Character Recognition (OCR) errors and complex layouts. Experiments explored both zero-shot and few-shot classification approaches, employing multilingual encoder models like XLM-RoBERTa, mBERT, and historical mBERT, alongside instruction-tuned generative models such as Llama-3.1 8b Instruct. Key findings highlight the efficacy of genre classification in making heterogeneous historical sources amenable to text mining, demonstrating that leveraging modern datasets and few-shot learning with pre-trained multilingual encoders significantly improves performance, particularly for historical BERT models. Future work involves applying these methods to specific historical hypotheses, refining annotation schemes, generating synthetic data, and implementing active learning strategies.",
+    "text": "Overview\nThe ActDisease project at Uppsala University represents a focused initiative to advance genre classification within historical medical periodicals. The project team has developed automated methods for categorising diverse textual content, thereby enhancing the accessibility of these archives for digital humanities research. Their work involves the meticulous collection and digitisation of patient organisation magazines, a process that confronts significant challenges such as Optical Character Recognition (OCR) errors and the complex layouts inherent in historical documents.\nEmploying a range of machine learning techniques, including zero-shot and few-shot learning with multilingual encoders, the team explored the efficacy of different models. Their experiments reveal that historical mBERT, in particular, accurately classifies genres such as academic reports, advertisements, and personal narratives. Ultimately, this research underscores the complexity of text mining popular magazines due to their multifaceted genre composition, whilst demonstrating that robust genre classification can render these rich historical sources amenable to advanced textual analysis.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#presentation-outline-and-scope",
-    "href": "chapter_ai-nepi_005.html#presentation-outline-and-scope",
+    "objectID": "chapter_ai-nepi_005.html#presentation-outline",
+    "href": "chapter_ai-nepi_005.html#presentation-outline",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.1 Presentation Outline and Scope",
-    "text": "5.1 Presentation Outline and Scope\n\n\n\nSlide 02\n\n\nThis presentation systematically outlines the research on genre classification for historical medical periodicals. It commences by introducing the ActDisease project, detailing its objectives, the characteristics of its unique dataset, and the inherent challenges encountered during data digitisation. Subsequently, the report transitions to the core experimental work, elucidating the motivation behind genre classification, the methodologies employed for zero-shot and few-shot classification, and specific experiments involving the Llama-3.1 8b Instruct model. The presentation concludes by summarising key findings and discussing future research directions.",
+    "section": "5.1 Presentation Outline",
+    "text": "5.1 Presentation Outline\n\n\n\nSlide 02\n\n\nA postdoctoral researcher from the ActDisease project at Uppsala University presents a procedural report detailing experiments in genre classification for historical medical periodicals. This presentation systematically covers the project’s background, the methodology employed, the experiments conducted, and the resultant findings. The structured outline guides the audience through three principal sections: an introduction to ActDisease, a comprehensive review of genre classification experiments, and a concluding summary of the research.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#the-actdisease-project-objectives-and-scope",
-    "href": "chapter_ai-nepi_005.html#the-actdisease-project-objectives-and-scope",
+    "objectID": "chapter_ai-nepi_005.html#the-actdisease-project",
+    "href": "chapter_ai-nepi_005.html#the-actdisease-project",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.2 The ActDisease Project: Objectives and Scope",
-    "text": "5.2 The ActDisease Project: Objectives and Scope\n\n\n\nSlide 03\n\n\nThe ActDisease project, formally known as ‘Acting out Disease - How Patient Organizations Shaped Modern Medicine’, constitutes an ERC-funded research initiative. This endeavour primarily investigates the historical role of patient organisations in 20th-century Europe. Its central purpose involves scrutinising how these organisations influenced the evolution of disease concepts, the lived experience of illness, and prevailing medical practices. The project specifically focuses on ten European patient organisations across Sweden, Germany, France, and Great Britain, spanning the period from approximately 1890 to 1990. Patient organisation periodicals, predominantly magazines, serve as the main source material. Notably, the Hay Fever Association of Heligoland, founded in 1897, provides a historical anchor for the project’s scope.",
+    "section": "5.2 The ActDisease Project",
+    "text": "5.2 The ActDisease Project\n\n\n\nSlide 03\n\n\nThe ActDisease project, formally titled ActDisease (Acting out Disease) - How Patient Organisations Shaped Modern Medicine, is an ERC-funded research endeavour. This initiative meticulously investigates the history of patient organisations across 20th-century Europe. Its primary objective is to scrutinise how these organisations influenced the evolution of disease concepts, patient illness experiences, and medical practices.\nThe project’s scope encompasses ten distinct European patient organisations from Sweden, Germany, France, and Great Britain, spanning the period from approximately 1890 to 1990. Periodicals from these organisations, predominantly magazines, serve as the main source material for this extensive historical inquiry. A pertinent historical example includes the Hay Fever Association of Heligoland, founded in 1897, which exemplifies the project’s focus on the origins and impact of such organisations.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#actdisease-dataset-composition",
-    "href": "chapter_ai-nepi_005.html#actdisease-dataset-composition",
+    "objectID": "chapter_ai-nepi_005.html#the-actdisease-dataset",
+    "href": "chapter_ai-nepi_005.html#the-actdisease-dataset",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.3 ActDisease Dataset Composition",
-    "text": "5.3 ActDisease Dataset Composition\n\n\n\nSlide 04\n\n\nThe ActDisease project leverages a substantial, recently digitised private collection of patient organisation magazines, collectively comprising 96,186 pages. This comprehensive dataset encompasses periodicals from several European countries, addressing a range of diseases. German contributions include two allergy/asthma magazines (10,926 pages, 1901-1985), one diabetes magazine (19,324 pages, 1931-1990), and one multiple sclerosis magazine (5,646 pages, 1954-1990). From Sweden, the collection features one allergy/asthma magazine (4,054 pages, 1957-1990), one diabetes magazine (7,150 pages, 1949-1990), and one lung diseases magazine (16,790 pages, 1938-1991). French sources comprise one diabetes magazine (6,206 pages, 1947-1990) and three rheumatism/paralysis magazines (9,317 pages, 1935-1990). Finally, the UK contributes one diabetes magazine (11,127 pages, 1935-1990) and one rheumatism magazine (5,646 pages, 1950-1990). Visual examples, such as the ‘BRA Review’ and ‘Allergia’ (5/1991), illustrate the diverse nature of these historical medical periodicals.",
+    "section": "5.3 The ActDisease Dataset",
+    "text": "5.3 The ActDisease Dataset\n\n\n\nSlide 04\n\n\nThe authors begin by delineating the background and motivation underpinning their study. Historical medical periodicals contain a rich repository of information, offering profound insights into the evolution of medical knowledge and practices. The ActDisease dataset itself comprises a private, recently digitised collection of patient organisation magazines, totalling an impressive 96,186 pages. This extensive collection is systematically organised by country and disease, providing a comprehensive overview of its composition.\n\nGermany: Two magazines on Allergy/Asthma (10,926 pages, 1901-1985), one on Diabetes (19,324 pages, 1931-1990), and one on Multiple Sclerosis (5,646 pages, 1954-1990).\nSweden: One magazine each on Allergy/Asthma (4,054 pages, 1957-1990), Diabetes (7,150 pages, 1949-1990), and Lung Diseases (16,790 pages, 1938-1991).\nFrance: One Diabetes magazine (6,206 pages, 1947-1990) and three on Rheumatism/Paralysis (9,317 pages, 1935-1990).\nUnited Kingdom: One magazine on Diabetes (11,127 pages, 1935-1990) and one on Rheumatism (5,646 pages, 1950-1990).\n\nIllustrative examples from the dataset include the BRA Review, the quarterly journal of the British Rheumatic Association, and Allergia, a German publication from 1981.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#digitization-challenges-and-ocr-issues",
-    "href": "chapter_ai-nepi_005.html#digitization-challenges-and-ocr-issues",
+    "objectID": "chapter_ai-nepi_005.html#digitisation-and-ocr-challenges",
+    "href": "chapter_ai-nepi_005.html#digitisation-and-ocr-challenges",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.4 Digitization Challenges and OCR Issues",
-    "text": "5.4 Digitization Challenges and OCR Issues\n\n\n\nSlide 05\n\n\nThe digitisation process for the ActDisease dataset encountered several significant challenges, primarily stemming from Optical Character Recognition (OCR). Whilst ABBYY FineReader Server 14 generally performed well on common layouts and fonts, complex layouts, slanted text, rare fonts, and inconsistent scan or photo quality persistently challenged its accuracy. Consequently, the digitised texts exhibited remaining issues, notably OCR errors, particularly prevalent in German and French materials, and disrupted reading order. Researchers addressed these limitations by conducting experiments on post-OCR correction of German texts, employing instruction-tuned generative models. They observed frequent OCR errors within creative text types, such as advertisements, humour pages, and poems. This work aligns with ongoing research, including a publication by Danilova and Aangenendt on post-OCR correction of historical German periodicals using Large Language Models.",
+    "section": "5.4 Digitisation and OCR Challenges",
+    "text": "5.4 Digitisation and OCR Challenges\n\n\n\nSlide 05\n\n\nThe research focuses on developing automated methods for classifying diverse genres within these historical medical texts, a crucial endeavour for advancing digital humanities research. Whilst Optical Character Recognition (OCR) tools, such as ABBYY FineReader Server 14, generally perform competently on common layouts and fonts, significant challenges persist. These include difficulties with complex layouts, slanted text, rare fonts, and inconsistent scan quality.\nConsequently, the digitised texts often exhibit remaining issues, particularly OCR errors prevalent in German and French materials, alongside problems with disrupted reading order. To mitigate these inaccuracies, the authors conducted experiments on post-OCR correction of German texts using instruction-tuned generative models, work documented in a forthcoming publication by Danilova and Aangenendt. Notably, OCR errors frequently manifest in ‘creative texts’, such as advertisements and poems, which often feature non-standard typography.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#challenges-in-analysing-historical-periodicals",
-    "href": "chapter_ai-nepi_005.html#challenges-in-analysing-historical-periodicals",
+    "objectID": "chapter_ai-nepi_005.html#the-case-for-genre-classification",
+    "href": "chapter_ai-nepi_005.html#the-case-for-genre-classification",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.5 Challenges in Analysing Historical Periodicals",
-    "text": "5.5 Challenges in Analysing Historical Periodicals\n\n\n\nSlide 06\n\n\nAnalysing historical medical periodicals presents distinct challenges due to the inherent diversity of their textual content. These materials consistently feature a wide array of text types, a characteristic observed across all magazines within the collection. Critically, different genres frequently co-occur on a single page; for instance, an administrative report might appear alongside an advertisement and a humour section. This textual heterogeneity poses a significant problem for conventional analytical methods. Standard yearly and decade-based topic models or term counts fail to account for such intricate textual variations. Consequently, this unclassified mixture of genres introduces a likely bias into topic models and term counts, potentially distorting analytical outcomes.",
+    "section": "5.5 The Case for Genre Classification",
+    "text": "5.5 The Case for Genre Classification\n\n\n\nSlide 06\n\n\nThe methodology employed in this research encompasses several critical stages: data collection, preprocessing, feature extraction, and machine learning classification. A primary motivation for genre classification stems from the inherent textual challenges within these materials. The magazines exhibit an extreme diversity of text types, often presenting different genres—such as administrative reports, advertisements, and humour sections—side by side on the same page.\nCurrent analytical approaches, including yearly and decade-based topic models, fail to account for this intricate textual heterogeneity. This oversight introduces a significant bias into topic models and term counts, underscoring the necessity for a more granular classification approach.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#rationale-for-genre-classification",
-    "href": "chapter_ai-nepi_005.html#rationale-for-genre-classification",
+    "objectID": "chapter_ai-nepi_005.html#defining-genre",
+    "href": "chapter_ai-nepi_005.html#defining-genre",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.6 Rationale for Genre Classification",
-    "text": "5.6 Rationale for Genre Classification\n\n\n\nSlide 07\n\n\nGenre has emerged as a particularly useful concept within language technology, offering a robust framework for textual analysis. Researchers define genre as a class of documents united by a shared communicative purpose, a definition supported by scholars such as Petrenz (2004) and Kessler (1997). This classification approach directly supports the project’s key objective: to explore the historical material from diverse perspectives, thereby enabling more nuanced historical arguments. Crucially, genre classification facilitates the study of communicative strategies as they evolve over time, allowing for comparative analysis across different countries, diseases, and publications, as highlighted by Broersma (2010). Furthermore, it enables a fine-grained analysis of term distributions and topic models specifically within identified genres, offering deeper insights than broad, unclassified analyses.",
+    "section": "5.6 Defining Genre",
+    "text": "5.6 Defining Genre\n\n\n\nSlide 07\n\n\nThe preprocessing phase of this research encountered several challenges inherent to historical texts, including pervasive OCR errors, varying typography, and the natural evolution of language over time. Within this context, the concept of genre has emerged as a particularly useful analytical framework. In language technology, genre is precisely defined as ‘a class of documents sharing a communicative purpose’, a definition supported by the foundational work of Petrenz (2004) and Kessler (1997).\nGenre classification serves several key objectives:\n\nIt facilitates the exploration of historical material from diverse perspectives.\nIt enables the systematic study of communicative strategies over extended periods and across different countries.\nIt allows for a fine-grained analysis of term distributions and topic models within identified genres.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#illustrating-genre-diversity-poetry-example",
-    "href": "chapter_ai-nepi_005.html#illustrating-genre-diversity-poetry-example",
+    "objectID": "chapter_ai-nepi_005.html#illustrating-genre-diversity",
+    "href": "chapter_ai-nepi_005.html#illustrating-genre-diversity",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.7 Illustrating Genre Diversity: Poetry Example",
-    "text": "5.7 Illustrating Genre Diversity: Poetry Example\n\n\n\nSlide 08\n\n\nTo illustrate the inherent genre diversity within the historical medical periodicals, researchers present a scanned page featuring multiple text columns and an illustration of a human figure. This visual example clearly demonstrates how various text types coexist within a single publication. A specific section of the text is highlighted as ‘Poetry’, encased within a distinctive white box with a purple border. Surrounding this poetic content, other snippets are visible, including a discussion on ‘Människokroppen’ (The Human Body), a recipe for ‘Cadbury sugar-free chocolate for diabetics’, and practical instructions such as ‘Put oil in saucepan’. This composite layout underscores the challenge of analysing such materials without explicit genre classification.",
+    "section": "5.7 Illustrating Genre Diversity",
+    "text": "5.7 Illustrating Genre Diversity\n\n\n\nSlide 08\n\n\nThe authors experimented with various feature extraction techniques, meticulously comparing traditional linguistic features against modern deep learning approaches. This exploration aimed to understand the nuanced textual characteristics that define different genres within the ActDisease dataset. The project visually demonstrates this diversity through a collection of distinct text excerpts.\nThese examples span a wide array of categories: poetry, such as Arne Nyman’s Swedish piece Människoson; scientific prose discussing concepts like the pancreas and insulin; commercial information, exemplified by advertisements for diabetic chocolate; and medical conference reports. Furthermore, the dataset contains legal texts, such as a ‘Deed of Covenant’, alongside practical genres like recipes and patient education materials.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#illustrating-genre-diversity-patient-experiences",
-    "href": "chapter_ai-nepi_005.html#illustrating-genre-diversity-patient-experiences",
+    "objectID": "chapter_ai-nepi_005.html#diverse-textual-forms",
+    "href": "chapter_ai-nepi_005.html#diverse-textual-forms",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.8 Illustrating Genre Diversity: Patient Experiences",
-    "text": "5.8 Illustrating Genre Diversity: Patient Experiences\n\n\n\nSlide 09\n\n\nFurther illustrating the textual heterogeneity within historical medical periodicals, another scanned page displays multiple text columns and an illustration. A specific text block is prominently labelled ‘Patient Experiences’, demarcated by a white box with a purple border. The embedded text vividly describes a personal narrative of awakening from a diabetic coma, recounting semi-conscious ramblings that were so realistic they remained imprinted on the memory. This example clearly demonstrates a distinct personal narrative genre. Other visible text snippets on the page include a continuation of the ‘Cadbury sugar-free chocolate’ recipe and instructions for ‘Put oil in saucepan’, reinforcing the co-occurrence of diverse content types.",
+    "section": "5.8 Diverse Textual Forms",
+    "text": "5.8 Diverse Textual Forms\n\n\n\nSlide 09\n\n\nThe ActDisease project illustrates the broad spectrum of textual forms encountered within its domain. A central image, labelled ‘Patient Experiences’, symbolises the personal dimension of illness. Surrounding this, various text snippets exemplify distinct genres. These include historical scientific texts, commercial advertisements, and personal narratives capturing first-person accounts of events like diabetic comas.\nInstructional texts provide practical guidance on food preparation, whilst legal and financial documents appear alongside medical advice on balancing insulin doses. Collectively, these examples underscore the rich and varied textual landscape of the ActDisease corpus.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#defining-genre-labels-for-classification",
-    "href": "chapter_ai-nepi_005.html#defining-genre-labels-for-classification",
+    "objectID": "chapter_ai-nepi_005.html#defining-genre-labels",
+    "href": "chapter_ai-nepi_005.html#defining-genre-labels",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.9 Defining Genre Labels for Classification",
-    "text": "5.9 Defining Genre Labels for Classification\n\n\n\nSlide 11\n\n\nResearchers meticulously defined the genre labels employed in this project under the direct supervision of the main historian, an expert in patient organisations. This interdisciplinary approach ensured that the genre categories possessed both historical relevance and practical utility. The labels proved instrumental in segmenting the diverse content within the materials, thereby facilitating more focused and granular historical analysis. Furthermore, the design principle prioritised general applicability, aiming for labels that could serve broad analytical purposes beyond the immediate dataset.",
+    "section": "5.9 Defining Genre Labels",
+    "text": "5.9 Defining Genre Labels\n\n\n\nSlide 11\n\n\nThe genre labels employed in this research were meticulously defined under the supervision of the project’s principal historian, an expert specialising in patient organisations. This ensures that the categorisation system aligns precisely with the nuances of historical inquiry. The labels serve a crucial practical purpose: they facilitate the systematic separation of content, thereby enabling more focused historical analysis. A guiding principle throughout their development was to ensure they remained as general-purpose as possible, maximising their utility across diverse analytical contexts.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#operational-genre-definitions",
-    "href": "chapter_ai-nepi_005.html#operational-genre-definitions",
+    "objectID": "chapter_ai-nepi_005.html#genre-definitions",
+    "href": "chapter_ai-nepi_005.html#genre-definitions",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.10 Operational Genre Definitions",
-    "text": "5.10 Operational Genre Definitions\n\n\n\nSlide 12\n\n\nFor the purpose of genre classification, researchers established nine distinct categories, each with a precise operational definition. ‘Academic’ texts encompass research-based reports or explanations of scientific ideas, such as research articles or formal reports. ‘Administrative’ documents pertain to organisational activities, including meeting minutes, financial reports, or announcements. ‘Advertisements’ specifically promote products or services for commercial gain. ‘Guides’ offer step-by-step instructions, exemplified by health tips, legal advice, or recipes. ‘Fiction’ aims to entertain and emotionally engage, comprising stories, poems, humour, or myths. ‘Legal’ texts explain terms and conditions, such as contracts or amendments. ‘News’ reports recent events and developments. ‘Nonfiction Prose’ narrates real events or describes cultural and historical topics, encompassing memoirs, essays, or documentary prose. Finally, ‘QA’ (Question and Answer) refers to texts structured as questions followed by expert answers.",
+    "section": "5.10 Genre Definitions",
+    "text": "5.10 Genre Definitions\n\n\n\nSlide 12\n\n\nThe team established a systematic framework defining nine distinct text genres, each with clear objectives.\n\nAcademic: Research-based reports or explanations of scientific ideas.\nAdministrative: Documents pertaining to organisational activities, like meeting minutes.\nAdvertisement: Content promoting products or services for commercial purposes.\nGuide: Step-by-step instructions, from health tips to recipes.\nFiction: Creative works intended to entertain, such as stories and poems.\nLegal: Texts explaining terms and conditions, such as contracts.\nNews: Reports on recent events and developments.\nNonfiction Prose: Narratives of real events or cultural topics, including memoirs.\nQA (Question/Answer): Content structured as questions paired with expert answers.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#dataset-annotation-methodology",
-    "href": "chapter_ai-nepi_005.html#dataset-annotation-methodology",
+    "objectID": "chapter_ai-nepi_005.html#annotation-methodology",
+    "href": "chapter_ai-nepi_005.html#annotation-methodology",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.11 Dataset Annotation Methodology",
-    "text": "5.11 Dataset Annotation Methodology\n\n\n\nSlide 13\n\n\nResearchers meticulously annotated the dataset to establish ground truth for genre classification. The annotation unit was defined at the paragraph level, specifically ABBYY-generated paragraphs merged based on consistent font patterns, including type, size, bolding, and italics, within a single page. The annotation effort focused on two key periodicals: the Swedish ‘Diabetes’ and the German ‘Diabetiker Journal’, specifically their first and mid-year issues for each year. A multidisciplinary team comprising four historians and two computational linguists, all native or proficient in Swedish and German, performed the annotations. To ensure robustness and reliability, two independent annotations were collected for each paragraph. This rigorous process yielded a remarkably high average inter-annotator agreement of 0.95, as measured by Krippendorff’s alpha, indicating strong consistency across annotators.",
+    "section": "5.11 Annotation Methodology",
+    "text": "5.11 Annotation Methodology\n\n\n\nSlide 13\n\n\nThe data annotation process defined the ‘paragraph’ as its fundamental unit, specifically utilising ABBYY paragraphs merged based on consistent font patterns. Source material comprised two key periodicals: the Swedish journal Diabetes and the German Diabetiker Journal. A dedicated team of four historians and two computational linguists, all with native or advanced proficiency in both Swedish and German, undertook the annotation task.\nTo ensure robust quality control, two independent annotations were collected for every paragraph. This rigorous approach yielded an exceptionally high average inter-annotator agreement of 0.95, as measured by Krippendorff’s alpha, affirming the strong consistency of the annotated dataset.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#illustrative-annotation-example",
-    "href": "chapter_ai-nepi_005.html#illustrative-annotation-example",
+    "objectID": "chapter_ai-nepi_005.html#annotation-example",
+    "href": "chapter_ai-nepi_005.html#annotation-example",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.12 Illustrative Annotation Example",
-    "text": "5.12 Illustrative Annotation Example\n\n\n\nSlide 14\n\n\nAn illustrative example from ‘Der Diabetiker’ vividly demonstrates the annotation process. Researchers organised the annotation data within a table format, featuring columns for ‘Year’, ‘Volume’, ‘Issue_Nr’, ‘Title’, and ‘Paragraph’, alongside binary indicators for each genre label: ‘academic’, ‘administrative’, ‘advertisement’, ‘fiction’, ‘guide’, ‘nf_prose’, ‘legal’, ‘QA’, and ‘news’. For instance, a paragraph from 1958, titled ‘THE ISLAND (Diabetes was not an obstacle)’, received a ‘1’ under ‘nf_prose’, whilst all other genre categories were marked ‘0’. Another paragraph from the same source similarly received a ‘1’ for ‘nf_prose’. Annotators utilised a .numbers file for this task. Although the original sentences were in German, they were translated using Google Translate for presentation purposes, ensuring clarity of the annotation assignments.",
+    "section": "5.12 Annotation Example",
+    "text": "5.12 Annotation Example\n\n\n\nSlide 14\n\n\nAn illustrative annotation example derives from Der Diabetiker (1958), under the title ‘THE ISLAND (Diabetes was not an obstacle)’. This sample showcases three distinct paragraphs, each classified as ‘non-fiction prose’. The first describes a family’s decision to travel, the second conveys confidence in medical care, and the third articulates apprehension about a first flight. The original German sentences were translated for presentation purposes.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#dataset-splitting-for-experiments",
-    "href": "chapter_ai-nepi_005.html#dataset-splitting-for-experiments",
+    "objectID": "chapter_ai-nepi_005.html#dataset-splitting",
+    "href": "chapter_ai-nepi_005.html#dataset-splitting",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.13 Dataset Splitting for Experiments",
-    "text": "5.13 Dataset Splitting for Experiments\n\n\n\nSlide 15\n\n\nResearchers meticulously partitioned the ActDisease annotated dataset to facilitate various experimental setups. The main split comprised a training set of 1182 paragraphs and a held-out set of 552 paragraphs, constituting approximately 30% of the total data, with stratification applied by genre label to maintain distribution. For few-shot experiments, six distinct training set sizes—100, 200, 300, 400, 500, and the full 1182 paragraphs—were randomly sampled from the main training set, ensuring label balance within each subset. The held-out set was subsequently divided into equally sized validation and test sets, also balanced by label. Notably, the ‘legal’ and ‘news’ genres were excluded from these validation and test sets due to insufficient training data. For zero-shot experiments, the entire test set was utilised, allowing for evaluation without direct training on the ActDisease data.",
+    "section": "5.13 Dataset Splitting",
+    "text": "5.13 Dataset Splitting\n\n\n\nSlide 15\n\n\nThe ActDisease annotations underwent a meticulous dataset splitting procedure. The main split allocated 1182 paragraphs to the training set and 552 to the held-out set, rigorously stratified by label. For few-shot experiments, the team prepared six training set sizes, ranging from 100 to 1182 paragraphs, randomly sampled and balanced by label.\nThe held-out set was subsequently divided into equal, balanced parts for validation and testing. Notably, the ‘legal’ and ‘news’ categories were excluded from few-shot experiments due to insufficient training data. For zero-shot experiments, the entire test set was utilised to evaluate performance on unseen classes.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#genre-distribution-in-actdisease-dataset",
-    "href": "chapter_ai-nepi_005.html#genre-distribution-in-actdisease-dataset",
+    "objectID": "chapter_ai-nepi_005.html#genre-distribution",
+    "href": "chapter_ai-nepi_005.html#genre-distribution",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.14 Genre Distribution in ActDisease Dataset",
-    "text": "5.14 Genre Distribution in ActDisease Dataset\n\n\n\nSlide 16\n\n\nThe distribution of genres within the ActDisease dataset, across both training and held-out samples, is visually represented through two distinct bar charts. The left chart illustrates the number of training paragraphs categorised by language and genre, whilst the right chart presents the corresponding distribution for the held-out sample. Both charts employ a y-axis indicating the number of instances and an x-axis denoting the language, specifically German and Swedish. A comprehensive legend maps colours to each of the nine genre labels: ‘QA’, ‘academic’, ‘administrative’, ‘advertisement’, ‘fiction’, ‘guide’, ‘legal’, ‘news’, and ‘non_fiction_prose’. These visualisations reveal varying frequencies; for instance, ‘advertisement’ appears as a dominant genre within the German training set, whilst ‘guide’ shows prominence in the Swedish held-out set, highlighting the heterogeneous nature of the dataset’s composition.",
+    "section": "5.14 Genre Distribution",
+    "text": "5.14 Genre Distribution\n\n\n\nSlide 16\n\n\nAn analysis of genre distribution reveals distinct patterns across the training and held-out sets. In the German training data, ‘non-fiction’ is the most prevalent genre, followed by ‘academic’ and ‘fiction’. Conversely, the Swedish training data is overwhelmingly dominated by ‘advertisement’ content, with ‘administrative’ and ‘QA’ also well-represented.\nThe held-out dataset exhibits similar trends. For German, ‘nonfiction_prose’ remains most frequent, whilst for Swedish, ‘advertisement’ continues to dominate. Significantly, the ‘legal’ and ‘news’ genres, largely absent from the training set, appear sparsely in the held-out set, posing a specific challenge for classification experiments.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#external-datasets-for-zero-shot-classification",
-    "href": "chapter_ai-nepi_005.html#external-datasets-for-zero-shot-classification",
+    "objectID": "chapter_ai-nepi_005.html#public-datasets-for-zero-shot-experiments",
+    "href": "chapter_ai-nepi_005.html#public-datasets-for-zero-shot-experiments",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.15 External Datasets for Zero-Shot Classification",
-    "text": "5.15 External Datasets for Zero-Shot Classification\n\n\n\nSlide 17\n\n\nFor zero-shot classification experiments, researchers leveraged several publicly available external datasets. Two primary Automatic Genre Identification datasets, annotated at the document level, included the Corpus of Online Registers of English (CORE), developed by Egbert et al. (2015), which primarily features English texts but also includes main categories in Swedish, Finnish, and French. The Functional Text Dimensions (FTD) dataset of web genres, introduced by Sharoff (2018), provides a balanced collection of English and Russian texts, having previously served in automatic web genre classification, as noted by Kuzman et al. (2023). Additionally, the UD-MULTIGENRE (UDM) dataset, a subset of Universal Dependencies (de Marneffe et al., 2021), offered sentence-level genre annotations across 38 languages, with recovered annotations by Danilova and Stymne (2023). These diverse datasets provided crucial external knowledge for cross-dataset genre classification.",
+    "section": "5.15 Public Datasets for Zero-Shot Experiments",
+    "text": "5.15 Public Datasets for Zero-Shot Experiments\n\n\n\nSlide 17\n\n\nFor the zero-shot experiments, the authors leveraged several publicly available datasets. They utilised two primary document-level datasets: the Corpus of Online Registers of English (CORE), published by Egbert et al. (2015), and the Functional Text Dimensions (FTD) dataset of web genres, developed by Sharoff (2018).\nAdditionally, the team used the UD-MULTIGENRE (UDM) dataset, a subset of Universal Dependencies offering sentence-level genre annotations across 38 languages, with recovered annotations by Danilova and Stymne (2023). This distinction between document-level and sentence-level annotation proved crucial for the experimental design.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#cross-dataset-genre-mapping",
-    "href": "chapter_ai-nepi_005.html#cross-dataset-genre-mapping",
+    "objectID": "chapter_ai-nepi_005.html#genre-mapping-across-datasets",
+    "href": "chapter_ai-nepi_005.html#genre-mapping-across-datasets",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.16 Cross-Dataset Genre Mapping",
-    "text": "5.16 Cross-Dataset Genre Mapping\n\n\n\nSlide 18\n\n\nTo enable zero-shot learning across diverse datasets, researchers meticulously mapped genre labels between the ActDisease project’s categories and those found in CORE, UDM, and FTD. For instance, ‘Academic’ in ActDisease corresponds to ‘research article (RA)’ in CORE, ‘academic’ in UDM, and ‘academic (A14)’ in FTD. ‘Administrative’ uniquely maps to ‘parliament’ in UDM, lacking direct equivalents in CORE or FTD. ‘Advertisement’ aligns with ‘advertisement (AD)’ and ‘description with intent to sell (DS)’ in CORE, and ‘commercial (A12)’ in FTD. ‘Guide’ finds multiple mappings in CORE, including ‘how-to (HT)’ and ‘recipe (RE)’, whilst directly mapping to ‘guide’ in UDM and ‘instruct (A7)’ in FTD. ‘Fiction’ is represented by ‘poem (PO)’ and ‘short story (SS)’ in CORE, ‘fiction’ in UDM, and ‘fictive (A4)’ and ‘poetic (A19)’ in FTD. ‘Legal’ maps to ‘legal terms and conditions (LT)’ in CORE, ‘legal’ in UDM, and ‘legal (A9)’ in FTD. ‘News’ corresponds to ‘news report/blog (NE)’ in CORE, ‘news’ in UDM, and ‘reporting (A8)’ in FTD. ‘Nonfiction’ encompasses a broad range, including various blog types and articles in CORE, ‘nonfiction prose’ and ‘blog’ in UDM, and ‘personal (A11)’ and ‘argumentative (A1)’ in FTD. Finally, ‘QA’ maps to ‘question/answer forum (QA)’ and ‘advice (AV)’ in CORE, and ‘QA’ in UDM, with no direct FTD equivalent. This comprehensive mapping ensures comparability across the disparate datasets.",
+    "section": "5.16 Genre Mapping Across Datasets",
+    "text": "5.16 Genre Mapping Across Datasets\n\n\n\nSlide 18\n\n\nA comprehensive mapping of genre classifications across the ActDisease, CORE, UDM, and FTD datasets reveals both consistencies and divergences. The ‘Academic’ genre, for instance, aligns across all datasets. ‘Advertisement’ maps to ‘advertisement’ in CORE and ‘commercial’ in FTD, but is absent from UDM.\n‘Guide’ and ‘Fiction’ are consistently represented, though with varying granularities. ‘Legal’ and ‘News’ show strong consistency across most datasets. ‘Nonfiction’, however, demonstrates greater divergence in its sub-categories. This comparative analysis underscores the heterogeneity of genre definitions across different text corpora, a critical consideration for cross-dataset classification.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#training-data-creation-and-configuration",
-    "href": "chapter_ai-nepi_005.html#training-data-creation-and-configuration",
+    "objectID": "chapter_ai-nepi_005.html#training-data-pipeline",
+    "href": "chapter_ai-nepi_005.html#training-data-pipeline",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.17 Training Data Creation and Configuration",
-    "text": "5.17 Training Data Creation and Configuration\n\n\n\nSlide 19\n\n\nResearchers meticulously crafted the training data through a multi-stage pipeline, beginning with a ‘Genre Map’ and subsequent ‘Mapping’ process that populated a ‘DataFrame’ designated ‘new genre mapping’. This DataFrame then underwent a crucial ‘Pre-process’ step, which systematically removed web addresses, emails, XML-tags, and emojis to clean the data. Following this, the data entered a ‘SAMPLING’ stage. The process integrated three external datasets—CORE, FTD, and UDM—as inputs to the initial mapping. Four distinct configuration options guided the data preparation: ‘[G+]’ restricted the dataset to only Germanic languages, whilst ‘[G-]’ included all language families. Concurrently, ‘[B1]’ implemented balancing based on the ActDisease project’s defined labels, and ‘[B2]’ combined balancing by ActDisease labels with the original labels from the source datasets. These language scope and balancing methods were combined, as indicated by connections between [G+] and [G-] with [B1] and [B2]. Visual representations of the sampled data, including four FTD training samples, four CORE training samples (specifically G+ B1, G+ B2, G- B1, G- B2), and UDM training samples, illustrate the comprehensive nature of this data preparation pipeline.",
+    "section": "5.17 Training Data Pipeline",
+    "text": "5.17 Training Data Pipeline\n\n\n\nSlide 19\n\n\nThe genre classification experiments employed a meticulously designed training data pipeline. The process commences with three data sources—CORE, FTD, and UDM—which feed into a mapping stage that standardises genre labels. A pre-processing step then cleans the data by removing web addresses, emails, and other artefacts.\nFollowing this, a sampling stage selects data based on specific configuration options. These options define the language scope (Germanic languages only, or all language families) and the balancing strategy (balancing by project labels only, or by both project and original labels). This structured approach produces distinct training samples for the different experimental conditions.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#multilingual-encoder-models-utilised",
-    "href": "chapter_ai-nepi_005.html#multilingual-encoder-models-utilised",
+    "objectID": "chapter_ai-nepi_005.html#multilingual-encoder-models",
+    "href": "chapter_ai-nepi_005.html#multilingual-encoder-models",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.18 Multilingual Encoder Models Utilised",
-    "text": "5.18 Multilingual Encoder Models Utilised\n\n\n\nSlide 20\n\n\nResearchers employed a selection of multilingual encoder models for the genre classification task. The primary models included XLM-Roberta, introduced by Conneau et al. (2020), mBERT, developed by Devlin et al. (2019), and a specialised historical mBERT, presented by Schweter et al. (2022). BERT-like models, such as these, have seen extensive application in prior work for web register and genre classification, as evidenced by studies from Lepekhin and Sharoff (2022), Kuzman and Ljubešić (2023), and Laippala et al. (2023). XLM-RoBERTa stands out as a state-of-the-art web genre classifier, according to Kuzman et al. (2023). The historical mBERT model, specifically, benefits from pretraining on a substantial corpus of multilingual historical newspapers, rendering it particularly relevant for this project. Conversely, mBERT served as a comparative baseline against hmBERT, given their non-direct comparability with XLM-Roberta.",
+    "section": "5.18 Multilingual Encoder Models",
+    "text": "5.18 Multilingual Encoder Models\n\n\n\nSlide 20\n\n\nThe authors employed three prominent multilingual encoder models in their experiments: XLM-Roberta, mBERT, and historical mBERT (hmBERT). BERT-like models have seen extensive application in previous work on genre classification. XLM-RoBERTa, in particular, has established itself as a state-of-the-art web genre classifier.\nNotably, hmBERT distinguishes itself through its pretraining on a substantial corpus of multilingual historical newspapers, offering a specialised capability for processing historical texts. The team included mBERT primarily for comparative analysis with hmBERT.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#model-fine-tuning-process",
-    "href": "chapter_ai-nepi_005.html#model-fine-tuning-process",
+    "objectID": "chapter_ai-nepi_005.html#fine-tuning-pipeline",
+    "href": "chapter_ai-nepi_005.html#fine-tuning-pipeline",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.19 Model Fine-tuning Process",
-    "text": "5.19 Model Fine-tuning Process\n\n\n\nSlide 21\n\n\nResearchers systematically fine-tuned the selected models through a structured process. Each training set was prepared in four distinct configurations, providing varied data inputs. These datasets included FTD (Functional Text Dimensions), CORE (Corpus of Online Registers of English), UDM (UD-MULTIGENRE), and a combined Merged dataset. A central ‘finetuning’ step applied uniformly across all three chosen models: XLM-Roberta, mBERT, and hmBERT. This comprehensive experimental setup ultimately yielded a total of 48 fine-tuned models, representing the permutations of dataset configurations and model types, ready for subsequent evaluation.",
+    "section": "5.19 Fine-Tuning Pipeline",
+    "text": "5.19 Fine-Tuning Pipeline\n\n\n\nSlide 21\n\n\nThe fine-tuning process for the language models involved a structured pipeline. Training data was organised into four primary configurations: FTD, CORE, UDM, and a Merged set. Each of these configurations, in turn, comprised four distinct variations, resulting in a total of sixteen unique training datasets. These diverse datasets then served as input for fine-tuning the selected pre-trained language models: XLM-Roberta, mBERT, and hmBERT. This systematic approach ultimately yielded a comprehensive collection of forty-eight fine-tuned models.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#zero-shot-learning-evaluation-phase",
-    "href": "chapter_ai-nepi_005.html#zero-shot-learning-evaluation-phase",
+    "objectID": "chapter_ai-nepi_005.html#zero-shot-evaluation-framework",
+    "href": "chapter_ai-nepi_005.html#zero-shot-evaluation-framework",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.20 Zero-Shot Learning Evaluation Phase",
-    "text": "5.20 Zero-Shot Learning Evaluation Phase\n\n\n\nSlide 22\n\n\nThis section initiates the evaluation phase for the zero-shot learning experiments, presenting the methodologies and results derived from the classification tasks performed without direct training on the target dataset.",
+    "section": "5.20 Zero-Shot Evaluation Framework",
+    "text": "5.20 Zero-Shot Evaluation Framework\n\n\n\nSlide 22\n\n\nThe evaluation framework for zero-shot learning models centres on assessing their performance in novel classification tasks. Zero-shot learning is a paradigm where a model, trained on known classes, can recognise data for classes it has not encountered during training. This capability typically relies on auxiliary information, such as semantic descriptions of the unseen classes. The evaluation therefore rigorously focuses on pertinent metrics and experimental design to analyse how effectively these models perform under such challenging conditions.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#zero-shot-prediction-evaluation-methodology",
-    "href": "chapter_ai-nepi_005.html#zero-shot-prediction-evaluation-methodology",
+    "objectID": "chapter_ai-nepi_005.html#evaluating-zero-shot-predictions",
+    "href": "chapter_ai-nepi_005.html#evaluating-zero-shot-predictions",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.21 Zero-Shot Prediction Evaluation Methodology",
-    "text": "5.21 Zero-Shot Prediction Evaluation Methodology\n\n\n\nSlide 23\n\n\nEvaluating zero-shot predictions presented a significant challenge due to the imperfect overlap of label sets across different datasets, which precluded direct comparison of overall performance metrics. Consequently, researchers adopted a granular approach, assessing the performance of each genre independently and meticulously analysing confusion matrices. The X-GENRE web genre classifier, as described by Kuzman et al. (2023), served as a crucial baseline. The evaluation specifically focused on predictions made on labels most similar to and directly mappable to the ActDisease categories. Furthermore, the experiments inherently involved cross-lingual scenarios: the FTD and X-GENRE datasets were entirely cross-lingual, lacking German or Swedish training data, whilst the UDM and CORE datasets exhibited partial cross-lingual characteristics.",
+    "section": "5.21 Evaluating Zero-Shot Predictions",
+    "text": "5.21 Evaluating Zero-Shot Predictions\n\n\n\nSlide 23\n\n\nEvaluating zero-shot predictions presents a significant challenge due to the imperfect overlap of label sets across different datasets. To circumvent this limitation, the authors’ evaluation strategy meticulously analyses the performance of each genre independently and scrutinises confusion matrices. This provides a more granular understanding of classification accuracy.\nThe X-GENRE web genre classifier, developed by Kuzman et al. (2023), served as the established baseline for comparative analysis. The team generated predictions on the most similar labels that could be directly mapped to the project’s own categories, ensuring a fair comparison.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#summary-of-zero-shot-classification-results",
-    "href": "chapter_ai-nepi_005.html#summary-of-zero-shot-classification-results",
+    "objectID": "chapter_ai-nepi_005.html#zero-shot-results",
+    "href": "chapter_ai-nepi_005.html#zero-shot-results",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.22 Summary of Zero-Shot Classification Results",
-    "text": "5.22 Summary of Zero-Shot Classification Results\n\n\n\nSlide 24\n\n\nThe zero-shot classification experiments yielded several key findings. Models fine-tuned on the FTD dataset demonstrated superior performance when employing the ActDisease genre mapping. Conversely, other datasets exhibited distinct class-specific biases. In the UDM dataset, a bias towards ‘news’ emerged, primarily because the news training data contained the highest number of Germanic instances, predominantly German. For the CORE dataset, a bias towards ‘guide’ was observed, as only the guide training data was truly multilingual. Intriguingly, XLM-Roberta, when trained on UDM, achieved an average of 32% more correct predictions in the ‘QA’ genre compared to mBERT and hmBERT. Conversely, hmBERT, also on UDM, showed an average of 16% more correct predictions in ‘Administrative’ texts than XLM-Roberta and mBERT. Furthermore, models trained on CORE consistently performed well in predicting the ‘legal’ genre.",
+    "section": "5.22 Zero-Shot Results",
+    "text": "5.22 Zero-Shot Results\n\n\n\nSlide 24\n\n\nAn overview of the zero-shot classification results reveals several key findings. Firstly, models fine-tuned on the FTD dataset demonstrate enhanced performance when employing the project’s specific mapping strategy. Secondly, other datasets exhibit distinct class-specific biases. The UDM dataset shows a notable bias towards ‘news’, whilst the CORE dataset shows a bias towards the ‘guide’ genre.\nInterestingly, specific models showed varying strengths. XLM-Roberta, when applied to the UDM dataset, achieved, on average, 32% more correct predictions in Question Answering (QA) tasks compared to mBERT and hmBERT. Conversely, hmBERT demonstrated superior performance in classifying ‘Administrative’ content on the same dataset.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#zero-shot-classification-confusion-matrices",
-    "href": "chapter_ai-nepi_005.html#zero-shot-classification-confusion-matrices",
+    "objectID": "chapter_ai-nepi_005.html#zero-shot-confusion-matrices",
+    "href": "chapter_ai-nepi_005.html#zero-shot-confusion-matrices",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.23 Zero-Shot Classification Confusion Matrices",
-    "text": "5.23 Zero-Shot Classification Confusion Matrices\n\n\n\nSlide 25\n\n\nFour distinct confusion matrices visually represent the performance of various models and dataset configurations in the zero-shot classification task. Each matrix plots ‘True Genre’ against ‘Predicted Genre’, with a colour scale indicating the count of instances. The genres consistently include ‘QA’, ‘academic’, ‘administrative’, ‘advertisement’, ‘fiction’, ‘guide’, ‘legal’, ‘news’, and ‘nf_prose’. For instance, the ‘hmBERT_UDM_True_True’ matrix shows 43 instances of ‘academic’ and 31 instances of ‘guide’ were correctly classified, whilst 3 instances of ‘news’ were incorrectly predicted as ‘administrative’. The ‘xlmr_CORE_True_False’ matrix highlights 85 correct ‘guide’ predictions, but also 30 ‘academic’ instances misclassified as ‘administrative’. In the ‘xlmr_UDM_False_False’ matrix, 35 ‘administrative’ instances were correctly predicted, yet 8 ‘QA’ instances were misclassified as ‘administrative’. Finally, the ‘xlmr_FTD_False_False’ matrix demonstrates 108 correct ‘advertisement’ predictions, alongside 30 ‘news’ instances incorrectly classified as ‘administrative’. These matrices provide granular insights into the models’ strengths and specific misclassification patterns across different datasets.",
+    "section": "5.23 Zero-Shot Confusion Matrices",
+    "text": "5.23 Zero-Shot Confusion Matrices\n\n\n\nSlide 25\n\n\nFour confusion matrices visually represent the performance of various zero-shot genre classification models. Each matrix plots ‘True Genre’ against ‘Predicted Genre’. The hmbert_UDM_True_True matrix, for example, shows 30 instances of the ‘administrative’ genre correctly predicted, yet 8 ‘academic’ instances were erroneously classified as ‘administrative’. The xlmr_CORE_True_False matrix demonstrates robust performance for several genres, with 36 ‘academic’ and 33 ‘legal’ documents correctly classified. Conversely, the xlmr_UDM_False_False matrix highlights areas of confusion, notably 23 ‘QA’ instances misclassified as ‘administrative’.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#zero-shot-per-category-f1-scores",
-    "href": "chapter_ai-nepi_005.html#zero-shot-per-category-f1-scores",
+    "objectID": "chapter_ai-nepi_005.html#zero-shot-f1-scores",
+    "href": "chapter_ai-nepi_005.html#zero-shot-f1-scores",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.24 Zero-Shot Per-Category F1 Scores",
-    "text": "5.24 Zero-Shot Per-Category F1 Scores\n\n\n\nSlide 26\n\n\nA comprehensive table presents the F1 scores for various genres and models across four distinct dataset configurations: FTD, CORE, UDM, and a merged dataset. The data is organised by dataset, then by model, including X-GENRE, hmBERT, mBERT, and XLM-RoBERTa, with columns representing each genre category. Notably, for the FTD dataset, XLM-RoBERTa consistently demonstrated strong performance, achieving an F1 score of 0.89 for ‘guide’, 0.82 for ‘legal’, and 0.74 for ‘advertisement’. Within the CORE dataset, both hmBERT and XLM-RoBERTa exhibited high F1 scores for ‘legal’, reaching 0.80 and 0.84 respectively. For the UDM dataset, XLM-RoBERTa secured the highest F1 for ‘QA’ at 0.53, whilst hmBERT led for ‘administrative’ at 0.43. Across the board, the ‘merged’ configuration generally yielded lower F1 scores for all models and genres when compared to individual dataset configurations. Bolded values within the table highlight the peak F1 score for each specific genre within its respective dataset configuration, providing clear quantitative insights into model performance.",
+    "section": "5.24 Zero-Shot F1 Scores",
+    "text": "5.24 Zero-Shot F1 Scores\n\n\n\nSlide 26\n\n\nThe zero-shot per-category F1 scores, averaged across dataset configurations, provide a detailed performance assessment. The evaluation encompassed four main dataset configurations—FTD, CORE, UDM, and merged—with three language models: hmBERT, mBERT, and XLM-RoBERTa. Within the FTD configuration, the ‘legal’ category consistently demonstrated high performance, with hmBERT achieving the highest score of 0.9. In the CORE configuration, ‘legal’ continued to be a robust category, with XLM-RoBERTa achieving 0.84. The UDM configuration highlighted XLM-RoBERTa’s strength in ‘QA’ (0.53) and hmBERT’s lead in ‘administrative’ (0.43).",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#impact-of-configuration-on-zero-shot-performance",
-    "href": "chapter_ai-nepi_005.html#impact-of-configuration-on-zero-shot-performance",
+    "objectID": "chapter_ai-nepi_005.html#zero-shot-configuration-performance",
+    "href": "chapter_ai-nepi_005.html#zero-shot-configuration-performance",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.25 Impact of Configuration on Zero-Shot Performance",
-    "text": "5.25 Impact of Configuration on Zero-Shot Performance\n\n\n\nSlide 27\n\n\nAnalysis of the average F1 performance across different configurations reveals distinct impacts on zero-shot classification. For the FTD dataset, configurations [B 1] and [G -] yielded the highest F1 scores of 0.56, whilst [B 2] and [G +] resulted in a decrease in performance. In the CORE dataset, F1 scores remained consistently around 0.32 across most configurations, with a marginal decrease to 0.31 for [G -]; the presence of a small number of Finnish and French instances, particularly within the ‘guide’ genre, marginally reduced overall performance. Conversely, for the UDM dataset, the presence of other language families and balancing strategies generally improved macro F1 performance, with [G -] achieving the highest score of 0.22 and [B 2] also performing strongly at 0.19. These findings underscore how data balancing and language family inclusion critically influence model efficacy in zero-shot settings.",
+    "section": "5.25 Zero-Shot Configuration Performance",
+    "text": "5.25 Zero-Shot Configuration Performance\n\n\n\nSlide 27\n\n\nAn analysis of average performance across zero-shot configurations reveals the nuanced impacts of data balancing and language scope. For the FTD task, F1 scores were highest when including all language families. In the CORE task, performance remained largely consistent across configurations. Conversely, for the UDM task, the presence of other language families and balancing generally improved macro F1 performance; including all language families achieved the highest F1 score of 0.22, significantly outperforming the Germanic-only configuration at 0.14.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#few-shot-learning-evaluation-phase",
-    "href": "chapter_ai-nepi_005.html#few-shot-learning-evaluation-phase",
+    "objectID": "chapter_ai-nepi_005.html#few-shot-evaluation-framework",
+    "href": "chapter_ai-nepi_005.html#few-shot-evaluation-framework",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.26 Few-Shot Learning Evaluation Phase",
-    "text": "5.26 Few-Shot Learning Evaluation Phase\n\n\n\nSlide 28\n\n\nThis section marks the commencement of the evaluation phase for few-shot learning experiments, detailing the performance and insights derived from models trained on limited data samples.",
+    "section": "5.26 Few-Shot Evaluation Framework",
+    "text": "5.26 Few-Shot Evaluation Framework\n\n\n\nSlide 28\n\n\nThe evaluation framework for few-shot learning centres on the rigorous assessment of few-shot prompting methods. This technique involves providing large language models with a minimal number of examples to guide task performance without necessitating extensive fine-tuning. The evaluation comprehensively discusses the methodologies employed, the metrics utilised, and the results obtained.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#few-shot-learning-performance-trends",
-    "href": "chapter_ai-nepi_005.html#few-shot-learning-performance-trends",
+    "objectID": "chapter_ai-nepi_005.html#few-shot-performance-with-mlm-fine-tuning",
+    "href": "chapter_ai-nepi_005.html#few-shot-performance-with-mlm-fine-tuning",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.27 Few-Shot Learning Performance Trends",
-    "text": "5.27 Few-Shot Learning Performance Trends\n\n\n\nSlide 29\n\n\nA line graph visually depicts the performance of various models in a few-shot setting, illustrating the impact of Masked Language Model (MLM) fine-tuning. The x-axis represents dataset size, ranging from 200 to 1200 instances, whilst the y-axis indicates the F1 score, spanning from 0.2 to 0.8. Six distinct lines trace the performance of ‘hmbert’, ‘hmbert-mlm’, ‘mbert’, ‘mbert-mlm’, ‘xlmr’, and ‘xlmr-mlm’. Consistently, all models demonstrate an increasing trend in F1 score as the dataset size expands, underscoring the benefit of more training data. Crucially, further training on the ActDisease dataset, particularly with MLM fine-tuning, proves distinctly advantageous. Whilst F1 scores continue to rise with an increasing number of training instances, they remain below 0.8 even at the largest size of 1182. Notably, the hmBERT-MLM model consistently outperforms its counterparts, achieving the highest F1 scores.",
+    "section": "5.27 Few-Shot Performance with MLM Fine-Tuning",
+    "text": "5.27 Few-Shot Performance with MLM Fine-Tuning\n\n\n\nSlide 29\n\n\nA line graph illustrates the performance of various models in a few-shot learning setting, comparing their efficacy with and without Masked Language Model (MLM) fine-tuning. The F1 score for all models consistently increases with larger dataset sizes. Crucially, models incorporating MLM fine-tuning (hmbert-mlm, mbert-mlm, xlmr-mlm) consistently achieve higher F1 scores than their non-MLM counterparts. The hmbert-mlm model demonstrates the highest performance, attaining the peak F1 score amongst all tested models, particularly at larger dataset sizes.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#detailed-few-shot-learning-performance-metrics",
-    "href": "chapter_ai-nepi_005.html#detailed-few-shot-learning-performance-metrics",
+    "objectID": "chapter_ai-nepi_005.html#few-shot-f1-scores-and-metrics",
+    "href": "chapter_ai-nepi_005.html#few-shot-f1-scores-and-metrics",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.28 Detailed Few-Shot Learning Performance Metrics",
-    "text": "5.28 Detailed Few-Shot Learning Performance Metrics\n\n\n\nSlide 30\n\n\nA comprehensive table details the performance of six distinct models—XLMR, XLMR-MLM, hmBERT, hmBERT-MLM, mBERT, and mBERT-MLM—across two training sizes: 500 and 1182 instances. The table presents F1 scores for individual genre categories, including ‘QA’, ‘academic’, ‘administrative’, ‘advertisement’, ‘fiction’, ‘guide’, and ‘nf_prose’, alongside overall metrics such as ‘accuracy’ and ‘macro_F1’. For ‘QA’, XLMR-MLM at 1182 instances achieved the highest F1 of 0.84. Both XLMR-MLM and mBERT-MLM reached an F1 of 0.81 for ‘academic’ at the largest training size. In ‘administrative’ classification, hmBERT-MLM and mBERT-MLM both attained an F1 of 0.86. XLMR-MLM demonstrated exceptional performance for ‘advertisement’, securing an F1 of 0.93. For ‘fiction’, mBERT-MLM achieved 0.62, whilst hmBERT-MLM reached 0.51. XLMR-MLM led in ‘guide’ classification with 0.79, and hmBERT-MLM achieved 0.82 for ‘nf_prose’. Overall accuracy ranged from 0.63 to 0.81, whilst macro_F1 scores spanned 0.61 to 0.77, with hmBERT-MLM at 1182 instances achieving the highest macro_F1 of 0.77. Shaded cells and bolded values visually highlight superior performance within each category and size, underscoring the benefits of MLM fine-tuning and increased training data.",
+    "section": "5.28 Few-Shot F1 Scores and Metrics",
+    "text": "5.28 Few-Shot F1 Scores and Metrics\n\n\n\nSlide 30\n\n\nA comprehensive table details few-shot learning performance, presenting F1 scores for seven text categories alongside overall metrics. The evaluation encompassed six models, each tested with 500 and 1182 training examples. For the ‘QA’ category, XLMR-MLM achieved the highest F1 score of 0.84 with 1182 examples. The ‘advertisement’ category consistently demonstrated high F1 scores, frequently reaching 0.93. In terms of overall performance, hmBERT-MLM achieved the highest accuracy of 0.82 and the highest macro F1 of 0.77, both with 1182 examples, establishing it as the top-performing model in this setting.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#few-shot-classification-confusion-matrix-and-insights",
-    "href": "chapter_ai-nepi_005.html#few-shot-classification-confusion-matrix-and-insights",
+    "objectID": "chapter_ai-nepi_005.html#few-shot-confusion-analysis",
+    "href": "chapter_ai-nepi_005.html#few-shot-confusion-analysis",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.29 Few-Shot Classification Confusion Matrix and Insights",
-    "text": "5.29 Few-Shot Classification Confusion Matrix and Insights\n\n\n\nSlide 31\n\n\nA confusion matrix, specifically illustrating the XLM-Roberta-MLM classification results with a full-sized training dataset, provides granular insights into few-shot performance. The matrix plots ‘True Genre’ against ‘Predicted Genre’, encompassing ‘administrative’, ‘academic’, ‘fiction’, ‘nf_prose’, ‘QA’, ‘guide’, and ‘advertisement’ genres, with a colour scale indicating instance counts up to 120. For example, the model accurately predicted 59 ‘administrative’, 96 ‘nf_prose’, and 120 ‘advertisement’ instances. Qualitative observations derived from this analysis highlight several critical points. Researchers suggest that ‘fiction’ and ‘nonfictional prose’ may exhibit increasing similarity, posing a classification challenge. This phenomenon likely stems from the domain-specific nature of the dataset, as all genres are confined to patient organisation magazines primarily focused on diabetes. Consequently, both fictional and (auto)biographical texts frequently revolve around the experiences of diabetes patients, leading them to share common themes and narrative structures, which can blur genre boundaries.",
+    "section": "5.29 Few-Shot Confusion Analysis",
+    "text": "5.29 Few-Shot Confusion Analysis\n\n\n\nSlide 31\n\n\nAn analysis of the confusion matrix for the XLM-Roberta-MLM model provides insights into few-shot classification performance. The matrix displays correct classifications along its diagonal for most genres. However, notable misclassifications occurred; for instance, ‘fiction’ texts were frequently misclassified as ‘non-fictional prose’.\nThese patterns are explicable. Fictional and non-fictional prose may exhibit increasing similarity within this specific domain. Crucially, all genres are confined to patient organisation magazines focused on diabetes. Consequently, both fictional and (auto)biographical narratives frequently revolve around the shared experiences of diabetes patients, contributing to the difficulty in distinguishing between these genres.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#few-shot-prompting-evaluation-phase",
-    "href": "chapter_ai-nepi_005.html#few-shot-prompting-evaluation-phase",
+    "objectID": "chapter_ai-nepi_005.html#few-shot-prompting-evaluation",
+    "href": "chapter_ai-nepi_005.html#few-shot-prompting-evaluation",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.30 Few-Shot Prompting Evaluation Phase",
-    "text": "5.30 Few-Shot Prompting Evaluation Phase\n\n\n\nSlide 32\n\n\nThis section introduces the evaluation phase dedicated to few-shot prompting experiments, focusing on the performance of large language models when guided by specific instructions and limited examples.",
+    "section": "5.30 Few-Shot Prompting Evaluation",
+    "text": "5.30 Few-Shot Prompting Evaluation\n\n\n\nSlide 32\n\n\nThe evaluation of few-shot prompting methods constitutes a critical focus of this research. This sophisticated technique guides a large language model’s behaviour with a minimal number of examples, avoiding the need for extensive fine-tuning. The following section details the specific instructions and results from applying this method with the Llama-3.1 8b Instruct model.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#llama-3.1-8b-instruct-model-prompting",
-    "href": "chapter_ai-nepi_005.html#llama-3.1-8b-instruct-model-prompting",
+    "objectID": "chapter_ai-nepi_005.html#llama-3.1-8b-labelling-instructions",
+    "href": "chapter_ai-nepi_005.html#llama-3.1-8b-labelling-instructions",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.31 Llama-3.1 8b Instruct Model Prompting",
-    "text": "5.31 Llama-3.1 8b Instruct Model Prompting\n\n\n\nSlide 33\n\n\nResearchers employed the Llama-3.1 8b Instruct model for few-shot prompting, providing it with a precise instruction: ‘Label the text with one of the following genres based on their purpose and content:’. This instruction was accompanied by explicit definitions for each genre. ‘Academic’ encompassed research-based articles and popular science. ‘Administrative’ included documents like meeting minutes and financial reports. ‘Advertisement’ covered promotions and invitations. ‘Guide’ provided dietary advice, exercise instructions, or recipes. ‘Fiction’ comprised poems, short stories, and humour. ‘Legal’ referred to contracts and terms. ‘News’ denoted daily reports. ‘Nonfictional_prose’ covered autobiographies, memoirs, and essays. ‘QA’ described question-answer formatted texts. An ‘Examples:’ section further guided the model, whilst the input format was specified as ‘[INST] test[i]“text” [/INST]’, with an expected ‘Genre:’ output. This detailed prompt engineering aimed to optimise the model’s genre classification capabilities.",
+    "section": "5.31 Llama-3.1 8b Labelling Instructions",
+    "text": "5.31 Llama-3.1 8b Labelling Instructions\n\n\n\nSlide 33\n\n\nThe Llama-3.1 8b Instruct model received a precise instruction for genre labelling: ‘Label the text with one of the following genres based on their purpose and content.’ This was accompanied by a comprehensive list of nine genres with examples.\n\nAcademic: academic articles, reports, popular science.\nAdministrative: meeting minutes, financial reports, annual reports.\nAdvertisement: promotions, invitations.\nGuide: dietary advice, recipes, procedural guidelines.\nFiction: poems, short stories, humour, novels.\nLegal: contracts, terms and conditions.\nNews: daily news reports.\nNonfiction_prose: (auto)biographies, memoirs, personal letters, essays.\nQA: text in a question-answer format.\n\nAn example input format, [INST] Input: test[i] [\"text\"] [/INST] Genre:, illustrates how the model processes text for classification in a few-shot setup.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#llama-3.1-8b-instruct-performance",
-    "href": "chapter_ai-nepi_005.html#llama-3.1-8b-instruct-performance",
+    "objectID": "chapter_ai-nepi_005.html#llama-3.1-8b-prediction-results",
+    "href": "chapter_ai-nepi_005.html#llama-3.1-8b-prediction-results",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.32 Llama-3.1 8b Instruct Performance",
-    "text": "5.32 Llama-3.1 8b Instruct Performance\n\n\n\nSlide 34\n\n\nThe Llama-3.1 8b Instruct model demonstrated varied performance across genres in the few-shot prompting setup. Its F1-scores included 0.62 for ‘QA’, 0.72 for ‘academic’, 0.60 for ‘administrative’, 0.73 for ‘advertisement’, 0.64 for ‘fiction’, and 0.61 for ‘guide’. Notably, the model achieved its highest F1 score of 0.84 for ‘legal’ texts. Conversely, its performance on ‘news’ was exceptionally low, yielding an F1 of merely 0.08, whilst ‘nonfiction_prose’ scored 0.49. Overall metrics indicated an accuracy of 0.62, a macro average F1 of 0.59, and a weighted average F1 of 0.63. A visual confusion matrix, depicting few-shot prediction performance on the entire held-out set (used as a zero-shot test set), further illuminated these results. It showed successful classification for many genres, with 18 ‘QA’, 54 ‘academic’, 58 ‘administrative’, 77 ‘advertisement’, 30 ‘fiction’, 28 ‘guide’, 27 ‘legal’, and 49 ‘nf_prose’ instances correctly predicted. However, the matrix starkly highlighted the model’s struggle with ‘news’, correctly predicting only 1 instance, whilst misclassifying 8 instances as ‘nf_prose’, underscoring a significant area for improvement.",
+    "section": "5.32 Llama-3.1 8b Prediction Results",
+    "text": "5.32 Llama-3.1 8b Prediction Results\n\n\n\nSlide 34\n\n\nThe Llama-3.1 8b Instruct model’s performance on a genre classification task, using few-shot prediction, yielded detailed results. The ‘legal’ genre demonstrated the highest F1 score at 0.84, whilst ‘news’ exhibited a notably low F1 score of 0.08. Overall performance metrics recorded an accuracy of 0.62 and a macro average F1-score of 0.59. A confusion matrix detailed these outcomes, highlighting correct classifications and misclassifications, such as 14 instances of ‘QA’ being erroneously classified as ‘non-fictional prose’.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#challenges-of-popular-magazine-text-mining",
-    "href": "chapter_ai-nepi_005.html#challenges-of-popular-magazine-text-mining",
+    "objectID": "chapter_ai-nepi_005.html#conclusion-the-challenge-of-popular-magazines",
+    "href": "chapter_ai-nepi_005.html#conclusion-the-challenge-of-popular-magazines",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.33 Challenges of Popular Magazine Text Mining",
-    "text": "5.33 Challenges of Popular Magazine Text Mining\n\n\n\nSlide 35\n\n\nA primary conclusion drawn from this research highlights the inherent complexity of text mining popular magazines. Unlike more homogeneous scientific journals and books, these periodicals frequently contain a multitude of genres. This textual diversity significantly increases the challenge of extracting meaningful information and patterns through automated text mining techniques.",
+    "section": "5.33 Conclusion: The Challenge of Popular Magazines",
+    "text": "5.33 Conclusion: The Challenge of Popular Magazines\n\n\n\nSlide 35\n\n\nA key conclusion from this research is that popular magazines contain a multitude of genres, a characteristic that inherently complicates text mining compared to the analysis of scientific journals and books. This rich diversity of content introduces significant complexities for automated text analysis. In stark contrast, scientific texts typically exhibit a more specialised and standardised structure, making them considerably more amenable to current text mining techniques.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#enabling-text-mining-through-genre-classification",
-    "href": "chapter_ai-nepi_005.html#enabling-text-mining-through-genre-classification",
+    "objectID": "chapter_ai-nepi_005.html#conclusion-genre-classification-as-a-solution",
+    "href": "chapter_ai-nepi_005.html#conclusion-genre-classification-as-a-solution",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.34 Enabling Text Mining through Genre Classification",
-    "text": "5.34 Enabling Text Mining through Genre Classification\n\n\n\nSlide 36\n\n\nWhilst popular magazines inherently present a multitude of genres, rendering text mining more challenging than for scientific journals and books, a crucial finding emerges: genre classification offers a viable solution. By systematically categorising the diverse content, genre classification effectively renders these complex historical sources accessible for advanced text mining methodologies, thereby unlocking their rich informational potential.",
+    "section": "5.34 Conclusion: Genre Classification as a Solution",
+    "text": "5.34 Conclusion: Genre Classification as a Solution\n\n\n\nSlide 36\n\n\nThe research culminates in two pivotal findings. Firstly, the multitude of genres within popular magazines complicates text mining efforts. Secondly, and crucially, genre classification emerges as a viable solution. By systematically categorising the varied content, the authors can effectively manage this inherent diversity, thereby rendering these rich sources accessible for comprehensive analysis through advanced text mining techniques.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_005.html#key-conclusions-and-performance-insights",
-    "href": "chapter_ai-nepi_005.html#key-conclusions-and-performance-insights",
+    "objectID": "chapter_ai-nepi_005.html#overall-conclusions",
+    "href": "chapter_ai-nepi_005.html#overall-conclusions",
     "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.35 Key Conclusions and Performance Insights",
-    "text": "5.35 Key Conclusions and Performance Insights\n\n\n\nSlide 37\n\n\nThe research yields five pivotal conclusions regarding genre classification in historical medical periodicals. Firstly, popular magazines, unlike more uniform scientific publications, contain a multitude of genres, which inherently complicates text mining efforts. Secondly, the implementation of genre classification effectively addresses this challenge, rendering these rich historical sources accessible for advanced text mining. Thirdly, even in the absence of specific training data, researchers successfully demonstrated the feasibility of leveraging existing modern datasets for effective classification. Fourthly, open generative models proved capable of achieving a decent quality of classification. Finally, and most significantly, few-shot learning applied to multilingual encoders, particularly when combined with prior Masked Language Model (MLM) fine-tuning, exhibited superior performance. This approach yielded particularly strong gains for the historical multilingual BERT model, achieving a 24% improvement, notably surpassing the 14.5% gain for mBERT-MLM and 16.9% for XLM-RoBERTa.",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
-    ]
-  },
-  {
-    "objectID": "chapter_ai-nepi_005.html#future-research-directions",
-    "href": "chapter_ai-nepi_005.html#future-research-directions",
-    "title": "5  Genre Classification for Historical Medical Periodicals",
-    "section": "5.36 Future Research Directions",
-    "text": "5.36 Future Research Directions\n\n\n\nSlide 38\n\n\nFuture research within the ActDisease project will pursue several promising directions. Researchers plan to engage more deeply with specific historical hypotheses, leveraging the genre classification framework to address nuanced questions. A key methodological development involves crafting a new annotation scheme designed to capture more fine-grained genre distinctions. To support this, an annotation project, financed by Swe-CLARIN, is currently underway. Furthermore, the team intends to explore advanced data augmentation techniques, specifically through synthetic data generation, to expand the training corpus. Finally, the implementation of active learning strategies will optimise the annotation process, ensuring efficient and targeted data collection for continuous model improvement.",
+    "section": "5.35 Overall Conclusions",
+    "text": "5.35 Overall Conclusions\n\n\n\nSlide 37\n\n\nThis research culminates in several significant conclusions. The inherent multitude of genres within popular magazines complicates text mining, yet genre classification offers a robust methodology for rendering these sources accessible. The study demonstrates that modern datasets can be successfully leveraged even without specific training data, and that open generative models can achieve a decent quality of classification.\nCrucially, few-shot learning applied to multilingual encoders, particularly when preceded by Masked Language Model (MLM) fine-tuning, consistently yields superior performance. Quantitative evidence strongly supports this, revealing particularly substantial gains for historical multilingual BERT, which achieved a 24% improvement. This underscores that domain-specific fine-tuning for historical multilingual data significantly enhances classification performance.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genre Classification for Historical Medical Periodicals</span>"
     ]
