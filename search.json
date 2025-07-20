@@ -162,71 +162,71 @@
   {
     "objectID": "chapter_ai-nepi_004.html",
     "href": "chapter_ai-nepi_004.html",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
+    "title": "4  OpenAlex Mapper presentation slide",
     "section": "",
-    "text": "Overview\nThis presentation introduces a suite of methodological and conceptual tools tailored for research in the History, Philosophy, and Sociology of Science (HPSS). The authors begin by delineating the OpenAlex Mapper workflow, a system they have developed to navigate and analyse scholarly literature with precision. Their discussion then extends to the application of quantitative methods, such as the Hopfield Model, to pressing HPSS research questions.\nA central theme is the pivotal role of ‘model templates’ in scientific discourse. Drawing upon the work of Humphreys (2004) and Knuuttila and Loettgers (2020), the authors define these templates as a structuring discipline for scientific inquiry, particularly illuminating in the context of model transfer between domains. Furthermore, the presentation addresses the challenge of tracing the distribution of concepts across large, interdisciplinary corpora, building on the research of Malaterre, Chartier, and Lareau (2020).\nThe authors also furnish methods directly relevant to contemporary debates on machine learning and the notion of ‘theory-free’ science, engaging with contributions from Breiman, Bzdok et al., and Andrews. In the spirit of scholarly transparency, the presentation concludes by candidly acknowledging several qualifications and limitations inherent in the proposed methods, including specific issues with data sources and a particular analytical technique.",
+    "text": "Overview\nMax Neuchel, Andrea Loetgers, and Taya Knulla of Utrecht University have crafted OpenAlex Mapper, a sophisticated tool for visualising and querying scientific discourse. Their system processes extensive datasets of scholarly articles from OpenAlex, employing advanced dimensionality reduction to map publications into a two-dimensional conceptual space.\nThe team’s methodology involves sampling 300,000 English-language articles with well-formed abstracts, embedding them with a language model, and subsequently projecting them via a pre-trained UMAP model. A key feature of the tool is its capacity to accept arbitrary user queries to OpenAlex, download the results, and seamlessly integrate these new articles into the existing conceptual map. This functionality facilitates a dynamic exploration of research trends and the conceptual distribution of scientific knowledge, despite a minor technical issue encountered during a live demonstration.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#the-openalex-mapper-workflow",
-    "href": "chapter_ai-nepi_004.html#the-openalex-mapper-workflow",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.1 The OpenAlex Mapper Workflow",
-    "text": "4.1 The OpenAlex Mapper Workflow\n\n\n\nSlide 12\n\n\nThe authors introduce the OpenAlex Mapper, a structured workflow they have engineered for the systematic analysis of scholarly literature. This system provides a methodical approach to navigating and interpreting vast datasets of academic publications, grounding its methodology in key academic works that inform its design and function.\nTo facilitate its adoption by the wider research community, the team provides an associated online resource that offers further details and direct access to the tool.",
+    "objectID": "chapter_ai-nepi_004.html#project-origins-and-data-acquisition",
+    "href": "chapter_ai-nepi_004.html#project-origins-and-data-acquisition",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.1 Project Origins and Data Acquisition",
+    "text": "4.1 Project Origins and Data Acquisition\n\n\n\nSlide 02\n\n\nThe OpenAlex Mapper project, a collaborative endeavour by Max Neuchel, Andrea Loetgers, and Taya Knulla, originates from the Department of Theoretical Philosophy at Utrecht University. The team initiated their work by acquiring a substantial dataset from the OpenAlex database, comprising 300,000 randomly selected articles.\nTo ensure data quality, the authors applied stringent selection criteria. Each article was required to possess a well-formed abstract and be published in English, thereby establishing a robust foundation for the subsequent analysis.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#quantitative-models-in-hpss",
-    "href": "chapter_ai-nepi_004.html#quantitative-models-in-hpss",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.2 Quantitative Models in HPSS",
-    "text": "4.2 Quantitative Models in HPSS\nThe presentation explores the utility of applying quantitative models to research in the History, Philosophy, and Sociology of Science. This approach leverages formal methods to analyse historical and philosophical currents within scientific disciplines.\nSpecifically, the authors adapt the Hopfield Model as an exemplary quantitative tool for HPSS inquiries. Their work demonstrates how such models can furnish the field with novel perspectives and enhanced analytical rigour.",
+    "objectID": "chapter_ai-nepi_004.html#dimensionality-reduction-and-functionality",
+    "href": "chapter_ai-nepi_004.html#dimensionality-reduction-and-functionality",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.2 Dimensionality Reduction and Functionality",
+    "text": "4.2 Dimensionality Reduction and Functionality\n\n\n\nSlide 03\n\n\nTo process the extensive article dataset, the team applied Uniform Manifold Approximation and Projection (UMAP), a technique that effectively reduces the data’s dimensionality to two. This trained UMAP model is meticulously retained, ensuring consistent application across all operations.\nAs a dedicated tool, OpenAlex Mapper leverages this foundational model. It enables users to submit arbitrary queries directly to the OpenAlex database, which facilitates dynamic data retrieval and analysis.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#model-templates-as-a-structuring-discipline",
-    "href": "chapter_ai-nepi_004.html#model-templates-as-a-structuring-discipline",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.3 Model Templates as a Structuring Discipline",
-    "text": "4.3 Model Templates as a Structuring Discipline\nA core concept the authors examine is that of ‘model templates’ and their function within scientific debates. They define these templates not merely as predictive instruments but as a structuring discipline that shapes scientific practice, especially concerning the transfer of models between different domains.\nThis conceptualisation, which builds upon foundational work by Humphreys (2004) and Knuuttila and Loettgers (2020), offers a robust framework for understanding how abstract models are adapted and implemented across the scientific landscape.",
+    "objectID": "chapter_ai-nepi_004.html#embedding-and-projection-workflow",
+    "href": "chapter_ai-nepi_004.html#embedding-and-projection-workflow",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.3 Embedding and Projection Workflow",
+    "text": "4.3 Embedding and Projection Workflow\n\n\n\nSlide 04\n\n\nThe team established a precise workflow for integrating new data into OpenAlex Mapper. The process begins with the tool downloading query results directly from the OpenAlex database.\nSubsequently, it embeds these newly acquired articles using the identical language model employed during the initial dataset processing. Finally, the system projects these embedded representations through the pre-trained UMAP model, ensuring a consistent placement within the established two-dimensional conceptual space.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#analysing-concept-distribution",
-    "href": "chapter_ai-nepi_004.html#analysing-concept-distribution",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.4 Analysing Concept Distribution",
-    "text": "4.4 Analysing Concept Distribution\nThe authors articulate a focused inquiry into the distribution of concepts across vast and interdisciplinary samples of academic texts. This line of investigation seeks to map how specific ideas and terms propagate, evolve, and are utilised in disparate fields of study.\nTheir approach builds upon the research of Malaterre, Chartier, and Lareau (2020), who have previously explored methods for tracking conceptual dynamics in large-scale corpora.",
+    "objectID": "chapter_ai-nepi_004.html#conceptual-integration",
+    "href": "chapter_ai-nepi_004.html#conceptual-integration",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.4 Conceptual Integration",
+    "text": "4.4 Conceptual Integration\n\n\n\nSlide 05\n\n\nThrough this systematic process, newly processed articles acquire precise positions on the two-dimensional conceptual map. The underlying principle ensures that these positions are assigned as if the articles had been an integral part of the original layout.\nThis seamless integration facilitates a coherent and continuously evolving visualisation of scholarly discourse, thereby maintaining the integrity of the conceptual distribution.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#frameworks-for-machine-learning-debates",
-    "href": "chapter_ai-nepi_004.html#frameworks-for-machine-learning-debates",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.5 Frameworks for Machine Learning Debates",
-    "text": "4.5 Frameworks for Machine Learning Debates\nThe presentation introduces methods directly relevant to contemporary debates surrounding the role of machine learning in science. These discussions often centre on the prospect of a ‘theory-free’ scientific practice, where data-driven models might supplant traditional, hypothesis-led inquiry.\nThe methodological approaches put forward by the authors draw from key contributions by scholars such as Breiman, Bzdok et al., and Andrews, providing analytical tools to engage with these complex and evolving arguments.",
+    "objectID": "chapter_ai-nepi_004.html#the-role-of-umap-and-live-demonstration",
+    "href": "chapter_ai-nepi_004.html#the-role-of-umap-and-live-demonstration",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.5 The Role of UMAP and Live Demonstration",
+    "text": "4.5 The Role of UMAP and Live Demonstration\n\n\n\nSlide 06\n\n\nThe inherent features of UMAP significantly simplify the integration of new data points into the existing map, streamlining the process considerably. Following this technical explanation, the presenter proceeded with a live demonstration of the OpenAlex Mapper tool, aiming to illustrate its functionality in real-time.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
-    "objectID": "chapter_ai-nepi_004.html#methodological-limitations",
-    "href": "chapter_ai-nepi_004.html#methodological-limitations",
-    "title": "4  Methodological Frameworks for Analysing Scientific Literature and Debates",
-    "section": "4.6 Methodological Limitations",
-    "text": "4.6 Methodological Limitations\nIn the interest of scholarly rigour, the authors outline several important qualifications and limitations of the methods under discussion. These acknowledgements highlight potential challenges that may be encountered when applying the framework.\nSpecifically, they identify known issues with the underlying data sources as a constraint. Furthermore, the presentation points to certain shortcomings within a specific analytical technique employed, thereby suggesting clear avenues for future refinement and development.",
+    "objectID": "chapter_ai-nepi_004.html#demonstration-challenges",
+    "href": "chapter_ai-nepi_004.html#demonstration-challenges",
+    "title": "4  OpenAlex Mapper presentation slide",
+    "section": "4.6 Demonstration Challenges",
+    "text": "4.6 Demonstration Challenges\n\n\n\nSlide 07\n\n\nAn unexpected technical issue arose during the live demonstration, which unfortunately prevented the tool from operating as intended. This anomaly, which had not been observed during extensive prior testing, was unforeseen. Nevertheless, the presenter promptly initiated a second attempt to run the demonstration and resolve the challenge.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methodological Frameworks for Analysing Scientific Literature and Debates</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>OpenAlex Mapper presentation slide</span>"
     ]
   },
   {
