@@ -1,5 +1,5 @@
 ---
-title: "AI-assisted Methods for History and Philosophy of Science Workshop: Introduction"
+title: "AI-assisted Methods for History and Philosophy of Science: Workshop Introduction"
 author:
 - name: "Adrian Wüthrich"
   affiliation: "TU Berlin"
