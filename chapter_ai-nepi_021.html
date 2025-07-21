@@ -231,16 +231,16 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#llms-in-the-service-of-hpss" id="toc-llms-in-the-service-of-hpss" class="nav-link" data-scroll-target="#llms-in-the-service-of-hpss"><span class="header-section-number">18.1</span> LLMs in the Service of HPSS</a></li>
-  <li><a href="#biographical-data-sources" id="toc-biographical-data-sources" class="nav-link" data-scroll-target="#biographical-data-sources"><span class="header-section-number">18.2</span> Biographical Data Sources</a></li>
+  <li><a href="#llms-in-the-history-philosophy-and-sociology-of-science" id="toc-llms-in-the-history-philosophy-and-sociology-of-science" class="nav-link" data-scroll-target="#llms-in-the-history-philosophy-and-sociology-of-science"><span class="header-section-number">18.1</span> LLMs in the History, Philosophy, and Sociology of Science</a></li>
+  <li><a href="#biographical-data-and-structure" id="toc-biographical-data-and-structure" class="nav-link" data-scroll-target="#biographical-data-and-structure"><span class="header-section-number">18.2</span> Biographical Data and Structure</a></li>
   <li><a href="#transforming-text-into-knowledge-graphs" id="toc-transforming-text-into-knowledge-graphs" class="nav-link" data-scroll-target="#transforming-text-into-knowledge-graphs"><span class="header-section-number">18.3</span> Transforming Text into Knowledge Graphs</a></li>
   <li><a href="#a-two-stage-construction-pipeline" id="toc-a-two-stage-construction-pipeline" class="nav-link" data-scroll-target="#a-two-stage-construction-pipeline"><span class="header-section-number">18.4</span> A Two-Stage Construction Pipeline</a></li>
-  <li><a href="#core-development-principles" id="toc-core-development-principles" class="nav-link" data-scroll-target="#core-development-principles"><span class="header-section-number">18.5</span> Core Development Principles</a></li>
+  <li><a href="#core-principles-of-development" id="toc-core-principles-of-development" class="nav-link" data-scroll-target="#core-principles-of-development"><span class="header-section-number">18.5</span> Core Principles of Development</a></li>
   <li><a href="#data-loading-and-chunking" id="toc-data-loading-and-chunking" class="nav-link" data-scroll-target="#data-loading-and-chunking"><span class="header-section-number">18.6</span> Data Loading and Chunking</a></li>
   <li><a href="#quality-assessment-and-refinement" id="toc-quality-assessment-and-refinement" class="nav-link" data-scroll-target="#quality-assessment-and-refinement"><span class="header-section-number">18.7</span> Quality Assessment and Refinement</a></li>
-  <li><a href="#social-network-analysis" id="toc-social-network-analysis" class="nav-link" data-scroll-target="#social-network-analysis"><span class="header-section-number">18.8</span> Social Network Analysis</a></li>
+  <li><a href="#social-network-analysis-of-biographical-compilations" id="toc-social-network-analysis-of-biographical-compilations" class="nav-link" data-scroll-target="#social-network-analysis-of-biographical-compilations"><span class="header-section-number">18.8</span> Social Network Analysis of Biographical Compilations</a></li>
   <li><a href="#case-study-the-wer-war-wer-in-der-ddr-lexicon" id="toc-case-study-the-wer-war-wer-in-der-ddr-lexicon" class="nav-link" data-scroll-target="#case-study-the-wer-war-wer-in-der-ddr-lexicon"><span class="header-section-number">18.9</span> Case Study: The <em>Wer war wer in der DDR?</em> Lexicon</a></li>
-  <li><a href="#state-awards-and-political-correlation" id="toc-state-awards-and-political-correlation" class="nav-link" data-scroll-target="#state-awards-and-political-correlation"><span class="header-section-number">18.10</span> State Awards and Political Correlation</a></li>
+  <li><a href="#ddr-awards-and-political-standing" id="toc-ddr-awards-and-political-standing" class="nav-link" data-scroll-target="#ddr-awards-and-political-standing"><span class="header-section-number">18.10</span> DDR Awards and Political Standing</a></li>
   <li><a href="#conclusion-and-future-directions" id="toc-conclusion-and-future-directions" class="nav-link" data-scroll-target="#conclusion-and-future-directions"><span class="header-section-number">18.11</span> Conclusion and Future Directions</a></li>
   </ul>
 </nav>
@@ -288,70 +288,150 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="overview">Overview</h2>
-<p>The presentation, titled <em>From Source to Structure – Extracting Knowledge Graphs with LLMs</em>, outlines a comprehensive methodology for transforming unstructured biographical data into structured knowledge graphs. The authors employ Large Language Models (LLMs) to move beyond isolated biographical entries towards a system capable of sophisticated structural queries, particularly within the History, Philosophy, and Sociology of Science (HPSS) domain.</p>
-<p>Their work introduces a two-stage pipeline. Initially, an ontology-agnostic Open Information Extraction (OIE) process extracts raw triples from pre-processed biographical texts. This is followed by an ontology-driven stage for constructing the final Knowledge Graph (KG). The pipeline integrates LLM interaction for both extraction and generation calls, whilst crucially incorporating a <em>Human-in-the-Loop</em> approach for manual correction and validation at critical junctures.</p>
-<p>Guiding this development are key principles of research-driven ontology creation, transparency, task decomposition, and modularity, which together ensure the system’s adaptability and verifiability. The project leverages biographical handbooks such as <em>Wer war wer in der DDR?</em> and Zieliński’s compilations as its primary data sources. The resulting knowledge graphs facilitate advanced social network analysis and enable quantitative analysis of biographical attributes, such as the correlation between state awards and political standing in the German Democratic Republic. Future ambitions include fine-tuning the system for specific use cases, exploring <em>GraphRAG</em> for natural language querying, and constructing multilayered networks for deeper structural analysis.</p>
+<p>In their presentation, <em>From Source to Structure – Extracting Knowledge Graphs with LLMs</em>, Raphael Schlattmann and his colleagues detail a comprehensive methodology for transforming unstructured biographical data into structured knowledge graphs. Their primary objective is to move beyond isolated biographical entries towards enabling complex structural queries, particularly within the History, Philosophy, and Sociology of Science (HPSS) domain.</p>
+<p>The authors have engineered a two-stage pipeline. Initially, an ontology-agnostic Open Information Extraction (OIE) process extracts raw triples from pre-processed biographical texts. This is followed by an ontology-driven stage for constructing the Knowledge Graph (KG). The pipeline integrates Large Language Model (LLM) interaction for extraction and generation calls, whilst crucially incorporating a ‘Human-in-the-Loop’ approach for manual correction and validation at critical junctures.</p>
+<p>This work is guided by core principles of research-driven ontology creation, transparency, task decomposition, and modularity, ensuring the system’s adaptability and verifiability. The project leverages biographical handbooks such as <em>Wer war wer in der DDR?</em> and Zieliński’s compilations as its primary data sources. The resulting knowledge graphs facilitate advanced social network analysis and enable quantitative analysis of biographical attributes, such as the correlation between state awards and political standing within the German Democratic Republic. Future ambitions include fine-tuning the system for specific use cases, exploring GraphRAG for natural language querying, and constructing multilayered networks for deeper structural analysis.</p>
 </section>
-<section id="llms-in-the-service-of-hpss" class="level2" data-number="18.1">
-<h2 data-number="18.1" class="anchored" data-anchor-id="llms-in-the-service-of-hpss"><span class="header-section-number">18.1</span> LLMs in the Service of HPSS</h2>
-<p>This initial segment introduces the overarching theme: the application of Large Language Models within the History, Philosophy, and Sociology of Science. The presentation slide, largely blank, centres attention on the conceptual introduction. A small inset video captures three individuals, likely participants in a conference, whilst the prominent label ‘LLM 4 HPSS’ clearly identifies the session’s specific interdisciplinary focus. The presence of a mouse cursor signifies an active digital environment.</p>
+<section id="llms-in-the-history-philosophy-and-sociology-of-science" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="llms-in-the-history-philosophy-and-sociology-of-science"><span class="header-section-number">18.1</span> LLMs in the History, Philosophy, and Sociology of Science</h2>
+<p>This initial segment introduces the overarching theme: the application of Large Language Models within the History, Philosophy, and Sociology of Science (HPSS). The session, clearly identified by the label ‘LLM 4 HPSS’, signals a specific interdisciplinary focus.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_02.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 2</figcaption>
+</figure>
+</div>
 </section>
-<section id="biographical-data-sources" class="level2" data-number="18.2">
-<h2 data-number="18.2" class="anchored" data-anchor-id="biographical-data-sources"><span class="header-section-number">18.2</span> Biographical Data Sources</h2>
-<p>The authors utilise diverse biographical databases as their foundational data sources, exemplified by the handbook <em>Wer war wer in der DDR?</em> (Who was who in the GDR?). This resource provides detailed entries, such as that for Alexander Abusch, a former Minister for Culture, born in Krakow in 1902 and deceased in 1982.</p>
-<p>His biography meticulously documents his early life, including his Jewish heritage, his parents’ varied professions, and his upbringing in Nuremberg-Gostenhof from 1902. It further outlines his merchant training between 1916 and 1919, his subsequent employment, and his early political affiliations with the Free Socialist Youth in 1918 and the Communist Party of Germany (KPD) in 1919. Abusch’s involvement in revolutionary struggles is noted, alongside his journalistic career, where he adopted the pseudonym ‘Ernst Reinhardt’. His biography also records two high treason cases, his subsequent flight, and his work for the <em>Neue Ztg.</em> in Jena from 1923.</p>
-<p>Beyond German sources, the system integrates Polish biographical and bibliographical entries. These include details on individuals such as Bartmański T., Henryk Bartsch—a Protestant priest who travelled extensively and authored travelogues—and Franciszek Baturewicz, a literary figure, sociologist, and linguist. These Polish entries reference sources like <em>Bibl. Warszawskiej</em> (Warsaw Library) and <em>Wielka Encyklopedia</em> (Great Encyclopedia). An ‘Anhören’ (Listen) button suggests an integrated audio feature, enhancing the accessibility of these entries.</p>
+<section id="biographical-data-and-structure" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="biographical-data-and-structure"><span class="header-section-number">18.2</span> Biographical Data and Structure</h2>
+<p>The authors utilise diverse biographical databases as foundational data sources, exemplified by the handbook <em>Wer war wer in der DDR?</em> (Who was who in the GDR?). This resource provides detailed entries, such as that for Alexander Abusch, a former Minister for Culture, born in Krakow in 1902 and deceased in 1982.</p>
+<p>His biography meticulously documents his early life, including his Jewish heritage, his parents’ varied professions, and his upbringing in Nuremberg-Gostenhof from 1902. It further outlines his merchant training, his employment in Nuremberg, and his early political affiliations with the Free Socialist Youth in 1918 and the Communist Party of Germany (KPD) in 1919. Abusch’s involvement in revolutionary struggles is noted, alongside his journalistic career, where he adopted the pseudonym ‘Ernst Reinhardt’. His biography also records legal troubles concerning ‘revelations about secret armaments’, his subsequent flight, and his work for the <em>Neue Ztg.</em> in Jena from 1923.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_03.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 3</figcaption>
+</figure>
+</div>
+<p>Beyond German sources, the system integrates Polish biographical and bibliographical entries. These include details on individuals such as Henryk Bartsch—a Protestant priest born in 1832 who extensively travelled and authored travelogues—and Franciszek Baturewicz, a literary figure, sociologist, and linguist born in 1888. These Polish entries reference sources like <em>Bibl. Warszawskiej</em> (Warsaw Library) and <em>Wielka Encyklopedja</em> (Great Encyclopedia). An <em>Anhören</em> (Listen) button suggests an integrated audio feature, enhancing accessibility.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_04.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 4</figcaption>
+</figure>
+</div>
 </section>
 <section id="transforming-text-into-knowledge-graphs" class="level2" data-number="18.3">
 <h2 data-number="18.3" class="anchored" data-anchor-id="transforming-text-into-knowledge-graphs"><span class="header-section-number">18.3</span> Transforming Text into Knowledge Graphs</h2>
-<p>The authors’ extraction pipeline is engineered to transform diverse textual statements into a structured knowledge graph representation. This process begins with biographical text chunks, which serve as the ‘Text Representation of Statement’. Examples include Polish snippets detailing travel to Italy, Greece, the Holy Land, and Egypt, or membership in the P. E. N. Club. German excerpts also feature, such as affiliations with the KPD-PV from 1948 to 1951.</p>
-<p>The ‘Extraction Pipeline’ systematically processes these textual inputs, yielding a ‘Knowledge Graph Representation of Statement’. This graph comprises entities as nodes and relationships as labelled edges. For instance, the system extracts ‘Henryk, Bartsch’ as an entity, establishing relationships such as <code>member_of</code> ‘P. E. N. Klubu’ and <code>traveled_to</code> various locations including ‘Włoszech’ (Italy) and ‘Grecji’ (Greece). This structured output facilitates semantic querying and a comprehensive analysis of the biographical data.</p>
+<p>The authors developed an extraction pipeline to transform diverse textual statements into a structured knowledge graph representation. This process begins with biographical text chunks, which serve as the input. Examples include Polish snippets detailing travel to Italy, Greece, the Holy Land, and Egypt, or membership in the P. E. N. Club. German excerpts also feature, such as affiliations with the KPD-PV from 1948 to 1951.</p>
+<p>The pipeline systematically processes these textual inputs, yielding a knowledge graph of entities (nodes) and relationships (labelled edges). For instance, the system extracts ‘Henryk, Bartsch’ as an entity, establishing relationships such as <code>member_of</code> ‘P. E. N. Klubu’ and <code>traveled_to</code> various locations including <em>Włoszech</em> (Italy) and <em>Grecji</em> (Greece). This structured output facilitates semantic querying and a comprehensive analysis of the biographical data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_05.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 5</figcaption>
+</figure>
+</div>
 </section>
 <section id="a-two-stage-construction-pipeline" class="level2" data-number="18.4">
 <h2 data-number="18.4" class="anchored" data-anchor-id="a-two-stage-construction-pipeline"><span class="header-section-number">18.4</span> A Two-Stage Construction Pipeline</h2>
-<p>The knowledge graph construction pipeline operates in two distinct stages, ensuring both broad information extraction and structured, ontology-driven graph building. The initial phase, ‘Ontology agnostic Open Information Extraction (OIE)’, commences with loading and chunking data, followed by OIE extraction and validation. During this stage, an LLM performs an ‘Extraction Call’ to generate ‘OIE Raw Triples’. A critical ‘OIE Standard?’ decision point ensures quality; should the raw triples not meet the standard, a <em>Human in the Loop</em> intervenes for manual correction, focusing on extracting information without imposing a predefined schema.</p>
-<p>Subsequently, ‘Ontology driven Knowledge Graph (KG) building’ constitutes the second stage. This phase involves defining ‘Competency Questions (CQ)’, creating the ‘Ontology’, and establishing ‘KGACL Creation’ for schema definition. LLMs are again leveraged, performing a ‘Generation Call’ related to these components. Further steps include ontology mapping, disambiguation, and Wikipedia Information Retrieval to link entities to external knowledge bases. The pipeline then employs ‘RDF Star &amp; SHACL Validation’ for graph representation and schema adherence. A final ‘KG Standard?’ checkpoint ensures the graph meets predefined criteria, with human intervention available to refine the components and maintain quality.</p>
+<p>The knowledge graph construction pipeline operates in two distinct stages, ensuring both broad information extraction and structured, ontology-driven graph building.</p>
+<p>The initial phase, ‘Ontology agnostic Open Information Extraction (OIE)’, commences with loading and chunking data, followed by OIE extraction and validation. During this stage, an LLM performs an ‘Extraction Call’ to generate raw triples. A critical decision point ensures quality; should the triples not meet the standard, a ‘Human in the Loop’ intervenes for manual correction, focusing on information extraction without a predefined schema.</p>
+<p>Subsequently, the ‘Ontology driven Knowledge Graph (KG) building’ stage involves defining ‘Competency Questions’, creating the ‘Ontology’, and establishing schema definitions. The authors again leverage an LLM for a ‘Generation Call’ related to these components. Further steps include ontology mapping, disambiguation, and Wikipedia information retrieval. The pipeline then employs ‘RDF Star &amp; SHACL Validation’ for graph representation and schema adherence, with another quality gate ensuring the final knowledge graph meets predefined criteria through potential human intervention.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_06.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 6</figcaption>
+</figure>
+</div>
 </section>
-<section id="core-development-principles" class="level2" data-number="18.5">
-<h2 data-number="18.5" class="anchored" data-anchor-id="core-development-principles"><span class="header-section-number">18.5</span> Core Development Principles</h2>
-<p>The development methodology for this knowledge representation system adheres to five fundamental principles, ensuring both rigour and adaptability.</p>
-<p>First, the <em>Research-Driven &amp; Data-Oriented</em> principle dictates that ontology development must be intrinsically guided by specific research questions and the inherent characteristics of the available data. This ensures the resulting knowledge structure remains pertinent to scholarly inquiry.</p>
-<p>Second, the <em>Human-in-the-Loop</em> principle advocates for a hybrid approach, combining the efficiency of LLM automation with essential expert oversight. Manual checks are integrated at all critical stages, thereby achieving high quality whilst maintaining a manageable level of human effort.</p>
-<p>Third, <em>Transparency</em> is paramount. Every step within the pipeline must be verifiable at all relevant points, fostering clarity, auditability, and trust in the entire process.</p>
-<p>Furthermore, <em>Task Decomposition</em> involves breaking down the complex process into smaller, sequential, and individually verifiable steps. Performing Open Information Extraction as an initial step, followed by Ontology alignment, illustrates this structured, phased approach.</p>
-<p>Finally, the <em>Modularity</em> principle underscores the importance of designing the system to facilitate the easy swapping of components. This allows for the seamless integration of improved models or alternative validation LLMs as technology evolves, ensuring the system remains flexible and adaptable.</p>
+<section id="core-principles-of-development" class="level2" data-number="18.5">
+<h2 data-number="18.5" class="anchored" data-anchor-id="core-principles-of-development"><span class="header-section-number">18.5</span> Core Principles of Development</h2>
+<p>The team’s development methodology adheres to five fundamental principles, ensuring both rigour and adaptability.</p>
+<ul>
+<li><p><em>Research-Driven &amp; Data-Oriented</em>: Ontology development is intrinsically guided by specific research questions and the inherent characteristics of the available data. This ensures the resulting knowledge structure remains pertinent and practical.</p></li>
+<li><p><em>Human-in-the-Loop</em>: The authors advocate for a hybrid approach, combining the efficiency of LLM automation with essential expert oversight. Manual checks are integrated at all critical stages to achieve high quality with manageable human effort.</p></li>
+<li><p><em>Transparency</em>: Every step within the pipeline is designed to be verifiable at all relevant points, fostering clarity, auditability, and trust in the entire process.</p></li>
+<li><p><em>Task Decomposition</em>: The complex process is broken down into smaller, sequential, and individually verifiable steps. Performing Open Information Extraction before Ontology alignment exemplifies this structured, phased approach.</p></li>
+<li><p><em>Modularity</em>: The system is designed to facilitate the easy swapping of components. This allows for the seamless integration of improved models or alternative validation tools as technology evolves, ensuring the system remains flexible and adaptable.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_07.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 7</figcaption>
+</figure>
+</div>
 </section>
 <section id="data-loading-and-chunking" class="level2" data-number="18.6">
 <h2 data-number="18.6" class="anchored" data-anchor-id="data-loading-and-chunking"><span class="header-section-number">18.6</span> Data Loading and Chunking</h2>
-<p>The initial phase of the ‘Text to Graph Pipeline’, designated as Stage 1, focuses on the crucial ‘Load &amp; Chunk Data’ process. This stage accepts pre-processed data files containing biographical information and transforms this input into semi-structured data, where rows represent individual chunks.</p>
-<p>The output is organised into a table with four distinct columns: <em>Name</em>, <em>Role</em>, <em>Biografie (Chunk)</em>, and <em>chunk_id</em>. A sample row illustrates this structure: ‘Havemann, Robert’ is listed under <em>Name</em>, his <em>Role</em> is identified as ‘Physiker…’ (Physicist), and a biographical snippet populates the <em>Biografie (Chunk)</em> column. A unique <em>chunk_id</em> is assigned to each. This stage is instrumental in segmenting unstructured text into manageable units, preparing the data for subsequent extraction.</p>
+<p>The initial phase of the pipeline, designated as Stage 1, focuses on the crucial process of loading and chunking data. This stage accepts pre-processed data files containing biographical information and transforms this input into semi-structured data where rows represent individual chunks.</p>
+<p>The output is organised into a table with four columns: ‘Name’, ‘Role’, ‘Biografie (Chunk)’, and ‘chunk_id’. For example, ‘Havemann, Robert’ is listed under ‘Name’, his ‘Role’ is identified as ‘Physiker…’ (Physicist), and a biographical snippet populates the ‘Biografie (Chunk)’ column. A unique ‘chunk_id’ is assigned to each entry. This stage is instrumental in segmenting unstructured text into manageable units, preparing the data for subsequent extraction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_08.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 8</figcaption>
+</figure>
+</div>
 </section>
 <section id="quality-assessment-and-refinement" class="level2" data-number="18.7">
 <h2 data-number="18.7" class="anchored" data-anchor-id="quality-assessment-and-refinement"><span class="header-section-number">18.7</span> Quality Assessment and Refinement</h2>
-<p>Stage 3 of the ‘Text to Graph Pipeline’ is dedicated to the rigorous quality assessment and refinement of extracted information. This iterative process commences with loading and cleaning the data, followed by Open Information Extraction (OIE) and its subsequent validation. The validated output then undergoes a critical comparison against an established ‘OIE Standard’.</p>
-<p>A key decision point, ‘OIE Quality Sufficient?’, determines the pipeline’s progression. Should the extracted information fail to meet the predefined criteria, the system enters a feedback loop, necessitating ‘Manual Correction of a sample of Triples’. This human intervention refines the data, after which the process cycles back for re-evaluation. The inputs for this stage comprise ‘Validated Triples’ and a ‘Gold Standard’—a manually verified sample serving as the ground truth. The output consists of standard ‘Quality Metrics’, specifically F1 score, Precision, and Recall, which quantitatively measure the extraction process’s accuracy.</p>
+<p>Stage 3 of the pipeline is dedicated to the rigorous quality assessment and refinement of extracted information. This iterative process commences with loading and cleaning the data, followed by Open Information Extraction (OIE) and its validation. The output is then compared against an established ‘OIE Standard’.</p>
+<p>A key decision point, ‘OIE Quality Sufficient?’, determines the pipeline’s progression. If the extracted information fails to meet the predefined criteria, the system enters a feedback loop for ‘Manual Correction of a sample of Triples’. This human intervention refines the data before it cycles back for re-evaluation. The inputs for this stage comprise validated triples and a ‘Gold Standard’—a manually verified sample serving as ground truth. The output consists of standard quality metrics, namely F1 score, Precision, and Recall, which quantitatively measure the extraction process’s accuracy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_10.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 10</figcaption>
+</figure>
+</div>
 </section>
-<section id="social-network-analysis" class="level2" data-number="18.8">
-<h2 data-number="18.8" class="anchored" data-anchor-id="social-network-analysis"><span class="header-section-number">18.8</span> Social Network Analysis</h2>
-<p>The extracted knowledge graphs facilitate sophisticated social network analysis, as exemplified by a network derived from <em>Zieliński’s compilations</em>. This substantial dataset comprises 3,598 nodes and 5,443 edges, representing a complex web of interconnected individuals.</p>
-<p>Within the network visualisation, a key analytical distinction is made between ‘Editors’, who are highlighted, and ‘Everyone else’. Numerous individual names, including K. Burkę, Józef Piłsudski, Adam Mickiewicz, and Joachim Lelewel, are visible as node labels, illustrating the dataset’s breadth. The observed clustering of nodes and the density of connections in specific areas strongly suggest the presence of distinct communities within Zieliński’s documented relationships. This visualisation effectively communicates the structural properties of the social network, offering valuable insights.</p>
+<section id="social-network-analysis-of-biographical-compilations" class="level2" data-number="18.8">
+<h2 data-number="18.8" class="anchored" data-anchor-id="social-network-analysis-of-biographical-compilations"><span class="header-section-number">18.8</span> Social Network Analysis of Biographical Compilations</h2>
+<p>The extracted knowledge graphs facilitate sophisticated social network analysis, as demonstrated by a network derived from <em>Zieliński’s compilations</em>. This substantial dataset comprises 3,598 nodes and 5,443 edges, representing a complex web of interconnected individuals.</p>
+<p>In the visual representation, nodes denote individuals and edges signify relationships inferred from the source material. A key analytical distinction categorises individuals into ‘Editors’, who are highlighted, and ‘Everyone else’. The visibility of numerous names, including Józef Piłsudski, Adam Mickiewicz, and Joachim Lelewel, illustrates the dataset’s breadth. The observed clustering of nodes and the density of connections suggest the presence of distinct communities, offering valuable insights into the documented social structures.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_12.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 12</figcaption>
+</figure>
+</div>
 </section>
 <section id="case-study-the-wer-war-wer-in-der-ddr-lexicon" class="level2" data-number="18.9">
 <h2 data-number="18.9" class="anchored" data-anchor-id="case-study-the-wer-war-wer-in-der-ddr-lexicon"><span class="header-section-number">18.9</span> Case Study: The <em>Wer war wer in der DDR?</em> Lexicon</h2>
-<p>The biographical lexicon <em>Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien</em> serves as a critical resource for this research. Initially published in the 1990s by the Bundesstiftung Aufarbeitung and subsequently digitised, this handbook is a key reference for understanding prominent East German individuals across politics, science, culture, and sports. It contains approximately 4,000 comprehensive biographical entries.</p>
-<p>Two examples from this lexicon highlight the diversity of documented lives. Gustav Hertz, a physicist, pursued an academic career that included collaborative work with James Franck on electron impact experiments. This research significantly contributed to Bohr’s atomic theory and earned them a Nobel Prize in 1925. Hertz was later involved in the Soviet atomic bomb project before becoming a professor at Karl Marx University Leipzig.</p>
-<p>Conversely, Robert Havemann, a physical chemist and prominent dissident, held an early affiliation with the Communist Party of Germany. He was arrested in 1943 as a leader of the anti-fascist resistance group <em>Europäische Union</em> and received a death sentence. Post-1945, Havemann became a professor at Humboldt University Berlin but was dismissed in 1950 for his protest against US nuclear policy, leading him to become a significant system critic within the GDR. He gained recognition for his Marxist critique of political conditions, particularly through his popular lecture series later published as <em>Dialektik ohne Dogma</em>.</p>
+<p>The biographical lexicon <em>Wer war wer in der DDR? Ein Lexikon ostdeutscher Biographien</em> serves as a critical resource for this research. Initially published in the 1990s and digitised in the 2000s, this handbook is a key reference for understanding prominent East German figures, containing approximately 4,000 comprehensive entries.</p>
+<p>Two examples highlight the diversity of documented lives. Gustav Hertz, a physicist, earned a Nobel Prize in 1925 for work that significantly contributed to quantum theory. His career also included involvement in the Soviet atomic bomb project before he became a professor at Karl Marx University Leipzig. Conversely, Robert Havemann, a physical chemist and prominent dissident, was a co-founder of the anti-fascist resistance group <em>Europäische Union</em>. After the war, he became a significant system critic within the GDR, gaining recognition for his Marxist critique of political conditions and academic suppression, particularly through his lecture series <em>Dialektik ohne Dogma</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_13.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 13</figcaption>
+</figure>
+</div>
 </section>
-<section id="state-awards-and-political-correlation" class="level2" data-number="18.10">
-<h2 data-number="18.10" class="anchored" data-anchor-id="state-awards-and-political-correlation"><span class="header-section-number">18.10</span> State Awards and Political Correlation</h2>
-<p>Analysis of the biographical data reveals a strong correlation between the receipt of prestigious DDR state awards and an individual’s political affiliation and career progression. A bubble chart visually represents this relationship, mapping ‘SED Affiliation Rate (%)’ against ‘High Positions Rate (%)’ for various awards.</p>
-<p>The <em>Held der DDR</em> and <em>Karl-Marx-Orden</em> awards demonstrate a very high association with SED affiliation, approaching 100% and 95% respectively, alongside high rates of holding significant positions. Other awards, such as the <em>Banner der Arbeit</em>, also indicate high SED affiliation. Conversely, the <em>Nationalpreis der DDR</em> and the ‘No Award’ category exhibit notably lower rates.</p>
-<p>Detailed data further elucidates these trends. A comparison of 20 <em>Karl-Marx-Orden</em> recipients against 1,056 non-recipients shows a significant disparity in SED membership: 95.0% versus 50.5%. Furthermore, 55.0% of recipients held high positions, whilst only 28.0% of those without an award did so. A granular breakdown reveals that recipients were significantly more likely to be Politbüro members (15.0% vs.&nbsp;1.8%), Abgeordneter (30.0% vs.&nbsp;11.6%), and Minister (35.0% vs.&nbsp;11.6%). This analysis clearly illustrates that receiving prestigious state awards in the DDR was strongly linked to high-level political engagement within the ruling party structure.</p>
+<section id="ddr-awards-and-political-standing" class="level2" data-number="18.10">
+<h2 data-number="18.10" class="anchored" data-anchor-id="ddr-awards-and-political-standing"><span class="header-section-number">18.10</span> DDR Awards and Political Standing</h2>
+<p>Analysis of the biographical data reveals a strong correlation between the receipt of prestigious DDR state awards and an individual’s political affiliation and career progression. A bubble chart visually represents this relationship, mapping SED affiliation against the rate of holding high-level positions for various awards.</p>
+<p>The ‘Held der DDR’ and ‘Karl-Marx-Orden’ awards demonstrate a very high association with both SED affiliation and holding significant positions. Other awards, such as the ‘Banner der Arbeit’, also indicate high SED affiliation. Conversely, the ‘Nationalpreis der DDR’ and the ‘No Award’ category exhibit notably lower rates for both metrics.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_14.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 14</figcaption>
+</figure>
+</div>
+<p>Detailed data further elucidates these trends. A comparison of 20 Karl-Marx-Orden recipients against 1,056 non-recipients shows a significant disparity in SED membership: 95.0% versus 50.5%. Furthermore, 55.0% of recipients held high positions, compared to only 28.0% of those without an award. A granular breakdown reveals that Karl-Marx-Orden recipients were significantly more likely to be Politbüro members, ministers, or hold other senior roles. This analysis clearly illustrates that receiving prestigious state awards in the DDR was strongly linked to high-level political engagement within the ruling party structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_15.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 15</figcaption>
+</figure>
+</div>
 </section>
 <section id="conclusion-and-future-directions" class="level2" data-number="18.11">
 <h2 data-number="18.11" class="anchored" data-anchor-id="conclusion-and-future-directions"><span class="header-section-number">18.11</span> Conclusion and Future Directions</h2>
-<p>The overarching aim of this research is to move ‘From isolated biographical entries to structural queries’, thereby enabling more profound and interconnected analyses of historical data. Despite significant progress, current challenges necessitate further development, particularly in enhancing entity disambiguation and refining benchmarking processes to ensure greater accuracy.</p>
-<p>Looking ahead, the immediate next steps focus on improving and finalising the existing pipeline. This includes systematically comparing results against other established packages and scaling the system to process full datasets. Long-term goals are ambitious, encompassing the fine-tuning of the system for specific use cases and exploring <em>GraphRAG</em> for advanced natural language querying. Ultimately, the project aspires to build ‘multilayered networks (ModelSEN)’ to facilitate deeper structural analysis, offering novel insights into complex historical relationships. Contact details for Raphael Schlattmann, Kaye, and Vogl are provided for further engagement within the ‘LLM 4 HPSS’ community.</p>
+<p>The overarching aim of this research is to move ‘From isolated biographical entries to structural queries’, thereby enabling more profound and interconnected analyses of historical data. Current challenges remain, particularly in enhancing entity disambiguation and refining benchmarking processes to ensure greater accuracy.</p>
+<p>Looking ahead, the immediate next steps focus on finalising the existing pipeline. This includes systematically comparing results against other established packages and scaling the system to process full datasets. Long-term goals are ambitious, encompassing the fine-tuning of the system for specific use cases and exploring ‘GraphRAG’ for advanced natural language querying. Ultimately, the project aspires to build multilayered networks to facilitate deeper structural analysis, offering novel insights into complex historical relationships.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ai-nepi_021_slide_16.png" class="img-fluid figure-img"></p>
+<figcaption>Slide 16</figcaption>
+</figure>
+</div>
 
 
 </section>
