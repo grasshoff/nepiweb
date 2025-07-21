@@ -1,5 +1,5 @@
 ---
-title: "Transformer Architectures and LLM Adaptation for the History, Philosophy, and Sociology of Science"
+title: "Large Language Models for the History, Philosophy, and Sociology of Science"
 author:
 - name: "Arno Simons"
   affiliation: "TU Berlin"
@@ -8,86 +8,70 @@ bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
 
-This chapter details the foundational architecture of *Transformer*-based Large Language Models (LLMs), charting a course from their core principles to their specialised application in the History, Philosophy, and Sociology of Science (HPSS). The authors begin by deconstructing the *Transformer* model, examining its essential encoder and decoder components. They illuminate the intricate process by which input text is converted into rich numerical representations through embedding, positional encoding, multi-head attention, and feed-forward networks.
+This chapter details the foundational architecture of *Transformer*-based Large Language Models (LLMs) and their specialised adaptation for research in the History, Philosophy, and Sociology of Science (HPSS). The authors begin by deconstructing the *Transformer* model into its core encoder and decoder components. They elucidate the process flow from input words to numerical representations through embedding, positional encoding, multi-head attention, and feed-forward networks.
 
-From this fundamental design, the analysis proceeds to explore how distinct model families have emerged. The authors contrast the encoder-centric architecture of *BERT*, which excels at bidirectional language understanding, with the decoder-focused structure of *GPT*, renowned for its generative capabilities. Building upon this technical foundation, the chapter outlines several strategies for adapting these powerful models to the specific demands of HPSS research. These include four training-based methods for domain specialisation and the increasingly prominent technique of Retrieval Augmented Generation (*RAG*).
+The analysis then demonstrates how this core architecture gives rise to distinct model families. *BERT*, for instance, leverages the encoder for bidirectional language understanding, whilst *GPT* employs the decoder for unidirectional text generation. For application within the HPSS domain, the authors outline several adaptation strategies. These include four distinct training-based methods for domain and task specialisation, alongside the increasingly prevalent Retrieval Augmented Generation (*RAG*) technique, which combines external document retrieval with text generation.
 
-Furthermore, the authors propose a clear taxonomy for classifying LLMs, using criteria such as architecture, fine-tuning methods, and deployment models. The chapter culminates by mapping these computational methodologies onto specific scholarly applications within HPSS, addressing key research areas such as source management, the analysis of knowledge structures, the dynamics of conceptual change, and the examination of scientific practices.
+Furthermore, the presentation provides a taxonomy for classifying LLMs based on their architecture, fine-tuning methods, embedding types, and deployment abstraction levels. Finally, the authors map these computational methods to specific applications in HPSS, covering tasks related to data and source management, the analysis of knowledge structures, the investigation of knowledge dynamics, and the examination of knowledge practices.
 
 ## Presentation Agenda
 
 ![Slide 02](images/ai-nepi_003_slide_02.png)
 
-The discussion commences with an agenda, metaphorically framed as 'Today's Menu', which outlines the main topics and logical progression of the chapter. This structure serves to establish clear expectations for the material to be explored.
+The presentation commences by outlining its structure, framed metaphorically as 'Today's Menu'. This agenda introduces the audience to the main topics and the logical progression of the discussion, thereby setting clear expectations for the content to be covered.
 
 ## The *Transformer* Architecture
 
 ![Slide 03](images/ai-nepi_003_slide_03.png)
 
-At the core of contemporary large language models resides the *Transformer* architecture, a sophisticated design centred on an encoder-decoder structure. This framework governs the flow of information, systematically transforming a sequence of input words into a set of output probabilities. The accompanying diagram visualises this entire process, clarifying the pathway from initial input to final prediction and thereby illustrating the model's fundamental mechanics.
+At the centre of modern large language models lies the *Transformer* architecture, which operates on a sophisticated encoder-decoder structure. This design governs the flow of information, systematically converting a sequence of input words into a set of output probabilities. An accompanying architectural diagram visualises this entire process, clarifying the pathway from initial input to final predictive output and illustrating the model's core mechanics.
 
 ## The Encoder Component
 
 ![Slide 04](images/ai-nepi_003_slide_04.png)
 
-The *Transformer*'s encoder component executes the critical function of converting input text into rich, context-aware numerical representations. This conversion unfolds through a precise, multi-stage process.
+The encoder component of the *Transformer* architecture performs the critical function of converting input words into rich, context-aware numerical representations. This conversion unfolds through a multi-stage process. Initially, an embedding layer maps each word to a vector. Subsequently, the authors integrate positional encoding to provide the model with crucial information about the sequence and order of the words.
 
-An embedding layer first maps each word to a vector, after which positional encoding is integrated to furnish the model with vital information about word order. These vectors are then processed by a multi-head attention mechanism, which dynamically assesses the significance of different words in relation to one another. Finally, the refined representations pass through feed-forward networks, completing their transformation into a state prepared for subsequent analytical tasks.
+The resulting vectors are then processed by a multi-head attention mechanism, which dynamically weighs the significance of different words in relation to one another. Finally, these refined representations pass through feed-forward networks, completing their transformation into a format suitable for downstream tasks.
 
 ## Specialised Architectures: *BERT* and *GPT*
 
 ![Slide 08](images/ai-nepi_003_slide_08.png)
 
-From the foundational *Transformer* architecture, engineers have developed specialised models tailored for distinct computational tasks. This divergence has produced two prominent model families, *BERT* and *GPT*, both of which have proven valuable for research in the History, Philosophy, and Sociology of Science (HPSS).
-
-*BERT* (Bidirectional Encoder Representations from Transformers) leverages the encoder stack to cultivate a deep, bidirectional understanding of linguistic context. In contrast, *GPT* (Generative Pre-trained Transformer) primarily employs the decoder stack, enabling it to excel at unidirectional, generative tasks such as text creation. These architectural specialisations facilitate new forms of computational analysis within the humanities and social sciences.
+Engineers have adapted the foundational *Transformer* architecture to create specialised models tailored for distinct tasks, giving rise to two prominent model families: *BERT* and *GPT*. *BERT*, which stands for Bidirectional Encoder Representations from Transformers, leverages the encoder stack to develop a deep, bidirectional understanding of language context. In contrast, *GPT*, or Generative Pre-trained Transformer, primarily employs the decoder stack to excel at unidirectional, generative tasks such as text creation. Both of these architectural specialisations have found significant application within the HPSS domain, enabling new forms of computational analysis.
 
 ## Divergent Processing Capabilities
 
 ![Slide 09](images/ai-nepi_003_slide_09.png)
 
-Although they originate from the same *Transformer* model, the distinct architectural choices underpinning *BERT* and *GPT* yield fundamentally different processing capabilities. *BERT*'s reliance on the encoder permits it to analyse entire sequences simultaneously, making it highly proficient at tasks that demand nuanced language understanding.
+The distinct architectural choices in *BERT* and *GPT* result in fundamentally different processing capabilities, even though both originate from the same core *Transformer* model. *BERT*'s reliance on the encoder allows it to analyse entire sequences at once, making it exceptionally proficient at tasks requiring nuanced language understanding. Conversely, *GPT*'s decoder-focused design enables it to generate coherent and contextually relevant text in a sequential, unidirectional manner. This clear division of capabilities—understanding versus generation—dictates their respective applications and strengths.
 
-Conversely, *GPT*'s decoder-centric design enables it to generate coherent and contextually relevant text in a sequential, unidirectional fashion. This clear division of labour—understanding versus generation—determines their respective applications and analytical strengths.
+## Unanalysed Slide Content
+
+![Slide 10](images/ai-nepi_003_slide_10.png)
+
+The information corresponding to this segment of the presentation was not available for extraction. An analysis of the source slide content could not be completed; consequently, no factual details can be reported for this section.
 
 ## Adaptation Through Training
 
 ![Slide 11](images/ai-nepi_003_slide_11.png)
 
-To harness large language models for specialised fields like HPSS, the authors outline four distinct adaptation strategies centred on model training. These methods enable the fine-tuning of a general-purpose LLM, imbuing it with the specific knowledge and capabilities required for scholarly inquiry.
+To harness the power of Large Language Models for specialised fields, researchers must adapt them for specific domains and tasks. For applications within the History, Philosophy, and Sociology of Science (HPSS), the authors present four distinct strategies centred on model training. These methods allow for the fine-tuning of a general-purpose LLM, imbuing it with the specific knowledge and capabilities required for scholarly inquiry in the HPSS domain.
 
 ## Adaptation via Retrieval Augmented Generation
 
 ![Slide 12](images/ai-nepi_003_slide_12.png)
 
-Beyond direct model training, Retrieval Augmented Generation (*RAG*) presents a powerful alternative for domain and task adaptation. This technique enhances an LLM's performance by integrating an external knowledge source into its response-generation process.
+Beyond direct training, Retrieval Augmented Generation (*RAG*) offers a powerful alternative for domain and task adaptation. This technique enhances an LLM's capabilities by integrating an external knowledge source. The *RAG* process operates through a two-stage mechanism: first, a retrieval component searches a corpus of documents to find information relevant to a given query. Subsequently, a text generation component uses this retrieved information as context to produce a more accurate, detailed, and factually grounded response.
 
-The *RAG* mechanism operates in two stages. First, a retrieval component searches a specified corpus of documents to locate information relevant to a user's query. Next, a generation component synthesises this retrieved information, using it as context to produce a more accurate, detailed, and factually grounded response.
-
-## A Taxonomy of Language Models
+## A Taxonomy of Large Language Models
 
 ![Slide 13](images/ai-nepi_003_slide_13.png)
 
-The authors propose a taxonomy to systematically organise the landscape of large language models. This classification framework distinguishes models according to four key characteristics:
-
-- *Architecture*: Whether the model is encoder-only, decoder-only, or a full encoder-decoder implementation.
-
-- *Fine-Tuning Strategy*: The specific methods applied to adapt the model for particular tasks or domains.
-
-- *Embedding Type*: The nature of the numerical representations the model employs.
-
-- *Deployment Abstraction*: The level at which the model is accessed, from a simple API to a fully self-hosted instance.
+The field of large language models can be systematically organised using a taxonomy based on four key characteristics. This classification framework helps to distinguish models by their underlying architecture, such as whether they are encoder-only, decoder-only, or a combination of both. Moreover, models are differentiated by the fine-tuning strategies applied to them and the specific types of embeddings they utilise. Finally, the level of abstraction in their deployment—ranging from simple API access to a fully self-hosted model—provides another critical axis for categorisation.
 
 ## Computational Methods in HPSS
 
 ![Slide 14](images/ai-nepi_003_slide_14.png)
 
-The authors conclude by mapping these computational methods onto research practices in the History, Philosophy, and Sociology of Science. They organise the potential applications of LLMs into four primary domains of scholarly work:
-
-- *Data and Source Management*: Assisting in the organisation, curation, and processing of historical and scholarly materials.
-
-- *Analysis of Knowledge Structures*: Enabling the exploration of conceptual frameworks and intellectual networks within large corpora.
-
-- *Investigation of Knowledge Dynamics*: Facilitating inquiry into how concepts, theories, and disciplines evolve over time.
-
-- *Examination of Knowledge Practices*: Allowing for the analysis of patterns in scientific communication, argumentation, and collaboration.
+Computational methods, especially Large Language Models, provide powerful tools for research within the History, Philosophy, and Sociology of Science. Their applications are diverse and can be organised into four primary areas of scholarly work. Firstly, they assist in managing and processing data and sources. Secondly, these models enable the analysis of complex knowledge structures within large corpora. Thirdly, researchers use them to investigate knowledge dynamics, such as how concepts and theories evolve over time. Finally, LLMs facilitate the examination of knowledge practices by analysing patterns in scientific communication and argumentation.

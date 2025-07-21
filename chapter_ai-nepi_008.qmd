@@ -1,5 +1,5 @@
 ---
-title: "AI, Computational Epistemology, and Open Science Infrastructure"
+title: "Modeling Scientific Reasoning"
 author:
 - name: "Gerd Graßhoff"
   affiliation: "Humboldt Universität zu Berlin"
@@ -9,76 +9,62 @@ bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
 
-The authors chart a course for integrating Artificial Intelligence into scholarly research, progressing from the foundational concepts of Large Language Model evolution towards a robust framework grounded in validation and critical thinking. Their work identifies key deficiencies in current AI, such as a lack of information verification, and proposes a solution centred on computational epistemology and epistemic agency.
+In this chapter, the authors chart a course for integrating Artificial Intelligence into scholarly research. Their work progresses from the foundational concepts of Large Language Model (LLM) evolution towards a robust framework grounded in validation and critical thinking. The authors identify key deficiencies in current AI, particularly its lack of information verification, and propose a solution centred on computational epistemology and epistemic agency.
 
-To realise this vision, the team introduces a suite of tools and platforms. The *Scholarium* initiative, governed by a curated editorial board, provides access to validated historical sources, including the collected works of Euler. A digital academic workspace, featuring an *AI Cockpit*, demonstrates how scholars can interact with LLMs to analyse historical documents. The entire technical infrastructure is built upon the principles of Open Science Technology—embracing open source, open access, open data, and open collaboration—and exemplifies FAIR data principles through platforms like *Zenodo*, a repository for the academic community.
+To realise this vision, the team introduces a suite of purpose-built tools and platforms. The *Scholarium* initiative, for instance, is governed by a curated editorial board and provides access to validated historical sources, such as the collected works of Euler. A digital academic workspace, featuring an *AI Cockpit*, demonstrates how scholars can interact with LLMs to analyse historical documents with greater efficacy. The entire technical infrastructure rests upon the principles of Open Science Technology—embracing open source, open access, open data, and open collaboration—and exemplifies FAIR data principles through its use of platforms like *Zenodo*.
 
 ## The Evolution of LLM Competence
 
 ![Slide 02](images/ai-nepi_008_slide_02.png)
 
-The authors trace the evolution of competence in Large Language Models (LLMs) through three distinct conceptual stages. This progression begins with the foundational mechanism of *attention*, which allows models to weigh the significance of different words in a sequence.
-
-Subsequently, development advanced to incorporate *context*, enabling LLMs to understand and process information within a broader frame of reference. The most recent stage in this evolution introduces the capacity for *thinking*, characterising a move towards more sophisticated reasoning and problem-solving capabilities.
+The authors trace the evolution of competence in Large Language Models (LLMs) through three distinct conceptual stages. This progression begins with the foundational mechanism of 'attention', which allows models to weigh the significance of different words in a sequence. Development subsequently advanced to incorporate 'context', enabling LLMs to understand and process information within a broader frame of reference. The most recent stage in this evolution, as outlined by the team, introduces the capacity for 'thinking', signifying a move towards more sophisticated reasoning and problem-solving capabilities.
 
 ## Deficiencies in Current AI Systems
 
 ![Slide 03](images/ai-nepi_008_slide_03.png)
 
-A critical examination of current AI capabilities reveals fundamental principles that are largely absent from contemporary systems. These deficiencies primarily concern the need for robust critical thinking, a capacity that extends far beyond mere pattern recognition.
+A critical examination of current AI capabilities, conducted by the authors, reveals fundamental principles largely absent from contemporary systems. These deficiencies centre primarily on the need for robust critical thinking, a capacity that must extend beyond mere pattern recognition. Furthermore, the authors identify a significant gap in information verification, as models often generate content without a reliable mechanism for confirming its accuracy. Their analysis also highlights the inherent limitations of AI representations, underscoring that they are not infallible and demand careful scrutiny.
 
-Furthermore, a significant gap exists in the domain of information verification, as models often generate content without a reliable mechanism for confirming its accuracy. This analysis also highlights the inherent limitations of AI representations, acknowledging that they are not infallible and require careful scrutiny.
-
-## Validation in Computational Epistemology
+## Validation and Computational Epistemology
 
 ![Slide 04](images/ai-nepi_008_slide_04.png)
 
-Validation emerges as a central theme in the authors' framework for advancing trustworthy AI. This principle applies not only to the propositions an AI generates but also to the actions it recommends or undertakes, ensuring both are sound and justifiable.
-
-Situating this work within the field of *Computational Epistemology* provides a formal structure for analysing knowledge in computational systems. Moreover, it connects directly to the nature of *Epistemic Agency*, exploring how systems can responsibly and accurately acquire, assess, and use information.
+The authors posit validation as a central theme for advancing trustworthy AI. This principle, they argue, must apply not only to the propositions an AI generates but also to the actions it recommends or undertakes, ensuring both are sound and justifiable. By situating their work within the field of *Computational Epistemology*, the team establishes a formal framework for analysing knowledge in computational systems. This approach connects directly to the nature of *Epistemic Agency*, exploring how systems can responsibly and accurately acquire, assess, and use information.
 
 ## AI-Assisted Document Analysis
 
 ![Slide 05](images/ai-nepi_008_slide_05.png)
 
-A digital academic workspace, developed by the team, demonstrates the practical application of AI in scholarly research, particularly within the humanities. The user interface presents a historical document, such as a PDF, alongside an AI-powered analysis panel.
+The practical application of this AI-driven approach is demonstrated within a digital academic workspace designed for scholarly research, particularly in the humanities. The user interface presents a historical document alongside an AI-powered analysis panel. In a specific use case presented by the authors, their system processes a document concerning a historical art commission. The AI successfully extracts and organises key information, identifying all individuals involved and detailing their respective roles, thereby significantly accelerating the research process.
 
-In a specific use case, the system processes a document related to a historical art commission. The AI successfully extracts and organises key information, identifying all the individuals involved and detailing their respective roles in the commission, thereby accelerating the research process.
-
-## The Scholarium Platform
+## The *Scholarium* Platform
 
 ![Slide 06](images/ai-nepi_008_slide_06.png)
 
-The *Scholarium* initiative provides a dedicated platform for high-integrity academic work, distinguishing itself through rigorous oversight. A Curated Scholarly Editorial Board governs the platform, ensuring that all included sources meet stringent academic standards.
+The *Scholarium* initiative, developed by the research team, provides a dedicated platform for high-integrity academic work, distinguished by its rigorous oversight. A Curated Scholarly Editorial Board governs the platform, ensuring all included sources meet stringent academic standards. Its collection encompasses the major collected works of influential historical scientists. To illustrate its function, the authors showcase a digital viewer for navigating the comprehensive works of Leonhard Euler, offering scholars direct access to this foundational scientific corpus.
 
-The scope of its collection includes the major collected works of influential historical scientists. To illustrate its function, the system showcases a digital viewer for navigating the comprehensive works of Leonhard Euler, offering researchers direct access to this foundational scientific corpus.
-
-## The AI Cockpit Interface
+## The *AI Cockpit* Interface
 
 ![Slide 08](images/ai-nepi_008_slide_08.png)
 
-The team has engineered the *AI Cockpit*, a specialised user interface designed to streamline interaction with Large Language Models. This tool provides a focused environment for conducting complex, AI-assisted tasks.
+To streamline interaction with Large Language Models, the authors have engineered the *AI Cockpit*, a specialised user interface. This tool provides a focused environment for conducting complex, AI-assisted tasks. Its capabilities are demonstrated through its effective application to historical documents, where it automatically extracts salient information and generates concise summaries. This function enables scholars to grasp the core content of archival materials with remarkable speed.
 
-Its capabilities are demonstrated through its effective use in processing historical documents. The *AI Cockpit* can automatically extract salient information and generate concise summaries, enabling scholars to grasp the core content of archival materials with greater efficiency.
-
-## FAIR Principles and the Zenodo Repository
+## FAIR Principles and the *Zenodo* Repository
 
 ![Slide 09](images/ai-nepi_008_slide_09.png)
 
-The authors highlight the *Zenodo* research data repository as a prime example of an infrastructure built upon FAIR principles. By design, it ensures that research outputs are Findable, Accessible, Interoperable, and Reusable, promoting transparency and collaboration across academic communities.
-
-As a general-purpose repository, it supports a wide range of disciplines and data types. Its active and continuous use is evident from its interface, which showcases a dynamic list of recent uploads from researchers worldwide, underscoring its role in the scholarly ecosystem.
+The authors' commitment to open scholarship is exemplified by their use of infrastructures built upon FAIR principles, such as the *Zenodo* research data repository. By design, *Zenodo* ensures that research outputs are Findable, Accessible, Interoperable, and Reusable, thereby promoting transparency and collaboration across academic communities. As a general-purpose repository, it supports a wide range of disciplines and data types, and its active use is evident from the dynamic list of recent uploads from scholars worldwide.
 
 ## Principles of Open Science Technology
 
 ![Slide 10](images/ai-nepi_008_slide_10.png)
 
-The technical support framework for this scholarly ecosystem rests upon the core principles of Open Science Technology. This commitment manifests in four key areas.
+The technical framework supporting the authors' scholarly ecosystem rests upon the core principles of Open Science Technology. This commitment manifests in four key areas:
 
-- It embraces open-source software, ensuring that the underlying tools are transparent and customisable.
+- *Open-source software*, ensuring the underlying tools are transparent and customisable.
 
-- It champions open access to publications, removing barriers to knowledge.
+- *Open access* to publications, removing barriers to knowledge.
 
-- It mandates open data, allowing for the verification of results and the reuse of datasets.
+- *Open data*, allowing for the verification of results and the reuse of datasets.
 
-- It fosters open collaboration, creating an environment where researchers can work together effectively.
+- *Open collaboration*, fostering an environment where scholars can work together effectively.
