@@ -3,8 +3,8 @@ book:
   author:
   - "Gerd Graßhoff"
   - "Adrian Wüthrich"
-  - "Michael Zichert"
   - "Arno Simons"
+  - "Michael Zichert"
   date: '2025-06-21'
   chapters:
   - index.qmd
