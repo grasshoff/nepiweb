@@ -12,51 +12,51 @@
   {
     "objectID": "chapter_ai-nepi_001.html",
     "href": "chapter_ai-nepi_001.html",
-    "title": "2  Workshop Logistics and Keynote Presentations [MANUALLY EDITED]",
+    "title": "2  Workshop Logistics and Keynote Presentations",
     "section": "",
     "text": "Overview\nThis chapter documents the logistical arrangements and principal academic contributions of the NEPI workshop. It outlines the event’s comprehensive recording policy, which balanced diligent documentation with a firm commitment to presenter consent. The practical arrangements for attendees, from coffee breaks to the main reception, are also detailed to provide a complete record of the proceedings.\nAt the heart of the workshop were two distinguished keynote addresses. Pierluigi Cassotti and Nina Tahmasebi delivered a presentation on large-scale text analysis, demonstrating its power to reveal cultural and societal change. Subsequently, Iryna Gurevych explored advanced Natural Language Processing techniques for cross-document analysis, highlighting compelling applications for research in the humanities and social sciences.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations [MANUALLY EDITED]</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations</span>"
     ]
   },
   {
     "objectID": "chapter_ai-nepi_001.html#recording-and-dissemination",
     "href": "chapter_ai-nepi_001.html#recording-and-dissemination",
-    "title": "2  Workshop Logistics and Keynote Presentations [MANUALLY EDITED]",
+    "title": "2  Workshop Logistics and Keynote Presentations",
     "section": "2.1 Recording and Dissemination",
     "text": "2.1 Recording and Dissemination\n\n\n\nSlide 02\n\n\nThe workshop organisers implemented a clear policy for recording and dissemination, ensuring all sessions conducted via Zoom were captured. On-screen reminders and a persistent ‘REC’ icon served as constant notification, a protocol aligned with the consent participants provided during registration.\nThe technical arrangement involved a single camera focused on the presenter, with four microphones capturing primary audio. To ensure the integrity of the record, an iPhone provided a secondary audio backup. Following the event, the organisers planned to upload recordings of talks and their subsequent discussions to the NEPI YouTube Channel, contingent upon receiving explicit consent from each presenter. This approach prioritised both open access and the rights of individual speakers, who were encouraged to contact the organisers directly with any concerns.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations [MANUALLY EDITED]</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations</span>"
     ]
   },
   {
     "objectID": "chapter_ai-nepi_001.html#logistics-and-social-engagements",
     "href": "chapter_ai-nepi_001.html#logistics-and-social-engagements",
-    "title": "2  Workshop Logistics and Keynote Presentations [MANUALLY EDITED]",
+    "title": "2  Workshop Logistics and Keynote Presentations",
     "section": "2.2 Logistics and Social Engagements",
     "text": "2.2 Logistics and Social Engagements\n\n\n\nSlide 04\n\n\nThe event’s logistical arrangements were clearly outlined to guide participants between academic sessions and social gatherings. A slide featuring a communal feast from the Asterix comic series playfully established a convivial tone for the hospitality.\nAttendees were directed to H 3005 for coffee breaks and refreshments. For more substantial engagements, including lunch and the main reception, the designated venue was H 2051, a space intended to foster broader social interaction amongst all participants.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations [MANUALLY EDITED]</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations</span>"
     ]
   },
   {
     "objectID": "chapter_ai-nepi_001.html#keynote-analysing-cultural-and-societal-change",
     "href": "chapter_ai-nepi_001.html#keynote-analysing-cultural-and-societal-change",
-    "title": "2  Workshop Logistics and Keynote Presentations [MANUALLY EDITED]",
+    "title": "2  Workshop Logistics and Keynote Presentations",
     "section": "2.3 Keynote: Analysing Cultural and Societal Change",
     "text": "2.3 Keynote: Analysing Cultural and Societal Change\n\n\n\nSlide 05\n\n\nPierluigi Cassotti and Nina Tahmasebi from the University of Gothenburg delivered the first keynote, titled ‘Large-scale text analysis for the study of cultural and societal change’. Their presentation was built upon the central premise that for their research, ‘Change is Key!’\nThe authors’ work centres on semantic change detection, a critical technique for identifying shifts in word meaning across vast textual archives. In their talk, they emphasised the importance of developing robust benchmarks to evaluate analytical methods. Cassotti and Tahmasebi firmly positioned their research within the interdisciplinary field of data science for the humanities, showcasing how computational approaches can address profound questions of cultural evolution.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations [MANUALLY EDITED]</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations</span>"
     ]
   },
   {
     "objectID": "chapter_ai-nepi_001.html#keynote-cross-document-nlp",
     "href": "chapter_ai-nepi_001.html#keynote-cross-document-nlp",
-    "title": "2  Workshop Logistics and Keynote Presentations [MANUALLY EDITED]",
+    "title": "2  Workshop Logistics and Keynote Presentations",
     "section": "2.4 Keynote: Cross-Document NLP",
     "text": "2.4 Keynote: Cross-Document NLP\n\n\n\nSlide 06\n\n\nIn the second keynote, Iryna Gurevych presented her work on elevating Natural Language Processing (NLP) to a cross-document level. Her talk, ‘How to InterText?’, signalled a move beyond the analysis of single texts to more complex, interconnected information landscapes.\nAffiliated with the Ubiquitous Knowledge Processing (UKP) Lab at the Technical University of Darmstadt, Gurevych’s research integrates information extraction, semantic text processing, and machine learning. Through her work, she demonstrates compelling applications of these advanced NLP techniques, building a vital bridge between computational linguistics and the nuanced research questions posed by the social sciences and humanities.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations [MANUALLY EDITED]</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Workshop Logistics and Keynote Presentations</span>"
     ]
   },
   {
