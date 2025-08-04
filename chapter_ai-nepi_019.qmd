@@ -3,7 +3,7 @@ title: "Towards Interpretable Models: Bridging Traditional and Deep Learning Met
 author:
 - name: "Sofía Aguilar & Stefania Degaetano-Ortlieb"
   affiliation: "AI-NEPI Conference Participant"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}

@@ -4,7 +4,7 @@ author:
 - name: "Christian Boulanger, David Carreto Fidalgo & Andreas Wagner"
   affiliation: "Max Planck Institute for Legal History and Legal Theory"
   email: "boulanger@lhlt.mpg.de"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}

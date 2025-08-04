@@ -4,7 +4,7 @@ author:
 - name: "Jochen Büttner"
   affiliation: "Max Planck Institute of Geoanthropology"
   email: "buettner@gea.mpg.de"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}

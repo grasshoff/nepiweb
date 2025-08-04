@@ -4,7 +4,7 @@ author:
 - name: "Vera Danilova"
   affiliation: "Uppsala University"
   email: "vera.danilova@idehist.uu.se"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}

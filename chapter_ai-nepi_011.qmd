@@ -4,7 +4,7 @@ author:
 - name: "Philipp Mayr, Slava Tykhonov, Jetze Touber & Andrea Scharnhorst"
   affiliation: "GESIS – Leibniz Institute for the Social Sciences"
   email: "philipp.mayr@gesis.org"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}

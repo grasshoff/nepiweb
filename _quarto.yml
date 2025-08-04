@@ -1,11 +1,11 @@
 book:
-  title: AI-NEPI Conference Proceedings
+  title: "Large Language Models for History, Philosophy and Sociology of Science - Workshop Proceedings"
   author:
   - "Gerd Graßhoff"
   - "Adrian Wüthrich"
   - "Arno Simons"
   - "Michael Zichert"
-  date: '2025-06-21'
+  date: '2025-07-31'
   chapters:
   - index.qmd
   - chapter_ai-nepi_001.qmd

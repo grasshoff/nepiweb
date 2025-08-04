@@ -3,7 +3,7 @@ title: "Large Language Models for the History, Philosophy, and Sociology of Scie
 author:
 - name: "Arno Simons"
   affiliation: "TU Berlin"
-date: '2025-06-21'
+date: '2025-07-31'
 bibliography: bibliography.bib
 ---
 ## Overview {.unnumbered}
